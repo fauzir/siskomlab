@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/intranet.structure.visual/templates/.default/structure.js" => "151131652319799",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

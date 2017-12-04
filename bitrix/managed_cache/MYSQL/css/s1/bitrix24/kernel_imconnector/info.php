@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/imconnector/icon.css" => "151131651532990",), 'CUR_SEL_CNT' => '25', 'CUR_IE_CNT' => '0'); ?>

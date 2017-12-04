@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/lists/css/lists.css" => "15113165292327","/bitrix/js/lists/css/autorun_progress_bar.css" => "15113165294161",), 'CUR_SEL_CNT' => '70', 'CUR_IE_CNT' => '0'); ?>

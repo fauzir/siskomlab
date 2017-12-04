@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/socialnetwork.admin.set/templates/.default/script.js" => "15113165822527","/bitrix/components/bitrix/main.file.input/templates/.default/script.js" => "15113164728860",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

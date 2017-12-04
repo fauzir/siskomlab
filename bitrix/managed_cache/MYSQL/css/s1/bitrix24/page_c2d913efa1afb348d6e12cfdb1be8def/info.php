@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/templates/bitrix24/components/bitrix/intranet.absence.calendar/.default/style.css" => "151131667013187",), 'CUR_SEL_CNT' => '96', 'CUR_IE_CNT' => '0'); ?>

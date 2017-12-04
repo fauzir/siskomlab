@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/templates/bitrix24/components/bitrix/im.messenger/content/script.js" => "1511316670738",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

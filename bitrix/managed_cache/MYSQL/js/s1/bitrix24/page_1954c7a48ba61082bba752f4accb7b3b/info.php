@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/imconnector.connector.settings/templates/.default/script.js" => "15113165146730","/bitrix/components/bitrix/imconnector.settings/templates/.default/script.js" => "15113165142342",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

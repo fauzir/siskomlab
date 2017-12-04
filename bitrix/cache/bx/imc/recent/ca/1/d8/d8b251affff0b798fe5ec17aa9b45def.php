@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001512009997';
+$dateexpire = '001514601997';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:6:"recent";a:2:{s:5:"chat1";a:3:{s:4:"TYPE";s:1:"O";s:7:"MESSAGE";a:6:{s:2:"id";s:2:"11";s:6:"chatId";s:1:"1";s:8:"senderId";s:1:"0";s:4:"date";s:10:"1512008524";s:4:"text";s:37:"[USER=479]Oz Pw[/USER] has been hired";s:6:"params";a:0:{}}s:4:"CHAT";a:14:{s:2:"id";s:1:"1";s:4:"name";s:12:"General chat";s:5:"color";s:7:"#29619b";s:6:"avatar";s:30:"/bitrix/js/im/images/blank.gif";s:8:"extranet";b:0;s:5:"owner";s:1:"0";s:4:"type";s:4:"open";s:11:"entity_type";s:7:"GENERAL";s:9:"entity_id";s:0:"";s:13:"entity_data_1";s:0:"";s:13:"entity_data_2";s:0:"";s:13:"entity_data_3";s:0:"";s:11:"messageType";s:1:"O";s:11:"call_number";s:0:"";}}i:100;a:3:{s:4:"TYPE";s:1:"P";s:7:"MESSAGE";a:6:{s:2:"id";s:1:"7";s:6:"chatId";s:1:"3";s:8:"senderId";s:1:"1";s:4:"date";s:10:"1511923078";s:4:"text";s:4:"test";s:6:"params";a:0:{}}s:4:"USER";a:18:{s:2:"id";s:3:"100";s:4:"name";s:13:"Aaliyah Adair";s:8:"nameList";s:14:"Adair, Aaliyah";s:6:"active";b:1;s:9:"firstName";s:7:"Aaliyah";s:8:"lastName";s:5:"Adair";s:12:"workPosition";s:14:"Office Manager";s:5:"color";s:7:"#df532d";s:6:"avatar";s:45:"/upload/resize_cache/main/682/58_58_2/53b.jpg";s:6:"status";s:7:"offline";s:8:"birthday";s:10:"1980-10-13";s:6:"gender";s:1:"F";s:8:"extranet";b:0;s:7:"network";b:0;s:3:"bot";b:0;s:8:"tzOffset";i:0;s:11:"phoneDevice";b:0;s:7:"profile";s:27:"/company/personal/user/100/";}}}s:5:"users";a:1:{i:0;s:3:"100";}}}';
+return true;
+?>

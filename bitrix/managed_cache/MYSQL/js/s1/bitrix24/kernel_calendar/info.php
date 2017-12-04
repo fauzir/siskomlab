@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/calendar/cal-core.js" => "151131647668360","/bitrix/js/calendar/cal-dialogs.js" => "151131647653075","/bitrix/js/calendar/cal-week.js" => "151131647612995","/bitrix/js/calendar/cal-events.js" => "151131647613013","/bitrix/js/calendar/cal-controlls.js" => "151131647670330",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

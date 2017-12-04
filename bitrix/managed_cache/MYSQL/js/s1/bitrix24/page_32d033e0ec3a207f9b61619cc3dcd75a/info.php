@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/rest.hook.event.list/templates/.default/script.js" => "1511316541432","/bitrix/components/bitrix/main.interface.grid/templates/.default/script.js" => "151131647228546","/bitrix/components/bitrix/rest.hook.ap.list/templates/.default/script.js" => "1511316541426",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

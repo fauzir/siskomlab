@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/imopenlines.lines/templates/.default/style.css" => "151131651819935",), 'CUR_SEL_CNT' => '160', 'CUR_IE_CNT' => '0'); ?>

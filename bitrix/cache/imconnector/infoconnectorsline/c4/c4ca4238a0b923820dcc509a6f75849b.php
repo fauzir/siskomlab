@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001511766446';
+$dateexpire = '001511852846';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:1:{s:8:"livechat";a:5:{s:2:"id";i:1;s:4:"name";s:9:"Live chat";s:3:"url";s:28:"http://192.168.0.141/online/";s:6:"url_im";s:28:"http://192.168.0.141/online/";s:14:"connector_name";s:9:"Live chat";}}}';
+return true;
+?>

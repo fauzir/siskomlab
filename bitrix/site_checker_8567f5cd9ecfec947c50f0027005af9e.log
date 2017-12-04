@@ -1,0 +1,130 @@
+2017-Nov-22 14:48:50 Required PHP Modules (check_php_modules): Ok
+All required modules are installed.
+2017-Nov-22 14:48:50 PHP Required Parameters (check_php_settings): Ok
+Settings are correct
+2017-Nov-22 14:48:50 Web server modules (check_security): Ok
+No conflicts.
+2017-Nov-22 14:48:50 Server Variables (check_server_vars): Ok
+Correct
+2017-Nov-22 14:48:50 Session retention (check_session): Ok
+50% done
+2017-Nov-22 14:48:50 Session retention (check_session): Ok
+Success
+2017-Nov-22 14:48:50 UTF configuration parameters (mbstring and BX_UTF) (check_mbstring): Ok
+Correct. The website runs in UTF encoding
+2017-Nov-22 14:48:50 Service scripts in the site root (check_install_scripts): Ok
+None
+2017-Nov-22 14:48:50 Using sockets (check_socket): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:50 Use cron to run agents (check_bx_crontab): Ok
+Success
+2017-Nov-22 14:48:50 Database connection parameters (check_dbconn_settings): Ok
+Success
+2017-Nov-22 14:48:50 Redundant output in configuration files (check_dbconn): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:50 Session retention without UserAgent (check_session_ua): Ok
+50% done
+Connection to 192.168.0.141:80	Success
+
+2017-Nov-22 14:48:50 Session retention without UserAgent (check_session_ua): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:50 Website Parameters (check_sites): Ok
+Correct
+2017-Nov-22 14:48:50 Passing objects by reference (check_clone): Ok
+Success
+2017-Nov-22 14:48:51 Stack size; pcre.recursion_limit (check_pcre_recursion): Warning
+Connection to 192.168.0.141:80	Success
+
+Warning. Long text strings may be handled incorrectly due to system restrictions.
+2017-Nov-22 14:48:51 method_exists called on line (check_method_exists): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:51 File upload (check_upload): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:51 Upload files over 4MB (check_upload_big): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:51 Upload file using php://input (check_upload_raw): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:51 POST requests with many parameters (check_post): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:51 E-mail sending (check_mail): Fail
+Error! The test has failed to complete.
+2017-Nov-22 14:48:51 Large e-mail sending (over 64 KB) (check_mail_big): Fail
+Error! The test has failed to complete.
+2017-Nov-22 14:48:51 Check for unsent messages (check_mail_b_event): Ok
+Success
+2017-Nov-22 14:48:51 Local redirects (LocalRedirect function) (check_localredirect): Ok
+50% done
+Connection to 192.168.0.141:80	Success
+
+2017-Nov-22 14:48:51 Local redirects (LocalRedirect function) (check_localredirect): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:48:51 Memory limit (check_memory_limit): Ok
+20% done
+Connection to 192.168.0.141:80	Success
+
+2017-Nov-22 14:48:51 Memory limit (check_memory_limit): Ok
+40% done
+Connection to 192.168.0.141:80	Success
+
+2017-Nov-22 14:48:51 Memory limit (check_memory_limit): Ok
+60% done
+Connection to 192.168.0.141:80	Success
+
+2017-Nov-22 14:48:51 Memory limit (check_memory_limit): Ok
+80% done
+Connection to 192.168.0.141:80	Success
+
+2017-Nov-22 14:48:51 Memory limit (check_memory_limit): Ok
+Connection to 192.168.0.141:80	Success
+
+Not less than 256 M.
+2017-Nov-22 14:48:51 Using cache files (check_cache): Ok
+Success
+2017-Nov-22 14:49:07 Access to update server (check_update): Ok
+Success
+2017-Nov-22 14:49:07 HTTP authorization (check_http_auth): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:49:07 File creation and execution (check_exec): Ok
+Connection to 192.168.0.141:80	Success
+
+Success
+2017-Nov-22 14:49:07 getimagesize support for SWF (check_getimagesize): Ok
+Success
+2017-Nov-22 14:49:07 MySQL version (check_mysql_bug_version): Ok
+Success
+2017-Nov-22 14:49:08 Database and web server times (check_mysql_time): Ok
+Success
+2017-Nov-22 14:49:08 MySQL Mode (check_mysql_mode): Ok
+Success
+2017-Nov-22 14:49:08 Connection charset (check_mysql_connection_charset): Ok
+character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
+Success
+2017-Nov-22 14:49:08 Database charset (check_mysql_db_charset): Ok
+CHARSET=utf8, COLLATION=utf8_unicode_ci
+Success
+2017-Nov-22 14:49:09 Database table charset (check_mysql_table_charset): Fail
+The table "b_catalog_viewed_product" has been destroyed due to internal MySQL error. Autorecovery will recreate the table.
+
+Error! Database tables have 1 encoding error(s), 1 of which can be fixed automatically. Fix
+2017-Nov-22 14:49:09 Database structure (check_mysql_table_structure): Warning
+Warning. Not checked due to table charset errors

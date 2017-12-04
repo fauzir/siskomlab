@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/imopenlines.lines/templates/.default/script.js" => "151131651811366",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

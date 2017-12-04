@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/calendar/cal-style.css" => "1511316476105884",), 'CUR_SEL_CNT' => '1242', 'CUR_IE_CNT' => '0'); ?>

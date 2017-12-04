@@ -1,0 +1,108 @@
+
+/* Start:/bitrix/components/bitrix/wiki.menu/templates/.default/style.css?15113166051142*/
+
+div.wiki-errors {
+	border: 1px solid #FFD482; 
+	margin: 1.117em; 
+	padding: 0.4em 1.117em;
+	color:red;
+	background-color:#FFFEEB;	
+}
+
+table.bx-interface-toolbar a.btn-delete ,
+div.bx-interface-toolbar .btn-delete {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/delete.gif") !important; 
+}
+
+table.bx-interface-toolbar a.btn-rename ,
+div.bx-interface-toolbar .btn-rename {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/rename.gif");
+}
+
+table.bx-interface-toolbar a.btn-article ,
+div.bx-interface-toolbar .btn-article {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/article.gif");
+}
+
+table.bx-interface-toolbar a.btn-add ,
+div.bx-interface-toolbar .btn-add {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/add.gif");
+}
+
+table.bx-interface-toolbar a.btn-edit ,
+div.bx-interface-toolbar .btn-edit {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/edit.gif");
+}
+
+table.bx-interface-toolbar a.btn-history ,
+div.bx-interface-toolbar .btn-history {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/history.gif");
+}
+
+table.bx-interface-toolbar a.btn-discussion ,
+div.bx-interface-toolbar .btn-discussion {
+	background-image:url("/bitrix/components/bitrix/wiki.menu/templates/.default/images/buttons/discussion.gif");
+}
+/* End */
+
+/* Start:/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/style.css?15113166705188*/
+div.empty {width:1px; height:1px; overflow:hidden;}
+
+/* Toolbar */
+div.bx-interface-toolbar {margin:0 0 16px 0; position:relative; zoom:1;}
+table.bx-interface-toolbar {width:100%;  border-collapse:separate; }
+div.bx-interface-toolbar td {background-color:#ffffff; font-size:100%;}
+div.bx-interface-toolbar tr.bx-top td {border-top:1px solid #eaeaea;}
+div.bx-interface-toolbar td.bx-left {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/l.gif); background-repeat:no-repeat; background-position:left top;}
+div.bx-interface-toolbar td.bx-right {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/r.gif); background-repeat:no-repeat; background-position:left top;}
+div.bx-interface-toolbar tr.bx-top td.bx-left {border:0; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/lt.gif); height:2px; width:3px;}
+div.bx-interface-toolbar tr.bx-top td.bx-right {border:0; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/rt.gif); height:2px; width:3px;}
+div.bx-interface-toolbar tr.bx-bottom td {background-color:#f1f1f1;}
+div.bx-interface-toolbar tr.bx-bottom td.bx-left {border:0; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/lb.gif); height:1px; width:3px;}
+div.bx-interface-toolbar tr.bx-bottom td.bx-right {border:0; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/rb.gif); height:1px; width:3px;}
+div.bx-interface-toolbar tr.bx-bottom-all td {background:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/b.gif) repeat-x;}
+div.bx-interface-toolbar tr.bx-bottom-all td.bx-left {border:0; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/bl.gif); height:2px; width:3px;}
+div.bx-interface-toolbar tr.bx-bottom-all td.bx-right {border:0; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/br.gif); height:2px; width:3px;}
+div.bx-interface-toolbar td.bx-content {height:28px; background-color:white; background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/bg.png); background-repeat:repeat-x; background-position:left bottom;}
+div.bx-interface-toolbar td.bx-content table td {padding:0; background-color:transparent;}
+div.bx-interface-toolbar div {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+div.bx-interface-toolbar div.bx-section-separator { display:none; width:3px; height:17px; border-left:1px solid #D1D1D1; border-right:1px solid #D1D1D1; margin:0 0 0 6px;}
+div.bx-interface-toolbar div.bx-separator {display: none; width:1px; height:17px; border-left:1px solid #D1D1D1; margin:0 0 0 6px;}
+div.bx-interface-toolbar a.bx-context-button {display:inline-block; height:24px; border:none; margin:0 0 0 3px; white-space:nowrap; cursor:pointer;}
+div.bx-interface-toolbar a.bx-context-button:hover { margin:0 0 0 3px ; border:none; }
+div.bx-interface-toolbar span.bx-context-button-left, div.bx-interface-toolbar span.bx-context-button-right { vertical-align:top; display:inline-block; width:2px; height:24px;}
+div.bx-interface-toolbar span.bx-context-button-text { display:inline-block; height: 24px; vertical-align:top; line-height:24px; margin: 0 4px 0 4px;}
+
+div.bx-interface-toolbar a.bx-context-button:hover span.bx-context-button-left, div.bx-interface-toolbar a.pressed span.bx-context-button-left { background: url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/hover-sprite.gif) no-repeat 0 0;}
+div.bx-interface-toolbar a.bx-context-button:hover span.bx-context-button-right, div.bx-interface-toolbar a.pressed span.bx-context-button-right { background: url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/hover-sprite.gif) no-repeat 0 -24px ;}
+div.bx-interface-toolbar a.bx-context-button:hover, div.bx-interface-toolbar a.pressed  { background: url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/toolbar/hover-sprite.gif) repeat-x 0 -48px ;}
+
+div.bx-interface-toolbar span.bx-context-button-icon {display: inline-block; width:21px; height:24px; background-repeat:no-repeat; background-position:center center; margin: 0 -3px 0 0;}
+div.bx-interface-toolbar a, div.bx-interface-toolbar a:visited, div.bx-interface-toolbar a:active { color:#333; text-decoration:none;}
+div.bx-interface-toolbar a:hover {color:black;}
+div.bx-interface-toolbar span.bx-arrow {display:inline-block; height:24px; width: 9px; background: url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/arr_down.gif) no-repeat 0 center; vertical-align:top;}
+
+div.bx-context-more-buttons { position:absolute; top:4px; right:3px; }
+
+/* Toolbar common icons */
+div.bx-interface-toolbar .btn-list {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/buttons/list.gif);}
+div.bx-interface-toolbar .btn-new {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/buttons/new.gif);}
+div.bx-interface-toolbar .btn-delete {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/buttons/delete.gif);}
+div.bx-interface-toolbar .btn-copy {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/buttons/copy.gif);}
+div.bx-interface-toolbar .btn-excel {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/buttons/excel.gif);}
+div.bx-interface-toolbar .btn-settings {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/buttons/settings.gif);}
+
+/*Common actions icons */
+td.popupmenu div.popupitem div.edit {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/edit.gif);}
+td.popupmenu div.popupitem div.copy {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/copy.gif);}
+td.popupmenu div.popupitem div.delete {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/delete.gif);}
+td.popupmenu div.popupitem div.view {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/view.gif);}
+td.popupmenu div.popupitem div.checked {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/checkbox.gif);}
+td.popupmenu div.popupitem div.list {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/list.gif);}
+td.popupmenu div.popupitem div.add {background-image:url(/bitrix/templates/bitrix24/components/bitrix/main.interface.toolbar/.default/images/popup/new.gif);}
+
+/* End */
+
+/* Start:/bitrix/components/bitrix/wiki.show/templates/.default/style.min.css?15113166051296*/
+div#wiki-post{margin-bottom:10px}div.wiki-errors{border:1px solid #ffd482;margin:1.117em;padding:.4em 1.117em;color:red;background-color:#fffeeb}div#wiki-post a.wiki_red{color:red}div#wiki-post div#wiki-sub-post_content{color:#7d7d7d;font-size:84%;line-height:1.2em;margin:0 0 1.4em 1em;width:auto}div#wiki-post div#wiki_category{padding:2px 10px;border:1px solid #aaa;background-color:#f9f9f9;margin-top:10px}div#wiki-post div.wiki-post-header{background-color:#e7e7e7;font-size:1em;padding:.462em 1.117em;vertical-align:middle;border:1px solid #e1e1e1;line-height:1.5em;margin-bottom:5px}div.wiki-category-item{float:left;width:80%}div.wiki-category-rating{float:right}div#wiki_category .ilike-light .bx-ilike-right{padding:1px 1px 0 11px}div#wiki_category .ilike-light .bx-ilike-text{padding:0}#wiki-post-content pre,.wiki_post_feed pre{background-color:#fff;font-family:monospace,Courier!important;border-color:#c3c3c3;border-style:solid;border-width:1px;line-height:1.5em;padding:5px;font-size:1em;margin:15px 5px 5px 0;color:#696969;overflow:auto}.bx-firefox #wiki-post-content pre{font-size:medium}#wiki-post-content table,.wiki_post_feed table{border:1px solid #b6b6b8;border-collapse:collapse}#wiki-post-content table td,.wiki_post_feed table td{border:1px solid #b6b6b8;padding:2px 5px}
+/* End */

@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001512372277';
+$dateexpire = '001530516277';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:6:{s:5:"users";a:1:{i:103;a:24:{s:2:"id";s:3:"103";s:4:"name";s:20:"Mary-Anne Fettiplace";s:8:"nameList";s:21:"Fettiplace, Mary-Anne";s:6:"active";b:1;s:9:"firstName";s:9:"Mary-Anne";s:8:"lastName";s:10:"Fettiplace";s:12:"workPosition";s:14:"Office Manager";s:5:"color";s:7:"#4ba984";s:6:"avatar";s:45:"/upload/resize_cache/main/ed4/58_58_2/56b.jpg";s:8:"avatarId";s:3:"226";s:6:"status";s:7:"offline";s:8:"birthday";b:0;s:6:"gender";s:1:"F";s:11:"phoneDevice";b:0;s:8:"extranet";b:0;s:8:"tzOffset";i:0;s:7:"network";b:0;s:3:"bot";b:0;s:9:"connector";b:0;s:7:"profile";s:27:"/company/personal/user/103/";s:7:"website";s:0:"";s:5:"email";s:24:"m.fettiplace@example.com";s:4:"idle";i:0;s:14:"mobileLastDate";i:0;}}s:7:"hrphoto";a:0:{}s:11:"userInGroup";a:1:{i:64;a:2:{s:2:"id";i:64;s:5:"users";a:1:{i:0;s:3:"103";}}}s:13:"woUserInGroup";a:0:{}s:6:"phones";a:1:{i:103;a:3:{s:10:"WORK_PHONE";s:9:"623-83-83";s:15:"PERSONAL_MOBILE";s:9:"627-93-78";s:14:"PERSONAL_PHONE";s:0:"";}}s:6:"source";a:1:{i:103;a:1:{s:14:"PERSONAL_PHOTO";s:3:"226";}}}}';
+return true;
+?>

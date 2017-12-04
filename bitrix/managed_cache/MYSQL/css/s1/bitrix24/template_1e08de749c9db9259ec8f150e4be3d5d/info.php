@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/templates/bitrix24/styles.css" => "151236921311116","/bitrix/templates/bitrix24/template_styles.css" => "1512369213106363",), 'CUR_SEL_CNT' => '1121', 'CUR_IE_CNT' => '0'); ?>

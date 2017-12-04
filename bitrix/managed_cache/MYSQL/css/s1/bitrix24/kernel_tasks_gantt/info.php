@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/tasks/css/gantt.css" => "151131659815739",), 'CUR_SEL_CNT' => '181', 'CUR_IE_CNT' => '0'); ?>

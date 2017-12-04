@@ -1,16 +1,14 @@
-.feed-add-vote-wrap {
-	background-color:#eef2f4;
-	padding: 20px;
-	margin: 10px 18px 0;
-}
-
-ol.vote-questions,
+.feed-add-vote-wrap {<br>
+ &nbsp;&nbsp;&nbsp; background-color: #475c7b;<br>
+ &nbsp;&nbsp;&nbsp; padding: 20px;<br>
+ &nbsp;&nbsp;&nbsp; margin: 10px 18px 0;<br>
+ }<br>
+&nbsp;ol.vote-questions,
 ol.vote-answers {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-
 ol.vote-questions li.vote-question:first-child {
 	border: none;
 	box-shadow: none;
@@ -24,7 +22,6 @@ ol.vote-questions li.vote-question {
 	margin-top:21px;
 	padding-top:30px;
 }
-
 .vote-block-title-wrap,
 .vote-block-inp-wrap {
 	background-color:#fff;
@@ -35,12 +32,10 @@ ol.vote-questions li.vote-question {
 	padding:0 10px 0 18px;
 	position:relative;
 }
-
 .vote-block-inp-wrap {
 	height: 37px;
 	margin: 0 0 9px 10px;
 }
-
 .vote-block-title,
 .vote-block-inp {
 	background:#fff;
@@ -61,44 +56,36 @@ ol.vote-questions input::-webkit-input-placeholder {
 	color: #80868e;
 	opacity:  1;
 }
-
 .vote-block-inp{
 	font-size:14px;
 	margin-top:8px;
 	height:20px;
 }
-
 .vote-checkbox-wrap {margin:16px 0 0 12px;}
-
 .vote-checkbox {
 	margin:0 8px 0 0;
 	vertical-align: middle;
 }
-
 .vote-checkbox-label {
-	color:#9a9d9e;
+	color:#b5e6f6;
 	display:inline-block;
 	font-size:14px;
 	vertical-align:middle;
 }
-
 .vote-new-question-link {
 	border-bottom: 1px dashed transparent;
-	color: #0b66c3;
-	display:inline-block;
-	font-size:13px;
-	font-weight:bold;
+	color: #2fc7f7;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: bold;
 	margin-top: 30px;
-
 	outline: none;
-	text-shadow:0 1px #fff;
-	text-decoration:none;
+	text-shadow: 0 1px #3e4c60;
+	text-decoration: none;
 }
-
 .vote-new-question-link:hover {
 	border-bottom: 1px dashed;
 }
-
 .vote-block-close {
 	outline: none;
 	background:url("images/del-cross.png") no-repeat 9px -17px;
@@ -112,11 +99,9 @@ ol.vote-questions input::-webkit-input-placeholder {
 	right:5px;
 	width:25px;
 }
-
 .vote-block-close:hover {
 	opacity: 1;
 }
-
 .vote-block-title-wrap:hover .vote-block-close {display:block;}
 .vote-block-inp-wrap:hover .vote-block-close {display:block;}
 .adm-workarea-wrap .feed-add-vote-wrap {
@@ -124,7 +109,6 @@ ol.vote-questions input::-webkit-input-placeholder {
 	padding:inherit;
 	margin:inherit;
 }
-
 .adm-workarea-wrap .vote-block-title-wrap,
 .adm-workarea-wrap .vote-block-inp-wrap {
 	background:inherit;

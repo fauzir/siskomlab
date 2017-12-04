@@ -1,1 +1,1 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/intranet/core_planner.js" => "15113165233206","/bitrix/js/intranet/structure.js" => "15113165233028",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/intranet/core_planner.js" => "15113165233206","/bitrix/js/intranet/structure.js" => "15113165233028","/bitrix/js/intranet/notify_dialog/notify_dialog.js" => "15113165234884",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

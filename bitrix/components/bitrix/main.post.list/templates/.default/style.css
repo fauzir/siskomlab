@@ -27,19 +27,19 @@
 }
 
 .feed-com-block .feed-post-text-more {
-	background-image: -webkit-linear-gradient(top, rgba(245, 247, 248, 0.3), rgba(245, 247, 248, 1) 23px);
-	background-image: linear-gradient(to bottom, rgba(245, 247, 248, 0.3), rgba(245, 247, 248, 1) 23px);
+	/*background-image: -webkit-linear-gradient(top, rgba(245, 247, 248, 0.3), rgba(245, 247, 248, 1) 23px);
+	background-image: linear-gradient(to bottom, rgba(245, 247, 248, 0.3), rgba(245, 247, 248, 1) 23px);*/
 	top: 178px;
 }
 
 .feed-com-block-new .feed-post-text-more {
-	background-image: -webkit-linear-gradient(top, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(245, 247, 248, 1) 24px);
-	background-image: linear-gradient(to bottom, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(245, 247, 248, 1) 24px);
+	/*background-image: -webkit-linear-gradient(top, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(245, 247, 248, 1) 24px);
+	background-image: linear-gradient(to bottom, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(245, 247, 248, 1) 24px);*/
 }
 
 .feed-com-block-new.feed-com-block-uf .feed-post-text-more {
-	background-image: -webkit-linear-gradient(top, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(255, 252, 238, 1) 24px);
-	background-image: linear-gradient(to bottom, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(255, 252, 238, 1) 24px);
+	/*background-image: -webkit-linear-gradient(top, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(255, 252, 238, 1) 24px);
+	background-image: linear-gradient(to bottom, rgba(255, 252, 238, 0.3), rgba(255, 252, 238, 1) 23px, rgba(255, 252, 238, 1) 24px);*/
 }
 
 .feed-com-block .feed-post-text-more-but {

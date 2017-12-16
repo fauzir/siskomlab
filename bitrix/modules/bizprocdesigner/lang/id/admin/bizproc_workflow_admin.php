@@ -1,0 +1,37 @@
+<?
+$MESS["BPATT_NO_ENTITY"] = "The document entity is missing.";
+$MESS["BPATT_NO_DOC_TYPE"] = "The document type is required.";
+$MESS["BPATT_NO_EDIT_PAGE"] = "The template change page is missing.";
+$MESS["BPATT_NO_PERMS"] = "You do not have permission to access the templates of this type of document.";
+$MESS["BPATT_ERROR"] = "Kesalahan";
+$MESS["BPATT_NAV"] = "Business Process Templates";
+$MESS["BPATT_NAME"] = "Nama";
+$MESS["BPATT_MODIFIED"] = "Diubah";
+$MESS["BPATT_USER"] = "Modified By";
+$MESS["BPATT_AUTO_EXECUTE"] = "Autorun";
+$MESS["BPATT_DO_EDIT"] = "Edit Business Process Template";
+$MESS["BPATT_AE_NONE"] = "Nomor";
+$MESS["BPATT_AE_CREATE"] = "Membuat";
+$MESS["BPATT_AE_EDIT"] = "Memperbarui";
+$MESS["BPATT_AE_DELETE"] = "Hapus";
+$MESS["BPATT_DO_EDIT1"] = "Edit";
+$MESS["BPATT_DO_DELETE1"] = "Hapus";
+$MESS["BPATT_DO_DELETE1_CONFIRM"] = "Yakin ingin menghapus slide ini?";
+$MESS["BPATT_SUBMENU1_TEXT"] = "State-driven business process";
+$MESS["BPATT_SUBMENU1_TEXT_TITLE"] = "State-driven business process is a continuous business process with access permission distribution to handle documents in different status";
+$MESS["BPATT_SUBMENU2_TEXT"] = "Sequential business process";
+$MESS["BPATT_SUBMENU2_TEXT_TITLE"] = "Sequential business process is a simple business process to perform a series of  consecutive actions on a document";
+$MESS["BPATT_DO_CREATE_TEMPLATE"] = "Create Template";
+$MESS["BPATT_TITLE"] = "Business Process Templates";
+$MESS["BPATT_F_NAME"] = "Nama";
+$MESS["BPATT_F_AUTOEXECUTE"] = "Autorun";
+$MESS["BPATT_ANY"] = "apa saja";
+$MESS["BPATT_F_CREATE"] = "Membuat";
+$MESS["BPATT_F_EDIT"] = "mengedit";
+$MESS["BPATT_USER_PROFILE"] = "500 Profil Pengguna";
+$MESS["BPATT_BACK"] = "Kembali";
+$MESS["BPATT_BACK_TITLE"] = "Back to previous page";
+$MESS["BPATT_DO_CREATE_TEMPLATE1"] = "Add a new template";
+$MESS["BPWFADM_ERR"] = "Error ##ID#: #ERROR_TEXT#";
+$MESS["BPWFADM_ACT"] = "Tindakan";
+?>

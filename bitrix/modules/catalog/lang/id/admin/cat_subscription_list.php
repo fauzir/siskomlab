@@ -1,0 +1,32 @@
+<?
+$MESS["PSL_PAGE_TITLE"] = "langganan";
+$MESS["PSL_ACCESS_DENIED"] = "Akses ditolak.";
+$MESS["PSL_USER_CONTACT"] = "User contact";
+$MESS["PSL_CONTACT_TYPE"] = "Contact type";
+$MESS["PSL_USER"] = "pemakai";
+$MESS["PSL_DATE_FROM"] = "Subscription active since";
+$MESS["PSL_DATE_TO"] = "Subscription active until";
+$MESS["PSL_SITE_ID"] = "Website ID";
+$MESS["PSL_ITEM_ID"] = "ID Produk";
+$MESS["PSL_ACTIVE"] = "Aktif";
+$MESS["PSL_PRODUCT_NAME"] = "Product name";
+$MESS["PSL_FILTER_ID"] = "ID";
+$MESS["PSL_FILTER_USER_ID"] = "pemakai";
+$MESS["PSL_FILTER_USER_CONTACT"] = "User contact";
+$MESS["PSL_FILTER_ITEM_ID"] = "ID Produk";
+$MESS["PSL_FILTER_DATE_FROM"] = "Subscription active since";
+$MESS["PSL_FILTER_DATE_TO"] = "Subscription active until";
+$MESS["PSL_FILTER_CONTACT_TYPE"] = "Contact type";
+$MESS["PSL_FILTER_ACTIVE"] = "Aktif";
+$MESS["PSL_ACTION_DELETE"] = "menghapus";
+$MESS["PSL_ACTION_ACTIVATE"] = "Mengaktifkan";
+$MESS["PSL_ACTION_DEACTIVATE"] = "Menonaktifkan!";
+$MESS["PSL_ACTION_DELETE_CONFIRM"] = "This will delete all the information related to this chapter! Terus";
+$MESS["PSL_PAGES"] = "halaman";
+$MESS["PSL_DELETE_SUBSCRIBE"] = "Hapus";
+$MESS["PSL_LIST_SELECTED"] = "terpilih";
+$MESS["PSL_LIST_CHECKED"] = "Marked:";
+$MESS["PSL_FILTER_ANY"] = "Apa saja";
+$MESS["PSL_FILTER_YES"] = "Ya";
+$MESS["PSL_FILTER_NO"] = "Nomor";
+?>

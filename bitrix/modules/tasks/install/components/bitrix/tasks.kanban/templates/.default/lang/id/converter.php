@@ -1,0 +1,4 @@
+<?
+$MESS["TASKS_KANBAN_CONVERTER_DIALOG_TITLE"] = "Tugas direncanakan waktu";
+$MESS["TASKS_KANBAN_CONVERTER_DIALOG_TEXT"] = "Proyek";
+?>

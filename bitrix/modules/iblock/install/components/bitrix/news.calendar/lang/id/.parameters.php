@@ -1,0 +1,29 @@
+<?
+$MESS["T_IBLOCK_DESC_LIST_ID"] = "Information block code";
+$MESS["T_IBLOCK_DESC_LIST_TYPE"] = "Type of information block (used for verification only)";
+$MESS["T_IBLOCK_DESC_CAL_MVN"] = "Variable name for the month";
+$MESS["T_IBLOCK_DESC_CAL_YVN"] = "Variable name for the year";
+$MESS["T_IBLOCK_DESC_CAL_WS"] = "Start of the week";
+$MESS["T_IBLOCK_DESC_CAL_WS_0"] = "Minggu";
+$MESS["T_IBLOCK_DESC_CAL_WS_1"] = "Senin";
+$MESS["T_IBLOCK_DESC_CAL_WS_2"] = "Selasa";
+$MESS["T_IBLOCK_DESC_CAL_WS_3"] = "Rabu";
+$MESS["T_IBLOCK_DESC_CAL_WS_4"] = "Kamis";
+$MESS["T_IBLOCK_DESC_CAL_WS_5"] = "Jumat";
+$MESS["T_IBLOCK_DESC_CAL_WS_6"] = "Sabtu";
+$MESS["T_IBLOCK_DESC_CAL_DATE_FIELD"] = "Tanggal Lapangan";
+$MESS["T_IBLOCK_DESC_CAL_TYPE"] = "Calendar type";
+$MESS["T_IBLOCK_DESC_CAL_TYPE_EVENTS"] = "Acara";
+$MESS["T_IBLOCK_DESC_CAL_TYPE_NEWS"] = "News";
+$MESS["T_IBLOCK_DESC_CAL_SHOW_YEAR"] = "Show year switcher";
+$MESS["T_IBLOCK_DESC_CAL_SHOW_TIME"] = "Display the news time";
+$MESS["T_IBLOCK_DESC_CAL_DATE_ACTIVE_FROM"] = "Activity date (From)";
+$MESS["T_IBLOCK_DESC_CAL_DATE_ACTIVE_TO"] = "Activity date (Till)";
+$MESS["T_IBLOCK_DESC_CAL_TIMESTAMP_X"] = "Last change date";
+$MESS["T_IBLOCK_DESC_CAL_DATE_CREATE"] = "Tanggal pembuatan";
+$MESS["T_IBLOCK_DESC_CAL_TITLE_LEN"] = "Title length (0 - do not limit)";
+$MESS["T_IBLOCK_DESC_CAL_SHOW_CURRENT_DATE"] = "Display the current month and year";
+$MESS["T_IBLOCK_DESC_CAL_SHOW_MONTH_LIST"] = "Display a dropdown list of Months";
+$MESS["T_IBLOCK_DESC_CAL_NEWS_COUNT"] = "Number of news per date (0 - unlimited)";
+$MESS["IBLOCK_DETAIL_URL"] = "URL of the page with the detail contents";
+?>

@@ -1,0 +1,33 @@
+<?
+$MESS["TASKS_BTN_ADD_TASK"] = "PERINGATAN";
+$MESS["TASKS_BTN_ADD_TASK_BY_TEMPLATE"] = "Kesalahan";
+$MESS["TASKS_BTN_LIST_TASK_TEMPLATE"] = "Nomor";
+$MESS["TASKS_AJAX_ERROR_LOAD_TEMPLATES"] = "Tipe";
+$MESS["TASKS_AJAX_LOAD_TEMPLATES"] = "Tanggal";
+$MESS["TASKS_AJAX_EMPTY_TEMPLATES"] = "Pesan";
+$MESS["TASKS_BTN_GROUP_BY_SUBTASKS"] = "Kesalahan: {0}%s{/0}";
+$MESS["TASKS_BTN_EXPORT"] = "Modul Tugas tidak diinstal.";
+$MESS["TASKS_BTN_EXPORT_OUTLOOK"] = "Simpan";
+$MESS["TASKS_BTN_EXPORT_EXCEL"] = "Batal";
+$MESS["TASKS_BTN_GROUP_WO"] = "Simpan perubahan";
+$MESS["TASKS_BTN_GROUP_SELECT"] = "Batalkan Perubahan";
+$MESS["TASKS_ADD_QUICK_TASK"] = "Perubahan";
+$MESS["TASKS_USER_SORT"] = "menambahkan";
+$MESS["TASKS_BTN_SORT_DIR_ASC"] = "Tambahkan tag baru";
+$MESS["TASKS_BTN_SORT_DIR_DESC"] = "T";
+$MESS["TASKS_BTN_SORT_ID"] = "Komponen untuk membuat, melihat atau mengedit tugas";
+$MESS["TASKS_BTN_SORT_TITLE"] = "TUGAS";
+$MESS["TASKS_BTN_SORT_DEADLINE"] = "ID tugas";
+$MESS["TASKS_BTN_SORT_ORIGINATOR_NAME"] = "Pilih entitas yang terhubung";
+$MESS["TASKS_BTN_SORT_RESPONSIBLE_NAME"] = "Tags";
+$MESS["TASKS_BTN_SORT_PRIORITY"] = "Daftar periksa";
+$MESS["TASKS_BTN_SORT_MARK"] = "Pengingat";
+$MESS["TASKS_BTN_SORT_TIME_ESTIMATE"] = "Riwayat revisi";
+$MESS["TASKS_BTN_SORT_ALLOW_TIME_TRACKING"] = "Waktu yang dihabiskan";
+$MESS["TASKS_BTN_SORT_CREATED_DATE"] = "Pilih data tambahan";
+$MESS["TASKS_BTN_SORT_CHANGED_DATE"] = "Jam Kerja : Hari kerja di Turki berlangsung dari Senin sampai Jumat. Bank, kantor pemerintah dan sebagian besar kantor perusahaan terbuka pada 09:00 dan ditutup pukul 17:00.";
+$MESS["TASKS_BTN_SORT_CLOSED_DATE"] = "bidang khusus";
+$MESS["TASKS_BTN_SORT_SORTING"] = "User ID";
+$MESS["TASKS_BTN_SYNC"] = "kelompok ID";
+$MESS["TASKS_BTN_SYNC_OUTLOOK"] = "Template tugas yang berulang";
+?>

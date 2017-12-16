@@ -1,0 +1,37 @@
+<?
+$MESS["ISL_ID"] = "Temukan catatan yang cocok dengan kriteria pencarian";
+$MESS["ISL_FULL_NAME"] = "Batal";
+$MESS["ISL_NAME"] = "Tampilkan semua catatan";
+$MESS["ISL_LAST_NAME"] = "Simpan Filter Saat Ini";
+$MESS["ISL_SECOND_NAME"] = "Simpan Sebagai ...";
+$MESS["ISL_EMAIL"] = "Filter Disimpan";
+$MESS["ISL_LOGIN"] = "Terapkan Filter Tersimpan";
+$MESS["ISL_DATE_REGISTER"] = "Hasil ditampilkan sesuai kriteria filter.";
+$MESS["ISL_PERSONAL_WWW"] = "Hapus Filter";
+$MESS["ISL_PERSONAL_PROFESSION"] = "d.";
+$MESS["ISL_PERSONAL_ICQ"] = "Lebih";
+$MESS["ISL_PERSONAL_GENDER"] = "sebelumnya";
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Halaman %d";
+$MESS["ISL_PERSONAL_PHOTO"] = "Pages:";
+$MESS["ISL_PERSONAL_PHONE"] = "berikutnya";
+$MESS["ISL_PERSONAL_FAX"] = "Semua";
+$MESS["ISL_PERSONAL_MOBILE"] = "Beberapa ladang hilang.";
+$MESS["ISL_PERSONAL_PAGER"] = "Alamat halaman salah";
+$MESS["ISL_PERSONAL_PHONES"] = "Halaman ini telah ditambahkan ke Favorit.";
+$MESS["ISL_PERSONAL_POST_ADDRESS"] = "Itu adalah kesalahan ..";
+$MESS["ISL_PERSONAL_CITY"] = "Kesalahan memilih alat.";
+$MESS["ISL_PERSONAL_STREET"] = "Ruang kerja saya";
+$MESS["ISL_PERSONAL_STATE"] = "Akses ditolak.";
+$MESS["ISL_PERSONAL_MAILBOX"] = "Menyembunyikan";
+$MESS["ISL_PERSONAL_ZIP"] = "menunjukkan";
+$MESS["ISL_PERSONAL_COUNTRY"] = "Tersembunyi";
+$MESS["ISL_PERSONAL_NOTES"] = "Lebih";
+$MESS["ISL_PERSONAL_POSITION"] = "Menyembunyikan";
+$MESS["ISL_WORK_PHONE"] = "OK";
+$MESS["ISL_ADMIN_NOTES"] = "Simpan perubahan";
+$MESS["ISL_XML_ID"] = "Tambahkan ke My Workspace";
+$MESS["INTR_ISE_TPL_FILTER_DEPARTMENT"] = "Tambahkan ke menu kiri";
+$MESS["INTR_ISE_TPL_FILTER_SUBMIT"] = "Hapus dari menu kiri";
+$MESS["INTR_ISE_TPL_FILTER_CANCEL"] = "Hapus dari My Workspace";
+$MESS["INTR_ISE_TPL_NOTE_NULL"] = "Sembunyikan item";
+?>

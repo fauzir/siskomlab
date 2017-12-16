@@ -1,0 +1,4 @@
+<?
+$MESS["TASK_NAME_TASK_TEMPLATE_READ"] = "September";
+$MESS["TASK_NAME_TASK_TEMPLATE_FULL"] = "Oktober";
+?>

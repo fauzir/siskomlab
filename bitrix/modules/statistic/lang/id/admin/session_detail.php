@@ -1,0 +1,35 @@
+<?
+$MESS["STAT_ADD_TO_STOPLIST_TITLE"] = "tambahkan IP ke stop list";
+$MESS["STAT_EDIT_USER"] = "500 Profil Pengguna";
+$MESS["STAT_VIEW_HITS_LIST_1"] = "Daftar hit untuk ID pengunjung ini";
+$MESS["STAT_VIEW_HITS_LIST_2"] = "Hit list untuk session ID ini";
+$MESS["STAT_NEW_GUEST"] = "(pertama kali)";
+$MESS["STAT_OLD_GUEST"] = "(dikembalikan)";
+$MESS["STAT_TITLE"] = "Rincian sesi";
+$MESS["STAT_ID"] = "id";
+$MESS["STAT_LAST_PAGE"] = "Halaman terakhir";
+$MESS["STAT_NUM_PAGES"] = "Hits";
+$MESS["STAT_TIME"] = "Waktu";
+$MESS["STAT_HOUR"] = "jam";
+$MESS["STAT_MIN"] = "10 Menit";
+$MESS["STAT_SEC"] = "18 detik";
+$MESS["STAT_USER"] = "Pengunjung:";
+$MESS["STAT_NOT_AUTH"] = "(tidak diizinkan)";
+$MESS["STAT_NOT_REGISTERED"] = "tidak terdaftar";
+$MESS["STAT_IP_FIRST"] = "Alamat IP pertama:";
+$MESS["STAT_IP_LAST"] = "Alamat IP terakhir:";
+$MESS["STAT_REFERER"] = "Dari:";
+$MESS["STAT_URL_TO"] = "Halaman pertama";
+$MESS["STAT_NOT_FOUND"] = "Tidak ditemukan";
+$MESS["STAT_ADV"] = "Kampanye iklan:";
+$MESS["STAT_USER_AGENT"] = "Agen pengguna";
+$MESS["STAT_DATE_FIRST"] = "Mulai";
+$MESS["STAT_DATE_LAST"] = "Akhirt";
+$MESS["STAT_CITY"] = "Kota";
+$MESS["STAT_CLOSE"] = "Dekat";
+$MESS["STAT_COUNTRY"] = "Negara";
+$MESS["STAT_REGION"] = "Wilayah";
+$MESS["STAT_SITE"] = "situs";
+$MESS["STAT_STOP"] = "daftar berhenti";
+$MESS["STAT_STOPED"] = "berhenti";
+?>

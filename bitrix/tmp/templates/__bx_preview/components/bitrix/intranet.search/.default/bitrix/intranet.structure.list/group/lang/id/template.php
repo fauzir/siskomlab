@@ -1,0 +1,37 @@
+<?
+$MESS["ISL_ID"] = "Messenger Web";
+$MESS["ISL_FULL_NAME"] = "Layanan Jabber / XMPP";
+$MESS["ISL_NAME"] = "Konferensi video";
+$MESS["ISL_LAST_NAME"] = "Kolaborasi dengan Klien dan Mitra: Ekstranet";
+$MESS["ISL_SECOND_NAME"] = "Mengikat E-mail ke Workgroups (Kirim & Simpan server SMTP)";
+$MESS["ISL_EMAIL"] = "Perancang proses bisnis";
+$MESS["ISL_LOGIN"] = "Daftar (Manajemen Arsip)";
+$MESS["ISL_DATE_REGISTER"] = "Statistik Lalu Lintas Internal";
+$MESS["ISL_PERSONAL_WWW"] = "Manajemen Situs Eksternal - Pengendali";
+$MESS["ISL_PERSONAL_PROFESSION"] = "Jaringan sosial";
+$MESS["ISL_PERSONAL_ICQ"] = "Teman dan Rekan";
+$MESS["ISL_PERSONAL_GENDER"] = "File pribadi";
+$MESS["INTR_ISL_TPL_GENDER_F"] = "Blog Pribadi";
+$MESS["INTR_ISL_TPL_GENDER_M"] = "Galeri Foto Pribadi";
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Forum Pribadi";
+$MESS["ISL_PERSONAL_PHOTO"] = "Microblog";
+$MESS["ISL_PERSONAL_PHONE"] = "Komunikasi Terbuka";
+$MESS["ISL_PERSONAL_FAX"] = "Umpan Blog Karyawan dan Grup";
+$MESS["ISL_PERSONAL_MOBILE"] = "Forum";
+$MESS["ISL_PERSONAL_PAGER"] = "Galeri Foto Karyawan";
+$MESS["ISL_PERSONAL_PHONES"] = "Rahasia";
+$MESS["ISL_PERSONAL_POST_ADDRESS"] = "Masa evaluasi telah habis masa berlakunya.";
+$MESS["ISL_PERSONAL_CITY"] = "Menghabiskan waktu # TIME # hari 30";
+$MESS["ISL_PERSONAL_STREET"] = "Uji selama 30 hari";
+$MESS["ISL_PERSONAL_STATE"] = "Beli";
+$MESS["ISL_PERSONAL_MAILBOX"] = "http://www.bitrixsoft.com/buy/";
+$MESS["ISL_PERSONAL_ZIP"] = "e-pesanan";
+$MESS["ISL_PERSONAL_COUNTRY"] = "Dukungan teknis";
+$MESS["ISL_PERSONAL_NOTES"] = "Situs default";
+$MESS["ISL_WORK_POSITION"] = "Daftar acara di seluruh portal";
+$MESS["ISL_WORK_PHONE"] = "1C: integrasi ZUP";
+$MESS["ISL_ADMIN_NOTES"] = "Rapat dan Briefing";
+$MESS["ISL_XML_ID"] = "Publikasikan data eksternal ke Activity Stream";
+$MESS["ISL_TPL_NOTE_UNFILTERED"] = "Manajemen ide";
+$MESS["ISL_TPL_NOTE_NULL"] = "Aktifkan rating konten";
+?>

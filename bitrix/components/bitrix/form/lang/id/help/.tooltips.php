@@ -1,0 +1,34 @@
+<?
+$MESS["SEF_MODE_TIP"] = "Memeriksa opsi ini memungkinkan mode SEF.";
+$MESS["WEB_FORM_ID_TIP"] = "Daftar drop-down berisi semua formulir web yang ada saat ini. Sebagai alternatif, Anda dapat memilih <i> lainnya </ i> untuk menggunakan ID formulir eksternal yang dilewatkan melalui _REQUEST.";
+$MESS["RESULT_ID_TIP"] = "Secara default, berisi <i> = {\$ _ REQUEST [\" \"RESULT_ID\" \"]} </ i>. Bidang ini dapat berisi kode PHP lainnya yang mengevaluasi ke RESULT_ID. ";
+$MESS["START_PAGE_TIP"] = "Jika Anda memilih <i> Daftar hasil </ i>, halaman utama akan menampilkan daftar hasil untuk formulir web tertentu. <br /> Jika Anda memilih <i> halaman pembuatan Hasil </ i>, pengunjung akan lihat bentuk web yang dipilih";
+$MESS["SHOW_LIST_PAGE_TIP"] = "Jika Anda memilih <i> halaman hasil pembuatan </ i> sebagai halaman utama, memeriksa opsi ini akan membuka halaman hasil formulir web saat pengunjung selesai dan menyimpan formulir web.";
+$MESS["SHOW_EDIT_PAGE_TIP"] = "Jika opsi ini aktif, link <i> Edit </ i> akan ditampilkan di samping hasilnya.";
+$MESS["SHOW_VIEW_PAGE_TIP"] = "Jika opsi ini aktif, link tampilan hasil akan ditampilkan pada halaman hasil formulir web.";
+$MESS["SUCCESS_URL_TIP"] = "Letakkan ke halaman yang berisi pesan yang menginformasikan pengunjung tentang berhasil menyelesaikan formulir web. Digunakan jika hasil form web dibuat oleh pengunjung yang tidak diperbolehkan untuk mengedit hasilnya. Anda bisa membiarkan kolom ini kosong, yang akan menampilkan pesan default.";
+$MESS["SHOW_ANSWER_VALUE_TIP"] = "Memeriksa opsi ini dengan menampilkan nilai parameter <b> ANSWER_VALUE </ b> dari bentuk web.";
+$MESS["SHOW_ADDITIONAL_TIP"] = "Memeriksa opsi ini akan menampilkan kolom form web tambahan, jika ada.";
+$MESS["SHOW_STATUS_TIP"] = "Memeriksa opsi ini akan menampilkan status hasil saat ini pada halaman ulasan hasil.";
+$MESS["EDIT_ADDITIONAL_TIP"] = "Memeriksa opsi ini akan menampilkan bidang entri teks tambahan.";
+$MESS["EDIT_STATUS_TIP"] = "Jika opsi <i> Menampilkan status hasil saat ini </ i> aktif, mode perubahan status akan dipindahkan. Menghapus tanda centang pada opsi ini akan menampilkan informasi tentang status hasil saat ini.";
+$MESS["NOT_SHOW_FILTER_TIP"] = "Centang opsi ini untuk menyembunyikan kolom formulir yang tidak boleh ditampilkan di filter pada halaman ringkasan hasil.";
+$MESS["NOT_SHOW_TABLE_TIP"] = "Centang opsi ini untuk menyembunyikan kolom formulir yang tidak boleh ditampilkan di tabel ringkasan hasil.";
+$MESS["CHAIN_ITEM_TEXT_TIP"] = "Di sini Anda bisa menentukan judul item rantai navigasi. Misalnya: <b> Formulir Baru </ b>.";
+$MESS["CHAIN_ITEM_LINK_TIP"] = "Menentukan link untuk item rantai navigasi additinal. Sebagai contoh: <b> / myfolder / </ b>.";
+$MESS["CACHE_TYPE_TIP"] = "<i> Auto </ i>: cache valid selama waktu yang telah ditentukan sebelumnya dalam pengaturan cache; <br /> <i> Cache </ i>: selalu tembolok untuk periode yang ditentukan di kolom berikutnya; <br / > <i> Jangan cahce </ i>: tidak ada caching yang dilakukan. ";
+$MESS["CACHE_TIME_TIP"] = "Tentukan di sini periode waktu dimana cache valid.";
+$MESS["VARIABLE_ALIASES_action_TIP"] = "Menentukan nama variabel dimana nama tindakan akan dilewati. Tindakan \" edit \" beralih untuk mengedit hasilnya; \" daftar \" membuka halaman dengan daftar hasil. ";
+$MESS["SEF_FOLDER_TIP"] = "Jalan menuju direktori kerja komponen. Jalan bisa ada, atau bisa jadi virtual.";
+$MESS["SEF_URL_TEMPLATES_list_TIP"] = "Jika Anda memilih <i> Daftar hasil </ i> sebagai halaman utama, Anda dapat membiarkan bidang ini kosong. Jika tidak, tentukan di sini nama folder (misal <b> list / </ b>) yang akan ditambahkan ke folder SEF saat pengunjung membuka halaman yang berisi daftar hasil.";
+$MESS["SEF_URL_TEMPLATES_new_TIP"] = "Jika Anda memilih halaman hasil pembuatan sebagai halaman utama, Anda bisa membiarkan bidang ini kosong. Jika tidak, tentukan di sini nama folder yang sesuai (misal <b> baru / </ b>).";
+$MESS["SEF_URL_TEMPLATES_edit_TIP"] = "Menentukan nama folder yang berisi ID hasil formulir web. Sebagai contoh: <b> edit / # RESULT_ID # / </ b>.";
+$MESS["SEF_URL_TEMPLATES_view_TIP"] = "Menentukan jJalur halaman tampilan hasil formulir web. Nama folder harus berisi ID hasil formulir web. Sebagai contoh: <b> view / # RESULT_ID # / </ b>.";
+$MESS["IGNORE_CUSTOM_TEMPLATE_TIP"] = "Jika dicentang, template formulir default akan digunakan.";
+$MESS["AJAX_MODE_TIP"] = "Memungkinkan AJAX dalam komponen.";
+$MESS["USE_EXTENDED_ERRORS_TIP"] = "Jika dicentang, pesan kesalahan akan ditampilkan, kolom yang salah akan disorot.";
+$MESS["AJAX_OPTION_SHADOW_TIP"] = "Menentukan area teduh dimodifikasi pada transisi AJAX.";
+$MESS["AJAX_OPTION_JUMP_TIP"] = "Menentukan untuk menggulir ke komponen saat transisi AJAX selesai.";
+$MESS["AJAX_OPTION_STYLE_TIP"] = "Menentukan untuk mendownload dan memproses gaya CSS komponen pada transisi AJAX.";
+$MESS["AJAX_OPTION_HISTORY_TIP"] = "Mengizinkan\" \"Kembali\" \"dan\" \"Teruskan\" \"tombol browser untuk transisi AJAX.";
+?>

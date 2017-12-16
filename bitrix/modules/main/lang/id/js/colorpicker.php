@@ -1,0 +1,5 @@
+<?
+$MESS["MAIN_COLORPICKER_BY_DEFAULT"] = "Default";
+$MESS["MAIN_COLORPICKER_SPECIFY_HEX_COLOR"] = "warna kustom";
+$MESS["MAIN_COLORPICKER_HEX_COLOR"] = "Hex color value";
+?>

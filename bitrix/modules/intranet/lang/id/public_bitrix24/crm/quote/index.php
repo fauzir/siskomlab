@@ -1,0 +1,3 @@
+<?
+$MESS["TITLE"] = "Tanda kutip";
+?>

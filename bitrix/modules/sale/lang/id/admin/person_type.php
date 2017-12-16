@@ -1,0 +1,37 @@
+<?
+$MESS["PERSON_TYPE_TITLE"] = "Payer type";
+$MESS["ERROR_ADD_REC"] = "Error adding a record ";
+$MESS["ERROR_NAME_REC"] = "The \"Name\" field is not set in the record";
+$MESS["ERROR_LID_REC"] = "The \"Site\" field is not set in the record";
+$MESS["ERROR_UPDATE_REC"] = "Error updating the record ";
+$MESS["SALE_F_FILTER"] = "Menyaring";
+$MESS["LANG_FILTER_NAME"] = "situs";
+$MESS["LANG_FILTER_BTN"] = "Set Filter";
+$MESS["SALE_F_DEL"] = "Hapus Penyaring";
+$MESS["LANG_ALL"] = "All sites";
+$MESS["PERS_TYPE_NAV"] = "Payer types";
+$MESS["PERS_TYPE_NAME"] = "Nama";
+$MESS["PERS_TYPE_LID"] = "situs";
+$MESS["PERS_TYPE_SORT"] = "Menyortir";
+$MESS["PERS_TYPE_DEL"] = "Hapus";
+$MESS["PERS_TYPE_UPD"] = "Simpan";
+$MESS["PERS_TYPE_RESET"] = "Ulang";
+$MESS["PERS_TYPE_ID"] = "ID";
+$MESS["PERS_TYPE_DEL_CONF"] = "The payer type deletion will cause removing all its properties and settings. If this payer type contains orders, it will not be deleted.";
+$MESS["SALE_PROPS"] = "Properti";
+$MESS["SPT_ALL"] = "Semua";
+$MESS["SPT_UNSET"] = "Ulang";
+$MESS["SPTAN_ERROR_UPDATE"] = "Error modifying the record";
+$MESS["SPTAN_ERROR_DELETE"] = "Error deleting the record";
+$MESS["PERS_PROPS"] = "Properti";
+$MESS["SPTAN_UPDATE_ALT"] = "Edit payer type";
+$MESS["SPTAN_DELETE_ALT1"] = "Delete payer type";
+$MESS["SPTAN_ADD_NEW"] = "New payer type";
+$MESS["SPTAN_ADD_NEW_ALT"] = "Click to add a new payer type";
+$MESS["SPTAN_VIEW_PROPS"] = "Go to list of properties";
+$MESS["PERS_ACTIVE"] = "Aktif";
+$MESS["SALE_YES"] = "Ya";
+$MESS["SALE_NO"] = "Nomor";
+$MESS["SALE_FIELD_ACTIVE"] = "Aktif";
+$MESS["SALE_ALL"] = "semua";
+?>

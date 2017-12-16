@@ -1,0 +1,36 @@
+<?
+$MESS["MOBILE_LOG_DESTINATION_MORE_1"] = "dan # COUNT # penerima lebih banyak";
+$MESS["MOBILE_LOG_DESTINATION_MORE_2"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_3"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_4"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_5"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_6"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_7"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_8"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_9"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_DESTINATION_MORE_0"] = "dan # COUNT # lebih banyak penerima";
+$MESS["MOBILE_LOG_MORE"] = "Lebih";
+$MESS["MOBILE_LOG_EXPAND"] = "Lebih";
+$MESS["MOBILE_LOG_COMMENT_BUTTON_MORE"] = "Tampilkan komentar <i> � </ i> # COMMENTS #";
+$MESS["MOBILE_LOG_COMMENT_ADD_TITLE"] = "Mengirim pesan…";
+$MESS["MOBILE_LOG_COMMENT_ADD_BUTTON_SEND"] = "Kirim";
+$MESS["MOBILE_LOG_COMMENT_FORMAT_TIME"] = "g:i a";
+$MESS["MOBILE_LOG_COMMENT_FORMAT_DATE"] = "d F, g: ia";
+$MESS["MOBILE_LOG_COMMENT_FORMAT_DATE_YEAR"] = "d FY, g: ia";
+$MESS["MOBILE_LOG_LIKE_ME"] = "Kamu";
+$MESS["MOBILE_LOG_LIKE_COUNT_USERS"] = "# COUNT # # USERS #";
+$MESS["MOBILE_LOG_LIKE_YOU"] = "Kamu menyukainya?";
+$MESS["MOBILE_LOG_LIKE_YOU_OTHERS"] = "# YOU # dan # COUNT_USERS # menyukainya.";
+$MESS["MOBILE_LOG_LIKE_OTHERS"] = "# COUNT_USERS # menyukainya.";
+$MESS["MOBILE_LOG_LIKE_USERS_1"] = "pemakai";
+$MESS["MOBILE_LOG_LIKE_USERS_2"] = "Pengguna";
+$MESS["MOBILE_LOG_COMMENT_EDIT"] = "Edit";
+$MESS["MOBILE_LOG_COMMENT_DELETE"] = "Hapus";
+$MESS["MOBILE_LOG_COMMENTS"] = "komentar";
+$MESS["MOBILE_LOG_COMMENTS_2"] = "komentar:";
+$MESS["MOBILE_LOG_LIKE_ACTION"] = "suka";
+$MESS["MOBILE_LOG_LIKE2_ACTION"] = "Itu seperti...";
+$MESS["MOBILE_LOG_COMMENT_ACTION"] = "Komentar";
+$MESS["MOBILE_LOG_COMMENT_REPLY"] = "Balas";
+$MESS["MOBILE_LOG_COMMENT_LIKES_LIST"] = "Like";
+?>

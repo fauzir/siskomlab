@@ -1,0 +1,33 @@
+<?
+$MESS["comp_prop_close"] = "Tutup Jendela";
+$MESS["comp_prop_err_param"] = "Incorrect input parameters.";
+$MESS["comp_prop_err_file"] = "Not enough permissions to access script containing component call.";
+$MESS["comp_prop_err_open"] = "Unable to open script containing component call.";
+$MESS["comp_prop_err_save"] = "Error saving script file. Changes not saved.";
+$MESS["comp_prop_name"] = "Nama";
+$MESS["comp_prop_desc"] = "Deskripsi";
+$MESS["comp_prop_path"] = "Component call path";
+$MESS["comp_prop_save"] = "Simpan";
+$MESS["comp_prop_save_title"] = "Save component parameters";
+$MESS["comp_prop_cancel"] = "Batal";
+$MESS["comp_prop_cancel_title"] = "Close window and do not save changes";
+$MESS["comp_prop_close_w"] = "Dekat";
+$MESS["comp_prop_err_comp"] = "Failed to locate a component call code.";
+$MESS["comp_prop_template"] = "Template";
+$MESS["comp_prop_template_sys"] = "Sistem";
+$MESS["comp_templ_template"] = "Component template";
+$MESS["comp_templ_error_copy"] = "Error on copying template";
+$MESS["comp_templ_cur_site_template"] = "In use in site template:";
+$MESS["comp_templ_system"] = "system template";
+$MESS["comp_templ_cur_template"] = "Current component template";
+$MESS["comp_templ_new_template"] = "Copy to site template";
+$MESS["comp_templ_new_tpl"] = "New component template name";
+$MESS["comp_templ_use"] = "Apply new component template";
+$MESS["comp_templ_edit"] = "Edit Template";
+$MESS["template_copy_title"] = "Copy component template";
+$MESS["template_copy_def"] = "by default";
+$MESS["template_copy_cur"] = "arus";
+$MESS["template_copy_sel"] = "terpilih";
+$MESS["copy_comp_sys_templ"] = "The component system template must be copied to the site template before you can modify it.";
+$MESS["comp_templ_def_templ"] = "Template default";
+?>

@@ -1,0 +1,5 @@
+<?
+$MESS["LEARNING_FILTER_USER_NAME"] = "Nama depan";
+$MESS["LEARNING_FILTER_USER_LAST_NAME"] = "Nama keluarga";
+$MESS["LEARNING_FILTER_USER_LOGIN"] = "Masuk";
+?>

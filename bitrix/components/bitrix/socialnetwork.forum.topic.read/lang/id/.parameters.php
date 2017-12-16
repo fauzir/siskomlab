@@ -1,0 +1,31 @@
+<?
+$MESS["F_URL_TEMPLATES"] = "Pemrosesan URL";
+$MESS["F_MESSAGES_PER_PAGE"] = "Jumlah pesan per halaman";
+$MESS["F_DEFAULT_TID"] = "Topic ID";
+$MESS["F_DEFAULT_FID"] = "ID Forum";
+$MESS["F_DEFAULT_MID"] = "ID pesan";
+$MESS["F_DEFAULT_PATH_TO_SMILE"] = "Folder Path to Smiles (relatif root)";
+$MESS["F_READ_TEMPLATE"] = "Halaman baca topik";
+$MESS["F_LIST_TEMPLATE"] = "Halaman daftar topik";
+$MESS["F_PROFILE_VIEW_TEMPLATE"] = "Halaman profil";
+$MESS["F_TOPIC_NEW_TEMPLATE"] = "Topik Baru Buat halaman";
+$MESS["F_DATE_FORMAT"] = "Format tanggal";
+$MESS["F_DATE_TIME_FORMAT"] = "Format tanggal dan waktu";
+$MESS["F_PAGE_NAVIGATION_TEMPLATE"] = "Nama template navigasi breadcrumb";
+$MESS["F_PAGEN"] = "Nomor Navigasi Pagewise untuk digunakan pada Laman Sasaran";
+$MESS["F_MESSAGE_TEMPLATE"] = "Halaman tampilan pesan (dengan ID pesan)";
+$MESS["F_IMAGE_SIZE"] = "Ukuran gambar terlampir";
+$MESS["F_SOCNET_GROUP_ID"] = "kelompok ID";
+$MESS["F_USER_ID"] = "User ID";
+$MESS["F_PAGE_NAVIGATION_WINDOW"] = "Jumlah halaman dalam navigasi halaman";
+$MESS["F_PAGE_NAVIGATION_SHOW_ALL"] = "Aktifkan opsi Show All Pages";
+$MESS["F_RATING_ID"] = "penilaian";
+$MESS["SHOW_RATING"] = "Tampilkan Rating";
+$MESS["SHOW_RATING_CONFIG"] = "kegagalan";
+$MESS["RATING_TYPE"] = "Rating tombol disain";
+$MESS["RATING_TYPE_CONFIG"] = "kegagalan";
+$MESS["RATING_TYPE_STANDART_TEXT"] = "Seperti / Tidak seperti (teks)";
+$MESS["RATING_TYPE_STANDART_GRAPHIC"] = "Seperti / Tidak seperti (gambar)";
+$MESS["RATING_TYPE_LIKE_TEXT"] = "Seperti (teks)";
+$MESS["RATING_TYPE_LIKE_GRAPHIC"] = "Seperti (gambar)";
+?>

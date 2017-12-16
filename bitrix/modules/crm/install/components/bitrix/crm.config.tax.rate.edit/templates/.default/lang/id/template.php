@@ -1,0 +1,15 @@
+<?
+$MESS["CRM_TAXRATE_SAVE_BUTTON"] = "Simpan";
+$MESS["CRM_TAXRATE_TITLE"] = "+ Tambah Tarif PPN";
+$MESS["CRM_TAXRATE_FIELDS_TAX"] = "Pajak";
+$MESS["CRM_TAXRATE_FIELDS_ACTIVE"] = "Aktif";
+$MESS["CRM_TAXRATE_FIELDS_PERSON_TYPE_ID"] = "Client type";
+$MESS["CRM_ANY"] = "Semua";
+$MESS["CRM_TAXRATE_FIELDS_VALUE"] = "Menilai";
+$MESS["CRM_TAXRATE_FIELDS_IS_IN_PRICE"] = "Include tax in price";
+$MESS["CRM_TAXRATE_FIELDS_APPLY_ORDER"] = "Order of application";
+$MESS["CRM_TAXRATE_FIELDS_LOCATION1"] = "lokasi";
+$MESS["CRM_TAXRATE_FIELDS_LOCATION2"] = "Grup Lokasi";
+$MESS["CRM_TAXRATE_FIELDS_VALUE_CHECK"] = "Tax rate can only be a number.";
+$MESS["CRM_TAXRATE_TITLE_EDIT"] = "Edit Tax Rate";
+?>

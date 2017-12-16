@@ -1,0 +1,37 @@
+<?
+$MESS["CRM_EDIT_BTN_TTL"] = "Click to edit";
+$MESS["CRM_LOCK_BTN_TTL"] = "Cannot edit this item";
+$MESS["CRM_INVOICE_SHOW_TITLE"] = "Invoice ##ACCOUNT_NUMBER# &mdash; #ORDER_TOPIC#";
+$MESS["CRM_INVOICE_SHOW_LEGEND"] = "invoice ##ACCOUNT_NUMBER#";
+$MESS["CRM_INVOICE_DATE_INSERT"] = "Dibuat Pada";
+$MESS["CRM_INVOICE_DATE_BILL"] = "Tanggal faktur:";
+$MESS["CRM_INVOICE_DATE_UPDATE"] = "diubah pada";
+$MESS["CRM_INVOICE_DATE_PAY_BEFORE"] = "Pay before";
+$MESS["CRM_INVOICE_SIDEBAR_STATUS"] = "Status";
+$MESS["CRM_DEAL_OPENED"] = "Viewing allowed to all users";
+$MESS["CRM_DEAL_NOT_OPENED"] = "Viewing of this deal limited";
+$MESS["CRM_DEAL_LINK"] = "Deal invoice";
+$MESS["CRM_COMPANY_LINK"] = "Perusahaan";
+$MESS["CRM_TAB_PRODUCT_ROWS"] = "produk";
+$MESS["CRM_TAB_PRODUCT_ROWS_TITLE"] = "Invoice products";
+$MESS["CRM_INVOICE_COMMENT"] = "Sales representative's comment";
+$MESS["CRM_INVOICE_PRICE_SHORT"] = "Total";
+$MESS["CRM_DEAL_CLIENT_NOT_ASSIGNED"] = "[not assigned]";
+$MESS["INVOICE_USER_DESCRIPTION"] = "Invoice notes (appears on invoice)";
+$MESS["CRM_INVOICE_TITLE"] = "Faktur";
+$MESS["CRM_INVOICE_FIELD_PAY_VOUCHER_DATE"] = "Tanggal Bayar";
+$MESS["CRM_INVOICE_FIELD_PAY_VOUCHER_NUM"] = "Document #";
+$MESS["CRM_INVOICE_FIELD_DATE_MARKED"] = "Cancellation date";
+$MESS["CRM_INVOICE_FIELD_REASON_MARKED"] = "Komentar";
+$MESS["CRM_INVOICE_CLIENT"] = "Contractor";
+$MESS["CRM_CONTACT_LINK"] = "Contact person";
+$MESS["CRM_TAB_HISTORY"] = "Sejarah";
+$MESS["CRM_TAB_HISTORY_TITLE"] = "Invoice change history";
+$MESS["CRM_QUOTE_LINK"] = "Kutipan";
+$MESS["CRM_TAB_1"] = "402 Informasi Faktur";
+$MESS["CRM_TAB_1_TITLE"] = "Invoice parameters";
+$MESS["CRM_INVOICE_PUBLIC_LINK_COPY"] = "Salinan";
+$MESS["CRM_TAB_TREE"] = "Keterikatan";
+$MESS["CRM_TAB_TREE_TITLE"] = "Links to other entities and items";
+$MESS["CRM_INVOICE_RECUR_SHOW_TITLE"] = "Recurring invoice ##ACCOUNT_NUMBER# &mdash; #ORDER_TOPIC#";
+?>

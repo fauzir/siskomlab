@@ -1,0 +1,31 @@
+<?
+$MESS["STAT_RECORDS_LIST"] = "Halaman dan bagian popularitas";
+$MESS["STAT_SECTION_PAGES"] = "Catatan";
+$MESS["STAT_F_SECTIONS"] = "Page, Section";
+$MESS["STAT_F_VIEW"] = "Lihat";
+$MESS["STAT_F_VIEW_SECTIONS"] = "bagian saja";
+$MESS["STAT_F_VIEW_FILES"] = "halaman saja";
+$MESS["STAT_SECTION_GRAPH"] = "Grafik lalu lintas untuk halaman ini";
+$MESS["STAT_SECTION_LINK_STAT"] = "Link statistik untuk halaman ini";
+$MESS["STAT_GO"] = "Ikuti link";
+$MESS["STAT_T_HITS_DIAGRAM"] = "Kepopuleran";
+$MESS["STAT_T_EXIT_DIAGRAM"] = "Daftar titik keluar";
+$MESS["STAT_T_ENTER_DIAGRAM"] = "Daftar titik masuk";
+$MESS["STAT_GROUP_BY_HITS"] = "Hits";
+$MESS["STAT_GROUP_BY_EXITS"] = "Keluar poin";
+$MESS["STAT_GROUP_BY_ENTERS"] = "Titik masuk";
+$MESS["STAT_PERCENT"] = "Persen";
+$MESS["STAT_NO_DATA"] = "Tidak ada data untuk menggambar diagram";
+$MESS["STAT_OTHER"] = "Lain";
+$MESS["STAT_ATTENTION_GOTO"] = "Klik simbol\" \"& raquo;\" \"untuk menavigasi ke bagian atau halaman.";
+$MESS["STAT_F_ADV"] = "Kampanye iklan";
+$MESS["STAT_F_ADV_DATA_TYPE"] = "Jenis data untuk kampanye iklan";
+$MESS["STAT_ADV_NO_BACK"] = "hits langsung";
+$MESS["STAT_ADV_BACK"] = "Kembali";
+$MESS["STAT_ADV_SUMMA"] = "total baik langsung hits dan kembali";
+$MESS["STAT_PAGE"] = "Bagian / halaman";
+$MESS["STAT_HITS"] = "Hits";
+$MESS["STAT_SESSIONS"] = "Sesi";
+$MESS["STAT_FILTER_PAGE_DIAGRAM_ALT"] = "Tampilkan diagram hit untuk bagian ini";
+$MESS["STAT_ATTENTION"] = "PERINGATAN";
+?>

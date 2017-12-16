@@ -1,0 +1,29 @@
+<?
+$MESS["BIZPROC_WFEDIT_MENU_PARAMS_TITLE"] = "Parameter templat, variabel, autorun";
+$MESS["BIZPROC_WFEDIT_MENU_PARAMS"] = "Parameter Template";
+$MESS["BIZPROC_WFEDIT_MENU_LIST"] = "template";
+$MESS["BIZPROC_WFEDIT_MENU_LIST_TITLE"] = "Lihat template";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_WARN"] = "Semua perubahan akan hilang jika Anda tidak menyimpannya. Terus";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_STATE"] = "Proses bisnis yang digerakkan oleh negara";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_STATE_TITLE"] = "Proses bisnis berbasis negara adalah proses bisnis yang berkesinambungan dengan izin akses distribusi untuk menangani dokumen dalam status yang berbeda";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_SEQ"] = "Proses bisnis berurutan";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_SEQ_TITLE"] = "Proses bisnis sekuensial adalah proses bisnis yang sederhana untuk melakukan serangkaian tindakan berturut-turut pada sebuah dokumen";
+$MESS["BIZPROC_WFEDIT_MENU_ADD"] = "Buat Template";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_TITLE"] = "Tambahkan template baru";
+$MESS["BIZPROC_WFEDIT_SAVE_BUTTON"] = "Simpan";
+$MESS["BIZPROC_WFEDIT_APPLY_BUTTON"] = "Terapkan";
+$MESS["BIZPROC_WFEDIT_CANCEL_BUTTON"] = "Batalkan";
+$MESS["BIZPROC_WFEDIT_MENU_EXPORT"] = "Ekspor";
+$MESS["BIZPROC_WFEDIT_MENU_EXPORT_TITLE"] = "Template Proses Bisnis Ekspor";
+$MESS["BIZPROC_WFEDIT_MENU_IMPORT"] = "Impor";
+$MESS["BIZPROC_WFEDIT_MENU_IMPORT_TITLE"] = "Template Proses Bisnis Impor";
+$MESS["BIZPROC_IMPORT_BUTTON"] = "Impor";
+$MESS["BIZPROC_IMPORT_TITLE"] = "Impor Template";
+$MESS["BIZPROC_IMPORT_FILE"] = "Mengajukan";
+$MESS["BIZPROC_WFEDIT_MENU_IMPORT_PROMT"] = "Template proses bisnis saat ini akan diganti dengan yang diimpor. LANJUTKAN";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE"] = "Template lama";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_CP"] = "97%";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_B24"] = "19)";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_P1"] = "Anda memasang modul\" \"Drive\" \"yang baru. Template yang dibuat sebelum upgrade ke modul Drive mungkin tidak bekerja dengan benar. ";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_P2"] = "Jika Anda mengimpor template yang dibuat di situs yang berbeda sebelum modul Drive baru dilepaskan (sebelum # DATE #), tandai template sebagai\" \"Tua\" \"sehingga parameter template dan varialbes ditangani dengan benar oleh proses internal . ";
+?>

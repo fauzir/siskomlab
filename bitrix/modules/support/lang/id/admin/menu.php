@@ -1,0 +1,33 @@
+<?
+$MESS["SUP_M_SUPPORT"] = "ID";
+$MESS["SUP_M_TICKETS"] = "Situs";
+$MESS["SUP_M_TICKETS_ALT"] = "Tipe";
+$MESS["SUP_M_REPORT_TABLE_ALT"] = "Semua";
+$MESS["SUP_M_REPORT_GRAPH"] = "Judul";
+$MESS["SUP_M_REPORT_GRAPH_ALT"] = "Kode mnemonik";
+$MESS["SUP_M_CATEGORY"] = "tanggung jawab";
+$MESS["SUP_M_CRITICALITY"] = "Catatan";
+$MESS["SUP_M_STATUS"] = "Menyortir";
+$MESS["SUP_M_MARK"] = "Situs";
+$MESS["SUP_M_FUA"] = "Judul";
+$MESS["SUP_M_SOURCE"] = "tanggung jawab";
+$MESS["SUP_M_DIFFICULTY"] = "213 Ubah";
+$MESS["SUP_M_SLA"] = "Hapus catatan";
+$MESS["SUP_M_DICT"] = "Yakin ingin menghapus rekaman?";
+$MESS["SUP_M_SUPPORT_TITLE"] = "Hapus";
+$MESS["SUP_M_DICT_TITLE"] = "Simpan";
+$MESS["SUP_M_DIFFICULTY_TITLE"] = "Ulang";
+$MESS["SUP_M_GROUPS"] = "Anda dapat menetapkan orang yang bertanggung jawab untuk jenis kamus ini";
+$MESS["SUP_M_GROUPS_TITLE"] = "Secara default";
+$MESS["SUP_M_USER_IN_GROUPS"] = "kategori";
+$MESS["SUP_M_USER_IN_GROUPS_TITLE"] = "Prioritas";
+$MESS["SUP_M_COUPONS"] = "Status";
+$MESS["SUP_M_COUPONS_TITLE"] = "Tingkat kesulitan";
+$MESS["SUP_M_COUPONS_LOG"] = "Penilaian jawaban";
+$MESS["SUP_M_COUPONS_LOG_TITLE"] = "Jawaban yang sering digunakan";
+$MESS["SUP_M_REPORT_TABLE"] = "Sumber";
+$MESS["SUP_M_TIMETABLE"] = "Tingkat kesulitan";
+$MESS["SUP_M_HOLIDAYS"] = "Kategori";
+$MESS["SUP_M_SHEDULE"] = "Prioritas";
+$MESS["SUP_M_SHEDULE_TITLE"] = "Status";
+?>

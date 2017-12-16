@@ -1,17 +1,17 @@
 <?
-$MESS["SERVICE_DRIVER_FORM_NAME"] = "Driver Service";
+$MESS["ADMIN_NOTE_QUESTION"] = "Reply";
+$MESS["COMMENT_QUESTION"] = "Comment";
+$MESS["DATE_QUESTION"] = "Date";
+$MESS["DESTINATION_QUESTION"] = "Destination";
 $MESS["DRIVER_SERVICES_MENU_NAME"] = "Driver Service";
+$MESS["DURATION_QUESTION"] = "Duration (hours)";
+$MESS["PLACES_QUESTION"] = "Seats";
 $MESS["SERVICE_DRIVER_FORM_BUTTON"] = "Submit Order";
-$MESS["VEHICLE_TYPE_QUESTION"] = "Vehicle Type";
+$MESS["SERVICE_DRIVER_FORM_NAME"] = "Driver Service";
+$MESS["TIME_QUESTION"] = "Time";
 $MESS["VEHICLE_TYPE_ANSWER1"] = "motor car";
 $MESS["VEHICLE_TYPE_ANSWER2"] = "lorry";
 $MESS["VEHICLE_TYPE_ANSWER3"] = "bus";
 $MESS["VEHICLE_TYPE_ANSWER4"] = "VIP";
-$MESS["DATE_QUESTION"] = "Date";
-$MESS["TIME_QUESTION"] = "Time";
-$MESS["DESTINATION_QUESTION"] = "Destination";
-$MESS["DURATION_QUESTION"] = "Duration (hours)";
-$MESS["PLACES_QUESTION"] = "Seats";
-$MESS["COMMENT_QUESTION"] = "Comment";
-$MESS["ADMIN_NOTE_QUESTION"] = "Reply";
+$MESS["VEHICLE_TYPE_QUESTION"] = "Vehicle Type";
 ?>

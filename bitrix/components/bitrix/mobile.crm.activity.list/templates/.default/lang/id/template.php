@@ -1,0 +1,17 @@
+<?
+$MESS["M_CRM_ACTIVITY_LIST_PULL_TEXT"] = "Tarik ke bawah untuk menyegarkan ...";
+$MESS["M_CRM_ACTIVITY_LIST_DOWN_TEXT"] = "Rilis untuk menyegarkan ...";
+$MESS["M_CRM_ACTIVITY_LIST_LOAD_TEXT"] = "Memperbarui ...";
+$MESS["M_CRM_ACTIVITY_LIST_SEARCH_PLACEHOLDER"] = "Cari berdasarkan nama";
+$MESS["M_CRM_ACTIVITY_LIST_SEARCH_BUTTON"] = "Cari";
+$MESS["M_CRM_ACTIVITY_LIST_FILTER_NONE"] = "Semua aktivitas";
+$MESS["M_CRM_ACTIVITY_LIST_FILTER_CUSTOM"] = "Hasil Pencarian";
+$MESS["M_CRM_ACTIVITY_LIST_IMPORTANT"] = "Penting";
+$MESS["M_CRM_ACTIVITY_LIST_RUBRIC_FILTER_NONE"] = "Semua";
+$MESS["M_CRM_ACTIVITY_LIST_RUBRIC_LEGEND"] = "Aktivitas";
+$MESS["M_CRM_ACTIVITY_LIST_TIME_NOT_DEFINED"] = "Tidak diatur";
+$MESS["M_CRM_ACTIVITY_LIST_CREATE_CALL"] = "Panggilan Baru";
+$MESS["M_CRM_ACTIVITY_LIST_CREATE_MEETING"] = "Pertemuan baru";
+$MESS["M_CRM_ACTIVITY_LIST_CREATE_EMAIL"] = "Email baru";
+$MESS["M_CRM_ACTIVITY_LIST_NOTHING_FOUND"] = "Tidak ada kegiatan yang ditemukan.";
+?>

@@ -1,0 +1,7 @@
+<?
+$MESS["TASKS_SONET_LOG_DESCRIPTION"] = "tak satupun";
+$MESS["TASKS_SONET_LOG_RESPONSIBLE_ID"] = "Positif";
+$MESS["TASKS_SONET_LOG_LABEL_TITLE"] = "Negatif";
+$MESS["TASKS_SONET_LOG_STATUS_CHANGED"] = "Klik dua kali untuk melihat";
+$MESS["TASKS_SONET_LOG_STATUS"] = "Terapkan";
+?>

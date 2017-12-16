@@ -1,0 +1,35 @@
+<?
+$MESS["INTR_MAIL_MANAGE_ADD_MAILBOX"] = "Tambahkan kotak pesan";
+$MESS["INTR_MAIL_MANAGE_DOMAIN_ADD"] = "Lampirkan domain";
+$MESS["INTR_MAIL_MANAGE_DOMAIN_EDIT"] = "Konfigurasikan koneksi";
+$MESS["INTR_MAIL_MANAGE_SEARCH_TITLE"] = "Menyaring";
+$MESS["INTR_MAIL_MANAGE_SEARCH_PROMPT"] = "Cari kotak pesan";
+$MESS["INTR_MAIL_MANAGE_SEARCH_BTN"] = "Menemukan";
+$MESS["INTR_MAIL_MANAGE_SEARCH_CANCEL"] = "Batalkan";
+$MESS["INTR_MAIL_MANAGE_GRID_NAME"] = "Pengguna";
+$MESS["INTR_MAIL_MANAGE_GRID_EMAIL"] = "Alamat saat ini";
+$MESS["INTR_MAIL_MANAGE_CREATE_TITLE"] = "Edit kotak surat";
+$MESS["INTR_MAIL_MANAGE_PASSWORD_TITLE"] = "Ubah kata sandi";
+$MESS["INTR_MAIL_MANAGE_DELETE_TITLE"] = "Hapus kotak surat";
+$MESS["INTR_MAIL_MANAGE_SELECT_SUBFORM"] = "Pilih kotak pesan yang lain";
+$MESS["INTR_MAIL_MANAGE_CREATE_SUBFORM"] = "Buat kotak pesan baru";
+$MESS["INTR_MAIL_MANAGE_INP_PASSWORD"] = "Buat kata sandi";
+$MESS["INTR_MAIL_MANAGE_INP_NEW_PASSWORD"] = "Kata Sandi Baru";
+$MESS["INTR_MAIL_MANAGE_INP_PASSWORD2"] = "Konfirmasi password";
+$MESS["INTR_MAIL_MANAGE_DELETE"] = "Hapus";
+$MESS["INTR_MAIL_MANAGE_DELETE_CONFIRM"] = "Yakin ingin menghapus kotak pesan?<br> <br> Semua pesan akan dihapus bersamaan dengan kotak surat yang tidak dapat dipulihkan!";
+$MESS["INTR_MAIL_MANAGE_ERR_AJAX"] = "Kesalahan. Coba lagi.";
+$MESS["INTR_MAIL_MANAGE_HINT"] = "Buat kotak surat untuk setiap karyawan di perusahaan Anda. Gunakan antarmuka ini untuk mengelola kotak surat korporat: membuat, melampirkan, atau menghapus kotak pesan serta mengubah kotak pesan kata sandi.";
+$MESS["INTR_MAIL_MANAGE_DELETE_WT"] = "Perhatian!";
+$MESS["INTR_MAIL_MANAGE_DELETE_WARNING"] = "Kotak pesan dan semua pesan di dalamnya akan dihapus secara ireversibel!";
+$MESS["INTR_MAIL_MANAGE_DOMAIN_EDIT2"] = "Edit pengaturan";
+$MESS["INTR_MAIL_MANAGE_SETUP"] = "Setting";
+$MESS["INTR_MAIL_MANAGE_SETUP_BLACKLIST"] = "Jangan memproses alamat";
+$MESS["INTR_MAIL_MANAGE_SETUP_BLACKLIST_MORE"] = "and";
+$MESS["INTR_MAIL_MANAGE_SETUP_BLACKLIST_ADD"] = "Tambah Lagi";
+$MESS["INTR_MAIL_MANAGE_SETUP_BLACKLIST_PLACEHOLDER"] = "alamat e-mail, koma atau baris baru dipisahkan";
+$MESS["INTR_MAIL_MANAGE_SETUP_ALLOW_CRM"] = "Izinkan karyawan untuk menghubungkan kotak surat ke CRM";
+$MESS["INTR_MAIL_MANAGE_SETUP_SAVE"] = "Simpan";
+$MESS["INTR_MAIL_MANAGE_SETUP_SAVE_OK"] = "Parameter telah berhasil disimpan.";
+$MESS["INTR_MAIL_MANAGE_SETUP_SAVE_ERROR"] = "Kesalahan saat menyimpan preferensi";
+?>

@@ -1,0 +1,24 @@
+<?
+$MESS["LEARNING_PROFILE_COURSE"] = "Kursus";
+$MESS["LEARNING_PROFILE_TEST"] = "Uji";
+$MESS["LEARNING_PROFILE_SCORE"] = "Skor";
+$MESS["LEARNING_PROFILE_RESULT"] = "Lulus";
+$MESS["LEARNING_PROFILE_ATTEMPTS"] = "10 upaya";
+$MESS["LEARNING_PROFILE_ACTION"] = "Tindakan";
+$MESS["LEARNING_PROFILE_YES"] = "Ya";
+$MESS["LEARNING_PROFILE_NO"] = "Nomor";
+$MESS["LEARNING_PROFILE_TRY"] = "Coba lagi";
+$MESS["LEARNING_PROFILE_NO_DATA"] = "Tidak ada entri";
+$MESS["LEARNING_PROFILE_TEST_DETAIL"] = "Daftar percobaan";
+$MESS["LEARNING_PROFILE_DATE_END"] = "tanggal penyelesaian";
+$MESS["LEARNING_PROFILE_TIME_DURATION"] = "Waktu yang dibutuhkan";
+$MESS["LEARNING_PROFILE_QUESTIONS"] = "pertanyaan";
+$MESS["LEARNING_BACK_TO_GRADEBOOK"] = "Kembali ke daftar Pengujian";
+$MESS["LEARNING_ATTEMPT_NOT_FINISHED"] = "Upaya tidak selesai";
+$MESS["LEARNING_ATTEMPTS_TITLE"] = "10 upaya";
+$MESS["LEARNING_PROFILE_MARK"] = "ALE MARRYS ..";
+$MESS["LEARNING_PROFILE_BEST_SCORE"] = "Skor terbaik";
+$MESS["LEARNING_PROFILE_LAST_SCORE"] = "Skor terakhir";
+$MESS["LEARNING_PROFILE_LAST_RESULT"] = "Ujian terakhir diloloskan.";
+$MESS["LEARNING_TEST_CHECKED_MANUALLY_SO_NOT_ALL_RESULTS_CAN_BE_ACTUAL"] = "Hasil tes diperiksa secara manual dan masih bisa dicentang.";
+?>

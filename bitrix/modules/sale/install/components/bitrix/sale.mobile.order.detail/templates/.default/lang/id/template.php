@@ -1,0 +1,31 @@
+<?
+$MESS["PULL_TEXT"] = "Pull to refresh...";
+$MESS["DOWN_TEXT"] = "Release to refresh...";
+$MESS["LOAD_TEXT"] = "Updating ...";
+$MESS["SMOD_CHANGE_STATUS"] = "Change status";
+$MESS["SMOD_CANCEL"] = "Cancel order";
+$MESS["SMOD_ALLOW_DELIVERY"] = "Approve shipment";
+$MESS["SMOD_PAY_FOR_ORDER"] = "Pay order";
+$MESS["SMOD_BACK"] = "Kembali";
+$MESS["SMOD_SAVE"] = "Simpan";
+$MESS["SMOD_STATUS"] = "Status Pemesanan";
+$MESS["SMOD_PAY"] = "Bayar";
+$MESS["SMOD_PAY_CANCEL"] = "Cancel payment";
+$MESS["SMOD_BUDGET"] = "Akun";
+$MESS["SMOD_ACCOUNT"] = "Pay from internal account";
+$MESS["SMOD_PAY_CONFIRM"] = "Confirm payment";
+$MESS["SMOD_PAYMENT"] = "Pembayaran";
+$MESS["SMOD_PAY_BACK"] = "Move money back to internal account";
+$MESS["SMOD_DELIVERY"] = "Pengiriman";
+$MESS["SMOD_ALLOW"] = "Allowed";
+$MESS["SMOD_DISALLOW"] = "Tidak Diizinkan";
+$MESS["SMOD_CANCEL_REASON"] = "Alasan";
+$MESS["SMOD_USER_ACCESSIBLE"] = "Visible to customer";
+$MESS["SMOD_ORDER_N"] = "Memesan";
+$MESS["SMOD_D_STATUS"] = "Change status";
+$MESS["SMOD_CANCEL_CANCEL"] = "Uncancel order";
+$MESS["SMOD_INSUFF_BUDGET"] = "There are not enough funds in your internal account to make payment";
+$MESS["SMOD_ORDER_DEDUCT"] = "Order fulfillment";
+$MESS["SMOD_DEDUCT"] = "Fulfillment";
+$MESS["SMOD_DEDUCT_UNDO"] = "Cancel fulfillment";
+?>

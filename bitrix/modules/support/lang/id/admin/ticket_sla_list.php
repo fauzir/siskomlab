@@ -1,0 +1,33 @@
+<?
+$MESS["SUP_PAGE_TITLE"] = "hari ini";
+$MESS["SUP_FORGOT_NAME"] = "kemarin";
+$MESS["SUP_NAME"] = "Besok.";
+$MESS["SUP_DESCRIPTION"] = "bajingan. minggu";
+$MESS["SUP_PRIORITY"] = "prev. minggu";
+$MESS["SUP_RESPONSE_TIME"] = "Minggu depan!";
+$MESS["SUP_USER_GROUPS"] = "bajingan. bulan";
+$MESS["SUP_HOUR_1"] = "prev. bulan";
+$MESS["SUP_HOUR_3"] = "bulan depan";
+$MESS["SUP_HOUR_5"] = "dalam hari terakhir (hari)";
+$MESS["SUP_MINUTE_1"] = "di hari berikutnya (hari)";
+$MESS["SUP_MINUTE_3"] = "KURANG";
+$MESS["SUP_MINUTE_5"] = "lebih";
+$MESS["SUP_DAY_1"] = "kurang dari atau sama dengan";
+$MESS["SUP_DAY_3"] = "lebih dari atau sama dengan";
+$MESS["SUP_DAY_5"] = "sama dengan";
+$MESS["SUP_DELETE_CONFIRMATION"] = "Sebelumnya...";
+$MESS["SUP_PAGES"] = "Nanti Saja";
+$MESS["SUP_NO_LIMITS"] = "Nama";
+$MESS["SUP_SITE"] = "Grup (proyek)";
+$MESS["SUP_RESPONSIBLE"] = "Dibuat oleh";
+$MESS["SUP_SHEDULE_S"] = "Penanggung jawab";
+$MESS["MAIN_ADMIN_MENU_EDIT"] = "Peserta";
+$MESS["SUP_EDIT"] = "Pengamat";
+$MESS["MAIN_ADMIN_LIST_SELECTED"] = "Status";
+$MESS["SUP_DELETE"] = "Batas waktu";
+$MESS["MAIN_ADMIN_LIST_CHECKED"] = "Tanggal mulai direncanakan";
+$MESS["MAIN_ADMIN_LIST_DELETE"] = "Tanggal akhir yang direncanakan";
+$MESS["SUP_ADD"] = "Mulai tanggal";
+$MESS["SUP_EXACT_MATCH"] = "Dibuat Pada";
+$MESS["SUP_ALL"] = "Selesai di";
+?>

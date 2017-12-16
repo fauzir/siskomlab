@@ -1,0 +1,6 @@
+<?
+$MESS["REPORT_JS_STATUS_ACTION_SUCCESS"] = "Keberhasilan";
+$MESS["REPORT_JS_STATUS_ACTION_ERROR"] = "That's an error.";
+$MESS["REPORT_JS_SHARING_RIGHT_READ"] = "Baca baca";
+$MESS["REPORT_JS_SHARING_RIGHT_EDIT"] = "Edit";
+?>

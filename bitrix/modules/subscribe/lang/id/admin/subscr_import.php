@@ -1,0 +1,30 @@
+<?
+$MESS["imp_title"] = "Impor email";
+$MESS["imp_results"] = "impor Hasil";
+$MESS["imp_results_total"] = "Total alamat unik untuk diimpor:";
+$MESS["imp_results_added"] = "Alamat yang ditambahkan";
+$MESS["imp_results_err"] = "Alamat buruk";
+$MESS["imp_delim"] = "Alamat dalam daftar harus dipisahkan dengan <b> koma </ b> atau mulai di <b> baris baru </ b>.";
+$MESS["imp_file"] = "Impor dari file";
+$MESS["imp_list"] = "Impor dari daftar:";
+$MESS["imp_send_code"] = "Kirim kode konfirmasi berlangganan:";
+$MESS["imp_conf"] = "Tandai berlangganan sebagai dikonfirmasi:";
+$MESS["imp_user"] = "Pelanggan dapat ditambahkan sebagai pengguna anonim atau sebagai pengguna terdaftar.";
+$MESS["imp_user_anonym"] = "Pelanggan anonim tidak memiliki akun pribadi di situs ini. Pengguna terdaftar memiliki akun pribadi dan dapat termasuk dalam satu atau beberapa grup pengguna.";
+$MESS["imp_add"] = "Tambahkan pelanggan:";
+$MESS["imp_add_anonym"] = "Sebagai pengguna anonim";
+$MESS["imp_add_users"] = "Sebagai pengguna terdaftar (membuat akun)";
+$MESS["imp_send_reg"] = "Kirim informasi pendaftaran ke pengguna:";
+$MESS["imp_add_gr"] = "Tambahkan pengguna ke grup:";
+$MESS["imp_subscr"] = "Berlangganan kategori:";
+$MESS["imp_fmt"] = "Format:";
+$MESS["imp_fmt_text"] = "Teks";
+$MESS["imp_butt"] = "Impor alamat";
+$MESS["imp_site"] = "Kirim email menggunakan templat dari situs:";
+$MESS["subscr_imp_err1"] = "Terjadi kesalahan saat memuat file";
+$MESS["subscr_imp_err2"] = "Kode kesalahan";
+$MESS["subscr_send_info"] = "Kamu telah terdaftar";
+$MESS["imp_import_tab"] = "Impor";
+$MESS["imp_import_tab_title"] = "Parameter impor";
+$MESS["imp_error"] = "Kesalahan mengimpor alamat";
+?>

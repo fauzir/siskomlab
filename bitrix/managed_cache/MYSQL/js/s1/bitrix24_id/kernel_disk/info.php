@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/disk/c_disk.js" => "151131648421235","/bitrix/js/disk/file_dialog.js" => "151131648425023","/bitrix/js/disk/information_popups.js" => "15113164842263",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

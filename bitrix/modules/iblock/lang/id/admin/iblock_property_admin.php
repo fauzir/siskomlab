@@ -1,0 +1,30 @@
+<?
+$MESS["IBP_ADM_TO_ADD"] = "Add property";
+$MESS["IBP_ADM_TO_ADD_TITLE"] = "Add a new property";
+$MESS["IBP_ADM_ID"] = "ID";
+$MESS["IBP_ADM_NAME"] = "Nama";
+$MESS["IBP_ADM_CODE"] = "Symbolic code";
+$MESS["IBP_ADM_SORT"] = "Menyortir";
+$MESS["IBP_ADM_ACTIVE"] = "Aktif";
+$MESS["IBP_ADM_PROPERTY_TYPE"] = "Tipe";
+$MESS["IBP_ADM_MULTIPLE"] = "kelipatan";
+$MESS["IBP_ADM_XML_ID"] = "External ID";
+$MESS["IBP_ADM_WITH_DESCRIPTION"] = "Has description";
+$MESS["IBP_ADM_SEARCHABLE"] = "Cari";
+$MESS["IBP_ADM_FILTRABLE"] = "Show in filter";
+$MESS["IBP_ADM_IS_REQUIRED"] = "Wajib";
+$MESS["IBP_ADM_HINT"] = "Petunjuk";
+$MESS["IBP_ADM_CONFIRM_DEL_MESSAGE"] = "This will delete all the property values. Terus";
+$MESS["IBP_ADM_TITLE"] = "#IBLOCK_NAME#: Properties";
+$MESS["IBP_ADM_DELETE_ERROR"] = "An error occurred while deleting an object.";
+$MESS["IBP_ADM_SAVE_ERROR"] = "Error saving the record ##ID#: #ERROR_TEXT#";
+$MESS["IBP_ADM_PAGER"] = "Properti";
+$MESS["MAIN_ADMIN_LIST_SELECTED"] = "10104=Terpilih";
+$MESS["MAIN_ADMIN_LIST_CHECKED"] = "diperiksa";
+$MESS["MAIN_ADMIN_LIST_DELETE"] = "menghapus";
+$MESS["MAIN_ADMIN_LIST_ACTIVATE"] = "Mengaktifkan";
+$MESS["MAIN_ADMIN_LIST_DEACTIVATE"] = "Menonaktifkan";
+$MESS["IBLOCK_YES"] = "Ya";
+$MESS["IBLOCK_NO"] = "Nomor";
+$MESS["IBLOCK_ALL"] = "Apa saja";
+?>

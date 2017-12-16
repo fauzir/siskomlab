@@ -1,0 +1,37 @@
+<?
+$MESS["ISL_ID"] = "Undang pengguna";
+$MESS["ISL_FULL_NAME"] = "Undang pengguna";
+$MESS["ISL_NAME"] = "Para z";
+$MESS["ISL_LAST_NAME"] = "Diundang";
+$MESS["ISL_SECOND_NAME"] = "non-aktif";
+$MESS["ISL_EMAIL"] = "Ekstranet";
+$MESS["ISL_LOGIN"] = "Semua";
+$MESS["ISL_DATE_REGISTER"] = "Lebih";
+$MESS["ISL_PERSONAL_WWW"] = "Ekspor ke Excel";
+$MESS["ISL_PERSONAL_PROFESSION"] = "Ekspor Hasil Pencarian Untuk MS Excel";
+$MESS["ISL_PERSONAL_ICQ"] = "AZ";
+$MESS["ISL_PERSONAL_GENDER"] = "Sinkronisasi dengan Outlook";
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Daftar Karyawan Ekspor sebagai kontak Outlook";
+$MESS["ISL_PERSONAL_PHOTO"] = "Anda dapat mengekspor karyawan sebagai kontak untuk Microsoft Outlook";
+$MESS["ISL_PERSONAL_PHONE"] = "Ekspor";
+$MESS["ISL_PERSONAL_FAX"] = "Sinkronkan Via CardDAV";
+$MESS["ISL_PERSONAL_MOBILE"] = "Menyinkronkan registry karyawan dengan software dan hardware yang mendukung CardDAV (iPhone, iPad dll)";
+$MESS["ISL_PERSONAL_PAGER"] = "ID";
+$MESS["ISL_PERSONAL_PHONES"] = "Nama Lengkap";
+$MESS["ISL_PERSONAL_POST_ADDRESS"] = "Nama depan";
+$MESS["ISL_PERSONAL_CITY"] = "Nama keluarga";
+$MESS["ISL_PERSONAL_STREET"] = "Nama tengah";
+$MESS["ISL_PERSONAL_STATE"] = "E-mail";
+$MESS["ISL_PERSONAL_MAILBOX"] = "Masuk";
+$MESS["ISL_PERSONAL_ZIP"] = "Terdaftar di:";
+$MESS["ISL_PERSONAL_COUNTRY"] = "Situs web";
+$MESS["ISL_PERSONAL_NOTES"] = "Jabatan";
+$MESS["ISL_PERSONAL_POSITION"] = "ICQ";
+$MESS["ISL_WORK_PHONE"] = "Jenis Kelamin";
+$MESS["ISL_ADMIN_NOTES"] = "Tanggal Lahir";
+$MESS["ISL_XML_ID"] = "Foto";
+$MESS["INTR_ISE_TPL_FILTER_DEPARTMENT"] = "Telepon";
+$MESS["INTR_ISE_TPL_FILTER_SUBMIT"] = "Faks:";
+$MESS["INTR_ISE_TPL_FILTER_CANCEL"] = "mobil";
+$MESS["INTR_ISE_TPL_NOTE_NULL"] = "Pager";
+?>

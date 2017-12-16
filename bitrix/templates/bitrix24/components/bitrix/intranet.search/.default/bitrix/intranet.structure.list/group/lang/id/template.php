@@ -1,0 +1,37 @@
+<?
+$MESS["ISL_ID"] = "E-mail";
+$MESS["ISL_FULL_NAME"] = "Masuk";
+$MESS["ISL_NAME"] = "Terdaftar di:";
+$MESS["ISL_LAST_NAME"] = "Situs web";
+$MESS["ISL_SECOND_NAME"] = "Jabatan";
+$MESS["ISL_EMAIL"] = "ICQ";
+$MESS["ISL_LOGIN"] = "Jenis Kelamin";
+$MESS["ISL_DATE_REGISTER"] = "Tanggal Lahir";
+$MESS["ISL_PERSONAL_WWW"] = "Foto";
+$MESS["ISL_PERSONAL_PROFESSION"] = "Telepon";
+$MESS["ISL_PERSONAL_ICQ"] = "Faks:";
+$MESS["ISL_PERSONAL_GENDER"] = "mobil";
+$MESS["INTR_ISL_TPL_GENDER_F"] = "Pager";
+$MESS["INTR_ISL_TPL_GENDER_M"] = "Telepon";
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Alamat surat";
+$MESS["ISL_PERSONAL_PHOTO"] = "Kota";
+$MESS["ISL_PERSONAL_PHONE"] = "Alamat jalan";
+$MESS["ISL_PERSONAL_FAX"] = "{0}2) Daerah / Negara /0} {1/}{/0}";
+$MESS["ISL_PERSONAL_MOBILE"] = "PO Box";
+$MESS["ISL_PERSONAL_PAGER"] = "kode pos";
+$MESS["ISL_PERSONAL_PHONES"] = "Negara";
+$MESS["ISL_PERSONAL_POST_ADDRESS"] = "Catatan";
+$MESS["ISL_PERSONAL_CITY"] = "Posisi";
+$MESS["ISL_PERSONAL_STREET"] = "Telepon Kantor";
+$MESS["ISL_PERSONAL_STATE"] = "Catatan Administrator";
+$MESS["ISL_PERSONAL_MAILBOX"] = "ID eksternal";
+$MESS["ISL_PERSONAL_ZIP"] = "Parameter untuk Tampilan Daftar";
+$MESS["ISL_PERSONAL_COUNTRY"] = "Parameter Ekspor Excel";
+$MESS["ISL_PERSONAL_NOTES"] = "Perusahaan";
+$MESS["ISL_WORK_POSITION"] = "Faks Kantor";
+$MESS["ISL_WORK_PHONE"] = "ID";
+$MESS["ISL_ADMIN_NOTES"] = "Nama Lengkap";
+$MESS["ISL_XML_ID"] = "Nama depan";
+$MESS["ISL_TPL_NOTE_UNFILTERED"] = "Nama keluarga";
+$MESS["ISL_TPL_NOTE_NULL"] = "Nama tengah";
+?>

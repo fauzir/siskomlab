@@ -1,0 +1,36 @@
+<?
+$MESS["CT_BSP_ALL"] = "mobil";
+$MESS["CT_BSP_GO"] = "Pager";
+$MESS["CT_BSP_ITEM_TAGS"] = "Telepon";
+$MESS["CT_BSP_DATE_CHANGE"] = "Alamat surat";
+$MESS["CT_BSP_FOUND"] = "Kota";
+$MESS["CT_BSP_ORDER"] = "Alamat jalan";
+$MESS["CT_BSP_ORDER_BY_RANK"] = "{0}2) Daerah / Negara /0} {1/}{/0}";
+$MESS["CT_BSP_ORDER_BY_DATE"] = "PO Box";
+$MESS["CT_BSP_ADVANCED_SEARCH"] = "kode pos";
+$MESS["CT_BSP_WHERE_LABEL"] = "Negara";
+$MESS["CT_BSP_TAGS"] = "Catatan";
+$MESS["CT_BSP_WHERE"] = "Posisi";
+$MESS["CT_BSP_EVERYWHERE"] = "Negara";
+$MESS["CT_BSP_WHEN"] = "Kota";
+$MESS["CT_BSP_DATES_FROM_TO"] = "Telepon Kantor";
+$MESS["CT_BSP_DATES_FROM"] = "Situs Perusahaan";
+$MESS["CT_BSP_DATES_TO"] = "Faks perusahaan";
+$MESS["CT_BSP_DATES_ALL"] = "Pager perusahaan";
+$MESS["CT_BSP_ERROR"] = "Catatan Administrator";
+$MESS["CT_BSP_CORRECT_AND_CONTINUE"] = "ID eksternal";
+$MESS["CT_BSP_SINTAX"] = "Perusahaan";
+$MESS["CT_BSP_LOGIC"] = "Departemen ";
+$MESS["CT_BSP_OPERATOR"] = "Profil kerja";
+$MESS["CT_BSP_SYNONIM"] = "Logo perusahaan";
+$MESS["CT_BSP_DESCRIPTION"] = "Nomor ekstensi";
+$MESS["CT_BSP_AND"] = "Skype";
+$MESS["CT_BSP_AND_ALT"] = "Situs lainnya";
+$MESS["CT_BSP_OR"] = "Facebook";
+$MESS["CT_BSP_OR_ALT"] = "Akun Twitter";
+$MESS["CT_BSP_NOT"] = "Halaman LinkedIn";
+$MESS["CT_BSP_NOT_ALT"] = "Halaman Xing";
+$MESS["CT_BSP_BRACKETS_ALT"] = "Keahlian";
+$MESS["CT_BSP_NOTHING_TO_FOUND"] = "Minat";
+$MESS["CT_BSP_KEYBOARD_WARNING"] = "Departemen ";
+?>

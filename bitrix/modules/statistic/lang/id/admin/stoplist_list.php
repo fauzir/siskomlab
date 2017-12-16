@@ -1,0 +1,37 @@
+<?
+$MESS["STAT_STOP_PAGES"] = "Merekam";
+$MESS["STAT_F_LOGIC"] = "Logika antar bidang";
+$MESS["STAT_GREEN_LAMP"] = "Rekam aktif";
+$MESS["STAT_RED_LAMP"] = "Rekam tidak aktif";
+$MESS["STAT_LAMP_ACTIVE"] = "Rekam aktif";
+$MESS["STAT_LAMP_NOT_ACTIVE"] = "Rekam tidak aktif";
+$MESS["STAT_COMMENT"] = "Komentar";
+$MESS["STAT_MESSAGE"] = "Pesan";
+$MESS["STAT_REDIRECT"] = "redirect URL";
+$MESS["STAT_F_DATE_START"] = "Mulai tanggal";
+$MESS["STAT_DATE_START"] = "Mulai";
+$MESS["STAT_F_DATE_END"] = "tanggal akhir";
+$MESS["STAT_DATE_END"] = "Akhir";
+$MESS["STAT_RECORDS_LIST"] = "Daftar berhenti";
+$MESS["STAT_F_ID"] = "ID";
+$MESS["STAT_RECORD_STATUS"] = "Status aktivitas";
+$MESS["STAT_F_ACTIVE"] = "Aktif";
+$MESS["STAT_F_STATISTIC"] = "Tambahkan ke statistik";
+$MESS["STAT_F_IP"] = "Alamat IP";
+$MESS["STAT_F_USER_AGENT"] = "Agen pengguna";
+$MESS["STAT_F_FROM"] = "Dari";
+$MESS["STAT_ACTIVE"] = "Aktif";
+$MESS["STAT_STAT"] = "Stat.";
+$MESS["STAT_IP"] = "Alamat IP";
+$MESS["STAT_MASK"] = "Topeng bersih";
+$MESS["STAT_USER_AGENT"] = "Agen pengguna";
+$MESS["STAT_REFERER"] = "Dari";
+$MESS["STAT_CONFIRM_DEL_STOP"] = "Yakin ingin menghapus rekaman?";
+$MESS["STAT_URL_TO"] = "Untuk";
+$MESS["STAT_F_SITE"] = "situs";
+$MESS["STAT_F_TO"] = "Untuk";
+$MESS["STAT_F_REDIRECT"] = "redirect";
+$MESS["STAT_F_COMMENTS"] = "Komentar";
+$MESS["STAT_F_MESSAGE"] = "Pesan";
+$MESS["SAVE_ERROR"] = "Kesalahan memperbarui catatan #";
+?>

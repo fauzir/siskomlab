@@ -1,0 +1,35 @@
+<?
+$MESS["IM_MESSENGER_OPEN_CALL2"] = "Nama Lengkap";
+$MESS["IM_MESSENGER_OPEN_MESSENGER_CP"] = "Nama depan";
+$MESS["IM_MESSENGER_OPEN_NOTIFY"] = "Nama keluarga";
+$MESS["IM_MESSENGER_OPEN_EMAIL"] = "Nama tengah";
+$MESS["IM_MESSENGER_OPEN_LF"] = "E-mail";
+$MESS["IM_MESSENGER_OPEN_NETWORK"] = "Masuk";
+$MESS["IM_MESSENGER_OPEN_MESSENGER"] = "Terdaftar di:";
+$MESS["IM_MESSENGER_GO_TO_APPS_LINK"] = "Situs web";
+$MESS["IM_MESSENGER_OPEN_SEARCH"] = "Jabatan";
+$MESS["IM_MESSENGER_GO_TO_APPS"] = "ICQ";
+$MESS["IM_MESSENGER_ONLINE"] = "Jenis Kelamin";
+$MESS["IM_MESSENGER_CREATE_CHAT"] = "Tanggal Lahir";
+$MESS["IM_FULLSCREEN_COPYRIGHT"] = "Foto";
+$MESS["IM_FULLSCREEN_BACK"] = "Telepon";
+$MESS["IM_FULLSCREEN_BG_TRANSPARENT"] = "Faks:";
+$MESS["IM_FULLSCREEN_BG_0"] = "mobil";
+$MESS["IM_FULLSCREEN_BG_1"] = "Pager";
+$MESS["IM_FULLSCREEN_BG_2"] = "Telepon";
+$MESS["IM_FULLSCREEN_BG_3"] = "Alamat surat";
+$MESS["IM_FULLSCREEN_BG_4"] = "Kota";
+$MESS["IM_FULLSCREEN_BG_5"] = "Alamat jalan";
+$MESS["IM_FULLSCREEN_BG_6"] = "{0}2) Daerah / Negara /0} {1/}{/0}";
+$MESS["IM_FULLSCREEN_BG_7"] = "PO Box";
+$MESS["IM_FULLSCREEN_BG_8"] = "kode pos";
+$MESS["IM_FULLSCREEN_BG_9"] = "Negara";
+$MESS["IM_FULLSCREEN_BG_10"] = "Catatan";
+$MESS["IM_FULLSCREEN_BG_11"] = "Posisi";
+$MESS["IM_FULLSCREEN_BG_12"] = "Telepon Kantor";
+$MESS["IM_FULLSCREEN_BG_TITLE"] = "Catatan Administrator";
+$MESS["IM_FULLSCREEN_BG_NUMBER"] = "ID eksternal";
+$MESS["IM_FULLSCREEN_APPS"] = "Selalu Tampilkan Struktur dari Root";
+$MESS["IM_FULLSCREEN_DOWN_ITS"] = "Maks. Kedalaman Pohon (0 - semua)";
+$MESS["IM_MESSENGER_OPEN_OL"] = "Maks. Kedalaman Pohon di Halaman Pertama (0 - all)";
+?>

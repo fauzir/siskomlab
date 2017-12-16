@@ -1,0 +1,61 @@
+<?
+$MESS["CRM_CONFIGS_TAB_WHERE_TO_BEGIN"] = "Titik awal";
+$MESS["CRM_CONFIGS_TAB_SETTINGS_FORMS_AND_REPORTS"] = "Pengaturan formulir dan laporan";
+$MESS["CRM_CONFIGS_TAB_CREATION_ON_THE_BASIS"] = "362 Hasilkan";
+$MESS["CRM_CONFIGS_TAB_PRINTED_FORMS_OF_DOCUMENTS"] = "Rincian Pembayaran";
+$MESS["CRM_CONFIGS_TAB_RIGHTS"] = "Izin";
+$MESS["CRM_CONFIGS_TAB_AUTOMATION"] = "Otomatisasi";
+$MESS["CRM_CONFIGS_TAB_WORK_WITH_MAIL"] = "E-mail";
+$MESS["CRM_CONFIGS_TAB_INTEGRATION"] = "Integrasi";
+$MESS["CRM_CONFIGS_TAB_OTHER"] = "Lain";
+$MESS["CRM_CONFIGS_STATUS"] = "Status dan Dropdown";
+$MESS["CRM_CONFIGS_CURRENCY"] = "Mata uang";
+$MESS["CRM_CONFIGS_TAX"] = "PPN";
+$MESS["CRM_CONFIGS_PS"] = "Sistem Pembayaran";
+$MESS["CRM_CONFIGS_LOCATIONS"] = "lokasi";
+$MESS["CRM_CONFIGS_PERMS"] = "Izin akses";
+$MESS["CRM_CONFIGS_BP"] = "Proses bisnis";
+$MESS["CRM_CONFIGS_AUTOMATION_LEAD"] = "Memimpin";
+$MESS["CRM_CONFIGS_AUTOMATION_DEAL"] = "Penawaran";
+$MESS["CRM_CONFIGS_FIELDS"] = "bidang khusus";
+$MESS["CRM_CONFIGS_CONFIG"] = "Pengaturan lainnya";
+$MESS["CRM_CONFIGS_SENDSAVE"] = "Integrasi email";
+$MESS["CRM_CONFIGS_MEASURE"] = "Satuan pengukuran";
+$MESS["CRM_CONFIGS_EXTERNAL_SALE"] = "c-ms";
+$MESS["CRM_CONFIGS_EXTERNAL_SALE_BX"] = "1C-Bitrix";
+$MESS["CRM_CONFIGS_EXCH1C"] = "1C: Integrasi Enterprise";
+$MESS["CRM_CONFIGS_MAIL_TEMPLATES"] = "Template email";
+$MESS["CRM_CONFIGS_PRODUCT_PROPS"] = "Properti produk";
+$MESS["CRM_CONFIGS_SLOT"] = "Laporan analitis";
+$MESS["CRM_CONFIGS_REFERENCE"] = "Referensi";
+$MESS["CRM_CONFIGS_LEAD"] = "Lead";
+$MESS["CRM_CONFIGS_DEAL"] = "Penawaran";
+$MESS["CRM_CONFIGS_QOUTE"] = "Kutipan";
+$MESS["CRM_CONFIGS_CONTACT"] = "Kontak";
+$MESS["CRM_CONFIGS_COMPANY"] = "Perusahaan";
+$MESS["CRM_CONFIGS_INVOICE"] = "Faktur";
+$MESS["CRM_CONFIGS_DESCRIPTION_WHERE_TO_BEGIN"] = "Memberikan konfigurasi awal akan membantu mempersiapkan CRM agar sesuai dengan bisnis Anda. Buat kamus Anda; unit pengukuran untuk produk; pajak; mata uang dan menetapkan preferensi lainnya. ";
+$MESS["CRM_CONFIGS_DESCRIPTION_SETTINGS_FORMS_AND_REPORTS"] = "Buat bidang khusus untuk entitas CRM apa pun. Pilih bidang yang akan disertakan dalam laporan analisis.";
+$MESS["CRM_CONFIGS_DESCRIPTION_PRINTED_FORMS_OF_DOCUMENTS"] = "Gunakan halaman Metode Pembayaran untuk menentukan rincian, logo, cap, dan tanda tangan perusahaan Anda.";
+$MESS["CRM_CONFIGS_DESCRIPTION_RIGHTS"] = "Sebelum Anda mulai: pastikan semua manajer yang bekerja dengan klien memiliki hak akses yang dikonfigurasi dengan benar untuk mengakses catatan klien.";
+$MESS["CRM_CONFIGS_DESCRIPTION_AUTOMATION"] = "Mengotomatiskan pekerjaan terkait klien: gunakan Jalur kerja agar sistem memproses prospek, kontak dan kesepakatan baru; menetapkan tugas.";
+$MESS["CRM_CONFIGS_DESCRIPTION_WORK_WITH_MAIL"] = "Untuk memproses e-mail, hubungkan kotak masuk e-mail perusahaan Anda ke CRM. Semua pesan masuk akan didistribusikan ke masing-masing kontak, perusahaan dan prospek, tugas akan dibuat secara otomatis dan ditugaskan ke perwakilan penjualan.";
+$MESS["CRM_CONFIGS_DESCRIPTION_INTEGRATION"] = "Jika Anda memiliki toko web bertenaga Bitrix, Anda dapat mengatur pertukaran data pesanan. Semua pesanan baru akan otomatis diekspor ke Bitrix24 sebagai transaksi.";
+$MESS["CRM_CONFIGS_DESCRIPTION_CREATION_ON_THE_BASIS"] = "Minta entitas baru dibuat secara otomatis menggunakan yang sudah ada sambil menyimpan semua informasi penting. Gunakan pemetaan lapangan untuk mencapai fleksibilitas yang lebih baik saat membuat entitas baru.";
+$MESS["CRM_CONFIGS_DESCRIPTION_OTHER"] = "Buka halaman ini untuk mengatur preferensi CRM lainnya.";
+$MESS["CRM_CONFIGS_TAB_APPS"] = "Aplikasi";
+$MESS["CRM_CONFIGS_CRM_APPLICATION"] = "Aplikasi CRM";
+$MESS["CRM_CONFIGS_MIGRATION_OTHER_CRM"] = "Bermigrasi dari CRM lainnya";
+$MESS["CRM_CONFIGS_DESCRIPTION_APP"] = "<b> Migrasikan Data dari CRM Lain </ b> <br>
+Sudah menggunakan CRM lain? Jaga agar informasi Anda aman dengan cara memigrasikannya ke Bitrix24: biarkan aplikasi melakukannya untuk Anda. <br> <br>
+<b> Aplikasi CRM </ b> <br>
+Perluas Bitrix24 Anda dengan alat yang berguna untuk membantu Anda menjual lebih banyak. Tambahkan layanan untuk mengelola buletin, halaman arahan, obrolan, panggilan; hitung KPI dan banyak lagi. Kisaran aplikasi berkembang setiap hari. ";
+$MESS["CRM_CONFIGS_NO_ACCESS_ERROR"] = "Akses ditolak.";
+$MESS["CRM_CONFIGS_PRESET"] = "Template detail kontak atau perusahaan";
+$MESS["CRM_CONFIGS_TAB_PS_LIST"] = "Pilihan pembayaran";
+$MESS["CRM_CONFIGS_TRACKER"] = "Pengaturan Tracker";
+$MESS["CRM_CONFIGS_MYCOMPANY"] = "Detail Perusahaan";
+$MESS["CRM_CONFIGS_DEAL_CATEGORY"] = "Jaringan pipa kesepakatan";
+$MESS["CRM_CONFIGS_MAIL_TRACKER"] = "Akun Email CRM (email pribadi & nbsp;)";
+$MESS["CRM_CONFIGS_MAIL_TRACKER_SH"] = "Akun Email CRM (perusahaan & nbsp; email)";
+?>

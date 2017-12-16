@@ -1,0 +1,6 @@
+<?
+$MESS["MARKETPLACE_BEST"] = "Puncak";
+$MESS["MARKETPLACE_CATEGORIES"] = "kategori";
+$MESS["MARKETPLACE_SHOPPING"] = "Aplikasi saya";
+$MESS["MARKETPLACE_UPDATES"] = "update";
+?>

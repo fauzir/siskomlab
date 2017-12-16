@@ -1,0 +1,30 @@
+<?
+$MESS["USERTYPE_NAV"] = "Properti";
+$MESS["USERTYPE_ENTITY_ID"] = "{0}-{/0} {1}         {/1} {0}Entitas{/0}";
+$MESS["USERTYPE_FIELD_NAME"] = "nama field";
+$MESS["USERTYPE_USER_TYPE_ID"] = "Data type";
+$MESS["USERTYPE_XML_ID"] = "XML_ID";
+$MESS["USERTYPE_SORT"] = "Menyortir";
+$MESS["USERTYPE_MULTIPLE"] = "Mult.";
+$MESS["USERTYPE_MANDATORY"] = "Req.";
+$MESS["USERTYPE_DELETE_CONF"] = "Are you sure you want to delete the entity?";
+$MESS["USERTYPE_ADD_TITLE"] = "Tambahkan Custom Field";
+$MESS["USERTYPE_TITLE"] = "Bidang Kustom";
+$MESS["USERTYPE_F_FIND"] = "Cari";
+$MESS["USERTYPE_DEL_ERROR"] = "Error deleting the field";
+$MESS["USERTYPE_UPDATE_ERROR"] = "Error updating the field";
+$MESS["USERTYPE_SHOW_FILTER"] = "Set filter";
+$MESS["USERTYPE_SHOW_IN_LIST"] = "Menunjukkan";
+$MESS["USERTYPE_EDIT_IN_LIST"] = "Edit";
+$MESS["USERTYPE_IS_SEARCHABLE"] = "Searchable";
+$MESS["USER_TYPE_FILTER_N"] = "don't show";
+$MESS["USER_TYPE_FILTER_I"] = "exact match";
+$MESS["USER_TYPE_FILTER_E"] = "wildcard search";
+$MESS["USER_TYPE_FILTER_S"] = "partial match";
+$MESS["USERTYPE_BACK_URL_BUTTON"] = "Kembali";
+$MESS["MAIN_YES"] = "iya..";
+$MESS["MAIN_EDIT"] = "213 Ubah";
+$MESS["MAIN_DELETE"] = "Hapus";
+$MESS["MAIN_ADD"] = "Menambahkan";
+$MESS["MAIN_ALL"] = "Semua";
+?>

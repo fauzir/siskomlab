@@ -1,0 +1,35 @@
+<?
+$MESS["CommerceInfo"] = "CommerceInfo";
+$MESS["Document"] = "Document";
+$MESS["Operation"] = "Pengoperasian";
+$MESS["NumberDoc"] = "NumberDoc";
+$MESS["DateDoc"] = "DateDoc";
+$MESS["TimeDoc"] = "TimeDoc";
+$MESS["PaymentDate"] = "Tanggal Bayar";
+$MESS["Sum"] = "Jumlah";
+$MESS["Comment"] = "Komentar";
+$MESS["Currency"] = "Mata uang";
+$MESS["CompanyInDocument"] = "CompanyInDocument";
+$MESS["Role"] = "Peran";
+$MESS["Company"] = "Perusahaan";
+$MESS["Article"] = "Artikel";
+$MESS["Catalog"] = "Catalog";
+$MESS["Product"] = "Produk";
+$MESS["Unit"] = "Satuan";
+$MESS["Amount"] = "Jumlah";
+$MESS["Price"] = "Harga";
+$MESS["Description"] = "Deskripsi";
+$MESS["ID"] = "ID";
+$MESS["Name"] = "Nama";
+$MESS["DisplayName"] = "Nama tampilan";
+$MESS["Address"] = "Alamat";
+$MESS["JuridicAddress"] = "JuridicAddress";
+$MESS["WWW"] = "www.";
+$MESS["Contact"] = "Kontak";
+$MESS["ContactMan"] = "ContactMan";
+$MESS["E-mail"] = "E-mail";
+$MESS["Tax"] = "Pajak";
+$MESS["TaxSum"] = "TaxSum";
+$MESS["TaxRate"] = "Persentase pajak";
+$MESS["IncludedInSum"] = "IncludedInSum";
+?>

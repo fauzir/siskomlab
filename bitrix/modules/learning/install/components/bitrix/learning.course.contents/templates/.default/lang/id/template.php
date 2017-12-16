@@ -1,0 +1,4 @@
+<?
+$MESS["LEARNING_COURSE_TOC"] = "Daftar Isi";
+$MESS["LEARNING_COURSE_DESCRIPTION"] = "Pengantar";
+?>

@@ -1,0 +1,31 @@
+<?
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_IDEAL"] = "Ideal";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_VERY_LOW"] = "Sangat rendah";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_LOW"] = "Rendah";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_DESIRABLE"] = "Maksimal diinginkan";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_HIGH"] = "Tinggi";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_VERY_HIGH"] = "Sangat tinggi";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_ITEM_CRITICAL"] = "Kritis";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_EMAIL"] = "E-mail";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_PHONE"] = "Telepon";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_COMPANY"] = "Perusahaan";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_POST"] = "Posisi";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_RESPONSIBLE"] = "Penanggung jawab";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_COMMENTS"] = "Komentar";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_COMMENTS_HIDE"] = "Menyembunyikan";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_COMMENTS_SHOW"] = "menunjukkan";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_WON_DEALS"] = "Nilai kesepakatan menang";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_CONVERSION"] = "Konversi";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_PIE_TITLE"] = "Load per channel";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_WEB"] = "Situs web";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_COMPANY_TYPE"] = "jenis perusahaan";
+$MESS["CRM_CLIENT_PORTRAIT_INFO_INDUSTRY"] = "Industri";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_TITLE"] = "Beban maksimal yang lebih tinggi";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_SAVE"] = "Simpan";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_CANCEL"] = "Batalkan";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_DESCRIPTION"] = "Beban maksimum yang lebih besar adalah jumlah aktivitas per transaksi yang dapat diterima oleh perusahaan Anda.";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_HELP"] = "Nilai beban maksimum yang lebih tinggi dapat ditentukan secara eksplisit, atau dapat dihitung secara otomatis dengan rata-rata jumlah aktivitas per transaksi.";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_AUTO"] = "Mobil";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_CONFIG_MANUAL"] = "panduan";
+$MESS["CRM_CLIENT_PORTRAIT_LOAD_SHOW_DEAL_CATEGORIES"] = "tunjukkan pipa";
+?>

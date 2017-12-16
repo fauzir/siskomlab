@@ -122,9 +122,7 @@ include("util_profile.php");
 				</div>
 
 				<? if(!Desktop::isDesktopDiskInstall() && Banner::isActive('install_disk')) {?>
-					<div class="bx-disk-sidebar-section">
-						<a href="javascript: BX.Disk.deactiveBanner('install_disk'); BX.Disk.getDownloadDesktop();"><img src="/bitrix/images/disk/<?= $bannerName ?>" alt=""></a>
-					</div>
+
 				<? }
 				if ($folder->canAdd($arResult['VARIABLES']['STORAGE']->getCurrentUserSecurityContext()))
 				{

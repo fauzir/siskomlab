@@ -1,0 +1,37 @@
+<?
+$MESS["SUP_ID"] = "ID";
+$MESS["SUP_F_FILTER"] = "Menyaring";
+$MESS["SUP_ASK"] = "Buat tiket baru";
+$MESS["SUP_F_ID"] = "ID pertanyaan";
+$MESS["SUP_EXACT_MATCH"] = "Gunakan pencocokan tepat";
+$MESS["SUP_F_LAMP"] = "indikator";
+$MESS["SUP_RED"] = "Merah";
+$MESS["SUP_GREEN"] = "hijau";
+$MESS["SUP_GREY"] = "Abu-abu";
+$MESS["SUP_F_CLOSE"] = "Tertutup / Dibuka";
+$MESS["SUP_CLOSED"] = "478 Tutup";
+$MESS["SUP_OPENED"] = "Terbuka";
+$MESS["SUP_ALL"] = "Semua";
+$MESS["SUP_F_MESSAGE"] = "Pesan";
+$MESS["SUP_F_SET_FILTER"] = "Setel filter";
+$MESS["SUP_F_DEL_FILTER"] = "Hapus Penyaring";
+$MESS["SUP_LAMP"] = "Ind.";
+$MESS["SUP_TITLE"] = "Subyek";
+$MESS["SUP_TIMESTAMP"] = "Diubah";
+$MESS["SUP_MODIFIED_BY"] = "Diubah oleh";
+$MESS["SUP_MESSAGES"] = "Psn.";
+$MESS["SUP_STATUS"] = "Status";
+$MESS["SUP_GREEN_ALT"] = "dijawab olehmu";
+$MESS["SUP_EDIT_TICKET"] = "Edit tiket";
+$MESS["SUP_EDIT"] = "213 Ubah";
+$MESS["SUP_TOTAL"] = "Total";
+$MESS["SUP_GREY_ALT"] = "tiket ditutup";
+$MESS["SUP_RED_ALT"] = "terakhir dikirim oleh staf teknisi";
+$MESS["SUP_RED_ALT_2"] = "terakhir dikirim oleh staf teknisi";
+$MESS["SUP_GREEN_ALT_SUP"] = "pesan terakhir adalah milikmu";
+$MESS["SUP_RED_ALT_SUP"] = "terakhir diposting oleh klien techsupport (Anda bertanggung jawab)";
+$MESS["SUP_YELLOW_ALT_SUP"] = "terakhir diposting oleh klien techsupport (Anda tidak bertanggung jawab)";
+$MESS["SUP_GREY_ALT_SUP"] = "tiket ditutup";
+$MESS["SUP_GREEN_S_ALT_SUP"] = "terakhir dikirim oleh staf teknisi";
+$MESS["SUP_VIEW_TICKET"] = "Lihat Tiket";
+?>

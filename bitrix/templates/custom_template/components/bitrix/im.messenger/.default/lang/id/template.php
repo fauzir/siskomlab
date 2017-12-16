@@ -1,0 +1,35 @@
+<?
+$MESS["IM_MESSENGER_OPEN_CALL2"] = "Muat ulang ...";
+$MESS["IM_MESSENGER_OPEN_MESSENGER_CP"] = "Tugas pengguna";
+$MESS["IM_MESSENGER_OPEN_NOTIFY"] = "File pengguna";
+$MESS["IM_MESSENGER_OPEN_EMAIL"] = "Undang lagi";
+$MESS["IM_MESSENGER_OPEN_LF"] = "Pengguna telah diundang sekali lagi.";
+$MESS["IM_MESSENGER_OPEN_NETWORK"] = "Panggilan suara";
+$MESS["IM_MESSENGER_OPEN_MESSENGER"] = "Panggilan";
+$MESS["IM_MESSENGER_GO_TO_APPS_LINK"] = "Batal";
+$MESS["IM_MESSENGER_OPEN_SEARCH"] = "Offline";
+$MESS["IM_MESSENGER_GO_TO_APPS"] = "Online";
+$MESS["IM_MESSENGER_ONLINE"] = "Profil";
+$MESS["IM_MESSENGER_CREATE_CHAT"] = "Posting pengguna";
+$MESS["IM_FULLSCREEN_COPYRIGHT"] = "Tarik ke bawah untuk menyegarkan";
+$MESS["IM_FULLSCREEN_BACK"] = "Lepaskan untuk menyegarkan";
+$MESS["IM_FULLSCREEN_BG_TRANSPARENT"] = "Memperbarui data ...";
+$MESS["IM_FULLSCREEN_BG_0"] = "Semua";
+$MESS["IM_FULLSCREEN_BG_1"] = "proyek";
+$MESS["IM_FULLSCREEN_BG_2"] = "Tugas";
+$MESS["IM_FULLSCREEN_BG_3"] = "Tugas baru";
+$MESS["IM_FULLSCREEN_BG_4"] = "description";
+$MESS["IM_FULLSCREEN_BG_5"] = "tanggung jawab";
+$MESS["IM_FULLSCREEN_BG_6"] = "Kesalahan dengan setelan tanggal / waktu setempat!";
+$MESS["IM_FULLSCREEN_BG_7"] = "Kerja ...";
+$MESS["IM_FULLSCREEN_BG_8"] = "Berdarah keluar";
+$MESS["IM_FULLSCREEN_BG_9"] = "Jam masuk";
+$MESS["IM_FULLSCREEN_BG_10"] = "Sedang istirahat";
+$MESS["IM_FULLSCREEN_BG_11"] = "Anda memiliki <strong> tidak ditutup </ strong> <br/> hari kerja sebelumnya.";
+$MESS["IM_FULLSCREEN_BG_12"] = "Tarik ke bawah untuk menyegarkan";
+$MESS["IM_FULLSCREEN_BG_TITLE"] = "Lepaskan untuk menyegarkan";
+$MESS["IM_FULLSCREEN_BG_NUMBER"] = "Memperbarui data ...";
+$MESS["IM_FULLSCREEN_APPS"] = "Laporan harian";
+$MESS["IM_FULLSCREEN_DOWN_ITS"] = "Anda tidak dapat menyimpan laporan. Silahkan masuk dulu.";
+$MESS["IM_MESSENGER_OPEN_OL"] = "Kamu tidak keluar kemarin";
+?>

@@ -1,0 +1,36 @@
+<?
+$MESS["DISK_FILE_VIEW_ERROR_COULD_NOT_FIND_OBJECT"] = "Objek tidak dapat ditemukan.";
+$MESS["DISK_FILE_VIEW_ERROR_COULD_NOT_FIND_VERSION"] = "Versi tidak dapat ditemukan";
+$MESS["DISK_FILE_VIEW_ERROR_COULD_NOT_SAVE_FILE"] = "10106=Tidak dapat menyimpan berkas.";
+$MESS["DISK_FILE_VIEW_GO_BACK_TEXT"] = "Kembali";
+$MESS["DISK_FILE_VIEW_GO_BACK_TITLE"] = "Kembali";
+$MESS["DISK_FILE_VIEW_COPY_LINK_TEXT"] = "Salin Link";
+$MESS["DISK_FILE_VIEW_COPY_LINK_TITLE"] = "Salin file link";
+$MESS["DISK_FILE_VIEW_HISTORY_ACT_DOWNLOAD"] = "Download";
+$MESS["DISK_FILE_VIEW_HISTORY_ACT_RESTORE"] = "Mengembalikan";
+$MESS["DISK_FILE_VIEW_HISTORY_ACT_DELETE"] = "Hapus";
+$MESS["DISK_FILE_VIEW_VERSION_COLUMN_NAME"] = "Nama";
+$MESS["DISK_FILE_VIEW_VERSION_COLUMN_FORMATTED_SIZE"] = "Ukuran";
+$MESS["DISK_FILE_VIEW_VERSION_COLUMN_CREATE_TIME"] = "Dibuat Pada";
+$MESS["DISK_FILE_VIEW_VERSION_COLUMN_CREATE_USER"] = "Dibuat oleh";
+$MESS["DISK_FILE_VIEW_VERSION_COLUMN_CREATE_TIME_2"] = "diubah pada";
+$MESS["DISK_FILE_VIEW_VERSION_COLUMN_CREATE_USER_2"] = "Diubah oleh";
+$MESS["DISK_FILE_VIEW_BPABL_TYPE_1"] = "Meluncurkan tindakan '#ACTIVITY #' # CATATAN #";
+$MESS["DISK_FILE_VIEW_BPABL_TYPE_2"] = "Tindakan selesai '# ACTIVITY #', status kembali: '# STATUS #', result: '#RESULT #' # CATATAN #";
+$MESS["DISK_FILE_VIEW_BPABL_TYPE_3"] = "Tindakan yang diBatalkankan '#ACTIVITY #' # CATATAN #";
+$MESS["DISK_FILE_VIEW_BPABL_TYPE_4"] = "Tindakan '#AKTIVITY #' # CATATAN # error";
+$MESS["DISK_FILE_VIEW_BPABL_TYPE_5"] = "Aksi '#AKTIVITAS #' # CATATAN #";
+$MESS["DISK_FILE_VIEW_BPABL_TYPE_6"] = "Sesuatu dilakukan pada tindakan '#ACTIVITY #' # CATATAN #";
+$MESS["DISK_FILE_VIEW_BPABL_STATUS_1"] = "Diinisialisasi";
+$MESS["DISK_FILE_VIEW_BPABL_STATUS_2"] = "Sedang berlangsung";
+$MESS["DISK_FILE_VIEW_BPABL_STATUS_3"] = "DiBatalkankan";
+$MESS["DISK_FILE_VIEW_BPABL_STATUS_4"] = "Selesai";
+$MESS["DISK_FILE_VIEW_BPABL_STATUS_5"] = "Kesalahan";
+$MESS["DISK_FILE_VIEW_BPABL_STATUS_6"] = "Tidak terdefinisi";
+$MESS["DISK_FILE_VIEW_BPABL_RES_1"] = "Nomor";
+$MESS["DISK_FILE_VIEW_BPABL_RES_2"] = "Keberhasilan";
+$MESS["DISK_FILE_VIEW_BPABL_RES_3"] = "TerBatalkankan";
+$MESS["DISK_FILE_VIEW_BPABL_RES_4"] = "Kesalahan";
+$MESS["DISK_FILE_VIEW_BPABL_RES_5"] = "Tidak diinisialisasi";
+$MESS["DISK_FILE_VIEW_BPABL_RES_6"] = "Tidak terdefinisi";
+?>

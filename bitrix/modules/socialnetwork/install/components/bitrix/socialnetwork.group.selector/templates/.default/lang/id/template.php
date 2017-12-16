@@ -1,0 +1,6 @@
+<?
+$MESS["SONET_GROUP_TABS_LAST"] = "Terakhir";
+$MESS["SONET_GROUP_TABS_MY"] = "My Groups";
+$MESS["SONET_GROUP_TABS_SEARCH"] = "Cari";
+$MESS["SONET_GROUP_BUTTON_CLOSE"] = "Dekat";
+?>

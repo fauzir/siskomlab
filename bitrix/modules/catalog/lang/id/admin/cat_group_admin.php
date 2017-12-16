@@ -1,0 +1,29 @@
+<?
+$MESS["GROUP_TITLE"] = "Price types";
+$MESS["ADD_GROUP"] = "Menambahkan";
+$MESS["GROUP_PAGES"] = "Tipe";
+$MESS["ACTIONS"] = "Tindakan";
+$MESS["NAME"] = "Nama";
+$MESS["BASE"] = "Base";
+$MESS["BASE_YES"] = "Ya";
+$MESS["EDIT_STATUS_ALT"] = "Modify type";
+$MESS["EDIT"] = "213 Ubah";
+$MESS["DELETE_STATUS_ALT"] = "Delete price type";
+$MESS["DELETE"] = "Hapus";
+$MESS["DELETE_STATUS_CONFIRM"] = "Are you sure you want to delete this type of price?";
+$MESS["RESET"] = "Ulang";
+$MESS["SAVE"] = "Simpan";
+$MESS["SORT"] = "Menyortir";
+$MESS["ERROR_DELETING_TYPE"] = "Error when deleting a price type.";
+$MESS["ERROR_UPDATING_REC"] = "Error when updating a record";
+$MESS["CODE"] = "Kode";
+$MESS["CGAN_ADD_NEW"] = "New price type";
+$MESS["CGAN_ADD_NEW_ALT"] = "Click to add a new price type ";
+$MESS["group_admin_nav"] = "Tipe";
+$MESS["BT_CAT_GROUP_ADM_TITLE_XML_ID"] = "External ID";
+$MESS["BT_CAT_GROUP_ADM_LANG_MESS"] = "#LANG#: #VALUE#";
+$MESS["BT_CAT_GROUP_ADM_TITLE_MODIFIED_BY"] = "Modified by";
+$MESS["BT_CAT_GROUP_ADM_TITLE_TIMESTAMP_X"] = "diubah pada";
+$MESS["BT_CAT_GROUP_ADM_TITLE_CREATED_BY"] = "Dibuat oleh";
+$MESS["BT_CAT_GROUP_ADM_TITLE_DATE_CREATE"] = "Dibuat Pada";
+?>

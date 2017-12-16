@@ -1,0 +1,18 @@
+<?
+$MESS["SALE_SLS_ID_PARAMETER"] = "ID lokasi";
+$MESS["SALE_SLS_CODE_PARAMETER"] = "Kode simbolis lokasi";
+$MESS["SALE_SLS_INPUT_NAME_PARAMETER"] = "Masukkan nama field";
+$MESS["SALE_SLS_JSCONTROL_GLOBAL_ID_PARAMETER"] = "JavaScript control ID";
+$MESS["SALE_SLS_EXCLUDE_SUBTREE_PARAMETER"] = "Kecualikan subtree item";
+$MESS["SALE_SLS_FILTER_BY_SITE_PARAMETER"] = "Filter menurut situs";
+$MESS["SALE_SLS_FILTER_SITE_ID_PARAMETER"] = "situs";
+$MESS["SALE_SLS_FILTER_SITE_ID_CURRENT"] = "arus";
+$MESS["SALE_SLS_JS_CALLBACK"] = "Fungsi callback JavaScript";
+$MESS["SALE_SLS_SHOW_DEFAULT_LOCATIONS_PARAMETER"] = "Tampilkan lokasi default";
+$MESS["SALE_SLS_SEARCH_BY_PRIMARY_PARAMETER"] = "Cari dengan ID dan kode";
+$MESS["SALE_SLS_PROVIDE_LINK_BY_PARAMETER"] = "Bind menggunakan";
+$MESS["SALE_SLS_PROVIDE_LINK_BY_PARAMETER_ID"] = "ID";
+$MESS["SALE_SLS_PROVIDE_LINK_BY_PARAMETER_CODE"] = "kode simbolik (kode)";
+$MESS["SALE_SLS_PRESELECT_TREE_TRUNK_PARAMETER"] = "Tampilkan pohon statis";
+$MESS["SALE_SLS_PRECACHE_LAST_LEVEL_PARAMETER"] = "Preload terakhir tingkat dipilih";
+?>

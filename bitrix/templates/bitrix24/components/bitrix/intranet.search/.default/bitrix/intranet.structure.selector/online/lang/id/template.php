@@ -1,0 +1,4 @@
+<?
+$MESS["ISS_TPL_ONLINE_LABEL"] = "Faks Kantor";
+$MESS["ISS_TPL_ONLINE_TITLE"] = "ID";
+?>

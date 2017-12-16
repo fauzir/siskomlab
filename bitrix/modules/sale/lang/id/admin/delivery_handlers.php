@@ -1,0 +1,32 @@
+<?
+$MESS["SALE_DH_TITLE"] = "Automated delivery services";
+$MESS["SALE_EDIT_DESCR"] = "Edit the delivery service preferences";
+$MESS["SALE_DH_NAV_TITLE"] = "Delivery services";
+$MESS["SALE_DH_TABLE_ACTIVE"] = "Aktif";
+$MESS["SALE_DH_TABLE_ISCONFIG"] = "dipasang";
+$MESS["SALE_DH_TABLE_NAME"] = "Nama";
+$MESS["SALE_DH_TABLE_PATH"] = "Handler";
+$MESS["SALE_DH_EDIT_DESCR"] = "Edit";
+$MESS["SALE_DH_INSTALL_DESCR"] = "Memasang";
+$MESS["SALE_DH_DELETE_DESCR"] = "Menghapus";
+$MESS["SALE_DH_RESET_DESCR"] = "jelas Pengaturan";
+$MESS["SALE_DH_ACTIVATE_DESCR"] = "Mengaktifkan";
+$MESS["SALE_DH_DEACTIVATE_DESCR"] = "Menonaktifkan";
+$MESS["SALE_DH_TABLE_SORT"] = "Menyortir";
+$MESS["SALE_DH_CONFIRM_UNINSTALL"] = "Are you sure you want to uninstall this delivery service services? This will delete all services settings.";
+$MESS["SALE_DH_HINT_ADD"] = "To add custom delivery service script use this directory";
+$MESS["SALE_DH_ORDINARY"] = "Configurable services";
+$MESS["SALE_DH_ORDINARY_ALT"] = "Open configurable delivery services for editing";
+$MESS["SALE_DH_HINT_SHOP_ADDRESS"] = "Alamat toko";
+$MESS["SALE_DH_HINT_SHOP_ADDRESS_ERROR"] = "Tidak spesifik";
+$MESS["SALE_DH_HINT_SHOP_ADDRESS_ZIP"] = "Postal shop address";
+$MESS["SALE_DH_HINT_SHOP_ADDRESS_ZIP_ERROR"] = "Tidak spesifik";
+$MESS["SALE_DH_SHOP_ADDRESS_CHANGE"] = "213 Ubah";
+$MESS["SALE_DH_LOCATIONS_STATS"] = "Location statistics";
+$MESS["SALE_DH_LOCATIONS_COUNTRY_STATS"] = "Negara?";
+$MESS["SALE_DH_LOCATIONS_CITY_STATS"] = "cities";
+$MESS["SALE_DH_LOCATIONS_LOC_STATS"] = "total locations";
+$MESS["SALE_DH_LOCATIONS_GROUP_STATS"] = "Grup Lokasi";
+$MESS["SALE_DH_LOCATIONS_LINK"] = "edit locations";
+$MESS["SALE_DH_LOCATIONS_IMPORT_LINK"] = "import locations";
+?>

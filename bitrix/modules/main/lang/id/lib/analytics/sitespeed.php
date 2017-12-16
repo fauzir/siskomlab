@@ -1,0 +1,5 @@
+<?
+$MESS["MAIN_ANALYTICS_MENU_PERFORMANCE"] = "prestasi";
+$MESS["MAIN_ANALYTICS_MENU_SITE_SPEED"] = "Site speed";
+$MESS["MAIN_ANALYTICS_MENU_SITE_SPEED_ALT"] = "Site page load time";
+?>

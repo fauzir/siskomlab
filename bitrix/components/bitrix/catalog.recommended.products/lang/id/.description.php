@@ -1,0 +1,6 @@
+<?
+$MESS["CP_CATALOG_SERVICES_MAIN_SECTION"] = "e-Store";
+$MESS["CP_CATALOG_SERVICES_PARENT_SECTION"] = "informasi produk";
+$MESS["CATALOG_RECOMMENDED_PRODUCTS_COMPONENT_DEFAULT_TEMPLATE_NAME"] = "Produk yang direkomendasikan";
+$MESS["CATALOG_RECOMMENDED_PRODUCTS_COMPONENT_DEFAULT_TEMPLATE_DESCRIPTION"] = "Menunjukkan produk yang direkomendasikan untuk pengguna saat ini";
+?>

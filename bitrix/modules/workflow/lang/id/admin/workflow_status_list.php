@@ -1,0 +1,30 @@
+<?
+$MESS["FLOW_CANNOT_DELETE_STATUS"] = "Koneksi server dibuat";
+$MESS["FLOW_CANNOT_DELETE_STATUS_IBLOCK"] = "Tidak ada koneksi server";
+$MESS["FLOW_PAGE_TITLE"] = "Menghubungkan ke server sekarang ...";
+$MESS["FLOW_F_ACTIVE"] = "mengisi kembali";
+$MESS["FLOW_F_DESCRIPTION"] = "Semua hasil";
+$MESS["FLOW_F_DOCUMENTS"] = "Bitrix24 Intranet (beta)";
+$MESS["FLOW_PAGES"] = "Rumah";
+$MESS["FLOW_TIMESTAMP"] = "Undang pengguna";
+$MESS["FLOW_ACTIVE"] = "Undang pengguna";
+$MESS["FLOW_C_SORT"] = "T";
+$MESS["FLOW_DESCRIPTION"] = "Acara kalender";
+$MESS["FLOW_DOCUMENTS"] = "berdialog.";
+$MESS["FLOW_DELETE_STATUS_CONFIRM"] = "Kelompok";
+$MESS["FLOW_F_LOGIC"] = "Unggah berkas";
+$MESS["FLOW_TITLE"] = "Mengunggah foto";
+$MESS["FLOW_FORGOT_NAME"] = "Membuat";
+$MESS["FLOW_TILL"] = "Konfigurasi menu";
+$MESS["FLOW_ADD"] = "Para z";
+$MESS["FLOW_DELETE"] = "dokumen";
+$MESS["FLOW_EDIT"] = "Grup";
+$MESS["MAIN_ADMIN_LIST_SELECTED"] = "Percakapan";
+$MESS["MAIN_FIND"] = "Lain";
+$MESS["MAIN_ADMIN_LIST_CHECKED"] = "Membantu";
+$MESS["MAIN_FIND_TITLE"] = "atas.";
+$MESS["MAIN_ADMIN_LIST_ACTIVATE"] = "Mulai";
+$MESS["MAIN_ALL"] = "Bitrix24 Pendahuluan";
+$MESS["MAIN_ADMIN_LIST_DEACTIVATE"] = "fN6BsyjOOtY";
+$MESS["MAIN_ADMIN_LIST_DELETE"] = "Manajemen tugas";
+?>

@@ -1,0 +1,68 @@
+<?
+$MESS["DEFAULT_SITE_NAME"] = "Portal";
+$MESS["MAIN_OPT_MENU_SECT"] = "Section menu";
+$MESS["MAIN_OPT_MENU_MAIN"] = "Site menu";
+$MESS["MAIN_OPT_MENU_BOTTOM"] = "Bottom menu";
+$MESS["MAIN_OPT_MENU_DEPARTMENT"] = "Departemen ";
+$MESS["MAIN_OPT_MENU_TOPLINKS"] = "Quick link menu";
+$MESS["MAIN_OPT_DEF_LINKS1"] = "<img height=\"3\" hspace=\"2\" src=\"/images/icons/bullet_dot.gif\" width=\"3\" vspace=\"2\" /> <a href=\"http://www.sun.com\" target=\"_blank\" >Company Site</a> 
+              <br                   
+              <br
+<img height=\"3\" hspace=\"2\" src=\"/images/icons/bullet_dot.gif\" width=\"3\" vspace=\"2\" /> <a href=\"http://www.google.com\" target=\"_blank\" >Search in the Internet</a>";
+$MESS["main_opt_user_user"] = "pemakai";
+$MESS["main_opt_user_upd"] = "Last update";
+$MESS["main_opt_user_last"] = "Last authorized";
+$MESS["main_opt_user_name"] = "Nama";
+$MESS["main_opt_user_lastname"] = "Nama keluarga";
+$MESS["main_opt_user_secondname"] = "Middle name";
+$MESS["main_opt_user_login"] = "Login (min. 3 characters)";
+$MESS["main_opt_user_pass"] = "Kata Sandi Baru";
+$MESS["main_opt_user_str"] = "Company structure";
+$MESS["main_opt_user_dep"] = "Departemen ";
+$MESS["main_opt_user_group"] = "Grup";
+$MESS["main_opt_user_group_user"] = "User groups";
+$MESS["main_opt_user_pers"] = "Personal data";
+$MESS["main_opt_user_sex"] = "Jenis kelamin";
+$MESS["main_opt_user_bith"] = "Birthday (MM/DD/YYYY)";
+$MESS["main_opt_user_photo"] = "Foto";
+$MESS["main_opt_user_spec"] = "JABATAN:";
+$MESS["main_opt_user_inn"] = "INN";
+$MESS["main_opt_user_www"] = "Web page";
+$MESS["main_opt_user_ph"] = "Phones";
+$MESS["main_opt_user_ph1"] = "Telepon";
+$MESS["main_opt_user_fax"] = "Faks:";
+$MESS["main_opt_user_mobile"] = "mobil";
+$MESS["main_opt_user_pager"] = "Pager";
+$MESS["main_opt_user_skype"] = "Skype";
+$MESS["main_opt_user_addr"] = "Alamat";
+$MESS["main_opt_user_country"] = "Negara";
+$MESS["main_opt_user_reg"] = "Stat";
+$MESS["main_opt_user_city"] = "Kota";
+$MESS["main_opt_user_zip"] = "Kode Pos";
+$MESS["main_opt_user_distr"] = "Wilayah";
+$MESS["main_opt_user_street"] = "Street, house";
+$MESS["main_opt_user_pb"] = "· Kotak pesan anda";
+$MESS["main_opt_user_notes"] = "Catatan";
+$MESS["main_opt_user_work"] = "Pekerjaan";
+$MESS["main_opt_user_work_title"] = "Posisi";
+$MESS["main_opt_user_work_dep"] = "Departemen ";
+$MESS["main_opt_user_work_title1"] = "Jabatan";
+$MESS["main_opt_user_work_desc"] = "Business sector";
+$MESS["main_opt_user_internal_ph"] = "Extension number";
+$MESS["main_opt_user_comp"] = "Perusahaan";
+$MESS["main_opt_user_comp_name"] = "Nama Perusahaan";
+$MESS["main_opt_user_comp_logo"] = "Company logo";
+$MESS["main_opt_user_blog"] = "Blog";
+$MESS["main_opt_user_forum"] = "Forum";
+$MESS["main_opt_user_learning"] = "Pelatihan.";
+$MESS["main_opt_user_addit"] = "149 Tambahan";
+$MESS["main_opt_user_userprop"] = "bidang khusus";
+$MESS["main_opt_user_userprop_add"] = "Add user property";
+$MESS["main_opt_user_userprop_1c"] = "User from 1C";
+$MESS["main_opt_user_notify"] = "pemberitahuan";
+$MESS["main_opt_user_notify_site"] = "Default site for notifications";
+$MESS["main_opt_user_notify_do"] = "Notify user";
+$MESS["main_opt_user_admin"] = "Administrator comments";
+$MESS["main_opt_user_active"] = "User is active";
+$MESS["main_site_name"] = "Bitrix";
+?>

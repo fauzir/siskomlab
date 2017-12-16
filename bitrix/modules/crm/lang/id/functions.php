@@ -1,0 +1,4 @@
+<?
+$MESS["CRM_FIELD_COMPARE_DELETE"] = "dihapus";
+$MESS["CRM_FIELD_COMPARE_EMPTY"] = "kosong";
+?>

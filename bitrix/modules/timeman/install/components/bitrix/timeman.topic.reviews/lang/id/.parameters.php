@@ -1,0 +1,4 @@
+<?
+$MESS["REPORT_ID_MESS"] = "Jumat";
+$MESS["REPORT_FORUM_ID_COMMENT_MESS"] = "Sabtu";
+?>

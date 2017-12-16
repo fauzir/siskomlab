@@ -1,0 +1,37 @@
+<?
+$MESS["CRM_MODULE_NOT_INSTALLED"] = "The CRM module is not installed.";
+$MESS["TASKS_MODULE_NOT_INSTALLED"] = "The Tasks module is not installed.";
+$MESS["CRM_PERMISSION_DENIED"] = "Akses ditolak.";
+$MESS["CRM_COLUMN_ID"] = "ID";
+$MESS["CRM_COLUMN_TITLE"] = "Nama";
+$MESS["CRM_COLUMN_ENTITY_TYPE"] = "Tipe";
+$MESS["CRM_COLUMN_ENTITY_TITLE"] = "Judul";
+$MESS["CRM_COLUMN_REAL_STATUS"] = "Status";
+$MESS["CRM_COLUMN_CHANGED_BY"] = "Modified by";
+$MESS["CRM_COLUMN_RESPONSIBLE_BY"] = "Responsible Person";
+$MESS["CRM_COLUMN_DATE_CREATE"] = "Dibuat Pada";
+$MESS["CRM_COLUMN_DATE_MODIFY"] = "diubah pada";
+$MESS["CRM_COLUMN_CLOSED_DATE"] = "Closed on";
+$MESS["CRM_COLUMN_DATE_START"] = "Mulai tanggal";
+$MESS["CRM_COLUMN_PRIORITY"] = "Prioritas";
+$MESS["CRM_PRESET_NEW"] = "New Tasks";
+$MESS["CRM_PRESET_CHANGE_TODAY"] = "Modified Today";
+$MESS["CRM_PRESET_CHANGE_YESTERDAY"] = "Modified Yesterday";
+$MESS["CRM_PRESET_CHANGE_MY"] = "Modified by Me";
+$MESS["CRM_PRESET_MY"] = "My Tasks";
+$MESS["TASKS_STATUS_1"] = "Baru";
+$MESS["TASKS_STATUS_2"] = "tertunda";
+$MESS["TASKS_STATUS_3"] = "In Progress";
+$MESS["TASKS_STATUS_4"] = "Supposedly completed";
+$MESS["TASKS_STATUS_5"] = "Selesai";
+$MESS["TASKS_STATUS_6"] = "Deferred";
+$MESS["TASKS_STATUS_7"] = "Ditolak";
+$MESS["TASKS_PRIORITY_0"] = "Rendah";
+$MESS["TASKS_PRIORITY_1"] = "Normal";
+$MESS["TASKS_PRIORITY_2"] = "Tinggi";
+$MESS["CRM_ENTITY_TYPE_LEAD"] = "Lead";
+$MESS["CRM_ENTITY_TYPE_CONTACT"] = "Kontak";
+$MESS["CRM_ENTITY_TYPE_COMPANY"] = "Perusahaan";
+$MESS["CRM_ENTITY_TYPE_DEAL"] = "Penawaran";
+$MESS["CRM_COLUMN_UF_CRM_TASK"] = "CRM Item";
+?>

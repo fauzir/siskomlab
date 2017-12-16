@@ -1,0 +1,8 @@
+<?
+$MESS["VAT_ENTITY_ID_FIELD"] = "Mark-up ID";
+$MESS["VAT_ENTITY_TIMESTAMP_X_FIELD"] = "diubah pada";
+$MESS["VAT_ENTITY_ACTIVE_FIELD"] = "Aktif";
+$MESS["VAT_ENTITY_SORT_FIELD"] = "Menyortir";
+$MESS["VAT_ENTITY_NAME_FIELD"] = "Nama";
+$MESS["VAT_ENTITY_RATE_FIELD"] = "Nilai";
+?>

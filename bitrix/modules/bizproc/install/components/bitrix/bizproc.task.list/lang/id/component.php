@@ -1,0 +1,38 @@
+<?
+$MESS["BPABS_TITLE"] = "Tugas";
+$MESS["BPATL_NAV"] = "Tugas";
+$MESS["BPTL_C_DETAIL"] = "rincian";
+$MESS["BPTL_C_DOCUMENT"] = "Element (in a new window)";
+$MESS["BPWC_WLC_ERROR"] = "Kesalahan";
+$MESS["BPATL_NAME"] = "Nama";
+$MESS["BPATL_DESCRIPTION"] = "Deskripsi";
+$MESS["BPATL_MODIFIED"] = "Diubah";
+$MESS["BPATL_OVERDUE_DATE"] = "Deadline Date";
+$MESS["BPATL_WORKFLOW_NAME"] = "Business Process Name";
+$MESS["BPATL_WORKFLOW_STATE"] = "Business Process Status";
+$MESS["INTS_TASKS_NAV"] = "Tugas";
+$MESS["BPATL_STARTED"] = "Active from";
+$MESS["BPATL_STARTED_BY"] = "Started By";
+$MESS["BPATL_WORKFLOW_ID"] = "Business Process";
+$MESS["BPATL_WORKFLOW_ID_ANY"] = "Apa saja";
+$MESS["BPATL_DOCUMENT_NAME"] = "Elemen";
+$MESS["BPATL_COMMENTS"] = "komentar";
+$MESS["BPATL_WORKFLOW_PROGRESS"] = "10032 = Kemajuan";
+$MESS["BPATL_DO_TASK"] = "10032 = Kemajuan";
+$MESS["BPATL_BEGIN"] = "Mulai";
+$MESS["BPATL_FILTER_USER"] = "Karyawan";
+$MESS["BPATL_FILTER_DOCTYPE_ALL"] = "Semua";
+$MESS["BPATL_FILTER_DOCTYPE_CLAIMS"] = "Administrative Workflows";
+$MESS["BPATL_FILTER_DOCTYPE_CRM"] = "CRM";
+$MESS["BPATL_FILTER_DOCTYPE_DISK"] = "Files";
+$MESS["BPATL_FILTER_DOCTYPE_LISTS"] = "Daftar";
+$MESS["BPATL_FILTER_STATUS"] = "Status";
+$MESS["BPATL_FILTER_STATUS_ALL"] = "Semua";
+$MESS["BPATL_FILTER_STATUS_RUNNING"] = "In progress";
+$MESS["BPATL_FILTER_STATUS_COMPLETE"] = "Selesai";
+$MESS["BPATL_USER_STATUS_YES"] = "You approved the element";
+$MESS["BPATL_USER_STATUS_NO"] = "You rejected the element";
+$MESS["BPATL_USER_STATUS_OK"] = "You read the element";
+$MESS["BPATL_ERROR_DELEGATE"] = "Cannot delegate because the selected employee is not your subordinate.";
+$MESS["BPATL_ERROR_SUBORDINATION"] = "You cannot view the selected employee's tasks because he or she is not your subordinate.";
+?>

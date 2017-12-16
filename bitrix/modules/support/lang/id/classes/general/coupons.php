@@ -1,0 +1,9 @@
+<?
+$MESS["SUP_ST_ERROR_NO_NEW_COUPON"] = "tanggung jawab";
+$MESS["SUP_ST_ERROR_NO_UPDATE_DATA"] = "tugas di proyek";
+$MESS["SUP_ST_ERROR_NO_UPDATES_ROWS"] = "description";
+$MESS["SUP_ST_ERR_DATE_INTERVAL"] = "T";
+$MESS["SUP_ST_ERR_ACTIVE"] = "TUGAS";
+$MESS["SUP_ST_ERR_COUNT_TICKETS"] = "TUGAS";
+$MESS["SUP_ST_ERR_SLA_ID"] = "terlambat";
+?>

@@ -1,0 +1,36 @@
+<?
+$MESS["CT_BSP_ALL"] = "Tersembunyi";
+$MESS["CT_BSP_GO"] = "Lebih";
+$MESS["CT_BSP_ITEM_TAGS"] = "Menyembunyikan";
+$MESS["CT_BSP_DATE_CHANGE"] = "OK";
+$MESS["CT_BSP_FOUND"] = "Simpan perubahan";
+$MESS["CT_BSP_ORDER"] = "Tambahkan ke My Workspace";
+$MESS["CT_BSP_ORDER_BY_RANK"] = "Tambahkan ke menu kiri";
+$MESS["CT_BSP_ORDER_BY_DATE"] = "Hapus dari menu kiri";
+$MESS["CT_BSP_ADVANCED_SEARCH"] = "Hapus dari My Workspace";
+$MESS["CT_BSP_WHERE_LABEL"] = "Sembunyikan item";
+$MESS["CT_BSP_TAGS"] = "Tampilkan item";
+$MESS["CT_BSP_WHERE"] = "Tetapkan izin akses";
+$MESS["CT_BSP_EVERYWHERE"] = "Itu salah.";
+$MESS["CT_BSP_WHEN"] = "Kesalahan mengedit item.";
+$MESS["CT_BSP_DATES_FROM_TO"] = "Konfigurasi menu";
+$MESS["CT_BSP_DATES_FROM"] = "Tambahkan item menu khusus";
+$MESS["CT_BSP_DATES_TO"] = "Edit item menu ubahsuaian";
+$MESS["CT_BSP_DATES_ALL"] = "Konfigurasikan item menu";
+$MESS["CT_BSP_ERROR"] = "Reset menu";
+$MESS["CT_BSP_CORRECT_AND_CONTINUE"] = "Menambahkan";
+$MESS["CT_BSP_SINTAX"] = "Nama";
+$MESS["CT_BSP_LOGIC"] = "Link";
+$MESS["CT_BSP_OPERATOR"] = "Buat home page untuk semua Bitrix24";
+$MESS["CT_BSP_SYNONIM"] = "Urutan Anda dan item menu kustom akan dihapus. Yakin ingin mengatur ulang menu?";
+$MESS["CT_BSP_DESCRIPTION"] = "Ulang";
+$MESS["CT_BSP_AND"] = "Hapus item khusus";
+$MESS["CT_BSP_AND_ALT"] = "Yakin ingin menghapus item menu khusus ini?";
+$MESS["CT_BSP_OR"] = "Tambahkan item menu untuk semua karyawan";
+$MESS["CT_BSP_OR_ALT"] = "Hapus item menu untuk semua karyawan";
+$MESS["CT_BSP_NOT"] = "Hapus dari menu";
+$MESS["CT_BSP_NOT_ALT"] = "Buka di tab baru";
+$MESS["CT_BSP_BRACKETS_ALT"] = "Tambahkan halaman ini ke menu kiri";
+$MESS["CT_BSP_NOTHING_TO_FOUND"] = "Hapus halaman ini dari menu kiri";
+$MESS["CT_BSP_KEYBOARD_WARNING"] = "Halaman sudah ada di menu kiri";
+?>

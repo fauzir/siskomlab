@@ -1,0 +1,7 @@
+<?
+$MESS["TASKS_EMPLOYEEPLAN_TEMPLATE_TITLE"] = "Keterlibatan dalam tugas";
+$MESS["TASKS_EMPLOYEEPLAN_SHOW_MORE"] = "Menampilkan lebih banyak";
+$MESS["TASKS_EMPLOYEEPLAN_BY_DEPARTMENT"] = "oleh Departemen";
+$MESS["TASKS_EMPLOYEEPLAN_OF_EMPLOYEE"] = "Karyawan";
+$MESS["TASKS_EMPLOYEEPLAN_BY_PERIOD"] = "Bagi";
+?>

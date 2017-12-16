@@ -1,0 +1,5 @@
+<?
+$MESS["HLBLOCK_ROW_VIEW_NAME_COLUMN"] = "Bidang";
+$MESS["HLBLOCK_ROW_VIEW_VALUE_COLUMN"] = "Nilai";
+$MESS["HLBLOCK_ROW_VIEW_BACK_TO_LIST"] = "Kembali ke daftar";
+?>

@@ -1,0 +1,3 @@
+<?
+$MESS["TASK_PARAMETER_ENTITY_CODE_FIELD"] = "3000 vote";
+?>

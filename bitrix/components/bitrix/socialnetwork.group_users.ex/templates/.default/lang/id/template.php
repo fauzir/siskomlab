@@ -1,0 +1,35 @@
+<?
+$MESS["SONET_GUE_T_MODS_SUBTITLE"] = "Moderator";
+$MESS["SONET_GUE_T_USERS_SUBTITLE"] = "anggota";
+$MESS["SONET_GUE_T_BAN_SUBTITLE"] = "Pengguna penyandang cacat";
+$MESS["SONET_GUE_T_ACTIONS_TITLE"] = "Tindakan";
+$MESS["SONET_GUE_T_OWNER"] = "Pemilik";
+$MESS["SONET_GUE_T_ACTION_ADDTOUSERS"] = "Undang pengguna";
+$MESS["SONET_GUE_T_ACTION_ADDTOMODERATORS"] = "Tetapkan sebagai moderator";
+$MESS["SONET_GUE_T_ACTION_EXCLUDEFROMGROUP"] = "Hapus dari grup";
+$MESS["SONET_GUE_T_ACTION_EXCLUDEFROMGROUP_CONFIRM"] = "Yakin ingin menghapus pengguna ini dari grup kerja?";
+$MESS["SONET_GUE_T_ACTION_BANFROMGROUP"] = "Melarang";
+$MESS["SONET_GUE_T_ACTION_EXCLUDEFROMMODERATORS"] = "Kecualikan dari moderator";
+$MESS["SONET_GUE_T_ACTION_UNBANFROMGROUP"] = "Unban";
+$MESS["SONET_GUE_T_ACTION_SETGROUPOWNER"] = "Ganti pemilik";
+$MESS["SONET_GUE_T_ACTION_SETGROUPOWNER_CONFIRM"] = "Anda yakin ingin mengganti pemilik workgroup?";
+$MESS["SONET_GUE_T_USER_ID_NOT_DEFINED"] = "Tidak ada pengguna yang dipilih";
+$MESS["SONET_GUE_T_USER_ID_INCORRECT"] = "Pilih satu pengguna.";
+$MESS["SONET_GUE_T_OWNER_CANT_EXCLUDE_HIMSELF"] = "Seorang pemilik tidak bisa melepaskan diri dari kelompok.";
+$MESS["SONET_GUE_T_GROUP_ID_NOT_DEFINED"] = "Kelompok kerja tidak ditemukan.";
+$MESS["SONET_GUE_T_NOT_ATHORIZED"] = "Anda belum login";
+$MESS["SONET_GUE_T_MODULE_NOT_INSTALLED"] = "Modul Jaringan Sosial tidak diinstal.";
+$MESS["SONET_GUE_T_NO_PERMS"] = "Anda tidak memiliki izin untuk mengelola kelompok kerja ini.";
+$MESS["SONET_GUE_T_SESSION_WRONG"] = "Sesi Anda telah berakhir. Coba lagi.";
+$MESS["SONET_GUE_T_ACTION_FAILED"] = "Tindakan mengembalikan hasil yang salah: # ERROR #";
+$MESS["SONET_GUE_T_WAIT"] = "Silakan tunggu & hellip;";
+$MESS["SONET_GUE_T_SAME_OWNER"] = "Pengguna yang ditentukan sudah menjadi pemilik workgroup.";
+$MESS["SONET_GUE_T_FIRED"] = "- Bubar.";
+$MESS["SONET_GUE_T_FIRED_M"] = "- Bubar.";
+$MESS["SONET_GUE_T_FIRED_F"] = "Bubar.";
+$MESS["SONET_GUE_T_USERS_AUTO_SUBTITLE"] = "Pengguna yang terhubung";
+$MESS["SONET_GUE_T_DEPARTMENTS_SUBTITLE"] = "Departemen ";
+$MESS["SONET_GUE_T_ACTION_UNCONNECT_DEPT"] = "Memutuskan";
+$MESS["SONET_GUE_T_DEPARTMENT_ID_NOT_DEFINED"] = "Tidak ada departemen yang dipilih.";
+$MESS["SONET_GUE_T_CANT_EXCLUDE_AUTO_MEMBER"] = "Pengguna yang terhubung tidak dapat dihapus dari grup.";
+?>

@@ -1,0 +1,16 @@
+<?
+$MESS["CTRL_MEMB_HIST_TITLE"] = "Website history";
+$MESS["CTRL_MEMB_HIST_BACK"] = "Situs web";
+$MESS["CTRL_MEMB_HIST_BACK_TITLE"] = "Back to website editor";
+$MESS["CTRL_MEMB_HIST_CONTROLLER_MEMBER_ID"] = "Website ID";
+$MESS["CTRL_MEMB_HIST_FIELD"] = "Changed field";
+$MESS["CTRL_MEMB_HIST_CREATED_DATE"] = "Waktu";
+$MESS["CTRL_MEMB_HIST_USER_ID"] = "pemakai";
+$MESS["CTRL_MEMB_HIST_FROM_VALUE"] = "Initial value";
+$MESS["CTRL_MEMB_HIST_TO_VALUE"] = "New value";
+$MESS["CTRL_MEMB_HIST_NOTES"] = "Catatan";
+$MESS["CTRL_MEMB_HIST_NAVSTRING"] = "Merekam";
+$MESS["CTRL_MEMB_HIST_CONTROLLER_GROUP_ID"] = "Website group";
+$MESS["CTRL_MEMB_HIST_SITE_ACTIVE"] = "Aktif";
+$MESS["CTRL_MEMB_HIST_ANY"] = "Apa saja";
+?>

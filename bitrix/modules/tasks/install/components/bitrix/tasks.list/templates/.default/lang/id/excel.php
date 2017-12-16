@@ -1,0 +1,31 @@
+<?
+$MESS["TASKS_STATUS_1"] = "Lanjut";
+$MESS["TASKS_STATUS_2"] = "Selesai";
+$MESS["TASKS_STATUS_3"] = "Berhenti sebentar";
+$MESS["TASKS_STATUS_4"] = "Menunda";
+$MESS["TASKS_STATUS_5"] = "Terima sebagai Selesai";
+$MESS["TASKS_STATUS_6"] = "Kembali untuk Penyelesaian";
+$MESS["TASKS_STATUS_7"] = "Hapus";
+$MESS["TASKS_SIDEBAR_IN_REPORT_YES"] = "Konfirmasikan Penghapusan?";
+$MESS["TASKS_SIDEBAR_IN_REPORT_NO"] = "Konfirmasikan Penghapusan?";
+$MESS["TASKS_DURATION_HOURS"] = "Hapus file?";
+$MESS["TASKS_DURATION_DAYS"] = "Buat dari template tugas";
+$MESS["TASKS_EXCEL_ID"] = "semua Template";
+$MESS["TASKS_EXCEL_TITLE"] = "Jam dihabiskan";
+$MESS["TASKS_EXCEL_RESPONSIBLE_ID"] = "OK";
+$MESS["TASKS_EXCEL_CREATED_BY"] = "Alasan penolakan";
+$MESS["TASKS_EXCEL_CREATED_DATE"] = "Template tugas (untuk subtask baru)";
+$MESS["TASKS_EXCEL_REAL_STATUS"] = "Nama tugas dan deskripsi";
+$MESS["TASKS_EXCEL_PRIORITY"] = "mengingatkan";
+$MESS["TASKS_EXCEL_START_DATE_PLAN"] = "Tags";
+$MESS["TASKS_EXCEL_END_DATE_PLAN"] = "tak satupun";
+$MESS["TASKS_EXCEL_DEADLINE"] = "File";
+$MESS["TASKS_EXCEL_TIME_ESTIMATE"] = "Subtasks";
+$MESS["TASKS_EXCEL_TIME_SPENT_IN_LOGS"] = "Tugas sebelumnya";
+$MESS["TASKS_EXCEL_CLOSED_DATE"] = "komentar";
+$MESS["TASKS_EXCEL_MARK"] = "changelog";
+$MESS["TASKS_EXCEL_ADD_IN_REPORT"] = "Status";
+$MESS["TASKS_EXCEL_GROUP_ID"] = "sejak";
+$MESS["TASKS_ELAPSED_H"] = "Mulai";
+$MESS["TASKS_ELAPSED_M"] = "Akhir";
+?>

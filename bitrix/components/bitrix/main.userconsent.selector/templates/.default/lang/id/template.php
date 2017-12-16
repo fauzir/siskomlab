@@ -1,0 +1,7 @@
+<?
+$MESS["MAIN_USER_CONSENT_SELECTOR_DEF_NOT_SELECTED"] = "(tidak terpilih)";
+$MESS["MAIN_USER_CONSENT_SELECTOR_BTN_EDIT"] = "Edit pengaturan";
+$MESS["MAIN_USER_CONSENT_SELECTOR_BTN_CREATE"] = "Buat Persetujuan baru";
+$MESS["MAIN_USER_CONSENT_SELECTOR_BTN_CONSENT"] = "Diperoleh persetujuan";
+$MESS["MAIN_USER_CONSENT_SELECTOR_CHOOSE"] = "Pilih Persetujuan";
+?>

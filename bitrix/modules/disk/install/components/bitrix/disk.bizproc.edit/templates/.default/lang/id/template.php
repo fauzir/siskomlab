@@ -1,0 +1,29 @@
+<?
+$MESS["BIZPROC_WFEDIT_MENU_PARAMS_TITLE"] = "Template parameters; variables; autorun";
+$MESS["BIZPROC_WFEDIT_MENU_PARAMS"] = "Template Parameters";
+$MESS["BIZPROC_WFEDIT_MENU_LIST"] = "template";
+$MESS["BIZPROC_WFEDIT_MENU_LIST_TITLE"] = "View templates";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_WARN"] = "All the changes will be lost if you did not save them. Terus";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_STATE"] = "State-driven business process";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_STATE_TITLE"] = "State-driven business process is a continuous business process with access permission distribution to handle documents in different status";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_SEQ"] = "Sequential business process";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_SEQ_TITLE"] = "Sequential business process is a simple business process to perform a series of  consecutive actions on a document";
+$MESS["BIZPROC_WFEDIT_MENU_ADD"] = "Create Template";
+$MESS["BIZPROC_WFEDIT_MENU_ADD_TITLE"] = "Add a new template";
+$MESS["BIZPROC_WFEDIT_SAVE_BUTTON"] = "Simpan";
+$MESS["BIZPROC_WFEDIT_APPLY_BUTTON"] = "Terapkan";
+$MESS["BIZPROC_WFEDIT_CANCEL_BUTTON"] = "Batal";
+$MESS["BIZPROC_WFEDIT_MENU_EXPORT"] = "Ekspor";
+$MESS["BIZPROC_WFEDIT_MENU_EXPORT_TITLE"] = "Export Business Process Template";
+$MESS["BIZPROC_WFEDIT_MENU_IMPORT"] = "Impor";
+$MESS["BIZPROC_WFEDIT_MENU_IMPORT_TITLE"] = "Import Business Process Template";
+$MESS["BIZPROC_IMPORT_BUTTON"] = "Impor";
+$MESS["BIZPROC_IMPORT_TITLE"] = "Import Template";
+$MESS["BIZPROC_IMPORT_FILE"] = "Mengajukan";
+$MESS["BIZPROC_WFEDIT_MENU_IMPORT_PROMT"] = "Current business process template will be replaced with the imported one. Terus";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE"] = "Old template";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_CP"] = "97%";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_B24"] = "Lampiran 1";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_P1"] = "You have the new \"Drive\" module installed. Templates which were created before the upgrade to the Drive module may not work properly.";
+$MESS["BIZPROC_IMPORT_FILE_OLD_TEMPLATE_P2"] = "If you are importing a template that was created on a different site before the new Drive module was released (before #DATE#), mark the template as \"Old\" so that the templates parameters and varialbes are correctly handled by internal processes.";
+?>

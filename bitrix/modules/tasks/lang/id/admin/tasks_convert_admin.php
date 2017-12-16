@@ -1,0 +1,8 @@
+<?
+$MESS["TASKS_ADDED"] = "November";
+$MESS["MOD_BACK"] = "Desember";
+$MESS["TASKS_SETTINGS"] = "Su";
+$MESS["TASKS_PRODUCT_SETTINGS"] = "Mo";
+$MESS["TASKS_MODULES"] = "Tu";
+$MESS["TASKS_CONVERT_TASKS"] = "Kita";
+?>

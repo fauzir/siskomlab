@@ -1,0 +1,6 @@
+<?
+$MESS["PHONE_ENTITY_ID_FIELD"] = "Minggu";
+$MESS["PHONE_ENTITY_USER_ID_FIELD"] = "Bulan";
+$MESS["PHONE_ENTITY_PHONE_NUMBER_FIELD"] = "Tetapkan Jenis Absen";
+$MESS["PHONE_ENTITY_PHONE_MNEMONIC_FIELD"] = "tunjukkan semua";
+?>

@@ -1,0 +1,5 @@
+<?
+$MESS["LEARNING_TRANSCRIPT_ID_NAME"] = "ID transkrip";
+$MESS["LEARNING_COURSE_DETAIL_TEMPLATE_NAME"] = "URL halaman detail kursus";
+$MESS["LEARNING_NAME_TEMPLATE"] = "Format nama";
+?>

@@ -1,0 +1,21 @@
+<?
+$MESS["CRM_MODULE_NOT_INSTALLED"] = "The CRM module is not installed.";
+$MESS["CRM_NOT_SELECTED"] = "tak satupun";
+$MESS["CRM_COLUMN_ID"] = "ID";
+$MESS["CRM_COLUMN_NAME"] = "Nama";
+$MESS["CRM_COLUMN_CATALOG_ID"] = "Catalog";
+$MESS["CRM_COLUMN_SORT"] = "Menyortir";
+$MESS["CRM_COLUMN_PRICE"] = "Harga";
+$MESS["CRM_COLUMN_ACTIVE"] = "Aktif";
+$MESS["CRM_COLUMN_DESCRIPTION"] = "Deskripsi";
+$MESS["CRM_PRODUCT_NAV_TITLE_LIST"] = "produk";
+$MESS["CRM_COLUMN_SECTION"] = "Bagian";
+$MESS["CRM_COLUMN_VAT_ID"] = "VAT rate";
+$MESS["CRM_COLUMN_VAT_INCLUDED"] = "VAT included";
+$MESS["CRM_COLUMN_MEASURE"] = "Unit of measurement";
+$MESS["CRM_MEASURE_NOT_SELECTED"] = "[not selected]";
+$MESS["CRM_PRODUCT_FIELD_PREVIEW_PICTURE"] = "Preview image";
+$MESS["CRM_PRODUCT_FIELD_DETAIL_PICTURE"] = "Full image";
+$MESS["CRM_PRODUCT_LIST_FILTER_SECTION_ALL"] = "Apa saja";
+$MESS["CRM_PRODUCT_LIST_FILTER_SECTION_ROOT"] = "Root";
+?>

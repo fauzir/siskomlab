@@ -1,0 +1,29 @@
+<?
+$MESS["PROPS_TYPE_TITLE"] = "Property groups";
+$MESS["PT_FILTER_NAME"] = "Payer type";
+$MESS["SALE_ALL"] = "semua";
+$MESS["SALE_F_FILTER"] = "Set Filter";
+$MESS["SALE_F_DEL"] = "Hapus Penyaring";
+$MESS["LANG_FILTER_BTN"] = "Set Filter";
+$MESS["PERS_TYPE_DEL_CONF"] = "All properties in this group will be deleted. Apakah anda yakin ingin melanjutkan?";
+$MESS["PERS_TYPE_NAV"] = "Property groups";
+$MESS["PERS_TYPE_ID"] = "ID";
+$MESS["PERS_TYPE_NAME"] = "Nama";
+$MESS["PERS_TYPE_TYPE"] = "Payer type";
+$MESS["PERS_TYPE_SORT"] = "Menyortir";
+$MESS["PERS_TYPE_DEL"] = "Hapus";
+$MESS["PERS_TYPE_UPD"] = "Simpan";
+$MESS["PERS_TYPE_RESET"] = "Ulang";
+$MESS["ERROR_ADD_REC"] = "Error adding a record";
+$MESS["ERROR_NAME_REC"] = "The \"Name\" field is required";
+$MESS["ERROR_PERSON_TYPE_ID_REC"] = "The \"Payer type\" field is required";
+$MESS["ERROR_UPDATE_REC"] = "Error updating a record";
+$MESS["SALE_PROPS"] = "Properti";
+$MESS["SOPGAN_DELETE_ERROR"] = "Error deleting a record";
+$MESS["SOPGAN_PROPS"] = "Properti";
+$MESS["SOPGAN_EDIT_PROMT"] = "Modify group";
+$MESS["SOPGAN_DELETE_PROMT"] = "Hapus grup";
+$MESS["SOPGAN_DELETE_PROMT_CONF"] = "Are you sure you want to delete this property group? ";
+$MESS["SOPGAN_ADD_NEW"] = "Grup baru";
+$MESS["SOPGAN_ADD_NEW_ALT"] = "Klik untuk menambahkan grup baru";
+?>

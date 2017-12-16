@@ -1,0 +1,22 @@
+<?
+$MESS["TASK_COLUMN_CREATED_BY"] = "Dibuat oleh";
+$MESS["TASK_COLUMN_RESPONSIBLE_ID"] = "responsible person";
+$MESS["TASK_COLUMN_DEADLINE"] = "deadline";
+$MESS["TASK_COLUMN_PRIORITY"] = "Prioritas";
+$MESS["TASK_COLUMN_STATUS"] = "status";
+$MESS["TASKS_PRIORITY_2"] = "High Priority";
+$MESS["TASKS_STATUS_METASTATE_EXPIRED"] = "Overdue";
+$MESS["TASKS_STATUS_STATE_NEW"] = "Baru";
+$MESS["TASKS_STATUS_STATE_PENDING"] = "tertunda";
+$MESS["TASKS_STATUS_STATE_IN_PROGRESS"] = "In progress";
+$MESS["TASKS_STATUS_STATE_SUPPOSEDLY_COMPLETED"] = "Pending review";
+$MESS["TASKS_STATUS_STATE_COMPLETED"] = "Selesai";
+$MESS["TASKS_STATUS_STATE_DEFERRED"] = "Deferred";
+$MESS["TASKS_STATUS_STATE_DECLINED"] = "Ditolak";
+$MESS["TASKS_STATUS_STATE_UNKNOWN"] = "tidak diketahui";
+$MESS["TASK_EXPIRED"] = "Overdue";
+$MESS["TASKS_EMPTY_LIST"] = "Task list is empty";
+$MESS["TASKS_EMPTY_LIST1"] = "Create task";
+$MESS["TASKS_EMPTY_LIST2"] = "No tasks were found";
+$MESS["TASKS_ALL_TASKS"] = "Semua";
+?>

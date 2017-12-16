@@ -1,0 +1,32 @@
+<?
+$MESS["BPWC_WNCT_2LIST"] = "Shops";
+$MESS["BPWC_WNCT_TAB1"] = "Toko";
+$MESS["BPWC_WNCT_TAB1T"] = "Edit parameters";
+$MESS["BPWC_WNCT_DATE_CREATE"] = "Dibuat Pada";
+$MESS["BPWC_WNCT_DATE_UPDATE"] = "Terakhir Diubah pada";
+$MESS["BPWC_WNCT_NAME"] = "Nama";
+$MESS["BPWC_WNCT_ACTIVE"] = "Aktif";
+$MESS["BPWC_WNCT_URL"] = "URL";
+$MESS["BPWC_WNCT_LOGIN"] = "Masuk";
+$MESS["BPWC_WNCT_PASSWORD"] = "Kata sandi";
+$MESS["BPWC_WNCT_SIZE"] = "Maximum orders per upload";
+$MESS["BPWC_WNCT_IMPORT_PERIOD"] = "Upload period (days)";
+$MESS["BPWC_WNCT_STATUS"] = "Last synchronization status";
+$MESS["BPWC_WNCT_LABEL"] = "Modification mark";
+$MESS["BPWC_WNCT_NOTE_HINT"] = "Specify the login and password of a shop user with permission to edit orders in all statuses and to import and export.";
+$MESS["BPWC_WNCT_DATA_SYNC_PERIOD"] = "Synchronization period (minutes, set 0 to disable)";
+$MESS["BPWC_WNCT_2SYNC"] = "Impor";
+$MESS["BPWC_WNCT_TAB2"] = "Setting";
+$MESS["BPWC_WNCT_TAB2T"] = "pengaturan tambahan";
+$MESS["BPWC_WNCT_IMPORT_PROBABILITY"] = "Default deal probability, %";
+$MESS["BPWC_WNCT_IMPORT_RESPONSIBLE"] = "Default responsible person";
+$MESS["BPWC_WNCT_IMPORT_PUBLIC"] = "Deal is public by default";
+$MESS["BPWC_WNCT_IMPORT_PREFIX"] = "Deal name prefix";
+$MESS["BPWC_WLC_NEED_FIRST_SYNC1"] = "Import needs to be run manually for the first time.";
+$MESS["BPWC_WLC_NEED_FIRST_SYNC1_DO"] = "Start import";
+$MESS["BPWC_WLC_NEED_FIRST_SYNC2"] = "In progress";
+$MESS["BPWC_WLC_NEED_FIRST_SYNC3"] = "Import error: ";
+$MESS["BPWC_WNCT_LAST_STATUS_DATE"] = "Last synchronized on";
+$MESS["BPWC_WNCT_IMPORT_GROUP_ID"] = "Notify group";
+$MESS["BPWC_WNCT_DO_SELECT"] = "Memilih";
+?>

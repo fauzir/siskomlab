@@ -1,0 +1,6 @@
+<?
+$MESS["FIT_SERVICES_MAIN_SECTION"] = "CRM";
+$MESS["FIT_SERVICES_PARENT_SECTION"] = "Memimpin";
+$MESS["FIT_SECTION_TEMPLATE_NAME"] = "Pelacak wajah";
+$MESS["FIT_SECTION_TEMPLATE_DESCRIPTION"] = "Menunjukkan statistik kunjungan";
+?>

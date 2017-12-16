@@ -1,0 +1,31 @@
+<?
+$MESS["STAT_RECORDS_LIST"] = "Situs Pengarah";
+$MESS["STAT_F_SESSION"] = "Sesi ID:";
+$MESS["STAT_F_ID"] = "id";
+$MESS["STAT_F_FROM"] = "URL rujukan";
+$MESS["STAT_F_TO"] = "Untuk:";
+$MESS["STAT_F_GROUP"] = "kelompok oleh";
+$MESS["STAT_BY_SERVER"] = "Domain:";
+$MESS["STAT_BY_LINK"] = "tautan";
+$MESS["STAT_NO_GROUP"] = "Nomor";
+$MESS["STAT_SESSION"] = "sesi";
+$MESS["STAT_URL_FROM"] = "Dari";
+$MESS["STAT_QUANTITY"] = "Nomor";
+$MESS["STAT_DATE_HIT"] = "Tanggal";
+$MESS["STAT_PAGE_TO"] = "Untuk";
+$MESS["STAT_REF_PAGES"] = "Catatan";
+$MESS["STAT_PERCENT"] = "97%";
+$MESS["STAT_AVERAGE_HITS"] = "Hits rata-rata";
+$MESS["STAT_GO_LINK"] = "Arahkan tautan";
+$MESS["STAT_FL_SID"] = "sesi";
+$MESS["STAT_FL_URL"] = "Untuk";
+$MESS["STAT_FL_PRD"] = "periode";
+$MESS["STAT_FL_LGC"] = "160 Logika";
+$MESS["STAT_EDIT_SITE"] = "Edit parameter situs";
+$MESS["STAT_SESS_OPEN"] = "Daftar sesi";
+$MESS["STAT_F_PROTOCOL"] = "Protokol";
+$MESS["STAT_F_DOMAIN"] = "Penyaring";
+$MESS["STAT_F_PAGE"] = "Halaman";
+$MESS["STAT_NUM"] = "Nomor";
+$MESS["STAT_GRAPH"] = "[4] Bagan";
+?>

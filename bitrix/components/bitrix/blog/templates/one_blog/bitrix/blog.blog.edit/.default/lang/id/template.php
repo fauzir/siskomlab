@@ -1,0 +1,31 @@
+<?
+$MESS["BLOG_TITLE"] = "nama blog";
+$MESS["BLOG_DESCR"] = "Deskripsi blog";
+$MESS["BLOG_URL"] = "Nama palsu (huruf Latin):";
+$MESS["BLOG_URL_TITLE"] = "Tentukan nama palsu untuk blog Anda (dengan huruf Latin). Nama palsu akan digunakan untuk membuat URL ke blog Anda dalam bentuk <nobr> http://this-site.com/blog/ [nama blog] </ nobr>";
+$MESS["BLOG_GRP"] = "Grup blog";
+$MESS["BLOG_AUTO_MSG"] = "Pesan otomatis:";
+$MESS["BLOG_AUTO_MSG_TITLE"] = "Gunakalah perlindungan pengiriman pesan otomatis";
+$MESS["BLOG_CAPTHA"] = "Perlu kode khusus untuk diketik jika komentar ditambahkan oleh pengguna yang tidak berwenang";
+$MESS["BLOG_OPENED_GRPS"] = "Kelompok terbuka";
+$MESS["BLOG_OPENED_TITLE"] = "Tentukan kelompok tempat seseorang dapat ditambahkan tanpa persetujuan Anda";
+$MESS["BLOG_DEF_PERMS"] = "Akses default:";
+$MESS["BLOG_GROUPS"] = "Grup";
+$MESS["BLOG_MESSAGES"] = "pesan-pesan";
+$MESS["BLOG_COMMENTS"] = "komentar";
+$MESS["BLOG_ALL_USERS"] = "Semua pengguna";
+$MESS["BLOG_REGISTERED"] = "Pengguna terdaftar";
+$MESS["BLOG_GROUP_ADD"] = "Tambahkan >>";
+$MESS["BLOG_SAVE"] = "Simpan";
+$MESS["BLOG_CREATE"] = "Buat blog";
+$MESS["BLOG_APPLY"] = "Terapkan";
+$MESS["BLOG_CANCEL"] = "Batalkan";
+$MESS["BLOG_EMAIL_NOTIFY"] = "pemberitahuan";
+$MESS["BLOG_EMAIL_NOTIFY_TITLE"] = "Kirim pemberitahuan melalui email";
+$MESS["BLOG_EMAIL_NOTIFY_HELP"] = "Mengubah opsi ini berarti Anda akan menerima pemberitahuan tentang komentar dan posting baru di blog Anda.";
+$MESS["STOF_REQUIED_FIELDS_NOTE"] = "Bidang yang harus diisi ditandai dengan tanda bintang (<font color =\" \"# FF0000\" \"> * </ font>).";
+$MESS["BLOG_NEED_AUTH"] = "Pertama mohon diotorisasi di situs";
+$MESS["BLOG_CONFIRM_DELETE"] = "Grup ini berisi pengguna. Yakin ingin menghapus grup?";
+$MESS["BLOG_GROUP_DELETE"] = "Hapus";
+$MESS["BLOG_NAME_CHANGE"] = "Edit";
+?>

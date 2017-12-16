@@ -1,0 +1,4 @@
+<?
+$MESS["TASKS_EMP_EXTRANET"] = "April";
+$MESS["TASKS_MODULE_NOT_FOUND"] = "Mungkin";
+?>

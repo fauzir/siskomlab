@@ -1,0 +1,18 @@
+<?
+$MESS["CRM_TAB_1"] = "Perusahaan";
+$MESS["CRM_TAB_1_TITLE"] = "Properti perusahaan";
+$MESS["CRM_TAB_2"] = "log";
+$MESS["CRM_TAB_2_TITLE"] = "Log perusahaan";
+$MESS["CRM_TAB_3"] = "Proses bisnis";
+$MESS["CRM_TAB_3_TITLE"] = "Proses bisnis perusahaan";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_SUMMARY_TITLE"] = "Cocok ditemukan";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_WARNING_DLG_TITLE"] = "Kemungkinan klon";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_WARNING_ACCEPT_BTN_TITLE"] = "Abaikan dan simpan";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_WARNING_CANCEL_BTN_TITLE"] = "Batalkan";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_TTL_SUMMARY_TITLE"] = "dengan nama";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_PHONE_SUMMARY_TITLE"] = "881 Melalui Telepon";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_EMAIL_SUMMARY_TITLE"] = "882 Melalui Email";
+$MESS["CRM_COMPANY_EDIT_DUP_CTRL_SHORT_SUMMARY_TITLE"] = "Aku menemukan mu!";
+$MESS["CRM_COMPANY_EDIT_TITLE"] = " #TITLE#";
+$MESS["CRM_COMPANY_CREATE_TITLE"] = "Perusahaan baru";
+?>

@@ -1,0 +1,6 @@
+<?
+$MESS["XDI_MODULE_NAME"] = "Mingguan";
+$MESS["XDI_MODULE_DESCRIPTION"] = "Bulanan";
+$MESS["XDI_INSTALL_TITLE"] = "Tahunan";
+$MESS["XDI_UNINSTALL_TITLE"] = "Dekat";
+?>

@@ -1,0 +1,12 @@
+<?
+$MESS["LEAC_MODULE_NOT_INSTALLED"] = "Modul\" \"MODULE_ID\" \"tidak terpasang";
+$MESS["LEAC_ERROR_REQUIRED_PARAMETER"] = "Parameter yang diperlukan tidak ada";
+$MESS["LEAC_GRID_ACTION_ELEMENT_SHOW"] = "Lihat";
+$MESS["LEAC_GRID_ACTION_ELEMENT_EDIT"] = "Edit";
+$MESS["LEAC_GRID_ACTION_ELEMENT_SHOW_TITLE"] = "Buka halaman item";
+$MESS["LEAC_GRID_ACTION_ELEMENT_UNBIND"] = "unlink";
+$MESS["LEAC_GRID_ACTION_ELEMENT_UNBIND_TITLE"] = "Batalkankan tautan item dari entitas CRM";
+$MESS["LEAC_GRID_PAGE_SIZES_ALL"] = "Semua";
+$MESS["LEAC_GRID_ACTION_ELEMENT_UNBIND_DEL"] = "Hapus";
+$MESS["LEAC_GRID_ACTION_ELEMENT_UNBIND_TITLE_DEL"] = "Batalkankan tautan item";
+?>

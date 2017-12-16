@@ -1,0 +1,29 @@
+<?
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Telepon";
+$MESS["ISL_PERSONAL_PHONE"] = "Alamat surat";
+$MESS["INTR_STR_UF_HEAD"] = "Kota";
+$MESS["ISL_PERSONAL_SKYPE"] = "Alamat jalan";
+$MESS["ISL_PERSONAL_EMAIL"] = "{0}2) Daerah / Negara /0} {1/}{/0}";
+$MESS["INTR_ISP_PM"] = "PO Box";
+$MESS["INTR_ISP_VIDEO_CALL"] = "Nol.";
+$MESS["INTR_ISP_TASK"] = "Negara";
+$MESS["INTR_ISP_IS_ONLINE"] = "Catatan";
+$MESS["INTR_ISP_IS_ABSENT"] = "Posisi";
+$MESS["INTR_ISP_EDIT_USER"] = "Telepon Kantor";
+$MESS["INTR_EXTRANET"] = "Catatan Administrator";
+$MESS["INTR_ISP_DEACTIVATE_USER"] = "ID eksternal";
+$MESS["INTR_ISP_DELETE_USER"] = "Halaman Pesan Pribadi";
+$MESS["INTR_ISP_RESTORE_USER"] = "Fields tambahan:";
+$MESS["INTR_CONFIRM_FIRE"] = "Tambahkan karyawan";
+$MESS["INTR_CONFIRM_RESTORE"] = "Mengelola Karyawan";
+$MESS["INTR_ISP_INVITE"] = "Impor Karyawan";
+$MESS["INTR_ISP_INVITE_ACCESS"] = "ID";
+$MESS["INTR_CONFIRM_DELETE"] = "Nama Lengkap";
+$MESS["INTR_IS_ADMIN"] = "Nama depan";
+$MESS["INTR_IS_HEAD"] = "Nama keluarga";
+$MESS["INTR_USER_extranet"] = "Nama tengah";
+$MESS["INTR_USER_fired"] = "E-mail";
+$MESS["INTR_USER_inactive"] = "Masuk";
+$MESS["INTR_USER_admin"] = "Terdaftar di:";
+$MESS["INTR_ISP_DELETE_ERROR"] = "Situs web";
+?>

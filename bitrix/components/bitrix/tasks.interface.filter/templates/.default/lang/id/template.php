@@ -1,0 +1,33 @@
+<?
+$MESS["TASKS_BTN_ADD_TASK"] = "Tugas baru";
+$MESS["TASKS_BTN_ADD_TASK_BY_TEMPLATE"] = "Tugas baru menggunakan template";
+$MESS["TASKS_BTN_LIST_TASK_TEMPLATE"] = "semua Template";
+$MESS["TASKS_AJAX_ERROR_LOAD_TEMPLATES"] = "Kesalahan memuat daftar template";
+$MESS["TASKS_AJAX_LOAD_TEMPLATES"] = "Memuat daftar ...";
+$MESS["TASKS_AJAX_EMPTY_TEMPLATES"] = "Tidak ada template tugas";
+$MESS["TASKS_BTN_GROUP_BY_SUBTASKS"] = "Kelompokkan dengan subtugas";
+$MESS["TASKS_BTN_EXPORT"] = "Daftar ekspor";
+$MESS["TASKS_BTN_EXPORT_OUTLOOK"] = "ke Microsoft Outlook";
+$MESS["TASKS_BTN_EXPORT_EXCEL"] = "ke Microsoft Excel";
+$MESS["TASKS_BTN_GROUP_WO"] = "Tidak ada proyek";
+$MESS["TASKS_BTN_GROUP_SELECT"] = "Memilih...";
+$MESS["TASKS_ADD_QUICK_TASK"] = "Buat tugas cepat";
+$MESS["TASKS_USER_SORT"] = "Menyortir";
+$MESS["TASKS_BTN_SORT_DIR_ASC"] = "Ascending";
+$MESS["TASKS_BTN_SORT_DIR_DESC"] = "menurun";
+$MESS["TASKS_BTN_SORT_ID"] = "ID";
+$MESS["TASKS_BTN_SORT_TITLE"] = "Nama";
+$MESS["TASKS_BTN_SORT_DEADLINE"] = "Batas waktu";
+$MESS["TASKS_BTN_SORT_ORIGINATOR_NAME"] = "Dibuat oleh";
+$MESS["TASKS_BTN_SORT_RESPONSIBLE_NAME"] = "Penanggung jawab";
+$MESS["TASKS_BTN_SORT_PRIORITY"] = "Prioritas";
+$MESS["TASKS_BTN_SORT_MARK"] = "Skor";
+$MESS["TASKS_BTN_SORT_TIME_ESTIMATE"] = "Diperkirakan waktu yang dibutuhkan";
+$MESS["TASKS_BTN_SORT_ALLOW_TIME_TRACKING"] = "Lacak waktu yang dihabiskan";
+$MESS["TASKS_BTN_SORT_CREATED_DATE"] = "Dibuat Pada";
+$MESS["TASKS_BTN_SORT_CHANGED_DATE"] = "diubah pada";
+$MESS["TASKS_BTN_SORT_CLOSED_DATE"] = "Ditutup pada";
+$MESS["TASKS_BTN_SORT_SORTING"] = "Penyortiran saya";
+$MESS["TASKS_BTN_SYNC"] = "Sinkronkan daftar";
+$MESS["TASKS_BTN_SYNC_OUTLOOK"] = "dengan Microsoft Outlook";
+?>

@@ -1,0 +1,35 @@
+<?
+$MESS["ISL_ID"] = "Tampilkan navigasi breadcrumb.";
+$MESS["ISL_FULL_NAME"] = "Gunakan warna gradien";
+$MESS["ISL_NAME"] = "Tag cloud width (ex.\" \"100%\" \",\" \"100px\" \",\" \"100pt\" \"atau\" \"100in\" \")";
+$MESS["ISL_LAST_NAME"] = "Tampilkan frasa pencarian prompt";
+$MESS["ISL_SECOND_NAME"] = "Tampilkan Tag Dokumen";
+$MESS["ISL_EMAIL"] = "Persempit pencarian daerah";
+$MESS["ISL_LOGIN"] = "Tampilkan Tanggal yang Diubah";
+$MESS["ISL_DATE_REGISTER"] = "Tampilkan Urutan Sortir";
+$MESS["ISL_PERSONAL_WWW"] = "Tampilkan Tag Cloud";
+$MESS["ISL_PERSONAL_PROFESSION"] = "Ukuran font terbesar (px)";
+$MESS["ISL_PERSONAL_ICQ"] = "Ukuran font terkecil (px)";
+$MESS["ISL_PERSONAL_GENDER"] = "Warna tag terbaru (mis. \" FEFEFE \") ";
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Warna tag paling awal (mis. \" C0C0C0 \") ";
+$MESS["ISL_PERSONAL_PHOTO"] = "Berdasarkan frekuensi";
+$MESS["ISL_PERSONAL_PHONE"] = "Gunakan warna gradien";
+$MESS["ISL_PERSONAL_FAX"] = "Dengan nama";
+$MESS["ISL_PERSONAL_MOBILE"] = "Jumlah tag";
+$MESS["ISL_PERSONAL_PAGER"] = "Search tags tags ada apa denganmu?";
+$MESS["ISL_PERSONAL_PHONES"] = "Pertimbangkan tag baru selama (hari)";
+$MESS["ISL_PERSONAL_POST_ADDRESS"] = "Tag cloud width (ex.\" \"100%\" \",\" \"100px\" \",\" \"100pt\" \"atau\" \"100in\" \")";
+$MESS["ISL_PERSONAL_CITY"] = "Jalur untuk mencari halaman (relatif ke akar situs)";
+$MESS["ISL_PERSONAL_STREET"] = "Tampilkan navigasi breadcrumb";
+$MESS["ISL_PERSONAL_STATE"] = "Tag peringkat";
+$MESS["ISL_PERSONAL_MAILBOX"] = "# NOBR ## NAME # #LAST_NAME ## / NOBR #";
+$MESS["ISL_PERSONAL_ZIP"] = "Semua";
+$MESS["ISL_PERSONAL_COUNTRY"] = "Cari";
+$MESS["ISL_PERSONAL_NOTES"] = "Tags";
+$MESS["ISL_WORK_POSITION"] = "Diubah";
+$MESS["ISL_WORK_PHONE"] = "Aku menemukan mu!";
+$MESS["ISL_ADMIN_NOTES"] = "Diurutkan menurut";
+$MESS["ISL_XML_ID"] = "relevansi";
+$MESS["INTR_ISL_TPL_PARAM_PM_URL"] = "tanggal";
+$MESS["INTR_ISL_TPL_PARAM_USER_PROPERTY"] = "Advanced Search";
+?>

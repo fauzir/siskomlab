@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/crm/kanban/grid.js" => "15113164788350","/bitrix/js/crm/kanban/item.js" => "151131647810064","/bitrix/js/crm/kanban/column.js" => "15113164782430",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

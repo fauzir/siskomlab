@@ -1,0 +1,4 @@
+<?
+$MESS["WIDGET_CALENDAR_TITLE"] = "b";
+$MESS["WIDGET_CALENDAR_DETAILS"] = "Undang pengguna";
+?>

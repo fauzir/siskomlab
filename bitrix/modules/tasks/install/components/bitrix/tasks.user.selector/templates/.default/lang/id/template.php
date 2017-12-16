@@ -1,0 +1,7 @@
+<?
+$MESS["TASKS_EMP_HEAD"] = "Juli";
+$MESS["TASKS_USER_SEARCH"] = "Agustus";
+$MESS["TASKS_USER_STRUCTURE"] = "September";
+$MESS["TASKS_EMP_CURRENT_COUNT"] = "Oktober";
+$MESS["TASKS_LAST_SELECTED"] = "November";
+?>

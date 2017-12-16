@@ -91,6 +91,18 @@ $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/interface.css", true);
 $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/bitrix24.js", true);
 ?>
 <title><? if (!$isCompositeMode || $isIndexPage) $APPLICATION->ShowTitle()?></title>
+<script>
+function replaceQueryParam(param, newval, search)
+{
+    var regex = new RegExp("([?;&])" + param + "[^&;]*[;&]?");
+    var query = search.replace(regex, "$1").replace(/&$/, '');
+    return (query.length > 2 ? query + "&" : "?") + (newval ? param + "=" + newval : '');
+}
+function action_lang()
+{
+      window.location = replaceQueryParam('user_lang', document.getElementsByName('Lang')[0].value, window.location.search);
+}
+</script>
 </head>
 
 <body class="template-bitrix24<?=($isIndexPage ? " no-paddings start-page" : "")?>">
@@ -257,7 +269,7 @@ if(\Bitrix\Main\ModuleManager::isModuleInstalled('bitrix24'))
 								?>
 								<span id="logo_24_text" <?if ($clientLogo):?>style="display:none"<?endif?>>
 									<span class="logo-text"><?=htmlspecialcharsbx($siteTitle)?></span><?
-									if(COption::GetOptionString("bitrix24", "logo24show", "Y") !=="N"):?><span class="logo-color"></span><?endif?>
+									if(COption::GetOptionString("bitrix24", "logo24show", "Y") !=="N"):?><span class="logo-color">24</span><?endif?>
 								</span>
 								<span class="logo-img-span">
 									<img id="logo_24_img" src="<?if ($clientLogo) echo CFile::GetPath($clientLogo)?>" <?if (!$clientLogo):?>style="display:none;"<?endif?>/>

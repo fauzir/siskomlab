@@ -1,0 +1,37 @@
+<?
+$MESS["SALE_ORDER"] = "Periksa";
+$MESS["SALE_OR"] = "atau";
+$MESS["SALE_NAME"] = "Nama";
+$MESS["SALE_PROPS"] = "Properti";
+$MESS["SALE_PRICE"] = "Harga";
+$MESS["SALE_TYPE"] = "Price type";
+$MESS["SALE_QUANTITY"] = "Kuantitas";
+$MESS["SALE_SUM"] = "Total";
+$MESS["SALE_DELETE"] = "Hapus";
+$MESS["SALE_DELAY"] = "Hold over";
+$MESS["SALE_ADD_TO_BASKET"] = "Add to cart";
+$MESS["SALE_WEIGHT"] = "Berat";
+$MESS["SALE_TOTAL_WEIGHT"] = "Berat Keseluruhan";
+$MESS["SALE_WEIGHT_G"] = "g";
+$MESS["SALE_DELAYED_TITLE"] = "Hold over";
+$MESS["SALE_UNAVAIL_TITLE"] = "Currently unavailable";
+$MESS["STB_ORDER_PROMT"] = "Click \"Check out\" to complete your order";
+$MESS["STB_COUPON_PROMT"] = "If you have special coupon code for discount, please enter it here:";
+$MESS["SALE_VAT"] = "PPN";
+$MESS["SALE_VAT_EXCLUDED"] = "Total price:";
+$MESS["SALE_VAT_INCLUDED"] = "Tax included:";
+$MESS["SALE_TOTAL"] = "Total:";
+$MESS["SALE_CONTENT_DISCOUNT"] = "Diskon";
+$MESS["SALE_DISCOUNT"] = "Diskon";
+$MESS["SALE_NOTIFY_TITLE"] = "Backordered";
+$MESS["SALE_REFRESH_NOTIFY_DESCR"] = "Click this button to remove products.";
+$MESS["SALE_ITEMS"] = "Keranjang belanja";
+$MESS["SALE_BASKET_ITEMS"] = "Tersedia";
+$MESS["SALE_BASKET_ITEMS_DELAYED"] = "Saved for later";
+$MESS["SALE_BASKET_ITEMS_SUBSCRIBED"] = "Back in stock soon";
+$MESS["SALE_BASKET_ITEMS_NOT_AVAILABLE"] = "Tidak tersedia";
+$MESS["SALE_NO_ITEMS"] = "There are still no items in your cart.";
+$MESS["SALE_REFRESH"] = "Segarkan";
+$MESS["SALE_COUPON_APPLY"] = "OK";
+$MESS["SALE_COUPON_APPLY_TITLE"] = "Click to apply the new coupon";
+?>

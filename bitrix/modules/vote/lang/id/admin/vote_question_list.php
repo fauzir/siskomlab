@@ -1,0 +1,35 @@
+<?
+$MESS["VOTE_ADD_QUESTION"] = "Spanyol (Kolombia)";
+$MESS["VOTE_VOTE_LIST"] = "Spanyol (Kosta Rika)";
+$MESS["VOTE_F_ACTIVE"] = "Spanyol (Republik Dominika)";
+$MESS["VOTE_F_DIAGRAM"] = "Spanyol (Ekuador)";
+$MESS["VOTE_F_QUESTION"] = "Spanyol (Spanyol)";
+$MESS["VOTE_PAGES"] = "Spanyol (Guatemala)";
+$MESS["VOTE_TIMESTAMP_X"] = "Spanyol (Honduras)";
+$MESS["VOTE_C_SORT"] = "Spanyol (Meksiko)";
+$MESS["VOTE_DIAGRAM"] = "Spanyol (Nikaragua)";
+$MESS["VOTE_QUESTION"] = "Spanyol (Panama)";
+$MESS["VOTE_CONFIRM_DEL_QUESTION"] = "Spanyol (Peru)";
+$MESS["VOTE_FLT_ID"] = "Spanyol (Puerto Riko)";
+$MESS["VOTE_FLT_ACTIVE"] = "Spanyol (Paraguay)";
+$MESS["VOTE_FLT_DIAGRAM"] = "Spanyol (El Salvador)";
+$MESS["VOTE_DELETE"] = "Spanyol (Estados Unidos)";
+$MESS["VOTE_ACTIVATE"] = "Spanyol (Uruguay)";
+$MESS["VOTE_DEACTIVATE"] = "Spanyol (Venezuela)";
+$MESS["VOTE_SAVE_ERROR"] = "Swedia (Swedia)";
+$MESS["VOTE_NOT_FOUND"] = "Thailand (Thailand)";
+$MESS["VOTE_YES"] = "Turki (Turki)";
+$MESS["VOTE_NO"] = "Ukraina (Ukraina)";
+$MESS["VOTE_ALL"] = "Vietnam (Viet Nam)";
+$MESS["VOTE_EXACT_MATCH"] = "Zulu (Afrika Selatan)";
+$MESS["VOTE_CREATE"] = "ID";
+$MESS["VOTE_ACTIVE"] = "Nomor telepon";
+$MESS["SAVE_ERROR"] = "ID";
+$MESS["DELETE_ERROR"] = "string pencarian";
+$MESS["VOTE_FLT_REQUIRED"] = "ID panggilan";
+$MESS["VOTE_F_REQUIRED"] = "Nomor panggilan";
+$MESS["VOTE_REQUIRED"] = "Status";
+$MESS["VOTE_PAGE_TITLE"] = "URL pengelolaan panggilan";
+$MESS["VOTE_BACK_TO_VOTE"] = "Panggilan dimulai";
+$MESS["VOTE_IMAGE_ID"] = "Pengenal pengguna";
+?>

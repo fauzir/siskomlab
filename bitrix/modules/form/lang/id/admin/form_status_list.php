@@ -1,0 +1,29 @@
+<?
+$MESS["FORM_FORM_LIST"] = "Form list";
+$MESS["FORM_NOT_FOUND"] = "Web form not found";
+$MESS["FORM_ERROR"] = "Kesalahan! ";
+$MESS["FORM_PAGE_TITLE"] = "Status list for the form results # #ID#";
+$MESS["FORM_FORM_EDIT"] = "Form parameters";
+$MESS["FORM_EDIT_ALT"] = "Change status parameters";
+$MESS["FORM_FORM_NAME"] = "Bentuk";
+$MESS["FORM_F_ACTIVE"] = "Aktif";
+$MESS["FORM_F_TITLE"] = "Judul:";
+$MESS["FORM_F_DESCRIPTION"] = "Deskripsi:";
+$MESS["FORM_F_RESULTS"] = "Hasil";
+$MESS["FORM_PAGES"] = "Statuses.";
+$MESS["FORM_TIMESTAMP"] = "Diubah";
+$MESS["FORM_C_SORT"] = "Menyortir";
+$MESS["FORM_DESCRIPTION"] = "Deskripsi";
+$MESS["FORM_DELETE_STATUS_CONFIRM"] = "Are you sure you want to delete this status?";
+$MESS["FORM_DEFAULT"] = "Default";
+$MESS["FORM_COPY_ALT"] = "Copy status";
+$MESS["FORM_COPY"] = "Salinan";
+$MESS["FORM_RESULT_TITLE"] = "Open form results";
+$MESS["FORM_FL_ID"] = "Status ID";
+$MESS["FORM_FL_ACTIVE"] = "Acive";
+$MESS["FORM_FL_DESCR"] = "Deskripsi";
+$MESS["FORM_FL_RESULTS"] = "Results count";
+$MESS["FORM_FORM_EDIT_TITLE"] = "Modify form parameters";
+$MESS["FORM_STATUS_DELETE"] = "Hapus";
+$MESS["FORM_STATUS_DELETE_ALT"] = "Delete status";
+?>

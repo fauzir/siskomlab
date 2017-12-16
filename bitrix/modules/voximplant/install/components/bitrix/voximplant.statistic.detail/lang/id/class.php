@@ -1,0 +1,34 @@
+<?
+$MESS["TELEPHONY_STATUS_1"] = "213 Ubah";
+$MESS["TELEPHONY_STATUS_2"] = "Terpilih";
+$MESS["TELEPHONY_STATUS_3"] = "Menemukan";
+$MESS["TELEPHONY_STATUS_409"] = "diperiksa";
+$MESS["TELEPHONY_HEADER_USER"] = "Masukkan teks untuk dicari";
+$MESS["TELEPHONY_HEADER_PORTAL_PHONE"] = "menghapus";
+$MESS["TELEPHONY_HEADER_PHONE"] = "Semua";
+$MESS["TELEPHONY_PORTAL_PHONE_SIP_OFFICE"] = "Daftar dokumen";
+$MESS["TELEPHONY_PORTAL_PHONE_SIP_CLOUD"] = "ID dokumen salah, atau dokumen tidak dapat ditemukan di database.";
+$MESS["TELEPHONY_HEADER_INCOMING"] = "Preferensi untuk status ";
+$MESS["TELEPHONY_HEADER_DURATION"] = "Status baru";
+$MESS["TELEPHONY_HEADER_START_DATE"] = "Daftar status";
+$MESS["TELEPHONY_HEADER_STATUS"] = "Terakhir dimodifikasi:";
+$MESS["TELEPHONY_HEADER_COST"] = "Dokumen dalam status ini:";
+$MESS["TELEPHONY_HEADER_RECORD"] = "Lihat dokumen dalam status ini";
+$MESS["TELEPHONY_HEADER_LOG"] = "Aktif";
+$MESS["TELEPHONY_HEADER_VOTE"] = "Sortasi indeks:";
+$MESS["TELEPHONY_BILLING"] = "Judul:";
+$MESS["TELEPHONY_PORTAL_PHONE_EMPTY"] = "Deskripsi:";
+$MESS["TELEPHONY_FILTER_STATUS_UNSET"] = "Diizinkan untuk menyetel status ini ke dokumen:";
+$MESS["TELEPHONY_FILTER_STATUS_SUCCESSFUL"] = "Diizinkan untuk mengedit dan menyimpan <br> dokumen dalam status ini:";
+$MESS["TELEPHONY_FILTER_STATUS_FAILED"] = "Diizinkan untuk melihat <br> dokumen dalam status ini";
+$MESS["TEL_STAT_EXPORT_LOCK_ERROR"] = "Beritahu semua pengguna yang diizinkan untuk mengedit atau melihat dokumen tersebut pada saat memasuki status ini";
+$MESS["TELEPHONY_HEADER_TRANSCRIPT_COST"] = "Buat status baru";
+$MESS["TELEPHONY_HEADER_CRM"] = "Hapus status saat ini";
+$MESS["TELEPHONY_FILTER_TRANSCRIPT_TEXT"] = "Yakin ingin menghapus slide ini?";
+$MESS["TELEPHONY_FILTER_CRM"] = "Kesalahan! ";
+$MESS["TEL_STAT_SHOW_TRANSCRIPT"] = "Status yang ingin Anda hapus saat ini ditugaskan ke beberapa dokumen";
+$MESS["TEL_STAT_ACTION_DOWNLOAD"] = "Status yang ingin Anda hapus saat ini ditugaskan ke beberapa elemen blok informasi";
+$MESS["TEL_STAT_ACTION_SHOW_TRANSCRIPTION"] = "Status dokumen";
+$MESS["TEL_STAT_ACTION_SHOW_LOG"] = "Aktif";
+$MESS["TELEPHONY_FILTER_HAS_RECORD"] = "Deskripsi:";
+?>

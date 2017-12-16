@@ -68,14 +68,6 @@ switch(LANGUAGE_ID)
 
 
 				</div>
-				<? if(!Desktop::isDesktopDiskInstall() && Banner::isActive('install_disk')) {?>
-				<div class="bx-disk-sidebar-section">
-					<a href="javascript: BX.Disk.deactiveBanner('install_disk'); BX.Disk.getDownloadDesktop();"><img src="/bitrix/images/disk/<?= $bannerName ?>" alt=""></a>
-				</div>
-				<? }
-				if ($folder->canAdd($arResult['STORAGE']->getCurrentUserSecurityContext()))
-				{
-				?>
 				<div class="bx-disk-sidebar-section">
 					<div class="wduf-uploader">
 						<span class="bx-disk wd-fa-add-file-light">

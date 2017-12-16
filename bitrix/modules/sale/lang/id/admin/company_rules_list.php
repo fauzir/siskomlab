@@ -1,0 +1,12 @@
+<?
+$MESS["SALE_RDL_BUT_ADD_NEW"] = "Tambahkan aturan";
+$MESS["SALE_COMPANY_RULE_COL_ID"] = "ID";
+$MESS["SALE_COMPANY_RULE_COL_SORT"] = "Menyortir";
+$MESS["SALE_COMPANY_RULE_COL_CLASS_NAME"] = "Rule";
+$MESS["SALE_COMPANY_RULE_COL_PARAMS"] = "Parameters";
+$MESS["SALE_COMPANY_RULE_DELETE"] = "Hapus";
+$MESS["SALE_COMPANY_RULE_EDIT_DESC"] = "Edit";
+$MESS["SALE_COMPANY_RULES_LIST"] = "Rules";
+$MESS["SALE_COMPANY_RULES_DEL_MESSAGE"] = "Yakin ingin menghapus slide ini?";
+$MESS["SALE_COMPANY_RULES_BUT_ADD_NEW"] = "Tambahkan aturan";
+?>

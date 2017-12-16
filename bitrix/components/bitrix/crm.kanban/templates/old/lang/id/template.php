@@ -1,0 +1,31 @@
+<?
+$MESS["CRM_KANBAN_ACTIVITY_MY"] = "Aktivitas";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN"] = "Rencana?";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN_CALL"] = "Panggilan";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN_MEETING"] = "Rapat";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN_TASK"] = "T";
+$MESS["CRM_KANBAN_ACTIVITY_MORE"] = "Lebih";
+$MESS["CRM_KANBAN_ACTIVITY_LETSGO_LEAD"] = "Rencanakan aktivitas baru untuk memindahkan arahan ke sJaluran penjualan.";
+$MESS["CRM_KANBAN_ACTIVITY_LETSGO_DEAL"] = "Rencanakan kegiatan baru untuk memindahkan transaksi ke jaringan pipa.";
+$MESS["CRM_KANBAN_RELOAD_PAGE"] = "Silahkan menyegarkan halaman";
+$MESS["CRM_KANBAN_FINAL_ALERT"] = "Apakah Anda ingin menutupnya sebagai gagal?";
+$MESS["CRM_KANBAN_INVOICE_PARAMS"] = "Selesaikan status faktur";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_DATE"] = "Tanggal";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_COMMENT"] = "Komentar";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_DOCNUM"] = "Faktur #";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_SAVE"] = "Simpan";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_CANCEL"] = "Batalkan";
+$MESS["CRM_KANBAN_CONVERT_POPUP_TITLE"] = "Buat berdasarkan petunjuk:";
+$MESS["CRM_KANBAN_CONVERT_SELECT_ENTITY"] = "Memilih";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_DEAL"] = "Apakah Anda ingin mengubah status transaksi menjadi\" \"# STATUS_NAME #\" \"? Status ini berarti kesepakatan telah hilang. ";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_LEAD"] = "Apakah Anda ingin mengubah status utama menjadi\" \"# STATUS_NAME #\" \"? Status ini berarti timahnya hilang. ";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_INVOICE"] = "Apakah Anda ingin mengubah status faktur menjadi\" \"# STATUS_NAME #\" \"? Status ini berarti fakturnya hilang. ";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_QUOTE"] = "Apakah Anda ingin mengubah status kutipan menjadi\" \"# STATUS_NAME #\" \"? Status ini berarti kutipannya hilang. ";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_APPLY"] = "Terapkan";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_CANCEL"] = "Batalkan";
+$MESS["CRM_KANBAN_ERROR_DISABLE_CONVERTED_LEAD"] = "Tidak dapat mengubah status prospek yang dikonversi";
+$MESS["CRM_KANBAN_NO_DATA"] = "Saat ini tidak ada data di halaman ini.";
+$MESS["CRM_KANBAN_NO_EMAIL"] = "Tidak ada e-mail";
+$MESS["CRM_KANBAN_NO_PHONE"] = "No Telepon";
+$MESS["CRM_KANBAN_NO_IMOL"] = "Tidak ada komunikasi ngobrol";
+?>

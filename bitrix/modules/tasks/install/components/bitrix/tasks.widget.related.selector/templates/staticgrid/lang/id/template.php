@@ -1,0 +1,7 @@
+<?
+$MESS["TASKS_TWRS_SGRID_FIELD_TITLE"] = "Tambahkan ke Daily Plan";
+$MESS["TASKS_TWRS_SGRID_FIELD_DEADLINE"] = "Tambahkan ke Daily Plan";
+$MESS["TASKS_TWRS_SGRID_FIELD_RESPONSIBLE_ID"] = "Salinan";
+$MESS["TASKS_TWRS_SGRID_FIELD_START_DATE_PLAN"] = "Tugas duplikat";
+$MESS["TASKS_TWRS_SGRID_FIELD_END_DATE_PLAN"] = "Kembali untuk Penyelesaian";
+?>

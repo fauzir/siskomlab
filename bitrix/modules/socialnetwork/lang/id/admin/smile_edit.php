@@ -1,0 +1,37 @@
+<?
+$MESS["SONET_EDIT_RECORD"] = "Edit Smiley N#ID#";
+$MESS["SONET_NEW_RECORD"] = "New Smiley";
+$MESS["SONET_RECORDS_LIST"] = "Smileys";
+$MESS["SONET_SAVE"] = "Simpan";
+$MESS["SONET_ADD"] = "Menambahkan";
+$MESS["SONET_APPLY"] = "Terapkan";
+$MESS["SONET_RESET"] = "Batal";
+$MESS["ERROR_NO_NAME"] = "The smiley title is not specified in";
+$MESS["ERROR_EDIT_SMILE"] = "Error modifying the smiley.";
+$MESS["ERROR_ADD_SMILE"] = "Error creating a smiley.";
+$MESS["SONET_SORT"] = "Menyortir";
+$MESS["SONET_CODE"] = "Kode";
+$MESS["SONET_NAME"] = "Judul";
+$MESS["SONET_DESCR"] = "Deskripsi";
+$MESS["SONET_PT_PROPS"] = "Parameters";
+$MESS["ERROR_NO_TYPE"] = "The smiley type is not specified.";
+$MESS["ERROR_NO_IMAGE"] = "The smiley image is not specified.";
+$MESS["ERROR_COPY_IMAGE"] = "Image upload error (insufficient write permission?)";
+$MESS["ERROR_EXISTS_IMAGE"] = "An image with this name already exists.";
+$MESS["SONET_TYPE"] = "Smiley Type";
+$MESS["SONET_TYPING"] = "Smiley Typing";
+$MESS["SONET_TYPING_NOTE"] = "(separate multiple typings with space)";
+$MESS["SONET_IMAGE"] = "Smiley Image";
+$MESS["SONET_IMAGE_NOTE"] = "(recommended smiley size: 16x16, icons: 15x15)";
+$MESS["FSE_ERROR_EXT"] = "The extension of image file is invalid.";
+$MESS["FSE_SMILE"] = "Smiley";
+$MESS["FSE_ICON"] = "icon";
+$MESS["ERROR_NO_MIN_NUM_POSTS"] = "The minimum number of posts for this rank is not specified.";
+$MESS["SONET_CODE_LEN"] = "{0}Letter,{/0}{1} #104, 1911.  {/1}";
+$MESS["FSN_2FLIST"] = "Smileys";
+$MESS["FSN_NEW_SMILE"] = "New Smiley";
+$MESS["FSN_DELETE_SMILE"] = "Delete Smiley";
+$MESS["FSN_DELETE_SMILE_CONFIRM"] = "Yakin ingin menghapus slide ini?";
+$MESS["FSN_TAB_SMILE"] = "Social Network Smiley";
+$MESS["FSN_TAB_SMILE_DESCR"] = "Social Network Smiley";
+?>

@@ -1,0 +1,30 @@
+<?
+$MESS["F_URL_TEMPLATES"] = "Pemrosesan URL";
+$MESS["F_READ_TEMPLATE"] = "Halaman baca topik";
+$MESS["F_PROFILE_TEMPLATE"] = "Profil Edit halaman";
+$MESS["F_USER_LIST_TEMPLATE"] = "Halaman daftar pengguna forum terdaftar";
+$MESS["F_PM_LIST_TEMPLATE"] = "Halaman Pesan Pribadi";
+$MESS["F_MESSAGE_SEND_TEMPLATE"] = "Halaman posting pesan";
+$MESS["F_DEFAULT_UID"] = "User ID";
+$MESS["F_USER_POST_TEMPLATE"] = "Halaman User's Messages";
+$MESS["F_DATE_FORMAT"] = "Format tanggal";
+$MESS["F_DATE_TIME_FORMAT"] = "Format tanggal dan waktu";
+$MESS["F_SET_NAVIGATION"] = "Tampilkan Breadcrumb Navigation";
+$MESS["USER_PROPERTY"] = "Tampilkan properti tambahan";
+$MESS["F_FID_RANGE"] = "ID Forum";
+$MESS["F_MESSAGE_TEMPLATE"] = "Halaman tampilan pesan";
+$MESS["F_PM_EDIT_TEMPLATE"] = "Pesan Pribadi Buat (edit) halaman";
+$MESS["F_SUBSCR_LIST_TEMPLATE"] = "Halaman langganan";
+$MESS["F_SEND_MAIL"] = "Dapat mengirim e-mail dari profil";
+$MESS["F_SEND_ICQ"] = "Tampilkan Nomor ICQ ke";
+$MESS["F_RATING_SETTINGS"] = "Parameter penilaian";
+$MESS["F_RATING_ID"] = "penilaian";
+$MESS["SHOW_RATING"] = "Aktifkan rating";
+$MESS["SHOW_RATING_CONFIG"] = "kegagalan";
+$MESS["RATING_TYPE"] = "Rating tombol disain";
+$MESS["RATING_TYPE_CONFIG"] = "kegagalan";
+$MESS["RATING_TYPE_STANDART_TEXT"] = "Seperti / Tidak seperti (teks)";
+$MESS["RATING_TYPE_STANDART_GRAPHIC"] = "Seperti / Tidak seperti (gambar)";
+$MESS["RATING_TYPE_LIKE_TEXT"] = "Seperti (teks)";
+$MESS["RATING_TYPE_LIKE_GRAPHIC"] = "Seperti (gambar)";
+?>

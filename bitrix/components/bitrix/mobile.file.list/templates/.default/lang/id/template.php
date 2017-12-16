@@ -1,0 +1,7 @@
+<?
+$MESS["MOBILE_MFU_DELETE"] = "Hapus";
+$MESS["MOBILE_MFU_CONFIRM_TITLE"] = "PERINGATAN";
+$MESS["MOBILE_MFU_CONFIRM_MESSAGE"] = "Hapus gambar yang diunggah?";
+$MESS["MOBILE_MFU_CONFIRM_YES"] = "Ya";
+$MESS["MOBILE_MFU_CONFIRM_NO"] = "Nomor";
+?>

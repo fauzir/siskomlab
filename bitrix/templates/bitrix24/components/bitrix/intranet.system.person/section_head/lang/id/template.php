@@ -1,0 +1,29 @@
+<?
+$MESS["ISL_PERSONAL_BIRTHDAY"] = "Deskripsi Grup";
+$MESS["ISL_PERSONAL_PHONE"] = "Tindakan";
+$MESS["INTR_STR_UF_HEAD"] = "Cari Grup";
+$MESS["ISL_PERSONAL_SKYPE"] = "Tambahkan ke Favorit";
+$MESS["ISL_PERSONAL_EMAIL"] = "Hapus dari favorit";
+$MESS["INTR_ISP_PM"] = "Buka chat workgroup";
+$MESS["INTR_ISP_VIDEO_CALL"] = "Umum";
+$MESS["INTR_ISP_TASK"] = "Moderator";
+$MESS["INTR_ISP_IS_ONLINE"] = "anggota";
+$MESS["INTR_ISP_IS_ABSENT"] = "Foto";
+$MESS["INTR_ISP_EDIT_USER"] = "Forum";
+$MESS["INTR_EXTRANET"] = "Daftar Ban";
+$MESS["INTR_ISP_DEACTIVATE_USER"] = "Percakapan";
+$MESS["INTR_ISP_DELETE_USER"] = "Kalender";
+$MESS["INTR_ISP_RESTORE_USER"] = "File";
+$MESS["INTR_CONFIRM_FIRE"] = "Cari";
+$MESS["INTR_CONFIRM_RESTORE"] = "(grup arsip)";
+$MESS["INTR_ISP_INVITE"] = "Kirim pesan ke peserta";
+$MESS["INTR_ISP_INVITE_ACCESS"] = "Parameter Kelompok";
+$MESS["INTR_CONFIRM_DELETE"] = "Pengaturan Fitur";
+$MESS["INTR_IS_ADMIN"] = "Hapus Grup";
+$MESS["INTR_IS_HEAD"] = "Edit Moderator";
+$MESS["INTR_USER_extranet"] = "Moderator";
+$MESS["INTR_USER_fired"] = "Daftar Ban";
+$MESS["INTR_USER_inactive"] = "Undang ke Grup";
+$MESS["INTR_USER_admin"] = "Undangan Grup";
+$MESS["INTR_ISP_DELETE_ERROR"] = "Bergabung dengan Grup";
+?>

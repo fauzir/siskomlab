@@ -1,0 +1,5 @@
+<?
+$MESS["IBLOCK_LIST_PAGES_TITLE"] = "Pages";
+$MESS["IBLOCK_FORM_STATUS_ACTIVE"] = "aktif";
+$MESS["IBLOCK_FORM_STATUS_INACTIVE"] = "tidak aktif ";
+?>

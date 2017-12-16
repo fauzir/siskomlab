@@ -1,0 +1,29 @@
+<?
+$MESS["SUP_ACTIVE"] = "Kunci lisensi itu sah";
+$MESS["SUP_ACTIVE_PERIOD"] = "dari # DATE_FROM # sampai # DATE_TO #";
+$MESS["SUP_SERVER"] = "Update Server?";
+$MESS["SUP_SUBI_CHECK"] = "Pemeriksaan update terakhir dilakukan pada";
+$MESS["SUP_SUBI_UPD"] = "Pembaruan terakhir diinstal pada";
+$MESS["UPDATES_BUTTON"] = "Pasang update";
+$MESS["SUP_SU_RECOMEND"] = "Update yang disarankan";
+$MESS["SUP_SU_RECOMEND_MOD"] = "<b> #NUM # </ b> untuk modul";
+$MESS["SUP_SU_RECOMEND_LAN"] = "<b> #NUM # </ b> untuk file bahasa";
+$MESS["SUP_SU_RECOMEND_NO"] = "tak satupun";
+$MESS["UPDATES_TITLE"] = "update";
+$MESS["SUP_ACTIVE_PERIOD_TO"] = "melalui # DATE_TO #";
+$MESS["SUP_SUBU_UPDATE"] = "Perbarui sistem update";
+$MESS["SUP_SUBU_HINT"] = "Versi baru dari sistem update tersedia. Anda harus menginstalnya sebelum melanjutkan pemutakhiran.";
+$MESS["SUP_SUBU_BUTTON"] = "Instal versi SiteUpdate baru";
+$MESS["SUP_SU_UPD_BUTTON"] = "Instal pembaruan yang disarankan";
+$MESS["SUP_SUB_SUCCESS"] = "Pembaruan telah berhasil diinstal.";
+$MESS["SUP_SUB_ERROR"] = "Beberapa pembaruan telah gagal diinstal.";
+$MESS["SUP_SUB_STOP"] = "Stop";
+$MESS["SUP_INITIAL"] = "Menginisialisasi ...";
+$MESS["SUP_SU_UPD_INSMED1"] = "Memasang pembaharuan";
+$MESS["SUP_SUBT_LICENCE"] = "Perjanjian lisensi";
+$MESS["SUP_SUBT_LICENCE_HINT"] = "Anda harus menerima Perjanjian Lisensi yang baru sebelum menggunakan sistem update.";
+$MESS["SUP_SUBT_LICENCE_BUTTON"] = "Lihat Perjanjian Lisensi";
+$MESS["SUP_SUBT_AGREE"] = "Saya menerima Perjanjian Lisensi";
+$MESS["SUP_APPLY"] = "Terapkan";
+$MESS["SUP_UPDATES_HINT"] = "Pembaruan untuk Bitrix24 Anda sekarang sedang diinstal. Jangan tutup halaman ini sampai semua pembaruan selesai diinstal.";
+?>

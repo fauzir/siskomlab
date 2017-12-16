@@ -1,0 +1,8 @@
+<?
+$MESS["SPOL_PSEUDO_CANCELLED_COLOR"] = "Canceled order color";
+$MESS["SPOL_STATUS_COLOR"] = "Status color";
+$MESS["SPOL_STATUS_COLOR_GREEN"] = "hijau";
+$MESS["SPOL_STATUS_COLOR_GRAY"] = "Abu-abu";
+$MESS["SPOL_STATUS_COLOR_YELLOW"] = "Kuning";
+$MESS["SPOL_STATUS_COLOR_RED"] = "Merah";
+?>

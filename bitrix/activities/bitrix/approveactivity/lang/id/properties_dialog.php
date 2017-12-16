@@ -1,0 +1,32 @@
+<?
+$MESS["BPAA_PD_TYPE_ALL"] = "Semua orang";
+$MESS["BPAA_PD_TYPE_ANY"] = "Siapapun";
+$MESS["BPAA_PD_APPROVERS"] = "Menyetujui pemilih";
+$MESS["BPAA_PD_PERCENT"] = "Persentase minimal pengguna yang berpartisipasi diperlukan untuk penerimaan";
+$MESS["BPAA_PD_DESCR"] = "Deskripsi Tugas";
+$MESS["BPAA_PD_NAME"] = "Nama tugas";
+$MESS["BPAA_PD_TYPE"] = "Jenis persetujuan";
+$MESS["BPAA_PD_TYPE_VOTE"] = "Memilih";
+$MESS["BPAA_PD_WAIT"] = "Tunggu tanggapan dari semua peserta";
+$MESS["BPAA_PD_SET_STATUS_MESSAGE"] = "Atur Pesan Status";
+$MESS["BPAA_PD_YES"] = "Ya";
+$MESS["BPAA_PD_NO"] = "Tidak";
+$MESS["BPAA_PD_STATUS_MESSAGE"] = "Teks status";
+$MESS["BPAA_PD_STATUS_MESSAGE_HINT"] = "Berikut adalah Macros yang tersedia: # PERC # - percent, # REV # - orang yang baru dikenal , # TOT # - jumlah orang yang harus dikenal.";
+$MESS["BPAA_PD_TIMEOUT_DURATION"] = "Batas waktu";
+$MESS["BPAA_PD_TIMEOUT_DURATION_HINT"] = "Jika suatu elemen tidak disetujui atau ditolak sebelum periode ini berakhir, maka elemen tersebut akan ditolak secara otomatis. Nilai kosong atau nol menentukan bahwa tidak ada periode yang akan diterapkan.";
+$MESS["BPAA_PD_TIME_D"] = "hari-hari";
+$MESS["BPAA_PD_TIME_H"] = "jam";
+$MESS["BPAA_PD_TIME_M"] = "menit";
+$MESS["BPAA_PD_TIME_S"] = "detik";
+$MESS["BPAA_PD_STATUS_MESSAGE_HINT1"] = "Berikut ini adalah Macros yang tersedia: # PERCENT # - tanggapan rasio, # VOTED # - jumlah tanggapan, # TOTAL # - total orang yang ditugaskan, # APPROVERS # - pengguna yang menyetujui, # REJECTERS # - pengguna yang menolak item";
+$MESS["BPAR_PD_SHOW_COMMENT"] = "Tampilkan kolom masukan komentar";
+$MESS["BPAR_PD_COMMENT_LABEL_MESSAGE"] = "Label kolom masukan Komentar";
+$MESS["BPAR_PD_TASK_BUTTON1_MESSAGE"] = "Terima tombol teks";
+$MESS["BPAR_PD_TASK_BUTTON2_MESSAGE"] = "Tolak tombol teks";
+$MESS["BPAR_PD_ACCESS_CONTROL"] = "Tunjukkan deskripsi tugas hanya kepada orang yang bertanggung jawab";
+$MESS["BPAA_PD_TIMEOUT_LIMIT"] = "Waktu persetujuan minimum";
+$MESS["BPAR_PD_COMMENT_REQUIRED"] = "Komentar diperlukan";
+$MESS["BPAR_PD_COMMENT_REQUIRED_YA"] = "Hanya bila disetujui";
+$MESS["BPAR_PD_COMMENT_REQUIRED_YR"] = "Hanya saat ditolak";
+?>

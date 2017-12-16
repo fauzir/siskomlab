@@ -1,0 +1,31 @@
+<?
+$MESS["GENERAL_PAGE_GROUP_ID"] = "Grup blog";
+$MESS["GENERAL_PAGE_PATH_TO_BLOG"] = "Jalur menuju Blog Pengguna";
+$MESS["GENERAL_PAGE_PATH_TO_POST"] = "Jalur menuju posting blog pengguna";
+$MESS["GENERAL_PAGE_PATH_TO_GROUP_BLOG"] = "Jalur ke grup blog";
+$MESS["GENERAL_PAGE_PATH_TO_GROUP_BLOG_POST"] = "Jalur menuju grup kiriman blog";
+$MESS["GENERAL_PAGE_PATH_TO_USER"] = "Jalur ke profil pengguna";
+$MESS["BLG_THEME"] = "Tema template";
+$MESS["BLG_THEME_BLUE"] = "Biru";
+$MESS["BLG_THEME_GREEN"] = "hijau";
+$MESS["BLG_THEME_RED"] = "Merah";
+$MESS["BLG_THEME_RED2"] = "Merah sederhana";
+$MESS["BLG_THEME_ORANGE"] = "oranye";
+$MESS["GENERAL_PAGE_PATH_TO_BLOG_CATEGORY"] = "Jalur menuju Blog Pengguna dengan Filter Tag";
+$MESS["GENERAL_PAGE_PATH_TO_GROUP_BLOG_CATEGORY"] = "Jalur menuju halaman grup blog dengan Tag Filter";
+$MESS["GENERAL_PAGE_USE_SOCNET"] = "Gunakanlah dalam Konteks Jaringan Sosial";
+$MESS["B_SEO_USER"] = "Hindarilah pencarian spider dan bot dari tautan berikut ke profil pengguna";
+$MESS["BC_NAME_TEMPLATE"] = "Format Nama";
+$MESS["BC_NAME_TEMPLATE_DEFAULT"] = "# NOBR ## NAME # #LAST_NAME ## / NOBR #";
+$MESS["BC_SHOW_LOGIN"] = "Tampilkan Nama Login jika tidak ada kolom nama pengguna yang diperlukan";
+$MESS["BC_PATH_TO_CONPANY_DEPARTMENT"] = "Template dari Jalur Halaman Departemen";
+$MESS["BC_PATH_TO_VIDEO_CALL"] = "Halaman panggilan video";
+$MESS["BC_PATH_TO_SONET_USER_PROFILE"] = "Template Profil Jaringan Sosial";
+$MESS["BC_PATH_TO_MESSAGES_CHAT"] = "Template Jalur Pengguna Messenger";
+$MESS["BC_USE_SHARE"] = "Tampilkan Jaringan Sosial Bookmark";
+$MESS["BC_SHARE_HIDE"] = "Sembunyikan Bookmark Bar Jaringan Sosial Secara Default";
+$MESS["BC_SHARE_TEMPLATE"] = "Template Bookmark Jaringan Sosial";
+$MESS["BC_SHARE_SYSTEM"] = "Gunakan Jejaring Sosial dan Bookmark";
+$MESS["BC_SHARE_SHORTEN_URL_LOGIN"] = "bit.ly Login";
+$MESS["BC_SHARE_SHORTEN_URL_KEY"] = "kunci bit.ly";
+?>

@@ -1,0 +1,1 @@
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/crm/kanban/css/kanban.css" => "151131647814630",), 'CUR_SEL_CNT' => '66', 'CUR_IE_CNT' => '0'); ?>

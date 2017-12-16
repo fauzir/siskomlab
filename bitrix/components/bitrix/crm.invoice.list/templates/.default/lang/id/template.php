@@ -1,0 +1,33 @@
+<?
+$MESS["CRM_ALL"] = "Total";
+$MESS["CRM_INVOICE_SHOW_TITLE"] = "Lihat Invoice";
+$MESS["CRM_INVOICE_SHOW"] = "Lihat";
+$MESS["CRM_INVOICE_PAYMENT_HTML_TITLE"] = "Mencetak";
+$MESS["CRM_INVOICE_PAYMENT_HTML"] = "Mencetak";
+$MESS["CRM_INVOICE_PAYMENT_PDF_TITLE"] = "Lihat faktur sebagai PDF";
+$MESS["CRM_INVOICE_PAYMENT_PDF"] = "Lihat PDF";
+$MESS["CRM_INVOICE_EDIT_TITLE"] = "Edit faktur";
+$MESS["CRM_INVOICE_EDIT"] = "Edit";
+$MESS["CRM_INVOICE_COPY_TITLE"] = "Salinan";
+$MESS["CRM_INVOICE_COPY"] = "Salinan";
+$MESS["CRM_INVOICE_DELETE_TITLE"] = "Hapus faktur";
+$MESS["CRM_INVOICE_DELETE"] = "Hapus";
+$MESS["CRM_INVOICE_DELETE_CONFIRM"] = "Apakah anda yakin untuk menghapus ini?";
+$MESS["CRM_INVOICE_LIST_ADD_SHORT"] = "Buat faktur";
+$MESS["CRM_INVOICE_REBUILD_ACCESS_ATTRS"] = "Izin akses yang diperbarui mengharuskan Anda memperbarui atribut akses saat ini menggunakan <a id=\"#ID#\" target=\"_blank\" href=\"#URL#\"> halaman pengelolaan izin </a>. ";
+$MESS["CRM_PS_RQ_TX_PROC_DLG_TITLE"] = "Rincian transfer dari pilihan pembayaran";
+$MESS["CRM_PS_RQ_TX_PROC_DLG_DLG_SUMMARY"] = "Ini akan memigrasikan detail penjual dari opsi pembayaran ke perusahaan.";
+$MESS["CRM_PSRQ_LRP_DLG_BTN_START"] = "lari";
+$MESS["CRM_PSRQ_LRP_DLG_BTN_STOP"] = "Stop";
+$MESS["CRM_PSRQ_LRP_DLG_BTN_CLOSE"] = "Dekat";
+$MESS["CRM_PSRQ_LRP_DLG_REQUEST_ERR"] = "Kesalahan memproses permintaan";
+$MESS["CRM_INVOICE_LIST_FILTER_NAV_BUTTON_LIST"] = "Daftar";
+$MESS["CRM_INVOICE_LIST_FILTER_NAV_BUTTON_WIDGET"] = "Laporan";
+$MESS["CRM_INVOICE_LIST_FILTER_NAV_BUTTON_KANBAN"] = "Kanban";
+$MESS["CRM_INVOICE_LIST_CHOOSE_ACTION"] = "Pilih tindakan";
+$MESS["CRM_INVOICE_LIST_APPLY_BUTTON"] = "Terapkan";
+$MESS["CRM_SHOW_ROW_COUNT"] = "Tunjukkan kuantitas";
+$MESS["CRM_INVOICE_START_CALL_LIST"] = "Panggil cepat";
+$MESS["CRM_INVOICE_CREATE_CALL_LIST"] = "Buat daftar panggilan";
+$MESS["CRM_INVOICE_UPDATE_CALL_LIST"] = "Tambahkan ke daftar panggilan";
+?>

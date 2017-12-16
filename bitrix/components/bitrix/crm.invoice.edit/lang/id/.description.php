@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_INVOICE_EDIT_NAME"] = "Edit Faktur";
+$MESS["CRM_INVOICE_EDIT_DESCRIPTION"] = "Edit Faktur";
+$MESS["CRM_NAME"] = "CRM";
+$MESS["CRM_INVOICE_NAME"] = "faktur";
+?>

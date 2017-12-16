@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_PRODUCT_MENU_NAME"] = "Toolbar CRM";
+$MESS["CRM_PRODUCT_MENU_DESCRIPTION"] = "Toolbar CRM";
+$MESS["CRM_NAME"] = "CRM";
+$MESS["CRM_PRODUCT_NAME"] = "produk";
+?>

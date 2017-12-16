@@ -33,4 +33,14 @@ define("BX_COMPRESSION_DISABLED", true);
 
 
 define("BX_USE_MYSQLI", true);
+
+if(isset($_GET["user_lang"]))
+{
+      setcookie("USER_LANG", $_GET["user_lang"], time()+9999999, "/");
+      define("LANGUAGE_ID", $_GET["user_lang"]);
+}
+elseif(isset($_COOKIE["USER_LANG"]))
+{
+      define("LANGUAGE_ID", $_COOKIE["USER_LANG"]);
+}
 ?>

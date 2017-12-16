@@ -1,0 +1,36 @@
+<?
+$MESS["P_UP"] = "atas.";
+$MESS["P_UP_TITLE"] = "Satu tingkat atas";
+$MESS["P_PHOTO_SORT_ID"] = "Baru";
+$MESS["P_PHOTO_SORT_ID_TITLE"] = "dengan tanggal pembuatan";
+$MESS["P_PHOTO_SORT_SHOWS"] = "Paling banyak dilihat";
+$MESS["P_PHOTO_SORT_SHOWS_TITLE"] = "dengan jumlah tampilan";
+$MESS["P_PHOTO_SORT_RATING"] = "Hormat kami,";
+$MESS["P_PHOTO_SORT_RATING_TITLE"] = "dengan penghitungan suara";
+$MESS["P_PHOTO_SORT_COMMENTS"] = "Sebagian besar berkomentar";
+$MESS["P_PHOTO_SORT_COMMENTS_TITLE"] = "dengan hitungan suara";
+$MESS["P_FILTER_SHOW"] = "Menunjukkan";
+$MESS["P_FILTER_RESET"] = "Ulang";
+$MESS["P_PHOTO_ORDER_BY_DATE_CREATE"] = "Foto baru";
+$MESS["P_PHOTO_ORDER_BY_SHOWS"] = "Foto populer";
+$MESS["P_PHOTO_ORDER_BY_RATING"] = "Foto terbaik";
+$MESS["P_PHOTO_ORDER_BY_COMMENTS"] = "Sebagian besar foto berkomentar";
+$MESS["P_SELECT_PHOTO_FROM_PERIOD"] = "Tampilkan foto yang ditambahkan selama";
+$MESS["P_GROUP_BY_DATE_CREATE"] = "Foto grup berdasarkan tanggal pembuatan";
+$MESS["P_OPEN_FILTER"] = "Menunjukkan              ";
+$MESS["P_CLOSE_FILTER"] = "Menyembunyikan";
+$MESS["P_NO_PHOTO"] = "Tidak ada foto yang ditemukan";
+$MESS["P_DELETE_CONFIRM"] = "Yakin ingin menghapus foto secara ireversibel?";
+$MESS["P_SHOW_FILTER"] = "Filter Editor";
+$MESS["P_SHOW_ONLY_NOT_ACTIVE"] = "foto yang tidak disetujui";
+$MESS["P_SHOW_ONLY_NOT_ACTIVE_TILTE"] = "Foto yang tidak disetujui adalah foto yang masih belum dimoderasi. Mereka tidak terlihat oleh siapapun kecuali pemilik dan moderator.";
+$MESS["P_SHOW_ONLY_NOT_PUBLIC"] = "foto yang tidak diDiterbitkan";
+$MESS["P_SHOW_ONLY_NOT_PUBLIC_TITLE"] = "Foto yang tidak diDiterbitkan adalah halaman yang akan ditempatkan pada halaman indeks dan dalam daftar namun masih belum disetujui.";
+$MESS["P_SHOW_ONLY_NOT_PUBLIC_TITLE1"] = "Foto yang tidak diDiterbitkan adalah halaman yang akan ditempatkan pada halaman indeks dan dalam daftar namun masih belum disetujui. ";
+$MESS["P_SHOW_SIMPLE"] = "foto yang telah diterbitkan dan disetujui";
+$MESS["P_SHOW_SIMPLE_TITLE"] = "Menampilkan semua foto yang terlihat oleh pengunjung biasa.";
+$MESS["P_PUBLIC"] = "Menerbitkan";
+$MESS["P_NOT_PUBLIC"] = "Jangan diDiterbitkan";
+$MESS["P_SHOW"] = "Menunjukkan";
+$MESS["P_DELETE"] = "Hapus";
+?>

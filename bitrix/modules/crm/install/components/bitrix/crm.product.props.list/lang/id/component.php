@@ -1,0 +1,29 @@
+<?
+$MESS["CRM_MODULE_NOT_INSTALLED"] = "The CRM module is not installed.";
+$MESS["CRM_SALE_MODULE_NOT_INSTALLED"] = "The e-Store module is not installed.";
+$MESS["CRM_PERMISSION_DENIED"] = "Akses ditolak.";
+$MESS["CRM_INTS_TASKS_NAV"] = "Catatan";
+$MESS["CRM_PRODUCT_PROP_PL_ID"] = "ID";
+$MESS["CRM_PRODUCT_PROP_PL_NAME"] = "Nama";
+$MESS["CRM_PRODUCT_PROP_PL_CODE"] = "Symbolic code";
+$MESS["CRM_PRODUCT_PROP_PL_SORT"] = "Menyortir";
+$MESS["CRM_PRODUCT_PROP_PL_ACTIVE"] = "Aktif";
+$MESS["CRM_PRODUCT_PROP_PL_PROPERTY_TYPE"] = "Tipe";
+$MESS["CRM_PRODUCT_PROP_PL_MULTIPLE"] = "kelipatan";
+$MESS["CRM_PRODUCT_PROP_PL_XML_ID"] = "External ID";
+$MESS["CRM_PRODUCT_PROP_PL_WITH_DESCRIPTION"] = "Has description";
+$MESS["CRM_PRODUCT_PROP_PL_SEARCHABLE"] = "Cari";
+$MESS["CRM_PRODUCT_PROP_PL_FILTRABLE"] = "Show in filter";
+$MESS["CRM_PRODUCT_PROP_PL_IS_REQUIRED"] = "Wajib";
+$MESS["CRM_PRODUCT_PROP_PL_HINT"] = "Petunjuk";
+$MESS["CRM_PRODUCT_PROP_PL_DELETE_ERROR"] = "An error occurred while deleting an object.";
+$MESS["CRM_PRODUCT_PROP_PL_SAVE_ERROR"] = "Error saving the record ##ID#: #ERROR_TEXT#";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_PROP_S"] = "tali";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_PROP_N"] = "Nomor";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_PROP_L"] = "Daftar";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_PROP_F"] = "Mengajukan";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_PROP_G"] = "Bind To Sections";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_PROP_E"] = "Bind To Elements";
+$MESS["CRM_PRODUCT_PROP_IBLOCK_ALL"] = "Apa saja";
+$MESS["IBLOCK_MODULE_NOT_INSTALLED"] = "The Information Blocks module is not installed.";
+?>

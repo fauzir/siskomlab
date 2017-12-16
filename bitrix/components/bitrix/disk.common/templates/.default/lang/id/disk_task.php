@@ -1,0 +1,5 @@
+<?
+$MESS["DISK_BP"] = "Proses bisnis";
+$MESS["DISK_FILE_VIEW_START_BIZPROC_GO_BACK_TEXT"] = "Kembali";
+$MESS["DISK_FILE_VIEW_START_BIZPROC__GO_BACK_TITLE"] = "Kembali";
+?>

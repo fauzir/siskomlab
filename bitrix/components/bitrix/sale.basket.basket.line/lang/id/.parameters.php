@@ -1,0 +1,35 @@
+<?
+$MESS["SBBL_PATH_TO_BASKET"] = "Halaman keranjang";
+$MESS["SBBL_PATH_TO_PERSONAL"] = "Bagian Pribadi";
+$MESS["SBBL_SHOW_PERSONAL_LINK"] = "Tampilkan tautan ke Bagian Pribadi";
+$MESS["SBBL_SHOW_NUM_PRODUCTS"] = "Tampilkan jumlah produk";
+$MESS["SBBL_SHOW_TOTAL_PRICE"] = "Tampilkan jumlah total menurut produk";
+$MESS["SBBL_SHOW_PRODUCTS"] = "Tampilkan daftar produk";
+$MESS["SBBL_POSITION_FIXED"] = "Tampilkan komponen di atas elemen lainnya";
+$MESS["SBBL_POSITION_VERTICAL"] = "Keselarasan vertikal";
+$MESS["SBBL_POSITION_VERTICAL_TOP"] = "puncak";
+$MESS["SBBL_POSITION_VERTICAL_BOTTOM"] = "bawah";
+$MESS["SBBL_POSITION_HORIZONTAL"] = "Penyelarasan horizontal";
+$MESS["SBBL_POSITION_HORIZONTAL_LEFT"] = "kiri";
+$MESS["SBBL_POSITION_HORIZONTAL_RIGHT"] = "kanan";
+$MESS["SBBL_PATH_TO_ORDER"] = "Halaman pemesanan";
+$MESS["SBBL_SHOW_DELAY"] = "Tampilkan daftar keinginan";
+$MESS["SBBL_SHOW_NOTAVAIL"] = "Tampilkan produk yang tidak tersedia";
+$MESS["SBBL_SHOW_SUBSCRIBE"] = "Tampilkan produk di daftar tonton pengguna";
+$MESS["SBBL_SHOW_IMAGE"] = "Tunjukkan gambar produk";
+$MESS["SBBL_SHOW_PRICE"] = "Tampilkan harga produk";
+$MESS["SBBL_SHOW_SUMMARY"] = "Tampilkan subtotal pada setiap baris";
+$MESS["SBBL_SHOW_EMPTY_VALUES"] = "Tampilkan nilai nol di keranjang kosong";
+$MESS["SBBL_POSITION_CENTER"] = "pusat";
+$MESS["SBBL_PATH_TO_REGISTER"] = "Halaman pendaftaran";
+$MESS["SBBL_PATH_TO_PROFILE"] = "Halaman profil";
+$MESS["SBBL_PERSONAL"] = "Bagian pribadi";
+$MESS["SBBL_AUTHOR"] = "Otorisasi";
+$MESS["SBBL_SHOW_AUTHOR"] = "Izinkan otorisasi di keranjang";
+$MESS["SBBL_LIST"] = "Daftar Produk";
+$MESS["SBBL_HIDE_ON_BASKET_PAGES"] = "Jangan tampilkan di halaman keranjang belanja dan checkout";
+$MESS["HIDE_ON_BASKET_PAGES_TIP"] = "Pilihan ini menyembunyikan komponen pada halaman keranjang belanja dan checkout. Sangat disarankan agar opsi ini diaktifkan agar tidak terjadi beban sistem ekstra pada halaman ini. ";
+$MESS["SBBL_PATH_TO_AUTHORIZE"] = "Halaman otentikasi";
+$MESS["PATH_TO_REGISTER_TIP"] = "Biarkan bidang ini kosong untuk mendapatkan jJalur pendaftaran dari preferensi modul Kernel";
+$MESS["PATH_TO_AUTHORIZE_TIP"] = "Bidang ini hanya diperlukan jika Anda memerlukan halaman otentikasi khusus. Biarkan bidang kosong untuk menggunakan halaman registrasi";
+?>

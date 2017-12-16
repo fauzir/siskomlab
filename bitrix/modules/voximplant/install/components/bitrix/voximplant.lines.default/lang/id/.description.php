@@ -1,0 +1,4 @@
+<?
+$MESS["COMP_VI_LINES_CONFIG_TITLE"] = "Kategori";
+$MESS["COMP_VI_LINES_CONFIG_DESCR"] = "redirect";
+?>

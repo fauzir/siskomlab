@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001512354751';
-$dateexpire = '001512390751';
+$datecreate = '001512614117';
+$dateexpire = '001512650117';
 $ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:16:"bitrix_processes";a:2:{i:0;s:1:"1";i:1;s:2:"13";}s:5:"lists";a:2:{i:0;s:1:"1";i:1;s:2:"13";}}}';
 return true;
 ?>

@@ -1,0 +1,34 @@
+<?
+$MESS["P_TITLE"] = "Galeri";
+$MESS["P_RATING_PHOTO"] = "Foto populer";
+$MESS["P_COMMENT_PHOTO"] = "Komentar foto";
+$MESS["P_PHOTO_2"] = "Dilihat foto";
+$MESS["P_BEST_PHOTO_RATING"] = "Foto Paling Populer";
+$MESS["P_BEST_PHOTO_COMMENTS"] = "Foto yang paling banyak dikomentari";
+$MESS["P_BEST_PHOTO_SHOWS"] = "Foto terbanyak dilihat";
+$MESS["P_PHOTOGRAPHIES"] = "Foto";
+$MESS["P_PHOTO_NEW"] = "Baru ";
+$MESS["P_PHOTO_SHOWS"] = "Lihat";
+$MESS["P_PHOTO_RATING"] = "Populer";
+$MESS["P_PHOTO_COMMENTS"] = "Sebagian besar berkomentar";
+$MESS["P_USERS_GALLERIES"] = "Galeri Pengguna";
+$MESS["P_ALL_PHOTOS"] = "semua Galeri";
+$MESS["P_TAGS_CLOUD"] = "Tag cloud";
+$MESS["P_NOT_APPROVED"] = "Foto yang tidak disetujui";
+$MESS["P_NOT_APPROVED_TITLE"] = "Foto yang akan terlihat oleh semua pengunjung di halaman indeks namun tetap tidak disetujui.";
+$MESS["P_NOT_MODERATED"] = "Tidak disetujui";
+$MESS["P_NOT_MODERATED_TITLE"] = "Foto yang moderasinya tertunda.";
+$MESS["P_UPLOAD"] = "Mengunggah foto";
+$MESS["P_PHOTO_VIEW"] = "Foto-foto saya";
+$MESS["P_LOGIN"] = "Masuk";
+$MESS["P_GALLERY_CREATE"] = "Buat Galeri";
+$MESS["P_GALLERY_VIEW"] = "Galeri saya";
+$MESS["P_GALLERIES_VIEW"] = "Galeri saya";
+$MESS["P_ERROR1"] = "Galeri belum berisi gambar. ";
+$MESS["P_ERROR2"] = "<a target=\"_self\" href=\"#CREATE_GALLERY#\"> Buat </a> galeri Anda dan unggah foto baru.";
+$MESS["P_ERROR3"] = "<a target=\"_self\" href=\"#UPLOAD#\"> Upload </a> foto baru.";
+$MESS["P_ERROR4"] = "Tidak ada suara yang diberikan ke foto di galeri ini.";
+$MESS["P_ERROR5"] = "Tidak ada komentar yang tertinggal pada foto di galeri ini.";
+$MESS["P_RECALC_7"] = "Silakan hitung ulang ukuran file galeri foto. <a href=\"#URL#\"> Hitung ulang?</a> ";
+$MESS["P_PHOTO_LAST"] = "Foto baru";
+?>

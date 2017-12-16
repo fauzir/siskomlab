@@ -1,0 +1,32 @@
+<?
+$MESS["TSBS_READY"] = "Item dalam Keranjang Belanja Anda:";
+$MESS["TSBS_PRICE"] = "Harga:";
+$MESS["TSBS_QUANTITY"] = "Kuantitas:";
+$MESS["TSBS_2BASKET"] = "Ubah Kuantitas";
+$MESS["TSBS_2ORDER"] = "Memesan";
+$MESS["TSBS_DELAY"] = "Menangguhkan:";
+$MESS["TSBS_UNAVAIL"] = "Sedang tidak tersedia:";
+$MESS["TSBS_SUBSCRIBE"] = "Langganan";
+$MESS["SALE_NAME"] = "produk";
+$MESS["SALE_PROPS"] = "Properti";
+$MESS["SALE_PRICE"] = "Harga";
+$MESS["SALE_TYPE"] = "Tipe harga";
+$MESS["SALE_QUANTITY"] = "Kuantitas";
+$MESS["SALE_SUM"] = "Jumlah";
+$MESS["SALE_DELETE"] = "Hapus";
+$MESS["SALE_DELAY"] = "Simpan untuk nanti";
+$MESS["SALE_ADD_TO_BASKET"] = "Masukkan ke keranjang";
+$MESS["SALE_WEIGHT"] = "Berat";
+$MESS["SALE_TOTAL_WEIGHT"] = "Berat Keseluruhan";
+$MESS["SALE_WEIGHT_G"] = "g";
+$MESS["SALE_DELAYED_TITLE"] = "Dalam daftar keinginan";
+$MESS["SALE_UNAVAIL_TITLE"] = "Kehabisan persediaan";
+$MESS["STB_ORDER_PROMT"] = "Klik\" \"Checkout\" \"untuk melengkapi pesanan Anda.";
+$MESS["STB_COUPON_PROMT"] = "Masukkan kode kupon Anda:";
+$MESS["SALE_VAT"] = "Pajak";
+$MESS["SALE_VAT_EXCLUDED"] = "Total harga:";
+$MESS["SALE_VAT_INCLUDED"] = "PPN";
+$MESS["SALE_TOTAL"] = "Total:";
+$MESS["SALE_CONTENT_DISCOUNT"] = "Diskon";
+$MESS["SALE_DISCOUNT"] = "Diskon";
+?>

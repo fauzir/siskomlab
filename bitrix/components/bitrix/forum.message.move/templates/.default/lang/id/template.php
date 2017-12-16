@@ -1,0 +1,35 @@
+<?
+$MESS["F_BUTTON_MOVE"] = "Pindah";
+$MESS["F_TITLE"] = "Pindahkan Pos";
+$MESS["F_TITLE_ON_FORUM"] = "di forum";
+$MESS["F_HEAD_TO_EXIST_TOPIC"] = "topik yang ada";
+$MESS["F_HEAD_TO_NEW_TOPIC"] = "topik baru";
+$MESS["F_TOPIC_NAME"] = "Topik topik";
+$MESS["F_TOPIC_DESCR"] = "Deskripsi Topik";
+$MESS["F_TOPIC_TAGS"] = "Tags";
+$MESS["F_AUTHOR_PROFILE"] = "Profil Pengirim Pesan";
+$MESS["F_NUM_MESS"] = "Total Pesan:";
+$MESS["F_DATE_REGISTER"] = "Tanggal pendaftaran:";
+$MESS["F_TOPIC_NOT_FOUND"] = "topik tidak ditemukan";
+$MESS["F_TOPIC_SEARCH_TITLE"] = "...&raquo";
+$MESS["F_BAD_NEW_TOPIC"] = "<b>...</b>&raquo";
+$MESS["F_TOPIC_ID"] = "Topic ID";
+$MESS["F_BAD_TOPIC"] = "Topiknya tidak ditemukan.";
+$MESS["FORUM_MAIN_WAIT"] = "Mohon tunggu...";
+$MESS["F_HIDE"] = "Menyembunyikan";
+$MESS["F_SHOW"] = "Menunjukkan";
+$MESS["F_ANCHOR"] = "Link ke posting ini";
+$MESS["F_ATTACH_FILES"] = "File-file terlampir";
+$MESS["F_DELETE"] = "Hapus";
+$MESS["F_DELETE_MESSAGES_CONFIRM"] = "Ini akan menghapus pesan secara ireversibel. Terus";
+$MESS["F_EDIT_HEAD"] = "Diedit:";
+$MESS["F_EDIT"] = "213 Ubah";
+$MESS["F_EMAIL_TITLE"] = "Kirim pesan E-Mail";
+$MESS["F_POINTS"] = "Poin:";
+$MESS["F_PRIVATE_MESSAGE"] = "Pesan";
+$MESS["F_PRIVATE_MESSAGE_TITLE"] = "Kirim pesan pribadi";
+$MESS["F_REAL_IP"] = "nyata";
+$MESS["F_MOVE_TO"] = "Pindahkan ke ";
+$MESS["F_USER_ID"] = "Tamu ID";
+$MESS["F_USER_ID_USER"] = "Pengguna ID";
+?>

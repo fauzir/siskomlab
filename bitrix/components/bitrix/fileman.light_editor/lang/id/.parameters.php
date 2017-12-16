@@ -1,0 +1,29 @@
+<?
+$MESS["LHE_GROUP_BASE_SETTINGS"] = "Pengaturan utama";
+$MESS["LHE_GROUP_VIDEO_SETTINGS"] = "Pengaturan video";
+$MESS["LHE_GROUP_ADDITIONAL_SETTINGS"] = "pengaturan tambahan";
+$MESS["LHE_PAR_ID"] = "ID kontrol";
+$MESS["LHE_PAR_CONTENT"] = "Teks HTML";
+$MESS["LHE_PAR_INPUT_NAME"] = "Nama kontrol";
+$MESS["LHE_PAR_INPUT_ID"] = "ID kontrol";
+$MESS["LHE_PAR_WIDTH"] = "Lebar Editor";
+$MESS["LHE_PAR_HEIGHT"] = "Editor Tinggi";
+$MESS["LHE_PAR_ADVANCED_MODE"] = "Aktifkan Pengaturan Lanjutan";
+$MESS["LHE_PAR_USE_FILE_DIALOGS"] = "Aktifkan File Dialog";
+$MESS["LHE_PAR_JS_OBJ_NAME"] = "Nama Objek Javascript";
+$MESS["LHE_PAR_VIDEO_ONLY_FLV"] = "(hanya untuk Flash player)";
+$MESS["LHE_PAR_VIDEO_ONLY_WMV"] = "(hanya untuk pemain Silverlight)";
+$MESS["LHE_PAR_VIDEO_ALLOW_VIDEO"] = "Izinkan Penyematan Video";
+$MESS["LHE_PAR_VIDEO_MAX_WIDTH"] = "Maks. Lebar Video";
+$MESS["LHE_PAR_VIDEO_MAX_HEIGHT"] = "Maks. Tinggi Video";
+$MESS["LHE_PAR_VIDEO_WMODE"] = "Mode Jendela (WMode)";
+$MESS["LHE_PAR_WMODE_WINDOW"] = "Normal";
+$MESS["LHE_PAR_WMODE_OPAQUE"] = "Buram";
+$MESS["LHE_PAR_WMODE_TRANSPARENT"] = "jelas";
+$MESS["LHE_PAR_VIDEO_WINDOWLESS"] = "Mode Jendela (tidak berjendela)";
+$MESS["LHE_PAR_VIDEO_BUFFER"] = "Panjang Buffer Player (detik)";
+$MESS["LHE_PAR_VIDEO_SKIN"] = "JJalur Kulit Video";
+$MESS["LHE_PAR_VIDEO_LOGO"] = "Logo Image File Path";
+$MESS["LHE_PAR_RESIZABLE"] = "Area Editor Resizable";
+$MESS["LHE_PAR_AUTO_RESIZE"] = "Autoresize (memperbesar) Area Editor Untuk Fit Text";
+?>

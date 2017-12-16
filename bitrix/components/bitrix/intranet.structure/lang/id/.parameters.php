@@ -1,0 +1,29 @@
+<?
+$MESS["INTR_IS_GROUP_FILTER"] = "Parameter Filter";
+$MESS["INTR_IS_PARAM_SEARCH_URL"] = "Halaman Pencarian Karyawan";
+$MESS["INTR_IS_PARAM_DETAIL_URL"] = "Halaman Profil Pengguna";
+$MESS["INTR_IS_PARAM_FILTER_1C_USERS"] = "Tampilkan Hanya Pengguna yang Disinkronisasi Dengan 1C";
+$MESS["INTR_IS_PARAM_FILTER_NAME"] = "Nama Filter (untuk filter eksternal)";
+$MESS["INTR_IS_PARAM_USERS_PER_PAGE"] = "pengguna per halaman";
+$MESS["INTR_IS_PARAM_FILTER_SECTION_CURONLY"] = "Filter oleh Departemen";
+$MESS["INTR_IS_PARAM_FILTER_SECTION_CURONLY_VALUE_Y"] = "Langsung";
+$MESS["INTR_IS_PARAM_FILTER_SECTION_CURONLY_VALUE_N"] = "berulang";
+$MESS["INTR_IS_PARAM_SHOW_ERROR_ON_NULL"] = "Peringatan Layar pada Hasil Kosong";
+$MESS["INTR_IS_PARAM_NAV_TITLE"] = "Judul Breadcrumbs";
+$MESS["INTR_IS_PARAM_NAV_TITLE_DEFAULT"] = "Para karyawan";
+$MESS["INTR_IS_PARAM_SHOW_NAV_TOP"] = "Tampilkan Breadcrumbs Atas Hasil";
+$MESS["INTR_IS_PARAM_SHOW_NAV_BOTTOM"] = "Tampilkan Breadcrumbs Below Results";
+$MESS["INTR_IS_PARAM_SHOW_UNFILTERED_LIST"] = "Tampilkan Daftar yang Tidak Disaring";
+$MESS["INTR_IS_PARAM_PM_URL"] = "Halaman Pesan Pribadi";
+$MESS["INTR_IS_PARAM_PATH_TO_CONPANY_DEPARTMENT"] = "Template dari Path Halaman Departemen";
+$MESS["INTR_IS_PARAM_NAME_TEMPLATE"] = "Format Nama";
+$MESS["INTR_IS_PARAM_NAME_TEMPLATE_DEFAULT"] = "# NOBR ## NAME # #LAST_NAME ## / NOBR #";
+$MESS["INTR_IS_PARAM_SHOW_LOGIN"] = "Tampilkan Nama Login jika tidak ada kolom nama pengguna yang diperlukan";
+$MESS["INTR_IS_PARAM_DATE_FORMAT"] = "Format tanggal";
+$MESS["INTR_IS_PARAM_DATE_FORMAT_NO_YEAR"] = "Format Tanggal (tanpa tahun)";
+$MESS["INTR_IS_PARAM_DATE_TIME_FORMAT"] = "Format Tanggal Dan Waktu";
+$MESS["INTR_IS_PARAM_SHOW_YEAR"] = "Tampilkan Tahun Lahir";
+$MESS["INTR_IS_PARAM_SHOW_YEAR_VALUE_Y"] = "semua";
+$MESS["INTR_IS_PARAM_SHOW_YEAR_VALUE_M"] = "hanya laki-laki";
+$MESS["INTR_IS_PARAM_SHOW_YEAR_VALUE_N"] = "Tidak ada seorangpun yang,";
+?>

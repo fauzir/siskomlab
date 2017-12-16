@@ -1,0 +1,32 @@
+<?
+$MESS["GD_IBEL_IBLOCK_TYPE"] = "Jenis blok informasi";
+$MESS["GD_IBEL_IBLOCK_ID"] = "Blok informasi";
+$MESS["GD_IBEL_SORT_ORDER_ASC"] = "Ascending";
+$MESS["GD_IBEL_SORT_ORDER_DESC"] = "menurun";
+$MESS["GD_IBEL_SORT_BY_ID"] = "ID";
+$MESS["GD_IBEL_SORT_BY_NAME"] = "Nama";
+$MESS["GD_IBEL_SORT_BY_DATE_ACTIVE_FROM"] = "Tanggal Mulai Kegiatan";
+$MESS["GD_IBEL_SORT_BY_DATE_CREATE"] = "Buat tanggal";
+$MESS["GD_IBEL_SORT_BY_TIMESTAMP_X"] = "Ubah tanggal";
+$MESS["GD_IBEL_SELECT_ID"] = "ID";
+$MESS["GD_IBEL_SELECT_NAME"] = "Nama";
+$MESS["GD_IBEL_SELECT_DATE_ACTIVE_FROM"] = "Tanggal Mulai Kegiatan";
+$MESS["GD_IBEL_SELECT_DATE_CREATE"] = "Buat tanggal";
+$MESS["GD_IBEL_SELECT_TIMESTAMP_X"] = "Ubah tanggal";
+$MESS["GD_IBEL_SELECT_PREVIEW_PICTURE"] = "Pratinjau gambar";
+$MESS["GD_IBEL_SELECT_PREVIEW_TEXT"] = "Pratinjau teks";
+$MESS["GD_IBEL_SELECT_DETAIL_PICTURE"] = "Gambar rinci";
+$MESS["GD_IBEL_SELECT_DETAIL_TEXT"] = "Detil Deskripsi";
+$MESS["GD_IBEL_EMPTY"] = "-- pilih --";
+$MESS["GD_IBEL_DONOTUSE"] = "- jangan gunakan -";
+$MESS["GD_IBEL_ITEMS_COUNT"] = "Jumlah item";
+$MESS["GD_IBEL_THUMBNAIL_SIZE"] = "Ukuran gambar";
+$MESS["GD_IBEL_SORT_BY"] = "Sortir dengan";
+$MESS["GD_IBEL_SORT_ORDER"] = "urutan";
+$MESS["GD_IBEL_ADDITIONAL_FIELDS"] = "Juga tampilkan bidang dan properti";
+$MESS["GD_IBEL_TITLE_FIELD"] = "Gunakan sebagai judul";
+$MESS["GD_IBEL_DATE_FIELD"] = "Gunakan sebagai tanggal";
+$MESS["GD_IBEL_PICTURE_FIELD"] = "Gunakan sebagai gambar";
+$MESS["GD_IBEL_DESCRIPTION_FIELD"] = "Gunakan sebagai deskripsi";
+$MESS["GD_IBEL_DESCRIPTION_CUT"] = "Deskripsi memotong; karakter maksimum";
+?>

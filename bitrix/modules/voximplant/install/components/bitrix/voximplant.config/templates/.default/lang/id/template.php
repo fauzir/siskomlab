@@ -1,0 +1,31 @@
+<?
+$MESS["VI_CONFIG_WELCOME_MESSAGE"] = "tidak";
+$MESS["VI_CONFIG_LINK"] = "Operator <i> tidak logis </ i> membatasi pencarian ke halaman yang tidak berisi operand.";
+$MESS["VI_CONFIG_LINK_DESC"] = "<i> Tanda kurung bundar </ i> menentukan prioritas operator logis.";
+$MESS["VI_CONFIG_RENT"] = "Terakhir dimodifikasi:";
+$MESS["VI_CONFIG_RENT_DESC"] = "Sayangnya, pencarian Anda tidak cocok dengan dokumen apapun.";
+$MESS["VI_CONFIG_RENT_2_DESC"] = "Path:";
+$MESS["VI_CONFIG_SIP"] = "Urutkan menurut relevansi";
+$MESS["VI_CONFIG_SIP_DESC"] = "Diurutkan menurut tanggal";
+$MESS["VI_CONFIG_SET"] = "Diurut berdasarkan relevansi";
+$MESS["VI_CONFIG_SET_ACTIVE"] = "Urutkan menurut tanggal";
+$MESS["VI_CONFIG_NOTICE_NEW"] = "Kriteria pencarian tambahan";
+$MESS["VI_CONFIG_PAGE_CONFIG_USERS"] = "Bahasa masukan permintaan diubah untuk\" \"# query #\" \".";
+$MESS["VI_CONFIG_PAGE_CONFIG"] = "Buat halaman% LINK% di proyek wiki ini!";
+$MESS["VI_CONFIG_BUY"] = "Hasil Pencarian";
+$MESS["VI_CONFIG_BUY_DESC_1"] = "kategori";
+$MESS["VI_CONFIG_BUY_DESC_2"] = "Membuat halaman berisi daftar kategori.";
+$MESS["VI_CONFIG_BUY_DESC_3"] = "Wiki";
+$MESS["VI_CONFIG_BUY_DESC_4"] = "Template Jalur Laman Wiki";
+$MESS["VI_CONFIG_BUY_DESC_5"] = "Template Jalur Editor Laman Wiki";
+$MESS["VI_CONFIG_OWN"] = "Template Daftar Halaman Wiki Template";
+$MESS["VI_CONFIG_OWN_DESC_1"] = "Wiki Kategori Deskripsi Laman Path Template";
+$MESS["VI_CONFIG_OWN_DESC_2"] = "Wiki Kategori Halaman Path Template";
+$MESS["VI_CONFIG_OWN_DESC_3"] = "Wiki Page Update Log Path Template";
+$MESS["VI_CONFIG_OWN_DESC_4"] = "Template Laman Diskusi Template";
+$MESS["VI_CONFIG_LINK_DESC_1"] = "Template Jalur Profil Pengguna";
+$MESS["VI_CONFIG_LINK_DESC_2"] = "Halaman Variabel";
+$MESS["VI_CONFIG_LINK_DESC_3"] = "Nama variabel operasi";
+$MESS["VI_CONFIG_LINK_DESC_4"] = "Alias ​​Variabel";
+$MESS["VI_CONFIG_LINK_DESC_5"] = "Kategori Per Halaman";
+?>

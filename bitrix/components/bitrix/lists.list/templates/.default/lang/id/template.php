@@ -1,0 +1,37 @@
+<?
+$MESS["CT_BLL_TOOLBAR_ADD_ELEMENT_TITLE"] = "Tambahkan elemen baru ke bagian saat ini";
+$MESS["CT_BLL_TOOLBAR_EDIT_SECTION"] = "Bagian Manajemen";
+$MESS["CT_BLL_TOOLBAR_EDIT_SECTION_TITLE"] = "Edit dan hapus bagian";
+$MESS["CT_BLL_TOOLBAR_LIST"] = "Pengaturan daftar";
+$MESS["CT_BLL_TOOLBAR_LIST_TITLE"] = "Konfigurasikan pengaturan daftar";
+$MESS["CT_BLL_MOVE_TO_SECTION"] = "pindah ke bagian";
+$MESS["CT_BLL_SELECTED"] = "Terpilih";
+$MESS["CT_BLL_TOOLBAR_BIZPROC_TITLE"] = "Proses bisnis";
+$MESS["CT_BLL_TOOLBAR_BIZPROC"] = "Proses bisnis";
+$MESS["CT_BLL_EXPORT_EXCEL"] = "Ekspor ke Microsoft Excel";
+$MESS["CT_BLL_EXPORT_EXCEL_TITLE"] = "Ekspor ke Microsoft Excel";
+$MESS["CT_BLL_TOOLBAR_PROCESS"] = "Pengaturan Jalur kerja";
+$MESS["CT_BLL_TOOLBAR_PROCESS_TITLE"] = "Ubah preferensi Jalur kerja";
+$MESS["CT_BLL_TOOLBAR_ACTION"] = "Tindakan";
+$MESS["CT_BLL_TOOLBAR_ADD"] = "Menambahkan";
+$MESS["CT_BLL_TOOLBAR_FIELDS"] = "Sesuaikan bidang";
+$MESS["CT_BLL_ADD_SECTION_POPUP_TITLE"] = "Buat bagian";
+$MESS["CT_BLL_EDIT_SECTION_POPUP_TITLE"] = "Edit bagian";
+$MESS["CT_BLL_ADD_SECTION_POPUP_INPUT_NAME"] = "Nama";
+$MESS["CT_BLL_ADD_SECTION_POPUP_BUTTON_ADD"] = "Menambahkan";
+$MESS["CT_BLL_ADD_SECTION_POPUP_BUTTON_EDIT"] = "Simpan";
+$MESS["CT_BLL_ADD_SECTION_POPUP_BUTTON_CLOSE"] = "Dekat";
+$MESS["CT_BLL_ADD_SECTION_POPUP_ERROR_NAME"] = "Bidang \"\" Nama \"\" diperlukan \"";
+$MESS["CT_BLL_EXPORT_IN_EXCEL"] = "Ekspor ke Microsoft Excel";
+$MESS["CT_BLL_TOOLBAR_BIZPROC_SETTINGS"] = "Konfigurasikan Jalur kerja";
+$MESS["CT_BLL_SECTION_RETURN"] = "Kembali";
+$MESS["CT_BLL_DELETE_POPUP_TITLE"] = "Konfirmasikan Penghapusan?";
+$MESS["CT_BLL_DELETE_POPUP_ACCEPT_BUTTON"] = "Hapus";
+$MESS["CT_BLL_DELETE_POPUP_CANCEL_BUTTON"] = "Batalkan";
+$MESS["CT_BLL_TOOLBAR_ELEMENT_DELETE_WARNING"] = "Yakin ingin menghapus slide ini?";
+$MESS["CT_BLL_TOOLBAR_SECTION_DELETE_WARNING"] = "Yakin ingin menghapus slide ini?";
+$MESS["CT_BLL_SHOW_SECTION_GRID"] = "Tampilkan bagian";
+$MESS["CT_BLL_HIDE_SECTION_GRID"] = "Sembunyikan bagian";
+$MESS["CT_BLL_REBUILD_SEARCH_CONTENT_TITLE"] = "Rebuild Search Index";
+$MESS["CT_BLL_REBUILD_SEARCH_CONTENT_STATE"] = "# diproses # dari # total #";
+?>

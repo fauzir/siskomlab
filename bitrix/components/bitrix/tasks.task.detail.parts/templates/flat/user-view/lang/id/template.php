@@ -1,0 +1,12 @@
+<?
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_RESPONSIBLE"] = "Penanggung jawab";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_ORIGINATOR"] = "Dibuat oleh";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_AUDITORS"] = "Pengamat";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_ACCOMPLICES"] = "Peserta";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_ADD"] = "menambahkan";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_CHANGE"] = "Perubahan";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_DELETE"] = "Hapus";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_ENTER_AUDITOR"] = "mengamati";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_LEAVE_AUDITOR"] = "jangan menonton";
+$MESS["TASKS_TTDP_TEMPLATE_USER_VIEW_LEAVE_AUDITOR_CONFIRM"] = "Anda mungkin tidak dapat melihat tugas ini jika Anda bukan lagi pengamat. Apakah Anda ingin menghapus peran pengamat Anda?";
+?>

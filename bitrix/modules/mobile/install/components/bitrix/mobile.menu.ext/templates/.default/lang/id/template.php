@@ -1,0 +1,35 @@
+<?
+$MESS["MB_LIVE_FEED"] = "Activity Stream";
+$MESS["MB_MESSAGES"] = "pesan";
+$MESS["MB_COMPANY"] = "z";
+$MESS["MB_CONTACTS"] = "Kontak";
+$MESS["MB_SEC_FAVORITE"] = "My Workspace";
+$MESS["MB_SEC_GROUPS"] = "Grup";
+$MESS["MB_SEC_EXTRANET"] = "Extranet Groups";
+$MESS["MB_EXIT"] = "Keluar";
+$MESS["MB_HELP"] = "Membantu";
+$MESS["MB_MY_BITRIX24"] = "My Bitrix24";
+$MESS["MB_TASKS_MAIN_MENU_ITEM"] = "Tugas";
+$MESS["MB_BP_MAIN_MENU_ITEM"] = "Alur kerja";
+$MESS["MB_CALENDAR_LIST"] = "Kalender";
+$MESS["MB_CURRENT_USER_FILES_MAIN_MENU_ITEM"] = "My Drive";
+$MESS["MB_SHARED_FILES_MAIN_MENU_ITEM"] = "Company Drive";
+$MESS["PULL_TEXT"] = "Pull down to refresh";
+$MESS["DOWN_TEXT"] = "Release to refresh";
+$MESS["LOAD_TEXT"] = "Updating the menu...";
+$MESS["MB_CRM_ACTIVITY"] = "My activities";
+$MESS["MB_CRM_CONTACT"] = "Kontak";
+$MESS["MB_CRM_COMPANY"] = "Companies";
+$MESS["MB_CRM_DEAL"] = "Deals";
+$MESS["MB_CRM_LEAD"] = "Leads";
+$MESS["MB_CRM_INVOICE"] = "faktur";
+$MESS["MB_CRM_PRODUCT"] = "produk";
+$MESS["MB_CURRENT_USER_FILES_MAIN_MENU_ITEM_NEW"] = "My Drive";
+$MESS["MB_SHARED_FILES_MAIN_MENU_ITEM_NEW"] = "Company Drive";
+$MESS["MB_CHAT_AND_CALLS"] = "Chat and Calls";
+$MESS["MB_MARKETPLACE_GROUP_TITLE"] = "Aplikasi";
+$MESS["MB_CRM_QUOTE"] = "Tanda kutip";
+$MESS["MB_ASK_SYNC_CARDDAV"] = "Do you want to synchronize Bitrix24 with your phone's contacts?";
+$MESS["MB_ASK_SYNC_YES"] = "Ya";
+$MESS["MB_ASK_SYNC_NO"] = "Nomor";
+?>

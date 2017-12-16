@@ -1,0 +1,8 @@
+<?
+$MESS["FORM_VALIDATOR_VAL_INN_DESCRIPTION"] = "TIN validation (Russia)";
+$MESS["FORM_VALIDATOR_VAL_INN_SETTINGS_TYPE"] = "Type of identification number";
+$MESS["FORM_VALIDATOR_VAL_INN_SETTINGS_TYPE_JUR"] = "3.3.1 Legal entity (Badan Hukum)";
+$MESS["FORM_VALIDATOR_VAL_INN_SETTINGS_TYPE_PHYS"] = "natural person";
+$MESS["FORM_VALIDATOR_VAL_INN_SETTINGS_TYPE_BOTH"] = "both types";
+$MESS["FORM_VALIDATOR_INN_ERROR"] = "#FIELD_NAME#: invalid TIN";
+?>

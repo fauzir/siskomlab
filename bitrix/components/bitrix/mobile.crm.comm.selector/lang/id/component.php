@@ -1,0 +1,8 @@
+<?
+$MESS["CRM_MODULE_NOT_INSTALLED"] = "Modul CRM tidak diinstal.";
+$MESS["CRM_PERMISSION_DENIED"] = "Akses ditolak.";
+$MESS["M_CRM_COMM_SELECTOR_OWNER_NOT_FOUND"] = "Pemilik tidak ditemukan";
+$MESS["M_CRM_COMM_SELECT_SEARCH_PLACEHOLDER_PERSON"] = "Nama";
+$MESS["M_CRM_COMM_SELECT_SEARCH_PLACEHOLDER_PHONE"] = "Nama atau telepon";
+$MESS["M_CRM_COMM_SELECT_SEARCH_PLACEHOLDER_EMAIL"] = "Nama atau e-mail";
+?>

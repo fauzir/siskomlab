@@ -1,0 +1,33 @@
+<?
+$MESS["customrank_of"] = "of";
+$MESS["customrank_continue"] = "Terus";
+$MESS["customrank_site"] = "situs";
+$MESS["customrank_all"] = "Semua";
+$MESS["customrank_module"] = "Modul";
+$MESS["customrank_param1"] = "Parameter";
+$MESS["customrank_add"] = "Menambahkan";
+$MESS["customrank_param2"] = "Parameter";
+$MESS["customrank_param3"] = "Parameter";
+$MESS["customrank_edit"] = "213 Ubah";
+$MESS["customrank_delete"] = "Hapus";
+$MESS["customrank_id"] = "ID";
+$MESS["customrank_title"] = "Sorting rules list";
+$MESS["customrank_applied"] = "diproses:";
+$MESS["customrank_saved"] = "Rules saved.";
+$MESS["customrank_rules"] = "Rules";
+$MESS["customrank_sort"] = "Pangkat";
+$MESS["customrank_update"] = "Memperbarui";
+$MESS["customrank_step2"] = "Langkah 2. Search index update.";
+$MESS["customrank_step1"] = "Langkah 1. Ranking rules management.";
+$MESS["customrank_save_note"] = "After modifying or deleting rules, click the \"Update\" button for the changes to take effect.";
+$MESS["customrank_no"] = "Nomor";
+$MESS["customrank_edit_error"] = "Error modifying a record:";
+$MESS["customrank_no_rule"] = "rule not found";
+$MESS["customrank_add_title"] = "Click to add a new rank rule";
+$MESS["customrank_find"] = "Menemukan";
+$MESS["customrank_find_title"] = "Enter a search query";
+$MESS["customrank_stop"] = "Stop";
+$MESS["customrank_error_delete"] = "Error deleting rule.";
+$MESS["customrank_delete_confirm"] = "Are you sure you want to delete this rule?";
+$MESS["customrank_progress"] = "Refresh search index.";
+?>

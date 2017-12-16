@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_REQUISITE_MENU_NAME"] = "3.4 Toolbar";
+$MESS["CRM_REQUISITE_MENU_DESCRIPTION"] = "3.4 Toolbar";
+$MESS["CRM_NAME"] = "CRM";
+$MESS["CRM_REQUISITE_NAME"] = "rincian";
+?>

@@ -1,0 +1,32 @@
+<?
+$MESS["SUP_NAME"] = "Terapkan";
+$MESS["SUP_OPEN_TIME"] = "Ulang";
+$MESS["SUP_DATE_FROM"] = "213 Ubah";
+$MESS["SUP_DATE_TILL"] = "Hapus";
+$MESS["SUP_SLA"] = "iya..";
+$MESS["SUP_GROUP_NAV"] = "tidak";
+$MESS["SUP_UPDATE_ALT"] = "Menambahkan";
+$MESS["SUP_DELETE_ALT"] = "10 Menit";
+$MESS["SUP_DELETE_CONF"] = "18 detik";
+$MESS["SUP_ADD_NEW"] = "Modul Helpdesk";
+$MESS["SUP_ADD_NEW_ALT"] = "Menemukan";
+$MESS["SUP_FILTER_NAME"] = "Batal";
+$MESS["SUP_FILTER_OPEN_TIME"] = "[filter diset]";
+$MESS["SUP_FILTER_SLA"] = "[filter tidak diset]";
+$MESS["SUP_OPEN_TIME_HOLIDAY_G"] = "Buat tiket baru";
+$MESS["SUP_OPEN_TIME_WORKDAY_G"] = "Kategori";
+$MESS["SUP_OPEN_TIME_HOLIDAY_H"] = "Prioritas";
+$MESS["SUP_OPEN_TIME_HOLIDAY"] = "Status";
+$MESS["SUP_OPEN_TIME_WORKDAY_H"] = "Penilaian jawaban";
+$MESS["SUP_OPEN_TIME_WORKDAY_0"] = "Jawaban yang sering digunakan";
+$MESS["SUP_OPEN_TIME_WORKDAY_1"] = "Sumber";
+$MESS["SUP_OPEN_TIME_WORKDAY_2"] = "Tingkat kesulitan";
+$MESS["SUP_OPEN_TIME_WORKDAY_3"] = "Semua";
+$MESS["SUP_OPEN_TIME_WORKDAY_4"] = "Gunakan pencocokan tepat";
+$MESS["SUP_OPEN_TIME_WORKDAY_5"] = "Tindakan";
+$MESS["SUP_OPEN_TIME_WORKDAY_6"] = "Total";
+$MESS["SUP_TITLE"] = "Dibuat";
+$MESS["MAIN_ADMIN_LIST_SELECTED"] = "Diubah";
+$MESS["MAIN_ADMIN_LIST_CHECKED"] = "Bidang yang Diperlukan";
+$MESS["MAIN_ADMIN_LIST_DELETE"] = "Senin";
+?>

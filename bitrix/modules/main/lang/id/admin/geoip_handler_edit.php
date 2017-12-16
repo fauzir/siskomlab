@@ -1,0 +1,35 @@
+<?
+$MESS["GEOIP_EDIT_TITLE"] = "Geolocation Handler Settings";
+$MESS["GEOIP_EDIT_LIST"] = "Daftar";
+$MESS["GEOIP_EDIT_LIST_T"] = "Geolocation handlers";
+$MESS["GEOIP_EDIT_DELETE"] = "Hapus";
+$MESS["GEOIP_EDIT_DELETE_T"] = "Delete geolocation handler";
+$MESS["GEOIP_EDIT_DELETE_CONFIRM"] = "Are you sure you want to delete handler settings?";
+$MESS["GEOIP_EDIT_MAIN_SETTINGS"] = "Common";
+$MESS["GEOIP_EDIT_MAIN_SETTINGS_T"] = "Settings common to all handlers";
+$MESS["GEOIP_EDIT_SPECIFIC_SETTINGS"] = "149 Tambahan";
+$MESS["GEOIP_EDIT_SPECIFIC_SETTINGS_T"] = "Handler specific settings";
+$MESS["GEOIP_EDIT_SPECIFIC_ABSENT"] = "tak satupun";
+$MESS["GEOIP_EDIT_F_ID"] = "ID";
+$MESS["GEOIP_EDIT_F_TITLE"] = "Nama";
+$MESS["GEOIP_EDIT_F_DESCRIPTION"] = "Deskripsi";
+$MESS["GEOIP_EDIT_F_ACTIVE"] = "Aktif";
+$MESS["GEOIP_EDIT_F_IS_INSTALLED"] = "Installed";
+$MESS["GEOIP_EDIT_F_SORT"] = "Sort";
+$MESS["GEOIP_EDIT_F_LANG"] = "Languages";
+$MESS["GEOIP_EDIT_F_CLASS"] = "Class";
+$MESS["GEOIP_EDIT_PROVIDING_INFO"] = "Information provided";
+$MESS["GEOIP_EDIT_PI_ASN"] = "Autonomous system number (ASN)";
+$MESS["GEOIP_EDIT_PI_COUNTRY_CODE"] = "Country code";
+$MESS["GEOIP_EDIT_PI_COUNTRY_NAME"] = "Country name";
+$MESS["GEOIP_EDIT_PI_REGION_NAME"] = "Region name";
+$MESS["GEOIP_EDIT_PI_REGION_CODE"] = "Region code";
+$MESS["GEOIP_EDIT_PI_SUBREGION_NAME"] = "Area name";
+$MESS["GEOIP_EDIT_PI_CITY_NAME"] = "Kota";
+$MESS["GEOIP_EDIT_PI_ZIP"] = "Kode Pos";
+$MESS["GEOIP_EDIT_PI_LAT"] = "GARIS LINTANG";
+$MESS["GEOIP_EDIT_PI_LON"] = "GARIS BUJUR";
+$MESS["GEOIP_EDIT_PI_TIMEZONE"] = "Zona Waktu";
+$MESS["GEOIP_EDIT_PI_ISP"] = "ISP";
+$MESS["GEOIP_EDIT_PI_ORG"] = "Organisasi";
+?>

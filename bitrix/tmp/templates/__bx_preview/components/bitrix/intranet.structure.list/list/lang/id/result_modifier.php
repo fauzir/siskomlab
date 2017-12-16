@@ -1,0 +1,5 @@
+<?
+$MESS["INTR_ABSC_TPL_ADD_ENTRY"] = "Album";
+$MESS["INTR_ABSC_TPL_EDIT_ENTRIES"] = "Daftar";
+$MESS["INTR_ABSC_TPL_IMPORT"] = "elemen (s)";
+?>

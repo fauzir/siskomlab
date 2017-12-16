@@ -1,0 +1,29 @@
+<?
+$MESS["BITRIX24_COPYRIGHT1"] = "Tingkat akses";
+$MESS["BITRIX24_COPYRIGHT2"] = "Pengguna memiliki akses administratif ke portal";
+$MESS["BITRIX24_REVIEW"] = "Tambahkan Foto";
+$MESS["BITRIX24_URL"] = "Situs web";
+$MESS["BITRIX24_FEEDBACK_URL"] = "Jabatan";
+$MESS["BITRIX24_MENU_POPUP"] = "ICQ";
+$MESS["BITRIX24_SSL_URL"] = "Jenis Kelamin";
+$MESS["BX24_SITE_TITLE"] = "Tidak spesifik";
+$MESS["BX24_SITE_BUTTON"] = "Pria";
+$MESS["BX24_CLOSE_BUTTON"] = "Wanita";
+$MESS["BX24_LOADING"] = "Tanggal Lahir";
+$MESS["BX24_SITE_PASS_INPUT"] = "Tanggal lahir";
+$MESS["BITRIX24_MENU_HELP"] = "Foto";
+$MESS["BITRIX24_MENU_CLOUDMAN"] = "menghapus";
+$MESS["BITRIX24_PARTNER_CONNECT"] = "Telepon";
+$MESS["BX24_SITE_PARTNER"] = "Faks:";
+$MESS["BITRIX24_LANG_INTERFACE"] = "mobil";
+$MESS["BITRIX24_LANG_RU"] = "Pager";
+$MESS["BITRIX24_LANG_EN"] = "Telepon";
+$MESS["BITRIX24_LANG_DE"] = "Alamat surat";
+$MESS["BITRIX24_LANG_UA"] = "Kota";
+$MESS["BITRIX24_LANG_LA"] = "Alamat jalan";
+$MESS["BITRIX24_CS_ONLINE"] = "{0}2) Daerah / Negara /0} {1/}{/0}";
+$MESS["BITRIX24_CS_OFFLINE"] = "PO Box";
+$MESS["BITRIX24_CS_CONNECTING"] = "kode pos";
+$MESS["BITRIX24_CS_RELOAD"] = "Negara";
+$MESS["BITRIX24_SEARCHTITLE_ALL"] = "Catatan";
+?>

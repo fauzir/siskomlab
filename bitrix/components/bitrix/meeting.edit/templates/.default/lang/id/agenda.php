@@ -1,0 +1,29 @@
+<?
+$MESS["ME_AGENDA"] = "Jadwal acara";
+$MESS["ME_PROTO"] = "Menit";
+$MESS["ME_PROTO_OUTSIDE"] = "Topik diluar agenda";
+$MESS["ME_PROTO_ADD"] = "Tambahkan item menit";
+$MESS["ME_AGENDA_ADD"] = "Tambahkan Topik";
+$MESS["ME_AGENDA_ADD_DESCRIPTION"] = "Tambahkan deskripsi";
+$MESS["ME_AGENDA_TASK"] = "T";
+$MESS["ME_AGENDA_ADD_TASK"] = "Buat tugas";
+$MESS["ME_AGENDA_TASK_ADDED"] = "Tugas terlempar";
+$MESS["ME_ADD_EX"] = "Tambahkan dari pertemuan";
+$MESS["ME_TASK_ADD"] = "Tambahkan dari tugas";
+$MESS["ME_AGENDA_DEADLINE_DEFAULT"] = "Karena oleh";
+$MESS["ME_AGENDA_REPORT"] = "Melaporkan";
+$MESS["ME_AGENDA_HIDE_COMMENTS"] = "menyembunyikan komentar";
+$MESS["ME_AGENDA_CONFIRM_AGENDA"] = "Hapus topik agenda ini?";
+$MESS["ME_AGENDA_CONFIRM_PROTO"] = "Hapus item menit ini?";
+$MESS["ME_AGENDA_TT_DRAG"] = "Topik swap";
+$MESS["ME_AGENDA_TT_SHIFT"] = "Susun ulang topik";
+$MESS["ME_AGENDA_TT_ADDSUB"] = "Tambahkan subtopik";
+$MESS["ME_AGENDA_TT_TASKS_C"] = "Tugas terlampir";
+$MESS["ME_AGENDA_TT_COMMENTS_C"] = "komentar";
+$MESS["ME_AGENDA_TT_DELETE"] = "Hapus";
+$MESS["ME_AGENDA_TT_EDIT"] = "Edit";
+$MESS["ME_AGENDA_TT_SAVE"] = "Simpan";
+$MESS["ME_AGENDA_TT_CANCEL"] = "Batalkan";
+$MESS["ME_AGENDA_TT_CHECK"] = "Tandai selesai";
+$MESS["ME_AGENDA_NO_RESPONSIBLE"] = "Tidak spesifik";
+?>

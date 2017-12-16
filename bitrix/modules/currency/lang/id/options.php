@@ -1,0 +1,32 @@
+<?
+$MESS["CURRENCY_SETTINGS"] = "Pengaturan Umum";
+$MESS["CURRENCY_SETTINGS_TITLE"] = "Basic parameters for the module";
+$MESS["BASE_CURRENCY"] = "Base currency:";
+$MESS["CO_TAB_RIGHTS"] = "akses";
+$MESS["CO_TAB_RIGHTS_TITLE"] = "Module access permissions";
+$MESS["COP_SYS_ROU"] = "Service operations";
+$MESS["CUR_OPTIONS_BTN_SAVE"] = "Simpan";
+$MESS["CUR_OPTIONS_BTN_RESET"] = "Ulang";
+$MESS["CUR_OPTIONS_BTN_RESTORE_DEFAULT"] = "Default";
+$MESS["CUR_OPTIONS_BTN_HINT_RESTORE_DEFAULT"] = "Set default values";
+$MESS["CUR_OPTIONS_BTN_HINT_RESTORE_DEFAULT_WARNING"] = "Perhatian! All the parameters will be reset to their default values. Do you want to proceed?";
+$MESS["CURRENCY_PROCEDURES"] = "Service operations";
+$MESS["CURRENCY_BASE_RATE"] = "Current base rates";
+$MESS["CURRENCY_BASE_RATE_TITLE"] = "Actual exchange rates to the base currency";
+$MESS["CUR_PROCEDURES_BTN_RECALC"] = "Hitung Ulang";
+$MESS["CURRENCY_AGENTS"] = "agen";
+$MESS["CURRENCY_AGENTS_TITLE"] = "Information on module agents";
+$MESS["CURRENCY_BASE_RATE_AGENT"] = "Currency-to-base exchange rate calculation agent";
+$MESS["CURRENCY_BASE_RATE_AGENT_ACTIVE"] = "Aktif";
+$MESS["CURRENCY_AGENTS_ACTIVE_YES"] = "iya..";
+$MESS["CURRENCY_AGENTS_ACTIVE_NO"] = "tidak";
+$MESS["CURRENCY_AGENTS_LAST_EXEC"] = "menjalankan terakhir";
+$MESS["CURRENCY_AGENTS_NEXT_EXEC"] = "Berikutnya Jangka";
+$MESS["CURRENCY_AGENTS_PLANNED_NEXT_EXEC"] = "First scheduled run";
+$MESS["CURRENCY_AGENTS_ACTIVATE"] = "Activate agent";
+$MESS["CURRENCY_AGENTS_DEACTIVATE"] = "Deactivate agent";
+$MESS["CURRENCY_BASE_RATE_AGENT_ABSENT"] = "Perhatian! Currency-to-base exchange rate calculation agent is missing!";
+$MESS["CURRENCY_AGENTS_CREATE_AGENT"] = "Create agent";
+$MESS["CUR_OPTIONS_BTN_SAVE_TITLE"] = "Simpan perubahan";
+$MESS["CUR_OPTIONS_BTN_RESET_TITLE"] = "Undo all unsaved changes";
+?>

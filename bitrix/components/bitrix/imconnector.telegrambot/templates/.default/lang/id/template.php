@@ -1,0 +1,48 @@
+<?
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_API_TOKEN_NAME"] = "akses Token";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_REGISTER"] = "Pendaftaran bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_TESTED"] = "Uji koneksi";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_CONNECTOR_ERROR_STATUS"] = "Kesalahan bot Silakan cek credential dan test koneksi lagi";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_CREATE_NEW_BOT"] = "Buat bot baru";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_THERE_IS_A_BOT_TO_KNOW_THE_TOKEN"] = "Token mencari bot yang ada";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_I_KNOW_TOKEN"] = "Saya punya token";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_NAME_BOT"] = "Nama bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_LINK_BOT"] = "Link bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_6_STEPS_TITLE"] = "Selesaikan 6 langkah untuk membuat bot Telegram";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_1_OF_6"] = "langkah 1 dari 6";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_6"] = "langkah 2 dari 6";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_3_OF_6"] = "langkah 3 dari 6";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_4_OF_6"] = "langkah 4 dari 6";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_5_OF_6"] = "langkah 5 dari 6";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_6_OF_6"] = "langkah 6 dari 6";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_1_OF_6_TITLE"] = "Di mana kita mulai?";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_1_OF_6_DESCRIPTION_1"] = "Ikuti tautan dan klik Mulai <span class =\" \"imconnector-link\" \"> <a href=\"https://telegram.me/BotFather\" target=\"_blank\"> https: // telegram. saya / BotFather </a> </ span> ";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_6_TITLE"] = "Pembuatan bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_6_DESCRIPTION_1"] = "Pilih perintah untuk pembuatan bot baru <span class =\" \"imconnector-link\" \"> / newbot </ span>";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_3_OF_6_TITLE"] = "Nama bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_3_OF_6_DESCRIPTION_1"] = "Beri nama bot yang akan digunakan klien Anda untuk mencari dan berinteraksi dengan perusahaan Anda melalui Telegram. Nama ini akan ditampilkan dalam daftar kontak serta obrolan publik Telegram";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_4_OF_6_TITLE"] = "Login bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_4_OF_6_DESCRIPTION_1"] = "Ini adalah nama bot Telegram Anda. Klien akan dapat menemukannya di Telegram dan akan digunakan untuk membuat tautan ke bot Anda.";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_5_OF_6_TITLE"] = "Menerima token";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_5_OF_6_DESCRIPTION_1"] = "Salin token yang anda terima";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_5_OF_6_DESCRIPTION_2"] = "Masukkan token di kolom di bawah ini dan klik 'Save'";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_6_OF_6_TITLE"] = "Selesai";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_3_STEPS_TITLE"] = "Ikuti tiga langkah berikut untuk mendapatkan token untuk bot Telegram Anda";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_1_OF_3"] = "langkah 1 dari 3";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_3"] = "langkah 2 dari 3";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_3_OF_3"] = "langkah 3 dari 3";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_1_OF_3_TITLE"] = "Token retreival";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_1_OF_3_DESCRIPTION_1"] = "Ikuti tautan <span class =\" \"imconnector-link\" \"> <a href=\"https://telegram.me/BotFather\" target=\"_blank\"> https://telegram.me/BotFather </a> </ span> dan pilih perintah <span class = \" imconnector-link \"> / token </ span> <br> <br>
+Anda akan melihat daftar semua bot yang Anda buat. Pilih bot yang ingin Anda sambungkan ke jJalur terbuka Bitrix24. ";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_3_TITLE"] = "Hubungkan bot";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_3_DESCRIPTION_1"] = "Salin token yang anda terima";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_2_OF_3_DESCRIPTION_2"] = "Masukkan token di kolom di bawah ini dan klik 'Save'";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_3_OF_3_TITLE"] = "Selesai";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_SIMPLE_FORM_DESCRIPTION_1"] = "Jika Anda sudah memiliki bot Telegram dan Anda tahu tokennya, cukup masukkan di kolom di bawah dan klik 'Save'.";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_SIMPLE_FORM_DESCRIPTION_TESTED"] = "Harap uji koneksi untuk memastikan semua data dimasukkan dengan benar.";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_SIMPLE_FORM_DESCRIPTION_REGISTER"] = "Anda sekarang bisa mendaftarkan bot Anda.";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_INDEX_DESCRIPTION"] = "Sambungkan Telegram ke sJaluran Buka untuk menerima pesan Telegram melalui Bitrix24.� Untuk melakukan itu, buatlah bot Telegram baru atau hubungkan yang ada. <br> Jika Anda belum memiliki bot Telegram, kami akan membantu Anda membuatnya dan terhubung ke Bitrix24. ";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_FINAL_FORM_DESCRIPTION_1"] = "Telegram sekarang terhubung ke sJaluran terbuka Anda. Semua pesan yang dikirim melalui bot akan berakhir di Bitrix24";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_6_OF_6_DESCRIPTION_1"] = "Telegram telah terhubung ke SJaluran Terbuka Anda. Mulai sekarang, semua pesan yang dikirim ke bot Anda akan diteruskan ke Bitrix24 Anda.";
+$MESS["IMCONNECTOR_COMPONENT_TELEGRAMBOT_STEP_3_OF_3_DESCRIPTION_1"] = "Telegram telah terhubung ke SJaluran Terbuka Anda. Mulai sekarang, semua pesan yang dikirim ke bot Anda akan diteruskan ke Bitrix24 Anda.";
+?>

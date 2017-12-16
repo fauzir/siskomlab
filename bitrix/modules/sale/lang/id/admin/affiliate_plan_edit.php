@@ -1,0 +1,34 @@
+<?
+$MESS["SAPE1_NO_SITE"] = "The plan site is not specified";
+$MESS["SAPE1_NO_NAME"] = "The plan name is not specified";
+$MESS["SAPE1_NO_RATE_CURRENCY"] = "The plan rate currency is not specified";
+$MESS["SAPE1_NO_SECTION"] = "No product group is specified";
+$MESS["SAPE1_NO_MODULE"] = "The product group module is not specified";
+$MESS["SAPE1_ERROR_SAVE"] = "Error saving the plan";
+$MESS["SAPE1_ERROR_SAVE_SECTION"] = "Error saving the plan product group";
+$MESS["SAPE1_TITLE_UPDATE"] = "Edit plan #ID#";
+$MESS["SAPE1_TITLE_ADD"] = "New plan";
+$MESS["SAPE1_LIST"] = "Plans";
+$MESS["SAPE1_ADD"] = "New plan";
+$MESS["SAPE1_DELETE"] = "Delete plan";
+$MESS["SAPE1_DELETE_CONF"] = "Yakin ingin menghapus slide ini?";
+$MESS["SAPE1_PLAN"] = "Rencana?";
+$MESS["SAPE1_PLAN_PARAM"] = "Plan parameters";
+$MESS["SAPE1_SECTIONS"] = "Product groups";
+$MESS["SAPE1_SECTIONS_ALT"] = "Special rate product groups";
+$MESS["SAPE1_TIMESTAMP_X"] = "Last modification date:";
+$MESS["SAPE1_SITE"] = "Situs";
+$MESS["SAPE1_NAME"] = "Plan name:";
+$MESS["SAPE1_DESCR"] = "Plan description:";
+$MESS["SAPE1_ACTIVE"] = "aktif";
+$MESS["SAPE1_RATE"] = "Tariff:";
+$MESS["SAPE1_LIMIT"] = "The plan is active for sales over (pcs.)";
+$MESS["SAPE1_LIMIT_HINT"] = "The plan is active for sales with amount over<br><small>in the site base currency</small>";
+$MESS["SAPE1_NO"] = "Nomor";
+$MESS["SAPE1_DELETE1"] = "Hapus";
+$MESS["SAPE1_MODULE"] = "Modul";
+$MESS["SAPE1_SECTION"] = "Kelompok";
+$MESS["SAPE1_RATE1"] = "Tariff";
+$MESS["SAPE1_ADD1"] = "Menambahkan";
+$MESS["SAPE1_DELETE1_CONF"] = "Yakin ingin menghapus slide ini?";
+?>

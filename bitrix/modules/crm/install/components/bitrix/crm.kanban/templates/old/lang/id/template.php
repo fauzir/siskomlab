@@ -1,0 +1,31 @@
+<?
+$MESS["CRM_KANBAN_ACTIVITY_MY"] = "Aktivitas";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN"] = "Rencana?";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN_CALL"] = "Panggilan";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN_MEETING"] = "Rapat";
+$MESS["CRM_KANBAN_ACTIVITY_PLAN_TASK"] = "T";
+$MESS["CRM_KANBAN_ACTIVITY_MORE"] = "Lebih";
+$MESS["CRM_KANBAN_ACTIVITY_LETSGO_LEAD"] = "Plan new activities to move leads down the sales funnel.";
+$MESS["CRM_KANBAN_ACTIVITY_LETSGO_DEAL"] = "Plan new activities to move deals down the pipeline.";
+$MESS["CRM_KANBAN_RELOAD_PAGE"] = "Silahkan menyegarkan halaman";
+$MESS["CRM_KANBAN_FINAL_ALERT"] = "Do you want to close it as failed?";
+$MESS["CRM_KANBAN_INVOICE_PARAMS"] = "Finalize invoice status";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_DATE"] = "Tanggal";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_COMMENT"] = "Komentar";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_DOCNUM"] = "Faktur #";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_SAVE"] = "Simpan";
+$MESS["CRM_KANBAN_INVOICE_PARAMS_CANCEL"] = "Batal";
+$MESS["CRM_KANBAN_CONVERT_POPUP_TITLE"] = "Create based on lead:";
+$MESS["CRM_KANBAN_CONVERT_SELECT_ENTITY"] = "Memilih";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_DEAL"] = "Do you want to change deal status to \"#STATUS_NAME#\"? This status means the deal was lost.";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_LEAD"] = "Do you want to change lead status to \"#STATUS_NAME#\"? This status means the lead was lost.";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_INVOICE"] = "Do you want to change invoice status to \"#STATUS_NAME#\"? This status means the invoice was lost.";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_QUOTE"] = "Do you want to change quote status to \"#STATUS_NAME#\"? This status means the quote was lost.";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_APPLY"] = "Terapkan";
+$MESS["CRM_KANBAN_FAIL_CONFIRM_CANCEL"] = "Batal";
+$MESS["CRM_KANBAN_ERROR_DISABLE_CONVERTED_LEAD"] = "Cannot change status of converted leads.";
+$MESS["CRM_KANBAN_NO_DATA"] = "There are currently no data on this page.";
+$MESS["CRM_KANBAN_NO_EMAIL"] = "No e-mail";
+$MESS["CRM_KANBAN_NO_PHONE"] = "No phone";
+$MESS["CRM_KANBAN_NO_IMOL"] = "No chat communication";
+?>

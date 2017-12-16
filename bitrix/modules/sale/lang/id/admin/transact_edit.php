@@ -1,0 +1,29 @@
+<?
+$MESS["STE_EMPTY_USER"] = "The field \"User\" is empty";
+$MESS["STE_EMPTY_CURRENCY"] = "The field \"Currency\" is empty";
+$MESS["STE_EMPTY_SUM"] = "The field \"Amount\" is empty";
+$MESS["STE_EMPTY_DATE"] = "The field \"Date of transaction\" is empty";
+$MESS["STE_ERROR_SAVE_ACCOUNT"] = "Error saving the account";
+$MESS["STE_TITLE"] = "baru transaksi";
+$MESS["STE_TO_LIST"] = "Transaksi";
+$MESS["STE_USER"] = "Pengguna:";
+$MESS["STE_DATE"] = "330 * Tanggal Transaksi";
+$MESS["STE_SUM"] = "Amount: Rp. 1.000.000.";
+$MESS["STE_CURRENCY"] = "Mata uang";
+$MESS["STE_TYPE"] = "Rekam Tipe";
+$MESS["STE_DEBET"] = "credit user account";
+$MESS["STE_KREDIT"] = "charge user account";
+$MESS["STE_ORDER_ID"] = "Order ID (for order-related transactions):";
+$MESS["STE_DESCR"] = "Deskripsi:";
+$MESS["STE_NOTES"] = "Catatan:";
+$MESS["STE_SAVE"] = "Simpan";
+$MESS["STE_APPLY"] = "Terapkan";
+$MESS["STE_CANCEL"] = "Batal";
+$MESS["STE_USER_PROFILE"] = "500 Profil Pengguna";
+$MESS["STEN_2FLIST"] = "Transactions list";
+$MESS["STEN_2FLIST_TITLE"] = "View transaction list";
+$MESS["STEN_TAB_TRANSACT"] = "Transaksi";
+$MESS["STEN_TAB_TRANSACT_DESCR"] = "Transaksi";
+$MESS["STE_CANCEL1"] = "Batal";
+$MESS["STE_ERROR"] = "Saving error!";
+?>

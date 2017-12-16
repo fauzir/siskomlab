@@ -1,0 +1,11 @@
+<?
+$MESS["VI_TAB_SETTINGS"] = "Situs web";
+$MESS["VI_TAB_TITLE_SETTINGS_2"] = "Jabatan";
+$MESS["VI_ACCOUNT_ERROR_PUBLIC"] = "ICQ";
+$MESS["VI_ACCOUNT_URL"] = "Jenis Kelamin";
+$MESS["VI_ACCOUNT_DEBUG"] = "Tanggal Lahir";
+$MESS["VI_ACCOUNT_NAME"] = "Foto";
+$MESS["VI_ACCOUNT_BALANCE"] = "Telepon";
+$MESS["VI_ACCOUNT_ERROR_LICENSE"] = "Faks:";
+$MESS["VI_ACCOUNT_ERROR"] = "mobil";
+?>

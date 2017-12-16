@@ -1,0 +1,30 @@
+<?
+$MESS["OPINIONS_NAME"] = "Namamu";
+$MESS["OPINIONS_EMAIL"] = "email mu...";
+$MESS["OPINIONS_SEND"] = "Kirim";
+$MESS["OPINIONS_PREVIEW"] = "Preview";
+$MESS["F_C_GOTO_FORUM"] = "Buka forum & gt; & gt;";
+$MESS["F_CAPTCHA_TITLE"] = "Perlindungan bot spam (CAPTCHA)";
+$MESS["F_CAPTCHA_PROMT"] = "Karakter gambar CAPTCHA";
+$MESS["F_QUOTE_FULL"] = "Kutipan";
+$MESS["F_WANT_ALLOW_SMILES"] = "Apakah Anda ingin <b> mengaktifkan </ b> smiley dalam pesan ini?";
+$MESS["F_WANT_SUBSCRIBE_TOPIC"] = "Berlangganan posting baru dalam topik ini";
+$MESS["F_LOAD_FILE"] = "Memuat file";
+$MESS["F_LOAD_IMAGE"] = "Muat gambar";
+$MESS["F_QUOTE_HINT"] = "Untuk Quote is the Message in Reply form pilih teksnya dan klik disini";
+$MESS["F_NAME"] = "Nama";
+$MESS["JQOUTE_AUTHOR_WRITES"] = "menulis";
+$MESS["JERROR_NO_TOPIC_NAME"] = "Berikan judul pesan ";
+$MESS["JERROR_NO_MESSAGE"] = "Tolong berikan pesan anda ";
+$MESS["JERROR_MAX_LEN"] = "Panjang pesan maksimum adalah # MAX_LENGTH # simbol. Simbol total: # LENGTH #.";
+$MESS["F_FILE_SIZE"] = "ukuran file tidak boleh melebihi # SIZE #";
+$MESS["F_PREVIEW"] = "Preview";
+$MESS["F_DOWNLOAD"] = "Download";
+$MESS["F_FILE_EXTENSION"] = "File yang diizinkan: # EXTENSION #.";
+$MESS["F_HIDE"] = "Menyembunyikan";
+$MESS["F_SHOW"] = "Menunjukkan";
+$MESS["F_WAIT"] = "Mohon tunggu...";
+$MESS["F_DELETE"] = "Hapus";
+$MESS["F_DELETE_CONFIRM"] = "Pesan akan dihapus secara ireversibel. Terus";
+$MESS["F_ATTACH_FILES"] = "File-file terlampir";
+?>

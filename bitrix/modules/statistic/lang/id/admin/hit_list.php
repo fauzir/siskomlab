@@ -1,0 +1,37 @@
+<?
+$MESS["STAT_F_LOGIC"] = "Logika antar bidang";
+$MESS["STAT_GUEST_ID"] = "ID pengunjung";
+$MESS["STAT_EDIT_USER"] = "500 Profil Pengguna";
+$MESS["STAT_VIEW_SESSION_LIST"] = "Daftar sesi pengunjung";
+$MESS["STAT_NEW_GUEST_1"] = "pertama kali";
+$MESS["STAT_OLD_GUEST_1"] = "kembali";
+$MESS["STAT_RECORDS_LIST"] = "Kunjungan pengunjung mencapai # STATISTIC_DAYS # hari terakhir";
+$MESS["STAT_F_ID"] = "Tekan ID";
+$MESS["STAT_F_SESSION"] = "Sesi ID";
+$MESS["STAT_F_AUTH"] = "Terdaftar";
+$MESS["STAT_F_LOGIN"] = "ID, login, nama, nama belakang";
+$MESS["STAT_F_GUEST_ID"] = "ID pengunjung";
+$MESS["STAT_F_NEW_GUEST"] = "Pertama kali / kembali";
+$MESS["STAT_F_IP"] = "Alamat IP";
+$MESS["STAT_F_PAGE"] = "Halaman";
+$MESS["STAT_HIT_PAGES"] = "Hits";
+$MESS["STAT_NOT_REGISTERED"] = "tidak terdaftar";
+$MESS["STAT_DETAIL"] = "619 Rincian";
+$MESS["STAT_SESSION"] = "sesi";
+$MESS["STAT_DATE"] = "Tanggal";
+$MESS["STAT_USER"] = "Pengunjung";
+$MESS["STAT_IP"] = "Alamat IP";
+$MESS["STAT_PAGE"] = "Halaman";
+$MESS["STAT_NOT_AUTH"] = "(tidak diizinkan)";
+$MESS["STAT_F_USER_AGENT"] = "Agen pengguna";
+$MESS["STAT_F_STOP_LIST_ID"] = "Hentikan daftar catatan ID";
+$MESS["STAT_F_STOP"] = "Sekarang di stop list";
+$MESS["STAT_COUNTRY"] = "Negara";
+$MESS["STAT_CITY"] = "Kota";
+$MESS["STAT_F_COUNTRY"] = "Negara";
+$MESS["STAT_F_REGION"] = "Wilayah";
+$MESS["STAT_F_CITY"] = "Kota";
+$MESS["STAT_F_COOKIE"] = "Kue kering";
+$MESS["STAT_REGION"] = "Wilayah";
+$MESS["STAT_SITE"] = "situs";
+?>

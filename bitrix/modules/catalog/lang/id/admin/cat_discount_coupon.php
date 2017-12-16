@@ -1,0 +1,30 @@
+<?
+$MESS["ERROR_UPDATE_DISCOUNT_CPN"] = "Error updating parameters of the coupon #ID#";
+$MESS["ERROR_DELETE_DISCOUNT_CPN"] = "Error deleting the coupon #ID#";
+$MESS["DSC_NAV"] = "Kupon";
+$MESS["DSC_DELETE_ALT"] = "Delete coupon";
+$MESS["DSC_DELETE"] = "Hapus";
+$MESS["DSC_UPDATE_ALT"] = "Edit coupon parameters";
+$MESS["DSC_UPDATE"] = "Edit";
+$MESS["DSC_DELETE_CONF"] = "Yakin ingin menghapus slide ini?";
+$MESS["DSC_CPN_NAME"] = "Discount name";
+$MESS["DSC_CPN_ACTIVE"] = "Aktif";
+$MESS["DSC_CPN_CPN"] = "Kupon";
+$MESS["DSC_CPN_DATE"] = "Last used";
+$MESS["DSC_CPN_TIME"] = "Single use";
+$MESS["DSC_CPN_TIME2"] = "Jenis kupon";
+$MESS["DSC_CPN_ORDER"] = "Applicable To All Order Items";
+$MESS["DSC_CPN_ADD"] = "New coupon";
+$MESS["DSC_CPN_ADD_ALT"] = "Adds a new coupon";
+$MESS["DSC_CPN_TITLE"] = "Discount coupons";
+$MESS["DSC_CPN_ACT"] = "Aktif";
+$MESS["DSC_CPN_DISC"] = "Diskon";
+$MESS["DSC_CPN_ALL"] = "Semua";
+$MESS["DSC_CPN_YES"] = "Ya";
+$MESS["DSC_CPN_NO"] = "Nomor";
+$MESS["DSC_CPN_DESCRIPTION"] = "Komentar";
+$MESS["DSC_CREATED_BY"] = "Dibuat oleh";
+$MESS["DSC_DATE_CREATE"] = "Dibuat Pada";
+$MESS["DSC_MODIFIED_BY"] = "Modified by";
+$MESS["DSC_TIMESTAMP_X"] = "diubah pada";
+?>

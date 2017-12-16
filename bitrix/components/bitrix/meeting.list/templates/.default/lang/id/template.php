@@ -1,0 +1,32 @@
+<?
+$MESS["ME_ADD"] = "Pertemuan baru";
+$MESS["ME_DETAIL"] = "Lihat rapat";
+$MESS["ME_DETAIL_EX"] = "Melihat dan mengedit rapat";
+$MESS["ME_EDIT"] = "Edit rapat";
+$MESS["ME_EDIT_EX"] = "Melihat dan mengedit rapat";
+$MESS["ME_COPY"] = "Buat pertemuan berikutnya";
+$MESS["ME_COPY_EX"] = "Buat pertemuan baru berdasarkan hasil yang sekarang";
+$MESS["ME_DELETE"] = "Hapus rapat";
+$MESS["ME_DELETE_EX"] = "Hapus rapat";
+$MESS["ME_ERR_NO_MEETINGS"] = "Tidak ada pertemuan yang direncanakan";
+$MESS["ME_TITLE"] = "Topik";
+$MESS["ME_DATE_START"] = "Tanggal";
+$MESS["ME_CURRENT_STATE"] = "Tahap";
+$MESS["ME_OWNER"] = "Pemilik";
+$MESS["ME_PLACE"] = "Lokasi";
+$MESS["ME_STATE_P"] = "Belum ulai";
+$MESS["ME_STATE_C"] = "Jadi";
+$MESS["ME_STATE_A"] = "Sedang berlangsung";
+$MESS["ME_DELETE_CONFIRM"] = "Yakin ingin menghapus slide ini?";
+$MESS["ME_FILTER"] = "Menyaring";
+$MESS["ME_FILTER_TITLE"] = "Nama";
+$MESS["ME_FILTER_CURRENT_STATE"] = "Tahap";
+$MESS["ME_FILTER_CURRENT_STATE_ALL"] = "Semua";
+$MESS["ME_FILTER_OWNER"] = "Pemilik";
+$MESS["ME_FILTER_OWNER_CHOOSE"] = "Memilih";
+$MESS["ME_FILTER_MEMBER"] = "Peserta";
+$MESS["ME_FILTER_HEAD"] = "Hanya pertemuan saya saja";
+$MESS["ME_FILTER_SUBMIT"] = "Cari";
+$MESS["ME_FILTER_CANCEL"] = "Batalkan";
+$MESS["ME_FILTER_GROUP"] = "Proyek";
+?>

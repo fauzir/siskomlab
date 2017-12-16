@@ -1,0 +1,33 @@
+<?
+$MESS["ME_LIST_TITLE"] = "Kembali ke pertemuan";
+$MESS["ME_FILES"] = "File";
+$MESS["MI_BLOCK_TITLE"] = "Deskripsi Topik";
+$MESS["MI_EDIT"] = "Edit";
+$MESS["MI_EDIT_FINISH"] = "Selesai mengedit";
+$MESS["MI_SAVE"] = "Simpan";
+$MESS["MI_SAVING"] = "Penghematan...";
+$MESS["MI_SAVED"] = "Laporan disimpan di # TIME #";
+$MESS["MI_CANCEL"] = "Batalkan";
+$MESS["MI_REPORTS"] = "Laporan";
+$MESS["MI_REPORT"] = "Melaporkan";
+$MESS["MI_REPORT_MEETING"] = "Topik rapat";
+$MESS["MI_REPORT_DATE_START"] = "Tanggal";
+$MESS["MI_REPORT_STATE"] = "Status";
+$MESS["MI_REPORT_RESPONSIBLES"] = "Orang yang bertanggung jawab";
+$MESS["MI_REPORT_RESPONSIBLE"] = "Penanggung jawab";
+$MESS["MI_REPORT_NO_RESPONSIBLE"] = "tak satupun";
+$MESS["MI_REPORT_NO_REPORT"] = "tak satupun";
+$MESS["MI_REPORT_DEADLINE"] = "Karena oleh";
+$MESS["MI_HISTORY_SHOW"] = "Tampilkan riwayat topik (# CNT #)";
+$MESS["MI_HISTORY_HIDE"] = "Sembunyikan riwayat topik";
+$MESS["MI_TASKS"] = "Tugas";
+$MESS["MI_TASK_ADD"] = "Tambahkan tugas baru";
+$MESS["MI_TASK_ATTACH"] = "Lampirkan pada tugas yang ada";
+$MESS["MI_COMMENTS"] = "komentar";
+$MESS["MI_TASK_DETACH"] = "Lepaskan tugas";
+$MESS["MI_TASK_DETACH_TITLE"] = "Lepaskan tugas dari topik";
+$MESS["MI_EDIT_TITLE"] = "Topik";
+$MESS["MI_EDIT_DESCRIPTION"] = "Deskripsi";
+$MESS["MI_MEETING_TITLE"] = "No. # ID #: # TITLE #";
+$MESS["ME_BACK"] = "Kembali ke pertemuan";
+?>

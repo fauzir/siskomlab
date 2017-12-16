@@ -1,0 +1,29 @@
+<?
+$MESS["FILEMAN_FOLDER_TITLE"] = "Folder Properties";
+$MESS["FILEMAN_FOLDER_SECTION_NAME"] = "Section Name:";
+$MESS["FILEMAN_FOLDER_ACCESS"] = "Access rights";
+$MESS["FILEMAN_FOLDER_ACCESS_GROUP"] = "Kelompok";
+$MESS["FILEMAN_FOLDER_ACCESS_LEVEL"] = "Access level";
+$MESS["FM_FOLDER_ACCESS_DENIED"] = "Menyangkal";
+$MESS["FM_FOLDER_ACCESS_READ"] = "Baca baca";
+$MESS["FM_FOLDER_ACCESS_WRITE"] = "Write";
+$MESS["FM_FOLDER_ACCESS_FULL"] = "Akses penuh";
+$MESS["FM_FOLDER_ACCESS_WORKFLOW"] = "Alur kerja";
+$MESS["FILEMAN_FOLDER_ACCESS_INHERIT"] = "Mewarisi";
+$MESS["FILEMAN_FOLDER_ACCESS_FOR_INHERIT"] = "All groups with &quot;Inherit&quot; access level";
+$MESS["FILEMAN_FOLDER_SAVE"] = "Simpan";
+$MESS["FILEMAN_FOLDER_APPLY"] = "Terapkan";
+$MESS["FILEMAN_FOLDER_RESET"] = "Ulang";
+$MESS["FILEMAN_FOLDER_FILEPROPS"] = "Folder properties";
+$MESS["FILEMAN_FOLDER_PROPSCODE"] = "Kode";
+$MESS["FILEMAN_FOLDER_PROPSVAL"] = "Nilai";
+$MESS["FILEMAN_FOLDER_PROPSDEL"] = "Hapus";
+$MESS["FILEMAN_FOLDER_PROPSMORE"] = "Lebih";
+$MESS["FILEMAN_FOLDER_CURVAL"] = "28 Nilai saat ini **";
+$MESS["FILEMAN_FOLDER_BACK"] = "Folder";
+$MESS["FILEMAN_TAB"] = "Folder properties";
+$MESS["FILEMAN_TAB_ALT"] = "Folder properties";
+$MESS["FILEMAN_ACCESS"] = "akses";
+$MESS["FILEMAN_OPTION_PROPS_DESCR"] = "Deskripsi";
+$MESS["FILEMAN_OPTION_PROPS_KEYW"] = "Kata kunci";
+?>

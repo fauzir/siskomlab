@@ -1,0 +1,6 @@
+<?
+$MESS["CRM_WEBFORM_LIST_NAME"] = "Formulir CRM";
+$MESS["CRM_WEBFORM_LIST_DESCRIPTION"] = "Daftar bentuk CRM";
+$MESS["CRM_NAME"] = "CRM";
+$MESS["CRM_WEBFORM_NAME"] = "Formulir CRM";
+?>

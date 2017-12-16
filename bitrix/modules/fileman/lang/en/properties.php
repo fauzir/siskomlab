@@ -13,7 +13,7 @@ $MESS["IBLOCK_PROP_MAP_GOOGLE_NO_KEY_MESSAGE"] = "Specify the map key for domain
 $MESS["IBLOCK_PROP_MAP_GOOGLE_NO_KEY_BUTTON"] = "Ready";
 $MESS["IBLOCK_PROP_MAP_GOOGLE_SAVE_KEY_BUTTON"] = "Save Key";
 $MESS["IBLOCK_PROP_MAP_GOOGLE_NO_KEY"] = "Map Key: ";
-$MESS["IBLOCK_PROP_MAP_GOOGLE_NO_KEY_OKMESSAGE"] = "The map key has been saved. You can edit it or view all keys at the <a href=\"/bitrix/admin/settings.php?lang=en&mid=fileman&tabControl_active_tab=edit4\">Site Explorer module settings page</a>.";
+$MESS["IBLOCK_PROP_MAP_GOOGLE_NO_KEY_OKMESSAGE"] = "The map key has been saved. You can edit it or view all keys at the <a href=\"/bnpt/admin/settings.php?lang=en&mid=fileman&tabControl_active_tab=edit4\">Site Explorer module settings page</a>.";
 $MESS["IBLOCK_PROP_MAP_GOOGLE_NO_KEY_ERRORMESSAGE"] = "Error saving the key. Please try again later.";
 $MESS["IBLOCK_PROP_MAP_YANDEX"] = "Bind to Yandex.Maps";
 $MESS["IBLOCK_PROP_MAP_YANDEX_INIT_LAT"] = "55.76";
@@ -22,7 +22,7 @@ $MESS["IBLOCK_PROP_MAP_YANDEX_NO_KEY_MESSAGE"] = "Specify the map key for domain
 $MESS["IBLOCK_PROP_MAP_YANDEX_NO_KEY"] = "Map Key: ";
 $MESS["IBLOCK_PROP_MAP_YANDEX_NO_KEY_BUTTON"] = "Ready";
 $MESS["IBLOCK_PROP_MAP_YANDEX_SAVE_KEY_BUTTON"] = "Save Key";
-$MESS["IBLOCK_PROP_MAP_YANDEX_NO_KEY_OKMESSAGE"] = "The map key has been saved. You can edit it or view all keys at the <a href=\"/bitrix/admin/settings.php?lang=en&mid=fileman&tabControl_active_tab=edit4\">Site Explorer module settings page</a>.";
+$MESS["IBLOCK_PROP_MAP_YANDEX_NO_KEY_OKMESSAGE"] = "The map key has been saved. You can edit it or view all keys at the <a href=\"/bnpt/admin/settings.php?lang=en&mid=fileman&tabControl_active_tab=edit4\">Site Explorer module settings page</a>.";
 $MESS["IBLOCK_PROP_MAP_YANDEX_INSTR"] = "Double-click the map to select position.";
 $MESS["IBLOCK_PROP_MAP_YANDEX_INSTR_VALUE"] = "Drag the point or double-click to select a new position.";
 $MESS["IBLOCK_PROP_MAP_YANDEX_SEARCH"] = "Search Map: ";

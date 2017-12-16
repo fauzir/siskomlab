@@ -53,7 +53,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && $_REQUEST["save_form"]=="Y" && $MOD_RIG
 		LocalRedirect($APPLICATION->GetCurPage()."?lang=".LANG."&ID=".$ID."#tb");
 	elseif(strlen($_REQUEST["next"])>0 || strlen($_REQUEST["prev"])>0)
 	{
-		$md5Path = md5("/bitrix/admin/mail_message_admin.php");
+		$md5Path = md5("/bnpt/admin/mail_message_admin.php");
 		$FILTER = $_SESSION["SESS_ADMIN"][$md5Path];
 		$arFilter = Array(
 			"ID"=>$FILTER["find_id"],
@@ -77,7 +77,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && $_REQUEST["save_form"]=="Y" && $MOD_RIG
 			LocalRedirect($APPLICATION->GetCurPage()."?lang=".LANG."&ID=".$arr["ID"]."#tb");
 	}
 
-	LocalRedirect("/bitrix/admin/mail_message_admin.php?lang=".LANG);
+	LocalRedirect("/bnpt/admin/mail_message_admin.php?lang=".LANG);
 }
 
 
@@ -175,7 +175,7 @@ if($dbr_arr = $dbr->ExtractFields("str_")):
 		</script>
 			<table width="100%"><tr>
 			<td width="80%"><?=TxtToHTML($dbr_arr["SUBJECT"])?></td>
-			<td width="20%" nowrap><a href="javascript:void(0)" onclick="hideshowhdr()" title="<?echo GetMessage("MMV_SHOW_HEADER_TITLE")?>"><?echo GetMessage("MMV_SHOW_HEADER")?></a><?if(COption::GetOptionString("mail", "save_src", B_MAIL_SAVE_SRC)=="Y" && $dbr_arr["FULL_TEXT"]!=''):?> | <a href="/bitrix/admin/mail_message_view.php?lang=<?=LANGUAGE_ID?>&amp;ID=<?=intval($ID)?>&amp;show=original" target="_blank" title="<?echo GetMessage("MMV_SHOW_ORIG_TITLE")?>"><?echo GetMessage("MMV_SHOW_ORIG")?></a><?endif?></td>
+			<td width="20%" nowrap><a href="javascript:void(0)" onclick="hideshowhdr()" title="<?echo GetMessage("MMV_SHOW_HEADER_TITLE")?>"><?echo GetMessage("MMV_SHOW_HEADER")?></a><?if(COption::GetOptionString("mail", "save_src", B_MAIL_SAVE_SRC)=="Y" && $dbr_arr["FULL_TEXT"]!=''):?> | <a href="/bnpt/admin/mail_message_view.php?lang=<?=LANGUAGE_ID?>&amp;ID=<?=intval($ID)?>&amp;show=original" target="_blank" title="<?echo GetMessage("MMV_SHOW_ORIG_TITLE")?>"><?echo GetMessage("MMV_SHOW_ORIG")?></a><?endif?></td>
 			</tr></table>
 		</td>
 	</tr>

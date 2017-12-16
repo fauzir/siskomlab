@@ -263,7 +263,7 @@ Class statistic extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/statistic/install/public/bitrix/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/statistic/install/public/bnpt/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/statistic/install/public/bitrix/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");//css
 			DeleteDirFilesEx("/bitrix/themes/.default/icons/statistic/");//icons
 			DeleteDirFilesEx("/bitrix/images/statistic/");//images

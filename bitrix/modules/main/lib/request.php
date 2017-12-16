@@ -78,7 +78,7 @@ abstract class Request
 	public function isAdminSection()
 	{
 		$requestedDir = $this->getRequestedPageDirectory();
-		return (substr($requestedDir, 0, strlen("/bitrix/admin/")) == "/bitrix/admin/"
+		return (substr($requestedDir, 0, strlen("/bnpt/admin/")) == "/bnpt/admin/"
 			|| substr($requestedDir, 0, strlen("/bitrix/updates/")) == "/bitrix/updates/"
 			|| (defined("ADMIN_SECTION") &&  ADMIN_SECTION == true)
 			|| (defined("BX_PUBLIC_TOOLS") && BX_PUBLIC_TOOLS === true)

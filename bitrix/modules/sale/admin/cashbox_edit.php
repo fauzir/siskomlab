@@ -103,9 +103,9 @@ if ($server->getRequestMethod() == "POST"
 			}
 
 			if (strlen($request->getPost("apply")) == 0)
-				LocalRedirect("/bitrix/admin/sale_cashbox_list.php?lang=".$lang."&".GetFilterParams("filter_", false));
+				LocalRedirect("/bnpt/admin/sale_cashbox_list.php?lang=".$lang."&".GetFilterParams("filter_", false));
 			else
-				LocalRedirect("/bitrix/admin/sale_cashbox_edit.php?lang=".$lang."&ID=".$id."&".GetFilterParams("filter_", false));
+				LocalRedirect("/bnpt/admin/sale_cashbox_edit.php?lang=".$lang."&ID=".$id."&".GetFilterParams("filter_", false));
 		}
 		else
 		{
@@ -165,7 +165,7 @@ if ($id > 0)
 $aMenu = array(
 	array(
 		"TEXT" => Loc::getMessage("SALE_CASHBOX_2FLIST"),
-		"LINK" => "/bitrix/admin/sale_cashbox_list.php?lang=".$context->getLanguage().GetFilterParams("filter_"),
+		"LINK" => "/bnpt/admin/sale_cashbox_list.php?lang=".$context->getLanguage().GetFilterParams("filter_"),
 		"ICON" => "btn_list"
 	)
 );
@@ -176,7 +176,7 @@ if ($id > 0 && $saleModulePermissions >= "W")
 
 	$aMenu[] = array(
 			"TEXT" => Loc::getMessage("SALE_DELETE_CASHBOX"),
-			"LINK" => "javascript:if(confirm('".Loc::getMessage("SPSN_DELETE_CASHBOX_CONFIRM")."')) window.location='/bitrix/admin/sale_cashbox_list.php?action=delete&ID[]=".$id."&lang=".$context->getLanguage()."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".Loc::getMessage("SPSN_DELETE_CASHBOX_CONFIRM")."')) window.location='/bnpt/admin/sale_cashbox_list.php?action=delete&ID[]=".$id."&lang=".$context->getLanguage()."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y",
 			"ICON" => "btn_delete"
 		);
@@ -316,7 +316,7 @@ $tabControl->BeginCustomField('CASHBOX_SETTINGS', GetMessage("CASHBOX_SETTINGS")
 $tabControl->Buttons(
 	array(
 		"disabled" => ($saleModulePermissions < "W"),
-		"back_url" => "/bitrix/admin/sale_cashbox_list.php?lang=".$context->getLanguage().GetFilterParams("filter_")
+		"back_url" => "/bnpt/admin/sale_cashbox_list.php?lang=".$context->getLanguage().GetFilterParams("filter_")
 	)
 );
 

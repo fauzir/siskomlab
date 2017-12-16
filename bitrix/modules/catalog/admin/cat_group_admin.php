@@ -245,7 +245,7 @@ while ($arRes = $dbResultList->Fetch())
 	}
 	$arRows[$arRes['ID']] = $row = &$lAdmin->AddRow($arRes['ID'], $arRes);
 
-	$row->AddViewField("ID", '<a href="/bitrix/admin/cat_group_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'&'.GetFilterParams("filter_").'">'.$arRes["ID"].'</a>');
+	$row->AddViewField("ID", '<a href="/bnpt/admin/cat_group_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'&'.GetFilterParams("filter_").'">'.$arRes["ID"].'</a>');
 
 	if (!$bReadOnly)
 	{
@@ -259,7 +259,7 @@ while ($arRes = $dbResultList->Fetch())
 	else
 	{
 		if ($arSelectFieldsMap['NAME'])
-			$row->AddViewField("NAME", '<a href="/bitrix/admin/cat_group_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'&'.GetFilterParams("filter_").'">'.htmlspecialcharsbx($arRes['NAME']).'</a>');
+			$row->AddViewField("NAME", '<a href="/bnpt/admin/cat_group_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'&'.GetFilterParams("filter_").'">'.htmlspecialcharsbx($arRes['NAME']).'</a>');
 		if ($arSelectFieldsMap['SORT'])
 			$row->AddInputField('SORT', false);
 		if ($arSelectFieldsMap['XML_ID'])
@@ -273,7 +273,7 @@ while ($arRes = $dbResultList->Fetch())
 	$arActions[] = array(
 		"ICON" => "edit",
 		"TEXT" => GetMessage("EDIT_STATUS_ALT"),
-		"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_group_edit.php?ID=".$arRes['ID']."&lang=".LANGUAGE_ID."&".GetFilterParams("filter_").""),
+		"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_group_edit.php?ID=".$arRes['ID']."&lang=".LANGUAGE_ID."&".GetFilterParams("filter_").""),
 		"DEFAULT" => true
 	);
 
@@ -337,7 +337,7 @@ if ($arSelectFieldsMap['CREATED_BY'] || $arSelectFieldsMap['MODIFIED_BY'])
 		while ($arOneUser = $rsUsers->Fetch())
 		{
 			$arOneUser['ID'] = (int)$arOneUser['ID'];
-			$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+			$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 		}
 	}
 

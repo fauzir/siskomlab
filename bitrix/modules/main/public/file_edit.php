@@ -35,7 +35,7 @@ while($arSiteTemplate = $rsSiteTemplates->Fetch())
 $io = CBXVirtualIo::GetInstance();
 
 $bVarsFromForm = false;	// if 'true' - we will get content  and variables from form, if 'false' - from saved file
-$bSessIDRefresh = false;	// флаг, указывающий, нужно ли обновлять ид сессии на клиенте
+$bSessIDRefresh = false;	// пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $editor_name = (isset($_REQUEST['editor_name'])? $_REQUEST['editor_name'] : 'filesrc_pub');
 
 if (strlen($filename) > 0 && ($mess = CFileMan::CheckFileName($filename)) !== true)
@@ -405,7 +405,7 @@ $obJSPopup->StartContent(
 ?>
 </form>
 <iframe src="javascript:void(0)" name="file_edit_form_target" height="0" width="0" style="display: none;"></iframe>
-<form action="/bitrix/admin/public_file_edit.php" name="editor_form" method="post" enctype="multipart/form-data" target="file_edit_form_target" style="margin: 0px; padding: 0px; ">
+<form action="/bnpt/admin/public_file_edit.php" name="editor_form" method="post" enctype="multipart/form-data" target="file_edit_form_target" style="margin: 0px; padding: 0px; ">
 <?
 if (CAutoSave::Allowed())
 {

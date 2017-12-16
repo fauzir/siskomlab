@@ -49,7 +49,7 @@ if ($saleOrder)
 
 		if (!$isUserResponsible && !$isAllowCompany)
 		{
-			LocalRedirect("/bitrix/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		}
 	}
 }
@@ -58,7 +58,7 @@ if($saleOrder)
 	$allowedStatusesView = \Bitrix\Sale\OrderStatus::getStatusesUserCanDoOperations($USER->GetID(), array('view'));
 
 if(!$saleOrder || !in_array($saleOrder->getField("STATUS_ID"), $allowedStatusesView))
-	LocalRedirect("/bitrix/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+	LocalRedirect("/bnpt/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 
 $id = (int)($_REQUEST["ID"]);
 
@@ -94,7 +94,7 @@ $aMenu[] = array(
 	"ICON" => "btn_list",
 	"TEXT" => Loc::getMessage("SALE_OVIEW_TO_ARCHIVE_LIST"),
 	"TITLE"=> Loc::getMessage("SALE_OVIEW_TO_ARCHIVE_LIST_TITLE"),
-	"LINK" => "/bitrix/admin/sale_order_archive.php?target=list&ID=".$id."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
+	"LINK" => "/bnpt/admin/sale_order_archive.php?target=list&ID=".$id."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
 );
 
 $allowedStatusesUpdate = \Bitrix\Sale\OrderStatus::getStatusesUserCanDoOperations($USER->GetID(), array('update'));
@@ -104,7 +104,7 @@ if(!$boolLocked && in_array($saleOrder->getField("STATUS_ID"), $allowedStatusesU
 	$aMenu[] = array(
 		"TEXT" => Loc::getMessage("SALE_OVIEW_TO_RESTORE"),
 		"TITLE"=> Loc::getMessage("SALE_OVIEW_TO_RESTORE_TITLE"),
-		"LINK" => "/bitrix/admin/sale_order_create.php?restoreID=".$id."&lang=".LANGUAGE_ID."&SITE_ID=".$saleOrder->getSiteId()
+		"LINK" => "/bnpt/admin/sale_order_create.php?restoreID=".$id."&lang=".LANGUAGE_ID."&SITE_ID=".$saleOrder->getSiteId()
 	);
 }
 $context = new CAdminContextMenu($aMenu);

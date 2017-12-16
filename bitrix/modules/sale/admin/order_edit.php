@@ -26,7 +26,7 @@ if ($saleModulePermissions == "D")
 
 /** @var \Bitrix\Sale\Order $order */
 if(!isset($_REQUEST["ID"]) || intval($_REQUEST["ID"]) <= 0)
-	LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+	LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 
 $ID = intval($_REQUEST["ID"]);
 $boolLocked = \Bitrix\Sale\Order::isLocked($ID);
@@ -78,12 +78,12 @@ if ($boolLocked)
 
 $order = Bitrix\Sale\Order::load($_REQUEST["ID"]);
 if(!$order)
-	LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+	LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 
 $allowedStatusesUpdate = \Bitrix\Sale\OrderStatus::getStatusesUserCanDoOperations($USER->GetID(), array('update'));
 
 if(!in_array($order->getField("STATUS_ID"), $allowedStatusesUpdate))
-	LocalRedirect("/bitrix/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"));
+	LocalRedirect("/bnpt/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"));
 
 $isUserResponsible = false;
 $isAllowCompany = false;
@@ -107,7 +107,7 @@ if ($saleModulePermissions == 'P')
 
 	if (!$isUserResponsible && !$isAllowCompany)
 	{
-		LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 	}
 }
 
@@ -253,10 +253,10 @@ if (($isSavingOperation || $isNeedFieldsRestore || $isRefreshDataAndSaveOperatio
 						if (\Bitrix\Sale\Order::isLocked($ID))
 							\Bitrix\Sale\Order::unlock($ID);
 
-						LocalRedirect("/bitrix/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&unlock=Y&target=list&ID=".$ID.GetFilterParams("filter_", false));
+						LocalRedirect("/bnpt/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&unlock=Y&target=list&ID=".$ID.GetFilterParams("filter_", false));
 					}
 					else
-						LocalRedirect("/bitrix/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&ID=".$order->getId().GetFilterParams("filter_", false));
+						LocalRedirect("/bnpt/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&ID=".$order->getId().GetFilterParams("filter_", false));
 				}
 			}
 		}
@@ -290,21 +290,21 @@ $aMenu[] = array(
 	"ICON" => "btn_list",
 	"TEXT" => Loc::getMessage("SOE_TO_LIST"),
 	"TITLE"=> Loc::getMessage("SOE_TO_LIST_TITLE"),
-	"LINK" => "/bitrix/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&unlock=Y&target=list&ID=".$ID.GetFilterParams("filter_")
+	"LINK" => "/bnpt/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&unlock=Y&target=list&ID=".$ID.GetFilterParams("filter_")
 );
 
 if ($boolLocked && $saleModulePermissions >= 'W')
 {
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SOE_TO_UNLOCK"),
-			"LINK" => "/bitrix/admin/sale_order_edit.php?ID=".$ID."&unlock=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+			"LINK" => "/bnpt/admin/sale_order_edit.php?ID=".$ID."&unlock=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 	);
 }
 
 $aMenu[] = array(
 	"TEXT" => Loc::getMessage("SOE_ORDER_VIEW"),
 	"TITLE"=> Loc::getMessage("SOE_ORDER_VIEW_TITLE"),
-	"LINK" => "/bitrix/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
+	"LINK" => "/bnpt/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
 );
 
 $arSysLangs = array();
@@ -314,7 +314,7 @@ while ($arLang = $db_lang->Fetch())
 
 $arReports = array();
 $dirs = array(
-	$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/",
+	$_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/",
 	$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sale/reports/"
 
 );
@@ -368,7 +368,7 @@ foreach ($dirs as $dir)
 
 					$arReports[] = array(
 						"TEXT" => $rep_title,
-						"ONCLICK" => "window.open('/bitrix/admin/sale_order_print_new.php?&ORDER_ID=".$ID."&doc=".substr($file, 0, strlen($file) - 4)."&".bitrix_sessid_get()."', '_blank');"
+						"ONCLICK" => "window.open('/bnpt/admin/sale_order_print_new.php?&ORDER_ID=".$ID."&doc=".substr($file, 0, strlen($file) - 4)."&".bitrix_sessid_get()."', '_blank');"
 					);
 				}
 			}
@@ -380,7 +380,7 @@ foreach ($dirs as $dir)
 $aMenu[] = array(
 	"TEXT" => Loc::getMessage("NEWO_TO_PRINT"),
 	"TITLE"=> Loc::getMessage("NEWO_TO_PRINT_TITLE"),
-	"LINK" => "/bitrix/admin/sale_order_print.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+	"LINK" => "/bnpt/admin/sale_order_print.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 	"MENU" => $arReports
 );
 
@@ -608,7 +608,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => true, //while tails are not loaded.
-		"back_url" => "/bitrix/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&unlock=Y&target=list&ID=".$ID.GetFilterParams("filter_"))
+		"back_url" => "/bnpt/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&unlock=Y&target=list&ID=".$ID.GetFilterParams("filter_"))
 );
 
 $tabControl->End();

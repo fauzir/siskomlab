@@ -241,7 +241,7 @@ if($bNew)
 $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("RECORD_LIST"),
-		"LINK"	=> "/bitrix/admin/site_admin.php?lang=".LANGUAGE_ID."&set_default=Y",
+		"LINK"	=> "/bnpt/admin/site_admin.php?lang=".LANGUAGE_ID."&set_default=Y",
 		"TITLE"	=> GetMessage("RECORD_LIST_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -253,21 +253,21 @@ if(!$bNew)
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_NEW_RECORD"),
-		"LINK"	=> "/bitrix/admin/site_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/site_edit.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("MAIN_NEW_RECORD_TITLE"),
 		"ICON"	=> "btn_new"
 		);
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_COPY_RECORD"),
-		"LINK"	=> "/bitrix/admin/site_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".urlencode($str_LID),
+		"LINK"	=> "/bnpt/admin/site_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".urlencode($str_LID),
 		"TITLE"	=> GetMessage("MAIN_COPY_RECORD_TITLE"),
 		"ICON"	=> "btn_copy"
 		);
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_DELETE_RECORD"),
-		"LINK"	=> "javascript:if(confirm('".CUtil::JSEscape(GetMessage("MAIN_DELETE_RECORD_CONF"))."')) window.location='/bitrix/admin/site_admin.php?ID=".urlencode(urlencode($str_LID))."&lang=".LANGUAGE_ID."&action=delete&".bitrix_sessid_get()."';",
+		"LINK"	=> "javascript:if(confirm('".CUtil::JSEscape(GetMessage("MAIN_DELETE_RECORD_CONF"))."')) window.location='/bnpt/admin/site_admin.php?ID=".urlencode(urlencode($str_LID))."&lang=".LANGUAGE_ID."&action=delete&".bitrix_sessid_get()."';",
 		"TITLE"	=> GetMessage("MAIN_DELETE_RECORD_TITLE"),
 		"ICON"	=> "btn_delete"
 		);

@@ -259,14 +259,14 @@ if (!$bBadCourse && $_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 &&
 			{
 				if ($from == "learn_admin")
 				{
-					LocalRedirect("/bitrix/admin/learn_unilesson_admin.php?lang=" . LANG
+					LocalRedirect("/bnpt/admin/learn_unilesson_admin.php?lang=" . LANG
 						. '&LESSON_PATH=' . $uriParentLessonPath
 						. GetFilterParams("filter_", false)
 						. "&from=learn_admin");
 				}
 				elseif ($from == "learn_menu")
 				{
-					LocalRedirect("/bitrix/admin/learn_question_admin.php?lang=" . LANG
+					LocalRedirect("/bnpt/admin/learn_question_admin.php?lang=" . LANG
 						. '&LESSON_PATH=' . $uriLessonPath
 						. GetFilterParams("filter_", false)
 						. "&from=learn_menu");
@@ -275,12 +275,12 @@ if (!$bBadCourse && $_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 &&
 					LocalRedirect($return_url);
 				else
 				{
-					LocalRedirect("/bitrix/admin/learn_question_admin.php?lang=" . LANG
+					LocalRedirect("/bnpt/admin/learn_question_admin.php?lang=" . LANG
 						. '&LESSON_PATH=' . $uriLessonPath
 						. GetFilterParams("filter_", false));
 				}
 			}
-			LocalRedirect("/bitrix/admin/learn_question_edit.php?lang=" . LANG
+			LocalRedirect("/bnpt/admin/learn_question_edit.php?lang=" . LANG
 				. '&LESSON_PATH=' . $uriLessonPath
 				. "&ID=" . $ID
 				. "&" . $tabControl->ActiveTabParam()

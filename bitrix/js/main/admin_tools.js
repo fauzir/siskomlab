@@ -231,7 +231,7 @@ function JCAdminMenu(sOpenedSections)
 				result = jsUtils.trim(result);
 				div.innerHTML = (result != ''? result : MenuText(phpVars.messNoData));
 			}
-			this.request.Send('/bitrix/admin/get_menu.php?lang='+phpVars.LANGUAGE_ID+'&admin_mnu_module_id='+module_id+'&admin_mnu_menu_id='+encodeURIComponent(div_id));
+			this.request.Send('/bnpt/admin/get_menu.php?lang='+phpVars.LANGUAGE_ID+'&admin_mnu_module_id='+module_id+'&admin_mnu_menu_id='+encodeURIComponent(div_id));
 		}
 		this.ToggleSection(cell, div_id, level);
 	}
@@ -1044,7 +1044,7 @@ function TabControl(name, unique_name, aTabs)
 			sParam += '&p[0][d]=Y';
 		sParam += '&p[0][v][tabs]=' + encodeURIComponent(sTabs);
 
-		var options_url = '/bitrix/admin/user_options.php?lang='+phpVars.LANGUAGE_ID+'&sessid='+phpVars.bitrix_sessid;
+		var options_url = '/bnpt/admin/user_options.php?lang='+phpVars.LANGUAGE_ID+'&sessid='+phpVars.bitrix_sessid;
 		options_url += '&action=delete&c=form&n='+this.name+'_disabled';
 
 		request.Post(options_url, sParam);
@@ -1064,7 +1064,7 @@ function TabControl(name, unique_name, aTabs)
 		sParam += '&p[0][c]=form';
 		sParam += '&p[0][n]='+encodeURIComponent(this.name+'_disabled');
 		sParam += '&p[0][v][disabled]=Y';
-		request.Send('/bitrix/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
+		request.Send('/bnpt/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
 	}
 
 	this.EnableSettings = function()
@@ -1075,7 +1075,7 @@ function TabControl(name, unique_name, aTabs)
 		sParam += '&c=form';
 		sParam += '&n='+encodeURIComponent(this.name)+'_disabled';
 		sParam += '&action=delete';
-		request.Send('/bitrix/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
+		request.Send('/bnpt/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
 	}
 }
 
@@ -1427,7 +1427,7 @@ function JCUserOptions()
 		{
 			document.cookie = phpVars.cookiePrefix+"_LAST_SETTINGS=; path=/;";
 			_this.request.Action = callback;
-			_this.request.Send('/bitrix/admin/user_options.php?'+sParam+'&sessid='+phpVars.bitrix_sessid);
+			_this.request.Send('/bnpt/admin/user_options.php?'+sParam+'&sessid='+phpVars.bitrix_sessid);
 		}
 	}
 
@@ -1440,7 +1440,7 @@ function JCUserOptions()
 		}
 
 		_this.request.Action = callback;
-		_this.request.Send('/bitrix/admin/user_options.php?action=delete&c='+sCategory+'&n='+sName+(bCommon == true? '&common=Y':'')+'&sessid='+phpVars.bitrix_sessid);
+		_this.request.Send('/bnpt/admin/user_options.php?action=delete&c='+sCategory+'&n='+sName+(bCommon == true? '&common=Y':'')+'&sessid='+phpVars.bitrix_sessid);
 	}
 }
 var jsUserOptions = new JCUserOptions();
@@ -1732,7 +1732,7 @@ var WizardWindow = {
 		BX.addCustomEvent(this.currentDialog, "onBeforeWindowClose", BX.proxy(this.onBeforeWindowClose, this));
 
 		var iframeID = Math.random();
-		this.currentDialog.SetContent('<iframe class="content" style="background-color: transparent; height:400px;" allowtransparency="true" scrolling="no" id="wizard_iframe_' + iframeID + '" width="100%" src="/bitrix/admin/wizard_install.php?lang='+phpVars.LANGUAGE_ID+'&wizardName='+wizardName+'&bxsender=admin_wizard_dialog&sessid='+sessid+'" frameborder="0"></iframe>');
+		this.currentDialog.SetContent('<iframe class="content" style="background-color: transparent; height:400px;" allowtransparency="true" scrolling="no" id="wizard_iframe_' + iframeID + '" width="100%" src="/bnpt/admin/wizard_install.php?lang='+phpVars.LANGUAGE_ID+'&wizardName='+wizardName+'&bxsender=admin_wizard_dialog&sessid='+sessid+'" frameborder="0"></iframe>');
 		this.currentDialog.Show();
 
 		setTimeout(BX.proxy(function() { if (!this.frameLoaded) {this.ShowWaitWindow();} }, this), 400);
@@ -1873,7 +1873,7 @@ function JCStartMenu()
 				'TITLE':phpVars.messMenuLoadingTitle,
 				'ICONCLASS':'loading',
 				'AUTOHIDE':false}], jsPanel.IsFixed(), dPos);
-			request.Send('/bitrix/admin/get_start_menu.php?lang='+phpVars.LANGUAGE_ID+(back_url? '&back_url_pub='+encodeURIComponent(back_url):'')+'&sessid='+phpVars.bitrix_sessid);
+			request.Send('/bnpt/admin/get_start_menu.php?lang='+phpVars.LANGUAGE_ID+(back_url? '&back_url_pub='+encodeURIComponent(back_url):'')+'&sessid='+phpVars.bitrix_sessid);
 		}
 		else
 		{
@@ -1898,7 +1898,7 @@ function JCStartMenu()
 			//create menu
 			menuStart = new PopupMenu('panel_start_menu');
 			menuStart.Create(1100);
-			request.Send('/bitrix/admin/get_start_menu.php?lang='+phpVars.LANGUAGE_ID+(back_url? '&back_url_pub='+encodeURIComponent(back_url):'')+'&sessid='+phpVars.bitrix_sessid);
+			request.Send('/bnpt/admin/get_start_menu.php?lang='+phpVars.LANGUAGE_ID+(back_url? '&back_url_pub='+encodeURIComponent(back_url):'')+'&sessid='+phpVars.bitrix_sessid);
 		}
 	}
 
@@ -1921,7 +1921,7 @@ function JCStartMenu()
 				menu.parentMenu.ShowSubmenu(menu.parentItem, false, !bVisible);
 			}
 		}
-		request.Send('/bitrix/admin/get_start_menu.php?mode=dynamic&lang='+phpVars.LANGUAGE_ID+'&admin_mnu_module_id='+encodeURIComponent(module_id)+'&admin_mnu_menu_id='+encodeURIComponent(items_id)+(back_url? '&back_url_pub='+encodeURIComponent(back_url):'')+'&sessid='+phpVars.bitrix_sessid);
+		request.Send('/bnpt/admin/get_start_menu.php?mode=dynamic&lang='+phpVars.LANGUAGE_ID+'&admin_mnu_module_id='+encodeURIComponent(module_id)+'&admin_mnu_menu_id='+encodeURIComponent(items_id)+(back_url? '&back_url_pub='+encodeURIComponent(back_url):'')+'&sessid='+phpVars.bitrix_sessid);
 	}
 
 	this.OpenURL = function(item, arguments, url, back_url)
@@ -1930,7 +1930,7 @@ function JCStartMenu()
 		if(itemInfo)
 		{
 			request.Action = function(result){}
-			request.Send('/bitrix/admin/get_start_menu.php?mode=save_recent&url='+encodeURIComponent(url)+'&text='+encodeURIComponent(itemInfo['TEXT'])+'&title='+encodeURIComponent(itemInfo['TITLE'])+'&icon='+itemInfo['ICON']+'&sessid='+phpVars.bitrix_sessid);
+			request.Send('/bnpt/admin/get_start_menu.php?mode=save_recent&url='+encodeURIComponent(url)+'&text='+encodeURIComponent(itemInfo['TEXT'])+'&title='+encodeURIComponent(itemInfo['TITLE'])+'&icon='+itemInfo['ICON']+'&sessid='+phpVars.bitrix_sessid);
 		}
 		if(back_url)
 			url += (url.indexOf('?')>=0? '&':'?')+'back_url_pub='+encodeURIComponent(back_url);

@@ -1246,7 +1246,7 @@ class CBPVirtualDocument
 			array("ID", "IBLOCK_ID", "IBLOCK_TYPE_ID")
 		);
 		if ($ar = $db->Fetch())
-			return "/bitrix/admin/iblock_element_edit.php?view=Y&ID=".$documentId."&IBLOCK_ID=".$ar["IBLOCK_ID"]."&type=".$ar["IBLOCK_TYPE_ID"];
+			return "/bnpt/admin/iblock_element_edit.php?view=Y&ID=".$documentId."&IBLOCK_ID=".$ar["IBLOCK_ID"]."&type=".$ar["IBLOCK_TYPE_ID"];
 
 		return null;
 	}

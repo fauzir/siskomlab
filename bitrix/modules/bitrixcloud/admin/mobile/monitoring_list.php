@@ -3,8 +3,8 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/bitrix/modules/mobileapp/include/prol
 require_once($_SERVER["DOCUMENT_ROOT"] . '/bitrix/modules/mobileapp/include/prolog_admin_mobile_after.php');
 
 $params = array(
-	"DETAIL_URL" => "/bitrix/admin/mobile/bitrixcloud_monitoring_detail.php",
-	"EDIT_URL" => "/bitrix/admin/mobile/bitrixcloud_monitoring_edit.php"
+	"DETAIL_URL" => "/bnpt/admin/mobile/bitrixcloud_monitoring_detail.php",
+	"EDIT_URL" => "/bnpt/admin/mobile/bitrixcloud_monitoring_edit.php"
 );
 
 $APPLICATION->IncludeComponent(

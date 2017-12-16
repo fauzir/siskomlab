@@ -1707,7 +1707,7 @@ while ($arIBlock = $rsIBlocks->Fetch())
 		while ($arIBlockSite = $rsIBlockSites->Fetch())
 		{
 			$arLIDList[] = $arIBlockSite['LID'];
-			$arWithLinks[] = '<a href="/bitrix/admin/site_edit.php?LID='.urlencode($arIBlockSite['LID']).'&lang='.LANGUAGE_ID.'" title="'.Loc::getMessage("CO_SITE_ALT").'">'.htmlspecialcharsbx($arIBlockSite["LID"]).'</a>';
+			$arWithLinks[] = '<a href="/bnpt/admin/site_edit.php?LID='.urlencode($arIBlockSite['LID']).'&lang='.LANGUAGE_ID.'" title="'.Loc::getMessage("CO_SITE_ALT").'">'.htmlspecialcharsbx($arIBlockSite["LID"]).'</a>';
 			$arWithoutLinks[] = htmlspecialcharsbx($arIBlockSite['LID']);
 		}
 		$arIBlockSitesList[$arIBlock['ID']] = array(
@@ -1888,7 +1888,7 @@ function change_offers_ibtype(obj,ID)
 	{
 		?>
 		<tr>
-			<td>[<a title="<? echo Loc::getMessage("CO_IB_TYPE_ALT"); ?>" href="/bitrix/admin/iblock_admin.php?type=<? echo urlencode($res["IBLOCK_TYPE_ID"]); ?>&lang=<? echo LANGUAGE_ID; ?>&admin=Y"><? echo $res["IBLOCK_TYPE_ID"]; ?></a>]
+			<td>[<a title="<? echo Loc::getMessage("CO_IB_TYPE_ALT"); ?>" href="/bnpt/admin/iblock_admin.php?type=<? echo urlencode($res["IBLOCK_TYPE_ID"]); ?>&lang=<? echo LANGUAGE_ID; ?>&admin=Y"><? echo $res["IBLOCK_TYPE_ID"]; ?></a>]
 				&nbsp;[<? echo $res['ID']; ?>] <a title="<? echo Loc::getMessage("CO_IB_ELEM_ALT"); ?>" href="<? echo CIBlock::GetAdminElementListLink($res["ID"], array('find_section_section' => '0', 'admin' => 'Y')); ?>"><? echo $res["NAME"]; ?></a> (<? echo $arIBlockSitesList[$res['ID']]['WITH_LINKS']; ?>)
 				<input type="hidden" name="IS_OFFERS_<? echo $res["ID"]; ?>" value="<? echo $res['IS_OFFERS']; ?>" />
 			</td>
@@ -2068,7 +2068,7 @@ if ($strUseStoreControl === 'N' && $catalogCount > 0)
 		}));
 		BX.addClass(el, 'adm-btn-load');
 		BX.ajax.post(
-			'/bitrix/admin/cat_quantity_control.php?lang=<? echo LANGUAGE_ID; ?>',
+			'/bnpt/admin/cat_quantity_control.php?lang=<? echo LANGUAGE_ID; ?>',
 			dateURL,
 			catClearQuantityResult
 		);
@@ -2142,7 +2142,7 @@ else
 ?><br><?
 echo Loc::getMessage('CAT_AGENT_EVENT_LOG').':&nbsp;';
 
-?><a href="/bitrix/admin/event_log.php?lang=<? echo LANGUAGE_ID; ?>&set_filter=Y<? echo CCatalogEvent::GetYandexAgentFilter(); ?>"><? echo Loc::getMessage('CAT_AGENT_EVENT_LOG_SHOW_ERROR')?></a>
+?><a href="/bnpt/admin/event_log.php?lang=<? echo LANGUAGE_ID; ?>&set_filter=Y<? echo CCatalogEvent::GetYandexAgentFilter(); ?>"><? echo Loc::getMessage('CAT_AGENT_EVENT_LOG_SHOW_ERROR')?></a>
 </td></tr>
 <?
 $systemTabControl->BeginNextTab();
@@ -2219,7 +2219,7 @@ if ($catalogCount > 0)
 			{
 				$arOneUser['ID'] = (int)$arOneUser['ID'];
 				if ($canViewUserList)
-					$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+					$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 				else
 					$arUserList[$arOneUser['ID']] = CUser::FormatName($strNameFormat, $arOneUser);
 			}
@@ -2369,7 +2369,7 @@ function showDiscountReindex()
 	};
 
 	obDiscount = new BX.CAdminDialog({
-		'content_url': '/bitrix/admin/cat_discount_convert.php?lang=<? echo LANGUAGE_ID; ?>&format=Y',
+		'content_url': '/bnpt/admin/cat_discount_convert.php?lang=<? echo LANGUAGE_ID; ?>&format=Y',
 		'content_post': params,
 		'draggable': true,
 		'resizable': true,

@@ -179,7 +179,7 @@ function _ShowElementPropertyField($name, $property_fields, $values, $bVarsFromF
 		$ar_res = $db_res->GetNext();
 		echo '<tr><td>'.
 		'<input name="'.$name.'['.$key.']" id="'.$name.'['.$key.']" value="'.htmlspecialcharsbx($val).'" size="5" type="text">'.
-		'<input type="button" value="..." onClick="jsUtils.OpenWindow(\'/bitrix/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&amp;IBLOCK_ID='.$property_fields["LINK_IBLOCK_ID"].'&amp;n='.$name.'&amp;k='.$key.($fixIBlock ? '&amp;iblockfix=y' : '').'&amp;tableId='.$windowTableId.'\', 900, 700);">'.
+		'<input type="button" value="..." onClick="jsUtils.OpenWindow(\'/bnpt/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&amp;IBLOCK_ID='.$property_fields["LINK_IBLOCK_ID"].'&amp;n='.$name.'&amp;k='.$key.($fixIBlock ? '&amp;iblockfix=y' : '').'&amp;tableId='.$windowTableId.'\', 900, 700);">'.
 		'&nbsp;<span id="sp_'.md5($name).'_'.$key.'" >'.$ar_res['NAME'].'</span>'.
 		'</td></tr>';
 
@@ -200,7 +200,7 @@ function _ShowElementPropertyField($name, $property_fields, $values, $bVarsFromF
 
 			echo '<tr><td>'.
 			'<input name="'.$name.'['.$key.']" id="'.$name.'['.$key.']" value="'.htmlspecialcharsbx($val).'" size="5" type="text">'.
-			'<input type="button" value="..." onClick="jsUtils.OpenWindow(\'/bitrix/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&amp;IBLOCK_ID='.$property_fields["LINK_IBLOCK_ID"].'&amp;n='.$name.'&amp;k='.$key.($fixIBlock ? '&amp;iblockfix=y' : '').'&amp;tableId='.$windowTableId.'\', 900, 700);">'.
+			'<input type="button" value="..." onClick="jsUtils.OpenWindow(\'/bnpt/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&amp;IBLOCK_ID='.$property_fields["LINK_IBLOCK_ID"].'&amp;n='.$name.'&amp;k='.$key.($fixIBlock ? '&amp;iblockfix=y' : '').'&amp;tableId='.$windowTableId.'\', 900, 700);">'.
 			'&nbsp;<span id="sp_'.md5($name).'_'.$key.'"></span>'.
 			'</td></tr>';
 		}
@@ -209,7 +209,7 @@ function _ShowElementPropertyField($name, $property_fields, $values, $bVarsFromF
 	if($property_fields["MULTIPLE"]=="Y")
 	{
 		echo '<tr><td>'.
-			'<input type="button" value="'.GetMessage("IBLOCK_AT_PROP_ADD").'..." onClick="jsUtils.OpenWindow(\'/bitrix/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&amp;IBLOCK_ID='.$property_fields["LINK_IBLOCK_ID"].'&amp;n='.$name.'&amp;m=y&amp;k='.$key.($fixIBlock ? '&amp;iblockfix=y' : '').'&amp;tableId='.$windowTableId.'\', 900, 700);">'.
+			'<input type="button" value="'.GetMessage("IBLOCK_AT_PROP_ADD").'..." onClick="jsUtils.OpenWindow(\'/bnpt/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&amp;IBLOCK_ID='.$property_fields["LINK_IBLOCK_ID"].'&amp;n='.$name.'&amp;m=y&amp;k='.$key.($fixIBlock ? '&amp;iblockfix=y' : '').'&amp;tableId='.$windowTableId.'\', 900, 700);">'.
 			'<span id="sp_'.md5($name).'_'.$key.'" ></span>'.
 			'</td></tr>';
 	}
@@ -224,7 +224,7 @@ function _ShowElementPropertyField($name, $property_fields, $values, $bVarsFromF
 	echo "	oCell.innerHTML=".
 		"'<input name=\"".$name."[n'+MV_".md5($name)."+']\" value=\"'+id+'\" id=\"".$name."[n'+MV_".md5($name)."+']\" size=\"5\" type=\"text\">'+\r\n".
 		"'<input type=\"button\" value=\"...\" '+\r\n".
-		"'onClick=\"jsUtils.OpenWindow(\'/bitrix/admin/iblock_element_search.php?lang=".LANGUAGE_ID."&amp;IBLOCK_ID=".$property_fields["LINK_IBLOCK_ID"]."&amp;n=".$name."&amp;k=n'+MV_".md5($name)."+'".($fixIBlock ? '&amp;iblockfix=y' : '')."&amp;tableId=".$windowTableId."\', '+\r\n".
+		"'onClick=\"jsUtils.OpenWindow(\'/bnpt/admin/iblock_element_search.php?lang=".LANGUAGE_ID."&amp;IBLOCK_ID=".$property_fields["LINK_IBLOCK_ID"]."&amp;n=".$name."&amp;k=n'+MV_".md5($name)."+'".($fixIBlock ? '&amp;iblockfix=y' : '')."&amp;tableId=".$windowTableId."\', '+\r\n".
 		"' 900, 700);\">'+".
 		"'&nbsp;<span id=\"sp_".md5($name)."_n'+MV_".md5($name)."+'\" >'+name+'</span>".
 		"';";

@@ -28,7 +28,7 @@ if($bAdmin!="Y" && $bDemo!="Y")
 
 IncludeModuleLangFile(__FILE__);
 
-$LIST_URL = "/bitrix/admin/ticket_sla_list.php";
+$LIST_URL = "/bnpt/admin/ticket_sla_list.php";
 $TABLE_NAME = "b_ticket_sla";
 $EDIT_URL = $APPLICATION->GetCurPage();
 
@@ -74,7 +74,7 @@ function CheckShedule($shedule)
 }
 
 /***************************************************************************
-						Обработка GET | POST
+						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 
 $arrUSER = array();
@@ -99,7 +99,7 @@ if ((strlen($save)>0 || strlen($apply)>0) && $bAdmin=="Y" && $_SERVER["REQUEST_M
 					$bExist = false;
 					for($j=0; $j<=${"custom_time_".$i."_counter"}; $j++)
 					{
-						// проверяем что бы время окончания было позже начала
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 						if(CheckTime($_POST["MINUTE_FROM_".$i."_".$j], $_POST["MINUTE_TILL_".$i."_".$j]))
 						{
 							$bExist = true;
@@ -111,7 +111,7 @@ if ((strlen($save)>0 || strlen($apply)>0) && $bAdmin=="Y" && $_SERVER["REQUEST_M
 					}
 					if ($bExist) 
 					{
-						// проверяем корректно ли заданы промежутки времени
+						// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 						if (!CheckShedule($arFields["arSHEDULE"][$i]["CUSTOM_TIME"])) 
 						{
 							unset($arFields["arSHEDULE"][$i]["CUSTOM_TIME"]);
@@ -188,7 +188,7 @@ if ($message)
 $APPLICATION->SetTitle(($ID>0? GetMessage("SUP_PAGE_TITLE_EDIT_RECORD", array("#ID#"=>$ID)) : GetMessage("SUP_PAGE_TITLE_NEW_RECORD")));
 
 /***************************************************************************
-									HTML форма
+									HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 
@@ -390,10 +390,10 @@ function OnSiteClick()
 				if ($arUser = $rsUser->Fetch()) $arrUSER[$arUser["ID"]] = $arUser;
 			}
 			else $arUser = $arrUSER[$str_CREATED_USER_ID];
-			echo "&nbsp;&nbsp;[<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bitrix/admin/user_edit.php?ID=".$str_CREATED_USER_ID."\">".$str_CREATED_USER_ID."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+			echo "&nbsp;&nbsp;[<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bnpt/admin/user_edit.php?ID=".$str_CREATED_USER_ID."\">".$str_CREATED_USER_ID."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 		endif;
 		if (intval($str_CREATED_GUEST_ID)>0 && IsModuleInstalled("statistic")) :
-			echo "&nbsp;[<a href=\"/bitrix/admin/guest_list.php?find_id=".$str_CREATED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y\">".$str_CREATED_GUEST_ID."</a>]";
+			echo "&nbsp;[<a href=\"/bnpt/admin/guest_list.php?find_id=".$str_CREATED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y\">".$str_CREATED_GUEST_ID."</a>]";
 		endif;
 		?></td>
 	</tr>
@@ -409,10 +409,10 @@ function OnSiteClick()
 				if ($arUser = $rsUser->Fetch()) $arrUSER[$arUser["ID"]] = $arUser;
 			}
 			else $arUser = $arrUSER[$str_MODIFIED_USER_ID];
-			echo "&nbsp;&nbsp;[<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bitrix/admin/user_edit.php?ID=".$str_MODIFIED_USER_ID."\">".$str_MODIFIED_USER_ID."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+			echo "&nbsp;&nbsp;[<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bnpt/admin/user_edit.php?ID=".$str_MODIFIED_USER_ID."\">".$str_MODIFIED_USER_ID."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 		endif;
 		if (intval($str_MODIFIED_GUEST_ID)>0 && IsModuleInstalled("statistic")) :
-			echo "&nbsp;[<a href=\"/bitrix/admin/guest_list.php?find_id=".$str_MODIFIED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y\">".$str_MODIFIED_GUEST_ID."</a>]";
+			echo "&nbsp;[<a href=\"/bnpt/admin/guest_list.php?find_id=".$str_MODIFIED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y\">".$str_MODIFIED_GUEST_ID."</a>]";
 		endif;
 		?></td>
 	</tr>
@@ -440,7 +440,7 @@ function OnSiteClick()
 				?>
 				<div class="adm-list-item">
 					<div class="adm-list-control"><input onClick="OnSiteClick()" type="checkbox" name="arSITES[]" value="<?=htmlspecialcharsex($sid)?>" id="<?=htmlspecialcharsex($sid)?>" class="typecheckbox" <?=$checked?>></div>
-					<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo '[<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsex($sid).'</a>]&nbsp;'.htmlspecialcharsex($arrS["NAME"])?></label></div>
+					<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo '[<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsex($sid).'</a>]&nbsp;'.htmlspecialcharsex($arrS["NAME"])?></label></div>
 				</div>
 				<?
 			endwhile;
@@ -568,7 +568,7 @@ function OnSiteClick()
 					echo "<div class=\"adm-list-item\">";
 					echo "<div class=\"adm-list-control\">".InputType("checkbox", "arGROUPS[]", $ar["ID"], $arGROUPS, false, "", "", $idR)."</div>".
 					"<div class=\"adm-list-label\"><label for=\"$idR\">".htmlspecialcharsbx($ar["NAME"])."</label>".
-					" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bitrix/admin/group_edit.php?ID=".intval($ar["ID"])."&lang=".LANGUAGE_ID."\">".
+					" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bnpt/admin/group_edit.php?ID=".intval($ar["ID"])."&lang=".LANGUAGE_ID."\">".
 					intval($ar["ID"]).
 					"</a>]</div></div>";
 				}
@@ -703,7 +703,7 @@ $tabControl->BeginNextTab();?>
 						?><div class="adm-list-item" id="category_<?=$ar["ID"]?>"><?
 							echo "<div class=\"adm-list-control\">".InputType("checkbox", "arCATEGORIES[]", $ar["ID"], $arCATEGORIES, false, "", "", "category_chbox_".$idR)."</div>".
 								"<div class=\"adm-list-label\"><label for=\"category_chbox_".$idR."\">".htmlspecialcharsbx($ar["NAME"])."</label>".
-								" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bitrix/admin/ticket_dict_edit.php?ID=".intval($ar["ID"])."&find_type=C&lang=".LANGUAGE_ID."\">".
+								" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bnpt/admin/ticket_dict_edit.php?ID=".intval($ar["ID"])."&find_type=C&lang=".LANGUAGE_ID."\">".
 								intval($ar["ID"]).
 								"</a>]</div>";
 						?></div><?
@@ -730,7 +730,7 @@ $tabControl->BeginNextTab();?>
 							?><div class="adm-list-item" id="criticality_<?=$ar["ID"]?>"><?
 								echo "<div class=\"adm-list-control\">".InputType("checkbox", "arCRITICALITIES[]", $ar["ID"], $arCRITICALITIES, false, "", "", "criticality_chbox_".$idR)."</div>".
 									"<div class=\"adm-list-label\"><label for=\"criticality_chbox_".$idR."\">".htmlspecialcharsbx($ar["NAME"])."</label>".
-									" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bitrix/admin/ticket_dict_edit.php?ID=".intval($ar["ID"])."&find_type=C&lang=".LANGUAGE_ID."\">".
+									" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bnpt/admin/ticket_dict_edit.php?ID=".intval($ar["ID"])."&find_type=C&lang=".LANGUAGE_ID."\">".
 									intval($ar["ID"]).
 									"</a>]</div>";
 							?></div><?
@@ -754,7 +754,7 @@ $tabControl->BeginNextTab();?>
 							?><div class="adm-list-item" id="mark_<?=$ar["ID"]?>"><?
 								echo "<div class=\"adm-list-control\">".InputType("checkbox", "arMARKS[]", $ar["ID"], $arMARKS, false, "", "", "mark_chbox_".$idR)."</div>".
 									"<div class=\"adm-list-label\"><label for=\"mark_chbox_".$idR."\">".htmlspecialcharsbx($ar["NAME"])."</label>".
-									" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bitrix/admin/ticket_dict_edit.php?ID=".intval($ar["ID"])."&find_type=C&lang=".LANGUAGE_ID."\">".
+									" [<a title=\"".GetMessage("MAIN_ADMIN_MENU_EDIT")."\" href=\"/bnpt/admin/ticket_dict_edit.php?ID=".intval($ar["ID"])."&find_type=C&lang=".LANGUAGE_ID."\">".
 									intval($ar["ID"]).
 									"</a>]</div>";
 							?></div><?

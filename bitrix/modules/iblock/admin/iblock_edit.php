@@ -1315,9 +1315,9 @@ if(
 					if(strlen($_REQUEST["return_url"])>0)
 						LocalRedirect($_REQUEST["return_url"]);
 					else
-						LocalRedirect("/bitrix/admin/iblock_admin.php?type=".$type."&lang=".LANG."&admin=".($_REQUEST["admin"]=="Y"? "Y": "N"));
+						LocalRedirect("/bnpt/admin/iblock_admin.php?type=".$type."&lang=".LANG."&admin=".($_REQUEST["admin"]=="Y"? "Y": "N"));
 				}
-				LocalRedirect("/bitrix/admin/iblock_edit.php?type=".$type."&tabControl_active_tab=".urlencode($tabControl_active_tab)."&lang=".LANG."&ID=".$ID."&admin=".($_REQUEST["admin"]=="Y"? "Y": "N").(strlen($_REQUEST["return_url"])>0? "&return_url=".urlencode($_REQUEST["return_url"]): ""));
+				LocalRedirect("/bnpt/admin/iblock_edit.php?type=".$type."&tabControl_active_tab=".urlencode($tabControl_active_tab)."&lang=".LANG."&ID=".$ID."&admin=".($_REQUEST["admin"]=="Y"? "Y": "N").(strlen($_REQUEST["return_url"])>0? "&return_url=".urlencode($_REQUEST["return_url"]): ""));
 			}
 		}
 	}
@@ -1509,7 +1509,7 @@ if(CIBlockRights::UserHasRightTo($ID, $ID, "iblock_edit")):
 	$aMenu = array(
 		array(
 			"TEXT"=>GetMessage("IBLOCK_BACK_TO_ADMIN"),
-			"LINK"=>'/bitrix/admin/iblock_admin.php?lang='.LANGUAGE_ID.'&type='.urlencode($type).'&admin='.($_REQUEST["admin"]=="Y"? "Y": "N"),
+			"LINK"=>'/bnpt/admin/iblock_admin.php?lang='.LANGUAGE_ID.'&type='.urlencode($type).'&admin='.($_REQUEST["admin"]=="Y"? "Y": "N"),
 			"ICON"=>"btn_list",
 		)
 	);
@@ -1570,7 +1570,7 @@ $u->Show();
 <script>
 	var InheritedPropertiesTemplates = new JCInheritedPropertiesTemplates(
 		'frm',
-		'/bitrix/admin/iblock_templates.ajax.php?ENTITY_TYPE=B&ENTITY_ID=<?echo intval($ID)?>'
+		'/bnpt/admin/iblock_templates.ajax.php?ENTITY_TYPE=B&ENTITY_ID=<?echo intval($ID)?>'
 	);
 	BX.ready(function(){
 		setTimeout(function(){
@@ -1627,7 +1627,7 @@ foreach ($arCellAttr as $key => $value)
 ?>
 </script>
 
-<form method="POST" name="frm" id="frm" action="/bitrix/admin/iblock_edit.php?type=<?echo htmlspecialcharsbx($type)?>&amp;lang=<?echo LANG?>&amp;admin=<?echo ($_REQUEST["admin"]=="Y"? "Y": "N")?>"  ENCTYPE="multipart/form-data">
+<form method="POST" name="frm" id="frm" action="/bnpt/admin/iblock_edit.php?type=<?echo htmlspecialcharsbx($type)?>&amp;lang=<?echo LANG?>&amp;admin=<?echo ($_REQUEST["admin"]=="Y"? "Y": "N")?>"  ENCTYPE="multipart/form-data">
 <?=bitrix_sessid_post()?>
 <?echo GetFilterHiddens("find_");?>
 <?if($bBizproc && $bCurrentBPDisabled):?>
@@ -1789,7 +1789,7 @@ $tabControl->BeginNextTab();
 					<div class="adm-list-label"><label for="<? echo htmlspecialcharsex($l_arr["LID"]); ?>">[<? echo htmlspecialcharsex($l_arr["LID"]); ?>]&nbsp;<? echo htmlspecialcharsex($l_arr["NAME"]); ?></label></div>
 				</div><?
 			}
-			echo "<br>".str_replace('#LINK#','/bitrix/admin/iblock_edit.php?type='.$str_PRODUCT_IBLOCK_TYPE_ID.'&lang='.LANGUAGE_ID.'&ID='.$str_PRODUCT_IBLOCK_ID.'&admin=Y',GetMessage('IB_E_OF_SITES'));
+			echo "<br>".str_replace('#LINK#','/bnpt/admin/iblock_edit.php?type='.$str_PRODUCT_IBLOCK_TYPE_ID.'&lang='.LANGUAGE_ID.'&ID='.$str_PRODUCT_IBLOCK_ID.'&admin=Y',GetMessage('IB_E_OF_SITES'));
 
 			foreach ($arLidValue as &$strLid)
 			{
@@ -4394,7 +4394,7 @@ if ($bCatalog)
 	?>
 	<tr>
 		<td  width="40%"><?echo GetMessage("IB_E_IS_SKU")?></td>
-		<td width="60%"><a href="/bitrix/admin/iblock_edit.php?type=<? echo $str_PRODUCT_IBLOCK_TYPE_ID; ?>&lang=<? echo LANGUAGE_ID; ?>&ID=<? echo $str_PRODUCT_IBLOCK_ID; ?>&admin=Y"><? echo htmlspecialcharsbx($str_PRODUCT_IBLOCK_NAME); ?></a>
+		<td width="60%"><a href="/bnpt/admin/iblock_edit.php?type=<? echo $str_PRODUCT_IBLOCK_TYPE_ID; ?>&lang=<? echo LANGUAGE_ID; ?>&ID=<? echo $str_PRODUCT_IBLOCK_ID; ?>&admin=Y"><? echo htmlspecialcharsbx($str_PRODUCT_IBLOCK_NAME); ?></a>
 		<input type="hidden" id="USED_SKU_N" name="USED_SKU" value="N"></td>
 	</tr>
 	<?
@@ -4718,7 +4718,7 @@ if(CIBlockRights::UserHasRightTo($ID, $ID, "iblock_rights_edit"))
 			<td colspan="2"><?echo GetMessage("IB_E_DEFAULT_ACCESS_TITLE")?></td>
 		</tr>
 		<tr>
-			<td nowrap width="40%"><?echo GetMessage("IB_E_EVERYONE")?> [<a class="tablebodylink" href="/bitrix/admin/group_edit.php?ID=2&amp;lang=<?=LANGUAGE_ID?>">2</a>]:</td>
+			<td nowrap width="40%"><?echo GetMessage("IB_E_EVERYONE")?> [<a class="tablebodylink" href="/bnpt/admin/group_edit.php?ID=2&amp;lang=<?=LANGUAGE_ID?>">2</a>]:</td>
 			<td width="60%">
 
 					<select name="GROUP[2]" id="group_2">
@@ -4775,7 +4775,7 @@ if(CIBlockRights::UserHasRightTo($ID, $ID, "iblock_rights_edit"))
 					$strSelected="";
 			?>
 		<tr>
-			<td nowrap width="40%"><?echo $r["NAME"]?> [<a class="tablebodylink" href="/bitrix/admin/group_edit.php?ID=<?=$r["ID"]?>&lang=<?=LANGUAGE_ID?>"><?=$r["ID"]?></a>]:</td>
+			<td nowrap width="40%"><?echo $r["NAME"]?> [<a class="tablebodylink" href="/bnpt/admin/group_edit.php?ID=<?=$r["ID"]?>&lang=<?=LANGUAGE_ID?>"><?=$r["ID"]?></a>]:</td>
 			<td width="60%">
 
 					<select name="GROUP[<?echo $r["ID"]?>]" OnChange="OnGroupChange(this, 'spn_group_<?echo $r["ID"]?>');">
@@ -4886,7 +4886,7 @@ $tabControl->BeginNextTab();
 						<tr>
 							<td>
 								<?if(IsModuleInstalled("bizprocdesigner")):?>
-									<a href="/bitrix/admin/iblock_bizproc_workflow_edit.php?document_type=iblock_<?= $ID ?>&lang=<?=LANGUAGE_ID?>&ID=<?=$arTemplate["ID"]?>&back_url_list=<?= urlencode($APPLICATION->GetCurPageParam("", array()))?>" target="_blank"><?= $arTemplate["NAME"] ?> [<?=$arTemplate["ID"]?>]</a>
+									<a href="/bnpt/admin/iblock_bizproc_workflow_edit.php?document_type=iblock_<?= $ID ?>&lang=<?=LANGUAGE_ID?>&ID=<?=$arTemplate["ID"]?>&back_url_list=<?= urlencode($APPLICATION->GetCurPageParam("", array()))?>" target="_blank"><?= $arTemplate["NAME"] ?> [<?=$arTemplate["ID"]?>]</a>
 								<?else:?>
 									<?= $arTemplate["NAME"] ?>
 								<?endif?>
@@ -4916,7 +4916,7 @@ $tabControl->BeginNextTab();
 				<br>
 			<?endif;?>
 			<?if(IsModuleInstalled("bizprocdesigner")):?>
-			<a href="/bitrix/admin/iblock_bizproc_workflow_admin.php?document_type=iblock_<?= $ID ?>&lang=<?=LANGUAGE_ID?>&back_url_list=<?= urlencode($APPLICATION->GetCurPageParam("", array())) ?>" target="_blank"><?echo GetMessage("IB_E_GOTO_BP")?></a>
+			<a href="/bnpt/admin/iblock_bizproc_workflow_admin.php?document_type=iblock_<?= $ID ?>&lang=<?=LANGUAGE_ID?>&back_url_list=<?= urlencode($APPLICATION->GetCurPageParam("", array())) ?>" target="_blank"><?echo GetMessage("IB_E_GOTO_BP")?></a>
 			<?endif?>
 		</td>
 	</tr>

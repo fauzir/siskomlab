@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && ($_REQUEST["clear"] != "") && check_
 	CPerfomanceError::Clear();
 	CPerfomanceCache::Clear();
 	$_SESSION["PERFMON_CLEAR_MESSAGE"] = GetMessage("PERFMON_CLEAR_MESSAGE");
-	LocalRedirect("/bitrix/admin/perfmon_clear.php?lang=".LANGUAGE_ID);
+	LocalRedirect("/bnpt/admin/perfmon_clear.php?lang=".LANGUAGE_ID);
 }
 
 $APPLICATION->SetTitle(GetMessage("PERFMON_CLEAR_TITLE"));

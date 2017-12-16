@@ -65,7 +65,7 @@ if ($copy_id > 0 && check_bitrix_sessid() && $F_RIGHT >= 30)
 	$new_id = CForm::Copy($copy_id);
 	if (strlen($strError)<=0 && intval($new_id)>0)
 	{
-		LocalRedirect("/bitrix/admin/form_edit.php?ID=".$new_id."&lang=".LANGUAGE_ID);
+		LocalRedirect("/bnpt/admin/form_edit.php?ID=".$new_id."&lang=".LANGUAGE_ID);
 	}
 }
 
@@ -73,7 +73,7 @@ if ($copy_id > 0 && check_bitrix_sessid() && $F_RIGHT >= 30)
 if ($reset_id > 0 && check_bitrix_sessid() && $F_RIGHT >= 30)
 {
 	CForm::Reset($reset_id);
-	LocalRedirect("/bitrix/admin/form_edit.php?ID=".$reset_id."&lang=".LANGUAGE_ID);
+	LocalRedirect("/bnpt/admin/form_edit.php?ID=".$reset_id."&lang=".LANGUAGE_ID);
 }
 
 $w = CGroup::GetList($v1="dropdown", $v2="asc", array("ADMIN"=>"N"));
@@ -82,7 +82,7 @@ while ($wr=$w->Fetch())
 {
 	$arGroups[] = array(
 		"ID" => $wr["ID"],
-		"NAME" => "[<a title=\"".GetMessage("FORM_GROUP_EDIT")."\" href=\"/bitrix/admin/group_edit.php?ID=".intval($wr["ID"])."&lang=".LANGUAGE_ID."\">".intval($wr["ID"])."</a>] ".htmlspecialcharsbx($wr["NAME"]),
+		"NAME" => "[<a title=\"".GetMessage("FORM_GROUP_EDIT")."\" href=\"/bnpt/admin/group_edit.php?ID=".intval($wr["ID"])."&lang=".LANGUAGE_ID."\">".intval($wr["ID"])."</a>] ".htmlspecialcharsbx($wr["NAME"]),
 	);
 }
 
@@ -329,10 +329,10 @@ if ((strlen($_REQUEST['save'])>0 || strlen($_REQUEST['apply'])>0) && $_SERVER['R
 			if (strlen($_REQUEST['save'])>0)
 			{
 				if (!empty($_REQUEST["back_url"])) LocalRedirect("/".ltrim($_REQUEST["back_url"], "/"));
-				else LocalRedirect("/bitrix/admin/form_list.php?lang=".LANGUAGE_ID);
+				else LocalRedirect("/bnpt/admin/form_list.php?lang=".LANGUAGE_ID);
 
 			}
-			else LocalRedirect("/bitrix/admin/form_edit.php?ID=".$ID."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam().(!empty($_REQUEST["back_url"]) ? "&back_url=".urlencode($_REQUEST["back_url"]) : ""));
+			else LocalRedirect("/bnpt/admin/form_edit.php?ID=".$ID."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam().(!empty($_REQUEST["back_url"]) ? "&back_url=".urlencode($_REQUEST["back_url"]) : ""));
 
 			exit();
 		}
@@ -419,7 +419,7 @@ if (!defined('BX_PUBLIC_MODE') || BX_PUBLIC_MODE != 1):
 			"TEXT"	=> GetMessage("FORM_LIST"),
 			"TITLE"	=> GetMessage("FORM_RECORDS_LIST"),
 			"ICON"	=> "btn_list",
-			"LINK"	=> "/bitrix/admin/form_list.php?lang=".LANGUAGE_ID
+			"LINK"	=> "/bnpt/admin/form_list.php?lang=".LANGUAGE_ID
 		)
 	);
 
@@ -558,7 +558,7 @@ $tabControl->BeginNextTab();
 			?>
 			<div class="adm-list-item">
 				<div class="adm-list-control"><input type="checkbox" name="arSITE[]" value="<?=htmlspecialcharsbx($sid)?>" id="<?=htmlspecialcharsbx($sid)?>" <?=$checked?>></div>
-				<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo "[<a class=tablebodylink href='/bitrix/admin/site_edit.php?LID=".htmlspecialcharsbx($sid)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($sid)."</a>]&nbsp;".htmlspecialcharsbx($arrS["NAME"])?></label></div>
+				<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo "[<a class=tablebodylink href='/bnpt/admin/site_edit.php?LID=".htmlspecialcharsbx($sid)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($sid)."</a>]&nbsp;".htmlspecialcharsbx($arrS["NAME"])?></label></div>
 			</div>
 			<?
 		endwhile;
@@ -588,7 +588,7 @@ function template_warn()
 		<td><?=GetMessage("FORM_SEND_RESULTS")?></td>
 		<td>
 			<input type="checkbox" id="mail_check" name="USE_MAIL_TEMPLATE" <?=$str_USE_MAIL?>>
-			[<a href="/bitrix/admin/message_admin.php?find_type_id=FORM_FILLING_<?=$str_SID?>&set_filter=Y"><?echo GetMessage("FORM_VIEW_TEMPLATE_LIST")?></a>]
+			[<a href="/bnpt/admin/message_admin.php?find_type_id=FORM_FILLING_<?=$str_SID?>&set_filter=Y"><?echo GetMessage("FORM_VIEW_TEMPLATE_LIST")?></a>]
 		</td>
 	</tr>
 <?
@@ -930,7 +930,7 @@ function GenerateMailTemplate()
 {
 	if (bInProcess) return;
 
-	var url = '/bitrix/admin/form_mail.php?lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=intval($ID)?>';
+	var url = '/bnpt/admin/form_mail.php?lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=intval($ID)?>';
 	CHttpRequest.Action = function() {CloseWaitWindow(); bInProcess = false;}
 	ShowWaitWindow();
 	bInProcess = true;
@@ -980,7 +980,7 @@ function _processData(arReturn)
 
 			obCheckbox.value = arReturn.TEMPLATES[i].ID;
 			obCell.appendChild(obCheckbox);
-			obCell.innerHTML += '[<a class="tablebodylink" href="/bitrix/admin/message_edit.php?ID=' + arReturn.TEMPLATES[i].ID + '&lang=<?=LANGUAGE_ID?>">' + arReturn.TEMPLATES[i].ID + '</a>]&nbsp;';
+			obCell.innerHTML += '[<a class="tablebodylink" href="/bnpt/admin/message_edit.php?ID=' + arReturn.TEMPLATES[i].ID + '&lang=<?=LANGUAGE_ID?>">' + arReturn.TEMPLATES[i].ID + '</a>]&nbsp;';
 
 			var obLabel = document.createElement('LABEL');
 			obLabel.setAttribute('for', arReturn.TEMPLATES[i].ID);
@@ -1013,7 +1013,7 @@ function DeleteMailTemplate(template_id)
 		}
 
 		//var url = 'message_admin.php?action=delete&ID=' + template_id + '&lang=<?echo LANGUAGE_ID?>&<?=bitrix_sessid_get()?>';
-		var url = '/bitrix/admin/form_mail.php?action=delete&ID=' + template_id + '&lang=<?echo LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=intval($ID)?>';
+		var url = '/bnpt/admin/form_mail.php?action=delete&ID=' + template_id + '&lang=<?echo LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=intval($ID)?>';
 
 		CHttpRequest.Action = __process;
 		ShowWaitWindow();
@@ -1047,7 +1047,7 @@ function set_event2()
 	<tr>
 		<td width="40%"><?=GetMessage("FORM_SHOW_RESULT_TEMPLATE")?></td>
 		<td width="60%"><?echo SelectBoxFromArray("SHOW_RESULT_TEMPLATE", $arList, $str_SHOW_RESULT_TEMPLATE);
-		?><?if ($RESULT_ID>0) :?>&nbsp;[&nbsp;<a href="/bitrix/admin/form_result_view.php?lang=<?=LANGUAGE_ID?>&WEB_FORM_ID=<?=$ID?>&RESULT_ID=<?=$RESULT_ID?>"><?=GetMessage("FORM_PREVIEW")?></a>&nbsp;]<?endif;?></td>
+		?><?if ($RESULT_ID>0) :?>&nbsp;[&nbsp;<a href="/bnpt/admin/form_result_view.php?lang=<?=LANGUAGE_ID?>&WEB_FORM_ID=<?=$ID?>&RESULT_ID=<?=$RESULT_ID?>"><?=GetMessage("FORM_PREVIEW")?></a>&nbsp;]<?endif;?></td>
 	</tr>
 <?
 	$arList = CForm::GetTemplateList("PRINT_RESULT");
@@ -1064,7 +1064,7 @@ function set_event2()
 	<tr>
 		<td><?=GetMessage("FORM_EDIT_RESULT_TEMPLATE")?></td>
 		<td><?echo SelectBoxFromArray("EDIT_RESULT_TEMPLATE", $arList, $str_EDIT_RESULT_TEMPLATE);
-		?><?if ($RESULT_ID>0) :?>&nbsp;[&nbsp;<a href="/bitrix/admin/form_result_edit.php?lang=<?=LANGUAGE_ID?>&WEB_FORM_ID=<?=$ID?>&RESULT_ID=<?=$RESULT_ID?>"><?=GetMessage("FORM_PREVIEW")?></a>&nbsp;]<?endif;?></td>
+		?><?if ($RESULT_ID>0) :?>&nbsp;[&nbsp;<a href="/bnpt/admin/form_result_edit.php?lang=<?=LANGUAGE_ID?>&WEB_FORM_ID=<?=$ID?>&RESULT_ID=<?=$RESULT_ID?>"><?=GetMessage("FORM_PREVIEW")?></a>&nbsp;]<?endif;?></td>
 	</tr>
 	<?endif;?>
 	<?if ($ID>0):?>
@@ -1090,7 +1090,7 @@ function set_event2()
 					$checked = (is_array($arMAIL_TEMPLATE) && in_array($mail_id, $arMAIL_TEMPLATE)) ? "checked" : "";
 				?>
 					<tr id="ft_<?=htmlspecialcharsbx($mail_id)?>">
-						<td nowrap style="padding:0px"><input type="checkbox" name="arMAIL_TEMPLATE[]" value="<?=htmlspecialcharsbx($mail_id)?>" id="<?=htmlspecialcharsbx($mail_id)?>" <?=$checked?>><?echo "[<a class=tablebodylink href='/bitrix/admin/message_edit.php?ID=".htmlspecialcharsbx($mail_id)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($mail_id). "</a>]";?>&nbsp;<label for="<?=htmlspecialcharsbx($mail_id)?>"><?=htmlspecialcharsbx($mail_name)?></label></td>
+						<td nowrap style="padding:0px"><input type="checkbox" name="arMAIL_TEMPLATE[]" value="<?=htmlspecialcharsbx($mail_id)?>" id="<?=htmlspecialcharsbx($mail_id)?>" <?=$checked?>><?echo "[<a class=tablebodylink href='/bnpt/admin/message_edit.php?ID=".htmlspecialcharsbx($mail_id)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($mail_id). "</a>]";?>&nbsp;<label for="<?=htmlspecialcharsbx($mail_id)?>"><?=htmlspecialcharsbx($mail_name)?></label></td>
 						<td nowrap style="padding:0px">&nbsp;[&nbsp;<a href="javascript:void(0)" onclick="DeleteMailTemplate('<?=htmlspecialcharsbx($mail_id)?>')"><?=GetMessage("FORM_DELETE_MAIL_TEMPLATE")?></a>&nbsp;]</td>
 					</tr>
 				<?endforeach;?>
@@ -1106,7 +1106,7 @@ function set_event2()
 					<tr>
 						<td colspan=2 style="padding:0px"><?if (count($arrMAIL)>0) echo "<br>"?>&nbsp;[&nbsp;<a title="<?=GetMessage("FORM_GENERATE_TEMPLATE_ALT")?>" onClick="GenerateMailTemplate()" href="javascript:void(0)"><?echo GetMessage("FORM_CREATE_S")?></a>&nbsp;]<?
 						if (count($arrMAIL)>0):
-							?>&nbsp;&nbsp;&nbsp;[&nbsp;<a href="/bitrix/admin/message_admin.php?find_type_id=FORM_FILLING_<?=$str_SID?>&set_filter=Y"><?echo GetMessage("FORM_VIEW_TEMPLATE_LIST")?></a>&nbsp;]<?
+							?>&nbsp;&nbsp;&nbsp;[&nbsp;<a href="/bnpt/admin/message_admin.php?find_type_id=FORM_FILLING_<?=$str_SID?>&set_filter=Y"><?echo GetMessage("FORM_VIEW_TEMPLATE_LIST")?></a>&nbsp;]<?
 						endif;
 						?></td>
 					</tr>
@@ -1343,7 +1343,7 @@ function CRMSave(wnd, data_old, form)
 		BX.ajax({
 			method: 'POST',
 			dataType: 'json',
-			url: '/bitrix/admin/settings.php?mid=form&saveCrm=Y&ajax=Y&<?=bitrix_sessid_get()?>',
+			url: '/bnpt/admin/settings.php?mid=form&saveCrm=Y&ajax=Y&<?=bitrix_sessid_get()?>',
 			data: query_str,
 			onsuccess: CRMRedraw
 		});
@@ -1391,7 +1391,7 @@ function loadCrmFields(ID, cb, additional)
 		BX('crm_settings_2').style.display = '';
 		BX('crm_settings_3').style.display = '';
 
-		BX.ajax.loadJSON('/bitrix/admin/form_crm.php?action=check&ID='+ID+'&<?=bitrix_sessid_get();?>', additional, function(res)
+		BX.ajax.loadJSON('/bnpt/admin/form_crm.php?action=check&ID='+ID+'&<?=bitrix_sessid_get();?>', additional, function(res)
 		{
 			BX.cleanNode(s);
 
@@ -1586,7 +1586,7 @@ function addCrmField(cv, fv, bSkipCheck)
 <?
 	endforeach;
 ?>
-	</select>&nbsp;&nbsp;<a href="/bitrix/admin/settings.php?lang=<?=LANGUAGE_ID?>&amp;mid=form&amp;tabControl_active_tab=edit_crm"><?=GetMessage('FORM_CRM_GOTOLIST')?></a></td>
+	</select>&nbsp;&nbsp;<a href="/bnpt/admin/settings.php?lang=<?=LANGUAGE_ID?>&amp;mid=form&amp;tabControl_active_tab=edit_crm"><?=GetMessage('FORM_CRM_GOTOLIST')?></a></td>
 </tr>
 <tr id="crm_settings_3"<?=!$bLinkCreated?' style="display:none;"':''?>>
 	<td><?=GetMessage('FORM_FIELD_LINK_TYPE');?>:</td>

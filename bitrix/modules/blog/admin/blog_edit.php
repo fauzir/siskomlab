@@ -139,9 +139,9 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $blogModulePermissions>="W" 
 
 
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bitrix/admin/blog_blog.php?lang=".LANG.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/blog_blog.php?lang=".LANG.GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/blog_blog_edit.php?lang=".LANG."&ID=".$ID."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bnpt/admin/blog_blog_edit.php?lang=".LANG."&ID=".$ID."&".$tabControl->ActiveTabParam());
 	}
 	else
 	{
@@ -179,7 +179,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("BLBE_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/blog_blog.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/blog_blog.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -190,13 +190,13 @@ if ($ID > 0 && $blogModulePermissions >= "W")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("BLBE_NEW_BLOG"),
 			"ICON" => "btn_new",
-			"LINK" => "/bitrix/admin/blog_blog_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+			"LINK" => "/bnpt/admin/blog_blog_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("BLBE_DELETE_BLOG"), 
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("BLBE_DELETE_BLOG_CONFIRM")."')) window.location='/bitrix/admin/blog_blog.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("BLBE_DELETE_BLOG_CONFIRM")."')) window.location='/bnpt/admin/blog_blog.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y"
 		);
 }
@@ -518,7 +518,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($blogModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/blog_blog.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bnpt/admin/blog_blog.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 	);
 ?>

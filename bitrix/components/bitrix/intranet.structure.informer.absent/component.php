@@ -190,7 +190,7 @@ if ($APPLICATION->GetShowIncludeAreas() && $USER->IsAdmin())
 		array(
 			'URL' => "javascript:".$APPLICATION->GetPopupLink(
 				array(
-					'URL' => "/bitrix/admin/iblock_element_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".$arParams['IBLOCK_TYPE']."&IBLOCK_ID=".$arParams['IBLOCK_ID']."&back_url=".urlencode($_SERVER["REQUEST_URI"]),
+					'URL' => "/bnpt/admin/iblock_element_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".$arParams['IBLOCK_TYPE']."&IBLOCK_ID=".$arParams['IBLOCK_ID']."&back_url=".urlencode($_SERVER["REQUEST_URI"]),
 					'PARAMS' => array(
 						'width' => 700,
 						'height' => 500,

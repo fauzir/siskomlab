@@ -984,7 +984,7 @@ BX.Sale.Admin.OrderPayment.prototype.showCreateCheckWindow = function(paymentId)
 						{
 							method: 'post',
 							dataType: 'json',
-							url: '/bitrix/admin/sale_order_ajax.php',
+							url: '/bnpt/admin/sale_order_ajax.php',
 							data: subRequest,
 							onsuccess: function(saveResult)
 							{

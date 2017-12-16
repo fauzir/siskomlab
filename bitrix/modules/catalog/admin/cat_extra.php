@@ -188,7 +188,7 @@ while ($arExtra = $dbResultList->NavNext(true, "f_"))
 	}
 
 	$arActions = array();
-	$arActions[] = array("ICON"=>"edit", "TEXT"=>GetMessage("CEN_UPDATE_ALT"), "ACTION"=>$lAdmin->ActionRedirect("/bitrix/admin/cat_extra_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID), "DEFAULT"=>true);
+	$arActions[] = array("ICON"=>"edit", "TEXT"=>GetMessage("CEN_UPDATE_ALT"), "ACTION"=>$lAdmin->ActionRedirect("/bnpt/admin/cat_extra_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID), "DEFAULT"=>true);
 
 	if (!$bReadOnly)
 	{

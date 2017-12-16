@@ -306,7 +306,7 @@ class CAllVoteChannel
 
 		$is_filtered = IsFiltered($strSqlSearch);
 
-		if (VOTE_CACHE_TIME===false || strpos($_SERVER['REQUEST_URI'], '/bitrix/admin/')!==false)
+		if (VOTE_CACHE_TIME===false || strpos($_SERVER['REQUEST_URI'], '/bnpt/admin/')!==false)
 		{
 			$res = $DB->Query($strSql, false, $err_mess.__LINE__);
 			return $res;

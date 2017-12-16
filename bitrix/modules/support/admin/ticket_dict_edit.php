@@ -27,10 +27,10 @@ define("HELP_FILE","ticket_dict_list.php");
 $message = null;
 
 /***************************************************************************
-									Функции
+									пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ***************************************************************************/
 
-function CheckFields() // проверка на наличие обязательных полей
+function CheckFields() // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 {
 	global $ID, $NAME, $SID, $C_TYPE, $arrSITE, $DB;
 	$str = "";
@@ -81,7 +81,7 @@ function symbolsAndNumbers($str)
 }
 
 /***************************************************************************
-							Обработка GET | POST
+							пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ***************************************************************************/
 $ID = intval($_REQUEST['ID']);
 $SET_AS_DEFAULT = $_REQUEST['SET_AS_DEFAULT'];
@@ -89,7 +89,7 @@ InitBVar($SET_AS_DEFAULT);
 
 
 
-// если была нажата кнопка "save" на текущей странице
+// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "save" пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if ((strlen($save)>0 || strlen($apply)>0) && $REQUEST_METHOD=="POST" && $bAdmin=="Y" && check_bitrix_sessid())
 {
 	$arFields = array(
@@ -132,8 +132,8 @@ if ((strlen($save)>0 || strlen($apply)>0) && $REQUEST_METHOD=="POST" && $bAdmin=
 
 	if ($bOK)
 	{
-		if (strlen($save)>0) LocalRedirect("/bitrix/admin/ticket_dict_list.php?lang=".LANGUAGE_ID. "&find_type=".symbolsAndNumbers($_REQUEST['C_TYPE']));
-		elseif ($new) LocalRedirect("/bitrix/admin/ticket_dict_edit.php?ID=".$ID. "&lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($_REQUEST['C_TYPE'])."&tabControl_active_tab=".urlencode($tabControl_active_tab));
+		if (strlen($save)>0) LocalRedirect("/bnpt/admin/ticket_dict_list.php?lang=".LANGUAGE_ID. "&find_type=".symbolsAndNumbers($_REQUEST['C_TYPE']));
+		elseif ($new) LocalRedirect("/bnpt/admin/ticket_dict_edit.php?ID=".$ID. "&lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($_REQUEST['C_TYPE'])."&tabControl_active_tab=".urlencode($tabControl_active_tab));
 	}
 	else
 	{
@@ -188,7 +188,7 @@ if ((strlen($save)>0 || strlen($apply)>0) && $REQUEST_METHOD=="POST" && $bAdmin=
 		}
 		if (!$message)
 		{
-			// сайты
+			// пїЅпїЅпїЅпїЅпїЅ
 			$DB->Query("DELETE FROM b_ticket_dictionary_2_site WHERE DICTIONARY_ID='".$ID."'", false, $err_mess.__LINE__);
 			if (is_array($arrSITE))
 			{
@@ -199,8 +199,8 @@ if ((strlen($save)>0 || strlen($apply)>0) && $REQUEST_METHOD=="POST" && $bAdmin=
 					$DB->Query($strSql, false, $err_mess.__LINE__);
 				}
 			}
-			if (strlen($save)>0) LocalRedirect("/bitrix/admin/ticket_dict_list.php?lang=".LANGUAGE_ID. "&find_type=".$str_C_TYPE."&set_filter=Y");
-			elseif ($new=="Y") LocalRedirect("/bitrix/admin/ticket_dict_edit.php?ID=".$ID. "&lang=".LANGUAGE_ID."&find_type=".$str_C_TYPE."&set_filter=Y&tabControl_active_tab=".urlencode($tabControl_active_tab));
+			if (strlen($save)>0) LocalRedirect("/bnpt/admin/ticket_dict_list.php?lang=".LANGUAGE_ID. "&find_type=".$str_C_TYPE."&set_filter=Y");
+			elseif ($new=="Y") LocalRedirect("/bnpt/admin/ticket_dict_edit.php?ID=".$ID. "&lang=".LANGUAGE_ID."&find_type=".$str_C_TYPE."&set_filter=Y&tabControl_active_tab=".urlencode($tabControl_active_tab));
 		}
 	}
 	else
@@ -247,7 +247,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 
 
 /***************************************************************************
-									HTML форма
+									HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 ?>
 <script type="text/javascript">
@@ -289,7 +289,7 @@ $aMenu = array(
 	array(
 		"ICON"	=> "btn_list",
 		"TEXT"	=> GetMessage("SUP_RECORDS_LIST"),
-		"LINK"	=> "/bitrix/admin/ticket_dict_list.php?lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($find_type)
+		"LINK"	=> "/bnpt/admin/ticket_dict_list.php?lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($find_type)
 	)
 );
 
@@ -300,7 +300,7 @@ if(intval($ID)>0)
 	$aMenu[] = array(
 		"ICON"	=> "btn_new",
 		"TEXT"	=> GetMessage("SUP_CREATE_NEW_RECORD"),
-		"LINK"	=> "/bitrix/admin/ticket_dict_edit.php?lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($find_type)
+		"LINK"	=> "/bnpt/admin/ticket_dict_edit.php?lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($find_type)
 		);
 
 	if ($bAdmin=="Y")
@@ -308,7 +308,7 @@ if(intval($ID)>0)
 		$aMenu[] = array(
 			"ICON"	=> "btn_delete",
 			"TEXT"	=> GetMessage("SUP_DELETE_RECORD"),
-			"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_RECORD_CONFIRM")."')) window.location='/bitrix/admin/ticket_dict_list.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($find_type) ."&". bitrix_sessid_get()."';",
+			"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_RECORD_CONFIRM")."')) window.location='/bnpt/admin/ticket_dict_list.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&find_type=".symbolsAndNumbers($find_type) ."&". bitrix_sessid_get()."';",
 			);
 	}
 }
@@ -357,7 +357,7 @@ $tabControl->Begin();?>
 			?>
 			<div class="adm-list-item">
 				<div class="adm-list-control"><input type="checkbox" name="arrSITE[]" value="<?=htmlspecialcharsex($sid)?>" id="<?=htmlspecialcharsex($sid)?>" <?=$checked?>></div>
-				<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo '[<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsex($sid).'</a>]&nbsp;'.htmlspecialcharsex($arrS["NAME"])?></label></div>
+				<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo '[<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsex($sid).'</a>]&nbsp;'.htmlspecialcharsex($arrS["NAME"])?></label></div>
 			</div>
 			<?
 		endwhile;
@@ -434,7 +434,7 @@ $tabControl->Begin();?>
 	<? endif; ?>
 
 <?
-$tabControl->Buttons(Array("disabled" => $bAdmin!="Y","back_url" =>"/bitrix/admin/ticket_dict_list.php?lang=".LANGUAGE_ID. "&find_type=".$str_C_TYPE));
+$tabControl->Buttons(Array("disabled" => $bAdmin!="Y","back_url" =>"/bnpt/admin/ticket_dict_list.php?lang=".LANGUAGE_ID. "&find_type=".$str_C_TYPE));
 $tabControl->End();
 ?>
 

@@ -72,7 +72,7 @@ if($ID > 0 && check_bitrix_sessid())
 		if(file_exists($_SERVER["DOCUMENT_ROOT"].$filename))
 			LocalRedirect($filename);
 		else
-			LocalRedirect("/bitrix/admin/workflow_list.php?lang=".LANG);
+			LocalRedirect("/bnpt/admin/workflow_list.php?lang=".LANG);
 	}
 }
 

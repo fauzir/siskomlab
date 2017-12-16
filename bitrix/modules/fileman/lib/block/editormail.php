@@ -28,7 +28,7 @@ class EditorMail
 	public static function createInstance($params)
 	{
 		$params['componentFilter'] = array('TYPE' => 'mail');
-		$params['previewUrl'] = '/bitrix/admin/fileman_block_editor.php?action=preview_mail';
+		$params['previewUrl'] = '/bnpt/admin/fileman_block_editor.php?action=preview_mail';
 
 		$editor = new Editor($params);
 

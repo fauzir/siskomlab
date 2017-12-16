@@ -143,7 +143,7 @@ if ((strlen($action) > 0 || strlen($s_action) > 0) && ($_REQUEST["MESSAGE_MODE"]
 						));
 				if ($action == "FORUM_MESSAGE2SUPPORT")
 				{
-					$url = "/bitrix/admin/ticket_edit.php?ID=#result#&amp;lang=".LANGUAGE_ID;
+					$url = "/bnpt/admin/ticket_edit.php?ID=#result#&amp;lang=".LANGUAGE_ID;
 				}
 				break;
 			case "DEL":

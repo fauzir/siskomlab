@@ -10,7 +10,7 @@ $bAdmin = CTicket::IsAdmin();
 if(!$bAdmin && !$bDemo)
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
-$LIST_URL = '/bitrix/admin/ticket_coupon_list.php';
+$LIST_URL = '/bnpt/admin/ticket_coupon_list.php';
 	
 $ID = intval($ID);
 

@@ -3,7 +3,7 @@ $MESS["SEO_YANDEX_DIRECT_TITLE"] = "Manage Yandex.Direct Advertising Campaigns";
 $MESS["SEO_YANDEX_DIRECT_TITLE_ARCHIVE"] = "Yandex.Direct advertising campaign archive";
 $MESS["SEO_YANDEX_DIRECT_BANNER_TITLE"] = "Yandex.Direct advertisements: #ID# (##XML_ID#)";
 $MESS["SEO_YANDEX_DIRECT_BANNER_TITLE_ARCHIVE"] = "Yandex.Direct archive: #ID# (##XML_ID#)";
-$MESS["SEO_ERROR_NO_YANDEX_AUTH"] = "Use your Yandex Passport to edit adv. campaign. <a href=\"/bitrix/admin/seo_search_yandex_direct.php?lang=#LANGUAGE_ID#&auth=1\">Log in using Yandex Passport</a>";
+$MESS["SEO_ERROR_NO_YANDEX_AUTH"] = "Use your Yandex Passport to edit adv. campaign. <a href=\"/bnpt/admin/seo_search_yandex_direct.php?lang=#LANGUAGE_ID#&auth=1\">Log in using Yandex Passport</a>";
 $MESS["SEO_UPDATE_NEVER"] = "never";
 $MESS["SEO_ERROR"] = "Error!";
 $MESS["SEO_CAMPAIGN_ADD"] = "Add campaign";

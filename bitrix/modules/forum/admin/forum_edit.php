@@ -263,7 +263,7 @@ foreach ($res as $key => $val)
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("FEN_2FLIST"),
-		"LINK" => "/bitrix/admin/forum_admin.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bnpt/admin/forum_admin.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_list",
 	)
 );
@@ -274,13 +274,13 @@ if ($ID > 0 && $forumPermissions >= "W")
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FEN_NEW_FORUM"),
-		"LINK" => "/bitrix/admin/forum_edit.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bnpt/admin/forum_edit.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_new",
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FEN_DELETE_FORUM"), 
-		"LINK" => "javascript:if(confirm('".GetMessage("FEN_DELETE_FORUM_CONFIRM")."')) window.location='/bitrix/admin/forum_admin.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."';",
+		"LINK" => "javascript:if(confirm('".GetMessage("FEN_DELETE_FORUM_CONFIRM")."')) window.location='/bnpt/admin/forum_admin.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."';",
 		"ICON" => "btn_delete",
 	);
 }
@@ -618,7 +618,7 @@ $tabControl->BeginNextTab();
 		$strSelected = (!in_array(strtoupper($strSelected), $aForumPermissions["reference_id"]) ? "A" : $strSelected);
 		?>
 		<tr>
-			<td width="40%"><?=$res["NAME"]?>&nbsp;[<a  href="/bitrix/admin/group_edit.php?ID=<?=$res["ID"]?>&lang=<?=LANGUAGE_ID?>"><?=$res["ID"]?></a>]:</td>
+			<td width="40%"><?=$res["NAME"]?>&nbsp;[<a  href="/bnpt/admin/group_edit.php?ID=<?=$res["ID"]?>&lang=<?=LANGUAGE_ID?>"><?=$res["ID"]?></a>]:</td>
 			<td width="60%">
 				<select name="GROUP[<?=$res["ID"]?>]">
 				<?
@@ -653,7 +653,7 @@ elseif ($ID <= 0 && !CForumNew::CanUserAddForum($USER->GetUserGroupArray(), $USE
 $tabControl->Buttons(
 		array(
 				"disabled" => (!$editable || $forumPermissions < "W"),
-				"back_url" => "/bitrix/admin/forum_admin.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bnpt/admin/forum_admin.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 	);
 ?>
@@ -683,7 +683,7 @@ function on_site_checkbox_click(lid, dir)
 <?
 if(IsModuleInstalled("search"))
 {
-	?><?=GetMessage("REQUIRE_REINDEX",array("#LINK#" => "/bitrix/admin/search_reindex.php"))?> <?
+	?><?=GetMessage("REQUIRE_REINDEX",array("#LINK#" => "/bnpt/admin/search_reindex.php"))?> <?
 }
 $res = CForumNew::PreparePath2Message(null);
 ?>

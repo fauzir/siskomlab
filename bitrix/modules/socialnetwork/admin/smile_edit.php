@@ -219,7 +219,7 @@ $aMenu = array(
 		array(
 			"TEXT" => GetMessage("FSN_2FLIST"),
 			"ICON" => "btn_list",
-			"LINK" => "/bitrix/admin/socnet_smile.php?lang=".LANG."&".GetFilterParams("filter_", false)
+			"LINK" => "/bnpt/admin/socnet_smile.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		)
 	);
 
@@ -229,12 +229,12 @@ if ($ID > 0 && $sonetPermissions == "W")
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FSN_NEW_SMILE"),
-		"LINK" => "/bitrix/admin/socnet_smile_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/socnet_smile_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FSN_DELETE_SMILE"), 
-		"LINK" => "javascript:if(confirm('".GetMessage("FSN_DELETE_SMILE_CONFIRM")."')) window.location='/bitrix/admin/socnet_smile.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("FSN_DELETE_SMILE_CONFIRM")."')) window.location='/bnpt/admin/socnet_smile.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -326,7 +326,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($sonetPermissions < "W"),
-				"back_url" => "/bitrix/admin/socnet_smile.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bnpt/admin/socnet_smile.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 	);
 

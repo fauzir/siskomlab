@@ -85,7 +85,7 @@ class CIBlockPropertyXmlID
 				if($ar_res)
 					$cache[$value["VALUE"]] = htmlspecialcharsbx($ar_res['NAME']).
 					' [<a href="'.
-					'/bitrix/admin/iblock_element_edit.php?'.
+					'/bnpt/admin/iblock_element_edit.php?'.
 					'type='.urlencode($ar_res['IBLOCK_TYPE_ID']).
 					'&amp;IBLOCK_ID='.$ar_res['IBLOCK_ID'].
 					'&amp;ID='.$ar_res['ID'].
@@ -130,7 +130,7 @@ class CIBlockPropertyXmlID
 		$windowTableId = 'iblockprop-'.Iblock\PropertyTable::TYPE_ELEMENT.'-'.$arProperty['ID'].'-'.$arProperty['LINK_IBLOCK_ID'];
 
 		return  '<input name="'.htmlspecialcharsbx($strHTMLControlName["VALUE"]).'" id="'.htmlspecialcharsbx($strHTMLControlName["VALUE"]).'" value="'.htmlspecialcharsEx($value["VALUE"]).'" size="20" type="text">'.
-			'<input type="button" value="..." onClick="jsUtils.OpenWindow(\''.CUtil::JSEscape('/bitrix/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&n='.urlencode($strHTMLControlName["VALUE"]).'&get_xml_id=Y&a=b'.($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId).'\', 900, 700);">'.
+			'<input type="button" value="..." onClick="jsUtils.OpenWindow(\''.CUtil::JSEscape('/bnpt/admin/iblock_element_search.php?lang='.LANGUAGE_ID.'&n='.urlencode($strHTMLControlName["VALUE"]).'&get_xml_id=Y&a=b'.($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId).'\', 900, 700);">'.
 			'&nbsp;<span id="sp_'.htmlspecialcharsbx($strHTMLControlName["VALUE"]).'" >'.$ar_res['NAME'].'</span>';
 	}
 

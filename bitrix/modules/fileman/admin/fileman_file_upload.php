@@ -108,9 +108,9 @@ else
 		if(strlen($strWarning) <= 0)
 		{
 			if (!empty($_POST["apply"]))
-				LocalRedirect("/bitrix/admin/fileman_file_upload.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+				LocalRedirect("/bnpt/admin/fileman_file_upload.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 			else
-				LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+				LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 		}
 	}
 }
@@ -205,7 +205,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 	$tabControl->Buttons(
 		array(
 			"disabled" => false,
-			"back_url" => "/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path)
+			"back_url" => "/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path)
 		)
 	);
 	$tabControl->End();

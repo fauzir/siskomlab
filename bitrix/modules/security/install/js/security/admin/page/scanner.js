@@ -3,7 +3,7 @@ var JCSecurityScanner = (function () {
 	var scanner = function(lastResult, options)
 	{
 		var defaults = {
-			actionUrl: '/bitrix/admin/security_scanner.php?lang=' + BX.message('LANGUAGE_ID'),
+			actionUrl: '/bnpt/admin/security_scanner.php?lang=' + BX.message('LANGUAGE_ID'),
 			checkingInterval: 0
 		};
 

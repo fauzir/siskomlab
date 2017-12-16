@@ -204,7 +204,7 @@ if (isset($_REQUEST['action']))
 		{
 			$userID = IntVal($_REQUEST["USER_ID"]);
 			$siteID = $_REQUEST["SITE_ID"];
-			$url = "/bitrix/admin/sale_order_create.php?lang=".LANG."&SITE_ID=".$siteID."&USER_ID=".$userID."&FUSER_ID=".$fuserID;
+			$url = "/bnpt/admin/sale_order_create.php?lang=".LANG."&SITE_ID=".$siteID."&USER_ID=".$userID."&FUSER_ID=".$fuserID;
 
 			$dbBasketList = CSaleBasket::GetList(
 				array("ID" => "ASC"),
@@ -288,7 +288,7 @@ while ($arBasket = $dbResultList->Fetch())
 	$fieldValue = GetMessage("SB_NOT_AUTH");
 	if((int)$arBasket["USER_ID"] > 0)
 	{
-		$fieldValue = "[<a href=\"/bitrix/admin/user_edit.php?ID=".$arBasket["USER_ID"]."&lang=".LANG."\" title=\"".GetMessage("SB_USER_INFO")."\">".$arBasket["USER_ID"]."</a>] ";
+		$fieldValue = "[<a href=\"/bnpt/admin/user_edit.php?ID=".$arBasket["USER_ID"]."&lang=".LANG."\" title=\"".GetMessage("SB_USER_INFO")."\">".$arBasket["USER_ID"]."</a>] ";
 		$fieldValue .= " (".htmlspecialcharsEx($arBasket["USER_LOGIN"]).") ";
 		$fieldValue .= "<a href=\"sale_buyers_profile.php?USER_ID=".$arBasket["USER_ID"]."&lang=".LANG."\" title=\"".GetMessage("SB_FUSER_INFO")."\">".htmlspecialcharsEx($arBasket["USER_NAME"].((strlen($arBasket["USER_NAME"])<=0 || strlen($arBasket["USER_LAST_NAME"])<=0) ? "" : " ").$arBasket["USER_LAST_NAME"])."</a><br />";
 		$fieldValue .= "<a href=\"mailto:".htmlspecialcharsEx($arBasket["USER_EMAIL"])."\" title=\"".GetMessage("SB_MAILTO")."\">".htmlspecialcharsEx($arBasket["USER_EMAIL"])."</a>";
@@ -556,7 +556,7 @@ $oFilter->Begin();
 				BX.showWait();
 
 				BX.ajax.post(
-					'/bitrix/admin/sale_order_new.php',
+					'/bnpt/admin/sale_order_new.php',
 					dateURL,
 					getProductDataResult
 				);

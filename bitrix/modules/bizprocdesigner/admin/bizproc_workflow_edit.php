@@ -140,7 +140,7 @@ function print_rrr($var)
 //////////////////////////////////////////
 // AJAX
 //////////////////////////////////////////
-$back_url = "/bitrix/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&entity=".urlencode(ENTITY)."&document_type=".$document_type."&back_url_list=/".urlencode("/".ltrim(trim($_REQUEST["back_url_list"]), "\\/"));
+$back_url = "/bnpt/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&entity=".urlencode(ENTITY)."&document_type=".$document_type."&back_url_list=/".urlencode("/".ltrim(trim($_REQUEST["back_url_list"]), "\\/"));
 if(strlen($_REQUEST["back_url"])>0)
 	$back_url = "/".ltrim(trim($_REQUEST["back_url"]), "/\\");
 
@@ -202,7 +202,7 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_REQUEST['saveajax']=='Y' && check_bit
 	restore_exception_handler();
 	?><!--SUCCESS--><script type="text/javascript">
 		BPTemplateIsModified = false;
-		window.location = '<?=($_REQUEST["apply"]=="Y"?Cutil::JSEscape("/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&entity=".AddSlashes(ENTITY)."&ID=".$ID."&back_url_list=".urlencode($_REQUEST["back_url_list"])) : Cutil::JSEscape($back_url))?>';
+		window.location = '<?=($_REQUEST["apply"]=="Y"?Cutil::JSEscape("/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&entity=".AddSlashes(ENTITY)."&ID=".$ID."&back_url_list=".urlencode($_REQUEST["back_url_list"])) : Cutil::JSEscape($back_url))?>';
 	</script><?
 	die();
 }
@@ -264,7 +264,7 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_REQUEST['import_template']=='Y' && ch
 	<?else:?>
 		<?$ID = $r;?>
 	<?endif;?>
-	window.location = '/bitrix/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
+	window.location = '/bnpt/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
 		'entity=<?=AddSlashes(urlencode(ENTITY))?>&document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>';
 	</script>
 	<?
@@ -293,7 +293,7 @@ $aMenu = Array();
 $aMenu[] = array(
 	"TEXT"=>GetMessage("BIZPROC_WFEDIT_MENU_LIST"),
 	"TITLE"=>GetMessage("BIZPROC_WFEDIT_MENU_LIST_TITLE"),
-	"LINK"=>"/bitrix/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&entity=".AddSlashes(ENTITY)."&document_type=".AddSlashes($document_type)."",
+	"LINK"=>"/bnpt/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&entity=".AddSlashes(ENTITY)."&document_type=".AddSlashes($document_type)."",
 	"ICON"=>"btn_list",
 );
 
@@ -310,13 +310,13 @@ $arSubMenu = Array();
 
 $arSubMenu[] = array(
 	"TEXT"	    => GetMessage("BIZPROC_WFEDIT_MENU_ADD_STATE"),
-	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&init=statemachine&entity=".AddSlashes(ENTITY)."&document_type=".AddSlashes($document_type)."';",
+	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&init=statemachine&entity=".AddSlashes(ENTITY)."&document_type=".AddSlashes($document_type)."';",
 	"TITLE"	    => GetMessage("BIZPROC_WFEDIT_MENU_ADD_STATE_TITLE"),
 );
 
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("BIZPROC_WFEDIT_MENU_ADD_SEQ"),
-	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&entity=".AddSlashes(ENTITY)."&document_type=".AddSlashes($document_type)."';",
+	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&entity=".AddSlashes(ENTITY)."&document_type=".AddSlashes($document_type)."';",
 	"TITLE"	=> GetMessage("BIZPROC_WFEDIT_MENU_ADD_SEQ_TITLE"),
 );
 
@@ -363,7 +363,7 @@ function BCPProcessExport()
 		alert('<?= GetMessageJS("BIZPROC_EMPTY_EXPORT") ?>');
 		return false;
 	}
-	window.open('/bitrix/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
+	window.open('/bnpt/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
 		'entity=<?=AddSlashes(urlencode(ENTITY))?>&document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&export_template=Y');
 }
 
@@ -398,7 +398,7 @@ function BCPProcessImport()
 
 	new BX.CDialog({
 		title: '<?= GetMessageJS("BIZPROC_IMPORT_TITLE") ?>',
-		content: '<form action="/bitrix/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>entity=<?=AddSlashes(urlencode(ENTITY))?>&document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>" method="POST" id="import_template_form" enctype="multipart/form-data"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr valign="top"><td width="50%" align="right"><?= GetMessageJS("BIZPROC_IMPORT_FILE") ?>:</td><td width="50%" align="left"><input type="file" size="35" name="import_template_file" value=""></td></tr></table><input type="hidden" name="import_template" value="Y"><input type="hidden" id="id_import_template_name" name="import_template_name" value=""><input type="hidden" name="import_template_description" id="id_import_template_description" value=""><input type="hidden" id="id_import_template_autostart" name="import_template_autostart" value=""><?= bitrix_sessid_post() ?></form>',
+		content: '<form action="/bnpt/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>entity=<?=AddSlashes(urlencode(ENTITY))?>&document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>" method="POST" id="import_template_form" enctype="multipart/form-data"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr valign="top"><td width="50%" align="right"><?= GetMessageJS("BIZPROC_IMPORT_FILE") ?>:</td><td width="50%" align="left"><input type="file" size="35" name="import_template_file" value=""></td></tr></table><input type="hidden" name="import_template" value="Y"><input type="hidden" id="id_import_template_name" name="import_template_name" value=""><input type="hidden" name="import_template_description" id="id_import_template_description" value=""><input type="hidden" id="id_import_template_autostart" name="import_template_autostart" value=""><?= bitrix_sessid_post() ?></form>',
 		buttons: [btnOK, BX.CDialog.btnCancel],
 		width: 500,
 		height: 150
@@ -420,7 +420,7 @@ function BCPSaveUserParams()
 	var data = JSToPHP(arUserParams, 'USER_PARAMS');
 
 	jsExtLoader.onajaxfinish = BCPSaveTemplateComplete;
-	jsExtLoader.startPost('/bitrix/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
+	jsExtLoader.startPost('/bnpt/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
 		'entity=<?=AddSlashes(urlencode(ENTITY))?>&document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&saveajax=Y&saveuserparams=Y', data);
 }
 
@@ -438,7 +438,7 @@ function BCPSaveTemplate(save)
 
 	jsExtLoader.onajaxfinish = BCPSaveTemplateComplete;
 	// TODO: add sessid
-	jsExtLoader.startPost('/bitrix/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
+	jsExtLoader.startPost('/bnpt/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
 		'entity=<?=AddSlashes(urlencode(ENTITY))?>&document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&saveajax=Y'+
 		(save ? '&back_url=<?=AddSlashes(urlencode($back_url))?>': '&apply=Y')
 		, data);
@@ -447,7 +447,7 @@ function BCPSaveTemplate(save)
 function BCPShowParams()
 {
 	(new BX.CAdminDialog({
-		'content_url': "/bitrix/admin/<?=MODULE_ID?>_bizproc_wf_settings.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>&entity=<?=ENTITY?>", 
+		'content_url': "/bnpt/admin/<?=MODULE_ID?>_bizproc_wf_settings.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>&entity=<?=ENTITY?>", 
 		'content_post': 'workflowTemplateName=' 		+ encodeURIComponent(workflowTemplateName) + '&' +
 			'workflowTemplateDescription=' 	+ encodeURIComponent(workflowTemplateDescription) + '&' +
 			'workflowTemplateAutostart=' 	+ encodeURIComponent(workflowTemplateAutostart) + '&' +

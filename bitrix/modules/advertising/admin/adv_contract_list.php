@@ -24,19 +24,19 @@ $DONT_USE_CONTRACT = COption::GetOptionString("advertising", "DONT_USE_CONTRACT"
 IncludeModuleLangFile(__FILE__);
 
 /***************************************************************************
-						Обработка GET | POST
+						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 $sTableID = "tbl_adv_contract_list";
 
-// инициализация сортировки
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $oSort = new CAdminSorting($sTableID, "s_sort", "asc");
-// инициализация списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin = new CAdminList($sTableID, $oSort);
 
-// массив доступов по всем контрактам для текущего пользователя
+// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $arrPERM = CAdvContract::GetUserPermissions();
 
-// фильтр
+// пїЅпїЅпїЅпїЅпїЅпїЅ
 $FilterArr = Array(
 	"find",
 	"find_type",
@@ -118,7 +118,7 @@ if($lAdmin->EditAction() && $isAdmin)
 	}
 }
 
-// обработка действий групповых и одиночных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if(($arID = $lAdmin->GroupAction()) && $isAdmin)
 {
 	if($_REQUEST['action_target']=='selected')
@@ -204,7 +204,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	if (is_array($arrSITE)):
 		foreach($arrSITE as $sid):
 			if ($isAdmin)
-				$sites .= '<a href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($arrSites[$sid]["NAME"]).'</a><br>';
+				$sites .= '<a href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($arrSites[$sid]["NAME"]).'</a><br>';
 			else
 				$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"])."<br>";
 		endforeach;
@@ -224,7 +224,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	else
 		$row->AddViewField("NAME", $f_NAME);
 	$row->AddViewField("DESCRIPTION", TruncateText($f_DESCRIPTION, 100));
-	$row->AddViewField("BANNER_COUNT", '<a href="/bitrix/admin/adv_banner_list.php?find_contract_id[]='.$f_ID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
+	$row->AddViewField("BANNER_COUNT", '<a href="/bnpt/admin/adv_banner_list.php?find_contract_id[]='.$f_ID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
 
 	$row->AddViewField("VISITOR_COUNT", $f_VISITOR_COUNT);
 	if ((is_array($arrUserPerm) && in_array("EDIT", $arrUserPerm)) || $isDemo)
@@ -262,7 +262,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 
 endwhile;
 
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array("title"=>GetMessage("MAIN_ADMIN_LIST_SELECTED"), "value"=>$rsData->SelectedRowsCount()),
@@ -270,7 +270,7 @@ $lAdmin->AddFooter(
 	)
 );
 
-// показ формы с кнопками добавления, ...
+// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, ...
 if((is_array($arrUserPerm) && in_array("EDIT", $arrUserPerm)) || $isDemo)
 	$lAdmin->AddGroupActionTable(Array(
 		"delete"=>GetMessage("MAIN_ADMIN_LIST_DELETE"),
@@ -291,13 +291,13 @@ if($isAdmin || $isDemo)
 	$lAdmin->AddAdminContextMenu($aContext);
 }
 
-// проверка на вывод только списка (в случае списка, скрипт дальше выполняться не будет)
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 $lAdmin->CheckListMode();
 
 $APPLICATION->SetTitle(GetMessage("AD_PAGE_TITLE"));
 
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");

@@ -782,7 +782,7 @@ window.BXLoadJSFiles = function(arJs, oCallBack, bFullPath)
 		}
 
 		var oSript = document.body.appendChild(document.createElement('script'));
-		oSript.src = (!bFullPath ? "/bitrix/admin/htmleditor2/" : '') + arJs[ind];
+		oSript.src = (!bFullPath ? "/bnpt/admin/htmleditor2/" : '') + arJs[ind];
 		if (BX.browser.IsIE())
 		{
 			oSript.onreadystatechange = function()

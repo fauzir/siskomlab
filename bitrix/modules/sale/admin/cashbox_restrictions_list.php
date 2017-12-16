@@ -26,7 +26,7 @@ namespace Bitrix\Sale\Cashbox\AdminPage\Restrictions
 	$id = (int)$_GET['ID'];
 	$tableId = 'table_cashbox_restrictions';
 	$oSort = new \CAdminSorting($tableId);
-	$lAdmin = new \CAdminSubList($tableId, $oSort, '/bitrix/admin/sale_cashbox_restriction_list.php?ID='.$id);
+	$lAdmin = new \CAdminSubList($tableId, $oSort, '/bnpt/admin/sale_cashbox_restriction_list.php?ID='.$id);
 
 	$restrictionClassNames = Manager::getClassesList();
 

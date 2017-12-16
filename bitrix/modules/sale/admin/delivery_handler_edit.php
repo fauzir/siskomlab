@@ -147,7 +147,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_REQUEST["Update"]) && check
 			if (strlen($_REQUEST["apply"]) > 0)
 				LocalRedirect($APPLICATION->GetCurPage()."?lang=".LANG."&SID=".urlencode($SID));
 			else
-				LocalRedirect('/bitrix/admin/sale_delivery_handlers.php?lang='.LANG);
+				LocalRedirect('/bnpt/admin/sale_delivery_handlers.php?lang='.LANG);
 
 			die();
 		}
@@ -821,7 +821,7 @@ $tabControl->End();
 $parentTabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/sale_delivery_handlers.php?lang=".LANG,
+				"back_url" => "/bnpt/admin/sale_delivery_handlers.php?lang=".LANG,
 			)
 	);
 

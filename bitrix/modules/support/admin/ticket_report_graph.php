@@ -25,9 +25,9 @@ include($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/support/colors.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/img.php");
 
 /***************************************************************************
-									Функции
+									пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ***************************************************************************/
-function CheckFilter() // проверка введенных полей
+function CheckFilter() // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 {
 	global $arFilterFields;
 	reset($arFilterFields); foreach ($arFilterFields as $f) global $$f; 
@@ -65,14 +65,14 @@ function CheckFilter() // проверка введенных полей
 }
 
 /***************************************************************************
-								Обработка GET | POST
+								пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 
 
 
 $sTableID = "t_report_graph";
-$oSort = new CAdminSorting($sTableID);// инициализация сортировки
-$lAdmin = new CAdminList($sTableID, $oSort);// инициализация списка
+$oSort = new CAdminSorting($sTableID);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+$lAdmin = new CAdminList($sTableID, $oSort);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 $filter = new CAdminFilter(
 	"filter_id", 
@@ -126,7 +126,7 @@ $FilterArr2 = Array(
 $arFilterFields = array_merge($FilterArr1, $FilterArr2);
 
 
-$lAdmin->InitFilter($arFilterFields);//инициализация фильтра
+$lAdmin->InitFilter($arFilterFields);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 
@@ -277,7 +277,7 @@ $height = "400";
 		<td> 
 			<table cellpadding="1" cellspacing="0" border="0">
 				<tr>
-					<td valign="center" nowrap><img src="/bitrix/admin/ticket_graph.php?<?=GetFilterParams($arFilterFields)?>&width=<?=$width?>&height=<?=$height?>&lang=<?echo LANG?>" width="<?=$width?>" height="<?=$height?>"></td>
+					<td valign="center" nowrap><img src="/bnpt/admin/ticket_graph.php?<?=GetFilterParams($arFilterFields)?>&width=<?=$width?>&height=<?=$height?>&lang=<?echo LANG?>" width="<?=$width?>" height="<?=$height?>"></td>
 				</tr>
 			</table>
 		</td>
@@ -292,31 +292,31 @@ $height = "400";
 			<table cellpadding="3" cellspacing="1" border="0" class="legend">
 				<?if ($find_open=="Y"):?>
 				<tr>
-					<td valign="center"><img src="/bitrix/admin/ticket_graph_legend.php?color=<?=$arrColor["OPEN_TICKET"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bnpt/admin/ticket_graph_legend.php?color=<?=$arrColor["OPEN_TICKET"]?>" width="45" height="2"></td>
 					<td nowrap><?=GetMessage("SUP_OPEN_TICKET")?></td>
 				</tr>
 				<?endif;?>
 				<?if ($find_close=="Y"):?>
 				<tr>
-					<td valign="center"><img src="/bitrix/admin/ticket_graph_legend.php?color=<?=$arrColor["CLOSE_TICKET"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bnpt/admin/ticket_graph_legend.php?color=<?=$arrColor["CLOSE_TICKET"]?>" width="45" height="2"></td>
 					<td nowrap><?=GetMessage("SUP_CLOSE_TICKET")?></td>
 				</tr>
 				<?endif;?>
 				<?if ($find_all=="Y"):?>
 				<tr>
-					<td valign="center"><img src="/bitrix/admin/ticket_graph_legend.php?color=<?=$arrColor["ALL_TICKET"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bnpt/admin/ticket_graph_legend.php?color=<?=$arrColor["ALL_TICKET"]?>" width="45" height="2"></td>
 					<td nowrap><?=GetMessage("SUP_ALL_TICKET")?></td>
 				</tr>
 				<?endif;?>
 				<?if ($find_mess=="Y"):?>
 				<tr>
-					<td valign="center"><img src="/bitrix/admin/ticket_graph_legend.php?color=<?=$arrColor["MESSAGES"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bnpt/admin/ticket_graph_legend.php?color=<?=$arrColor["MESSAGES"]?>" width="45" height="2"></td>
 					<td nowrap><?=GetMessage("SUP_MESSAGES")?></td>
 				</tr>
 				<?endif;?>
 				<?if ($find_overdue_mess=="Y"):?>
 				<tr>
-					<td valign="center"><img src="/bitrix/admin/ticket_graph_legend.php?color=<?=$arrColor["OVERDUE_MESSAGES"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bnpt/admin/ticket_graph_legend.php?color=<?=$arrColor["OVERDUE_MESSAGES"]?>" width="45" height="2"></td>
 					<td nowrap><?=GetMessage("SUP_OVERDUE_MESSAGES")?></td>
 				</tr>
 				<?endif;?>
@@ -346,7 +346,7 @@ else :
 <div class="graph">
 <table cellspacing=0 cellpadding=10 class="graph">
 	<tr>
-		<td valign="top"><img src="/bitrix/admin/ticket_diagram_time.php?<?=GetFilterParams($FilterArr1)?>&diameter=<?=$diameter?>&lang=<?=LANG?>" width="<?=$diameter?>" height="<?=$diameter?>"></td>
+		<td valign="top"><img src="/bnpt/admin/ticket_diagram_time.php?<?=GetFilterParams($FilterArr1)?>&diameter=<?=$diameter?>&lang=<?=LANG?>" width="<?=$diameter?>" height="<?=$diameter?>"></td>
 		<td valign="top">
 			<table cellpadding=2 cellspacing=0 border=0 class="legend">
 				<?
@@ -394,7 +394,7 @@ else :
 						</table>
 					</td>
 					<td align="right" nowrap><?echo sprintf("%01.2f", $procent)."%"?></td>
-					<td  nowrap><a href="/bitrix/admin/ticket_list.php?<?=GetFilterParams($FilterArr1)?>&find_close=Y&lang=<?=LANG?>&<?echo $f?>&set_filter=Y"><?=$counter?></a></td>
+					<td  nowrap><a href="/bnpt/admin/ticket_list.php?<?=GetFilterParams($FilterArr1)?>&find_close=Y&lang=<?=LANG?>&<?echo $f?>&set_filter=Y"><?=$counter?></a></td>
 					<td nowrap><?echo GetMessage("SUP_DIAGRAM_".$key);?></td>
 				</tr>
 				<?endwhile;?>
@@ -419,7 +419,7 @@ else :
 <div class="graph">
 <table cellspacing=0 cellpadding=10 class="graph">
 	<tr>
-		<td valign="top"><img src="/bitrix/admin/ticket_diagram_mess.php?<?=GetFilterParams($FilterArr1)?>&diameter=<?=$diameter?>&lang=<?=LANG?>" width="<?=$diameter?>" height="<?=$diameter?>"></td>
+		<td valign="top"><img src="/bnpt/admin/ticket_diagram_mess.php?<?=GetFilterParams($FilterArr1)?>&diameter=<?=$diameter?>&lang=<?=LANG?>" width="<?=$diameter?>" height="<?=$diameter?>"></td>
 		<td valign="top">
 			<table cellpadding=2 cellspacing=0 border=0 class="legend">
 				<?
@@ -444,7 +444,7 @@ else :
 						</table>
 					</td>
 					<td align="right" nowrap><?echo sprintf("%01.2f", $procent)."%"?></td>
-					<td  nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><a href="/bitrix/admin/ticket_list.php?<?=GetFilterParams($FilterArr1)?>&find_close=Y&lang=<?=LANG?>&<?echo $f?>&set_filter=Y"><?=$counter?></a></td>
+					<td  nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><a href="/bnpt/admin/ticket_list.php?<?=GetFilterParams($FilterArr1)?>&find_close=Y&lang=<?=LANG?>&<?echo $f?>&set_filter=Y"><?=$counter?></a></td>
 					<td nowrap><?echo GetMessage("SUP_DIAGRAM_MESS_".$key);?></td>
 				</tr>
 				<?endwhile;?>
@@ -510,7 +510,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admi
 			echo SelectBoxFromArray("find_responsible_id", $arr, htmlspecialcharsbx($find_responsible_id), GetMessage("SUP_ALL"));
 			?><br><input class="typeinput" type="text" name="find_responsible" size="47" value="<?=htmlspecialcharsbx($find_responsible)?>"><?=InputType("checkbox", "find_responsible_exact_match", "Y", $find_responsible_exact_match, false, "", "title='".GetMessage("SUP_EXACT_MATCH")."'")?>&nbsp;<?=ShowFilterLogicHelp()?><?
 		else : 
-			?>[<a href="/bitrix/admin/user_edit.php?ID=<?=$USER->GetID()?>"><?=$USER->GetID()?></a>] (<?=htmlspecialcharsEx($USER->GetLogin())?>) <?=htmlspecialcharsEx($USER->GetFullName())?><?
+			?>[<a href="/bnpt/admin/user_edit.php?ID=<?=$USER->GetID()?>"><?=$USER->GetID()?></a>] (<?=htmlspecialcharsEx($USER->GetLogin())?>) <?=htmlspecialcharsEx($USER->GetFullName())?><?
 		endif;
 		?></td>
 </tr>

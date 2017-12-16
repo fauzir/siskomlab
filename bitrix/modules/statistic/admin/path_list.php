@@ -22,7 +22,7 @@ while ($ar = $rs->Fetch())
 {
 	$ref[] = $ar["ID"];
 	$ref_id[] = $ar["ID"];
-	$arSites[$ar["ID"]] = "[<a href=\"/bitrix/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
+	$arSites[$ar["ID"]] = "[<a href=\"/bnpt/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
 }
 $arSiteDropdown = array("reference" => $ref, "reference_id" => $ref_id);
 
@@ -368,7 +368,7 @@ if(strlen($parent_id)>0)
 	$aContext[] = array(
 		"TEXT" => GetMessage("STAT_ENTER_POINTS_S"),
 		"ICON" => "btn_list",
-		"LINK" =>"/bitrix/admin/path_list.php?lang=".LANG."&set_default=Y&find_diagram_type=COUNTER_FULL_PATH",
+		"LINK" =>"/bnpt/admin/path_list.php?lang=".LANG."&set_default=Y&find_diagram_type=COUNTER_FULL_PATH",
 	);
 }
 

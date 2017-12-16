@@ -199,5 +199,5 @@ Bitrix Cloud Monitor will create backup copies by navigating to a special URL at
 By default, the backup copy is saved to Bitrix Cloud in encrypted form in multiple locations. This is the most secure way to preserve your data.
  
 If Bitrix Cloud services are inaccessible but the agents are scheduled using cron, the backup copy will be created locally.";
-$MESS["DUMP_TABLE_BROKEN"] = "The table #TABLE# has been destroyed due to internal MySQL error. Use <a href=\"/bitrix/admin/site_checker.php?tabControl_active_tab=edit1\" target=_blank>Site Checker</a> to fully recover the table, or just restore table structure.";
+$MESS["DUMP_TABLE_BROKEN"] = "The table #TABLE# has been destroyed due to internal MySQL error. Use <a href=\"/bnpt/admin/site_checker.php?tabControl_active_tab=edit1\" target=_blank>Site Checker</a> to fully recover the table, or just restore table structure.";
 ?>

@@ -105,7 +105,7 @@ foreach($arrLegend as $key => $val)
 		<table border="0" cellspacing="1" cellpadding="0" align="center">
 			<tr>
 				<td valign="center">
-					<img src="/bitrix/admin/city_graph.php?find_data_type=<?=$find_data_type?><?=GetFilterParams($FilterArr)?>&width=<?=$width?>&height=<?=$height?>&lang=<?echo LANG?>" width="<?=$width?>" height="<?=$height?>">
+					<img src="/bnpt/admin/city_graph.php?find_data_type=<?=$find_data_type?><?=GetFilterParams($FilterArr)?>&width=<?=$width?>&height=<?=$height?>&lang=<?echo LANG?>" width="<?=$width?>" height="<?=$height?>">
 				</td>
 			</tr>
 		</table>
@@ -115,7 +115,7 @@ foreach($arrLegend as $key => $val)
 	<?echo GetMessage("STAT_DYNAMIC_GRAPH2")?>
 	<table cellspacing=0 cellpadding=10 align="center">
 	<tr>
-		<td valign="center"><img src="/bitrix/admin/city_diagram.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANG?>&find_data_type=<?=$find_data_type?>" width="<?=$diameter?>" height="<?=$diameter?>"></td>
+		<td valign="center"><img src="/bnpt/admin/city_diagram.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANG?>&find_data_type=<?=$find_data_type?>" width="<?=$diameter?>" height="<?=$diameter?>"></td>
 		<td valign="center">
 			<table cellpadding=2 cellspacing=0 border=0 class="legend">
 				<?
@@ -141,11 +141,11 @@ foreach($arrLegend as $key => $val)
 					<td class="number" nowrap><?echo sprintf("%01.2f", $procent)."%"?></td>
 					<td  nowrap>(<?
 					if ($find_data_type=="SESSIONS") :
-					?><a href="/bitrix/admin/session_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_date1=<?echo urlencode($arFilter["DATE1"])?>&amp;find_date2=<?echo urlencode($arFilter["DATE2"])?>&amp;set_filter=Y"><?=$counter?></a><?
+					?><a href="/bnpt/admin/session_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_date1=<?echo urlencode($arFilter["DATE1"])?>&amp;find_date2=<?echo urlencode($arFilter["DATE2"])?>&amp;set_filter=Y"><?=$counter?></a><?
 					elseif ($find_data_type=="NEW_GUESTS") :
-					?><a href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_sess2=1&amp;find_period_date1=<?echo urlencode($arFilter["DATE1"])?>&amp;find_period_date2=<?echo urlencode($arFilter["DATE2"])?>&amp;set_filter=Y"><?=$counter?></a><?
+					?><a href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_sess2=1&amp;find_period_date1=<?echo urlencode($arFilter["DATE1"])?>&amp;find_period_date2=<?echo urlencode($arFilter["DATE2"])?>&amp;set_filter=Y"><?=$counter?></a><?
 					elseif ($find_data_type=="HITS") :
-					?><a href="/bitrix/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_date1=<?echo urlencode($arFilter["DATE1"])?>&amp;find_date2=<?echo urlencode($arFilter["DATE2"])?>&amp;set_filter=Y"><?=$counter?></a><?
+					?><a href="/bnpt/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_date1=<?echo urlencode($arFilter["DATE1"])?>&amp;find_date2=<?echo urlencode($arFilter["DATE2"])?>&amp;set_filter=Y"><?=$counter?></a><?
 					elseif ($find_data_type=="C_EVENTS") :
 					?><?=$counter?><?
 					endif;
@@ -177,7 +177,7 @@ if ($found):
 <?echo GetMessage("STAT_STATIC_GRAPH")?>
 <table cellspacing=0 cellpadding=10 class="graph" align="center">
 	<tr>
-		<td valign="center"><img src="/bitrix/admin/city_diagram.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANGUAGE_ID?>&find_data_type=<?=$find_data_type?>&diagram_type=TOTAL" width="<?=$diameter?>" height="<?=$diameter?>"></td>
+		<td valign="center"><img src="/bnpt/admin/city_diagram.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANGUAGE_ID?>&find_data_type=<?=$find_data_type?>&diagram_type=TOTAL" width="<?=$diameter?>" height="<?=$diameter?>"></td>
 		<td valign="center">
 			<table cellpadding=2 cellspacing=0 border=0 class="legend">
 				<?
@@ -202,11 +202,11 @@ if ($found):
 					<td class="number" nowrap><?echo sprintf("%01.2f", $procent)."%"?></td>
 					<td  nowrap>(<?
 					if ($find_data_type=="SESSIONS") :
-					?><a href="/bitrix/admin/session_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;set_filter=Y"><?=$counter?></a><?
+					?><a href="/bnpt/admin/session_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;set_filter=Y"><?=$counter?></a><?
 					elseif ($find_data_type=="NEW_GUESTS") :
-					?><a href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_sess2=1&amp;set_filter=Y"><?=$counter?></a><?
+					?><a href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;find_sess2=1&amp;set_filter=Y"><?=$counter?></a><?
 					elseif ($find_data_type=="HITS") :
-					?><a href="/bitrix/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;set_filter=Y"><?=$counter?></a><?
+					?><a href="/bnpt/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;find_city_id=<?echo urlencode($id)?>&amp;find_city_exact_match=Y&amp;set_filter=Y"><?=$counter?></a><?
 					elseif ($find_data_type=="C_EVENTS") :
 					?><?=$counter?><?
 					endif;

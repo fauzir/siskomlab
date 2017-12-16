@@ -157,7 +157,7 @@ if ($arParams["ACTION"]=="ADD")
 		array(
 			array(
 				"TEXT"	=> GetMessage("RECORD_LIST"),
-				"LINK"	=> "/bitrix/admin/type_admin.php?lang=".LANGUAGE_ID,
+				"LINK"	=> "/bnpt/admin/type_admin.php?lang=".LANGUAGE_ID,
 				"TITLE"	=> GetMessage("RECORD_LIST_TITLE"),
 				"ICON"	=> "btn_list"
 			), 
@@ -171,19 +171,19 @@ else
 		array(
 			array(
 				"TEXT"	=> GetMessage("RECORD_LIST"),
-				"LINK"	=> "/bitrix/admin/type_admin.php?lang=".LANGUAGE_ID,
+				"LINK"	=> "/bnpt/admin/type_admin.php?lang=".LANGUAGE_ID,
 				"TITLE"	=> GetMessage("RECORD_LIST_TITLE"),
 				"ICON"	=> "btn_list"
 			), 
 			array(
 				"TEXT"	=> GetMessage("MAIN_NEW_RECORD"),
-				"LINK"	=> "/bitrix/admin/type_edit.php?lang=".LANGUAGE_ID,
+				"LINK"	=> "/bnpt/admin/type_edit.php?lang=".LANGUAGE_ID,
 				"TITLE"	=> GetMessage("MAIN_NEW_RECORD_TITLE"),
 				"ICON"	=> "btn_new"
 			),
 			array(
 				"TEXT"	=> GetMessage("MAIN_DELETE_RECORD"),
-				"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/type_admin.php?ID=".urlencode($arParams["EVENT_NAME"])."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
+				"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/type_admin.php?ID=".urlencode($arParams["EVENT_NAME"])."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
 				"TITLE"	=> GetMessage("MAIN_DELETE_RECORD_TITLE"),
 				"ICON"	=> "btn_delete"
 			),
@@ -265,7 +265,7 @@ if ($arParams["ACTION"] == "UPDATE"):
 	if (is_array($arParams["DATA"]["TEMPLATES"])):
 		foreach ($arParams["DATA"]["TEMPLATES"] as $k => $v):
 ?><tr>
-	<td colspan="2">[<a href="/bitrix/admin/message_edit.php?ID=<?=$v["ID"]?>"><?=$v["ID"]?></a>]<?=(strlen(trim($v["SUBJECT"])) > 0 ? " " : "").htmlspecialcharsEx($v["SUBJECT"])?>
+	<td colspan="2">[<a href="/bnpt/admin/message_edit.php?ID=<?=$v["ID"]?>"><?=$v["ID"]?></a>]<?=(strlen(trim($v["SUBJECT"])) > 0 ? " " : "").htmlspecialcharsEx($v["SUBJECT"])?>
 	<?
 	$arLID = array();
 	$db_LID = CEventMessage::GetLang($v["ID"]);

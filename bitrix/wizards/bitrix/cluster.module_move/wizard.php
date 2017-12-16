@@ -375,7 +375,7 @@ class Step4 extends CBaseWizardStep
 		$wizard =& $this->GetWizard();
 		if($wizard->IsNextButtonClick())
 		{
-			$this->location = '/bitrix/admin/cluster_dbnode_list.php?lang='.LANGUAGE_ID;
+			$this->location = '/bnpt/admin/cluster_dbnode_list.php?lang='.LANGUAGE_ID;
 		}
 	}
 }

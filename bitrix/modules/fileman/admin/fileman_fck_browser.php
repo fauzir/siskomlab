@@ -113,7 +113,7 @@ function filelist_OnFileSelect(strPath)
 function WF_OnFileSelect(strPath, strTemp)
 {
 	var src;
-	src = "/bitrix/admin/workflow_get_file.php?cash=Y&did=<?=intval($DOCUMENT_ID)?>&wf_path=<?=urlencode($WF_PATH)?>&fname="+strPath;
+	src = "/bnpt/admin/workflow_get_file.php?cash=Y&did=<?=intval($DOCUMENT_ID)?>&wf_path=<?=urlencode($WF_PATH)?>&fname="+strPath;
 	imageupload.url.value=strPath;
 	if(imageupload.preview)
 		imageupload.preview.src=src;

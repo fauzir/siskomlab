@@ -38,7 +38,7 @@ $sProduct = str_replace("#VERSION#", $sVer, $sProduct);
 					?><div><?=str_replace("#VALUE#", CUser::GetCount(), GetMessage("GD_INFO_USERS"));?></div><?
 				}
 			?></span></td>
-			<td align="right" valign="bottom"><span style="display: inline-block; vertical-align: bottom; align: right;"><img src="/bitrix/gadgets/bitrix/admin_info/images/<?=(in_array(LANGUAGE_ID, array("ru", "en", "de"))?LANGUAGE_ID:"en")?>/logo.gif"></span></td>
+			<td align="right" valign="bottom"><span style="display: inline-block; vertical-align: bottom; align: right;"><img src="/bitrix/gadgets/bnpt/admin_info/images/<?=(in_array(LANGUAGE_ID, array("ru", "en", "de"))?LANGUAGE_ID:"en")?>/logo.gif"></span></td>
 		</tr>
 		</table>
 	</div>	

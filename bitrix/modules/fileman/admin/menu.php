@@ -237,9 +237,9 @@ if($USER->CanDoOperation('fileman_view_file_structure'))
 	$__tmppath = $_REQUEST['path'];
 	switch($GLOBALS["APPLICATION"]->GetCurPage())
 	{
-		case "/bitrix/admin/fileman_file_edit.php":
-		case "/bitrix/admin/fileman_file_view.php":
-		case "/bitrix/admin/fileman_html_edit.php":
+		case "/bnpt/admin/fileman_file_edit.php":
+		case "/bnpt/admin/fileman_file_view.php":
+		case "/bnpt/admin/fileman_html_edit.php":
 			if($_REQUEST['path'] && $_REQUEST['new']!='y')
 				$__tmppath = dirname($_REQUEST['path']);
 			break;

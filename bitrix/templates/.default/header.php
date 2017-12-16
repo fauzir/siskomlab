@@ -14,7 +14,7 @@ IncludeTemplateLangFile(__FILE__);
 <?if($USER->IsAdmin()):?>
 
 <div style="border:red solid 1px">
-	<form action="/bitrix/admin/site_edit.php" method="GET">
+	<form action="/bnpt/admin/site_edit.php" method="GET">
 		<input type="hidden" name="LID" value="<?=SITE_ID?>" />
 		<p><font style="color:red"><?echo GetMessage("DEF_TEMPLATE_NF")?> </font></p>
 		<input type="submit" name="set_template" value="<?echo GetMessage("DEF_TEMPLATE_NF_SET")?>" />

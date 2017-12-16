@@ -345,9 +345,9 @@ class CAllClusterDBNode
 		while ($arData = $rsData->Fetch())
 		{
 			if ($arData["ROLE_ID"] == "SLAVE" || $arData["ROLE_ID"] == "MASTER")
-				$edit_url = "/bitrix/admin/cluster_slave_edit.php?lang=".LANGUAGE_ID."&group_id=".$arData["GROUP_ID"]."&ID=".$arData["ID"];
+				$edit_url = "/bnpt/admin/cluster_slave_edit.php?lang=".LANGUAGE_ID."&group_id=".$arData["GROUP_ID"]."&ID=".$arData["ID"];
 			elseif ($arData["ROLE_ID"] == "MODULE")
-				$edit_url = "/bitrix/admin/cluster_dbnode_edit.php?lang=".LANGUAGE_ID."&ID=".$arData["ID"];
+				$edit_url = "/bnpt/admin/cluster_dbnode_edit.php?lang=".LANGUAGE_ID."&ID=".$arData["ID"];
 			else
 				$edit_url = "";
 

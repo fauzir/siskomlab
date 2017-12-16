@@ -25,7 +25,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/colors.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/img.php");
 
 /***************************************************************************
-						Обработка GET | POST
+						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 $strError = '';
 $rsContracts = CAdvContract::GetList($v1="s_sort", $v2="desc", array(), $v3);
@@ -87,7 +87,7 @@ if (is_array($find_contract_id) && count($find_contract_id)>0) $filter_selected+
 if ($filter_selected>0) $is_filtered = true;
 
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 $APPLICATION->SetTitle(GetMessage("AD_CONTRACT_DIAGRAM_PAGE_TITLE"));
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
@@ -155,10 +155,10 @@ elseif (count($arrLegend)>0) :
 		echo GetMessage("AD_SERVER_TIME")."&nbsp;&nbsp;<i>".GetTime(time(),"FULL")."</i><br>";
 		echo GetMessage("AD_DAYS_TO_KEEP")."&nbsp;&nbsp;<i>".COption::GetOptionString("advertising","BANNER_DAYS")."</i>";
 		if ($isAdmin)
-			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=advertising' title='".GetMessage("AD_SET_EDIT")."'>".GetMessage("AD_EDIT")."</a>]";
+			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=advertising' title='".GetMessage("AD_SET_EDIT")."'>".GetMessage("AD_EDIT")."</a>]";
 	echo EndNote();
 
-	// Диаграммы по контрактам
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if ($find_contract_summa!="Y" && count($find_contract_id)>1) :
 	
 		$diagram_type = "CONTRACT";
@@ -208,7 +208,7 @@ elseif (count($arrLegend)>0) :
 						<div class="graph">
 						<table cellspacing=0 cellpadding=2 class="graph">
 							<tr>
-								<td valign="top"><img class="graph" src="/bitrix/admin/adv_diagram.php?<?=GetFilterParams($FilterArr)?>&diagram_type=<?echo $diagram_type?>&counter_type=<?echo $counter_type?>" width="<?echo $diameter?>" height="<?echo $diameter?>">
+								<td valign="top"><img class="graph" src="/bnpt/admin/adv_diagram.php?<?=GetFilterParams($FilterArr)?>&diagram_type=<?echo $diagram_type?>&counter_type=<?echo $counter_type?>" width="<?echo $diameter?>" height="<?echo $diameter?>">
 								</td>
 								<td valign="top">
 									<table cellpadding=0 cellspacing=0 border=0 class="legend">
@@ -230,7 +230,7 @@ elseif (count($arrLegend)>0) :
 											</td>
 											<td align="right" nowrap><?echo sprintf("%01.2f", $procent)."%"?></td>
 											<td nowrap>(<?=$counter?>)</td>
-											<td  nowrap><?echo "[<a href='/bitrix/admin/adv_contract_edit.php?find_id=".$arrS["ID"]."&lang=".LANGUAGE_ID."&action=view' title='".GetMessage("AD_CONTRACT_VIEW")."'>".$arrS["ID"]."</a>] ".$arrS["NAME"];?></td>
+											<td  nowrap><?echo "[<a href='/bnpt/admin/adv_contract_edit.php?find_id=".$arrS["ID"]."&lang=".LANGUAGE_ID."&action=view' title='".GetMessage("AD_CONTRACT_VIEW")."'>".$arrS["ID"]."</a>] ".$arrS["NAME"];?></td>
 										</tr>
 										<?
 											endif;

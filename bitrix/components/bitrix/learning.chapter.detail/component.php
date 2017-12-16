@@ -301,7 +301,7 @@ if ($bCanEdit)
 			"TITLE" => GetMessage("LEARNING_COURSES_CHAPTER_EDIT"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bitrix/admin/learn_unilesson_edit.php"
+					"URL" => "/bnpt/admin/learn_unilesson_edit.php"
 						. "?LESSON_ID=" . $arParams["CHAPTER_ID"]
 						. '&' . $strUrlencodedLessonPath
 						. "&lang=" . LANGUAGE_ID 
@@ -319,7 +319,7 @@ if ($bCanEdit)
 		array(
 			"TEXT" => GetMessage("LEARNING_COURSES_CHAPTER_DELETE"),
 			"TITLE" => GetMessage("LEARNING_COURSES_CHAPTER_DELETE"),
-			"URL" => "javascript:if(confirm('".GetMessage("LEARNING_COURSES_CHAPTER_DELETE_CONF")."'))jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/learn_unilesson_admin.php?ID=" . $arParams["CHAPTER_ID"] . "&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&COURSE_ID=".$arParams["COURSE_ID"]).(strlen($deleteReturnUrl) ? "&return_url=".urlencode($deleteReturnUrl) : "")."')",
+			"URL" => "javascript:if(confirm('".GetMessage("LEARNING_COURSES_CHAPTER_DELETE_CONF")."'))jsUtils.Redirect([], '".CUtil::JSEscape("/bnpt/admin/learn_unilesson_admin.php?ID=" . $arParams["CHAPTER_ID"] . "&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&COURSE_ID=".$arParams["COURSE_ID"]).(strlen($deleteReturnUrl) ? "&return_url=".urlencode($deleteReturnUrl) : "")."')",
 			"ICON" => "bx-context-toolbar-delete-icon",
 			"ID" => "bx-context-toolbar-delete-chapter",
 		),

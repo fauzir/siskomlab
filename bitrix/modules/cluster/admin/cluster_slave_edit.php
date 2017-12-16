@@ -68,9 +68,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && check_bitrix_sessid())
 		if($res)
 		{
 			if(isset($_REQUEST["apply"]) && $_REQUEST["apply"] != "")
-				LocalRedirect("/bitrix/admin/cluster_slave_edit.php?ID=".$ID."&lang=".LANGUAGE_ID."&group_id=".$group_id."&".$tabControl->ActiveTabParam());
+				LocalRedirect("/bnpt/admin/cluster_slave_edit.php?ID=".$ID."&lang=".LANGUAGE_ID."&group_id=".$group_id."&".$tabControl->ActiveTabParam());
 			else
-				LocalRedirect("/bitrix/admin/cluster_slave_list.php?lang=".LANGUAGE_ID."&group_id=".$group_id);
+				LocalRedirect("/bnpt/admin/cluster_slave_list.php?lang=".LANGUAGE_ID."&group_id=".$group_id);
 		}
 		else
 		{
@@ -84,7 +84,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && check_bitrix_sessid())
 		$ob = new CClusterDBNode;
 		$res = $ob->Delete($ID);
 		if($res)
-			LocalRedirect("/bitrix/admin/cluster_slave_list.php?lang=".LANGUAGE_ID."&group_id=".$group_id);
+			LocalRedirect("/bnpt/admin/cluster_slave_list.php?lang=".LANGUAGE_ID."&group_id=".$group_id);
 		else
 			$bVarsFromForm = true;
 	}

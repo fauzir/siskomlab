@@ -25,7 +25,7 @@ include($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/colors.php");
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/img.php");
 
 /***************************************************************************
-						Обработка GET | POST
+						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 $strError = '';
 $rsContracts = CAdvContract::GetList($v1="s_sort", $v2="desc", array(), $v3);
@@ -182,7 +182,7 @@ $arFooter[] = array(
 $lAdmin->AddFooter($arFooter);
 
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 $lAdmin->BeginPrologContent();
 
@@ -198,13 +198,13 @@ else :
 		echo GetMessage("AD_SERVER_TIME")."&nbsp;&nbsp;<i>".GetTime(time(),"FULL")."</i><br>";
 		echo GetMessage("AD_DAYS_TO_KEEP")."&nbsp;&nbsp;<i>".COption::GetOptionString("advertising","BANNER_DAYS")."</i>";
 		if ($isAdmin)
-			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=advertising' title='".GetMessage("AD_SET_EDIT")."'>".GetMessage("AD_EDIT")."</a>]";
+			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=advertising' title='".GetMessage("AD_SET_EDIT")."'>".GetMessage("AD_EDIT")."</a>]";
 	echo EndNote();?>
 
 <div class="graph">
 <table border="0" cellspacing="2" cellpadding="10" class="graph">
 	<tr>
-		<td><img src="/bitrix/admin/adv_graph.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>"></td>
+		<td><img src="/bnpt/admin/adv_graph.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>"></td>
 	</tr>
 	<tr>
 		<td>
@@ -250,7 +250,7 @@ else :
 				?>
 					<td nowrap width="100%"><img src="/bitrix/images/1.gif" width="3" height="1"><?
 					if ($arrS["COUNTER_TYPE"]=="DETAIL") :
-						echo "[<a href='/bitrix/admin/adv_contract_edit.php?ID=".$arrS["ID"]."&lang=".LANGUAGE_ID."&action=view' title='".GetMessage("AD_CONTRACT_VIEW")."'>".$arrS["ID"]."</a>] ".$arrS["NAME"];
+						echo "[<a href='/bnpt/admin/adv_contract_edit.php?ID=".$arrS["ID"]."&lang=".LANGUAGE_ID."&action=view' title='".GetMessage("AD_CONTRACT_VIEW")."'>".$arrS["ID"]."</a>] ".$arrS["NAME"];
 					else :
 						echo GetMessage("AD_CONTRACT_SUM");
 					endif;
@@ -272,7 +272,7 @@ $lAdmin->EndPrologContent();
 $lAdmin->AddAdminContextMenu(array());
 $lAdmin->CheckListMode();
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 $APPLICATION->SetTitle(GetMessage("AD_CONTRACT_GRAPH_PAGE_TITLE"));
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");

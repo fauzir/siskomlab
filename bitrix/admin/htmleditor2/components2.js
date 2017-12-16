@@ -159,7 +159,7 @@ function BXComponents2Taskbar()
 		if (window.arComp2Elements)
 			loadComp2();
 		else
-			CHttpRequest.Send('/bitrix/admin/fileman_load_components2.php?lang='+BXLang+'&site='+BXSite+'&load_tree=Y'+(clear_cache === true ? '&clear_comp2_cache=Y' : ''));
+			CHttpRequest.Send('/bnpt/admin/fileman_load_components2.php?lang='+BXLang+'&site='+BXSite+'&load_tree=Y'+(clear_cache === true ? '&clear_comp2_cache=Y' : ''));
 	}
 
 	BXComponents2Taskbar.prototype.BuildList = function (__arElements)
@@ -1089,7 +1089,7 @@ function BXComponents2Taskbar()
 			}catch(e) {alert('Error >> LoadComp2Params');}
 		}
 
-		var url = '/bitrix/admin/fileman_load_comp2_params.php?lang=' + BXLang + '&site=' + BXSite + '&cname=' + elementName+'&stid='+((this.pMainObj.templateID) ? this.pMainObj.templateID : '')+"&loadhelp="+loadHelp+'&tname=' + templName + '&bxsender=fileman_html_editor&bxeditor=' + this.pMainObj.name;
+		var url = '/bnpt/admin/fileman_load_comp2_params.php?lang=' + BXLang + '&site=' + BXSite + '&cname=' + elementName+'&stid='+((this.pMainObj.templateID) ? this.pMainObj.templateID : '')+"&loadhelp="+loadHelp+'&tname=' + templName + '&bxsender=fileman_html_editor&bxeditor=' + this.pMainObj.name;
 
 		this.pMainObj.__authFailureHandlerCallback = function(){oTaskbar.LoadComp2Params(arProps, calbackFunc, calbackObj, calbackParams, method, data);};
 		this.pMainObj.__authFailureHandlerCallbackClose = function(){window.oBXEditorDialog.Close();};
@@ -1137,9 +1137,9 @@ function BXComponents2Taskbar()
 		}
 
 		if (method == 'POST' && data)
-			_CHttpRequest.Post('/bitrix/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite + '&cname='+componentName+'&tname='+templateName+'&mode=params&stid='+((this.pMainObj.templateID) ? this.pMainObj.templateID : ''),data);
+			_CHttpRequest.Post('/bnpt/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite + '&cname='+componentName+'&tname='+templateName+'&mode=params&stid='+((this.pMainObj.templateID) ? this.pMainObj.templateID : ''),data);
 		else
-			_CHttpRequest.Send('/bitrix/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite+'&cname='+componentName+'&tname='+templateName+'&mode=params&stid='+((this.pMainObj.templateID) ? this.pMainObj.templateID : ''));
+			_CHttpRequest.Send('/bnpt/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite+'&cname='+componentName+'&tname='+templateName+'&mode=params&stid='+((this.pMainObj.templateID) ? this.pMainObj.templateID : ''));
 	}
 
 	BXComponents2Taskbar.prototype.DelTemplateParams = function(id)
@@ -1900,7 +1900,7 @@ C2Parser.prototype =
 			return;
 
 		var
-			url = '/bitrix/admin/fileman_comp2_render.php?sessid=' + BX.bitrix_sessid() + '&site=' + BXSite,
+			url = '/bnpt/admin/fileman_comp2_render.php?sessid=' + BX.bitrix_sessid() + '&site=' + BXSite,
 			data = {stid: this.pMainObj.templateID || ''},
 			_this = this;
 
@@ -2509,9 +2509,9 @@ function loadComp2TemplateLists(siteTemplate,calbackFunc, calbackParams,method,d
 		}
 	}
 	if (method == 'POST' && data)
-		_CHttpRequest.Post('/bitrix/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite+'&mode=list&stid='+siteTemplate,data);
+		_CHttpRequest.Post('/bnpt/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite+'&mode=list&stid='+siteTemplate,data);
 	else
-		_CHttpRequest.Send('/bitrix/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite+'&mode=list&stid='+siteTemplate);
+		_CHttpRequest.Send('/bnpt/admin/fileman_load_templates.php?lang='+BXLang+'&site='+BXSite+'&mode=list&stid='+siteTemplate);
 }
 
 function push2Component2(id, name)

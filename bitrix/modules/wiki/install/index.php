@@ -77,7 +77,7 @@ Class wiki extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin', true, true);
+			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bnpt/admin', true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/images', $_SERVER['DOCUMENT_ROOT'].'/bitrix/images/wiki', true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/themes', $_SERVER['DOCUMENT_ROOT'].'/bitrix/themes', true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/components', $_SERVER['DOCUMENT_ROOT'].'/bitrix/components', true, true);
@@ -87,7 +87,7 @@ Class wiki extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin');
+		DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bnpt/admin');
 		DeleteDirFilesEx('/bitrix/images/wiki/');
 		DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/wiki/install/themes/.default/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/themes/.default');//css
 		DeleteDirFilesEx('/bitrix/themes/.default/icons/wiki/');//icons

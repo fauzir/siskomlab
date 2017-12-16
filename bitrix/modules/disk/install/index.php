@@ -124,7 +124,7 @@ Class disk extends CModule
 		{
 			\CAdminNotify::add(array(
 				"MESSAGE" => Loc::getMessage("DISK_NOTIFY_MIGRATE_WEBDAV", array(
-					"#LINK#" => "/bitrix/admin/disk_from_webdav_convertor.php?lang=".\Bitrix\Main\Application::getInstance()->getContext()->getLanguage(),
+					"#LINK#" => "/bnpt/admin/disk_from_webdav_convertor.php?lang=".\Bitrix\Main\Application::getInstance()->getContext()->getLanguage(),
 				)),
 				"TAG" => "disk_migrate_from_webdav",
 				"MODULE_ID" => "disk",
@@ -259,7 +259,7 @@ Class disk extends CModule
 		global $APPLICATION;
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/disk/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/disk/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/disk/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/disk/install/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js", true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/disk/install/tools/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/tools', true, true);
@@ -291,9 +291,9 @@ Class disk extends CModule
 			$APPLICATION->SetFileAccessPermission('/bitrix/tools/disk/', array('*' => 'R'));
 			$APPLICATION->SetFileAccessPermission('/bitrix/services/disk/', array('*' => 'R'));
 			$APPLICATION->SetFileAccessPermission('/docs/pub/', array('*' => 'R'));
-			$APPLICATION->SetFileAccessPermission('/bitrix/admin/disk_bizproc_activity_settings.php', array('2' => 'R'));
-			$APPLICATION->SetFileAccessPermission('/bitrix/admin/disk_bizproc_selector.php', array('2' => 'R'));
-			$APPLICATION->SetFileAccessPermission('/bitrix/admin/disk_bizproc_wf_settings.php', array('2' => 'R'));
+			$APPLICATION->SetFileAccessPermission('/bnpt/admin/disk_bizproc_activity_settings.php', array('2' => 'R'));
+			$APPLICATION->SetFileAccessPermission('/bnpt/admin/disk_bizproc_selector.php', array('2' => 'R'));
+			$APPLICATION->SetFileAccessPermission('/bnpt/admin/disk_bizproc_wf_settings.php', array('2' => 'R'));
 
 			\Bitrix\Main\UrlPreview\Router::setRouteHandler(
 				'/disk/#action#/#fileId#/',
@@ -323,7 +323,7 @@ Class disk extends CModule
 		global $APPLICATION;
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/disk/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/disk/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFilesEx("/bitrix/js/disk/");
 			DeleteDirFilesEx("/bitrix/tools/disk/");
 			DeleteDirFilesEx("/bitrix/services/disk/");

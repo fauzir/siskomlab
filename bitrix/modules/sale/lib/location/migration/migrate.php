@@ -870,7 +870,7 @@ class CUpdaterLocationPro extends \CUpdater implements \Serializable
 				\CAdminNotify::Add(
 					array(
 						"MESSAGE" => Loc::getMessage('SALE_LOCATION_MIGRATION_PLZ_MIGRATE_NOTIFIER', array(
-							'#ANCHOR_MIGRATE#' => '<a href="/bitrix/admin/sale_location_migration.php">',
+							'#ANCHOR_MIGRATE#' => '<a href="/bnpt/admin/sale_location_migration.php">',
 							'#ANCHOR_END#' => '</a>'
 						)),
 						"TAG" => "SALE_LOCATIONPRO_PLZ_MIGRATE",

@@ -106,9 +106,9 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions>="W" 
 	if (strlen($errorMessage) <= 0)
 	{
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bitrix/admin/sale_affiliate.php?lang=".LANG.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_affiliate.php?lang=".LANG.GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/sale_affiliate_edit.php?lang=".LANG."&ID=".$ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_affiliate_edit.php?lang=".LANG."&ID=".$ID.GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -137,7 +137,7 @@ if ($bVarsFromForm)
 $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SAE_AFF_LIST"),
-				"LINK" => "/bitrix/admin/sale_affiliate.php?lang=".LANG.GetFilterParams("filter_"),
+				"LINK" => "/bnpt/admin/sale_affiliate.php?lang=".LANG.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 	);
@@ -148,7 +148,7 @@ if ($ID > 0)
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SAE_AFF_ADD"),
-			"LINK" => "/bitrix/admin/sale_affiliate_edit.php?lang=".LANG.GetFilterParams("filter_"),
+			"LINK" => "/bnpt/admin/sale_affiliate_edit.php?lang=".LANG.GetFilterParams("filter_"),
 			"ICON" => "btn_new"
 		);
 
@@ -156,7 +156,7 @@ if ($ID > 0)
 	{
 		$aMenu[] = array(
 				"TEXT" => GetMessage("SAE_AFF_DELETE"),
-				"LINK" => "javascript:if(confirm('".GetMessage("SAE_AFF_DELETE_CONF")."')) window.location='/bitrix/admin/sale_affiliate.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+				"LINK" => "javascript:if(confirm('".GetMessage("SAE_AFF_DELETE_CONF")."')) window.location='/bnpt/admin/sale_affiliate.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 				"WARNING" => "Y",
 				"ICON" => "btn_delete"
 			);
@@ -245,7 +245,7 @@ $tabControl->BeginNextTab();
 			{
 				$dbUser = CUser::GetByID($str_USER_ID);
 				if ($arUser = $dbUser->Fetch())
-					$userName = "[<a class=\"tablebodylink\" title=\"".GetMessage("SAE_PROFILE")."\" href=\"/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".htmlspecialcharsex($arUser["LOGIN"]).") ".htmlspecialcharsex($arUser["NAME"])." ".htmlspecialcharsex($arUser["LAST_NAME"]);
+					$userName = "[<a class=\"tablebodylink\" title=\"".GetMessage("SAE_PROFILE")."\" href=\"/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".htmlspecialcharsex($arUser["LOGIN"]).") ".htmlspecialcharsex($arUser["NAME"])." ".htmlspecialcharsex($arUser["LAST_NAME"]);
 			}
 
 			echo FindUserID("USER_ID", $str_USER_ID, $userName, "form1");
@@ -257,7 +257,7 @@ $tabControl->BeginNextTab();
 		<td valign="top">
 			<input type="text" name="AFFILIATE_ID" value="<?= $str_AFFILIATE_ID ?>" size="10" maxlength="10">
 			<IFRAME name="hiddenframe_affiliate" id="id_hiddenframe_affiliate" src="" width="0" height="0" style="width:0px; height:0px; border: 0px"></IFRAME>
-			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bitrix/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=600,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
+			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bnpt/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=600,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
 			<span id="div_affiliate_name"></span>
 			<SCRIPT LANGUAGE=javascript>
 			<!--
@@ -284,7 +284,7 @@ $tabControl->BeginNextTab();
 					if (affiliateID != '' && !isNaN(parseInt(affiliateID, 10)))
 					{
 						document.getElementById('div_affiliate_name').innerHTML = '<i><?= GetMessage("SAE_WAIT") ?></i>';
-						window.frames["hiddenframe_affiliate"].location.replace('/bitrix/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
+						window.frames["hiddenframe_affiliate"].location.replace('/bnpt/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
 					}
 					else
 						document.getElementById('div_affiliate_name').innerHTML = '';
@@ -373,7 +373,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => ($saleModulePermissions < "W"),
-		"back_url" => "/bitrix/admin/sale_affiliate_plan.php?lang=".LANG.GetFilterParams("filter_")
+		"back_url" => "/bnpt/admin/sale_affiliate_plan.php?lang=".LANG.GetFilterParams("filter_")
 	)
 );
 ?>

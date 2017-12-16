@@ -11,7 +11,7 @@
 
 	BX.Sale.Cashbox = {
 
-		ajaxUrl: "/bitrix/admin/sale_cashbox_ajax.php",
+		ajaxUrl: "/bnpt/admin/sale_cashbox_ajax.php",
 
 		init: function ()
 		{
@@ -396,7 +396,7 @@
 			{
 				method: 'post',
 				dataType: 'json',
-				url: '/bitrix/admin/sale_order_ajax.php',
+				url: '/bnpt/admin/sale_order_ajax.php',
 				data: data,
 				onsuccess: function(result)
 				{
@@ -448,7 +448,7 @@
 									{
 										method: 'post',
 										dataType: 'json',
-										url: '/bitrix/admin/sale_order_ajax.php',
+										url: '/bnpt/admin/sale_order_ajax.php',
 										data: sendData,
 										onsuccess: function (result)
 										{
@@ -521,7 +521,7 @@
 									{
 										method: 'post',
 										dataType: 'json',
-										url: '/bitrix/admin/sale_order_ajax.php',
+										url: '/bnpt/admin/sale_order_ajax.php',
 										data: sendData,
 										onsuccess: function (result)
 										{

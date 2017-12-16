@@ -261,7 +261,7 @@
 
 			(new BX.CDialog({
 				'title': BX.message("SALE_EBAY_SEC_JS_CREATE_NEW_CATEGORY_PROP"),
-				'content_url': '/bitrix/admin/iblock_edit_property.php?lang='+BX.message('LANGUAGE_ID')+'&propedit='+ID+'&bxpublic=Y&receiver=obIBProps&return_url=section_edit',
+				'content_url': '/bnpt/admin/iblock_edit_property.php?lang='+BX.message('LANGUAGE_ID')+'&propedit='+ID+'&bxpublic=Y&receiver=obIBProps&return_url=section_edit',
 				'content_post': arResult,
 				'draggable': true,
 				'resizable': true,

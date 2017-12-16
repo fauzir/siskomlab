@@ -308,7 +308,7 @@ $aMenu = array(
 	array(
 		"TEXT" => Loc::getMessage("SSEN_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/sale_status.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_status.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	)
 );
 
@@ -318,12 +318,12 @@ if ($statusId && !$readOnly)
 	$aMenu[] = array(
 		"TEXT" => Loc::getMessage("SSEN_NEW_STATUS"),
 		"ICON" => "btn_new",
-		"LINK" => "/bitrix/admin/sale_status_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_status_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	);
 	$aMenu[] = array(
 		"TEXT" => Loc::getMessage("SSEN_DELETE_STATUS"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessageJS("SSEN_DELETE_STATUS_CONFIRM")."')) window.location='/bitrix/admin/sale_status.php?action=delete&ID[]=".urlencode($statusId)."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessageJS("SSEN_DELETE_STATUS_CONFIRM")."')) window.location='/bnpt/admin/sale_status.php?action=delete&ID[]=".urlencode($statusId)."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 	);
 }
 $context = new CAdminContextMenu($aMenu);
@@ -396,7 +396,7 @@ if ($errors)
 			&nbsp;
 			<a id="status-template-link"
 				<?if ($statusId):?>
-					href="/bitrix/admin/message_admin.php?lang=<?=LANGUAGE_ID?>&find_event_type=SALE_STATUS_CHANGED_<?=$statusId?>" target="_blank"
+					href="/bnpt/admin/message_admin.php?lang=<?=LANGUAGE_ID?>&find_event_type=SALE_STATUS_CHANGED_<?=$statusId?>" target="_blank"
 				<?else:?>
 					href="#" onclick="(new BX.CDialog({
 						title: '<?=Loc::getMessage('SSEN_NOTIFY_W_TITLE')?>',
@@ -505,7 +505,7 @@ if ($errors)
 			</a>
 		</td>
 		<td>
-			<a href="/bitrix/admin/task_admin.php?lang=<?=LANGUAGE_ID?>&set_filter=Y&find_module_id=sale&find_binding=status" target="_blank">
+			<a href="/bnpt/admin/task_admin.php?lang=<?=LANGUAGE_ID?>&set_filter=Y&find_module_id=sale&find_binding=status" target="_blank">
 				<?=Loc::getMessage('SSEN_TASKS_LINK')?>
 			</a>
 		</td>
@@ -515,7 +515,7 @@ if ($errors)
 	$tabControl->EndTab();
 	$tabControl->Buttons(array(
 		"disabled" => $readOnly,
-		"back_url" => "/bitrix/admin/sale_status.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"back_url" => "/bnpt/admin/sale_status.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	));
 	$tabControl->End();
 	?>

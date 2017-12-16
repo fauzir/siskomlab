@@ -262,7 +262,7 @@ if(!BXHotKeys)
 			}
 
 			var request = new JCHttpRequest;
-			var options_url = '/bitrix/admin/hot_keys_act.php?hkaction=delete_all';
+			var options_url = '/bnpt/admin/hot_keys_act.php?hkaction=delete_all';
 			var sParam = "&sessid="+phpVars.bitrix_sessid;
 			request.Action = function (result)
 			{
@@ -294,7 +294,7 @@ if(!BXHotKeys)
 		this.SetDefault = function()
 		{
 			var request = new JCHttpRequest;
-			var options_url = '/bitrix/admin/hot_keys_act.php?hkaction=set_default';
+			var options_url = '/bnpt/admin/hot_keys_act.php?hkaction=set_default';
 			var sParam = "&sessid="+phpVars.bitrix_sessid;
 
 			request.Action = function (strDefHK)
@@ -420,7 +420,7 @@ if(!BXHotKeys)
 		this.AddBase = function(code_id,keysString)
 		{
 			var request = new JCHttpRequest;
-			var options_url = '/bitrix/admin/hot_keys_act.php?hkaction=add';
+			var options_url = '/bnpt/admin/hot_keys_act.php?hkaction=add';
 			var sParam = "&KEYS_STRING="+encodeURIComponent(keysString)+"&CODE_ID="+code_id+"&USER_ID="+_this.uid+"&sessid="+phpVars.bitrix_sessid;
 			request.Action = function (hk_id)
 			{
@@ -439,7 +439,7 @@ if(!BXHotKeys)
 
 		this.Export = function()
 		{
-			window.open("/bitrix/admin/hot_keys_act.php?hkaction=export&sessid="+phpVars.bitrix_sessid);
+			window.open("/bnpt/admin/hot_keys_act.php?hkaction=export&sessid="+phpVars.bitrix_sessid);
 		};
 
 		this.OnFileInputChange = function(ob)
@@ -456,7 +456,7 @@ if(!BXHotKeys)
 
 		this.Import = function()
 		{
-			var formText = 	'<form action="/bitrix/admin/hot_keys_act.php?hkaction=import" method="post" enctype="multipart/form-data" target="upload_iframe" id="hk_import_form" name="hk_import_form">'+
+			var formText = 	'<form action="/bnpt/admin/hot_keys_act.php?hkaction=import" method="post" enctype="multipart/form-data" target="upload_iframe" id="hk_import_form" name="hk_import_form">'+
 							'<input type="hidden" name="sessid" value="'+BX.bitrix_sessid()+'">'+
 							'<span class="adm-input-file"><span>'+this.MesChooseFile+'</span><input type="file" name="bx_hk_filename" id="bx_hk_filename" class="adm-designed-file" onchange="BXHotKeys.OnFileInputChange(this);"></span>'+
 							'</form>'+
@@ -509,7 +509,7 @@ if(!BXHotKeys)
 		this.UpdateBase = function(hk_id, keysString)
 		{
 			var request = new JCHttpRequest;
-			var options_url = '/bitrix/admin/hot_keys_act.php?hkaction=update';
+			var options_url = '/bnpt/admin/hot_keys_act.php?hkaction=update';
 			var sParam = "&KEYS_STRING="+encodeURIComponent(keysString)+"&ID="+hk_id+"&sessid="+phpVars.bitrix_sessid;
 			request.Post(options_url, sParam);
 		};
@@ -519,7 +519,7 @@ if(!BXHotKeys)
 			if(hk_id)
 			{
 				var request = new JCHttpRequest;
-				var options_url = '/bitrix/admin/hot_keys_act.php?hkaction=delete';
+				var options_url = '/bnpt/admin/hot_keys_act.php?hkaction=delete';
 				var sParam = "&ID="+hk_id+"&sessid="+phpVars.bitrix_sessid;
 				request.Post(options_url, sParam);
 				_this.UpdateKS(code_id,"");

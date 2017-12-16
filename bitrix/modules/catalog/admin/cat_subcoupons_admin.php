@@ -36,7 +36,7 @@ if (0 >= $intDiscountID)
 	}
 }
 
-$strSubElementAjaxPath = '/bitrix/admin/cat_subcoupons_admin.php?lang='.LANGUAGE_ID.'&find_discount_id='.$intDiscountID.'&TMP_ID='.urlencode($strSubTMP_ID);
+$strSubElementAjaxPath = '/bnpt/admin/cat_subcoupons_admin.php?lang='.LANGUAGE_ID.'&find_discount_id='.$intDiscountID.'&TMP_ID='.urlencode($strSubTMP_ID);
 require($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/catalog/admin/templates/discount_coupon_list.php');
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_popup_admin.php");

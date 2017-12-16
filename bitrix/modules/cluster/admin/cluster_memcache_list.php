@@ -267,7 +267,7 @@ $lAdmin->AddFooter(
 $aContext = array(
 	array(
 		"TEXT" => GetMessage("CLU_MEMCACHE_LIST_ADD"),
-		"LINK" => "/bitrix/admin/cluster_memcache_edit.php?lang=".LANGUAGE_ID.'&group_id='.$group_id,
+		"LINK" => "/bnpt/admin/cluster_memcache_edit.php?lang=".LANGUAGE_ID.'&group_id='.$group_id,
 		"TITLE" => GetMessage("CLU_MEMCACHE_LIST_ADD_TITLE"),
 		"ICON" => "btn_new",
 	),

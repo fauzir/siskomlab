@@ -86,7 +86,7 @@ BXBlockEditorPreview.prototype.show = function(params)
 	var _this = this;
 	this.previewContext.style.display = 'block';
 	BX.ajax({
-		'url': '/bitrix/admin/fileman_block_editor.php?action=set',
+		'url': '/bnpt/admin/fileman_block_editor.php?action=set',
 		'method': 'POST',
 		'data': {'sessid': BX.bitrix_sessid(), 'src': params.content},
 		'onsuccess': function()
@@ -405,7 +405,7 @@ BXBlockEditorDialogFileInput.prototype =
 		}
 
 		BX.ajax({
-			'url': '/bitrix/admin/fileman_block_editor.php?action=save_file',
+			'url': '/bnpt/admin/fileman_block_editor.php?action=save_file',
 			'method': 'POST',
 			'data': postData,
 			'dataType': 'json',

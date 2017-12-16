@@ -399,7 +399,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 && check_bitrix_se
 				}
 
 				LocalRedirect(
-					"/bitrix/admin/learn_unilesson_admin.php?lang=".LANG.
+					"/bnpt/admin/learn_unilesson_admin.php?lang=".LANG.
 					"&PARENT_LESSON_ID=".intval(isset($g_learn_parentLessonId) ? $g_learn_parentLessonId : 0).
 					$uriParentLessonPath.
 					GetFilterParams("filter_", false, array())
@@ -407,7 +407,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 && check_bitrix_se
 			}
 		}
 
-		LocalRedirect("/bitrix/admin/learn_unilesson_edit.php?lang=" . LANG 
+		LocalRedirect("/bnpt/admin/learn_unilesson_edit.php?lang=" . LANG 
 			. "&LESSON_ID=" . ($LESSON_ID + 0)
 			. "&LESSON_PATH=". urlencode($currentLessonPath)
 			. "&lessonTabControl_active_tab=" . urlencode($_REQUEST['lessonTabControl_active_tab'])
@@ -1630,7 +1630,7 @@ $tabControl->EndCustomField("UFS");
 $tabControl->Buttons(
 	array(
 		'disabled' => $isBtnsDisabled,
-		"back_url" => "/bitrix/admin/learn_unilesson_admin.php?lang=". LANG
+		"back_url" => "/bnpt/admin/learn_unilesson_admin.php?lang=". LANG
 			. $uriParentLessonPath
 			. GetFilterParams("filter_", false)
 		)

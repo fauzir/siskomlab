@@ -41,7 +41,7 @@ if (isset($_GET['s']) && strlen($_GET['s']) > 0)
 $files_mod_str = 'bx_';
 $l = count($arr);
 for($i = 0; $i < $l; $i++)
-	@$files_mod_str .= filemtime($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/htmleditor2/'.$arr[$i]);
+	@$files_mod_str .= filemtime($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/htmleditor2/'.$arr[$i]);
 
 $files_mod_hash = md5($files_mod_str);
 
@@ -55,7 +55,7 @@ if (!isset($_SERVER['HTTP_IF_NONE_MATCH']) || $_SERVER['HTTP_IF_NONE_MATCH'] != 
 	for($i = 0; $i < count($arr); $i++)
 	{
 		$script_filename = $arr[$i];
-		$script_content = GetFileContent($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/htmleditor2/'.$script_filename);
+		$script_content = GetFileContent($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/htmleditor2/'.$script_filename);
 		$script_content = preg_replace("/\t/", '', $script_content);
 		//$script_content = preg_replace("/(.*)\/\/.*/", "\$1", $script_content);
 		$script_content = preg_replace("/\r\n/", "\n", $script_content);

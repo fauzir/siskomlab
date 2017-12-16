@@ -12,7 +12,7 @@ if(!$bAdmin && !$bDemo)
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
 $LIST_URL = $APPLICATION->GetCurPage();
-$EDIT_URL = '/bitrix/admin/ticket_coupon_edit.php';
+$EDIT_URL = '/bnpt/admin/ticket_coupon_edit.php';
 
 $message = false;
 

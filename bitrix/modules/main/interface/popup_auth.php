@@ -136,7 +136,7 @@ window.BXAuthForm = function()
 		{
 			var r = new JCHttpRequest();
 			r.Action = function(){jsUtils.onCustomEvent('onEditorLostSession');};
-			r.Post('/bitrix/admin/fileman_admin.php?login=yes', window.GetParameters('form_auth'));
+			r.Post('/bnpt/admin/fileman_admin.php?login=yes', window.GetParameters('form_auth'));
 			return false;
 		};
 	}

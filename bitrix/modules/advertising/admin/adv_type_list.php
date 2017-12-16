@@ -22,13 +22,13 @@ if(!$isAdmin && !$isDemo && !$isManager && !$isAdvertiser) $APPLICATION->AuthFor
 IncludeModuleLangFile(__FILE__);
 
 /***************************************************************************
-						Обработка GET | POST
+						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 $sTableID = "tbl_adv_type_list";
 
-// инициализация сортировки
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $oSort = new CAdminSorting($sTableID, "s_sort", "asc");
-// инициализация списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin = new CAdminList($sTableID, $oSort);
 
 $FilterArr = Array(
@@ -81,7 +81,7 @@ if($lAdmin->EditAction() && $isAdmin)
 	}
 }
 
-// обработка действий групповых и одиночных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if(($arID = $lAdmin->GroupAction()) && $isAdmin)
 {
 	if($_REQUEST['action_target']=='selected')
@@ -152,7 +152,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 		$row->AddViewField("NAME", $f_NAME);
 	}
 	$row->AddViewField("DESCRIPTION", TruncateText($f_DESCRIPTION, 180));
-	$row->AddViewField("BANNER_COUNT", '<a href="/bitrix/admin/adv_banner_list.php?find_type_sid[]='.$f_SID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
+	$row->AddViewField("BANNER_COUNT", '<a href="/bnpt/admin/adv_banner_list.php?find_type_sid[]='.$f_SID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
 
 	$arActions = Array();
 	if ($isAdmin || $isDemo)
@@ -169,7 +169,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	}
 	$row->AddActions($arActions);
 endwhile;
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array("title"=>GetMessage("MAIN_ADMIN_LIST_SELECTED"), "value"=>$rsData->SelectedRowsCount()),
@@ -177,7 +177,7 @@ $lAdmin->AddFooter(
 	)
 );
 
-// показ формы с кнопками добавления, ...
+// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, ...
 if ($isAdmin || $isDemo)
 	$lAdmin->AddGroupActionTable(Array(
 		"delete"=>GetMessage("MAIN_ADMIN_LIST_DELETE"),
@@ -198,12 +198,12 @@ if($isAdmin || $isDemo)
 	$lAdmin->AddAdminContextMenu($aContext);
 }
 
-// проверка на вывод только списка (в случае списка, скрипт дальше выполняться не будет)
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 $lAdmin->CheckListMode();
 
 $APPLICATION->SetTitle(GetMessage("AD_PAGE_TITLE"));
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 ?>

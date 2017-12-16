@@ -185,7 +185,7 @@ function SelFile(name)
 	</tr>
 <?
 $oFilter->Buttons(array(
-	"url" => "/bitrix/admin/clouds_file_search.php?lang=".LANGUAGE_ID."&n=".urlencode($n),
+	"url" => "/bnpt/admin/clouds_file_search.php?lang=".LANGUAGE_ID."&n=".urlencode($n),
 	"table_id" => $sTableID,
 ));
 $oFilter->End();

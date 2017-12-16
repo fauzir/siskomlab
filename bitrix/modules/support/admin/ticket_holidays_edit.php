@@ -199,12 +199,12 @@ class CSupportPage
 		if($presSave || $presApply)
 		{
 			self::$id = intval(CSupportHolidays::Set(self::$postHolidaysFields, self::$postHolidaysSlaFields));
-			// Если сохранить не удалось то self::$id будет равен 0 и read() не сработает данные возьмутся из POST без изменений
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ self::$id пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 0 пїЅ read() пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ POST пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			if(self::$id > 0)
 			{
 				if(!$presApply)
 				{
-					LocalRedirect("/bitrix/admin/" . self::LIST_URL . "?lang=". LANG . GetFilterParams("filter_", false));
+					LocalRedirect("/bnpt/admin/" . self::LIST_URL . "?lang=". LANG . GetFilterParams("filter_", false));
 				}
 				return true;
 			}

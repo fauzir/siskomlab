@@ -30,7 +30,7 @@ class CControllerServerRequestTo extends __CControllerPacketRequest
 		}
 	}
 
-	public function Send($url = "", $page = "/bitrix/admin/main_controller.php")
+	public function Send($url = "", $page = "/bnpt/admin/main_controller.php")
 	{
 		$this->Sign();
 		$result = parent::Send($this->url, $page);

@@ -118,7 +118,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions=="W" 
 		else
 		{
 			if (strlen($apply)<=0)
-				LocalRedirect("/bitrix/admin/sale_ccards_admin.php?lang=".LANG.GetFilterParams("filter_", false));
+				LocalRedirect("/bnpt/admin/sale_ccards_admin.php?lang=".LANG.GetFilterParams("filter_", false));
 		}
 	}
 	else
@@ -163,7 +163,7 @@ $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SCEN_2FLIST"),
 				"TITLE" => GetMessage("SCEN_2FLIST_TITLE"),
-				"LINK" => "/bitrix/admin/sale_ccards_admin.php?lang=".LANG.GetFilterParams("filter_"),
+				"LINK" => "/bnpt/admin/sale_ccards_admin.php?lang=".LANG.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 	);
@@ -175,7 +175,7 @@ if ($ID > 0 && $saleModulePermissions >= "U")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SCEN_NEW_CCARD"),
 			"TITLE" => GetMessage("SCEN_NEW_CCARD_TITLE"),
-			"LINK" => "/bitrix/admin/sale_ccards_edit.php?lang=".LANG.GetFilterParams("filter_"),
+			"LINK" => "/bnpt/admin/sale_ccards_edit.php?lang=".LANG.GetFilterParams("filter_"),
 			"ICON" => "btn_new"
 		);
 
@@ -183,7 +183,7 @@ if ($ID > 0 && $saleModulePermissions >= "U")
 	{
 		$aMenu[] = array(
 				"TEXT" => GetMessage("SCEN_DELETE_CCARD"), 
-				"LINK" => "javascript:if(confirm('".GetMessage("SCEN_DELETE_CCARD_CONFIRM")."')) window.location='/bitrix/admin/sale_ccards_admin.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+				"LINK" => "javascript:if(confirm('".GetMessage("SCEN_DELETE_CCARD_CONFIRM")."')) window.location='/bnpt/admin/sale_ccards_admin.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 				"WARNING" => "Y",
 				"ICON" => "btn_delete"
 			);
@@ -234,7 +234,7 @@ $tabControl->BeginNextTab();
 		<td width="60%"><?
 			$user_name = "";
 			if ($ID>0)
-				$user_name = "[<a title=\"".GetMessage("SCE_USER_PROFILE")."\" href=\"/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".$str_USER_LOGIN.") ".$str_USER_NAME." ".$str_USER_LAST_NAME;
+				$user_name = "[<a title=\"".GetMessage("SCE_USER_PROFILE")."\" href=\"/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".$str_USER_LOGIN.") ".$str_USER_NAME." ".$str_USER_LAST_NAME;
 
 			echo FindUserID("USER_ID", $str_USER_ID, $user_name, "fccards_edit");
 			?></td>
@@ -421,7 +421,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bnpt/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

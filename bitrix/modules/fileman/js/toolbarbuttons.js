@@ -57,7 +57,7 @@ arButtons['pasteword']	=	['BXButton', {'src': '/bitrix/images/fileman/htmledit2/
 arButtons['new']	=	['BXButton', {'src': '/bitrix/images/fileman/htmledit2/new.gif', 'codeEditorMode': true, 'name': BX_MESS.TBNewPage,
 							'handler': function ()
 							{
-								if(this.pMainObj.bNotSaved && !confirm("Документ был изменен. При создании нового документа, все изменения будут утеряны. Продолжить?"))
+								if(this.pMainObj.bNotSaved && !confirm("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ?"))
 									return;
 
 							}
@@ -516,7 +516,7 @@ arCMButtons["TD"] = [
 var arToolbars = Array();
 /*
 arToolbars['manage'] = [
-	'Управление и настройки',
+	'пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
 		[ arButtons['exit'],
 		'separator', arButtons['new'], arButtons['save'], arButtons['saveas'],
 		'separator', arButtons['pageprops'],
@@ -581,7 +581,7 @@ arToolbars['template'] = [
 
 /*
 arToolbars['table'] = [
-	'Таблица',
+	'пїЅпїЅпїЅпїЅпїЅпїЅпїЅ',
 	['insrow', 'delrow', 'inscol', 'delcol', 'inscell', 'delcell', 'mergecell', 'splitcell']
 	];
 */
@@ -1213,7 +1213,7 @@ var BXShowComponentPanel = function (bNew, pTaskbar, pElement)
 	var row, cell, arPropertyParams, bSel, arValues, res, pSelect, arUsedValues, bFound, key, oOption, val, xCell, opt_val, bBr, i, k, alt;
 
 	//////////
-	var sURL = '/bitrix/admin/fileman_get_xml.php?op=componentconfig&lang='+BXLang+'&site='+BXSite+'&templateID='+templateID+'&path='+arSettings["SCRIPT_NAME"];
+	var sURL = '/bnpt/admin/fileman_get_xml.php?op=componentconfig&lang='+BXLang+'&site='+BXSite+'&templateID='+templateID+'&path='+arSettings["SCRIPT_NAME"];
 	var arParams = pTaskbar.pMainObj.GetData(sURL, arSettings["PARAMS"]);
 	if(typeof(arParams)!='object')
 		arParams = {};

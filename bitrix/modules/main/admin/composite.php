@@ -226,7 +226,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" &&
 
 	CHTMLPagesCache::setOptions($compositeOptions);
 	bx_accelerator_reset();
-	LocalRedirect("/bitrix/admin/composite.php?lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
+	LocalRedirect("/bnpt/admin/composite.php?lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
 }
 
 if (
@@ -942,7 +942,7 @@ if (!isset($compositeOptions["MEMCACHED_PORT"]))
 <tr id="composite_cluster_hint_row" <?if ($compositeOptions["STORAGE"] !== "memcached_cluster") echo 'style="display:none"'?>>
 	<td class="adm-required-field"></td>
 	<td><?=GetMessage("MAIN_COMPOSITE_CLUSTER_HINT", array(
-			"#A_START#" => "<a href=\"/bitrix/admin/cluster_memcache_list.php?lang=".LANGUAGE_ID."&group_id=".(defined("BX_CLUSTER_GROUP") ? BX_CLUSTER_GROUP : 1)."\">",
+			"#A_START#" => "<a href=\"/bnpt/admin/cluster_memcache_list.php?lang=".LANGUAGE_ID."&group_id=".(defined("BX_CLUSTER_GROUP") ? BX_CLUSTER_GROUP : 1)."\">",
 			"#A_END#" => "</a>"
 		));?></td>
 </tr>
@@ -971,7 +971,7 @@ if(CHTMLPagesCache::isOn())
 <tr>
 	<td></td>
 	<td>
-		<a href="/bitrix/admin/cache.php?lang=<?=LANGUAGE_ID?>&cachetype=html&tabControl_active_tab=fedit2"><?=GetMessage("MAIN_COMPOSITE_CLEAR_CACHE")?></a>
+		<a href="/bnpt/admin/cache.php?lang=<?=LANGUAGE_ID?>&cachetype=html&tabControl_active_tab=fedit2"><?=GetMessage("MAIN_COMPOSITE_CLEAR_CACHE")?></a>
 	</td>
 </tr>
 <?

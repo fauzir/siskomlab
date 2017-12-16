@@ -54,7 +54,7 @@ if((strlen($new) <= 0 || strlen($filename)<=0) && !$io->FileExists($abs_path))
 	}
 }
 
-if(strlen($new) > 0 && strlen($filename) > 0 && ($io->FileExists($abs_path) || $io->DirectoryExists($abs_path)))		// если мы хотим создать новый файл, но уже такой есть - ругаемся
+if(strlen($new) > 0 && strlen($filename) > 0 && ($io->FileExists($abs_path) || $io->DirectoryExists($abs_path)))		// пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 {
 	$strWarning = GetMessage("FILEMAN_FILEEDIT_FILE_EXISTS")." ";
 	$bEdit = false;
@@ -219,7 +219,7 @@ $obJSPopup->ShowTitlebar(($bEdit ? GetMessage("FILEMAN_FILEEDIT_PAGE_TITLE") : G
 
 $obJSPopup->StartDescription();
 
-echo '<a href="/bitrix/admin/fileman_file_edit.php?path='.urlencode($path).'&amp;full_src=Y&amp;site='.$site.'&amp;lang='.LANGUAGE_ID.'&amp;back_url='.urlencode($_GET["back_url"]).(!$bEdit? '&amp;new=Y&amp;filename='.urlencode($filename).'&amp;template='.urlencode($template):'').($_REQUEST["templateID"]<>''? '&amp;templateID='.urlencode($_REQUEST["templateID"]):'').'" title="'.htmlspecialcharsbx($path).'">'.GetMessage("public_file_edit_edit_cp").'</a>';
+echo '<a href="/bnpt/admin/fileman_file_edit.php?path='.urlencode($path).'&amp;full_src=Y&amp;site='.$site.'&amp;lang='.LANGUAGE_ID.'&amp;back_url='.urlencode($_GET["back_url"]).(!$bEdit? '&amp;new=Y&amp;filename='.urlencode($filename).'&amp;template='.urlencode($template):'').($_REQUEST["templateID"]<>''? '&amp;templateID='.urlencode($_REQUEST["templateID"]):'').'" title="'.htmlspecialcharsbx($path).'">'.GetMessage("public_file_edit_edit_cp").'</a>';
 
 $obJSPopup->StartContent();
 if (CAutoSave::Allowed())

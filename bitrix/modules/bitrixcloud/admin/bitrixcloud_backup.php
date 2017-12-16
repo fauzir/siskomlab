@@ -46,7 +46,7 @@ try
 		$aContext = array(
 			array(
 				"TEXT" => GetMessage("BCL_BACKUP_DO_BACKUP"),
-				"LINK" => "/bitrix/admin/dump.php?lang=".LANGUAGE_ID."&from=bitrixcloud",
+				"LINK" => "/bnpt/admin/dump.php?lang=".LANGUAGE_ID."&from=bitrixcloud",
 				"TITLE" => "",
 				"ICON" => "btn_new",
 			),

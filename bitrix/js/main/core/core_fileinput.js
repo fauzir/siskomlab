@@ -10,7 +10,7 @@ BX["UI"]["FileInput"] = function(id, uploadParams, elementParams, values, templa
 	this.inited = false;
 	this.uploadParams = (uploadParams || {});
 	this.uploadParams["urlUpload"] = '/bitrix/tools/upload.php?lang=' + BX.message("LANGUAGE_ID");
-	this.uploadParams["urlCloud"] = '/bitrix/admin/clouds_file_search.php?lang=' + BX.message("LANGUAGE_ID") + '&n=';
+	this.uploadParams["urlCloud"] = '/bnpt/admin/clouds_file_search.php?lang=' + BX.message("LANGUAGE_ID") + '&n=';
 	this.uploadParams["maxCount"] = parseInt(this.uploadParams["maxCount"]) || 0;
 	this.onUploadDoneCounter = parseInt(this.uploadParams["maxIndex"]);
 	if (this.onUploadDoneCounter > 0)
@@ -452,7 +452,7 @@ BX["UI"].FileInput.prototype = {
 			this.agent.onAttach([file], [file]);
 		}
 	},
-	clickCloudPointPath : '/bitrix/admin/clouds_file_search.php?lang=' + BX.message("LANGUAGE_ID") + '&n=undefined',
+	clickCloudPointPath : '/bnpt/admin/clouds_file_search.php?lang=' + BX.message("LANGUAGE_ID") + '&n=undefined',
 	clickCloudPointBound : false,
 	clickCloudPoint : function()
 	{

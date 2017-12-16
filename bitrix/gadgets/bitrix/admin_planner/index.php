@@ -85,7 +85,7 @@ if($clientId == '' || $clientSecret == '' || $portalURI == '')
 	}
 
 	BX.ready(function(){
-		url = '/bitrix/gadgets/bitrix/admin_planner/getdata.php';
+		url = '/bitrix/gadgets/bnpt/admin_planner/getdata.php';
 		params = 'rnd=<?=$rnd?>&lang=<?=LANGUAGE_ID?>&sessid='+BX.bitrix_sessid();
 
 		BX.ajax.post(url, params, function(result)

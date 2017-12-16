@@ -57,7 +57,7 @@ if (!CModule::IncludeModule('extranet') || !CExtranet::IsExtranetSite())
 
 		$INTRANET_TOOLBAR->AddButton(array(
 				'ONCLICK' => $APPLICATION->GetPopupLink(array(
-				'URL' => "/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=main".$current_dep,
+				'URL' => "/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=main".$current_dep,
 				'PARAMS' => array(
 					'height' => 500,
 					'width' => 900,
@@ -72,7 +72,7 @@ if (!CModule::IncludeModule('extranet') || !CExtranet::IsExtranetSite())
 		if ($USER->CanDoOperation('edit_all_users'))
 		{
 			$INTRANET_TOOLBAR->AddButton(array(
-				'HREF' => "/bitrix/admin/user_import.php?lang=".LANGUAGE_ID,
+				'HREF' => "/bnpt/admin/user_import.php?lang=".LANGUAGE_ID,
 				"TEXT" => GetMessage('INTR_ABSC_TPL_IMPORT'),
 				'ICON' => 'import-users',
 				"SORT" => 1100,
@@ -80,7 +80,7 @@ if (!CModule::IncludeModule('extranet') || !CExtranet::IsExtranetSite())
 		}
 
 		$INTRANET_TOOLBAR->AddButton(array(
-			'HREF' => "/bitrix/admin/user_admin.php?lang=".LANGUAGE_ID,
+			'HREF' => "/bnpt/admin/user_admin.php?lang=".LANGUAGE_ID,
 			"TEXT" => GetMessage('INTR_ABSC_TPL_EDIT_ENTRIES'),
 			'ICON' => 'settings',
 			"SORT" => 1100,

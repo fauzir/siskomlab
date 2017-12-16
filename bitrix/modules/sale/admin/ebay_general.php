@@ -418,7 +418,7 @@ elseif($ebay->isActive())
 			?><tr>
 			<td>
 				<a
-					href="/bitrix/admin/cat_section_edit.php?IBLOCK_ID=<?=$map["IBLOCK_ID"]?>&type=catalog&ID=<?=$map["VALUE_INTERNAL"]?>&lang=<?=LANGUAGE_ID?>&find_section_section=0&form_section_2_active_tab=SALE_TRADING_PLATFORM_edit_trading_platforms"
+					href="/bnpt/admin/cat_section_edit.php?IBLOCK_ID=<?=$map["IBLOCK_ID"]?>&type=catalog&ID=<?=$map["VALUE_INTERNAL"]?>&lang=<?=LANGUAGE_ID?>&find_section_section=0&form_section_2_active_tab=SALE_TRADING_PLATFORM_edit_trading_platforms"
 					title="<?=Loc::getMessage("SALE_EBAY_CAT_SETT_EDIT")?>"
 				>
 					<?=$map["CATEGORY_BITRIX_NAME"]?></a> [<?=$map["VALUE_INTERNAL"]?>]

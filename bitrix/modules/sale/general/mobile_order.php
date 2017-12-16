@@ -36,7 +36,7 @@ class CSaleMobileOrderUtils
 	function getMobileReports()
 	{
 		define('COLUMNS_COUNT_FOR_SIMPLE_TEMPLATE', 3);
-		define('PATH_TO_MOBILE_REPORTS', '/bitrix/admin/mobile/sale_reports_view.php');
+		define('PATH_TO_MOBILE_REPORTS', '/bnpt/admin/mobile/sale_reports_view.php');
 
 		// Using report module
 		if (!CModule::IncludeModule('report'))
@@ -93,19 +93,19 @@ class CSaleMobileOrderUtils
 		$items = array(
 			array(
 				"text" => GetMessage("SMOB_ALL_ORDERS"),
-				"data-url" => "/bitrix/admin/mobile/sale_orders_list.php?lang=".LANGUAGE_ID,
+				"data-url" => "/bnpt/admin/mobile/sale_orders_list.php?lang=".LANGUAGE_ID,
 				"data-pageid" => "orders_list",
 				"default" => true,
 				"push-param" => "sl"
 			),
 			array(
 				"text" => GetMessage("SMOB_WAITING_FOR_PAY"),
-				"data-url" => "/bitrix/admin/mobile/sale_orders_list.php?lang=".LANGUAGE_ID."&action=get_filtered&filter_name=waiting_for_pay",
+				"data-url" => "/bnpt/admin/mobile/sale_orders_list.php?lang=".LANGUAGE_ID."&action=get_filtered&filter_name=waiting_for_pay",
 				"data-pageid" => "orders_waiting_for_pay",
 			),
 			array(
 				"text" => GetMessage("SMOB_WAITING_FOR_DELIVERY"),
-				"data-url" => "/bitrix/admin/mobile/sale_orders_list.php?lang=".LANGUAGE_ID."&action=get_filtered&filter_name=waiting_for_delivery",
+				"data-url" => "/bnpt/admin/mobile/sale_orders_list.php?lang=".LANGUAGE_ID."&action=get_filtered&filter_name=waiting_for_delivery",
 				"data-pageid" => "orders_waiting_for_delivery",
 			)
 		);
@@ -114,7 +114,7 @@ class CSaleMobileOrderUtils
 		{
 			$items[] = array(
 				"text" => GetMessage("SMOB_PUSH_SETTINGS"),
-				"data-url" => "/bitrix/admin/mobile/sale_orders_push.php?lang=".LANGUAGE_ID,
+				"data-url" => "/bnpt/admin/mobile/sale_orders_push.php?lang=".LANGUAGE_ID,
 				"data-pageid" => "orders_push"
 			);
 		}

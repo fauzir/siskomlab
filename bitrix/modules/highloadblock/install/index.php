@@ -129,7 +129,7 @@ class highloadblock extends CModule
 
 	function InstallFiles($arParams = array())
 	{
-		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/themes/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/", true, true);
 		CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/components/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 		return true;
@@ -137,7 +137,7 @@ class highloadblock extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/highloadblock/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");
 		DeleteDirFilesEx("/bitrix/themes/.default/icons/highloadblock/");
 		return true;

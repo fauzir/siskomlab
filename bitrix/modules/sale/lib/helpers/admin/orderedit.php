@@ -1831,7 +1831,7 @@ class OrderEdit
 		{
 			$strNameFormat = \CSite::GetNameFormat(true);
 			$strLockUser = \CUser::FormatName($strNameFormat, $arOneUser);
-			$strLockUserInfo = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$intLockUserID.'">'.$strLockUser.'</a>';
+			$strLockUserInfo = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$intLockUserID.'">'.$strLockUser.'</a>';
 		}
 
 		return Loc::getMessage(

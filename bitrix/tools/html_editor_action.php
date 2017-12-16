@@ -1,3 +1,3 @@
 <?
-require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/fileman_html_editor_action.php");
+require_once($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/fileman_html_editor_action.php");
 ?>

@@ -419,7 +419,7 @@ class CBPAllTaskService
 				$bpAIParams = array(
 					"TITLE" => GetMessage("BPTS_AI_BIZ_PROC"),
 					"HTML" => '<span class="adm-informer-strong-text">'.GetMessage("BPTS_AI_EX_TASKS").'</span><br>'.GetMessage("BPTS_AI_TASKS_NUM").' '.$tasksCount,
-					"FOOTER" => '<a href="/bitrix/admin/bizproc_task_list.php?lang='.LANGUAGE_ID.'">'.GetMessage("BPTS_AI_TASKS_PERF").'</a>',
+					"FOOTER" => '<a href="/bnpt/admin/bizproc_task_list.php?lang='.LANGUAGE_ID.'">'.GetMessage("BPTS_AI_TASKS_PERF").'</a>',
 					"COLOR" => "red",
 					"ALERT" => true
 				);

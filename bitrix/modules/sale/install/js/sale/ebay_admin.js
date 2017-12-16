@@ -8,7 +8,7 @@
 
 	BX.Sale.EbayAdmin = {
 
-		ajaxUrl: '/bitrix/admin/sale_ebay_ajax.php',
+		ajaxUrl: '/bnpt/admin/sale_ebay_ajax.php',
 
 		startFeed: function(feedType, siteId, startPos)
 		{

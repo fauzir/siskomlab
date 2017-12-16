@@ -471,7 +471,7 @@ $aMenu = array();
 
 $aMenu[] = array(
 	"TEXT"	=> Loc::getMessage("SITEMAP_LIST"),
-	"LINK"	=> "/bitrix/admin/seo_sitemap.php?lang=".LANGUAGE_ID,
+	"LINK"	=> "/bnpt/admin/seo_sitemap.php?lang=".LANGUAGE_ID,
 	"ICON"	=> "btn_list",
 	"TITLE"	=> Loc::getMessage("SITEMAP_LIST_TITLE"),
 );
@@ -479,7 +479,7 @@ if ($ID > 0)
 {
 	$aMenu[] = array(
 		"TEXT"	=> Loc::getMessage("SITEMAP_DELETE"),
-		"LINK"	=> "javascript:if(confirm('".Loc::getMessage("SITEMAP_DELETE_CONFIRM")."')) window.location='/bitrix/admin/seo_sitemap_edit.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+		"LINK"	=> "javascript:if(confirm('".Loc::getMessage("SITEMAP_DELETE_CONFIRM")."')) window.location='/bnpt/admin/seo_sitemap_edit.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 		"ICON"	=> "btn_delete",
 		"TITLE"	=> Loc::getMessage("SITEMAP_DELETE_TITLE"),
 	);

@@ -203,7 +203,7 @@ Loc::loadMessages(__FILE__);
 												<label class="adm-designed-checkbox-label" for="designed_checkbox_{{random_value}}"></label>
 											</td>
 											<td class="adm-list-table-cell">
-												<span class="adm-list-table-link">{{display}}&nbsp;<span class="adm-list-table-loc-type">({{type}})</span>&nbsp;&nbsp;<a href="/bitrix/admin/sale_location_node_edit.php?lang=<?=LANGUAGE_ID?>&id={{value}}" target="_blank" class="adm-list-table-loc-id">id: {{value}}</a></span>
+												<span class="adm-list-table-link">{{display}}&nbsp;<span class="adm-list-table-loc-type">({{type}})</span>&nbsp;&nbsp;<a href="/bnpt/admin/sale_location_node_edit.php?lang=<?=LANGUAGE_ID?>&id={{value}}" target="_blank" class="adm-list-table-loc-id">id: {{value}}</a></span>
 												<span class="adm-list-table-loc-path">{{path}}</span>
 											</td>
 										</tr>
@@ -271,7 +271,7 @@ Loc::loadMessages(__FILE__);
 												<label class="adm-designed-checkbox-label" for="designed_checkbox_{{random_value}}"></label>
 											</td>
 											<td class="adm-list-table-cell">
-												<span class="adm-list-table-link">{{name}}&nbsp;&nbsp;<a href="/bitrix/admin/sale_location_node_edit.php?lang=<?=LANGUAGE_ID?>&id={{id}}" target="_blank" class="adm-list-table-loc-id">id: {{id}}</a></span>
+												<span class="adm-list-table-link">{{name}}&nbsp;&nbsp;<a href="/bnpt/admin/sale_location_node_edit.php?lang=<?=LANGUAGE_ID?>&id={{id}}" target="_blank" class="adm-list-table-loc-id">id: {{id}}</a></span>
 											</td>
 										</tr>
 									</script>
@@ -289,7 +289,7 @@ Loc::loadMessages(__FILE__);
 												<label class="adm-designed-checkbox-label" for="designed_checkbox_{{random_value}}"></label>
 											</td>
 											<td class="adm-list-table-cell">
-												<span class="adm-list-table-link">{{display}}&nbsp;<span class="adm-list-table-loc-type">({{type}})</span>&nbsp;&nbsp;<a href="/bitrix/admin/sale_location_node_edit.php?lang=<?=LANGUAGE_ID?>&id={{value}}" target="_blank" class="adm-list-table-loc-id">id: {{value}}</a></span>
+												<span class="adm-list-table-link">{{display}}&nbsp;<span class="adm-list-table-loc-type">({{type}})</span>&nbsp;&nbsp;<a href="/bnpt/admin/sale_location_node_edit.php?lang=<?=LANGUAGE_ID?>&id={{value}}" target="_blank" class="adm-list-table-loc-id">id: {{value}}</a></span>
 												<span class="adm-list-table-loc-path">{{path}}</span>
 											</td>
 										</tr>

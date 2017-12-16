@@ -423,7 +423,7 @@ if (strlen($arResult["FORM_NOTE"]) > 0) ShowNote($arResult["FORM_NOTE"]);
 								if ($arParams["F_RIGHT"] >= 25) 
 								{
 								?>
-					[<a title="<?=GetMessage("FORM_FIELD_PARAMS")?>" href="/bitrix/admin/form_field_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arrCol["ID"]?>&FORM_ID=<?=$arParams["WEB_FORM_ID"]?>&WEB_FORM_ID=<?=$arParams["WEB_FORM_ID"]?>&additional=<?=$arrCol["ADDITIONAL"]?>"><?=$arrCol["ID"]?></a>]<br /><?
+					[<a title="<?=GetMessage("FORM_FIELD_PARAMS")?>" href="/bnpt/admin/form_field_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arrCol["ID"]?>&FORM_ID=<?=$arParams["WEB_FORM_ID"]?>&WEB_FORM_ID=<?=$arParams["WEB_FORM_ID"]?>&additional=<?=$arrCol["ADDITIONAL"]?>"><?=$arrCol["ID"]?></a>]<br /><?
 								}//endif($F_RIGHT>=25);
 								?>
 								<?=$arrCol["RESULTS_TABLE_TITLE"]?>
@@ -555,7 +555,7 @@ if (strlen($arResult["FORM_NOTE"]) > 0) ShowNote($arResult["FORM_NOTE"]);
 					{
 						$userName = array("NAME" => $arRes["USER_FIRST_NAME"], "LAST_NAME" => $arRes["USER_LAST_NAME"], "SECOND_NAME" => $arRes["USER_SECOND_NAME"], "LOGIN" => $arRes["LOGIN"]);
 					?>
-						[<a title="<?=GetMessage("FORM_EDIT_USER")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arRes["USER_ID"]?>"><?=$arRes["USER_ID"]?></a>] (<?=$arRes["LOGIN"]?>) <?=CUser::FormatName($arParams["NAME_TEMPLATE"], $userName)?>
+						[<a title="<?=GetMessage("FORM_EDIT_USER")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arRes["USER_ID"]?>"><?=$arRes["USER_ID"]?></a>] (<?=$arRes["LOGIN"]?>) <?=CUser::FormatName($arParams["NAME_TEMPLATE"], $userName)?>
 						<?if($arRes["USER_AUTH"]=="N") { ?><?=GetMessage("FORM_NOT_AUTH")?><?}?>
 					<?
 					}
@@ -572,7 +572,7 @@ if (strlen($arResult["FORM_NOTE"]) > 0) ShowNote($arResult["FORM_NOTE"]);
 						if (intval($arRes["STAT_GUEST_ID"])>0) 
 						{
 						?>
-							[<a title="<?=GetMessage("FORM_GUEST")?>" href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arRes["STAT_GUEST_ID"]?>&set_filter=Y"><?=$arRes["STAT_GUEST_ID"]?></a>]
+							[<a title="<?=GetMessage("FORM_GUEST")?>" href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arRes["STAT_GUEST_ID"]?>&set_filter=Y"><?=$arRes["STAT_GUEST_ID"]?></a>]
 						<?
 						} //endif ((intval($GLOBALS["f_STAT_GUEST_ID"])>0));
 						?>
@@ -580,7 +580,7 @@ if (strlen($arResult["FORM_NOTE"]) > 0) ShowNote($arResult["FORM_NOTE"]);
 						if (intval($arRes["STAT_SESSION_ID"])>0) 
 						{
 						?>
-							(<a title="<?=GetMessage("FORM_SESSION")?>" href="/bitrix/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arRes["STAT_SESSION_ID"]?>&set_filter=Y"><?=$arRes["STAT_SESSION_ID"]?></a>)
+							(<a title="<?=GetMessage("FORM_SESSION")?>" href="/bnpt/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arRes["STAT_SESSION_ID"]?>&set_filter=Y"><?=$arRes["STAT_SESSION_ID"]?></a>)
 						<?
 						} //endif ((intval($GLOBALS["f_STAT_SESSION_ID"])>0));
 					} //endif (isStatisitcIncluded);

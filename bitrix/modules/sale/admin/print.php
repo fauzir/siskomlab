@@ -15,7 +15,7 @@ function GetRealPath2Report($rep_name)
 	$rep_name = preg_replace("#[\\\\\\/]+#", "/", $rep_name);
 	$rep_name = preg_replace("#\\.+[\\\\\\/]#", "", $rep_name);
 
-	$rep_file_name = $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/".$rep_name;
+	$rep_file_name = $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/".$rep_name;
 	if (!file_exists($rep_file_name))
 	{
 		$rep_file_name = $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sale/reports/".$rep_name;

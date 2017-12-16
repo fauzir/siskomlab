@@ -3,7 +3,7 @@ $MESS["SALE_DH_RUSSIANPOST_NAME"] = "Russian Post";
 $MESS["SALE_DH_RUSSIANPOST_DESCRIPTION"] = "Mail delivery";
 $MESS["SALE_DH_RUSSIANPOST_GROUND_TITLE"] = "land mail";
 $MESS["SALE_DH_RUSSIANPOST_AVIA_TITLE"] = "air mail";
-$MESS["SALE_DH_RUSSIANPOST_DESCRIPTION_INNER"] = "Handler for Post of Russia. Based upon the on-line <a href=\"http://www.russianpost.ru/autotarif/SelautotarifRus.aspx\" target=\"_blank\">domestic mail price list</a> and <a href=\"http://www.russianpost.ru/autotarif/Selautotarif.aspx\" target=\"_blank\">international mail mail price list</a>. The e-Store address must be specified in the <a href=\"/bitrix/admin/settings.php?mid=sale&lang=en\">module settings</a>.<br />Delivers from Moscow only.";
+$MESS["SALE_DH_RUSSIANPOST_DESCRIPTION_INNER"] = "Handler for Post of Russia. Based upon the on-line <a href=\"http://www.russianpost.ru/autotarif/SelautotarifRus.aspx\" target=\"_blank\">domestic mail price list</a> and <a href=\"http://www.russianpost.ru/autotarif/Selautotarif.aspx\" target=\"_blank\">international mail mail price list</a>. The e-Store address must be specified in the <a href=\"/bnpt/admin/settings.php?mid=sale&lang=en\">module settings</a>.<br />Delivers from Moscow only.";
 $MESS["SALE_DH_RUSSIANPOST_GROUND"] = "Land";
 $MESS["SALE_DH_RUSSIANPOST_AVIA"] = "Air";
 $MESS["SALE_DH_RUSSIANPOST_CONFIG_CATEGORY_23"] = "Registered book post";

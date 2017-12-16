@@ -20,10 +20,10 @@ IncludeModuleLangFile($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/support/admin/t
 
 $err_mess = "File: ".__FILE__."<br>Line: ";
 /***************************************************************************
-									Функции
+									пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ***************************************************************************/
 
-function CheckFilter() // проверка введенных полей
+function CheckFilter() // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 {
 	global $strError, $arFilterFields;
 	reset($arFilterFields); foreach ($arFilterFields as $f) global $$f;
@@ -32,7 +32,7 @@ function CheckFilter() // проверка введенных полей
 
 	if (strlen(trim($find_date_create1))>0 || strlen(trim($find_date_create2))>0)
 	{
-		// Дата создания
+		// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$date_1_ok = false;
 		$date1_stm = MkDateTime(ConvertDateTime($find_date_create1,"D.M.Y"),"d.m.Y");
 		$date2_stm = MkDateTime(ConvertDateTime($find_date_create2,"D.M.Y")." 23:59","d.m.Y H:i");
@@ -61,7 +61,7 @@ function CheckFilter() // проверка введенных полей
 
 	if (strlen(trim($find_date_timestamp1))>0 || strlen(trim($find_date_timestamp2))>0)
 	{
-		// Дата изменения
+		// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$date_1_ok = false;
 		$date1_stm = MkDateTime(ConvertDateTime($find_date_timestamp1,"D.M.Y"),"d.m.Y");
 		$date2_stm = MkDateTime(ConvertDateTime($find_date_timestamp2,"D.M.Y")." 23:59","d.m.Y H:i");
@@ -90,7 +90,7 @@ function CheckFilter() // проверка введенных полей
 
 	if (strlen(trim($find_date_close1))>0 || strlen(trim($find_date_close2))>0)
 	{
-		// Дата закрытия
+		// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$date_1_ok = false;
 		$date1_stm = MkDateTime(ConvertDateTime($find_date_close1,"D.M.Y"),"d.m.Y");
 		$date2_stm = MkDateTime(ConvertDateTime($find_date_close2,"D.M.Y")." 23:59","d.m.Y H:i");
@@ -117,7 +117,7 @@ function CheckFilter() // проверка введенных полей
 		}
 	}
 
-	// сообщений
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	if (intval($find_messages1)>0 and intval($find_messages2)>0 and $find_messages1>$find_messages2)
 	{
 		//$str .= GetMessage("SUP_MESSAGES1_MESSAGES2")."<br>";
@@ -272,7 +272,7 @@ function Support_GetSLAInfo($ID, &$name, &$description, $safe_for_html=true)
 }
 
 /***************************************************************************
-							Обработка GET | POST
+							пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 $arrUsers = array();
 $TICKET_LIST_URL = strlen($TICKET_LIST_URL)>0? CUtil::AddSlashes(htmlspecialcharsbx((substr($TICKET_LIST_URL, 0, 4) == 'http'?'':'/').$TICKET_LIST_URL)) : "ticket_list.php";
@@ -297,7 +297,7 @@ if ($bADS)
 else
 	$oSort = new CAdminSorting($sTableID, "s_timestamp", "desc");
 
-$lAdmin = new CAdminList($sTableID, $oSort);// инициализация списка
+$lAdmin = new CAdminList($sTableID, $oSort);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 $arFilterHeads = array();
 
@@ -481,7 +481,7 @@ $arFilterFields = Array(
 );
 
 $USER_FIELD_MANAGER->AdminListAddFilterFields( $entity_id, $arFilterFields );
-$lAdmin->InitFilter($arFilterFields);//инициализация фильтра
+$lAdmin->InitFilter($arFilterFields);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 
@@ -561,7 +561,7 @@ else
 	}
 }
 
-// обработка действий групповых и одиночных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if($arID = $lAdmin->GroupAction())
 {
 	if($_REQUEST['action_target']=='selected')
@@ -635,7 +635,7 @@ if($arID = $lAdmin->GroupAction())
 
 $get_extra_names = "N";
 
-// инициализация списка - выборка данных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $TICKET_DICTIONARY = CTicketDictionary::GetDropDownArray();
 
 $arHeaders = Array();
@@ -690,7 +690,7 @@ if ($bADS)
 
 $USER_FIELD_MANAGER->AdminListAddHeaders( $entity_id, $arHeaders );
 
-// заголовок списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddHeaders($arHeaders);
 
 $get_user_name = "N";
@@ -709,10 +709,10 @@ $rsData = CTicket::GetList(
 
 $rsData = new CAdminResult($rsData, $sTableID);
 
-// установка строки навигации
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->NavText($rsData->GetNavPrint(GetMessage("SUP_PAGES")));
 
-// построение списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $arRows = array();
 
 $aUserIDs = array();
@@ -839,7 +839,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 		/*
 		if (intval($f_OWNER_USER_ID)>0)
-			$DATE_CREATE_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bitrix/admin/user_edit.php?lang='.LANG.'&ID='.$f_OWNER_USER_ID.'">'.$f_OWNER_USER_ID.'</a>]  ('.$f_OWNER_LOGIN.') '.$f_OWNER_NAME;
+			$DATE_CREATE_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bnpt/admin/user_edit.php?lang='.LANG.'&ID='.$f_OWNER_USER_ID.'">'.$f_OWNER_USER_ID.'</a>]  ('.$f_OWNER_LOGIN.') '.$f_OWNER_NAME;
 
 		$row->AddViewField("DATE_CREATE", $DATE_CREATE_HTML);
 		*/
@@ -854,7 +854,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	if (strlen($f_MODIFIED_MODULE_NAME)<=0 || $f_MODIFIED_MODULE_NAME=="support")
 	{
 		if ($bADS)
-			$TIMESTAMP_X_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bitrix/admin/user_edit.php?lang='.LANG.'&ID='.$f_MODIFIED_USER_ID.'">'.$f_MODIFIED_USER_ID.'</a>] ('.$f_MODIFIED_LOGIN.') '.$f_MODIFIED_NAME;
+			$TIMESTAMP_X_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bnpt/admin/user_edit.php?lang='.LANG.'&ID='.$f_MODIFIED_USER_ID.'">'.$f_MODIFIED_USER_ID.'</a>] ('.$f_MODIFIED_LOGIN.') '.$f_MODIFIED_NAME;
 		else
 			$TIMESTAMP_X_HTML .= "[".$f_MODIFIED_USER_ID."] (".$f_MODIFIED_LOGIN.") ".$f_MODIFIED_NAME;
 	}
@@ -944,15 +944,15 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	{
 		$arActions[] = array(
 			"TEXT"	=> GetMessage("SUP_CLOSE"),
-			"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=close&lang=".LANGUAGE_ID."&".bitrix_sessid_get()),
+			"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=close&lang=".LANGUAGE_ID."&".bitrix_sessid_get()),
 			);
 	}
 	else
 	{
 		$arActions[] = array(
 			"TEXT"	=> GetMessage("SUP_OPEN"),
-			//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
-			"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+			//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
+			"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 			);
 	}
 
@@ -962,8 +962,8 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_UNMARK_SPAM"),
-				//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
-				"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+				//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
+				"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 				);
 		}
 
@@ -971,8 +971,8 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_MAYBE_SPAM"),
-				//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
-				"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+				//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+				"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 				);
 		}
 
@@ -980,8 +980,8 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_SPAM"),
-				//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
-				"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+				//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+				"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 				);
 		}
 
@@ -989,7 +989,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_SPAM_DELETE"),
-				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_MARK_AS_SPAM_DELETE_CONFIRM")."')) window.location='/bitrix/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=mark_spam_delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
+				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_MARK_AS_SPAM_DELETE_CONFIRM")."')) window.location='/bnpt/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=mark_spam_delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
 				//"WARNING"=>"Y",
 				"ACTION"=>"if(confirm('".GetMessage('SUP_CONF_ACTION_MARK_AS_SPAM_DELETE')."')) ".$lAdmin->ActionDoGroup($f_ID, "mark_spam_delete"),
 			);
@@ -999,7 +999,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 			$arActions[] = array(
 				"ICON" => "delete",
 				"TEXT"	=> GetMessage("SUP_DELETE"),
-				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_TICKET_CONFIRM")."')) window.location='/bitrix/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
+				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_TICKET_CONFIRM")."')) window.location='/bnpt/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
 				//"WARNING"=>"Y",
 				"ACTION"=>"if(confirm('".GetMessage('SUP_DELETE_TICKET_CONF')."')) ".$lAdmin->ActionDoGroup($f_ID, "delete"),
 				);
@@ -1066,7 +1066,7 @@ foreach($arRows as $k => $v)
 }
 
 
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array("title"=>GetMessage("MAIN_ADMIN_LIST_SELECTED"), "value"=>$rsData->SelectedRowsCount()),

@@ -157,7 +157,7 @@ while ($arResultItem = $dbResultList->NavNext(true, "f_"))
 	);
 	$row->AddField("NAME", $f_NAME);
 	$row->AddField("MODIFIED", $f_MODIFIED);
-	$row->AddField("USER", '[<a href="/bitrix/admin/user_edit.php?ID='.$f_USER_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BPADH_USER_PROFILE").'">'.$f_USER_ID.'</a>] '.$f_USER_NAME.(strlen($f_USER_NAME) > 0 && strlen($f_USER_LAST_NAME) > 0 ? " " : "").$f_USER_LAST_NAME.(strlen($f_USER_NAME) <= 0 && strlen($f_USER_LAST_NAME) <= 0 ? $f_USER_LOGIN : ""));
+	$row->AddField("USER", '[<a href="/bnpt/admin/user_edit.php?ID='.$f_USER_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BPADH_USER_PROFILE").'">'.$f_USER_ID.'</a>] '.$f_USER_NAME.(strlen($f_USER_NAME) > 0 && strlen($f_USER_LAST_NAME) > 0 ? " " : "").$f_USER_LAST_NAME.(strlen($f_USER_NAME) <= 0 && strlen($f_USER_LAST_NAME) <= 0 ? $f_USER_LOGIN : ""));
 
 	$arActions = Array();
 	if (strlen($viewDocumentUrl) > 0)

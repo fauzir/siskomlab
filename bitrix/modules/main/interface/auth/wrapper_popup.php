@@ -22,7 +22,7 @@ switch($_REQUEST['bxsender']):
 ?>
 <script type="text/javascript" bxrunfirst="true">
 	(new top.BX.CAuthDialog({
-		content_url: "/bitrix/admin/wizard_install.php",
+		content_url: "/bnpt/admin/wizard_install.php",
 		auth_result: <?=CUtil::PhpToJsObject($arAuthResult)?>,
 		callback: function() {
 			var frameWindow = top.WizardWindow.currentFrame.contentWindow;

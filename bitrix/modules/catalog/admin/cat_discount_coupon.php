@@ -290,7 +290,7 @@ while ($arDiscount = $dbResultList->Fetch())
 	if ($arSelectFieldsMap['TIMESTAMP_X'])
 		$row->AddCalendarField("TIMESTAMP_X", false);
 
-	$row->AddViewField("ID", '<a href="/bitrix/admin/cat_discount_coupon_edit.php?lang='.LANGUAGE_ID.'&ID='.$arDiscount["ID"].'">'.$arDiscount["ID"].'</a>');
+	$row->AddViewField("ID", '<a href="/bnpt/admin/cat_discount_coupon_edit.php?lang='.LANGUAGE_ID.'&ID='.$arDiscount["ID"].'">'.$arDiscount["ID"].'</a>');
 	if ($arSelectFieldsMap['DISCOUNT_NAME'])
 		$row->AddInputField("DISCOUNT_NAME", false);
 
@@ -324,7 +324,7 @@ while ($arDiscount = $dbResultList->Fetch())
 	$arActions[] = array(
 		"ICON" => "edit",
 		"TEXT" => GetMessage("DSC_UPDATE_ALT"),
-		"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_discount_coupon_edit.php?ID=".$arDiscount['ID']."&lang=".LANGUAGE_ID.GetFilterParams("filter_", false).""),
+		"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_discount_coupon_edit.php?ID=".$arDiscount['ID']."&lang=".LANGUAGE_ID.GetFilterParams("filter_", false).""),
 		"DEFAULT" => true
 	);
 
@@ -360,7 +360,7 @@ if ($arSelectFieldsMap['CREATED_BY'] || $arSelectFieldsMap['MODIFIED_BY'])
 		while ($arOneUser = $rsUsers->Fetch())
 		{
 			$arOneUser['ID'] = (int)$arOneUser['ID'];
-			$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+			$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 		}
 	}
 

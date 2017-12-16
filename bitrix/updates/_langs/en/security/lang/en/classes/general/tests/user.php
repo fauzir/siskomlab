@@ -1,7 +1,7 @@
 <?
 $MESS["SECURITY_SITE_CHECKER_OTP_NOT_USED"] = "2-step verification is disabled.";
 $MESS["SECURITY_SITE_CHECKER_OTP_NOT_USED_DETAIL"] = "2-step verification will dramatically improve the resilience of your website against fishing.";
-$MESS["SECURITY_SITE_CHECKER_OTP_NOT_USED_RECOMMENDATION"] = "Enable it here: <a href=\"/bitrix/admin/security_otp.php\" target=\"_blank\">One-time passwords</a>";
+$MESS["SECURITY_SITE_CHECKER_OTP_NOT_USED_RECOMMENDATION"] = "Enable it here: <a href=\"/bnpt/admin/security_otp.php\" target=\"_blank\">One-time passwords</a>";
 $MESS["SECURITY_SITE_CHECKER_ADMIN_OTP_NOT_USED"] = "Not all administrators use OTP";
 $MESS["SECURITY_SITE_CHECKER_ADMIN_OTP_NOT_USED_DETAIL"] = "2-step verification will dramatically improve the resilience of your website against fishing. Always enable it for users with administrative privileges.";
 $MESS["SECURITY_SITE_CHECKER_ADMIN_OTP_NOT_USED_RECOMMENDATION"] = "Notify administrators that you recommend to use OTP's.";

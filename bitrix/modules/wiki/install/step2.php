@@ -262,7 +262,7 @@
 	{
 		?>
 		<script>
-		window.location='/bitrix/admin/module_admin.php?step=3&lang=<?=LANGUAGE_ID."&id=wiki&install=y&".bitrix_sessid_get()?>';
+		window.location='/bnpt/admin/module_admin.php?step=3&lang=<?=LANGUAGE_ID."&id=wiki&install=y&".bitrix_sessid_get()?>';
 		</script>
 		<?
 	}

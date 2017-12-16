@@ -58,7 +58,7 @@ $aMenu = array(
 		array(
 				"TEXT" => GetMessage("STEEN_2FLIST"),
 				"ICON" => "btn_list",
-				"LINK" => "/bitrix/admin/sale_tax_exempt.php?lang=".LANG.GetFilterParams("filter_")
+				"LINK" => "/bnpt/admin/sale_tax_exempt.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 $context = new CAdminContextMenu($aMenu);
@@ -149,7 +149,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/sale_tax_exempt.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bnpt/admin/sale_tax_exempt.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

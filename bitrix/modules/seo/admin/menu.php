@@ -92,7 +92,7 @@ if($APPLICATION->GetGroupRight("seo") > "D")
 							&& $this->IsSectionActive("seo_search_adv_items/".$campaign['ID'])
 						)
 						|| (
-							$GLOBALS["APPLICATION"]->GetCurPage() == '/bitrix/admin/seo_search_yandex_direct_banner_edit.php'
+							$GLOBALS["APPLICATION"]->GetCurPage() == '/bnpt/admin/seo_search_yandex_direct_banner_edit.php'
 							&& $_REQUEST['campaign'] == $campaign['ID']
 						))
 						{

@@ -64,9 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && strlen($Update) > 0 && !$bReadOnly &
 	if (strlen($errorMessage) <= 0)
 	{
 		if (empty($apply))
-			LocalRedirect("/bitrix/admin/cat_extra.php?lang=".LANGUAGE_ID);
+			LocalRedirect("/bnpt/admin/cat_extra.php?lang=".LANGUAGE_ID);
 		else
-			LocalRedirect("/bitrix/admin/cat_extra_edit.php?lang=".LANGUAGE_ID."&ID=".$ID);
+			LocalRedirect("/bnpt/admin/cat_extra_edit.php?lang=".LANGUAGE_ID."&ID=".$ID);
 	}
 	else
 	{
@@ -108,7 +108,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CEEN_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/cat_extra.php?lang=".LANGUAGE_ID
+		"LINK" => "/bnpt/admin/cat_extra.php?lang=".LANGUAGE_ID
 	)
 );
 
@@ -119,13 +119,13 @@ if ($ID > 0 && !$bReadOnly)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CEEN_NEW_DISCOUNT"),
 		"ICON" => "btn_new",
-		"LINK" => "/bitrix/admin/cat_extra_edit.php?lang=".LANGUAGE_ID
+		"LINK" => "/bnpt/admin/cat_extra_edit.php?lang=".LANGUAGE_ID
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CEEN_DELETE_DISCOUNT"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessageJS("CEEN_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bitrix/admin/cat_extra.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessageJS("CEEN_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bnpt/admin/cat_extra.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -187,7 +187,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => $bReadOnly,
-		"back_url" => "/bitrix/admin/cat_extra.php?lang=".LANGUAGE_ID
+		"back_url" => "/bnpt/admin/cat_extra.php?lang=".LANGUAGE_ID
 	)
 );
 

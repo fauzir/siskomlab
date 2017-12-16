@@ -557,7 +557,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 
 			var d = new BX.CAdminDialog({
 				'title': title,
-				'content_url': '/bitrix/admin/site_checker.php' + link,
+				'content_url': '/bnpt/admin/site_checker.php' + link,
 				'draggable': true,
 				'resizable': true,
 				'buttons': [BX.CAdminDialog.btnClose]
@@ -572,7 +572,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 			html = '<div style="font-size:1.2em;padding:20px">';
 			html += (r = obTestResult[id]) ? '<div style="border:1px solid #ccc;padding:10px;"><b><?=GetMessageJS("MAIN_SC_TEST_RESULT")?></b> ' + r + '</div><br>' : '';
 			html += (h = obHelp[id]) ? h : obHelp['notopic'];
-			html += '<br><br><?=CUtil::JSEscape(GetMessage('SC_READ_MORE_ANC'))?>'.replace('#LINK#', '/bitrix/admin/site_checker.php?lang=<?=LANGUAGE_ID?>&read_log=Y&anchor=' + id + '#' + id);
+			html += '<br><br><?=CUtil::JSEscape(GetMessage('SC_READ_MORE_ANC'))?>'.replace('#LINK#', '/bnpt/admin/site_checker.php?lang=<?=LANGUAGE_ID?>&read_log=Y&anchor=' + id + '#' + id);
 			html += '</div>';
 
 			var d = new BX.CAdminDialog({

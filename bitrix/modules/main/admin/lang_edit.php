@@ -110,7 +110,7 @@ require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_af
 $aMenu = array(
 	array(
 		"TEXT"	=> Loc::getMessage("RECORD_LIST"),
-		"LINK"	=> "/bitrix/admin/lang_admin.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/lang_admin.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> Loc::getMessage("RECORD_LIST_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -122,7 +122,7 @@ if ($ID>0)
 
 	$aMenu[] = array(
 		"TEXT"	=> Loc::getMessage("MAIN_NEW_RECORD"),
-		"LINK"	=> "/bitrix/admin/lang_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/lang_edit.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> Loc::getMessage("MAIN_NEW_RECORD_TITLE"),
 		"ICON"	=> "btn_new"
 	);
@@ -130,13 +130,13 @@ if ($ID>0)
 	{
 		$aMenu[] = array(
 			"TEXT"	=> Loc::getMessage("MAIN_COPY_RECORD"),
-			"LINK"	=> "/bitrix/admin/lang_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".urlencode($language["LID"]),
+			"LINK"	=> "/bnpt/admin/lang_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".urlencode($language["LID"]),
 			"TITLE"	=> Loc::getMessage("MAIN_COPY_RECORD_TITLE"),
 			"ICON"	=> "btn_copy"
 		);
 		$aMenu[] = array(
 			"TEXT"	=> Loc::getMessage("MAIN_DELETE_RECORD"),
-			"LINK"	=> "javascript:if(confirm('".Loc::getMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/lang_admin.php?ID=".urlencode(urlencode($language["LID"]))."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
+			"LINK"	=> "javascript:if(confirm('".Loc::getMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/lang_admin.php?ID=".urlencode(urlencode($language["LID"]))."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
 			"TITLE"	=> Loc::getMessage("MAIN_DELETE_RECORD_TITLE"),
 			"ICON"	=> "btn_delete"
 		);

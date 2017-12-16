@@ -182,7 +182,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid() && $isAdmin)
 				"INDEX_NAME" => $_REQUEST["index_name"],
 				"BANNED" => "N",
 			));
-			LocalRedirect("/bitrix/admin/perfmon_index_detail.php?ID=".$ID."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bnpt/admin/perfmon_index_detail.php?ID=".$ID."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
 		}
 		else
 		{
@@ -195,7 +195,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid() && $isAdmin)
 		if(is_object($res))
 		{
 			CPerfomanceIndexComplete::DeleteByTableName($arSuggest["TABLE_NAME"], $arSuggest["COLUMN_NAMES"]);
-			LocalRedirect("/bitrix/admin/perfmon_index_detail.php?ID=".$ID."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bnpt/admin/perfmon_index_detail.php?ID=".$ID."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
 		}
 		else
 			$strError = $DB->GetErrorMessage();
@@ -208,7 +208,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid() && $isAdmin)
 			"INDEX_NAME" => false,
 			"BANNED" => "Y",
 		));
-		LocalRedirect("/bitrix/admin/perfmon_index_list.php?lang=".LANGUAGE_ID);
+		LocalRedirect("/bnpt/admin/perfmon_index_list.php?lang=".LANGUAGE_ID);
 	}
 }
 

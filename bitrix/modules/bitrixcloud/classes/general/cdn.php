@@ -161,7 +161,7 @@ class CBitrixCloudCDN
 
 			CAdminNotify::Add(array(
 				"MESSAGE" => GetMessage("BCL_CDN_NOTIFY", array(
-					"#HREF#" => "/bitrix/admin/bitrixcloud_cdn.php?lang=".LANGUAGE_ID,
+					"#HREF#" => "/bnpt/admin/bitrixcloud_cdn.php?lang=".LANGUAGE_ID,
 				)),
 				"TAG" => "bitrixcloud_off",
 				"MODULE_ID" => "bitrixcloud",
@@ -365,7 +365,7 @@ class CBitrixCloudCDN
 		{
 			if ($USER->CanDoOperation("bitrixcloud_cdn"))
 			{
-				$CDNAIParams["FOOTER"] = '<a href="/bitrix/admin/bitrixcloud_cdn.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_CDN_AI_SETT").'</a>';
+				$CDNAIParams["FOOTER"] = '<a href="/bnpt/admin/bitrixcloud_cdn.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_CDN_AI_SETT").'</a>';
 			}
 
 			$cdn_config = CBitrixCloudCDNConfig::getInstance()->loadFromOptions();
@@ -422,7 +422,7 @@ class CBitrixCloudCDN
 			$CDNAIParams["ALERT"] = true;
 			if ($USER->CanDoOperation("bitrixcloud_cdn"))
 			{
-				$CDNAIParams["FOOTER"] = '<a href="/bitrix/admin/bitrixcloud_cdn.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_CDN_AI_TURN_ON").'</a>';
+				$CDNAIParams["FOOTER"] = '<a href="/bnpt/admin/bitrixcloud_cdn.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_CDN_AI_TURN_ON").'</a>';
 			}
 		}
 

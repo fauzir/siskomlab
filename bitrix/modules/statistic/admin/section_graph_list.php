@@ -73,7 +73,7 @@ if(isset($find_adv) && is_array($find_adv) && count($find_adv)>0)
 }
 
 if (strlen($site_id)>0)
-	$show_site_id = "[<a target=\"_blank\" href=\"".htmlspecialcharsbx("/bitrix/admin/site_edit.php?LID=".urlencode($site_id)."&lang=".LANGUAGE_ID)."\">".htmlspecialcharsbx($site_id)."</a>]&nbsp;";
+	$show_site_id = "[<a target=\"_blank\" href=\"".htmlspecialcharsbx("/bnpt/admin/site_edit.php?LID=".urlencode($site_id)."&lang=".LANGUAGE_ID)."\">".htmlspecialcharsbx($site_id)."</a>]&nbsp;";
 else
 	$show_site_id = "";
 ?>
@@ -92,7 +92,7 @@ else
 <table border="0" cellspacing="0" cellpadding="0" class="graph" align="center">
 	<tr>
 		<td valign="center">
-		<img width=<?=$width?> height=<?=$height?> src="<?echo htmlspecialcharsbx("/bitrix/admin/section_graph.php?lang=".urlencode(LANGUAGE_ID)."&date1=".urlencode($date1)."&date2=".urlencode($date2).$s."&is_dir=".urlencode($is_dir)."&adv_data_type=".urlencode($find_adv_data_type)."&width=".intval($width)."&height=".intval($height)."&section=".urlencode($section)."&find_hits=".urlencode($find_hits)."&find_enter_points=".urlencode($find_enter_points)."&find_exit_points=".urlencode($find_exit_points))?>"></td>
+		<img width=<?=$width?> height=<?=$height?> src="<?echo htmlspecialcharsbx("/bnpt/admin/section_graph.php?lang=".urlencode(LANGUAGE_ID)."&date1=".urlencode($date1)."&date2=".urlencode($date2).$s."&is_dir=".urlencode($is_dir)."&adv_data_type=".urlencode($find_adv_data_type)."&width=".intval($width)."&height=".intval($height)."&section=".urlencode($section)."&find_hits=".urlencode($find_hits)."&find_enter_points=".urlencode($find_enter_points)."&find_exit_points=".urlencode($find_exit_points))?>"></td>
 		</td>
 		<td valign="center">
 			<table border="0" cellspacing="1" cellpadding="2" width="0%" class="legend">

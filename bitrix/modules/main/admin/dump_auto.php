@@ -166,7 +166,7 @@ if($_REQUEST['save'])
 					$sec,
 					$arWeekDays
 				);
-				$strMessage .= '<br>'.GetMessage('DUMP_CHECK_BITRIXCLOUD', array('#LINK#' => '/bitrix/admin/bitrixcloud_backup_job.php?lang='.LANGUAGE_ID));
+				$strMessage .= '<br>'.GetMessage('DUMP_CHECK_BITRIXCLOUD', array('#LINK#' => '/bnpt/admin/bitrixcloud_backup_job.php?lang='.LANGUAGE_ID));
 			}
 
 			$dump_site_id = array();
@@ -296,7 +296,7 @@ if (!$bMcrypt)
 $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("MAIN_DUMP_LIST_PAGE_TITLE"),
-		"LINK"	=> "/bitrix/admin/dump_list.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/dump_list.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("MAIN_DUMP_LIST_PAGE_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -540,7 +540,7 @@ if ($BUCKET_ID == -1 && !$bBitrixCloud)
 	<td>
 		<?
 		?>
-		<div><label><input type="radio" name="dump_auto_enable" id="dump_auto_bitrix" value="2" <?= $dump_auto_enable == 2 ? 'checked' : '' ?> <?=$bBitrixCloud ? '' : 'disabled'?> onclick="CheckEnabled()"> <?=GetMessage('AUTO_EXEC_FROM_BITRIX')?> (<a href="/bitrix/admin/settings.php?lang=<?=LANGUAGE_ID?>&mid=main" target=_blank><?=GetMessage('AUTO_URL')?></a>: <?=htmlspecialcharsbx($url)?>)</div>
+		<div><label><input type="radio" name="dump_auto_enable" id="dump_auto_bitrix" value="2" <?= $dump_auto_enable == 2 ? 'checked' : '' ?> <?=$bBitrixCloud ? '' : 'disabled'?> onclick="CheckEnabled()"> <?=GetMessage('AUTO_EXEC_FROM_BITRIX')?> (<a href="/bnpt/admin/settings.php?lang=<?=LANGUAGE_ID?>&mid=main" target=_blank><?=GetMessage('AUTO_URL')?></a>: <?=htmlspecialcharsbx($url)?>)</div>
 		<div><label><input type="radio" name="dump_auto_enable" id="dump_auto_cron" value="1" <?= $dump_auto_enable == 1 ? 'checked' : '' ?> <?=$bCron ? '' : 'disabled'?> onclick="CheckEnabled()"> <?=GetMessage('AUTO_EXEC_FROM_CRON')?><span class="required"><sup>1</sup></span></label></div>
 		<div><label><input type="radio" name="dump_auto_enable" id="dump_auto_disable" value="0" <?= $dump_auto_enable == 0 ? 'checked' : '' ?> onclick="CheckEnabled()"> <?=GetMessage('AUTO_EXEC_FROM_MAN', array('#SCRIPT#' => '<b>/bitrix/modules/main/tools/backup.php</b>'))?></div>
 	</td>

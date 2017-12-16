@@ -87,7 +87,7 @@ while ($arTransact = $dbTransactList->NavNext(true, "f_"))
 	$row->AddField("ID", $f_ID);
 	$row->AddField("TRANSACT_DATE", $f_TRANSACT_DATE);
 
-	$fieldValue  = "[<a href=\"/bitrix/admin/sale_affiliate_edit.php?ID=".$f_AFFILIATE_ID."&lang=".LANG."\" title=\"".GetMessage("SAT2_AFF_PROFILE")."\">".$f_AFFILIATE_ID."</a>] ";
+	$fieldValue  = "[<a href=\"/bnpt/admin/sale_affiliate_edit.php?ID=".$f_AFFILIATE_ID."&lang=".LANG."\" title=\"".GetMessage("SAT2_AFF_PROFILE")."\">".$f_AFFILIATE_ID."</a>] ";
 	$fieldValue .= htmlspecialcharsEx($arTransact["USER_NAME"].((strlen($arTransact["USER_NAME"])<=0 || strlen($arTransact["USER_LAST_NAME"])<=0) ? "" : " ").$arTransact["USER_LAST_NAME"])."<br>";
 	$fieldValue .= htmlspecialcharsEx($arTransact["AFFILIATE_SITE_ID"])."&nbsp;&nbsp;&nbsp; ";
 	$fieldValue .= htmlspecialcharsEx($arTransact["USER_LOGIN"])."&nbsp;&nbsp;&nbsp; ";
@@ -115,7 +115,7 @@ while ($arTransact = $dbTransactList->NavNext(true, "f_"))
 				if ($arUser = $dbUser->Fetch())
 					$LOCAL_TRANS_USER_CACHE[$arTransact["EMPLOYEE_ID"]] = htmlspecialcharsEx($arUser["NAME"].((strlen($arUser["NAME"])<=0 || strlen($arUser["LAST_NAME"])<=0) ? "" : " ").$arUser["LAST_NAME"]." (".$arUser["LOGIN"].")");
 			}
-			$fieldValue .= "[<a href=\"/bitrix/admin/user_edit.php?ID=".$arTransact["EMPLOYEE_ID"]."&lang=".LANG."\" title=\"".GetMessage("SAT2_USER_PROFILE")."\">".$arTransact["EMPLOYEE_ID"]."</a>] ";
+			$fieldValue .= "[<a href=\"/bnpt/admin/user_edit.php?ID=".$arTransact["EMPLOYEE_ID"]."&lang=".LANG."\" title=\"".GetMessage("SAT2_USER_PROFILE")."\">".$arTransact["EMPLOYEE_ID"]."</a>] ";
 			$fieldValue .= $LOCAL_TRANS_USER_CACHE[$arTransact["EMPLOYEE_ID"]];
 		}
 		$fieldValue .= "</small>";
@@ -161,7 +161,7 @@ $oFilter->Begin();
 		<td>
 			<input type="text" name="filter_affiliate_id" value="<?= htmlspecialcharsbx($filter_affiliate_id) ?>" size="10" maxlength="10">
 			<IFRAME name="hiddenframe_affiliate" id="id_hiddenframe_affiliate" src="" width="0" height="0" style="width:0px; height:0px; border: 0px"></IFRAME>
-			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bitrix/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
+			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bnpt/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
 			<span id="div_affiliate_name"></span>
 			<SCRIPT LANGUAGE=javascript>
 			<!--
@@ -187,7 +187,7 @@ $oFilter->Begin();
 					if (affiliateID != '' && !isNaN(parseInt(affiliateID, 10)))
 					{
 						document.getElementById('div_affiliate_name').innerHTML = '<i><?= GetMessage("SAT2_WAIT") ?></i>';
-						window.frames["hiddenframe_affiliate"].location.replace('/bitrix/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
+						window.frames["hiddenframe_affiliate"].location.replace('/bnpt/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
 					}
 					else
 						document.getElementById('div_affiliate_name').innerHTML = '';

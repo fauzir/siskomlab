@@ -2,7 +2,7 @@ BX.namespace("BX.Sale.Admin.OrderAjaxer");
 
 BX.Sale.Admin.OrderAjaxer =
 {
-	ajaxUrl: "/bitrix/admin/sale_order_ajax.php",
+	ajaxUrl: "/bnpt/admin/sale_order_ajax.php",
 
 	sendRequest: function(request, noBlockForm, refreshFormData)
 	{

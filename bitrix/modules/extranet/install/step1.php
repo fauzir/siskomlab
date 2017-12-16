@@ -13,7 +13,7 @@ else
 	echo CAdminMessage::ShowNote(GetMessage("MOD_INST_OK"));
 ?>
 <p>
-<a href="/bitrix/admin/wizard_install.php?lang=<?echo LANG?>&wizardName=bitrix:extranet&<? echo bitrix_sessid_get()?>"><? echo GetMessage('MOD_EXTRANET_RUN_WIZARD'); ?></a>
+<a href="/bnpt/admin/wizard_install.php?lang=<?echo LANG?>&wizardName=bitrix:extranet&<? echo bitrix_sessid_get()?>"><? echo GetMessage('MOD_EXTRANET_RUN_WIZARD'); ?></a>
 <p>
 <form action="<?echo $APPLICATION->GetCurPage()?>">
 	<input type="hidden" name="lang" value="<?echo LANG?>">

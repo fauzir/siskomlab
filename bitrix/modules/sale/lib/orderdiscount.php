@@ -431,7 +431,7 @@ class OrderDiscountManager
 	{
 		$result = '';
 		if (!empty($discount['ID']))
-			$result = '/bitrix/admin/sale_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$discount['ID'];
+			$result = '/bnpt/admin/sale_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$discount['ID'];
 		return $result;
 	}
 

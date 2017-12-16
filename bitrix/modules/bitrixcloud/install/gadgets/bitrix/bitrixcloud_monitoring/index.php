@@ -121,7 +121,7 @@ if ($bAlert)
 	if ($uptimeRate < 1)
 	{
 ?>
-		<a class="bx-gadget-button" href="/bitrix/admin/bitrixcloud_monitoring_admin.php?lang=<?echo LANGUAGE_ID?>&amp;referer=gadget">
+		<a class="bx-gadget-button" href="/bnpt/admin/bitrixcloud_monitoring_admin.php?lang=<?echo LANGUAGE_ID?>&amp;referer=gadget">
 			<div class="bx-gadget-button-lamp"></div>
 			<div class="bx-gadget-button-text"><?echo GetMessage("GD_BITRIXCLOUD_MONITOR_BTN_ALERT")?></div>
 		</a>
@@ -132,7 +132,7 @@ if ($bAlert)
 	elseif ($bAlert)
 	{
 ?>
-		<a class="bx-gadget-button" href="/bitrix/admin/bitrixcloud_monitoring_admin.php?lang=<?echo LANGUAGE_ID?>&amp;referer=gadget">
+		<a class="bx-gadget-button" href="/bnpt/admin/bitrixcloud_monitoring_admin.php?lang=<?echo LANGUAGE_ID?>&amp;referer=gadget">
 			<div class="bx-gadget-button-lamp"></div>
 			<div class="bx-gadget-button-text"><?echo GetMessage("GD_BITRIXCLOUD_MONITOR_BTN_OK")?></div>
 		</a>
@@ -142,7 +142,7 @@ if ($bAlert)
 	else
 	{
 		?>
-		<a class="bx-gadget-button" href="/bitrix/admin/bitrixcloud_monitoring_admin.php?lang=<?echo LANGUAGE_ID?>&amp;referer=gadget">
+		<a class="bx-gadget-button" href="/bnpt/admin/bitrixcloud_monitoring_admin.php?lang=<?echo LANGUAGE_ID?>&amp;referer=gadget">
 			<div class="bx-gadget-button-lamp"></div>
 			<div class="bx-gadget-button-text"><?echo GetMessage("GD_BITRIXCLOUD_MONITOR_BTN_OK")?></div>
 		</a>

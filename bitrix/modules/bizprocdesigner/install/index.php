@@ -70,7 +70,7 @@ Class bizprocdesigner extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true, true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/tools", $_SERVER["DOCUMENT_ROOT"]."/bitrix/tools", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 		}
@@ -88,7 +88,7 @@ Class bizprocdesigner extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/tools", $_SERVER["DOCUMENT_ROOT"]."/bitrix/tools");
 			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/bizprocdesigner/install/components/bitrix", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components/bitrix");
 		}

@@ -239,7 +239,7 @@ while ($arAffiliate = $dbResultList->NavNext(true, "f_"))
 	$row->AddField("ID", $f_ID);
 	$row->AddSelectField("SITE_ID", $arSites, array());
 
-	$fieldValue = "[<a href=\"/bitrix/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\" title=\"".GetMessage("SAA_GOTO_USER")."\">".$f_USER_ID."</a>] ";
+	$fieldValue = "[<a href=\"/bnpt/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\" title=\"".GetMessage("SAA_GOTO_USER")."\">".$f_USER_ID."</a>] ";
 	$fieldValue .= $f_USER_NAME.((strlen($f_USER_NAME)<=0 || strlen($f_USER_LAST_NAME)<=0) ? "" : " ").$f_USER_LAST_NAME."<br>";
 	$fieldValue .= $f_USER_LOGIN."&nbsp;&nbsp;&nbsp; ";
 	$fieldValue .= "<a href=\"mailto:".$f_USER_EMAIL."\" title=\"".GetMessage("SAA_USER_EMAIL")."\">".$f_USER_EMAIL."</a>";
@@ -449,7 +449,7 @@ $oFilter->Begin();
 		<td>
 			<input type="text" name="filter_affiliate_id" value="<?= IntVal($filter_affiliate_id) ?>" size="10" maxlength="10">
 			<IFRAME name="hiddenframe_affiliate" id="id_hiddenframe_affiliate" src="" width="0" height="0" style="width:0px; height:0px; border: 0px"></IFRAME>
-			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bitrix/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
+			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bnpt/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
 			<span id="div_affiliate_name"></span>
 			<SCRIPT LANGUAGE=javascript>
 			<!--
@@ -475,7 +475,7 @@ $oFilter->Begin();
 					if (affiliateID != '' && !isNaN(parseInt(affiliateID, 10)))
 					{
 						document.getElementById('div_affiliate_name').innerHTML = '<i><?= GetMessage("SAA_WAIT") ?></i>';
-						window.frames["hiddenframe_affiliate"].location.replace('/bitrix/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
+						window.frames["hiddenframe_affiliate"].location.replace('/bnpt/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
 					}
 					else
 						document.getElementById('div_affiliate_name').innerHTML = '';

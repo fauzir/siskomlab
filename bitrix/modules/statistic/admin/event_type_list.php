@@ -431,7 +431,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	$arActions[] = array(
 		"ICON"=>"",
 		"TEXT"=>GetMessage("STAT_ANALYSIS"),
-		"ACTION"=>$lAdmin->ActionRedirect("/bitrix/admin/adv_analysis.php?find_data_type=EVENT_SUMMA&find_events[]=".$f_ID."&set_filter=Y")
+		"ACTION"=>$lAdmin->ActionRedirect("/bnpt/admin/adv_analysis.php?find_data_type=EVENT_SUMMA&find_events[]=".$f_ID."&set_filter=Y")
 	);
 
 	if(is_set($arActions[count($arActions)-1], "SEPARATOR"))
@@ -535,13 +535,13 @@ $aContext[] =
 $aContext[] =
 	array(
 		"TEXT"=>GetMessage("STAT_DIAGRAM_S"),
-		"LINK"=>"/bitrix/admin/event_diagram_list.php?lang=".LANGUAGE_ID."&set_default=Y",
+		"LINK"=>"/bnpt/admin/event_diagram_list.php?lang=".LANGUAGE_ID."&set_default=Y",
 		"TITLE"=>GetMessage("STAT_DIAGRAM"),
 	);
 $aContext[] =
 	array(
 		"TEXT"=>GetMessage("STAT_GRAPH_FULL_S"),
-		"LINK"=>"/bitrix/admin/event_graph_list.php?lang=".LANGUAGE_ID."&set_default=Y",
+		"LINK"=>"/bnpt/admin/event_graph_list.php?lang=".LANGUAGE_ID."&set_default=Y",
 		"TITLE"=>GetMessage("STAT_GRAPH_FULL"),
 	);
 

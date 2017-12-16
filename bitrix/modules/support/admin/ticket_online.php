@@ -47,9 +47,9 @@ $arTicket = $ticket->ExtractFields();
 
 		<td width="84%" valign="top"><?
 			if (strlen(trim($ar["USER_NAME"]))>0):
-				?><a title="<?=GetMessage("SUP_USER_PROFILE")?>" target="_blank" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ar["USER_ID"]?>"><?=$ar["USER_NAME"]?></a><?
+				?><a title="<?=GetMessage("SUP_USER_PROFILE")?>" target="_blank" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ar["USER_ID"]?>"><?=$ar["USER_NAME"]?></a><?
 			else:
-				?><a title="<?=GetMessage("SUP_USER_PROFILE")?>" target="_blank" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ar["USER_ID"]?>"><?=$ar["USER_LOGIN"]?></a>
+				?><a title="<?=GetMessage("SUP_USER_PROFILE")?>" target="_blank" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ar["USER_ID"]?>"><?=$ar["USER_LOGIN"]?></a>
 				<?
 			endif;
 			?></td>

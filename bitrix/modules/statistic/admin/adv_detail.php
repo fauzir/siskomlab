@@ -1252,30 +1252,30 @@ $lAdmin_tab2->DisplayList();
 <?endif;?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bitrix/admin/event_type_list.php?lang=<?=LANG?>"><?=GetMessage("STAT_ALL_EVENTS")?></a><br><br>
+<a href="/bnpt/admin/event_type_list.php?lang=<?=LANG?>"><?=GetMessage("STAT_ALL_EVENTS")?></a><br><br>
 <?$lAdmin_tab3->DisplayList();?>
 <?echo BeginNote();?>
 <span class="required">*</span> - <?echo GetMessage("STAT_ADV_BACK_ALT")?>
 <?echo EndNote();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bitrix/admin/visit_section_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=ENTER_COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_ENTERS")?></a><br>
+<a href="/bnpt/admin/visit_section_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=ENTER_COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_ENTERS")?></a><br>
 <?$lAdmin_tab4->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bitrix/admin/visit_section_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=EXIT_COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_EXITS")?></a><br>
+<a href="/bnpt/admin/visit_section_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=EXIT_COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_EXITS")?></a><br>
 <?$lAdmin_tab5->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bitrix/admin/visit_section_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_RECORDS_LIST")?></a><br>
+<a href="/bnpt/admin/visit_section_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_RECORDS_LIST")?></a><br>
 <?$lAdmin_tab6->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bitrix/admin/path_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_SEGMENT_PATH")?></a><br>
+<a href="/bnpt/admin/path_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=COUNTER&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_SEGMENT_PATH")?></a><br>
 <?$lAdmin_tab7->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bitrix/admin/path_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=COUNTER_FULL_PATH&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_FULL_PATH")?></a><br>
+<a href="/bnpt/admin/path_list.php?lang=<?=LANG?>&amp;set_default=Y&amp;find_diagram_type=COUNTER_FULL_PATH&amp;SIZEN_1=20"><?=GetMessage("STAT_ALL_FULL_PATH")?></a><br>
 <?$lAdmin_tab8->DisplayList();?>
 
 <?$tabControl->End();?>

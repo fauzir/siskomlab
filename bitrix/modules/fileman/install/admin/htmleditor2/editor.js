@@ -2502,7 +2502,7 @@ BXHTMLEditor.prototype.AuthFailureHandler = function(name, arAuthResult)
 
 	this._authShowed = true;
 	var authDialog = new BX.CAuthDialog({
-		content_url: '/bitrix/admin/fileman_editor_dialog.php',
+		content_url: '/bnpt/admin/fileman_editor_dialog.php',
 		auth_result: arAuthResult,
 		callback: BX.delegate(function(){
 			if (auth_callback)

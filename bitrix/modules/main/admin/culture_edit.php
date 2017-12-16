@@ -99,7 +99,7 @@ require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_af
 $aMenu = array(
 	array(
 		"TEXT"	=> Loc::getMessage("RECORD_LIST"),
-		"LINK"	=> "/bitrix/admin/culture_admin.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/culture_admin.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> Loc::getMessage("RECORD_LIST_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -111,19 +111,19 @@ if($ID > 0 && $isAdmin)
 
 	$aMenu[] = array(
 		"TEXT"	=> Loc::getMessage("MAIN_NEW_RECORD"),
-		"LINK"	=> "/bitrix/admin/culture_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/culture_edit.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> Loc::getMessage("MAIN_NEW_RECORD_TITLE"),
 		"ICON"	=> "btn_new"
 	);
 	$aMenu[] = array(
 		"TEXT"	=> Loc::getMessage("MAIN_COPY_RECORD"),
-		"LINK"	=> "/bitrix/admin/culture_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".$ID,
+		"LINK"	=> "/bnpt/admin/culture_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".$ID,
 		"TITLE"	=> Loc::getMessage("MAIN_COPY_RECORD_TITLE"),
 		"ICON"	=> "btn_copy"
 	);
 	$aMenu[] = array(
 		"TEXT"	=> Loc::getMessage("MAIN_DELETE_RECORD"),
-		"LINK"	=> "javascript:if(confirm('".CUtil::JSEscape(Loc::getMessage("MAIN_DELETE_RECORD_CONF"))."')) window.location='/bitrix/admin/culture_admin.php?ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action_button=delete';",
+		"LINK"	=> "javascript:if(confirm('".CUtil::JSEscape(Loc::getMessage("MAIN_DELETE_RECORD_CONF"))."')) window.location='/bnpt/admin/culture_admin.php?ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action_button=delete';",
 		"TITLE"	=> Loc::getMessage("MAIN_DELETE_RECORD_TITLE"),
 		"ICON"	=> "btn_delete"
 	);

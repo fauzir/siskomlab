@@ -106,7 +106,7 @@ $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SLGEN_2FLIST"),
 				"ICON" => "btn_list",
-				"LINK" => "/bitrix/admin/sale_location_group_admin.php?lang=".LANG.GetFilterParams("filter_")
+				"LINK" => "/bnpt/admin/sale_location_group_admin.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 
@@ -117,13 +117,13 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SLGEN_NEW_LGROUP"),
 			"ICON" => "btn_new",
-			"LINK" => "/bitrix/admin/sale_location_group_edit.php?lang=".LANG.GetFilterParams("filter_")
+			"LINK" => "/bnpt/admin/sale_location_group_edit.php?lang=".LANG.GetFilterParams("filter_")
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SLGEN_DELETE_LGROUP"),
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("SLGEN_DELETE_LGROUP_CONFIRM")."')) window.location='/bitrix/admin/sale_location_group_admin.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("SLGEN_DELETE_LGROUP_CONFIRM")."')) window.location='/bnpt/admin/sale_location_group_admin.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		);
 }
 $context = new CAdminContextMenu($aMenu);
@@ -240,7 +240,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/sale_location_group_admin.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bnpt/admin/sale_location_group_admin.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

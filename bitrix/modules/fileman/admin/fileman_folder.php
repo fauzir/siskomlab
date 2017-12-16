@@ -135,10 +135,10 @@ else
 				if(strlen($back_url)>0)
 					LocalRedirect("/".ltrim($back_url, "/"));
 				else
-					LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+					LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 			}
 			else
-				LocalRedirect("/bitrix/admin/fileman_folder.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+				LocalRedirect("/bnpt/admin/fileman_folder.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 		}
 	}
 }
@@ -461,7 +461,7 @@ $tabControl->Begin();
 				?>
 				<tr>
 					<td>
-						[<a href="/bitrix/admin/group_edit.php?ID=<?=$g_ID?>&lang=<?=LANGUAGE_ID?>"><?=$g_ID?></a>]&nbsp;<?echo $g_NAME?>:
+						[<a href="/bnpt/admin/group_edit.php?ID=<?=$g_ID?>&lang=<?=LANGUAGE_ID?>"><?=$g_ID?></a>]&nbsp;<?echo $g_NAME?>:
 					</td>
 					<td>
 						<?

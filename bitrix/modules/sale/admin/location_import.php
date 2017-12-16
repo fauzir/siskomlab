@@ -37,7 +37,7 @@ if(!empty($absent))
 
 	<span style="color: #ff0000">
 		<?=Loc::getMessage('SALE_LOCATION_IMPORT_NO_INDEXES_WARNING', array(
-			'#ANCHOR_SQL_CONSOLE#' => '<a href="/bitrix/admin/sql.php" target="_blank">',
+			'#ANCHOR_SQL_CONSOLE#' => '<a href="/bnpt/admin/sql.php" target="_blank">',
 			'#ANCHOR_END#' => '</a>'
 		))?>
 	</span>

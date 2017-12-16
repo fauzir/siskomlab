@@ -7,7 +7,7 @@
 	
 	BX.Sale.CashboxReport =
 	{
-		ajaxUrl: "/bitrix/admin/sale_order_ajax.php",
+		ajaxUrl: "/bnpt/admin/sale_order_ajax.php",
 		onClearFilter: function()
 		{
 			var cashboxFilter = BX('filter_cashbox_id');

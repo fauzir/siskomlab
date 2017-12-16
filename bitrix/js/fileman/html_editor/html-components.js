@@ -16,7 +16,7 @@
 		this.compNameIndex = {};
 		this.componentIncludeMethod = '$APPLICATION->IncludeComponent';
 
-		this.requestUrl = '/bitrix/admin/fileman_component_params.php';
+		this.requestUrl = '/bnpt/admin/fileman_component_params.php';
 		this.HandleList();
 
 		this.Init();

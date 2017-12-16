@@ -1,6 +1,6 @@
 <?
 /*********************************************
-	Устаревшие функции (для совместимости)
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 *********************************************/
 
 class CFormResult_old
@@ -12,11 +12,11 @@ class CFormResult_old
 	{ return CFormStatus::GetMaxPermissions(); }
 
 	/*
-	выводит HTML формы редактирования результата с учетом прав пользователя
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅ HTML пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-		RESULT_ID - ID результата
-		arrVALUES - массив значений для полей ввода
-		TEMPLATE - шаблон для редактирования результата
+		RESULT_ID - ID пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		arrVALUES - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		TEMPLATE - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	*/
 	function Edit($RESULT_ID, $arrVALUES, $TEMPLATE="", $EDIT_ADDITIONAL="N", $EDIT_STATUS="N")
 	{
@@ -30,13 +30,13 @@ class CFormResult_old
 			$WEB_FORM_ID = $FORM_ID = CForm::GetDataByID($arrResult["FORM_ID"], $arForm, $arQuestions, $arAnswers, $arDropDown, $arMultiSelect, $additional);
 			CForm::GetResultAnswerArray($WEB_FORM_ID, $arrResultColumns, $arrResultAnswers, $arrResultAnswersVarname, array("RESULT_ID" => $RESULT_ID));
 			$arrResultAnswers = $arrResultAnswers[$RESULT_ID];
-			// проверим общие права
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			$F_RIGHT = intval(CForm::GetPermission($WEB_FORM_ID));
 			if ($F_RIGHT>=20 || ($F_RIGHT>=15 && $arrResult["USER_ID"]==$USER->GetID()))
 			{
-				// проверим права в зависимости от статуса результата
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				$arrRESULT_PERMISSION = CFormResult::GetPermissions($RESULT_ID, $v);
-				if (in_array("EDIT",$arrRESULT_PERMISSION)) // имеем право на просмотр
+				if (in_array("EDIT",$arrRESULT_PERMISSION)) // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (strlen(trim($TEMPLATE))>0) $template = $TEMPLATE;
 					else
@@ -55,21 +55,21 @@ class CFormResult_old
 						{
 							$arIcons[] =
 									Array(						
-										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 										"SRC" => "/bitrix/images/form/panel/edit_template.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_TEMPLATE")
 									);
 							$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 							$arIcons[] =
 									Array(						
-										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 										"SRC" => "/bitrix/images/form/panel/edit_file.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_HANDLER")
 									);
 						}
 						$arIcons[] =
 								Array(						
-									"URL" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
+									"URL" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
 									"SRC" => "/bitrix/images/form/panel/edit_form.gif",
 									"ALT" => GetMessage("FORM_PUBLIC_ICON_SETTINGS")
 								);
@@ -86,13 +86,13 @@ class CFormResult_old
 	}
 
 	/*
-	выводит HTML показывающий результат с учетом прав посетителя
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅ HTML пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-		RESULT_ID - ID результата
-		TEMPLATE - имя шаблона для показа результат
+		RESULT_ID - ID пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		TEMPLATE - пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		TEMPLATE_TYPE - 
-			если "show" тогда берется шаблон для показа,
-			если "print" тогда берется шаблон для печати
+			пїЅпїЅпїЅпїЅ "show" пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ,
+			пїЅпїЅпїЅпїЅ "print" пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	*/
 	function Show($RESULT_ID, $TEMPLATE="", $TEMPLATE_TYPE="show", $SHOW_ADDITIONAL="N", $SHOW_ANSWER_VALUE="Y", $SHOW_STATUS="N")
 	{
@@ -107,13 +107,13 @@ class CFormResult_old
 			$WEB_FORM_ID = $FORM_ID = CForm::GetDataByID($arrResult["FORM_ID"], $arForm, $arQuestions, $arAnswers, $arDropDown, $arMultiSelect, $additional);
 			CForm::GetResultAnswerArray($WEB_FORM_ID, $arrResultColumns, $arrResultAnswers, $arrResultAnswersVarname, array("RESULT_ID" => $RESULT_ID));
 			$arrResultAnswers = $arrResultAnswers[$RESULT_ID];
-			// проверим общие права на результат
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			$F_RIGHT = CForm::GetPermission($WEB_FORM_ID);
 			if (intval($F_RIGHT)>=20 || ($F_RIGHT>=15 && $zr["USER_ID"]==$USER->GetID()))
 			{
-				// проверим права в зависимости от статуса результата
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				$arrRESULT_PERMISSION = CFormResult::GetPermissions($RESULT_ID, $v);
-				if (in_array("VIEW",$arrRESULT_PERMISSION)) // имеем право на просмотр
+				if (in_array("VIEW",$arrRESULT_PERMISSION)) // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				{
 					if (strlen(trim($TEMPLATE))>0) $template = $TEMPLATE;
 					else
@@ -148,21 +148,21 @@ class CFormResult_old
 						{
 							$arIcons[] =
 									Array(						
-										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 										"SRC" => "/bitrix/images/form/panel/edit_template.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_TEMPLATE")
 									);
 							$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 							$arIcons[] =
 									Array(						
-										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 										"SRC" => "/bitrix/images/form/panel/edit_file.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_HANDLER")
 									);
 						}
 						$arIcons[] =
 								Array(						
-									"URL" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
+									"URL" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
 									"SRC" => "/bitrix/images/form/panel/edit_form.gif",
 									"ALT" => GetMessage("FORM_PUBLIC_ICON_SETTINGS")
 								);

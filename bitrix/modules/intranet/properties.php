@@ -48,11 +48,11 @@ function Ch<?=$name_x?>()
 				DV_<?=$name_x?>.innerHTML = '<i><? echo CUtil::JSEscape(GetMessage("MAIN_WAIT"))?></i>';
 				if (value_<?=$name_x?> != <?echo intval($USER->GetID())?>)
 				{
-					document.getElementById("hiddenframe<?=$name_x?>").src='/bitrix/admin/get_user.php?ID=' + value_<?=$name_x?>+'&strName=<?=$name_x?>&lang=<? echo LANG.(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")?>';
+					document.getElementById("hiddenframe<?=$name_x?>").src='/bnpt/admin/get_user.php?ID=' + value_<?=$name_x?>+'&strName=<?=$name_x?>&lang=<? echo LANG.(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")?>';
 				}
 				else
 				{
-					DV_<?=$name_x?>.innerHTML = '[<a title="<?echo CUtil::JSEscape(GetMessage("MAIN_EDIT_USER_PROFILE"))?>" class="tablebodylink" href="/bitrix/admin/user_edit.php?ID=<?echo $USER->GetID()?>&lang=<?echo LANG?>"><?echo $USER->GetID()?></a>] (<?echo CUtil::JSEscape(htmlspecialcharsbx($USER->GetLogin()))?>) <? echo CUtil::JSEscape(htmlspecialcharsbx($USER->GetFirstName().' '.$USER->GetLastName()))?>';
+					DV_<?=$name_x?>.innerHTML = '[<a title="<?echo CUtil::JSEscape(GetMessage("MAIN_EDIT_USER_PROFILE"))?>" class="tablebodylink" href="/bnpt/admin/user_edit.php?ID=<?echo $USER->GetID()?>&lang=<?echo LANG?>"><?echo $USER->GetID()?></a>] (<?echo CUtil::JSEscape(htmlspecialcharsbx($USER->GetLogin()))?>) <? echo CUtil::JSEscape(htmlspecialcharsbx($USER->GetFirstName().' '.$USER->GetLastName()))?>';
 				}
 			}
 

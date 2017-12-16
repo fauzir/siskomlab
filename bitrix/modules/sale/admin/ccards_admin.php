@@ -163,7 +163,7 @@ while ($arCCard = $dbResultList->NavNext(true, "f_"))
 
 	$row->AddField("ID", $f_ID);
 
-	$fieldValue  = "[<a href=\"/bitrix/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\">".$f_USER_ID."</a>] ";
+	$fieldValue  = "[<a href=\"/bnpt/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\">".$f_USER_ID."</a>] ";
 	$fieldValue .= htmlspecialcharsEx($arCCard["USER_NAME"].((strlen($arCCard["USER_NAME"])<=0 || strlen($arCCard["USER_LAST_NAME"])<=0) ? "" : " ").$arCCard["USER_LAST_NAME"])."<br>";
 	$fieldValue .= htmlspecialcharsEx($arCCard["USER_LOGIN"])."&nbsp;&nbsp;&nbsp; ";
 	$fieldValue .= "<a href=\"mailto:".htmlspecialcharsbx($arCCard["USER_EMAIL"])."\">".htmlspecialcharsEx($arCCard["USER_EMAIL"])."</a>";

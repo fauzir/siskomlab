@@ -1138,10 +1138,10 @@ function BXDialog()
 
 		this.params.pMainObj = this.pMainObj;
 		if(window.showModalDialog)
-			window.showModalDialog('/bitrix/admin/fileman_editor_dialog.php?lang='+BXLang+'&site='+BXSite+'&name='+this.name+'&not_use_default='+this.not_use_default, this.params, "dialogWidth:"+this.width+"px;dialogHeight:"+this.height+"px;help:no;scroll:no;status:no;center:yes;");
+			window.showModalDialog('/bnpt/admin/fileman_editor_dialog.php?lang='+BXLang+'&site='+BXSite+'&name='+this.name+'&not_use_default='+this.not_use_default, this.params, "dialogWidth:"+this.width+"px;dialogHeight:"+this.height+"px;help:no;scroll:no;status:no;center:yes;");
 		else
 		{
-			this.pWnd = window.open('/bitrix/admin/fileman_editor_dialog.php?lang='+BXLang+'&site='+BXSite+'&name='+this.name+'&not_use_default='+this.not_use_default, 'BXDialog'+Math.random.toString().substring(2), 'height='+this.height+',width='+this.width+',toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,modal=yes,alwaysRaised=yes,dialog=yes');
+			this.pWnd = window.open('/bnpt/admin/fileman_editor_dialog.php?lang='+BXLang+'&site='+BXSite+'&name='+this.name+'&not_use_default='+this.not_use_default, 'BXDialog'+Math.random.toString().substring(2), 'height='+this.height+',width='+this.width+',toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,modal=yes,alwaysRaised=yes,dialog=yes');
 			this.pWnd.resizeTo(this.width, this.height);
 			this.pWnd.moveTo((screen.width-this.width)/2, (screen.height-this.height)/2);
 			this.pWnd.dialogArguments = this.params;

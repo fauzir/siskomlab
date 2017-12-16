@@ -119,7 +119,7 @@ AND RA.USER_FILE_HASH = '".$DB->ForSql($HASH, 255)."'
 					$event3 = strlen($zr["STAT_EVENT3"])<=0
 						? (
 							$GLOBALS['APPLICATION']->IsHTTPS() ? "https://" : "http://"
-						).$_SERVER["HTTP_HOST"]."/bitrix/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&find_id=".$RESULT_ID."&find_id_exact_match=Y&set_filter=Y"
+						).$_SERVER["HTTP_HOST"]."/bnpt/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&find_id=".$RESULT_ID."&find_id_exact_match=Y&set_filter=Y"
 						: $zr["STAT_EVENT3"];
 				}
 				else $event3 = $IN_EVENT3;

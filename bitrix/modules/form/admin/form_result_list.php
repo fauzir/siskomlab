@@ -455,10 +455,10 @@ else
 
 			if (CModule::IncludeModule("statistic")):
 				if (intval($f_STAT_GUEST_ID)>0) :
-					$row->AddViewField("STAT_GUEST_ID", " [<a title='".GetMessage("FORM_GUEST_TITLE")."' href='/bitrix/admin/guest_list.php?lang=".LANGUAGE_ID."&find_id=". $f_STAT_GUEST_ID."&set_filter=Y'>".$f_STAT_GUEST_ID."</a>]");
+					$row->AddViewField("STAT_GUEST_ID", " [<a title='".GetMessage("FORM_GUEST_TITLE")."' href='/bnpt/admin/guest_list.php?lang=".LANGUAGE_ID."&find_id=". $f_STAT_GUEST_ID."&set_filter=Y'>".$f_STAT_GUEST_ID."</a>]");
 				endif;
 				if (intval($f_STAT_SESSION_ID)>0) :
-					$row->AddViewField("STAT_SESSION_ID", " (<a title='".GetMessage("FORM_SESSION_TITLE")."' href='/bitrix/admin/session_list.php?lang=".LANGUAGE_ID."&find_id=". $f_STAT_SESSION_ID."&set_filter=Y'>".$f_STAT_SESSION_ID."</a>)");
+					$row->AddViewField("STAT_SESSION_ID", " (<a title='".GetMessage("FORM_SESSION_TITLE")."' href='/bnpt/admin/session_list.php?lang=".LANGUAGE_ID."&find_id=". $f_STAT_SESSION_ID."&set_filter=Y'>".$f_STAT_SESSION_ID."</a>)");
 				endif;
 			endif;
 
@@ -552,7 +552,7 @@ $aMenu[] = array(
 	"TEXT" => GetMessage("FORM_ADD"),
 	"TITLE" => GetMessage("FORM_CREATE_TITLE"),
 	"ICON"	=> "btn_new",
-	"LINK"	=> "/bitrix/admin/form_result_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+	"LINK"	=> "/bnpt/admin/form_result_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
 	);
 
 $lAdmin->AddAdminContextMenu($aMenu);
@@ -809,7 +809,7 @@ if (is_array($arFormCrmLink)):
 <script type="text/javascript">
 function sendToCrm(FORM_ID, RESULT_ID)
 {
-	BX.ajax.loadJSON('/bitrix/admin/form_crm.php?action=add_lead&FORM_ID=<?=$WEB_FORM_ID?>&RESULT_ID=' + parseInt(RESULT_ID) + '&<?=bitrix_sessid_get()?>', function(result){
+	BX.ajax.loadJSON('/bnpt/admin/form_crm.php?action=add_lead&FORM_ID=<?=$WEB_FORM_ID?>&RESULT_ID=' + parseInt(RESULT_ID) + '&<?=bitrix_sessid_get()?>', function(result){
 		if (result.result == 'ok')
 		{
 			var img = BX('crm_sent_' + RESULT_ID);

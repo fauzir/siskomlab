@@ -118,7 +118,7 @@ function WFSFSave()
 
 	BX.showWait();
 	BX.ajax({
-		'url': '/bitrix/admin/<?= MODULE_ID ?>_bizproc_wf_settings.php?lang=<?= LANGUAGE_ID ?>&entity=<?= ENTITY ?>',
+		'url': '/bnpt/admin/<?= MODULE_ID ?>_bizproc_wf_settings.php?lang=<?= LANGUAGE_ID ?>&entity=<?= ENTITY ?>',
 		'method': 'POST',
 		'data': perm,
 		'dataType': 'json',

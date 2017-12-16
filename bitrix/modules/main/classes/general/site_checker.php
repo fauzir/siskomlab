@@ -685,7 +685,7 @@ class CSiteCheckerTest
 
 	function check_socket()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=socket_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=socket_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "\r\n";
 
@@ -701,7 +701,7 @@ class CSiteCheckerTest
 
 	function check_compression()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=compression&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=compression&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "Accept-Encoding: gzip, deflate\r\n";
 		$strRequest.= "\r\n";
@@ -804,7 +804,7 @@ class CSiteCheckerTest
 
 	function check_dbconn()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=dbconn_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=dbconn_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "\r\n";
 
@@ -872,7 +872,7 @@ class CSiteCheckerTest
 			$POST.= "--$boundary\r\n";
 		}
 
-		$strRequest = "POST "."/bitrix/admin/site_checker.php?test_type=upload_test&unique_id=".checker_get_unique_id()."&big=".($big ? 1 : 0)."&raw=".($raw ? 1 : 0)." HTTP/1.1\r\n";
+		$strRequest = "POST "."/bnpt/admin/site_checker.php?test_type=upload_test&unique_id=".checker_get_unique_id()."&big=".($big ? 1 : 0)."&raw=".($raw ? 1 : 0)." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		if (!$raw)
 			$strRequest.= "Content-Type: multipart/form-data; boundary=$boundary\r\n";
@@ -901,7 +901,7 @@ class CSiteCheckerTest
 		for($i=0;$i<201;$i++)
 			$POST .= 'i'.$i.'='.md5($i).'&';
 
-		$strRequest = "POST "."/bitrix/admin/site_checker.php?test_type=post_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "POST "."/bnpt/admin/site_checker.php?test_type=post_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "Content-Length: ".(function_exists('mb_strlen') ? mb_strlen($POST, 'ISO-8859-1') : strlen($POST))."\r\n";
 		$strRequest.= "Content-Type: application/x-www-form-urlencoded\r\n";
@@ -931,7 +931,7 @@ class CSiteCheckerTest
 			list($last_success, $max, $step) = unserialize($this->arTestVars['last_value']);
 		}
 
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=memory_test&unique_id=".checker_get_unique_id()."&max=".($max - 1)." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=memory_test&unique_id=".checker_get_unique_id()."&max=".($max - 1)." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "\r\n";
 
@@ -993,7 +993,7 @@ class CSiteCheckerTest
 
 	function check_session_ua()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=session_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=session_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 
 		if ($this->arTestVars['last_value']) // second step: put session id
@@ -1123,7 +1123,7 @@ class CSiteCheckerTest
 
 	function check_http_auth()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=auth_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=auth_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "Authorization: Basic dGVzdF91c2VyOnRlc3RfcGFzc3dvcmQ=\r\n";
 		$strRequest.= "\r\n";
@@ -1409,7 +1409,7 @@ class CSiteCheckerTest
 
 		foreach($allow as $method => $ar)
 		{
-			$strRequest = $method." /bitrix/admin/site_checker.php?test_type=webdav_test&method=$method&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+			$strRequest = $method." /bnpt/admin/site_checker.php?test_type=webdav_test&method=$method&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 			$strRequest.= "Host: ".$this->host."\r\n";
 			$strRequest.= "\r\n";
 
@@ -1461,7 +1461,7 @@ class CSiteCheckerTest
 		if (!CheckDirPath($tmp) || !file_put_contents($tmp, 'SUCCESS'))
 			return $this->Result(false, GetMessage("MAIN_TMP_FILE_ERROR"));
 		
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=fast_download&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=fast_download&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "\r\n";
 
@@ -1562,7 +1562,7 @@ class CSiteCheckerTest
 				$file = COption::GetOptionString("security", "ipcheck_disable_file", "");
 				COption::SetOptionString("security", "ipcheck_disable_file", $this->LogFile);
 			}
-			$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=perf&unique_id=".checker_get_unique_id()."&i=".$i." HTTP/1.1\r\n";
+			$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=perf&unique_id=".checker_get_unique_id()."&i=".$i." HTTP/1.1\r\n";
 			$strRequest.= "Host: ".$this->host."\r\n";
 			$strRequest.= "\r\n";
 
@@ -1705,7 +1705,7 @@ class CSiteCheckerTest
 
 		if (!$this->arTestVars['last_value'])
 		{
-			$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=redirect_test&unique_id=".checker_get_unique_id().$strSERVER." HTTP/1.1\r\n";
+			$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=redirect_test&unique_id=".checker_get_unique_id().$strSERVER." HTTP/1.1\r\n";
 			$strRequest.= "Host: ".$this->host."\r\n";
 			$strRequest.= "\r\n";
 
@@ -1744,7 +1744,7 @@ class CSiteCheckerTest
 			$ssl = $ar['scheme'] == 'https' ? 'ssl://' : '';
 			$port = intval($ar['port']) ? intval($ar['port']) : ($ssl ? 443 : 80);
 
-			$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=redirect_test&unique_id=".checker_get_unique_id().$strSERVER."&done=Y HTTP/1.1\r\n";
+			$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=redirect_test&unique_id=".checker_get_unique_id().$strSERVER."&done=Y HTTP/1.1\r\n";
 			$strRequest.= "Host: ".$host."\r\n";
 			$strRequest.= "\r\n";
 
@@ -1798,7 +1798,7 @@ class CSiteCheckerTest
 
 	function check_pcre_recursion()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=pcre_recursion_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=pcre_recursion_test&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "\r\n";
 
@@ -1814,7 +1814,7 @@ class CSiteCheckerTest
 
 	function check_method_exists()
 	{
-		$strRequest = "GET "."/bitrix/admin/site_checker.php?test_type=method_exists&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
+		$strRequest = "GET "."/bnpt/admin/site_checker.php?test_type=method_exists&unique_id=".checker_get_unique_id()." HTTP/1.1\r\n";
 		$strRequest.= "Host: ".$this->host."\r\n";
 		$strRequest.= "\r\n";
 
@@ -2582,8 +2582,8 @@ class CSiteCheckerTest
 					"MESSAGE" => 
 						(
 							IsModuleInstalled('intranet') ?
-							GetMessage("MAIN_SC_GOT_ERRORS", array('#LINK#' => "/bitrix/admin/site_checker.php?lang=".LANGUAGE_ID."&express_test=Y")) :
-							GetMessage("MAIN_SC_SITE_GOT_ERRORS", array('#LINK#' => "/bitrix/admin/site_checker.php?lang=".LANGUAGE_ID."&start_test=Y"))
+							GetMessage("MAIN_SC_GOT_ERRORS", array('#LINK#' => "/bnpt/admin/site_checker.php?lang=".LANGUAGE_ID."&express_test=Y")) :
+							GetMessage("MAIN_SC_SITE_GOT_ERRORS", array('#LINK#' => "/bnpt/admin/site_checker.php?lang=".LANGUAGE_ID."&start_test=Y"))
 						),
 					"TAG" => "SITE_CHECKER",
 					"MODULE_ID" => "MAIN",

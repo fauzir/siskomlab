@@ -72,7 +72,7 @@ if($request->isPost() && $request['save'].$request['apply'] && check_bitrix_sess
 		if($request['save'] && $request['return_url'] != '')
 			LocalRedirect($request['return_url']);
 
-		LocalRedirect('/bitrix/admin/security_hosts.php?lang='.LANGUAGE_ID.$returnUrlQuery.'&'.$tabControl->ActiveTabParam());
+		LocalRedirect('/bnpt/admin/security_hosts.php?lang='.LANGUAGE_ID.$returnUrlQuery.'&'.$tabControl->ActiveTabParam());
 	}
 	catch (Security\LogicException $e)
 	{

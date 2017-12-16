@@ -56,7 +56,7 @@ if(
 	if((isset($_REQUEST["save"]) && $_REQUEST["save"] != "") && $_GET["return_url"]!="")
 		LocalRedirect($_GET["return_url"]);
 	else
-		LocalRedirect("/bitrix/admin/cluster_session.php?lang=".LANGUAGE_ID.($_GET["return_url"]? "&return_url=".urlencode($_GET["return_url"]): "")."&".$tabControl->ActiveTabParam());
+		LocalRedirect("/bnpt/admin/cluster_session.php?lang=".LANGUAGE_ID.($_GET["return_url"]? "&return_url=".urlencode($_GET["return_url"]): "")."&".$tabControl->ActiveTabParam());
 }
 
 $APPLICATION->SetTitle(GetMessage("CLU_SESSION_TITLE"));

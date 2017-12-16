@@ -307,7 +307,7 @@ class Logger
 				$vk = Vk::getInstance();
 				if ($richLog = $vk->getRichLog($this->exportId))
 				{
-					$href = '/bitrix/admin/sale_vk_export_edit.php' . '?ID=' . $this->exportId . '&lang=' . LANG . '&download_log=Y';
+					$href = '/bnpt/admin/sale_vk_export_edit.php' . '?ID=' . $this->exportId . '&lang=' . LANG . '&download_log=Y';
 					$result .= '<br><p>'.Loc::getMessage("SALE_VK_ERRORS__LOG_TITLE").': <a href="'.$href.'">' . Loc::getMessage("SALE_VK_ERRORS__LOG_DOWNLOAD") . '</a>.</p>';
 				}
 			}
@@ -411,7 +411,7 @@ class Logger
 					array('IBLOCK_ID', 'NAME')
 				);
 				$resItem = $resItem->Fetch();
-				$href = "/bitrix/admin/cat_product_edit.php";
+				$href = "/bnpt/admin/cat_product_edit.php";
 				
 				break;
 			
@@ -424,7 +424,7 @@ class Logger
 					array('IBLOCK_ID', 'NAME')
 				);
 				$resItem = $resItem->Fetch();
-				$href = "/bitrix/admin/cat_section_edit.php";
+				$href = "/bnpt/admin/cat_section_edit.php";
 				
 				break;
 			
@@ -564,7 +564,7 @@ class Logger
 			),
 			"5" => array(
 				"MESSAGE" => Loc::getMessage("SALE_VK_ERROR__WRONG_ACCESS_TOKEN", array(
-					'#A1' => '<a href="/bitrix/admin/sale_vk_export_edit.php?ID=' . $this->exportId . '&lang=' . LANG . '&tabControl_active_tab=vk_settings">',
+					'#A1' => '<a href="/bnpt/admin/sale_vk_export_edit.php?ID=' . $this->exportId . '&lang=' . LANG . '&tabControl_active_tab=vk_settings">',
 					'#A2' => '</a>',
 				)),
 				"CRITICAL" => true,

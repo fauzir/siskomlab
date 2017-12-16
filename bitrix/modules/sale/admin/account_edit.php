@@ -130,7 +130,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions>="U" 
 	if (strlen($errorMessage) <= 0)
 	{
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bitrix/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -171,7 +171,7 @@ if ($bVarsFromForm)
 $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SAEN_2FLIST"),
-				"LINK" => "/bitrix/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_"),
+				"LINK" => "/bnpt/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_"),
 				"ICON"	=> "btn_list",
 				"TITLE" => GetMessage("SAEN_2FLIST_TITLE"),
 			)
@@ -183,7 +183,7 @@ if ($ID > 0 && $saleModulePermissions >= "U")
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SAEN_NEW_ACCOUNT"),
-			"LINK" => "/bitrix/admin/sale_account_edit.php?lang=".LANG.GetFilterParams("filter_"),
+			"LINK" => "/bnpt/admin/sale_account_edit.php?lang=".LANG.GetFilterParams("filter_"),
 			"ICON"	=> "btn_new",
 			"TITLE" => GetMessage("SAEN_NEW_ACCOUNT_TITLE"),
 		);
@@ -192,7 +192,7 @@ if ($ID > 0 && $saleModulePermissions >= "U")
 	{
 		$aMenu[] = array(
 				"TEXT" => GetMessage("SAEN_DELETE_ACCOUNT"), 
-				"LINK" => "javascript:if(confirm('".GetMessage("SAEN_DELETE_ACCOUNT_CONFIRM")."')) window.location='/bitrix/admin/sale_account_admin.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+				"LINK" => "javascript:if(confirm('".GetMessage("SAEN_DELETE_ACCOUNT_CONFIRM")."')) window.location='/bnpt/admin/sale_account_admin.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 				"WARNING" => "Y",
 				"ICON"	=> "btn_delete"
 			);
@@ -241,7 +241,7 @@ $tabControl->BeginNextTab();
 		<td width="60%">
 			<?if ($ID > 0):?>
 				<input type="hidden" name="USER_ID" value="<?=$str_USER_ID?>">
-				[<a title="<?echo GetMessage("SAE_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$str_USER_ID?>"><?=$str_USER_ID?></a>] (<?=$str_USER_LOGIN?>) <?=$str_USER_NAME?> <?=$str_USER_LAST_NAME?>
+				[<a title="<?echo GetMessage("SAE_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$str_USER_ID?>"><?=$str_USER_ID?></a>] (<?=$str_USER_LOGIN?>) <?=$str_USER_NAME?> <?=$str_USER_LAST_NAME?>
 			<?else:?>
 			<?echo FindUserID("USER_ID", $str_USER_ID);?>
 			<?endif;?>
@@ -311,7 +311,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "U"),
-				"back_url" => "/bitrix/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bnpt/admin/sale_account_admin.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

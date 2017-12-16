@@ -52,9 +52,9 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions>="W" 
 	if (strlen($errorMessage) <= 0)
 	{
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bitrix/admin/sale_person_type.php?lang=".LANG.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_person_type.php?lang=".LANG.GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/sale_person_type_edit.php?ID=".$ID."&lang=".LANG.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_person_type_edit.php?ID=".$ID."&lang=".LANG.GetFilterParams("filter_", false));
 		
 	}
 	else
@@ -94,7 +94,7 @@ if ($bVarsFromForm)
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SPTEN_2FLIST"),
-		"LINK" => "/bitrix/admin/sale_person_type.php?lang=".LANG.GetFilterParams("filter_"),
+		"LINK" => "/bnpt/admin/sale_person_type.php?lang=".LANG.GetFilterParams("filter_"),
 		"ICON" => "btn_list"
 	)
 );
@@ -105,13 +105,13 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SPTEN_NEW_PERSON_TYPE"),
-		"LINK" => "/bitrix/admin/sale_person_type_edit.php?lang=".LANG.GetFilterParams("filter_"),
+		"LINK" => "/bnpt/admin/sale_person_type_edit.php?lang=".LANG.GetFilterParams("filter_"),
 		"ICON" => "btn_new"
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SPTEN_DELETE_PERSON_TYPE"), 
-		"LINK" => "javascript:if(confirm('".GetMessage("SPTEN_DELETE_PERSON_TYPE_CONFIRM")."')) window.location='/bitrix/admin/sale_person_type.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("SPTEN_DELETE_PERSON_TYPE_CONFIRM")."')) window.location='/bnpt/admin/sale_person_type.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y",
 		"ICON" => "btn_delete"
 	);
@@ -182,7 +182,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/sale_person_type.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bnpt/admin/sale_person_type.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

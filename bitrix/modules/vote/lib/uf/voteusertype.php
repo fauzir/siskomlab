@@ -276,7 +276,7 @@ final class VoteUserType
 						$htmlControl["NAME"]."[CHANNEL_ID]",
 						$voteChannels,
 						$value)
-				)?><a style="margin-left: 1em;" href="" rel="/bitrix/admin/vote_channel_edit.php?ID=#id#" <?
+				)?><a style="margin-left: 1em;" href="" rel="/bnpt/admin/vote_channel_edit.php?ID=#id#" <?
 				?>onmousedown="this.href=this.rel.replace('#id#',this.previousSibling.value);"><?=Loc::getMessage("V_CHANNEL_ID_EDIT")?></a></td>
 		</tr>
 		<tbody id="channel_create" style="<?if ($value != "add"): ?>display:none;<? endif; ?>">

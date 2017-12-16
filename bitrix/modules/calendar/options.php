@@ -520,7 +520,7 @@ $GLOBALS['APPLICATION']->AddHeadScript("/bitrix/js/calendar/cal-controlls.js");
 ?>
 	<table id="bxcal_type_tbl" style="width: 650px;">
 		<?
-		$actionUrl = '/bitrix/admin/settings.php?mid=calendar&lang='.LANG;
+		$actionUrl = '/bnpt/admin/settings.php?mid=calendar&lang='.LANG;
 		$arXML_ID = array();
 		for ($i = 0, $l = count($arTypes); $i < $l; $i++):
 			$type = $arTypes[$i];

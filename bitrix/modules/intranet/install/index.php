@@ -265,7 +265,7 @@ Class intranet extends CModule
 
 			CopyDirFiles(
 				$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/intranet/install/admin",
-				$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin",
+				$_SERVER["DOCUMENT_ROOT"]."/bnpt/admin",
 				true, true
 			);
 

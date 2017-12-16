@@ -95,11 +95,11 @@ $showLastPostingHtml = function (array $chain)
 				<?=htmlspecialcharsbx($chain['DATE_SENT_FORMATTED'])?>
 			</span>
 			<?=Loc::getMessage('SENDER_STATS_IN')?>
-			<a href="/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=htmlspecialcharsbx($chain['MAILING_ID'])?>&lang=<?=LANGUAGE_ID?>" class="bx-sender-releases-section">
+			<a href="/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=htmlspecialcharsbx($chain['MAILING_ID'])?>&lang=<?=LANGUAGE_ID?>" class="bx-sender-releases-section">
 				<?=htmlspecialcharsbx($chain['MAILING_NAME'])?>
 			</a>
 		</p>
-		<a href="/bitrix/admin/sender_mailing_stat.php?MAILING_ID=<?=htmlspecialcharsbx($chain['MAILING_ID'])?>&ID=<?=htmlspecialcharsbx($chain['ID'])?>&lang=<?=LANGUAGE_ID?>" class="bx-sender-releases-title">
+		<a href="/bnpt/admin/sender_mailing_stat.php?MAILING_ID=<?=htmlspecialcharsbx($chain['MAILING_ID'])?>&ID=<?=htmlspecialcharsbx($chain['ID'])?>&lang=<?=LANGUAGE_ID?>" class="bx-sender-releases-title">
 			<?=htmlspecialcharsbx($chain['NAME'])?>
 		</a>
 	</div>
@@ -246,7 +246,7 @@ $showLastPostingHtml = function (array $chain)
 						<?endforeach;?>
 					</div>
 					<div class="bx-sender-new-releases">
-						<a href="/bitrix/admin/sender_mailing_wizard.php?IS_TRIGGER=N&lang=ru" class="adm-btn adm-btn-save bx-sender-btn">
+						<a href="/bnpt/admin/sender_mailing_wizard.php?IS_TRIGGER=N&lang=ru" class="adm-btn adm-btn-save bx-sender-btn">
 							<?=Loc::getMessage('SENDER_STATS_CREATE_NEW')?>
 						</a>
 					</div>

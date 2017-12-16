@@ -127,7 +127,7 @@ else
 			$aMenuLinksTmp_ = Array();
 		}
 
-		//соберем $aMenuLinksTmp из того что пришло с формы
+		//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ $aMenuLinksTmp пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 		$aMenuSort = Array();
 		for($i = 0, $l = count($ids); $i < $l; $i++)
 		{
@@ -199,7 +199,7 @@ else
 					$aMenuSort[$i] = $aMenuSort[$j];
 					$aMenuSort[$j] = $tmpSort;
 				}
-		//теперь $aMenuLinksTmp прямо в таком готовом виде, что хоть меню рисуй :-)
+		//пїЅпїЅпїЅпїЅпїЅпїЅ $aMenuLinksTmp пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ :-)
 	}
 
 	if($REQUEST_METHOD=="POST" && strlen($save)>0 && strlen($name)<=0 && check_bitrix_sessid())
@@ -249,10 +249,10 @@ else
 				if(strlen($back_url)>0)
 					LocalRedirect("/".ltrim($back_url, "/"));
 				else
-					LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+					LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 			}
 			else
-				LocalRedirect("/bitrix/admin/fileman_menu_edit.php?".$addUrl."&site=".$site."&path=".UrlEncode($path)."&name=".$name);
+				LocalRedirect("/bnpt/admin/fileman_menu_edit.php?".$addUrl."&site=".$site."&path=".UrlEncode($path)."&name=".$name);
 		}
 	}
 }
@@ -693,7 +693,7 @@ $tabControl->BeginNextTab();
 	$tabControl->Buttons(
 		array(
 			"disabled" => false,
-			"back_url" => ((strlen($back_url)>0 && strpos($back_url, "/bitrix/admin/fileman_menu_edit.php")!==0) ? htmlspecialcharsex($back_url) : "/bitrix/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["FULL"]))
+			"back_url" => ((strlen($back_url)>0 && strpos($back_url, "/bnpt/admin/fileman_menu_edit.php")!==0) ? htmlspecialcharsex($back_url) : "/bnpt/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["FULL"]))
 		)
 	);
 	?>

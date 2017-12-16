@@ -17,6 +17,6 @@ $MESS["CL_REPORT_TABLE_FAILED"] = "Failed";
 $MESS["CL_REPORT_TABLE_DETAIL"] = "perincian";
 $MESS["CL_CURRENT_STATE"] = "Current test values";
 $MESS["CL_NOT_CHECKED_YET"] = "The website has not been checked yet.";
-$MESS["CL_TO_CHECKLIST_PAGE"] = "To initiate project release, proceed to <a href=\"/bitrix/admin/checklist.php?lang=#LANG#\">Quality control checklist</a>.";
-$MESS["CL_TO_CHECKLIST_PAGE2"] = "To view the test tree, proceed to <a href=\"/bitrix/admin/checklist.php?lang=#LANG#\">Quality control checklist</a>.";
+$MESS["CL_TO_CHECKLIST_PAGE"] = "To initiate project release, proceed to <a href=\"/bnpt/admin/checklist.php?lang=#LANG#\">Quality control checklist</a>.";
+$MESS["CL_TO_CHECKLIST_PAGE2"] = "To view the test tree, proceed to <a href=\"/bnpt/admin/checklist.php?lang=#LANG#\">Quality control checklist</a>.";
 ?>

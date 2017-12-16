@@ -15,7 +15,7 @@ $message = null;
 $bVarsFromForm = false;
 
 if (StrLen($site_id) <= 0)
-	LocalRedirect("/bitrix/admin/urlrewrite_list.php?lang=".LANG);
+	LocalRedirect("/bnpt/admin/urlrewrite_list.php?lang=".LANG);
 
 if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $isAdmin && check_bitrix_sessid())
 {
@@ -63,7 +63,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $isAdmin && check_bitrix_ses
 	if (empty($aMsg))
 	{
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bitrix/admin/urlrewrite_list.php?lang=".LANG."&filter_site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/urlrewrite_list.php?lang=".LANG."&filter_site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -115,7 +115,7 @@ if ($bVarsFromForm)
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("MURL_2_LIST"),
-		"LINK" => "/bitrix/admin/urlrewrite_list.php?lang=".LANG."&filter_site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false),
+		"LINK" => "/bnpt/admin/urlrewrite_list.php?lang=".LANG."&filter_site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false),
 		"ICON"	=> "btn_list",
 		"TITLE" => GetMessage("MURL_2_LIST_ALT"),
 	)
@@ -127,14 +127,14 @@ if (StrLen($CONDITION) > 0)
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("MURL_ACT_ADD"),
-		"LINK" => "/bitrix/admin/urlrewrite_edit.php?lang=".LANG."&site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false),
+		"LINK" => "/bnpt/admin/urlrewrite_edit.php?lang=".LANG."&site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false),
 		"ICON"	=> "btn_new",
 		"TITLE" => GetMessage("MURL_ACT_ADD_ALT"),
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("MURL_ACT_DEL"),
-		"LINK" => "javascript:if(confirm('".GetMessage("MURL_ACT_DEL_CONF")."')) window.location='/bitrix/admin/urlrewrite_list.php?ID=".urlencode(urlencode($CONDITION))."&filter_site_id=".urlencode(urlencode($site_id))."&action=delete&lang=".LANG."&".bitrix_sessid_get()."';",
+		"LINK" => "javascript:if(confirm('".GetMessage("MURL_ACT_DEL_CONF")."')) window.location='/bnpt/admin/urlrewrite_list.php?ID=".urlencode(urlencode($CONDITION))."&filter_site_id=".urlencode(urlencode($site_id))."&action=delete&lang=".LANG."&".bitrix_sessid_get()."';",
 		"WARNING" => "Y",
 		"ICON"	=> "btn_delete"
 	);
@@ -201,7 +201,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => !$isAdmin,
-		"back_url" => "/bitrix/admin/urlrewrite_list.php?lang=".LANG."&filter_site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false)
+		"back_url" => "/bnpt/admin/urlrewrite_list.php?lang=".LANG."&filter_site_id=".UrlEncode($site_id)."&".GetFilterParams("filter_", false)
 	)
 );
 ?>

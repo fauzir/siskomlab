@@ -23,15 +23,15 @@ class CAllTicket
 
 	/***************************************************************
 
-	Группа функций по работе с ролями на модуль
+	пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
-	Идентификаторы ролей:
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ:
 
-	D - доступ закрыт
-	R - клиент техподдержки
-	T - сотрудник техподдержки
-	V - демо-доступ
-	W - администратор техподдержки
+	D - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+	R - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	T - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	V - пїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ
+	W - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 	*****************************************************************/
 
@@ -60,7 +60,7 @@ class CAllTicket
 		return "W";
 	}
 
-	// возвращает true если заданный пользователь имеет заданную роль на модуль
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ true пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function HaveRole($role, $userID=false)
 	{
 		global $DB, $USER, $APPLICATION, $SUPPORT_CACHE_USER_ROLES;
@@ -96,8 +96,8 @@ class CAllTicket
 
 	}
 
-	// true - если пользователь имеет роль "администратор техподдержки"
-	// false - в противном случае
+	// true - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+	// false - пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function IsAdmin($userID=false)
 	{
 		global $USER;
@@ -109,22 +109,22 @@ class CAllTicket
 		return CTicket::HaveRole(CTicket::GetAdminRoleID(), $userID);
 	}
 
-	// true - если пользователь имеет роль "демо-доступ"
-	// false - в противном случае
+	// true - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅ"
+	// false - пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function IsDemo($userID=false)
 	{
 		return CTicket::HaveRole(CTicket::GetDemoRoleID(), $userID);
 	}
 
-	// true - если пользователь имеет роль "сотрудник техподдержки"
-	// false - в противном случае
+	// true - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+	// false - пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function IsSupportTeam($userID=false)
 	{
 		return CTicket::HaveRole(CTicket::GetSupportTeamRoleID(), $userID);
 	}
 
-	// true - если пользователь имеет роль "сотрудник техподдержки"
-	// false - в противном случае
+	// true - пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
+	// false - пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function IsSupportClient($userID=false)
 	{
 		return CTicket::HaveRole(CTicket::GetSupportClientRoleID(), $userID);
@@ -146,7 +146,7 @@ class CAllTicket
 		return false;
 	}
 
-	// возвращает роли заданного пользователя
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function GetRoles(&$isDemo, &$isSupportClient, &$isSupportTeam, &$isAdmin, &$isAccess, &$userID, $checkRights=true)
 	{
 		global $DB, $USER, $APPLICATION;
@@ -184,11 +184,11 @@ class CAllTicket
 		if ($isDemo || $isSupportClient || $isSupportTeam || $isAdmin) $isAccess = true;
 	}
 
-	// возвращает массив ID групп для которых задана роль
-	// $role - идентификатор роли
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ ID пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+	// $role - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	public static function GetGroupsByRole($role)
 	{
-		//Todo: определиться с доступом по умолчанию
+		//Todo: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 		global $APPLICATION, $USER;
 		if (!is_object($USER)) $USER = new CUser;
@@ -228,19 +228,19 @@ class CAllTicket
 		return array_unique($arGroups);*/
 	}
 
-	// возвращает массив групп с ролью "администратор техподдержки"
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 	public static function GetAdminGroups()
 	{
 		return CTicket::GetGroupsByRole(CTicket::GetAdminRoleID());
 	}
 
-	// возвращает массив групп с ролью "сотрудник техподдержки"
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 	public static function GetSupportTeamGroups()
 	{
 		return CTicket::GetGroupsByRole(CTicket::GetSupportTeamRoleID());
 	}
 
-	// возвращает массив EMail адресов всех пользователей имеющих заданную роль
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ EMail пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	public static function GetEmailsByRole($role)
 	{
 		global $DB, $APPLICATION, $USER;
@@ -255,13 +255,13 @@ class CAllTicket
 		return array_unique($arEmail);
 	}
 
-	// возвращает массив EMail'ов всех пользователей имеющих роль "администратор"
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ EMail'пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 	public static function GetAdminEmails()
 	{
 		return CTicket::GetEmailsByRole(CTicket::GetAdminRoleID());
 	}
 
-	// возвращает массив EMail'ов всех пользователей имеющих роль "сотрудник техподдержки"
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ EMail'пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 	public static function GetSupportTeamEmails()
 	{
 		return CTicket::GetEmailsByRole(CTicket::GetSupportTeamRoleID());
@@ -297,10 +297,10 @@ class CAllTicket
 	}
 
 	/*****************************************************************
-				Группа функций общие для всех классов
+				пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	*****************************************************************/
 
-	// проверка полей фильтра
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function CheckFilter($arFilter)
 	{
 		$err_mess = (CAllTicket::err_mess())."<br>Function: CheckFilter<br>Line: ";
@@ -331,14 +331,14 @@ class CAllTicket
 		return true;
 	}
 
-	// проверка полей перед вставкой в базу данных
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function CheckFields($arFields, $id, $arRequired)
 	{
 		global $DB, $USER, $APPLICATION, $MESS;
 
 		$arMsg = Array();
 
-		// проверяем указанные обязательные поля
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		if (is_array($arRequired) && count($arRequired)>0)
 		{
 			foreach($arRequired as $key)
@@ -354,7 +354,7 @@ class CAllTicket
 			}
 		}
 
-		// проверяем корректность дат
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 		$arDate = array(
 			"DATE_CREATE",
 			"DATE_MODIFY",
@@ -393,7 +393,7 @@ class CAllTicket
 		return true;
 	}
 
-	// предварительно обрабатывает массив значений для вставки в базу данных
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	public static function PrepareFields($arFields, $table, $id)
 	{
 		global $DB, $USER, $APPLICATION;
@@ -401,7 +401,7 @@ class CAllTicket
 		$id = intval($id);
 		$arFields_i = array();
 
-		// числа
+		// пїЅпїЅпїЅпїЅпїЅ
 		$arrNUMBER = array(
 			"SLA_ID",
 			"AGENT_ID",
@@ -443,7 +443,7 @@ class CAllTicket
 			if (is_set($arFields, $key))
 				$arFields_i[$key] = (strlen($arFields[$key])>0) ? intval($arFields[$key]) : "null";
 
-		// тип текста
+		// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		$arrTYPE = array(
 			"PREVIEW_TYPE",
 			"DESCRIPTION_TYPE",
@@ -452,7 +452,7 @@ class CAllTicket
 			if (is_set($arFields, $key))
 				$arFields_i[$key] = $arFields[$key]=="text" ? "'text'" : "'html'";
 
-		// булевые
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$arrBOOLEAN = array(
 			"AUTO_CLOSED",
 			"IS_SPAM",
@@ -471,7 +471,7 @@ class CAllTicket
 			if (is_set($arFields, $key))
 				$arFields_i[$key] = $arFields[$key]=="Y" ? "'Y'" : "'N'";
 
-		// текст
+		// пїЅпїЅпїЅпїЅпїЅ
 		$arrTEXT = array(
 			"OWNER_SID",
 			"LAST_MESSAGE_SID",
@@ -486,7 +486,7 @@ class CAllTicket
 			if (is_set($arFields, $key))
 				$arFields_i[$key] = (strlen($arFields[$key])>0) ? "'".$DB->ForSql($arFields[$key])."'" : "null";
 
-		// строка
+		// пїЅпїЅпїЅпїЅпїЅпїЅ
 		$arrSTRING = array(
 			"NAME",
 			"TITLE",
@@ -508,7 +508,7 @@ class CAllTicket
 			if (is_set($arFields, $key))
 				$arFields_i[$key] = (strlen($arFields[$key])>0) ? "'".$DB->ForSql($arFields[$key], 255)."'" : "null";
 
-		// даты
+		// пїЅпїЅпїЅпїЅ
 		$arDate = array(
 			"TIMESTAMP_X",
 			"DATE_CLOSE",
@@ -518,7 +518,7 @@ class CAllTicket
 			if (is_set($arFields, $key))
 				$arFields_i[$key] = (strlen($arFields[$key])>0) ? $DB->CharToDateFunction($arFields[$key]) : "null";
 
-		/* изображения
+		/* пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$arIMAGE = array();
 		foreach($arIMAGE as $key)
 		{
@@ -599,7 +599,7 @@ class CAllTicket
 		}
 		else $arFields_i["DATE_MODIFY"] = $DB->CurrentTimeFunction();
 
-		// убираем лишние поля для указанной таблицы
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		unset($arFields_i["ID"]);
 		$ar1 = $DB->GetTableFieldsList($table);
 		$ar2 = array_keys($arFields_i);
@@ -693,7 +693,7 @@ class CAllTicket
 	}
 
 	/*****************************************************************
-					Группа функций по работе со спамом
+					пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	*****************************************************************/
 
 	public static function MarkMessageAsSpam($messageID, $exactly="Y", $checkRights="Y")
@@ -818,7 +818,7 @@ class CAllTicket
 			$a = $b = $c = null;
 			if ($rsMessages = CTicket::GetMessageList($a, $b, $arFilter, $c, $checkRights))
 			{
-				// помечаем исходное сообщение
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				if ($arMessage = $rsMessages->Fetch())
 				{
 					CTicket::MarkMessageAsSpam($arMessage["ID"], $exactly, $checkRights);
@@ -853,7 +853,7 @@ class CAllTicket
 			$a = $b = $c = null;
 			if ($rsMessages = CTicket::GetMessageList($a, $b, $arFilter, $c, $checkRights))
 			{
-				// снимаем отметку о спаме только у первого сообщения
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				if ($arMessage = $rsMessages->Fetch())
 				{
 					CTicket::UnMarkMessageAsSpam($arMessage["ID"], $checkRights);
@@ -866,7 +866,7 @@ class CAllTicket
 
 
 	/*****************************************************************
-					Группа функций по управлению обращениями
+					пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	*****************************************************************/
 
 	/*function UpdateLastParams($ticketID, $resetAutoClose=false, $changeLastMessageDate = true, $setReopenDefault = true)
@@ -880,7 +880,7 @@ class CAllTicket
 		//if ($resetAutoClose=="Y") $arFields["AUTO_CLOSE_DAYS"] = "null";
 
 		
-		// определим последнего автора
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		$strSql = "
 			SELECT
 				ID,
@@ -911,7 +911,7 @@ class CAllTicket
 			$arFields["LAST_MESSAGE_SID"] = "'".$DB->ForSql($arLastMess["OWNER_SID"],255)."'";
 		}
 
-		// определим количество сообщений
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$strSql = "
 			SELECT
 				SUM(CASE WHEN IS_HIDDEN='Y' THEN 0 ELSE 1 END) MESSAGES,
@@ -1268,7 +1268,7 @@ class CAllTicket
 
 		$arFields = array();
 
-		// определим количество сообщений
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$strSql = "
 			SELECT
 				SUM(CASE WHEN IS_HIDDEN='Y' THEN 0 ELSE 1 END) MESSAGES,
@@ -1715,7 +1715,7 @@ class CAllTicket
 		
 	public static function Set_getFilesLinks($arFiles, $lID)
 	{
-		// сформируем ссылки на прикрепленые файлы
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		$fl = null;
 		if(is_array($arFiles) && count($arFiles) > 0)
 		{
@@ -1820,7 +1820,7 @@ class CAllTicket
 
 		if(!$v->isNew) $mf->WHAT_CHANGE = $v->change; // UPDATE
 				
-		// запишем изменения в лог
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
 		if(strlen($change_log) > 0)
 		{
 			$arFields_log = $v->arFields_log;
@@ -1843,7 +1843,7 @@ class CAllTicket
 					
 		$mf = self::GetCSupportTableFields("EventFields");
 		
-		$mf->ADMIN_EDIT_URL = "/bitrix/admin/ticket_edit.php";
+		$mf->ADMIN_EDIT_URL = "/bnpt/admin/ticket_edit.php";
 		$mf->LANGUAGE = $v->arrSite["LANGUAGE_ID"];
 		$mf->LANGUAGE_ID = $v->arrSite["LANGUAGE_ID"];
 
@@ -1925,10 +1925,10 @@ class CAllTicket
 		
 		$mf->MESSAGE_BODY = PrepareTxtForEmail($arFields["MESSAGE"], $v->arrSite["LANGUAGE_ID"], false, false);
 
-		// сформируем email автора
-		// Событие: "TICKET_CHANGE_BY_AUTHOR_FOR_AUTHOR"	- #DEFAULT_EMAIL_FROM# -> #OWNER_EMAIL# (Обращение изменено автором (для автора))
-		// Событие: "TICKET_CHANGE_BY_SUPPORT_FOR_AUTHOR"	- #DEFAULT_EMAIL_FROM# -> #OWNER_EMAIL# (Обращение изменено сотрудником техподдержки (для автора))
-		// Событие: "TICKET_NEW_FOR_AUTHOR"					- #DEFAULT_EMAIL_FROM# -> #OWNER_EMAIL# (Новое обращение (для автора))
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ email пїЅпїЅпїЅпїЅпїЅпїЅ
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "TICKET_CHANGE_BY_AUTHOR_FOR_AUTHOR"	- #DEFAULT_EMAIL_FROM# -> #OWNER_EMAIL# (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ))
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "TICKET_CHANGE_BY_SUPPORT_FOR_AUTHOR"	- #DEFAULT_EMAIL_FROM# -> #OWNER_EMAIL# (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ))
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "TICKET_NEW_FOR_AUTHOR"					- #DEFAULT_EMAIL_FROM# -> #OWNER_EMAIL# (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ))
 
 		$ownerEmail = "";
 		if($mf->OWNER_USER_ID > 0 && isset($arStrUsers["arUsers"][$mf->OWNER_USER_ID]))
@@ -1954,7 +1954,7 @@ class CAllTicket
 
 		$mf->OWNER_EMAIL = implode(", ", array_unique($arrOwnerEmails));
 		
-		// выбираем административные email'ы
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ email'пїЅ
 		$arrAdminEMails = CTicket::GetAdminEmails();
 		if(!is_array($arrAdminEMails))
 		{
@@ -1962,17 +1962,17 @@ class CAllTicket
 		}
 		TrimArr($arrAdminEMails);
 	
-		// сформируем email техподдержки
-		// Событие: "TICKET_OVERDUE_REMINDER"				- #DEFAULT_EMAIL_FROM# -> #SUPPORT_EMAIL# (Напоминание о необходимости ответа (для техподдержки))
-		// Событие: "TICKET_CHANGE_FOR_TECHSUPPORT"			- #DEFAULT_EMAIL_FROM# -> #SUPPORT_EMAIL# (Изменения в обращении (для техподдержки))
-		// Событие: "TICKET_NEW_FOR_TECHSUPPORT"			- #DEFAULT_EMAIL_FROM# -> #SUPPORT_EMAIL# (Новое обращение (для техподдержки))
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ email пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "TICKET_OVERDUE_REMINDER"				- #DEFAULT_EMAIL_FROM# -> #SUPPORT_EMAIL# (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ))
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "TICKET_CHANGE_FOR_TECHSUPPORT"			- #DEFAULT_EMAIL_FROM# -> #SUPPORT_EMAIL# (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ))
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: "TICKET_NEW_FOR_TECHSUPPORT"			- #DEFAULT_EMAIL_FROM# -> #SUPPORT_EMAIL# (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ))
 
 		$arrSupportEmails = array();
 		if($mf->RESPONSIBLE_USER_ID > 0 && isset($arStrUsers["arUsers"][$mf->RESPONSIBLE_USER_ID]))
 		{
 			$arrSupportEmails[] = $arStrUsers["arUsers"][$mf->RESPONSIBLE_USER_ID]["EMAIL"];
 
-			// из группы ответсвенного, выбираем всех пользователей кто имеет доступ к рассылке
+			// пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			$rs = CTicket::GetResponsibleList($mf->RESPONSIBLE_USER_ID, $I_Email, $U_Email, "Y");
 			while($arr0 = $rs->Fetch()) if(strlen($arr0['EMAIL']) > 0)
 			{
@@ -1993,7 +1993,7 @@ class CAllTicket
 		$mf->SUPPORT_EMAIL = count($arrSupportEmails) > 0 ? TrimEx(implode(",", array_unique($arrSupportEmails)), ",") : "";
 
 
-		// удалим продублированные адреса из макроса #SUPPORT_ADMIN_EMAIL#
+		// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ #SUPPORT_ADMIN_EMAIL#
 		if(count($arrSupportEmails) > 0)
 		{
 			foreach($arrSupportEmails as $e)
@@ -2010,7 +2010,7 @@ class CAllTicket
 		else
 		{
 			$peurl = COption::GetOptionString("support", "SUPPORT_DIR");
-			$peurl = str_replace("#LANG_DIR#", $v->arrSite["DIR"], $peurl); // совместимость
+			$peurl = str_replace("#LANG_DIR#", $v->arrSite["DIR"], $peurl); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			$peurl = str_replace("#SITE_DIR#", $v->arrSite["DIR"], $peurl);
 			$peurl = str_replace("\\", "/", $peurl);
 			$peurl = str_replace("//", "/", $peurl);
@@ -2189,7 +2189,7 @@ class CAllTicket
 		$arEventFields_author = $mf->ToArray(CSupportTableFields::ALL); //, array(CSupportTableFields::NOT_NULL)
 		$arEventFields_support = $arEventFields_author;
 
-		// отсылаем письмо автору
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		if($v->SEND_EMAIL_TO_AUTHOR == "Y" && ($v->isNew || strlen($v->change) > 0))
 		{
 			$EventType = "TICKET_NEW_FOR_AUTHOR";
@@ -2209,7 +2209,7 @@ class CAllTicket
 			if ($arEventFields_author) CEvent::Send($EventType, $v->arrSite["ID"], $arEventFields_author);
 		}
 
-		// отсылаем письмо техподдержке
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if($v->SEND_EMAIL_TO_TECHSUPPORT == "Y" && ($v->isNew || strlen($v->change) > 0 || strlen($v->change_hidden) > 0))
 		{
 			$EventType = "TICKET_NEW_FOR_TECHSUPPORT";
@@ -2230,16 +2230,16 @@ class CAllTicket
 		global $DB;
 		$err_mess = (CAllTicket::err_mess()) . "<br>Function: Set_getResponsibleUser<br>Line: ";
 		
-		// если обращение создается сотрудником техподдержки, администратором или демо пользователем
+		// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		$f->RESPONSIBLE_USER_ID = null;
 		if($v->bSupportTeam || $v->bAdmin || $v->Demo) $f->FromArray($arFields, "RESPONSIBLE_USER_ID", array(CSupportTableFields::MORE0));
 		if($f->RESPONSIBLE_USER_ID == null) unset($arFields["RESPONSIBLE_USER_ID"]);
 			
 		/*
-		получим идентификаторы события и ответственного в зависимости от
-			1) Категории
-			2) Критичности
-			3) Источника
+		пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
+			1) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			2) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			3) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		*/
 		$strSql = "
 			SELECT ID, C_TYPE, RESPONSIBLE_USER_ID, EVENT1, EVENT2, EVENT3
@@ -2255,10 +2255,10 @@ class CAllTicket
 		$v->category_set = false;
 		while($zr = $z->Fetch())
 		{
-			// если
-			//    1) ответственный определен в справочнике
-			//    2) до сих пор он не был определен
-			//    3) не был задан явно пользователем имеющим на это права
+			// пїЅпїЅпїЅпїЅ
+			//    1) пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			//    2) пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+			//    3) пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 			if ($zr["C_TYPE"]=="C")
 			{
 				$v->T_EVENT1 = trim($zr["EVENT1"]);
@@ -2275,10 +2275,10 @@ class CAllTicket
 		}
 		
 		
-		// если ответственный явно не определен то
+		// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 		if($f->RESPONSIBLE_USER_ID == null)
 		{
-			// ответственный из настроек SLA
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ SLA
 			$rsSLA = CTicketSLA::GetByID($f->SLA_ID);
 
 			if($rsSLA !== false && $arSLA = $rsSLA->Fetch())
@@ -2290,10 +2290,10 @@ class CAllTicket
 			}
 		}
 		
-		// ответственный из настроек модуля
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		if ($f->RESPONSIBLE_USER_ID == null)
 		{
-			// берем из настроек модуля ответственного по умолчанию
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			$RU_ID = intval(COption::GetOptionString("support", "DEFAULT_RESPONSIBLE_ID"));
 			$f->RESPONSIBLE_USER_ID = $RU_ID;
 		}
@@ -2307,7 +2307,7 @@ class CAllTicket
 		{
 			$slaID = $arFields['SLA_ID'];
 		}
-		// получение купона
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		if(array_key_exists('COUPON', $arFields) && strlen($arFields['COUPON']) > 0)
 		{
 			$v->bActiveCoupon = CSupportSuperCoupon::UseCoupon($arFields['COUPON']);
@@ -2330,7 +2330,7 @@ class CAllTicket
 					return false;
 			}
 		}
-		// получаем SLA
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ SLA
 		if($slaID > 0)
 		{
 			//$f->FromArray($arFields, "SLA_ID", array(CSupportTableFields::MORE0));
@@ -2371,7 +2371,7 @@ class CAllTicket
 		
 		$v->newSLA = false;
 		
-		// заголовок и сообщение - обязательные поля для нового обращения
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		if($v->isNew)
 		{
 			if(strlen($arFields["TITLE"]) <= 0)
@@ -2404,7 +2404,7 @@ class CAllTicket
 			}
 		}
 		
-		// установка прав
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 		$v->bAdmin = $v->bSupportTeam = $v->bSupportClient = $v->bDemo = $v->bOwner = false;
 		if($v->CHECK_RIGHTS == "Y")
 		{
@@ -2424,7 +2424,7 @@ class CAllTicket
 		if(!$v->bAdmin && !$v->bSupportTeam && !$v->bSupportClient) return false;
 		if (!$v->bAdmin && !$v->bSupportTeam && ($v->bDemo && !$v->bOwner)) return false;
 		
-		// Это спам?
+		// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ?
 		$f->FromArray($arFields, "IS_SPAM");
 		
 		$v->bActiveCoupon = false;
@@ -2432,13 +2432,13 @@ class CAllTicket
 		$f->FromArray($_SESSION, array("MODIFIED_GUEST_ID" => "SESS_GUEST_ID"), array(CSupportTableFields::MORE0));
 		$f->FromArray($arFields, "OWNER_USER_ID,OWNER_SID,HOLD_ON", array(CSupportTableFields::MORE0, CSupportTableFields::NOT_EMTY_STR));
 		
-		// получим SITE_ID
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ SITE_ID
 		if(strlen($arFields["SITE_ID"]) > 0) $f->SITE_ID = $arFields["SITE_ID"];
 		elseif(strlen($arFields["SITE"]) > 0) $f->SITE_ID = $arFields["SITE"];
-		elseif(strlen($arFields["LANG"]) > 0) $f->SITE_ID = $arFields["LANG"];  // совместимость со старой версией
+		elseif(strlen($arFields["LANG"]) > 0) $f->SITE_ID = $arFields["LANG"];  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		else $f->SITE_ID = SITE_ID;
 		
-		// получаем ID записей справочника по SID
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ ID пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ SID
 		$arr = array(
 			"CATEGORY"			=> "C",
 			"CRITICALITY"		=> "K",
@@ -2472,7 +2472,7 @@ class CAllTicket
 		/** @var CSupportTableFields $f */
 		$f = $v0["f"]; /* ID, SITE_ID, MODIFIED_GUEST_ID, OWNER_USER_ID, OWNER_SID, HOLD_ON, IS_SPAM */
 
-		// если модифицируем обращение то
+		// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 		if(!$v->isNew)
 		{
 			unset($arFields['COUPON']);
@@ -2480,7 +2480,7 @@ class CAllTicket
 			$arFields = CTicket::ExecuteEvents('OnBeforeTicketUpdate', $arFields, false);
 			$v->closeDate = (isset($arFields["CLOSE"]) && $arFields["CLOSE"] == "Y"); //$close
 			
-			// запоминаем предыдущие важные значения
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			$v->arrOldFields = array();
 			$arr = array(
 				"TITLE" => "T.TITLE",
@@ -2571,7 +2571,7 @@ class CAllTicket
 				$f->REOPEN = "Y";
 			}
 				
-			// Если есть что и мы Аднины или из группы ТП, запишем в базу
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 			$v->FirstUpdateRes = false;
 			
 			if($v->bSupportTeam || $v->bAdmin)
@@ -2586,7 +2586,7 @@ class CAllTicket
 					$v->SupportTeamUpdateRes = $DB->Update("b_ticket", $arFields_i, "WHERE ID='" . $f->ID . "'", $err_mess . __LINE__); //$rows1
 					$GLOBALS["USER_FIELD_MANAGER"]->Update("SUPPORT", $f->ID, $arFields);
 					
-					// если указана отметка о спаме то установим отметку о спаме
+					// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 					if (strlen($f->IS_SPAM) > 0) CTicket::MarkAsSpam($f->ID, $f->IS_SPAM, $v->CHECK_RIGHTS);
 					
 					$v->newSLA = (isset($arFields_i["SLA_ID"]) && $v->arrOldFields["SLA_ID"] != $arFields_i["SLA_ID"]);
@@ -2608,7 +2608,7 @@ class CAllTicket
 				}
 			}
 			
-			// поля для записи лога
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 			/*$arFields_log = array(
 				"LOG"							=> "Y",
 				"MESSAGE_CREATED_USER_ID"		=> $MODIFIED_USER_ID,
@@ -2625,32 +2625,32 @@ class CAllTicket
 				"MESSAGE_SOURCE_ID"				=> $f->SOURCE_ID
 			);
 			
-			// если необходимо соблюдать права то
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 			if($v->CHECK_RIGHTS == "Y")
 			{
-				// если update техподдержки не прошел то
+				// пїЅпїЅпїЅпїЅ update пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 				if(intval($v->SupportTeamUpdateRes) <= 0)
 				{
-					// убираем из массива исходных значений то что может менять только техподдержка
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					unset($v->arrOldFields["RESPONSIBLE_USER_ID"]);
 					unset($v->arrOldFields["SLA_ID"]);
 					unset($v->arrOldFields["CATEGORY_ID"]);
 					unset($v->arrOldFields["DIFFICULTY_ID"]);
 					unset($v->arrOldFields["STATUS_ID"]);
 				}
-				// если update автора не прошел то
+				// пїЅпїЅпїЅпїЅ update пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 				if (intval($v->SupportClientUpdateRes) <=0)
 				{
-					// убираем из массива исходных значений то что может менять только автор
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 					unset($v->arrOldFields["MARK_ID"]);
 				}
 			}
 			
-			// если состоялся один из updat'ов то
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ updat'пїЅпїЅ пїЅпїЅ
 			if(intval($v->SupportTeamUpdateRes) > 0 || intval($v->SupportClientUpdateRes) > 0)
 			{
 				
-				// добавляем сообщение
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				$arFields["MESSAGE_CREATED_MODULE_NAME"] = $arFields["MODIFIED_MODULE_NAME"];
 				if(is_set($arFields, "IMAGE")) $arFields["FILES"][] = $arFields["IMAGE"];
 				$arFiles = null;
@@ -2673,16 +2673,16 @@ class CAllTicket
 				//CTicket::UpdateLastParams2($f->ID, $dateType);
 				CTicket::UpdateLastParamsN($f->ID, $dateType, true, true);
 
-				/*// если обращение закрывали то
+				/*// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ
 				if($v->closeDate)
 				{
-					// удалим агентов-напоминальщиков и обновим параметры обращения
+					// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					CTicketReminder::Remove($f->ID);
 				}*/
 				
 				if(is_array($v->arrOldFields) && is_array($arFields))
 				{
-					// определяем что изменилось
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					$v->arChange = array();
 					if ($MID > 0)
 					{
@@ -2738,7 +2738,7 @@ class CAllTicket
 						}
 					}
 					
-					// получим текущие значения обращения
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					CTimeZone::Disable();
 					$z = CTicket::GetByID($f->ID, $f->SITE_ID, "N");
 					CTimeZone::Enable();
@@ -2789,7 +2789,7 @@ class CAllTicket
 
 			$f->DATE_CREATE = time() + CTimeZone::GetOffset();
 			
-			// если обращение создается сотрудником техподдержки, администратором или демо пользователем
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			if($v->bSupportTeam || $v->bAdmin || $v->Demo)
 			{
 				$f->FromArray($arFields, "SUPPORT_COMMENTS", array(CSupportTableFields::NOT_EMTY_STR));
@@ -2803,7 +2803,7 @@ class CAllTicket
 			self::Set_getResponsibleUser($v, $f, $arFields);
 			// $f +RESPONSIBLE_USER_ID  $v +T_EVENT1 +T_EVENT2 +T_EVENT3
 			
-			// поля для записи лога
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 			$v->arFields_log = array(
 				"LOG"							=> "Y",
 				"MESSAGE_CREATED_USER_ID"		=> $f->CREATED_USER_ID,
@@ -2842,11 +2842,11 @@ class CAllTicket
 				//CTicket::UpdateLastParams2($f->ID, array("EVENT"=>array(CTicket::ADD)));
 				CTicket::UpdateLastParamsN($f->ID, array("EVENT"=>array(CTicket::ADD)), true, true);
 				
-				// если указана отметка о спаме то установим отметку о спаме
+				// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
 				if (strlen($f->IS_SPAM) > 0) CTicket::MarkAsSpam($f->ID, $f->IS_SPAM, $v->CHECK_RIGHTS);
 				
 				/********************************************
-					$nf - Заново прочитанные из базы поля
+					$nf - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 				********************************************/
 
 				CTimeZone::Disable();
@@ -2862,7 +2862,7 @@ class CAllTicket
 
 					self::Set_sendMails($nf, $v, $arFields);
 
-					// создаем событие в модуле статистики
+					// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					if(CModule::IncludeModule("statistic"))
 					{
 						if(!$v->category_set)
@@ -2871,13 +2871,13 @@ class CAllTicket
 							$v->T_EVENT2 = "";
 							$v->T_EVENT3 = "";
 						}
-						if(strlen($v->T_EVENT3) <= 0) $v->T_EVENT3 = "http://" . $_SERVER["HTTP_HOST"] . "/bitrix/admin/ticket_edit.php?ID=" . $f->ID . "&lang=" . $v->arrSite["LANGUAGE_ID"];
+						if(strlen($v->T_EVENT3) <= 0) $v->T_EVENT3 = "http://" . $_SERVER["HTTP_HOST"] . "/bnpt/admin/ticket_edit.php?ID=" . $f->ID . "&lang=" . $v->arrSite["LANGUAGE_ID"];
 						CStatEvent::AddCurrent($v->T_EVENT1, $v->T_EVENT2, $v->T_EVENT3);
 					}
 					
 				}
 			}
-			// !!! ПРОВЕРИТЬ $arFields ТОЧНО ЛИ ВСЕ $arFields[..] = .. ТАКИЕ ЖЕ КАК В ОРИГИНАЛЕ !!!
+			// !!! пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ $arFields пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ $arFields[..] = .. пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ !!!
 			$arFields['ID'] = $f->ID;
 			$arFields['MID'] = $MID;
 			CTicket::ExecuteEvents('OnAfterTicketAdd', $arFields, true);
@@ -2887,7 +2887,7 @@ class CAllTicket
 	}
 
 	/***********************************************
-			Старые функции для совместимости
+			пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	***********************************************/
 
 	public static function GetFUA($site_id)
@@ -3043,7 +3043,7 @@ class CAllTicket
 				$arResUsers[$v] = array("NAME" => GetMessage("SUP_UNKNOWN_USER"), "SECOND_NAME" => "","LAST_NAME" => "","LOGIN" => GetMessage("SUP_UNKNOWN_USER"),"ID" => $v, "EMAIL" => "");
 			}
 			$name = CUser::FormatName($siteNameFormat, $arResUsers[$v], true, true);
-			$arResUsers[$v]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bitrix/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] (" . htmlspecialcharsbx($arResUsers[$v]['LOGIN'])  . ") " . $name;
+			$arResUsers[$v]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bnpt/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] (" . htmlspecialcharsbx($arResUsers[$v]['LOGIN'])  . ") " . $name;
 				//" (".$str_OWNER_LOGIN.") ".$str_OWNER_NAME;
 			$arResUsers[$v]["HTML_NAME_S"] = "[" . $v . "] " . $name;
 		}
@@ -3060,8 +3060,8 @@ class CAllTicket
 				$arResGuests[$k] = array("NAME" => GetMessage("SUP_UNKNOWN_GUEST"), "SECOND_NAME" => "","LAST_NAME" => "","LOGIN" => GetMessage("SUP_UNKNOWN_GUEST"),"ID" => $v,"UNKNOWN" => true, "EMAIL" => "");
 			}
 			$name = CUser::FormatName($siteNameFormat, $arResGuests[$k], true, true);
-			$arResGuests[$k]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bitrix/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] " . $name .
-				" [<a title='" . GetMessage("SUP_GUEST_ID") . "'  href='/bitrix/admin/guest_list.php?lang=" . LANG . "&find_id=" . $k . "&find_id_exact_match=Y&set_filter=Y'>" . $k . "</a>]";
+			$arResGuests[$k]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bnpt/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] " . $name .
+				" [<a title='" . GetMessage("SUP_GUEST_ID") . "'  href='/bnpt/admin/guest_list.php?lang=" . LANG . "&find_id=" . $k . "&find_id_exact_match=Y&set_filter=Y'>" . $k . "</a>]";
 			$arResUsers[$v]["HTML_NAME_S"] = "[" . $v . "] " . $name . " [" . $k . "]";
 		}
 

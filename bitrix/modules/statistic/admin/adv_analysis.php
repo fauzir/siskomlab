@@ -211,7 +211,7 @@ else:
 <td valign="center" class="graph"><?
 	$width = COption::GetOptionString("statistic", "GRAPH_WEIGHT");
 	$height = COption::GetOptionString("statistic", "GRAPH_HEIGHT");
-	?><img class="graph" src="/bitrix/admin/adv_analysis_graph.php?rand=<?=rand()?>&find_data_type=<?=$find_data_type?><?=GetFilterParams($FilterArr)?>&width=<?=$width?>&height=<?=$height?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>">
+	?><img class="graph" src="/bnpt/admin/adv_analysis_graph.php?rand=<?=rand()?>&find_data_type=<?=$find_data_type?><?=GetFilterParams($FilterArr)?>&width=<?=$width?>&height=<?=$height?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>">
 </td>
 </tr>
 </table>
@@ -262,10 +262,10 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 	$row =& $lAdmin->AddRow($number, $arRes);
 
-	$row->AddViewField("COLOR", "&nbsp;<img src=\"/bitrix/admin/graph_legend.php?color=".$f_CLR."\" width=\"45\" height=\"2\">&nbsp;");
-	$row->AddViewField("ADV", "[<a href=\"/bitrix/admin/adv_list.php?lang=".LANG."&amp;find_id=".$f_ID."&amp;find_id_exact_match=Y&amp;set_filter=Y\">".$f_ID."</a>]&nbsp;".$f_R1."&nbsp;/&nbsp;".$f_R2);
+	$row->AddViewField("COLOR", "&nbsp;<img src=\"/bnpt/admin/graph_legend.php?color=".$f_CLR."\" width=\"45\" height=\"2\">&nbsp;");
+	$row->AddViewField("ADV", "[<a href=\"/bnpt/admin/adv_list.php?lang=".LANG."&amp;find_id=".$f_ID."&amp;find_id_exact_match=Y&amp;set_filter=Y\">".$f_ID."</a>]&nbsp;".$f_R1."&nbsp;/&nbsp;".$f_R2);
 	$row->AddViewField("PERCENT", $q."%");
-	$row->AddViewField("COUNTER", "<a href=\"/bitrix/admin/adv_dynamic_list.php?lang=".LANG."&amp;find_adv_id=".$f_ID."&amp;find_adv_id_exact_match=Y&amp;find_date1=".urlencode($find_date1)."&amp;find_date2=".urlencode($find_date2)."&amp;set_filter=Y\">".$f_SM."</a>");
+	$row->AddViewField("COUNTER", "<a href=\"/bnpt/admin/adv_dynamic_list.php?lang=".LANG."&amp;find_adv_id=".$f_ID."&amp;find_adv_id_exact_match=Y&amp;find_date1=".urlencode($find_date1)."&amp;find_date2=".urlencode($find_date2)."&amp;set_filter=Y\">".$f_SM."</a>");
 }
 
 // List footer

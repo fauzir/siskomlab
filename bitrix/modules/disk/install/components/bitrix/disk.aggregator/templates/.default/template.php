@@ -35,7 +35,7 @@ if($USER->isAdmin())
 	}
 
 	$urlCreateLibrary = $APPLICATION->getPopupLink(array(
-		'URL' => '/bitrix/admin/public_file_new.php?' . http_build_query(array(
+		'URL' => '/bnpt/admin/public_file_new.php?' . http_build_query(array(
 			'wiz_template' => 'disk_common',
 			'lang' => LANGUAGE_ID,
 			'site' => LANG,

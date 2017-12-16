@@ -20,8 +20,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/mail/include.php");
 $err_mess = "File: ".__FILE__."<br>Line: ";
 
 $sTableID = "t_filter_admin";
-$oSort = new CAdminSorting($sTableID, "timestamp_x", "desc");// инициализация сортировки
-$lAdmin = new CAdminList($sTableID, $oSort);// инициализация списка
+$oSort = new CAdminSorting($sTableID, "timestamp_x", "desc");// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+$lAdmin = new CAdminList($sTableID, $oSort);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 $filter = new CAdminFilter(
@@ -41,7 +41,7 @@ $arFilterFields = Array(
 	"find_active",
 );
 
-$lAdmin->InitFilter($arFilterFields);//инициализация фильтра
+$lAdmin->InitFilter($arFilterFields);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 $arFilter = Array(
 	"ID"=>$find_id,
@@ -52,7 +52,7 @@ $arFilter = Array(
 
 
 
-if ($MOD_RIGHT=="W" && $lAdmin->EditAction()) //если идет сохранение со списка
+if ($MOD_RIGHT=="W" && $lAdmin->EditAction()) //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 {
 	foreach($FIELDS as $ID => $arFields)
 	{
@@ -73,7 +73,7 @@ if ($MOD_RIGHT=="W" && $lAdmin->EditAction()) //если идет сохранение со списка
 }
 
 
-// обработка действий групповых и одиночных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if($MOD_RIGHT=="W" && $arID = $lAdmin->GroupAction())
 {
 	if($_REQUEST['action_target']=='selected')
@@ -119,7 +119,7 @@ $rsData = CMailFilter::GetList(Array($by=>$order), $arFilter);
 $rsData = new CAdminResult($rsData, $sTableID);
 $rsData->NavStart();
 
-// установка строки навигации
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->NavText($rsData->GetNavPrint(GetMessage("MAIL_FILT_ADM_NAVIGATION")));
 
 
@@ -134,7 +134,7 @@ $arHeaders[] = Array("id"=>"MAILBOX_NAME", "content"=>GetMessage("MAIL_FILT_ADM_
 
 $lAdmin->AddHeaders($arHeaders);
 
-// построение списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 while($arRes = $rsData->NavNext(true, "f_"))
 {
 	$row =& $lAdmin->AddRow($f_ID, $arRes);
@@ -309,7 +309,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 }
 
 
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array("title"=>GetMessage("MAIN_ADMIN_LIST_SELECTED"), "value"=>$rsData->SelectedRowsCount()),
@@ -319,7 +319,7 @@ $lAdmin->AddFooter(
 
 if ($MOD_RIGHT=="W")
 {
-	// показ добавление формы с кнопками
+	// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	$lAdmin->AddGroupActionTable(Array(
 		"activate"=>GetMessage("MAIN_ADMIN_LIST_ACTIVATE"),
 		"deactivate"=>GetMessage("MAIN_ADMIN_LIST_DEACTIVATE"),
@@ -335,7 +335,7 @@ $arSubMenu = Array();
 
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("MAIL_FILT_ADM_MANUAL_TYPE"),
-	"ACTION"	=> "window.location='/bitrix/admin/mail_filter_edit.php?filter_type=&lang=".LANG."';"
+	"ACTION"	=> "window.location='/bnpt/admin/mail_filter_edit.php?filter_type=&lang=".LANG."';"
 );
 
 ClearVars("a_");
@@ -344,7 +344,7 @@ while($ar = $res->ExtractFields("a_"))
 {
 	$arSubMenu[] = array(
 	"TEXT"	=> $a_NAME,
-	"ACTION"	=> "window.location='/bitrix/admin/mail_filter_edit.php?filter_type=".$a_ID."&lang=".LANG."';"
+	"ACTION"	=> "window.location='/bnpt/admin/mail_filter_edit.php?filter_type=".$a_ID."&lang=".LANG."';"
 	);
 }
 

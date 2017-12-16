@@ -112,7 +112,7 @@ if ($bCanEdit)
 			"TITLE" => GetMessage("LEARNING_COURSES_COURSE_EDIT"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bitrix/admin/learn_course_edit.php?COURSE_ID=".$arParams["COURSE_ID"]."&lang=".LANGUAGE_ID."&bxpublic=Y&from_module=learning",
+					"URL" => "/bnpt/admin/learn_course_edit.php?COURSE_ID=".$arParams["COURSE_ID"]."&lang=".LANGUAGE_ID."&bxpublic=Y&from_module=learning",
 					"PARAMS" => array(
 						"width" => 700, 'height' => 500, 'resize' => false,
 					),

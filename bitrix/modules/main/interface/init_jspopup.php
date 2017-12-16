@@ -6,7 +6,7 @@ function JSPopupRedirectHandler(&$url, $skip_security_check)
 	$a = new CAutoSave();
 	$a->Reset();
 
-	if(preg_match("#^/bitrix/admin/#", $url))
+	if(preg_match("#^/bnpt/admin/#", $url))
 	{
 		ob_end_clean();
 		echo '<script type="text/javascript">top.BX.WindowManager.Get().Close(); '.(!$_REQUEST['subdialog'] ? 'top.BX.reload(true);' : '').'</script>';

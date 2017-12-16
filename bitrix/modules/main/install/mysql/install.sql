@@ -903,13 +903,13 @@ INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, 
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(102, 'FMST_PANEL_STICKERS', '', '-=AUTONAME=-', NULL, 'FMST_PANEL_STICKERS', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(103, 'top_panel_settings', '', '-=AUTONAME=-', NULL, 'top_panel_settings', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(104, 'top_panel_fav', '', '-=AUTONAME=-', NULL, 'top_panel_fav', '', 0);
-INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(106, 'Global', 'location.href=''/bitrix/admin/hot_keys_list.php?lang=ru'';', 'HK_DB_SHW_HK', '', '', '', 0);
+INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(106, 'Global', 'location.href=''/bnpt/admin/hot_keys_list.php?lang=ru'';', 'HK_DB_SHW_HK', '', '', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(107, 'top_panel_edit_new', '', '-=AUTONAME=-', NULL, 'top_panel_edit_new', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(108, 'FLOW_PANEL_CREATE_WITH_WF', '', '-=AUTONAME=-', NULL, 'FLOW_PANEL_CREATE_WITH_WF', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(109, 'FLOW_PANEL_EDIT_WITH_WF', '', '-=AUTONAME=-', NULL, 'FLOW_PANEL_EDIT_WITH_WF', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(110, 'FLOW_PANEL_HISTORY', '', '-=AUTONAME=-', NULL, 'FLOW_PANEL_HISTORY', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(112, 'top_panel_create_folder_new', '', '-=AUTONAME=-', NULL, 'top_panel_create_folder_new', '', 0);
-INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(139, 'Global', 'location.href=''/bitrix/admin/user_admin.php?lang=''+phpVars.LANGUAGE_ID;', 'HK_DB_SHW_U', '', '', '', 0);
+INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(139, 'Global', 'location.href=''/bnpt/admin/user_admin.php?lang=''+phpVars.LANGUAGE_ID;', 'HK_DB_SHW_U', '', '', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(116, 'bx-panel-toggle', '', '-=AUTONAME=-', NULL, 'bx-panel-toggle', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(118, 'bx-panel-expander', 'var d=BX(''bx-panel-expander''); if (d) BX.fireEvent(d, ''click'');', '-=AUTONAME=-', NULL, 'bx-panel-expander', '', 0);
 INSERT INTO b_hot_keys_code (ID, CLASS_NAME, CODE, `NAME`, COMMENTS, TITLE_OBJ, URL, IS_CUSTOM) VALUES(117, 'bx-panel-small-toggle', '', '-=AUTONAME=-', NULL, 'bx-panel-small-toggle', '', 0);

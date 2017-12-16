@@ -751,7 +751,7 @@ if ($selectFieldsMap['CREATED_BY'] || $selectFieldsMap['MODIFIED_BY'])
 		while ($arOneUser = $userIterator->fetch())
 		{
 			$arOneUser['ID'] = (int)$arOneUser['ID'];
-			$userList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($nameFormat, $arOneUser).'</a>';
+			$userList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($nameFormat, $arOneUser).'</a>';
 		}
 		unset($arOneUser, $userIterator);
 	}

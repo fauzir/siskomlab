@@ -43,7 +43,7 @@ class filemanMedialibUpload
 		$name = $file["name"];
 		$pattern = defined('BX_UTF')
 			? "/[^\p{L}L0-9!\p{Z}\$&\(\)\[\]\{\}\-\.;=@\^_\~]/uis"
-			: "/[^A-Za-zÀ-ß¨à-ÿ¸0-9!\s\$&\(\)\[\]\{\}\-\.;=@\^_\~]/is";
+			: "/[^A-Za-zï¿½-ß¨ï¿½-ï¿½ï¿½0-9!\s\$&\(\)\[\]\{\}\-\.;=@\^_\~]/is";
 		$name = trim(preg_replace($pattern, "", $name));
 		if (strlen(trim(substr($name, 0, strpos($name, '.')))) <= 0)
 			$name = substr(md5(uniqid(rand(), true)), 0, 8).trim($name);
@@ -132,7 +132,7 @@ elseif($action == 'redirect')  //Redirect after files uploading
 	$aContext[] = Array(
 		"TEXT" => GetMessage("FM_ML"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+		"LINK" => "/bnpt/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID."&".bitrix_sessid_get()
 	);
 	$menu = new CAdminContextMenu($aContext);
 	$menu->Show();
@@ -161,7 +161,7 @@ elseif($action == 'redirect')  //Redirect after files uploading
 		?>
 		<script>window.arKeywords = {};</script>
 
-		<form name="ml_mu_form" action="/bitrix/admin/fileman_medialib_upload.php?action=postsave" method="POST">
+		<form name="ml_mu_form" action="/bnpt/admin/fileman_medialib_upload.php?action=postsave" method="POST">
 		<table class="mu-items-list" border="0"><?
 		for($i = 0; $i < $len; $i++)
 		{
@@ -212,7 +212,7 @@ elseif($action == 'redirect')  //Redirect after files uploading
 		<input type="hidden" value="<?= $colId?>" name="col_id" />
 		<?=bitrix_sessid_post()?>
 		<input type="submit" title="<?= GetMessage('admin_lib_edit_save_title')?>" value="<?= GetMessage('admin_lib_edit_save')?>" name="save" />
-		<input type="button" title="<?= GetMessage('admin_lib_edit_cancel_title')?>" onclick="window.location='/bitrix/admin/fileman_medialib_admin.php?lang=<?= LANGUAGE_ID?>';" name="cancel" value="<?= GetMessage('admin_lib_edit_cancel')?>" />
+		<input type="button" title="<?= GetMessage('admin_lib_edit_cancel_title')?>" onclick="window.location='/bnpt/admin/fileman_medialib_admin.php?lang=<?= LANGUAGE_ID?>';" name="cancel" value="<?= GetMessage('admin_lib_edit_cancel')?>" />
 		</form>
 		<script>
 		document.forms['ml_mu_form'].onsubmit = function(e)
@@ -381,7 +381,7 @@ elseif($action == 'postsave')
 		}
 	}
 
-	LocalRedirect("/bitrix/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID."&".bitrix_sessid_get());
+	LocalRedirect("/bnpt/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID."&".bitrix_sessid_get());
 }
 
 // ***************************** Show upploader  **************************
@@ -396,7 +396,7 @@ $select = CMedialib::_BuildCollectionsSelectOptions($trees['Collections'], $tree
 $menu = new CAdminContextMenu(array(
 	array(
 		"TEXT" => GetMessage("FM_ML"),
-		"LINK" => "/bitrix/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID,
 		"ICON" => "btn_list",
 	)
 ));

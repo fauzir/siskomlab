@@ -227,7 +227,7 @@ class OrderShipment
 		{
 			if ($saleModulePermissions >= "W")
 			{
-				$companies = str_replace("#URL#", "/bitrix/admin/sale_company_edit.php?lang=".$lang, Loc::getMessage('SALE_ORDER_SHIPMENT_ADD_COMPANY'));
+				$companies = str_replace("#URL#", "/bnpt/admin/sale_company_edit.php?lang=".$lang, Loc::getMessage('SALE_ORDER_SHIPMENT_ADD_COMPANY'));
 			}
 		}
 
@@ -318,7 +318,7 @@ class OrderShipment
 					<tr>
 						<td class="adm-detail-content-cell-l vat" width="40%"></td>
 						<td class="adm-detail-content-cell-r">
-							<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_ALLOW_DELIVERY']).'</span>  <a href="/bitrix/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_ALLOW_DELIVERY_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_NAME']).'</a></div>
+							<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_ALLOW_DELIVERY']).'</span>  <a href="/bnpt/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_ALLOW_DELIVERY_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_NAME']).'</a></div>
 						</td>
 					</tr>
 					' : '').'
@@ -330,7 +330,7 @@ class OrderShipment
 					<tr>
 						<td class="adm-detail-content-cell-l fwb vat" width="40%"></td>
 						<td class="adm-detail-content-cell-r">
-							<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_DEDUCTED']).'</span>  <a href="/bitrix/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_DEDUCTED_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_NAME']).'</a></div>
+							<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_DEDUCTED']).'</span>  <a href="/bnpt/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_DEDUCTED_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_NAME']).'</a></div>
 						</td>
 					</tr>
 					' : '').'
@@ -1135,7 +1135,7 @@ class OrderShipment
 		$sectionEdit = '';
 		$allowedOrderStatusesUpdate = DeliveryStatus::getStatusesUserCanDoOperations($USER->GetID(), array('update'));
 		if (in_array($data["STATUS_ID"], $allowedOrderStatusesUpdate) && !$data['ORDER_LOCKED'] && $formType != 'archive')
-			$sectionEdit = '<div class="adm-bus-pay-section-action" id="SHIPMENT_SECTION_'.$index.'_EDIT"><a href="/bitrix/admin/sale_order_shipment_edit.php?order_id='.$data['ORDER_ID'].'&shipment_id='.$data['ID'].'&backurl='.urlencode($backUrl).'">'.Loc::getMessage('SALE_ORDER_SHIPMENT_BLOCK_SHIPMENT_EDIT').'</a></div>';
+			$sectionEdit = '<div class="adm-bus-pay-section-action" id="SHIPMENT_SECTION_'.$index.'_EDIT"><a href="/bnpt/admin/sale_order_shipment_edit.php?order_id='.$data['ORDER_ID'].'&shipment_id='.$data['ID'].'&backurl='.urlencode($backUrl).'">'.Loc::getMessage('SALE_ORDER_SHIPMENT_BLOCK_SHIPMENT_EDIT').'</a></div>';
 
 		$result = '
 			<input type="hidden" name="SHIPMENT['.$index.'][DEDUCTED]" id="STATUS_DEDUCTED_'.$index.'" value="'.($data['DEDUCTED'] == "" ? "N" : $data['DEDUCTED']).'">
@@ -1217,7 +1217,7 @@ class OrderShipment
 											<tr>
 												<td class="adm-detail-content-cell-l vat" width="40%"></td>
 												<td class="adm-detail-content-cell-r">
-													<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_ALLOW_DELIVERY']).'</span>  <a href="/bitrix/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_ALLOW_DELIVERY_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_NAME']).'</a></div>
+													<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_ALLOW_DELIVERY']).'</span>  <a href="/bnpt/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_ALLOW_DELIVERY_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_ALLOW_DELIVERY_ID_NAME']).'</a></div>
 												</td>
 											</tr>
 											' : '').'
@@ -1229,7 +1229,7 @@ class OrderShipment
 											<tr>
 												<td class="adm-detail-content-cell-l vat" width="40%"></td>
 												<td class="adm-detail-content-cell-r">
-													<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_DEDUCTED']).'</span>  <a href="/bitrix/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_DEDUCTED_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_NAME']).'</a></div>
+													<div>'.Loc::getMessage('SALE_ORDER_SHIPMENT_MODIFY_BY').': <span style="color: #66878F" id="order_additional_info_date_responsible">'.htmlspecialcharsbx($data['DATE_DEDUCTED']).'</span>  <a href="/bnpt/admin/user_edit.php?lang='.$lang.'&ID='.$data['EMP_DEDUCTED_ID'].'" id="order_additional_info_emp_responsible">'.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_LAST_NAME']).' '.htmlspecialcharsbx($data['EMP_DEDUCTED_ID_NAME']).'</a></div>
 												</td>
 											</tr>
 											' : '').'

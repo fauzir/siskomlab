@@ -62,18 +62,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && check_bitrix_sessid() && strlen($_RE
 		$DB->Commit();
 
 		if (strlen($_REQUEST["apply"])<=0)
-			LocalRedirect("/bitrix/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/cat_contractor_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_contractor_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
 	}
 	elseif (strlen($errorMessage) == 0 && $ID == 0 && $res = CCatalogContractor::Add($arFields))
 	{
 		$ID = $res;
 		$DB->Commit();
 		if (strlen($_REQUEST["apply"])<=0)
-			LocalRedirect("/bitrix/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/cat_contractor_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_contractor_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -126,7 +126,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CONTRACTOR_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -137,13 +137,13 @@ if ($ID > 0 && !$bReadOnly)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CONTRACTOR_NEW"),
 		"ICON" => "btn_new",
-		"LINK" => "/bitrix/admin/cat_contractor_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/cat_contractor_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CONTRACTOR_DELETE"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessage("CONTRACTOR_DELETE_CONFIRM")."')) window.location='/bitrix/admin/cat_contractor_list.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("CONTRACTOR_DELETE_CONFIRM")."')) window.location='/bnpt/admin/cat_contractor_list.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -292,7 +292,7 @@ $context->Show();
 		$tabControl->Buttons(
 			array(
 				"disabled" => $bReadOnly,
-				"back_url" => "/bitrix/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bnpt/admin/cat_contractor_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 		);
 		$tabControl->End();

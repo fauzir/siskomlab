@@ -138,7 +138,7 @@ else:
 							$APPLICATION->AddHeadScript("/bitrix/js/main/admin_tools.js");
 							$APPLICATION->AddHeadScript("/bitrix/js/main/utils.js");
 							$APPLICATION->SetAdditionalCSS('/bitrix/themes/.default/pubstyles.css');
-							$APPLICATION->SetAdditionalCSS('/bitrix/admin/htmleditor2/editor.css');
+							$APPLICATION->SetAdditionalCSS('/bnpt/admin/htmleditor2/editor.css');
 							$APPLICATION->SetTemplateCSS('ajax/ajax.css');
 						}
 						?>

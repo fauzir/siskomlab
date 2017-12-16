@@ -304,13 +304,13 @@ if(!$bReadOnly && $request->isPost() && ($request["save"]<>'' || $request["apply
 
 		if($request["apply"]<>'')
 		{
-			LocalRedirect('/bitrix/admin/seo_search_yandex_direct_banner_edit.php?lang='.LANGUAGE_ID.'&ID='.$ID.'&'.$tabControl->ActiveTabParam());
+			LocalRedirect('/bnpt/admin/seo_search_yandex_direct_banner_edit.php?lang='.LANGUAGE_ID.'&ID='.$ID.'&'.$tabControl->ActiveTabParam());
 		}
 		else
 		{
 			if($back_url == '')
 			{
-				LocalRedirect("/bitrix/admin/seo_search_yandex_direct_banner.php?lang=".LANGUAGE_ID.'&campaign='.$campaign['ID']);
+				LocalRedirect("/bnpt/admin/seo_search_yandex_direct_banner.php?lang=".LANGUAGE_ID.'&campaign='.$campaign['ID']);
 			}
 			else
 			{
@@ -642,7 +642,7 @@ if(($ID > 0 || $elementId > 0) && Main\Loader::includeModule('iblock'))
 		<td></td>
 		<td colspan="3">
 			<input type="hidden" id="new_link_container[]" onchange="createLink(this.value, '<?=Adv\LinkTable::TYPE_IBLOCK_ELEMENT?>')">
-			<a href="javascript:void(0)" onclick="BX.util.popup('/bitrix/admin/iblock_element_search.php?lang=ru&n=new_link_container', 1000, 700);"><?=Loc::getMessage('SEO_BANNER_LINK_CREATE_ITEM')?></a><br />
+			<a href="javascript:void(0)" onclick="BX.util.popup('/bnpt/admin/iblock_element_search.php?lang=ru&n=new_link_container', 1000, 700);"><?=Loc::getMessage('SEO_BANNER_LINK_CREATE_ITEM')?></a><br />
 		</td>
 	</tr>
 <?

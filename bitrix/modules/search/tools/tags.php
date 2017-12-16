@@ -27,7 +27,7 @@ function tags_prepare($sText, $site_id = false)
 function TagsShowScript()
 {
 	global $APPLICATION;
-	$APPLICATION->SetAdditionalCSS("/bitrix/admin/htmleditor2/editor.css");
+	$APPLICATION->SetAdditionalCSS("/bnpt/admin/htmleditor2/editor.css");
 	CJSCore::Init('search_tags');
 }
 

@@ -178,7 +178,7 @@ Class ldap extends CModule
 			if($_ENV["COMPUTERNAME"]!='BX')
 			{
 				CopyDirFiles($_SERVER['DOCUMENT_ROOT']."/bitrix/modules/ldap/install/images", $_SERVER['DOCUMENT_ROOT']."/bitrix/images/ldap");
-				CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ldap/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+				CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ldap/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 				CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ldap/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			}
 		}
@@ -195,7 +195,7 @@ Class ldap extends CModule
 	
 	function UnInstallFiles($arParams = array())
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ldap/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ldap/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 		
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/ldap/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");//css
 		DeleteDirFilesEx("/bitrix/themes/.default/icons/ldap/");//icons

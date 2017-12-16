@@ -127,7 +127,7 @@ class CIBlockPropertySectionAutoComplete extends CIBlockPropertyElementAutoCompl
 				style="float: left; margin-right: 10px; margin-top: 5px;"
 				type="button" value="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_SEARCH_ELEMENT'); ?>"
 				title="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_SEARCH_ELEMENT_DESCR'); ?>"
-				onclick="jsUtils.OpenWindow('/bitrix/admin/iblock_section_search.php?lang=<? echo LANGUAGE_ID; ?>&IBLOCK_ID=<? echo $arProperty["LINK_IBLOCK_ID"]; ?>&n=&k=&lookup=<? echo 'jsMLI_'.$control_id; ?><?=($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId; ?>', 900, 700);"><?
+				onclick="jsUtils.OpenWindow('/bnpt/admin/iblock_section_search.php?lang=<? echo LANGUAGE_ID; ?>&IBLOCK_ID=<? echo $arProperty["LINK_IBLOCK_ID"]; ?>&n=&k=&lookup=<? echo 'jsMLI_'.$control_id; ?><?=($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId; ?>', 900, 700);"><?
 			}
 			if ('Y' == $arProperty['USER_TYPE_SETTINGS']['SHOW_ADD'] && $fixIBlock)
 			{
@@ -149,7 +149,7 @@ class CIBlockPropertySectionAutoComplete extends CIBlockPropertyElementAutoCompl
 				style="margin-top: 5px;"
 				value="<? echo htmlspecialcharsbx($strButtonCaption); ?>"
 				title="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_NEW_ELEMENT_DESCR'); ?>"
-				onclick="jsUtils.OpenWindow('<? echo '/bitrix/admin/'.CIBlock::GetAdminSectionEditLink(
+				onclick="jsUtils.OpenWindow('<? echo '/bnpt/admin/'.CIBlock::GetAdminSectionEditLink(
 					$arProperty["LINK_IBLOCK_ID"],
 					null,
 					array(
@@ -244,7 +244,7 @@ class CIBlockPropertySectionAutoComplete extends CIBlockPropertyElementAutoCompl
 				style="float: left; margin-right: 10px; margin-top: 5px;"
 				type="button" value="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_SEARCH_ELEMENT'); ?>"
 				title="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_SEARCH_ELEMENT_MULTI_DESCR'); ?>"
-				onclick="jsUtils.OpenWindow('/bitrix/admin/iblock_section_search.php?lang=<? echo LANGUAGE_ID; ?>&IBLOCK_ID=<? echo $arProperty["LINK_IBLOCK_ID"]; ?>&m=Y&n=&k=&lookup=<? echo 'jsMLI_'.$control_id; ?><?=($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId; ?>', 900, 700);"><?
+				onclick="jsUtils.OpenWindow('/bnpt/admin/iblock_section_search.php?lang=<? echo LANGUAGE_ID; ?>&IBLOCK_ID=<? echo $arProperty["LINK_IBLOCK_ID"]; ?>&m=Y&n=&k=&lookup=<? echo 'jsMLI_'.$control_id; ?><?=($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId; ?>', 900, 700);"><?
 			}
 			if ('Y' == $arProperty['USER_TYPE_SETTINGS']['SHOW_ADD'] && $fixIBlock)
 			{
@@ -266,7 +266,7 @@ class CIBlockPropertySectionAutoComplete extends CIBlockPropertyElementAutoCompl
 				style="margin-top: 5px;"
 				value="<? echo htmlspecialcharsbx($strButtonCaption); ?>"
 				title="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_NEW_ELEMENT_DESCR'); ?>"
-				onclick="jsUtils.OpenWindow('<? echo '/bitrix/admin/'.CIBlock::GetAdminSectionEditLink(
+				onclick="jsUtils.OpenWindow('<? echo '/bnpt/admin/'.CIBlock::GetAdminSectionEditLink(
 					$arProperty["LINK_IBLOCK_ID"],
 					null,
 					array(
@@ -292,7 +292,7 @@ class CIBlockPropertySectionAutoComplete extends CIBlockPropertyElementAutoCompl
 		$mxResult = static::GetPropertyValue($arProperty,$arValue);
 		if (is_array($mxResult))
 		{
-			$strResult = $mxResult['NAME'].' [<a href="/bitrix/admin/'.
+			$strResult = $mxResult['NAME'].' [<a href="/bnpt/admin/'.
 				CIBlock::GetAdminSectionEditLink(
 					$mxResult['IBLOCK_ID'],
 					$mxResult['ID'],
@@ -569,7 +569,7 @@ class CIBlockPropertySectionAutoComplete extends CIBlockPropertyElementAutoCompl
 		);
 		?><input style="float: left; margin-right: 10px;" type="button" value="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_SEARCH_ELEMENT'); ?>"
 			title="<? echo Loc::getMessage('BT_UT_SAUTOCOMPLETE_MESS_SEARCH_ELEMENT_MULTI_DESCR'); ?>"
-			onclick="jsUtils.OpenWindow('/bitrix/admin/iblock_section_search.php?lang=<? echo LANGUAGE_ID; ?>&IBLOCK_ID=<? echo $arProperty["LINK_IBLOCK_ID"]; ?>&m=Y&n=&k=&lookup=<? echo 'jsMLI_'.$control_id; ?><?=($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId; ?>', 900, 700);"
+			onclick="jsUtils.OpenWindow('/bnpt/admin/iblock_section_search.php?lang=<? echo LANGUAGE_ID; ?>&IBLOCK_ID=<? echo $arProperty["LINK_IBLOCK_ID"]; ?>&m=Y&n=&k=&lookup=<? echo 'jsMLI_'.$control_id; ?><?=($fixIBlock ? '&iblockfix=y' : '').'&tableId='.$windowTableId; ?>', 900, 700);"
 		>
 		<script type="text/javascript">
 		indClearHiddenFields = arClearHiddenFields.length;

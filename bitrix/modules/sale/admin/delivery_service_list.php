@@ -306,7 +306,7 @@ if ($saleModulePermissions == "W")
 
 		$aContext[] = array(
 			"TEXT" => Loc::getMessage("SALE_SDL_TO_LIST"),
-			"LINK" => isset($_GET["back_url"]) ? $_GET["back_url"] : "/bitrix/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID.
+			"LINK" => isset($_GET["back_url"]) ? $_GET["back_url"] : "/bnpt/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID.
 				(!empty($filter_group) ? "&filter_group=".intval($filter_group) : "")."&set_filter=Y",
 			"TITLE" => Loc::getMessage("SALE_SDL_TO_LIST_ALT"),
 		);

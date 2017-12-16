@@ -46,7 +46,7 @@
 			sParam += '&p[0][d]=Y';
 		sParam += '&p[0][v][tabs]=' + BX.util.urlencode(sTabs);
 
-		var options_url = '/bitrix/admin/user_options.php?lang='+BX.message('LANGUAGE_ID')+'&sessid=' + BX.bitrix_sessid();
+		var options_url = '/bnpt/admin/user_options.php?lang='+BX.message('LANGUAGE_ID')+'&sessid=' + BX.bitrix_sessid();
 		options_url += '&action=delete&c=form&n='+this.name+'_disabled';
 
 		BX.showWait();
@@ -101,7 +101,7 @@
 		sParam += '&p[0][c]=form';
 		sParam += '&p[0][n]='+encodeURIComponent(this.name+'_disabled');
 		sParam += '&p[0][v][disabled]=Y';
-		request.Send('/bitrix/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
+		request.Send('/bnpt/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
 	};
 
 	BX.adminSubTabControl.prototype.EnableSettings = function()
@@ -123,7 +123,7 @@
 		sParam += '&c=form';
 		sParam += '&n='+encodeURIComponent(this.name)+'_disabled';
 		sParam += '&action=delete';
-		request.Send('/bitrix/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
+		request.Send('/bnpt/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
 	};
 	
 	BX.adminSubTabControl.prototype.CloseSettings =  function()

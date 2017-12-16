@@ -125,7 +125,7 @@ if (
 		if (isset($_POST["save"]) && $_GET["return_url"] != "")
 			LocalRedirect($_GET["return_url"]);
 
-		LocalRedirect("/bitrix/admin/bitrixcloud_cdn.php?lang=".LANGUAGE_ID.($_GET["return_url"] ? "&return_url=".urlencode($_GET["return_url"]) : "")."&".$tabControl->ActiveTabParam());
+		LocalRedirect("/bnpt/admin/bitrixcloud_cdn.php?lang=".LANGUAGE_ID.($_GET["return_url"] ? "&return_url=".urlencode($_GET["return_url"]) : "")."&".$tabControl->ActiveTabParam());
 	}
 }
 $cdn_config = CBitrixCloudCDNConfig::getInstance()->loadFromOptions();

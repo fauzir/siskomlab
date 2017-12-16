@@ -10,7 +10,7 @@
 					</font><br>
 					<?if (is_object($GLOBALS["USER"]) && $GLOBALS["USER"]->IsAdmin()):?>
 						</form>
-						<form method="post" action="/bitrix/admin/site_checker.php?tabControl_active_tab=edit5#edit5">
+						<form method="post" action="/bnpt/admin/site_checker.php?tabControl_active_tab=edit5#edit5">
 							<?
 							$strSupportErrorText = "";
 							$strSupportErrorText .= "File: ".__FILE__."\n";

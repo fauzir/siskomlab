@@ -40,8 +40,8 @@ if (CModule::IncludeModule("learning")):
 	<tr valign="top">
 		<td align="right"></td>
 		<td>
-			<a href="/bitrix/admin/learn_certification_admin.php?lang=<?=LANG?>&amp;filter_user=<?=$ID?>&amp;set_filter=Y"><?=GetMessage("learning_CERTIFICATION")?></a><br />
-			<a href="/bitrix/admin/learn_gradebook_admin.php?lang=<?=LANG?>&amp;filter_user=<?=$ID?>&amp;set_filter=Y"><?=GetMessage("learning_GRADEBOOK")?></a>
+			<a href="/bnpt/admin/learn_certification_admin.php?lang=<?=LANG?>&amp;filter_user=<?=$ID?>&amp;set_filter=Y"><?=GetMessage("learning_CERTIFICATION")?></a><br />
+			<a href="/bnpt/admin/learn_gradebook_admin.php?lang=<?=LANG?>&amp;filter_user=<?=$ID?>&amp;set_filter=Y"><?=GetMessage("learning_GRADEBOOK")?></a>
 		</td>
 	</tr>
 <?endif;?>

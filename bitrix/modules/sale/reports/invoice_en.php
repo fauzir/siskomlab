@@ -1,6 +1,6 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();?><?
 /*
-Copy this file to /bitrix/admin/reports folder and change it as you wish
+Copy this file to /bnpt/admin/reports folder and change it as you wish
 
 $ORDER_ID - ID of current order
 
@@ -38,7 +38,7 @@ array(
 				<tr>
 					<td class="shopsTitle">
 						<?/* NOTE: You should change this text to actual one 
-						after copying this file info /bitrix/admin/reports folder*/?>
+						after copying this file info /bnpt/admin/reports folder*/?>
 						<?=$arParams["COMPANY_NAME"]?><br>
 						<?=$arParams["CITY"].", ".$arParams["ADDRESS"];?><br>
 						<?=$arParams["COUNTRY"]?><br>

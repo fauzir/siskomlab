@@ -106,10 +106,10 @@ $MESS["SALE_PSE_ERROR_RSRT_CURRENCY_SAVE"] = "Error saving currency restrictions
 $MESS["SALE_PSE_ERROR_NO_ACTION_FILE"] = "No payment system processor selected";
 $MESS["SALE_PS_TARIFF"] = "Tariffs";
 $MESS["SALE_PSE_RETURN"] = "Pengembalian (Keuntungan)";
-$MESS["SALE_PS_RETURN_SETTINGS_YANDEX"] = "You can configure the returns using this <a href='/bitrix/admin/sale_ps_handler_refund.php?lang=en' target='_blank'>link</a>";
+$MESS["SALE_PS_RETURN_SETTINGS_YANDEX"] = "You can configure the returns using this <a href='/bnpt/admin/sale_ps_handler_refund.php?lang=en' target='_blank'>link</a>";
 $MESS["SALE_PSE_YANDEX_INVOICE_SETTINGS_TITLE"] = "Security settings";
-$MESS["SALE_PSE_YANDEX_INVOICE_SETTINGS"] = "You have to <a href='/bitrix/admin/sale_yandexinvoice_settings.php?lang=en&pay_system_id=#ID#' target='_blank'>configure</a> Yandex billing before using it.";
-$MESS["SALE_PSE_YANDEX_INVOICE_SETTINGS_OK"] = "Handler has been configured. You can <a href='/bitrix/admin/sale_yandexinvoice_settings.php?lang=en&pay_system_id=#ID#' target='_blank'>edit handler settings</a> any time you want.";
+$MESS["SALE_PSE_YANDEX_INVOICE_SETTINGS"] = "You have to <a href='/bnpt/admin/sale_yandexinvoice_settings.php?lang=en&pay_system_id=#ID#' target='_blank'>configure</a> Yandex billing before using it.";
+$MESS["SALE_PSE_YANDEX_INVOICE_SETTINGS_OK"] = "Handler has been configured. You can <a href='/bnpt/admin/sale_yandexinvoice_settings.php?lang=en&pay_system_id=#ID#' target='_blank'>edit handler settings</a> any time you want.";
 $MESS["SPS_WAIT"] = "Property bar is being loaded. Mohon tunggu...";
 $MESS["SPS_USER_ID"] = "User ID";
 $MESS["SPS_USER_LOGIN"] = "Masuk";

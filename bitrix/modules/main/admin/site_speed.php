@@ -100,19 +100,19 @@ foreach ($mapIframeLangKeys as $key)
 				if (\Bitrix\Main\ModuleManager::isModuleInstalled("perfmon")):
 					$mark = (double)COption::GetOptionString("perfmon", "mark_php_page_rate", "");
 				?>
-					<a href="/bitrix/admin/perfmon_panel.php?lang=<?=LANGUAGE_ID?>" class="site-speed-perf-label"><?=Loc::getMessage("MAIN_SITE_SPEED_PERF")?></a>:<span class="site-speed-perf-value"><?if ($mark > 0):?><?=$mark?><?else:?><?=Loc::getMessage("MAIN_SITE_SPEED_PERF_NO_RES")?><?endif?></span>
+					<a href="/bnpt/admin/perfmon_panel.php?lang=<?=LANGUAGE_ID?>" class="site-speed-perf-label"><?=Loc::getMessage("MAIN_SITE_SPEED_PERF")?></a>:<span class="site-speed-perf-value"><?if ($mark > 0):?><?=$mark?><?else:?><?=Loc::getMessage("MAIN_SITE_SPEED_PERF_NO_RES")?><?endif?></span>
 				<?endif?>
 
 				<?
 					$compositeStatus = \CHTMLPagesCache::IsCompositeEnabled() ? Loc::getMessage("MAIN_SITE_SPEED_ENABLED") : Loc::getMessage("MAIN_SITE_SPEED_DISABLED");
 				?>
-				<a href="/bitrix/admin/composite.php?lang=<?=LANGUAGE_ID?>" class="site-speed-perf-label"><?=Loc::getMessage("MAIN_SITE_SPEED_COMPOSITE_SITE")?></a>:<span class="site-speed-perf-value"><?=$compositeStatus?></span>
+				<a href="/bnpt/admin/composite.php?lang=<?=LANGUAGE_ID?>" class="site-speed-perf-label"><?=Loc::getMessage("MAIN_SITE_SPEED_COMPOSITE_SITE")?></a>:<span class="site-speed-perf-value"><?=$compositeStatus?></span>
 				<?
 
 				if (\Bitrix\Main\Loader::includeModule("bitrixcloud")):
 					$cdnStatus = CBitrixCloudCDN::IsActive() ? Loc::getMessage("MAIN_SITE_SPEED_ENABLED") : Loc::getMessage("MAIN_SITE_SPEED_DISABLED");
 				?>
-				<a href="/bitrix/admin/bitrixcloud_cdn.php?lang=<?=LANGUAGE_ID?>" class="site-speed-perf-label"><?=Loc::getMessage("MAIN_SITE_SPEED_CDN")?></a>:<span class="site-speed-perf-value"><?=$cdnStatus?></span>
+				<a href="/bnpt/admin/bitrixcloud_cdn.php?lang=<?=LANGUAGE_ID?>" class="site-speed-perf-label"><?=Loc::getMessage("MAIN_SITE_SPEED_CDN")?></a>:<span class="site-speed-perf-value"><?=$cdnStatus?></span>
 				<?endif?>
 			</div>
 		</div>

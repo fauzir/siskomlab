@@ -14,7 +14,7 @@ define("BX_SECURITY_SHOW_MESSAGE", true);
 
 if($_SERVER["REQUEST_METHOD"]=="POST" && strlen($_POST["perms"])>0 && is_array($_POST["files"]) && count($_POST["files"])>0)
 {
-	include($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/fileman_access.php");
+	include($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/fileman_access.php");
 	die();
 }
 
@@ -1460,13 +1460,13 @@ function GALCallBack(url)
 
 	setFilterBut.onclick = function()
 	{
-		tbl_fileman_admin_filter.OnSet('tbl_fileman_admin', '/bitrix/admin/fileman_admin.php?lang=' + lang + '&site=' + site + '&path=' + path + '&');
+		tbl_fileman_admin_filter.OnSet('tbl_fileman_admin', '/bnpt/admin/fileman_admin.php?lang=' + lang + '&site=' + site + '&path=' + path + '&');
 		return false;
 	};
 
 	delFilterBut.onclick = function()
 	{
-		tbl_fileman_admin_filter.OnClear('tbl_fileman_admin', '/bitrix/admin/fileman_admin.php?lang=' + lang + '&site=' + site + '&path=' + path + '&');
+		tbl_fileman_admin_filter.OnClear('tbl_fileman_admin', '/bnpt/admin/fileman_admin.php?lang=' + lang + '&site=' + site + '&path=' + path + '&');
 		return false;
 	};
 }

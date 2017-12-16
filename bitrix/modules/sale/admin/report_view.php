@@ -287,7 +287,7 @@ if (!$fCriticalError)
 										if (arFilterTypes.length > 0)
 										{
 											BX.showWait();
-											url = '/bitrix/admin/sale_report_view.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ID?>&<?=bitrix_sessid_get()?>'+
+											url = '/bnpt/admin/sale_report_view.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ID?>&<?=bitrix_sessid_get()?>'+
 												'&REPORT_AJAX=Y&F_SALE_SITE='+siteSelect.value;
 											BX.ajax.post(url, {'filterTypes': arFilterTypes}, fProcessAjaxResult );
 										}

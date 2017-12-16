@@ -764,7 +764,7 @@ if ($APPLICATION->GetGroupRight("sale") == "W" ||
 								"title" => GetMessage('SALE_MENU_YM_SETTINGS_TITLE'),
 							),
 							array(
-								"url" => "/bitrix/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=YMARKET_STATUS_CHANGE&find_audit_type[]=YMARKET_INCOMING_ORDER_STATUS&find_audit_type[]=YMARKET_USER_CREATE&find_audit_type[]=YMARKET_ORDER_CREATE&find_audit_type[]=YMARKET_REQUEST_ERROR&find_audit_type[]=YMARKET_INCOMING_REQUEST&find_audit_type[]=YMARKET_INCOMING_REQUEST_RESULT&find_audit_type[]=YMARKET_LOCATION_MAPPING&find_audit_type[]=YMARKET_ORDER_STATUS_CHANGE&find_audit_type[]=YMARKET_ORDER_CREATE_ERROR&mod=&mod=sale&target=ymarket",
+								"url" => "/bnpt/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=YMARKET_STATUS_CHANGE&find_audit_type[]=YMARKET_INCOMING_ORDER_STATUS&find_audit_type[]=YMARKET_USER_CREATE&find_audit_type[]=YMARKET_ORDER_CREATE&find_audit_type[]=YMARKET_REQUEST_ERROR&find_audit_type[]=YMARKET_INCOMING_REQUEST&find_audit_type[]=YMARKET_INCOMING_REQUEST_RESULT&find_audit_type[]=YMARKET_LOCATION_MAPPING&find_audit_type[]=YMARKET_ORDER_STATUS_CHANGE&find_audit_type[]=YMARKET_ORDER_CREATE_ERROR&mod=&mod=sale&target=ymarket",
 								"more_url" => Array("event_log.php?find_type=audit_type_id&mod=sale&target=ymarket"),
 								"text" => GetMessage('SALE_MENU_YM_LOG'),
 								"title" => GetMessage('SALE_MENU_YM_LOG_TITLE'),

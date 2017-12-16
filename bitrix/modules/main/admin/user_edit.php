@@ -461,7 +461,7 @@ if($canViewUserList)
 {
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("RECORD_LIST"),
-		"LINK"	=> "/bitrix/admin/user_admin.php?lang=".LANGUAGE_ID."&set_default=Y",
+		"LINK"	=> "/bnpt/admin/user_admin.php?lang=".LANGUAGE_ID."&set_default=Y",
 		"ICON"	=> "btn_list",
 		"TITLE"	=> GetMessage("RECORD_LIST_TITLE"),
 	);
@@ -474,13 +474,13 @@ if($USER->CanDoOperation('edit_all_users') || $USER->CanDoOperation('edit_subord
 		$aMenu[] = array("SEPARATOR"=>"Y");
 		$aMenu[] = array(
 			"TEXT"	=> GetMessage("MAIN_NEW_RECORD"),
-			"LINK"	=> "/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID,
+			"LINK"	=> "/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID,
 			"ICON"	=> "btn_new",
 			"TITLE"	=> GetMessage("MAIN_NEW_RECORD_TITLE"),
 		);
 		$aMenu[] = array(
 			"TEXT"	=> GetMessage("MAIN_COPY_RECORD"),
-			"LINK"	=> "/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID.htmlspecialcharsbx("&COPY_ID=").$ID,
+			"LINK"	=> "/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID.htmlspecialcharsbx("&COPY_ID=").$ID,
 			"ICON"	=> "btn_copy",
 			"TITLE"	=> GetMessage("MAIN_COPY_RECORD_TITLE"),
 		);
@@ -489,7 +489,7 @@ if($USER->CanDoOperation('edit_all_users') || $USER->CanDoOperation('edit_subord
 		{
 			$aMenu[] = array(
 				"TEXT"	=> GetMessage("MAIN_DELETE_RECORD"),
-				"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/user_admin.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+				"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/user_admin.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 				"ICON"	=> "btn_delete",
 				"TITLE"	=> GetMessage("MAIN_DELETE_RECORD_TITLE"),
 			);
@@ -722,7 +722,7 @@ if($showGroupTabs):
 						?> />
 					</td>
 					<td class="align-left">
-						<label for="GROUP_ID_ACT_ID_<?= $ind ?>"><?=htmlspecialcharsbx($arGroups["NAME"])?> [<a href="/bitrix/admin/group_edit.php?ID=<?=$arGroups["ID"]?>&lang=<?=LANGUAGE_ID?>" title="<?=GetMessage("MAIN_VIEW_GROUP")?>"><?echo intval($arGroups["ID"])?></a>]</label>
+						<label for="GROUP_ID_ACT_ID_<?= $ind ?>"><?=htmlspecialcharsbx($arGroups["NAME"])?> [<a href="/bnpt/admin/group_edit.php?ID=<?=$arGroups["ID"]?>&lang=<?=LANGUAGE_ID?>" title="<?=GetMessage("MAIN_VIEW_GROUP")?>"><?echo intval($arGroups["ID"])?></a>]</label>
 					</td>
 					<td>
 						<?= CalendarDate("GROUP_ID_FROM_".$ind, (array_key_exists($arGroups["ID"], $str_GROUP_ID) ? htmlspecialcharsbx($str_GROUP_ID[$arGroups["ID"]]["DATE_ACTIVE_FROM"]) : ""), $tabControl->GetFormName(), "22")?>

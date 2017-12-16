@@ -21,7 +21,7 @@ $edit_php = $USER->CanDoOperation('edit_php');
 if(!$edit_php && !$USER->CanDoOperation('view_other_settings') && !$USER->CanDoOperation('lpa_template_edit'))
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
-$isEditingMessageThemePage = $APPLICATION->GetCurPage() == '/bitrix/admin/message_theme_admin.php';
+$isEditingMessageThemePage = $APPLICATION->GetCurPage() == '/bnpt/admin/message_theme_admin.php';
 	
 IncludeModuleLangFile(__FILE__);
 

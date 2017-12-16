@@ -22,7 +22,7 @@
 	BX.Sender.Statistics.prototype = {
 		filters: [],
 		blocks: [],
-		filterUrl: '/bitrix/admin/sender_statistics.php',
+		filterUrl: '/bnpt/admin/sender_statistics.php',
 		onResponseData: function (data)
 		{
 			BX.onCustomEvent(this, 'onDataLoad', [data]);
@@ -125,7 +125,7 @@
 		this.load = function (params)
 		{
 			this.instance = new BX.Sender.Statistics();
-			this.instance.filterUrl = '/bitrix/admin/sender_mailing_stat.php';
+			this.instance.filterUrl = '/bnpt/admin/sender_mailing_stat.php';
 			this.instance.addBlocks(this.getBlocks(params));
 			this.instance.addFilters(this.getFilters(params));
 			this.instance.init(params);
@@ -154,7 +154,7 @@
 				id: 'all',
 				text: params.mess.allPostings,
 				onclick: BX.proxy(function() {
-					var url = '/bitrix/admin/sender_mailing_chain_admin.php';
+					var url = '/bnpt/admin/sender_mailing_chain_admin.php';
 					url += '?MAILING_ID=' + parseInt(this.instance.getFilter('mailingId').value);
 					window.location.href = url;
 				}, this)

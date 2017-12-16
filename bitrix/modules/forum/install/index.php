@@ -395,7 +395,7 @@ Class forum extends CModule
 		{
 			CheckDirPath($_SERVER["DOCUMENT_ROOT"]."/bitrix/images/forum/", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/images",  $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/forum", true, true);
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true, true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js/forum", true, true);
@@ -408,7 +408,7 @@ Class forum extends CModule
 	{
 		if($_SERVER["DevServer"] != "Y" && $_ENV["COMPUTERNAME"]!="BX")
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFiles(
 				$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/forum/install/themes/.default/",
 				$_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");//css

@@ -12,8 +12,8 @@ if($MOD_RIGHT!="D")
 		"icon" => "ldap_menu_icon",
 		"page_icon" => "ldap_page_icon",
 		"items_id" => "menu_ldap",
-		"url" => "/bitrix/admin/ldap_server_admin.php?lang=".LANG,
-		"more_url" => Array("/bitrix/admin/ldap_server_edit.php"),
+		"url" => "/bnpt/admin/ldap_server_admin.php?lang=".LANG,
+		"more_url" => Array("/bnpt/admin/ldap_server_edit.php"),
 	);
 	return $aMenu;
 }

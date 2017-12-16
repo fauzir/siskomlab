@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST["save"].$_REQUEST["apply"].
 		LocalRedirect($_GET["return_url"]);
 
 	$returnUrl = $_GET["return_url"]? "&return_url=".urlencode($_GET["return_url"]): "";
-	LocalRedirect("/bitrix/admin/security_filter.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
+	LocalRedirect("/bnpt/admin/security_filter.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
 }
 
 $rsSecurityFilterExclMask = CSecurityFilterMask::GetList();

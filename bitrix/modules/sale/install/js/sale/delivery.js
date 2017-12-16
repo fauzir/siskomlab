@@ -10,7 +10,7 @@
 
 	BX.Sale.Delivery = {
 
-		ajaxUrl: "/bitrix/admin/sale_delivery_ajax.php",
+		ajaxUrl: "/bnpt/admin/sale_delivery_ajax.php",
 
 		showGroupsDialog: function(nextUrl, currentGroup)
 		{

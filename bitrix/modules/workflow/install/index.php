@@ -148,7 +148,7 @@ Class workflow extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/workflow/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/workflow/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/workflow/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/workflow", true, true);
 		}
 		return true;
@@ -156,7 +156,7 @@ Class workflow extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/workflow/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/workflow/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 		DeleteDirFilesEx("/bitrix/images/workflow/");
 		return true;
 	}

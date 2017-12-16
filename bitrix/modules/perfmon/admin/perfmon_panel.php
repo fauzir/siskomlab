@@ -116,7 +116,7 @@ elseif(isset($_REQUEST["test"]) && $_REQUEST["test"] === "cluster")
 		if(strlen($_GET["server_url"]) > 0)
 			$server_url = $_GET["server_url"];
 		else
-			$server_url = '/bitrix/admin/perfmon_panel.php?test=Y&show_page_exec_time=Y&show_sql_stat=N';
+			$server_url = '/bnpt/admin/perfmon_panel.php?test=Y&show_page_exec_time=Y&show_sql_stat=N';
 
 		if(strpos($server_url, "show_page_exec_time=Y") === false)
 		{
@@ -1351,7 +1351,7 @@ else
 				<td><?echo GetMessage("PERFMON_PANEL_MANAGED_CACHE_REC", array(
 					"#file#" => (
 						IsModuleInstalled('fileman') && ($USER->CanDoOperation('fileman_admin_files') || $USER->CanDoOperation('fileman_edit_existent_files'))?
-						"<a href=\"".'/bitrix/admin/fileman_file_edit.php?lang='.LANGUAGE_ID.'&amp;full_src=Y&amp;path='.urlencode(BX_PERSONAL_ROOT.'/php_interface/dbconn.php').'&amp;back_url='.urlencode('/bitrix/admin/security_panel.php?lang='.LANGUAGE_ID)."\">dbconn.php</a>":
+						"<a href=\"".'/bnpt/admin/fileman_file_edit.php?lang='.LANGUAGE_ID.'&amp;full_src=Y&amp;path='.urlencode(BX_PERSONAL_ROOT.'/php_interface/dbconn.php').'&amp;back_url='.urlencode('/bnpt/admin/security_panel.php?lang='.LANGUAGE_ID)."\">dbconn.php</a>":
 						"dbconn.php"
 					),
 				));?>
@@ -1584,12 +1584,12 @@ else
 		<td width="<?echo $width?>" align="center" class="adm-detail-valign-top">
 			<div id="img_PAGES_PER_SECOND">
 			<?echo GetMessage("PERFMON_PANEL_CLUSTER_PAGES_PER_SECOND")?><br>
-			<img class="graph" src="/bitrix/admin/perfmon_cluster_graph.php?rand=<?=rand()?>&amp;find_data_type=PAGES_PER_SECOND&amp;width=<?echo $width?>&amp;height=<?echo $height?>&amp;lang=<?echo LANGUAGE_ID?>" width="<?echo $width?>" height="<?echo $height?>">
+			<img class="graph" src="/bnpt/admin/perfmon_cluster_graph.php?rand=<?=rand()?>&amp;find_data_type=PAGES_PER_SECOND&amp;width=<?echo $width?>&amp;height=<?echo $height?>&amp;lang=<?echo LANGUAGE_ID?>" width="<?echo $width?>" height="<?echo $height?>">
 			</div>
 			<br />
 			<div id="img_PAGE_EXEC_TIME">
 			<?echo GetMessage("PERFMON_PANEL_CLUSTER_PAGE_TIME")?><br>
-			<img class="graph" src="/bitrix/admin/perfmon_cluster_graph.php?rand=<?=rand()?>&amp;find_data_type=PAGE_EXEC_TIME&amp;width=<?echo $width?>&amp;height=<?echo $height?>&amp;lang=<?echo LANGUAGE_ID?>" width="<?echo $width?>" height="<?echo $height?>">
+			<img class="graph" src="/bnpt/admin/perfmon_cluster_graph.php?rand=<?=rand()?>&amp;find_data_type=PAGE_EXEC_TIME&amp;width=<?echo $width?>&amp;height=<?echo $height?>&amp;lang=<?echo LANGUAGE_ID?>" width="<?echo $width?>" height="<?echo $height?>">
 			</div>
 		</td>
 	</tr>

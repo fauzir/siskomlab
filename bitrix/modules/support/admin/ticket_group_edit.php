@@ -13,7 +13,7 @@ $bAdmin = CTicket::IsAdmin();
 if(!$bAdmin && !$bDemo)
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
-$LIST_URL = '/bitrix/admin/ticket_group_list.php';
+$LIST_URL = '/bnpt/admin/ticket_group_list.php';
 	
 $ID = intval($ID);
 
@@ -202,7 +202,7 @@ $tabControl = new CAdminTabControl('tabControl', $aTabs, true, true);
 		<td>
 			<input type="text" id="<?=$FMUTagName?>[VALS][<?=$i?>]" name="<?=$FMUTagName?>[VALS][<?=$i?>]" value="<?=$UIDS[$i]?>" size="5">
 			<iframe style="width:0px; height:0px; border:0px" src="javascript:''" name="FMUhiddenframe<?=$i?>" id="FMUhiddenframe<?=$i?>"></iframe>
-			<input class="" type="button" name="FMUButton<?=$i?>" id="FMUButton<?=$i?>" OnClick="window.open('/bitrix/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=<?=$FMUFormID?>&FC=<?=urlencode($FMUTagName.'[VALS]['.$i.']')?>', '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));" value="...">
+			<input class="" type="button" name="FMUButton<?=$i?>" id="FMUButton<?=$i?>" OnClick="window.open('/bnpt/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=<?=$FMUFormID?>&FC=<?=urlencode($FMUTagName.'[VALS]['.$i.']')?>', '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));" value="...">
 			<span id="div_FMUdivUN<?=$i?>"><?=$val['USER_NAME']?></span>
 		</td>
 		<td><input type="checkbox" name="<?=$FMUTagName?>[CHECKS][<?=$i?>]"<?=$cVgm?> value="Y"></td>
@@ -215,7 +215,7 @@ $tabControl = new CAdminTabControl('tabControl', $aTabs, true, true);
 		?>
 		
 		<tr>
-		<td colspan="2"><input type="button" value="<?=GetMessage('SUP_GE_ADD_MORE_USERS')?>" onclick="window.open('/bitrix/admin/user_search.php?lang=<?=LANGUAGE_ID?>&JSFUNC=usergroups', '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));"></td>
+		<td colspan="2"><input type="button" value="<?=GetMessage('SUP_GE_ADD_MORE_USERS')?>" onclick="window.open('/bnpt/admin/user_search.php?lang=<?=LANGUAGE_ID?>&JSFUNC=usergroups', '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));"></td>
 		</tr>
 		</table>
 		
@@ -241,7 +241,7 @@ $tabControl = new CAdminTabControl('tabControl', $aTabs, true, true);
 					{
 						div = document.getElementById('div_FMUdivUN'+String(i));
 						div.innerHTML = '<i><?=GetMessage('MAIN_WAIT')?></i>';
-						document.getElementById("FMUhiddenframe"+String(i)).src='/bitrix/admin/get_user.php?ID=' + str + '&strName=FMUdivUN'+String(i)+'&lang=<?=LANG?><?=(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")?>';
+						document.getElementById("FMUhiddenframe"+String(i)).src='/bnpt/admin/get_user.php?ID=' + str + '&strName=FMUdivUN'+String(i)+'&lang=<?=LANG?><?=(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")?>';
 						UIDS[i] = str;
 					}
 				}
@@ -262,7 +262,7 @@ $tabControl = new CAdminTabControl('tabControl', $aTabs, true, true);
 			var newCell1 = newRow.insertCell(-1);
 			newCell1.innerHTML = '<input type="text" id="<?=$FMUTagName?>[VALS]['+sRowCounter+']" name="<?=$FMUTagName?>[VALS]['+sRowCounter+']" value="'+String(USER_ID)+'" size="5"> ' +
 				'<iframe style="width:0px; height:0px; border:0px" src="javascript:\'\'" name="FMUhiddenframe'+sRowCounter+'" id="FMUhiddenframe'+sRowCounter+'"></iframe> ' +
-				'<input class="" type="button" name="FMUButton'+sRowCounter+'" id="FMUButton'+sRowCounter+'" OnClick="window.open(\'/bitrix/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=<?=$FMUFormID?>&FC=<?=urlencode($FMUTagName)?>%5BVALS%5D%5B'+sRowCounter+'%5D\', \'\', \'scrollbars=yes,resizable=yes,width=760,height=500,top=\'+Math.floor((screen.height - 560)/2-14)+\',left=\'+Math.floor((screen.width - 760)/2-5));" value="..."> ' + 
+				'<input class="" type="button" name="FMUButton'+sRowCounter+'" id="FMUButton'+sRowCounter+'" OnClick="window.open(\'/bnpt/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=<?=$FMUFormID?>&FC=<?=urlencode($FMUTagName)?>%5BVALS%5D%5B'+sRowCounter+'%5D\', \'\', \'scrollbars=yes,resizable=yes,width=760,height=500,top=\'+Math.floor((screen.height - 560)/2-14)+\',left=\'+Math.floor((screen.width - 760)/2-5));" value="..."> ' + 
 				'<span id="div_FMUdivUN'+sRowCounter+'"></span>';
 			
 			var newCell2 = newRow.insertCell(-1);

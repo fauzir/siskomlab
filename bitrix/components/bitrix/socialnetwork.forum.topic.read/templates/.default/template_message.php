@@ -313,7 +313,7 @@ function __forum_default_template_show_message($arMessages, $message, $arResult,
 								<span><?=GetMessage("F_SOURCE_ID")?>: <?
 									if (!empty($res["MAIL_HEADER"])):
 										if ($res["PANELS"]["MAIL"] == "Y" && !empty($res["XML_ID"])):
-											$res["MAIL_HEADER"] .= "<br /><a href=\"/bitrix/admin/mail_message_view.php?MSG_ID=".$res["XML_ID"]."\">".GetMessage("F_ORIGINAL_MESSAGE")."</a>";
+											$res["MAIL_HEADER"] .= "<br /><a href=\"/bnpt/admin/mail_message_view.php?MSG_ID=".$res["XML_ID"]."\">".GetMessage("F_ORIGINAL_MESSAGE")."</a>";
 										endif;
 										?><a href="#" onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none'?'':'none'); return false;" title="<?=GetMessage("F_EMAIL_ADD_INFO")?>">e-mail</a><?
 
@@ -342,7 +342,7 @@ function __forum_default_template_show_message($arMessages, $message, $arResult,
 							endif;
 							if ($res["PANELS"]["STATISTIC"] == "Y"):
 								?>
-								<span><?=GetMessage("F_USER_ID")?>: <span><a href="/bitrix/admin/guest_list.php?lang=<?=LANG_ADMIN_LID?><?
+								<span><?=GetMessage("F_USER_ID")?>: <span><a href="/bnpt/admin/guest_list.php?lang=<?=LANG_ADMIN_LID?><?
 									?>&amp;find_id=<?=$res["GUEST_ID"]?>&amp;set_filter=Y"><?=$res["GUEST_ID"];?></a></span></span>
 								<?
 							endif;
@@ -350,7 +350,7 @@ function __forum_default_template_show_message($arMessages, $message, $arResult,
 							if ($res["PANELS"]["MAIN"] == "Y"):
 								?>
 								<span><?=GetMessage("F_USER_ID_USER")?>: <span><?
-									?><a href="/bitrix/admin/user_edit.php?lang=<?=LANG_ADMIN_LID?>&amp;ID=<?=$res["AUTHOR_ID"]?>"><?=$res["AUTHOR_ID"];?></a></span></span>
+									?><a href="/bnpt/admin/user_edit.php?lang=<?=LANG_ADMIN_LID?>&amp;ID=<?=$res["AUTHOR_ID"]?>"><?=$res["AUTHOR_ID"];?></a></span></span>
 								<?
 							endif;
 							?>

@@ -132,7 +132,7 @@ if($lAdmin->EditAction())
 	}
 }
 
-// обработка действий групповых и одиночных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if(($arID = $lAdmin->GroupAction()))
 {
 	if($_REQUEST['action_target']=='selected')
@@ -219,8 +219,8 @@ $lAdmin->AddHeaders(array(
 ));
 
 $arrUserPerm = array();
-$canAdd = false;// хоть один баннер может быть отредатирован, добавлен илу удален
-$canAddbanner = false;// баннер может быть удален, отредактирован, добавлен
+$canAdd = false;// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+$canAddbanner = false;// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $arrContractSite = array();
 
 $type_id = array();
@@ -265,7 +265,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 			if (in_array($sid, $arrContractSite[$f_CONTRACT_ID]))
 			{
 				if ($isAdmin)
-					$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"]).' [<a href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($sid).'</a>]<br>';
+					$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"]).' [<a href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($sid).'</a>]<br>';
 				else
 					$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"])." [".htmlspecialcharsbx($sid)."]<br>";
 			}

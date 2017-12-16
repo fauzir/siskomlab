@@ -149,7 +149,7 @@ class CAdminInformer
 				"TITLE" => GetMessage("top_panel_ai_composite_title"),
 				"HTML" => GetMessage("top_panel_ai_composite_desc"),
 				"COLOR" => "red",
-				"FOOTER" => '<a href="/bitrix/admin/composite.php?lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_composite_switch_on").'</a>',
+				"FOOTER" => '<a href="/bnpt/admin/composite.php?lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_composite_switch_on").'</a>',
 				"ALERT" => true,
 				"SORT" => 1
 			));
@@ -170,14 +170,14 @@ class CAdminInformer
 			if ($update_res['result'] === true && $update_res['tooltip'])
 			{
 				$updAIParams["HTML"] = $update_res['tooltip'];
-				$updAIParams["FOOTER"] = '<a href="/bitrix/admin/update_system.php?lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_upd_instl").'</a>';
+				$updAIParams["FOOTER"] = '<a href="/bnpt/admin/update_system.php?lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_upd_instl").'</a>';
 				$updAIParams["ALERT"] = true;
 			}
 			else if ($update_res['error'] <> '') // update error
 			{
 				$updAIParams["TITLE"] .= " - ".GetMessage("top_panel_ai_title_err");
 				$updAIParams["HTML"] = trim(self::CutErrorId($update_res['error']));
-				$updAIParams["FOOTER"] = '<a href="/bitrix/admin/update_system.php?refresh=Y&lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_upd_chk").'</a>';
+				$updAIParams["FOOTER"] = '<a href="/bnpt/admin/update_system.php?refresh=Y&lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_upd_chk").'</a>';
 				$updAIParams["ALERT"] = true;
 			}
 			else // update_autocheck == false
@@ -189,7 +189,7 @@ class CAdminInformer
 
 				$updAIParams["HTML"] = '<span class="adm-informer-strong-text">'.GetMessage("top_panel_ai_sys_ver").' '.SM_VERSION."</span><br>";
 				$updAIParams["HTML"] .= $updateDate ? GetMessage("top_panel_ai_upd_last").'<br>'.$updateDate : GetMessage("top_panel_ai_upd_never");
-				$updAIParams["FOOTER"] = '<a href="/bitrix/admin/update_system.php?refresh=Y&lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_upd_chk").'</a>';
+				$updAIParams["FOOTER"] = '<a href="/bnpt/admin/update_system.php?refresh=Y&lang='.LANGUAGE_ID.'">'.GetMessage("top_panel_ai_upd_chk").'</a>';
 				$updAIParams["ALERT"] = false;
 			}
 
@@ -250,7 +250,7 @@ class CAdminInformer
 									BX.ajax({
 										'method': 'POST',
 										'dataType': 'html',
-										'url': '/bitrix/admin/partner_modules.php',
+										'url': '/bnpt/admin/partner_modules.php',
 										'data': 'module='+module+'&".bitrix_sessid_get()."&act=unnotify',
 										'async': true,
 										'processData': false

@@ -286,7 +286,7 @@ $lAdmin->CheckListMode();
 require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 $context = new CAdminContextMenu(array(array(
 	"TEXT"	=> GetMessage("VOTE_BACK_TO_VOTE"),
-	"LINK"	=> "/bitrix/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$voteId,
+	"LINK"	=> "/bnpt/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$voteId,
 	"ICON" => "btn_list")));
 $context->Show();
 ?>
@@ -334,7 +334,7 @@ $oFilter->Begin();
 		?></td>
 </tr>
 <?
-$oFilter->Buttons(array("table_id"=>$sTableID, "url"=>"/bitrix/admin/vote_question_list.php?lang=".LANGUAGE_ID."&VOTE_ID=$voteId", "form"=>"form1"));
+$oFilter->Buttons(array("table_id"=>$sTableID, "url"=>"/bnpt/admin/vote_question_list.php?lang=".LANGUAGE_ID."&VOTE_ID=$voteId", "form"=>"form1"));
 $oFilter->End();
 ?>
 </form>

@@ -401,7 +401,7 @@ Class calendar extends CModule
 
 			CopyDirFiles(
 				$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/calendar/install/admin",
-				$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin",
+				$_SERVER["DOCUMENT_ROOT"]."/bnpt/admin",
 				true, true
 			);
 

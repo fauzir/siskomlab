@@ -141,7 +141,7 @@ class CSecurityFilter
 		if ($APPLICATION->GetGroupRight("security") < "W")
 			return false;
 
-		$setupLink = '/bitrix/admin/security_filter.php?lang='.LANGUAGE_ID;
+		$setupLink = '/bnpt/admin/security_filter.php?lang='.LANGUAGE_ID;
 		$WAFAIParams = array(
 			"TITLE" => getMessage("SECURITY_FILTER_INFORM_TITLE"),
 			"COLOR" => "blue",
@@ -157,7 +157,7 @@ class CSecurityFilter
 				if($days > 7)
 					$days = 7;
 				$timestampX = ConvertTimeStamp(time()-$days*24*3600+CTimeZone::getOffset());
-				$eventLink = '/bitrix/admin/event_log.php?set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_FILTER_SQL&find_audit_type[]=SECURITY_FILTER_XSS&find_audit_type[]=SECURITY_FILTER_XSS2&find_audit_type[]=SECURITY_FILTER_PHP&mod=security&find_timestamp_x_1='.$timestampX.'&lang='.LANGUAGE_ID;
+				$eventLink = '/bnpt/admin/event_log.php?set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_FILTER_SQL&find_audit_type[]=SECURITY_FILTER_XSS&find_audit_type[]=SECURITY_FILTER_XSS2&find_audit_type[]=SECURITY_FILTER_PHP&mod=security&find_timestamp_x_1='.$timestampX.'&lang='.LANGUAGE_ID;
 
 				$eventCount = self::getEventsCount($timestampX);
 				if($eventCount > 999)

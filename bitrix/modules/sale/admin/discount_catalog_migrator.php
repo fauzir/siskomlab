@@ -447,7 +447,7 @@ final class DiscountCatalogMigrator
 				$this->stepErrors[] = GetMessage(
 					'DISCOUNT_CATALOG_MIGRATOR_ERROR_REPORT',
 					array(
-						'#URL#' => str_replace('#ID#', $discount['ID'], '/bitrix/admin/cat_discount_edit.php?ID=#ID#&lang='.LANGUAGE_ID),
+						'#URL#' => str_replace('#ID#', $discount['ID'], '/bnpt/admin/cat_discount_edit.php?ID=#ID#&lang='.LANGUAGE_ID),
 						'#TITLE#' => (trim((string)$discount['NAME']) != '' ? $discount['NAME'] : $discount['ID']),
 						'#ERRORS#' => implode('; ', $errors)
 					)

@@ -1345,7 +1345,7 @@ RegisterModuleDependences('main', 'OnBeforeProlog', 'intranet', 'CIntranetEventH
 			$hint = GetMessage('INTR_SET_BUT_HINT');
 			$arMenu = Array(
 				Array(
-					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:portal&wizardSiteID=".SITE_ID."&".bitrix_sessid_get())."');",
+					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bnpt/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:portal&wizardSiteID=".SITE_ID."&".bitrix_sessid_get())."');",
 					"ICON" => "wizard",
 					"TITLE" => GetMessage('INTR_SET_WIZ_TITLE'),
 					"TEXT" => GetMessage('INTR_SET_WIZ_TEXT'),
@@ -1357,7 +1357,7 @@ RegisterModuleDependences('main', 'OnBeforeProlog', 'intranet', 'CIntranetEventH
 			{
 				$hint .= GetMessage('INTR_SET_BUT_HINT_EXTRANET');
 				$arMenu[] = Array(
-					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:extranet&".bitrix_sessid_get())."');",
+					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bnpt/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:extranet&".bitrix_sessid_get())."');",
 					"ICON" => "wizard",
 					"TITLE" => GetMessage('INTR_SET_EXT_TITLE'),
 					"TEXT" => GetMessage('INTR_SET_EXT_TEXT'),
@@ -1367,7 +1367,7 @@ RegisterModuleDependences('main', 'OnBeforeProlog', 'intranet', 'CIntranetEventH
 			{
 				$hint .= GetMessage('INTR_SET_BUT_HINT_CLEARING');
 				$arMenu[] = Array(
-					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardSiteID=".SITE_ID."&wizardName=bitrix:portal_clear&".bitrix_sessid_get())."');",
+					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bnpt/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardSiteID=".SITE_ID."&wizardName=bitrix:portal_clear&".bitrix_sessid_get())."');",
 					"ICON" => "wizard-clear",
 					"TITLE" => GetMessage('INTR_SET_CLEAN_TITLE'),
 					"TEXT" => GetMessage('INTR_SET_CLEAN_TEXT'),
@@ -1375,7 +1375,7 @@ RegisterModuleDependences('main', 'OnBeforeProlog', 'intranet', 'CIntranetEventH
 			}
 
 			$arButton = array(
-				"HREF" => "/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:portal&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
+				"HREF" => "/bnpt/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:portal&wizardSiteID=".SITE_ID."&".bitrix_sessid_get(),
 				"ID" => "portal_wizard",
 				"ICON" => "bx-panel-site-wizard-icon",
 				"ALT" => GetMessage('INTR_SET_BUT_TITLE'),

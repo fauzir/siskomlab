@@ -39,7 +39,7 @@ if($auth)
 	$rsUser = CUser::GetByID($ID);
 	if($arUser = $rsUser->Fetch())
 	{
-		$res = '[<a title="'.GetMessage("MAIN_EDIT_USER_PROFILE").'" class="tablebodylink" href="/bitrix/admin/user_edit.php?ID='.$arUser["ID"].'&lang='.LANG.'">'.$arUser["ID"].'</a>] ('.htmlspecialcharsbx($arUser["LOGIN"]).') '.htmlspecialcharsbx($arUser["NAME"]).' '.htmlspecialcharsbx($arUser["LAST_NAME"]);
+		$res = '[<a title="'.GetMessage("MAIN_EDIT_USER_PROFILE").'" class="tablebodylink" href="/bnpt/admin/user_edit.php?ID='.$arUser["ID"].'&lang='.LANG.'">'.$arUser["ID"].'</a>] ('.htmlspecialcharsbx($arUser["LOGIN"]).') '.htmlspecialcharsbx($arUser["NAME"]).' '.htmlspecialcharsbx($arUser["LAST_NAME"]);
 	}
 }
 $strName = preg_replace("/[^a-z0-9_\\[\\]:]/i", "", $_REQUEST["strName"]);

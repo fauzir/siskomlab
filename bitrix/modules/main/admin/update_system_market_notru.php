@@ -22,7 +22,7 @@ if ($_REQUEST["action"] == "load" && strlen($_REQUEST["id"]) > 0 && check_bitrix
 	}
 	else
 	{
-		LocalRedirect("/bitrix/admin/module_admin.php?lang=".LANG."&id=".urlencode($_REQUEST["id"])."&".bitrix_sessid_get()."&install=Y");
+		LocalRedirect("/bnpt/admin/module_admin.php?lang=".LANG."&id=".urlencode($_REQUEST["id"])."&".bitrix_sessid_get()."&install=Y");
 	}
 }
 

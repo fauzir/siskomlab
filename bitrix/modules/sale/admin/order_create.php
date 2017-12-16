@@ -163,9 +163,9 @@ if($isSavingOperation || $needFieldsRestore)
 					$_SESSION['SALE_ORDER_EDIT_ERROR'] = $errorMessage;
 
 				if(isset($_POST["save"]))
-					LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+					LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 				else
-					LocalRedirect("/bitrix/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&ID=".$order->getId().GetFilterParams("filter_", false));
+					LocalRedirect("/bnpt/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&ID=".$order->getId().GetFilterParams("filter_", false));
 			}
 			else
 			{
@@ -375,7 +375,7 @@ elseif($isRestoringOrderOperation) // Restore order from archive
 
 	if (!in_array($archivedOrder->getField("STATUS_ID"), $allowedStatusUpdate))
 	{
-		LocalRedirect("/bitrix/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bnpt/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 	}
 
 	if ($saleModulePermissions == 'P')
@@ -386,7 +386,7 @@ elseif($isRestoringOrderOperation) // Restore order from archive
 			&& $archivedOrder->getField('RESPONSIBLE_ID') !== $USER->GetID()
 		) 
 		{
-			LocalRedirect("/bitrix/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		}
 	}
 	
@@ -627,7 +627,7 @@ if ($isRestoringOrderOperation)
 		"ICON" => "btn_list",
 		"TEXT" => Loc::getMessage("SALE_OK_ARCHIVE_LIST"),
 		"TITLE"=> Loc::getMessage("SALE_OK_ARCHIVE_LIST_TITLE"),
-		"LINK" => "/bitrix/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_order_archive.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	);
 }
 else
@@ -636,7 +636,7 @@ else
 		"ICON" => "btn_list",
 		"TEXT" => Loc::getMessage("SALE_OK_LIST"),
 		"TITLE"=> Loc::getMessage("SALE_OK_LIST_TITLE"),
-		"LINK" => "/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	);
 }
 
@@ -794,7 +794,7 @@ $tabControl->EndTab();
 
 $tabControl->Buttons(
 	array(
-		"back_url" => "/bitrix/admin/sale_order_create.php?lang=".LANGUAGE_ID."&SITE_ID=".$siteId.GetFilterParams("filter_"))
+		"back_url" => "/bnpt/admin/sale_order_create.php?lang=".LANGUAGE_ID."&SITE_ID=".$siteId.GetFilterParams("filter_"))
 );
 
 $tabControl->End();

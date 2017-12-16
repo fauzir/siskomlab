@@ -22,13 +22,13 @@ if($bAdmin!="Y" && $bDemo!="Y")
 //CTicket::GetRoles($isDemo, $isSupportClient, $isSupportTeam, $isAdmin, $isAccess, $USER_ID, $CHECK_RIGHTS);
 //if(!$isAdmin && !$isDemo) $APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
-$EDIT_URL = "/bitrix/admin/ticket_sla_edit.php";
+$EDIT_URL = "/bnpt/admin/ticket_sla_edit.php";
 $LIST_URL = $APPLICATION->GetCurPage();
 
 $arErrors = array();
 
 /***************************************************************************
-									Функции
+									пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 
 function Support_GetUserInfo($USER_ID, &$login, &$name)
@@ -56,8 +56,8 @@ function Support_GetUserInfo($USER_ID, &$login, &$name)
 
 
 $sTableID = "t_sla_list";
-$oSort = new CAdminSorting($sTableID, "ID", "asc");// инициализация сортировки
-$lAdmin = new CAdminList($sTableID, $oSort);// инициализация списка
+$oSort = new CAdminSorting($sTableID, "ID", "asc");// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+$lAdmin = new CAdminList($sTableID, $oSort);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 $filter = new CAdminFilter(
 	$sTableID."_filter_id", 
@@ -78,7 +78,7 @@ $arFilterFields = Array(
 	"find_site",
 	);
 
-$lAdmin->InitFilter($arFilterFields);//инициализация фильтра
+$lAdmin->InitFilter($arFilterFields);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 foreach($arFilterFields as $key) 
@@ -88,7 +88,7 @@ foreach($arFilterFields as $key)
 }
 
 
-if ($bAdmin=="Y" && $lAdmin->EditAction()) //если идет сохранение со списка
+if ($bAdmin=="Y" && $lAdmin->EditAction()) //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 {
 	foreach($FIELDS as $ID => $arFields)
 	{
@@ -149,7 +149,7 @@ $rsData = CTicketSLA::GetList($arSort, $arFilter, $is_filtered);
 $rsData = new CAdminResult($rsData, $sTableID);
 $rsData->NavStart(50);
 
-// установка строки навигации
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 $lAdmin->NavText($rsData->GetNavPrint(GetMessage("SUP_PAGES")));
 
@@ -227,7 +227,7 @@ $arHeaders[] = Array("id"=>"TIMETABLE_ID", "content"=>GetMessage("SUP_SHEDULE_S"
 
 $lAdmin->AddHeaders($arHeaders);
 
-// построение списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 //while($arRes = $rsData->NavNext(true, "f_"))
 foreach ($fetchedRows as $arRes)
 {
@@ -243,7 +243,7 @@ foreach ($fetchedRows as $arRes)
 		{
 			if ($sid!="ALL")
 			{
-				$str_SITE .= ($str_SITE == "" ? "" : " / ").'<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bitrix/admin/site_edit.php?LID='.$sid.'&lang='.LANG.'">'.$sid.'</a>';
+				$str_SITE .= ($str_SITE == "" ? "" : " / ").'<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bnpt/admin/site_edit.php?LID='.$sid.'&lang='.LANG.'">'.$sid.'</a>';
 			}
 			else $str_SITE .= GetMessage("SUP_ALL");
 		}
@@ -287,7 +287,7 @@ foreach ($fetchedRows as $arRes)
 
 		foreach($arG as $gid)
 		{
-			$str .= '[<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bitrix/admin/group_edit.php?ID='.$gid.'&lang='.LANG.'">'.$gid.'</a>] '.htmlspecialcharsbx($slaGroupNames[$gid]).'<br>';
+			$str .= '[<a title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'" href="/bnpt/admin/group_edit.php?ID='.$gid.'&lang='.LANG.'">'.$gid.'</a>] '.htmlspecialcharsbx($slaGroupNames[$gid]).'<br>';
 		}
 	}
 
@@ -297,7 +297,7 @@ foreach ($fetchedRows as $arRes)
 
 	if (intval($arRes['RESPONSIBLE_USER_ID'])>0)
 	{
-		$str = '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bitrix/admin/user_edit.php?lang='.LANG.'&ID='.$arRes['RESPONSIBLE_USER_ID'].'">'.$arRes['RESPONSIBLE_USER_ID'].'</a>] ('.$slaResponsiblesInfo[$arRes['RESPONSIBLE_USER_ID']]['LOGIN'].') '.$slaResponsiblesInfo[$arRes['RESPONSIBLE_USER_ID']]['NAME'];
+		$str = '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bnpt/admin/user_edit.php?lang='.LANG.'&ID='.$arRes['RESPONSIBLE_USER_ID'].'">'.$arRes['RESPONSIBLE_USER_ID'].'</a>] ('.$slaResponsiblesInfo[$arRes['RESPONSIBLE_USER_ID']]['LOGIN'].') '.$slaResponsiblesInfo[$arRes['RESPONSIBLE_USER_ID']]['NAME'];
 	}
 
 	$row->AddViewField("RESPONSIBLE_USER_ID", $str);
@@ -306,7 +306,7 @@ foreach ($fetchedRows as $arRes)
 
 	if ($arRes['TIMETABLE_ID'])
 	{
-		$str = '<a href="/bitrix/admin/ticket_timetable_edit.php?ID='.intval($arRes['TIMETABLE_ID']).'&lang='.LANG.'">'.htmlspecialcharsbx($slaTimeTableList[$arRes['TIMETABLE_ID']]).'</a>';
+		$str = '<a href="/bnpt/admin/ticket_timetable_edit.php?ID='.intval($arRes['TIMETABLE_ID']).'&lang='.LANG.'">'.htmlspecialcharsbx($slaTimeTableList[$arRes['TIMETABLE_ID']]).'</a>';
 	}
 
 	$row->AddViewField('TIMETABLE_ID', $str);
@@ -335,7 +335,7 @@ foreach ($fetchedRows as $arRes)
 
 }
 
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array("title"=>GetMessage("MAIN_ADMIN_LIST_SELECTED"), "value"=>$rsData->SelectedRowsCount()),
@@ -372,7 +372,7 @@ $lAdmin->CheckListMode();
 
 $APPLICATION->SetTitle(GetMessage("SUP_PAGE_TITLE"));
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");?>
 

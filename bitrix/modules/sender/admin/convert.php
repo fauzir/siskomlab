@@ -95,7 +95,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 		data['max_execution_time'] = document.getElementById('max_execution_time').value;
 		data['do_not_run'] = started ? 'N' : 'Y';
 
-		var url = '/bitrix/admin/sender_convert.php?lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>';
+		var url = '/bnpt/admin/sender_convert.php?lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>';
 		ShowWaitWindow();
 
 		BX.ajax.post(

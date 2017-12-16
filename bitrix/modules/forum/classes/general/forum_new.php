@@ -1937,7 +1937,7 @@ class CAllForumNew
 			$arButtons[] = array(
 				"TEXT" => GetMessage("F_FORUMS_LIST"),
 				"IMAGE" => "/bitrix/images/forum/toolbar_button1.gif",
-				"ACTION" => "jsUtils.Redirect(arguments, '/bitrix/admin/forum_admin.php')");
+				"ACTION" => "jsUtils.Redirect(arguments, '/bnpt/admin/forum_admin.php')");
 
 			if ($module_permission >= "W" && intVal($FID) > 0 &&
 				CForumNew::CanUserUpdateForum($FID, $USER->GetUserGroupArray(), $USER->GetID()))
@@ -1945,7 +1945,7 @@ class CAllForumNew
 				$arButtons[] = array(
 					"TEXT" => GetMessage("F_FORUM_EDIT"),
 					"IMAGE" => "/bitrix/images/forum/toolbar_button2.gif",
-					"ACTION" => "jsUtils.Redirect(arguments, '/bitrix/admin/forum_edit.php?ID=".intVal($FID)."')");
+					"ACTION" => "jsUtils.Redirect(arguments, '/bnpt/admin/forum_edit.php?ID=".intVal($FID)."')");
 			}
 		}
 		if (!empty($arButtons))

@@ -158,7 +158,7 @@ if(\Bitrix\Scale\Helper::checkBxEnvVersion())
 
 			BX.Scale.serversCollection = new BX.Scale.Collection(BX.Scale.Server, <?=CUtil::PhpToJSObject($serversList)?>);
 
-			BX.Scale.Communicator.url = "/bitrix/admin/scale_ajax.php";
+			BX.Scale.Communicator.url = "/bnpt/admin/scale_ajax.php";
 			BX.Scale.AdminFrame.init({
 				frameObjectName: "adm-scale-page-wrap",
 				srvFrameObjectName: "adm-scale-blocks-wrapper",

@@ -433,7 +433,7 @@ BX.Sale.Admin.OrderEditPage =
 			newBlockContent = '<div class="adm-s-select-popup-element-selected-bad">' +
 				'<span>'+BX.message("SALE_ORDER_STATUS_CANCELED")+'</span>' +
 				params.DATE_CANCELED +
-				'<a href="/bitrix/admin/user_edit.php?lang='+BX.Sale.Admin.OrderEditPage.languageId+'&ID='+params.EMP_CANCELED_ID+'">'+
+				'<a href="/bnpt/admin/user_edit.php?lang='+BX.Sale.Admin.OrderEditPage.languageId+'&ID='+params.EMP_CANCELED_ID+'">'+
 					BX.util.htmlspecialchars(params.EMP_CANCELED_NAME) +
 				'</a>' +
 			'</div>';

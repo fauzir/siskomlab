@@ -502,7 +502,7 @@ class BizprocDocumentLists extends \BizprocDocument
 				if($url)
 					return $url;
 			}
-			return "/bitrix/admin/iblock_element_edit.php?view=Y&ID=".$documentId."&IBLOCK_ID=".
+			return "/bnpt/admin/iblock_element_edit.php?view=Y&ID=".$documentId."&IBLOCK_ID=".
 				$ar["IBLOCK_ID"]."&type=".$ar["IBLOCK_TYPE_ID"];
 		}
 

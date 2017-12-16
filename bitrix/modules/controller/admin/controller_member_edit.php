@@ -622,7 +622,7 @@ if (method_exists($USER_FIELD_MANAGER, 'showscript'))
 			{
 				BX.showWait();
 				BX.ajax.loadJSON(
-					'/bitrix/admin/controller_member_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ID?>',
+					'/bnpt/admin/controller_member_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$ID?>',
 					{
 						countersupdate: 'Y',
 						sessid: BX.bitrix_sessid()
@@ -712,7 +712,7 @@ if (method_exists($USER_FIELD_MANAGER, 'showscript'))
 		$tabControl->BeginNextTab();
 		if ($USER_FIELD_MANAGER->GetRights($ENTITY_ID) >= "W")
 		{
-			echo "<tr><td colspan=\"2\" align=\"left\"><a href=\"/bitrix/admin/userfield_edit.php?lang=".LANG."&ENTITY_ID=".urlencode($ENTITY_ID)."&back_url=".urlencode($APPLICATION->GetCurPageParam("", array("bxpublic"))."&tabControl_active_tab=user_fields_tab")."\">".GetMessage("USER_TYPE_EDIT_TAB_HREF")."</a></td></tr>";
+			echo "<tr><td colspan=\"2\" align=\"left\"><a href=\"/bnpt/admin/userfield_edit.php?lang=".LANG."&ENTITY_ID=".urlencode($ENTITY_ID)."&back_url=".urlencode($APPLICATION->GetCurPageParam("", array("bxpublic"))."&tabControl_active_tab=user_fields_tab")."\">".GetMessage("USER_TYPE_EDIT_TAB_HREF")."</a></td></tr>";
 		}
 
 		$arUserFields = $USER_FIELD_MANAGER->GetUserFields($ENTITY_ID, ($_REQUEST["reconnect_id"] > 0)? $_REQUEST["reconnect_id"]: $ID, LANGUAGE_ID);

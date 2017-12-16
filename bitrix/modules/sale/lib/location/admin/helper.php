@@ -567,7 +567,7 @@ abstract class Helper
 		$parameters['lang'] = LANGUAGE_ID;
 
 		$packed = self::packUrlParameters($parameters);
-		return '/bitrix/admin/'.$page.(strlen($packed) ? '?'.$packed : '');
+		return '/bnpt/admin/'.$page.(strlen($packed) ? '?'.$packed : '');
 	}
 
 	#####################################

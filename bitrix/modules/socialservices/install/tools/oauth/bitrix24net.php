@@ -53,7 +53,7 @@ else
 					}
 					elseif(defined('ADMIN_SECTION'))
 					{
-						LocalRedirect('/bitrix/admin/');
+						LocalRedirect('/bnpt/admin/');
 					}
 					else
 					{

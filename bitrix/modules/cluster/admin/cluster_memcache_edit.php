@@ -56,9 +56,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && check_bitrix_sessid())
 		if($res)
 		{
 			if(isset($_REQUEST["apply"]) && $_REQUEST["apply"] != "")
-				LocalRedirect("/bitrix/admin/cluster_memcache_edit.php?ID=".$res."&lang=".LANGUAGE_ID.'&group_id='.$group_id."&".$tabControl->ActiveTabParam());
+				LocalRedirect("/bnpt/admin/cluster_memcache_edit.php?ID=".$res."&lang=".LANGUAGE_ID.'&group_id='.$group_id."&".$tabControl->ActiveTabParam());
 			else
-				LocalRedirect("/bitrix/admin/cluster_memcache_list.php?lang=".LANGUAGE_ID.'&group_id='.$group_id);
+				LocalRedirect("/bnpt/admin/cluster_memcache_list.php?lang=".LANGUAGE_ID.'&group_id='.$group_id);
 		}
 		else
 		{

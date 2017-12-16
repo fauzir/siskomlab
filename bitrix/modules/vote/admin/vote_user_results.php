@@ -63,7 +63,7 @@ require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_adm
 $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("VOTE_RESULTS_LIST"),
-		"LINK"	=> "/bitrix/admin/vote_user_votes.php?lang=".LANGUAGE_ID
+		"LINK"	=> "/bnpt/admin/vote_user_votes.php?lang=".LANGUAGE_ID
 	)
 );
 

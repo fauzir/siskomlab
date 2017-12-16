@@ -316,7 +316,7 @@ var preset_selected = false;
 function CheckForChanges()
 {
 	var changed = false;
-	var url = '/bitrix/admin/captcha.php?Preview=Y&captcha_sid=<?echo $CAPTCHA_CODE?>';
+	var url = '/bnpt/admin/captcha.php?Preview=Y&captcha_sid=<?echo $CAPTCHA_CODE?>';
 	var ctl, b;
 
 	<?foreach($arSettings as $key => $value):?>
@@ -538,7 +538,7 @@ function set_presets()
 	</td>
 	<td valign="top" rowspan="<?echo count($arSettings)+1?>">
 		<?for($i=0;$i < 12; $i++):?>
-			<img id="CAPTCHA_<?echo $i?>" src="/bitrix/admin/captcha.php?Preview=Y&amp;captcha_sid=<?echo $CAPTCHA_CODE?>&amp;i=<?echo $i?>&amp;j=0" width="180" height="40" alt="CAPTCHA" /><br><br><br>
+			<img id="CAPTCHA_<?echo $i?>" src="/bnpt/admin/captcha.php?Preview=Y&amp;captcha_sid=<?echo $CAPTCHA_CODE?>&amp;i=<?echo $i?>&amp;j=0" width="180" height="40" alt="CAPTCHA" /><br><br><br>
 		<?endfor?>
 	</td>
 </tr>

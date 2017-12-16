@@ -94,7 +94,7 @@ Class perfmon extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images", true, true);
 		}
@@ -103,7 +103,7 @@ Class perfmon extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/perfmon/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");
 		DeleteDirFilesEx("/bitrix/images/perfmon/");
 

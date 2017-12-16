@@ -214,7 +214,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	$row =& $lAdmin->AddRow($f_ID, $arRes);
 
 	if($f_USER_ID > 0)
-		$strUser = "[<a class='tablebodylink' href=\"/bitrix/admin/user_edit.php?ID=".$f_USER_ID."&amp;lang=".LANG."\" title=\"".GetMessage("subscr_user_edit_title")."\">".$f_USER_ID."</a>] (".$f_USER_LOGIN.") ".$f_USER_NAME." ".$f_USER_LAST_NAME;
+		$strUser = "[<a class='tablebodylink' href=\"/bnpt/admin/user_edit.php?ID=".$f_USER_ID."&amp;lang=".LANG."\" title=\"".GetMessage("subscr_user_edit_title")."\">".$f_USER_ID."</a>] (".$f_USER_LOGIN.") ".$f_USER_NAME." ".$f_USER_LAST_NAME;
 	else
 		$strUser = GetMessage("subscr_adm_anon");
 	$row->AddViewField("USER_ID", $strUser);

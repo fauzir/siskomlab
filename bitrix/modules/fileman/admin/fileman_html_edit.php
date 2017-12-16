@@ -166,10 +166,10 @@ elseif(strlen($strWarning) <= 0)
 
 $bFullScreen = ($_REQUEST['fullscreen'] ? $_REQUEST['fullscreen']=='Y' : COption::GetOptionString("fileman", "htmleditor_fullscreen", "N")=="Y");
 
-if(strlen($back_url)>0 && strpos($back_url, "/bitrix/admin/fileman_file_edit.php")!==0)
+if(strlen($back_url)>0 && strpos($back_url, "/bnpt/admin/fileman_file_edit.php")!==0)
 	$url = "/".ltrim($back_url, "/");
 else
-	$url = "/bitrix/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["PREV"]);
+	$url = "/bnpt/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["PREV"]);
 
 $module_id = "fileman";
 $localRedirectUrl = '';
@@ -369,7 +369,7 @@ if(strlen($strWarning)<=0)
 				if(strlen($strWarning)<=0 && strlen($apply)<=0 && strlen($apply2)<=0)
 					$localRedirectUrl = $url;
 				else
-					$localRedirectUrl = "/bitrix/admin/fileman_html_edit.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($path)."&back_url=".UrlEncode($back_url)."&fullscreen=".($bFullScreen?"Y":"N")."&tabControl_active_tab=".urlencode($tabControl_active_tab);
+					$localRedirectUrl = "/bnpt/admin/fileman_html_edit.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($path)."&back_url=".UrlEncode($back_url)."&fullscreen=".($bFullScreen?"Y":"N")."&tabControl_active_tab=".urlencode($tabControl_active_tab);
 			}
 
 			$filesrc_tmp = $filesrc_for_save;
@@ -577,7 +577,7 @@ if($bEdit)
 		$id = GetFileName($path);
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FILEMAN_FILE_DELETE"),
-			"LINK" => "javascript:if(confirm('".GetMessage("FILEMAN_FILE_DELETE_CONFIRM")."')) window.location='/bitrix/admin/fileman_admin.php?ID=".urlencode($id)."&action=delete&".$addUrl."&site=".urlencode($site)."&path=".urlencode($folder_path)."&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessage("FILEMAN_FILE_DELETE_CONFIRM")."')) window.location='/bnpt/admin/fileman_admin.php?ID=".urlencode($id)."&action=delete&".$addUrl."&site=".urlencode($site)."&path=".urlencode($folder_path)."&".bitrix_sessid_get()."';",
 			"TITLE"	=> GetMessage("FILEMAN_FILE_DELETE")
 		);
 	}
@@ -671,7 +671,7 @@ $tabControl->BeginNextTab();
 			$folderPath = $_REQUEST['path'];
 			?>
 
-			window.location='/bitrix/admin/fileman_html_edit.php?lang=<?= LANG?><?=$logic?>&site=<?=Urlencode($site)?>&path=<?= UrlEncode($folderPath)?>&new=y&template='+encodeURIComponent(_this[_this.selectedIndex].value)+_name+_title;
+			window.location='/bnpt/admin/fileman_html_edit.php?lang=<?= LANG?><?=$logic?>&site=<?=Urlencode($site)?>&path=<?= UrlEncode($folderPath)?>&new=y&template='+encodeURIComponent(_this[_this.selectedIndex].value)+_name+_title;
 		}
 		</script>
 
@@ -1274,7 +1274,7 @@ function chitemtype()
 
 function __NewDocTempl(id)
 {
-	window.location='/bitrix/admin/fileman_html_edit.php?lang=<?= LANG?>&site=<?=Urlencode($site)?>&path=<?= UrlEncode($path)?>&new=y&template='+id;
+	window.location='/bnpt/admin/fileman_html_edit.php?lang=<?= LANG?>&site=<?=Urlencode($site)?>&path=<?= UrlEncode($path)?>&new=y&template='+id;
 	new_doc_list.PopupHide();
 }
 

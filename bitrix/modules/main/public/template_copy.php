@@ -173,7 +173,7 @@ if($strWarning == "")
 							{
 								$strJSText = $APPLICATION->GetPopupLink(
 									array(
-										'URL' => '/bitrix/admin/public_file_edit_src.php?lang='.LANGUAGE_ID.'&site='.SITE_ID.'&back_url='.urlencode($_REQUEST["back_path"]).'&path='.urlencode($template->GetFile()),
+										'URL' => '/bnpt/admin/public_file_edit_src.php?lang='.LANGUAGE_ID.'&site='.SITE_ID.'&back_url='.urlencode($_REQUEST["back_path"]).'&path='.urlencode($template->GetFile()),
 										"PARAMS" => Array("width" => 770, "height" => 570,"resize" => true,"dialog_type" => 'EDITOR', "min_width" => 700, "min_height" => 400),
 									)
 								);
@@ -221,7 +221,7 @@ $obJSPopup->StartDescription($sIcon);
 <?if($arComponentDescription["DESCRIPTION"] <> ""):?>
 <p title="<?echo GetMessage("comp_prop_desc")?>"><?echo htmlspecialcharsbx($arComponentDescription["DESCRIPTION"])?></p>
 <?endif;?>
-<p class="note" title="<?echo GetMessage("comp_prop_path")?>"><a href="/bitrix/admin/fileman_admin.php?lang=<?echo LANGUAGE_ID?>&amp;path=<?echo urlencode($localPath)?>"><?echo htmlspecialcharsbx($_GET["component_name"])?></a></p>
+<p class="note" title="<?echo GetMessage("comp_prop_path")?>"><a href="/bnpt/admin/fileman_admin.php?lang=<?echo LANGUAGE_ID?>&amp;path=<?echo urlencode($localPath)?>"><?echo htmlspecialcharsbx($_GET["component_name"])?></a></p>
 <?
 if($_GET['system_template'] == 'Y')
 	ShowNote(GetMessage("copy_comp_sys_templ"));

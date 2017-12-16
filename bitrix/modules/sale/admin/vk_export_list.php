@@ -77,7 +77,7 @@ while ($profile = $resProfiles->NavNext(true))
 	$exportId = $profile["ID"];
 	$row =& $lAdmin->AddRow($exportId, $profile);
 
-	$row->AddField("ID", "<a href=\"/bitrix/admin/sale_vk_export_edit.php?ID=" . $exportId . "&lang=" . LANG . "\">" . $exportId . "</a>");
+	$row->AddField("ID", "<a href=\"/bnpt/admin/sale_vk_export_edit.php?ID=" . $exportId . "&lang=" . LANG . "\">" . $exportId . "</a>");
 	$row->AddField("NAME", $profile['DESCRIPTION'] ? $profile['DESCRIPTION'] : '');
 	if ($profile["EXPORT_SETTINGS"]['ACTIVE'] == 'N')
 	{

@@ -32,7 +32,7 @@ $MESS["STATISTIC_DAILY_REPORT_MESSAGE"] = "#HTML_HEADER#
 <font class='h2'>Summarized statistics for <font color='#A52929'>#SITE_NAME#</font> site<br>
 Data on <font color='#0D716F'>#SERVER_TIME#</font></font>
 <br><br>
-<a class='tablebodylink' href='http://#SERVER_NAME#/bitrix/admin/stat_list.php?lang=#LANGUAGE_ID#'>http://#SERVER_NAME#/bitrix/admin/stat_list.php?lang=#LANGUAGE_ID#</a>
+<a class='tablebodylink' href='http://#SERVER_NAME#/bnpt/admin/stat_list.php?lang=#LANGUAGE_ID#'>http://#SERVER_NAME#/bnpt/admin/stat_list.php?lang=#LANGUAGE_ID#</a>
 <br>
 <hr><br>
 #HTML_COMMON#
@@ -48,7 +48,7 @@ Data on <font color='#0D716F'>#SERVER_TIME#</font></font>
 #HTML_EVENTS#
 <br>
 <hr>
-<a class='tablebodylink' href='http://#SERVER_NAME#/bitrix/admin/stat_list.php?lang=#LANGUAGE_ID#'>http://#SERVER_NAME#/bitrix/admin/stat_list.php?lang=#LANGUAGE_ID#</a>
+<a class='tablebodylink' href='http://#SERVER_NAME#/bnpt/admin/stat_list.php?lang=#LANGUAGE_ID#'>http://#SERVER_NAME#/bnpt/admin/stat_list.php?lang=#LANGUAGE_ID#</a>
 #HTML_FOOTER#
 ";
 $MESS["STATISTIC_ACTIVITY_EXCEEDING_SUBJECT"] = "#SERVER_NAME#: Activity limit exceeded";

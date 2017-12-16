@@ -9,7 +9,7 @@
 	}
 	BX.Sale.VkAdmin = {
 
-		ajaxUrl: '/bitrix/admin/sale_vk_ajax.php',
+		ajaxUrl: '/bnpt/admin/sale_vk_ajax.php',
 
 		startFeed: function (feedType, exportId, firstRun) {
 			BX.Sale.VkAdmin.exportProcessProlog();

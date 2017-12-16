@@ -1698,7 +1698,7 @@ if ($tabStep > 2 && $_REQUEST["action"] == "verify" && $canVerify)
 							return;
 
 						BX.ajax.post(
-							"/bitrix/admin/security_file_verifier.php",
+							"/bnpt/admin/security_file_verifier.php",
 							"fcajax=df&df=" + ts + "&<?= bitrix_sessid_get() ?>",
 							function(result)
 							{
@@ -1885,7 +1885,7 @@ if(
 			<?elseif ($_REQUEST["action"] == "collect"):?>
 				data = "fcajax=cl&region=<?= intval($region) ?>&exts=<?= urlencode($_REQUEST['checker_exts']) ?>&pwd=<?= urlencode($_REQUEST['checker_pwd']) ?>&tm=<?= intval($_REQUEST['checker_time']) ?>&<?= bitrix_sessid_get() ?>&ts=" + ts + "&completed=" + completed + "&startpoint=" + startPoint + "&updRand=" + updRand;
 			<?endif;?>
-			BX.ajax.post("/bitrix/admin/security_file_verifier.php", data, callback);
+			BX.ajax.post("/bnpt/admin/security_file_verifier.php", data, callback);
 		}
 
 		function __FCLoadCollectDataResult(result)
@@ -1908,7 +1908,7 @@ if(
 				<?elseif ($_REQUEST["action"] == "collect"):?>
 					__FCSuccessAdd("<b><?= GetMessage("MFC1_J_FINISH") ?></b><br /><br />");
 					__FCSuccessAdd("<?= GetMessage("MFC1_J_NUM_FILES") ?>: " + globalCounter + ".<br />");
-					__FCSuccessAdd("<?= GetMessage("MFC1_J_DWL_PROMT1") ?> <a href='/bitrix/admin/security_file_verifier.php?fcdld=Y&ts=" + arData[1] + "&<?= bitrix_sessid_get() ?>'><?= GetMessage("MFC1_J_DWL_PROMT2") ?></a>.");
+					__FCSuccessAdd("<?= GetMessage("MFC1_J_DWL_PROMT1") ?> <a href='/bnpt/admin/security_file_verifier.php?fcdld=Y&ts=" + arData[1] + "&<?= bitrix_sessid_get() ?>'><?= GetMessage("MFC1_J_DWL_PROMT2") ?></a>.");
 				<?endif;?>
 
 				CloseWaitWindow();

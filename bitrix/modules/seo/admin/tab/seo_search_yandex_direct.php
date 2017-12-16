@@ -92,7 +92,7 @@ if(count($campaignList) <= 0)
 	}
 
 ?>
-<a href="/bitrix/admin/seo_search_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&back_url=<?=urlencode($APPLICATION->GetCurPageParam('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab=seo_adv_seo_adv', array('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab')))?>"><?=Loc::getMessage("SEO_CREATE_NEW_CAMPAIGN")?></a>
+<a href="/bnpt/admin/seo_search_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&back_url=<?=urlencode($APPLICATION->GetCurPageParam('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab=seo_adv_seo_adv', array('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab')))?>"><?=Loc::getMessage("SEO_CREATE_NEW_CAMPAIGN")?></a>
 <?
 }
 else
@@ -255,7 +255,7 @@ span.yandex-delete {
 				}
 				?>
 			</select>&nbsp;&nbsp;<a
-				href="/bitrix/admin/seo_search_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&back_url=<?=urlencode($APPLICATION->GetCurPageParam('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab=seo_adv_seo_adv', array('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab')))?>"><?=Loc::getMessage("SEO_CREATE_NEW_CAMPAIGN")?></a>
+				href="/bnpt/admin/seo_search_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&back_url=<?=urlencode($APPLICATION->GetCurPageParam('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab=seo_adv_seo_adv', array('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab')))?>"><?=Loc::getMessage("SEO_CREATE_NEW_CAMPAIGN")?></a>
 		</td>
 	</tr>
 	<tr>
@@ -265,7 +265,7 @@ span.yandex-delete {
 				onchange="BX('seo_adv_link_btn').disabled=this.value<=0">
 				<option value="0"><?=Loc::getMessage("SEO_CAMPAIGN_CHOOSE_OPTION")?></option>
 			</select>&nbsp;&nbsp;<a id="adv_banner_link"
-					href="/bitrix/admin/seo_search_yandex_direct_banner_edit.php?lang=<?=LANGUAGE_ID?>&element=<?=$iblockElementInfo['ID']?>&back_url=<?=urlencode($APPLICATION->GetCurPageParam('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab=seo_adv_seo_adv', array('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab')));?>" style="display: none;"><?=Loc::getMessage('SEO_CREATE_NEW_BANNER')?></a>
+					href="/bnpt/admin/seo_search_yandex_direct_banner_edit.php?lang=<?=LANGUAGE_ID?>&element=<?=$iblockElementInfo['ID']?>&back_url=<?=urlencode($APPLICATION->GetCurPageParam('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab=seo_adv_seo_adv', array('form_element_'.$iblockElementInfo["IBLOCK"]["ID"].'_active_tab')));?>" style="display: none;"><?=Loc::getMessage('SEO_CREATE_NEW_BANNER')?></a>
 			<small id="adv_banner_strategy_warning"
 				style="display: none;"><?=Loc::getMessage('SEO_YANDEX_STRATEGY_WARNING')?></small>
 		</td>
@@ -543,7 +543,7 @@ span.yandex-delete {
 	{
 		BX('yandex_direct_action_button_' + bannerId).disabled = true;
 		BX.ajax({
-			url: '/bitrix/admin/seo_search_yandex_direct_banner.php?ID='+bannerId+'&action_button=stop&sessid='+BX.bitrix_sessid()+'&campaign='+campaignId+'&mode=list&table_id=tbl_yandex_direct_banner',
+			url: '/bnpt/admin/seo_search_yandex_direct_banner.php?ID='+bannerId+'&action_button=stop&sessid='+BX.bitrix_sessid()+'&campaign='+campaignId+'&mode=list&table_id=tbl_yandex_direct_banner',
 			processData: false,
 			onsuccess: function()
 			{
@@ -556,7 +556,7 @@ span.yandex-delete {
 	{
 		BX('yandex_direct_action_button_' + bannerId).disabled = true;
 		BX.ajax({
-			url: '/bitrix/admin/seo_search_yandex_direct_banner.php?ID='+bannerId+'&action_button=resume&sessid='+BX.bitrix_sessid()+'&campaign='+campaignId+'&mode=list&table_id=tbl_yandex_direct_banner',
+			url: '/bnpt/admin/seo_search_yandex_direct_banner.php?ID='+bannerId+'&action_button=resume&sessid='+BX.bitrix_sessid()+'&campaign='+campaignId+'&mode=list&table_id=tbl_yandex_direct_banner',
 			processData: false,
 			onsuccess: function()
 			{

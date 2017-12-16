@@ -14,7 +14,7 @@ while ($ar = $rs->Fetch())
 {
 	$ref[] = $ar["ID"];
 	$ref_id[] = $ar["ID"];
-	$arSites[$ar["ID"]] = "[<a href=\"/bitrix/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
+	$arSites[$ar["ID"]] = "[<a href=\"/bnpt/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
 }
 $arSiteDropdown = array("reference" => $ref, "reference_id" => $ref_id);
 

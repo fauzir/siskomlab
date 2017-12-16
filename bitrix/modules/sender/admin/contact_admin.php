@@ -423,7 +423,7 @@ $aContext = array(
 
 $aContext[] = array(
 	"TEXT"=>GetMessage("SENDER_CONTACT_LIST_EDIT"),
-	"LINK"=>"/bitrix/admin/sender_list_admin.php?lang=".LANG,
+	"LINK"=>"/bnpt/admin/sender_list_admin.php?lang=".LANG,
 	"TITLE"=>GetMessage("SENDER_CONTACT_LIST_EDIT_TITLE"),
 	"ICON"=>"",
 );
@@ -641,7 +641,7 @@ if($_REQUEST['action']=="pull"):
 				data['COUNTER_ADDRESS_NEW'] = counterAddressNew;
 				data['COUNTER_ADDRESS_ERROR'] = counterAddressError;
 
-				var url = '/bitrix/admin/sender_contact_admin.php?lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>&action=js_pull';
+				var url = '/bnpt/admin/sender_contact_admin.php?lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>&action=js_pull';
 				ShowWaitWindow();
 				BX.ajax.post(
 					url,

@@ -88,7 +88,7 @@ if ($request->isPost() && check_bitrix_sessid())
 				break;
 		}
 		if ($redirectUrl != '')
-			LocalRedirect('/bitrix/admin/'.$redirectUrl);
+			LocalRedirect('/bnpt/admin/'.$redirectUrl);
 	}
 }
 

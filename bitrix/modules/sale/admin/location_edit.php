@@ -13,7 +13,7 @@ $ID = IntVal($ID);
 
 /// redirect to newer version
 if(CSaleLocation::isLocationProEnabled())
-	LocalRedirect('/bitrix/admin/sale_location_node_edit.php'.($ID ? '?id='.$ID : ''));
+	LocalRedirect('/bnpt/admin/sale_location_node_edit.php'.($ID ? '?id='.$ID : ''));
 
 ClearVars();
 
@@ -245,7 +245,7 @@ $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SLN_2FLIST"),
 				"ICON" => "btn_list",
-				"LINK" => "/bitrix/admin/sale_location_admin.php?lang=".LANG.GetFilterParams("filter_")
+				"LINK" => "/bnpt/admin/sale_location_admin.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 
@@ -256,13 +256,13 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SLN_NEW_LOCATION"),
 			"ICON" => "btn_new",
-			"LINK" => "/bitrix/admin/sale_location_edit.php?lang=".LANG.GetFilterParams("filter_")
+			"LINK" => "/bnpt/admin/sale_location_edit.php?lang=".LANG.GetFilterParams("filter_")
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SLN_DELETE_LOCATION"),
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("SLN_DELETE_LOCATION_CONFIRM")."')) window.location='/bitrix/admin/sale_location_admin.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("SLN_DELETE_LOCATION_CONFIRM")."')) window.location='/bnpt/admin/sale_location_admin.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		);
 }
 $context = new CAdminContextMenu($aMenu);
@@ -731,7 +731,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/sale_location_admin.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bnpt/admin/sale_location_admin.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

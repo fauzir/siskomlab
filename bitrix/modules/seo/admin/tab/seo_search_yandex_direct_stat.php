@@ -41,7 +41,7 @@ foreach($bannerList as $bannerId => $banner)
 ?>
 		<div class="seo-adv-block seo-adv-block-gray seo-adv-block-no-title">
 			<div class="seo-adv-block-icon"></div>
-			<div class="seo-adv-block-text"><?=Loc::getMessage('SEO_YANDEX_STATS_NO_START_DATE')?> <a href="/bitrix/admin/seo_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$banner["CAMPAIGN_ID"]?>"><?=Loc::getMessage('SEO_YANDEX_STATS_NO_START_DATE_SET')?></a></div>
+			<div class="seo-adv-block-text"><?=Loc::getMessage('SEO_YANDEX_STATS_NO_START_DATE')?> <a href="/bnpt/admin/seo_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$banner["CAMPAIGN_ID"]?>"><?=Loc::getMessage('SEO_YANDEX_STATS_NO_START_DATE_SET')?></a></div>
 		</div>
 <?
 	elseif($banner['LOADING_NEEDED']):
@@ -249,8 +249,8 @@ if($banner['SETTINGS']['StatusBannerModerate'] != Engine\YandexDirect::STATUS_NE
 			<span style="white-space:nowrap;"><div class="lamp-<?=$activeCampaign?>" style="display:inline-block;"></div>&nbsp;<?=$activeCampaignTitle;?></span>
 
 			<div style="margin-top: 15px;">
-				<a href="/bitrix/admin/seo_search_yandex_direct_banner_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$banner['ID']?>&tabControl_active_tab=edit_stats"><?=Loc::getMessage('SEO_YANDEX_STATS_BANNER_STATS')?></a><br />
-				<a href="/bitrix/admin/seo_search_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$banner['CAMPAIGN_ID']?>&tabControl_active_tab=edit_stats"><?=Loc::getMessage('SEO_YANDEX_STATS_CAMPAIGN_STATS')?></a><br />
+				<a href="/bnpt/admin/seo_search_yandex_direct_banner_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$banner['ID']?>&tabControl_active_tab=edit_stats"><?=Loc::getMessage('SEO_YANDEX_STATS_BANNER_STATS')?></a><br />
+				<a href="/bnpt/admin/seo_search_yandex_direct_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$banner['CAMPAIGN_ID']?>&tabControl_active_tab=edit_stats"><?=Loc::getMessage('SEO_YANDEX_STATS_CAMPAIGN_STATS')?></a><br />
 			</div>
 		</td>
 	</tr>

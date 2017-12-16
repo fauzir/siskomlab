@@ -159,7 +159,7 @@ foreach($arResult['MAP_TYPES_LIST'] as $type => $name)
 					"SALE_SSC_GOOGLE_MAP_INFO",
 					array(
 						'#A1#' => '<a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\"> https://developers.google.com/maps/documentation/javascript/get-api-key</a>',
-						'#A2#' => '<a href=\"/bitrix/admin/settings.php?lang='.LANGUAGE_ID.'&mid=fileman\">',
+						'#A2#' => '<a href=\"/bnpt/admin/settings.php?lang='.LANGUAGE_ID.'&mid=fileman\">',
 						'#A3#' => '</a>'
 					)
 				)?>",

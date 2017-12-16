@@ -57,7 +57,7 @@ class scale extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/scale/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true, true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/scale/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/scale/install/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js", true, true);
 		}
 
@@ -68,7 +68,7 @@ class scale extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/scale/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/scale/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFilesEx("/bitrix/js/scale/");
 		}
 

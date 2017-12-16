@@ -30,7 +30,7 @@ if(
 	{
 		?>
 		<script>
-			window.location = '/bitrix/admin/cache.php?lang=<?echo LANGUAGE_ID?>&tabControl_active_tab=fedit2';
+			window.location = '/bnpt/admin/cache.php?lang=<?echo LANGUAGE_ID?>&tabControl_active_tab=fedit2';
 		</script>
 		<?
 		require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/epilog_admin_js.php");

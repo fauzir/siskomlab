@@ -149,7 +149,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	if(is_array($arrSITE))
 	{
 		foreach($arrSITE as $sid)
-			$str .= '<a title="'.GetMessage("VOTE_SITE_EDIT").'" href="/bitrix/admin/site_edit.php?LID='.$sid.'&lang='.LANGUAGE_ID.'">'.$sid.'</a>, ';
+			$str .= '<a title="'.GetMessage("VOTE_SITE_EDIT").'" href="/bnpt/admin/site_edit.php?LID='.$sid.'&lang='.LANGUAGE_ID.'">'.$sid.'</a>, ';
 	};
 
 	if ($VOTE_RIGHT=="W")

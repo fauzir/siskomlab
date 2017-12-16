@@ -242,7 +242,7 @@ $adminList->AddHeaders($arHeaders);
 
 while ($rate = $rateIterator->Fetch())
 {
-	$editUrl = "/bitrix/admin/currency_rate_edit.php?ID=".$rate['ID']."&lang=".LANGUAGE_ID.GetFilterParams("filter_");
+	$editUrl = "/bnpt/admin/currency_rate_edit.php?ID=".$rate['ID']."&lang=".LANGUAGE_ID.GetFilterParams("filter_");
 	$row = &$adminList->AddRow($rate['ID'], $rate, $editUrl, GetMessage('CURRENCY_RATES_A_EDIT'));
 
 	$row->AddViewField('ID', '<a href="'.$editUrl.'" title="'.GetMessage('CURRENCY_RATES_A_EDIT_TITLE').'">'.$rate['ID'].'</a>');
@@ -301,7 +301,7 @@ $aContext = array(
 	array(
 		"ICON" => "btn_new",
 		"TEXT"=>GetMessage("CURRENCY_NEW_TITLE"),
-		"LINK"=>"/bitrix/admin/currency_rate_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+		"LINK"=>"/bnpt/admin/currency_rate_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 		"TITLE"=>GetMessage("CURRENCY_NEW_TITLE")
 	),
 );

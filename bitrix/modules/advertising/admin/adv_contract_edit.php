@@ -36,7 +36,7 @@ if ($isAdmin || ($isDemo && !$isOwner))
 
 $tabControl = new CAdminTabControl("tabControl", $aTabs);
 /***************************************************************************
-						Обработка GET | POST
+						пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ***************************************************************************/
 
 $strError = '';
@@ -185,7 +185,7 @@ $sDocTitle = ($ID>0) ? GetMessage("AD_EDIT_RECORD", array("#ID#" => $ID)) : GetM
 $APPLICATION->SetTitle($sDocTitle);
 
 /***************************************************************************
-								HTML форма
+								HTML пїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 
@@ -287,7 +287,7 @@ $tabControl->BeginNextTab();
 		if (intval($str_CREATED_BY)>0) :
 			$rsUser = CUser::GetByID($str_CREATED_BY);
 			$arUser = $rsUser->Fetch();
-			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/user_edit.php?ID=".$str_CREATED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_CREATED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/user_edit.php?ID=".$str_CREATED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_CREATED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 		endif;
 		?></td>
 	</tr>
@@ -299,7 +299,7 @@ $tabControl->BeginNextTab();
 		if (intval($str_MODIFIED_BY)>0) :
 			$rsUser = CUser::GetByID($str_MODIFIED_BY);
 			$arUser = $rsUser->Fetch();
-			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/user_edit.php?ID=".$str_MODIFIED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_MODIFIED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/user_edit.php?ID=".$str_MODIFIED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_MODIFIED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 		endif;
 		?></td>
 	</tr>
@@ -419,12 +419,12 @@ $tabControl->BeginNextTab();
 				?>
 				<tr>
 					<td width="30%"><?=$arrStatus["reference"][$key]?>:&nbsp;</td>
-					<td><a href="/bitrix/admin/adv_banner_list.php?find_contract_id[]=<?echo $ID?>&find_status_sid[]=<?echo $status_sid?>&set_filter=Y&lang=<?=LANGUAGE_ID?>" title='<?=GetMessage("AD_BANNER_ALT")?>'><?=$count?></a></td>
+					<td><a href="/bnpt/admin/adv_banner_list.php?find_contract_id[]=<?echo $ID?>&find_status_sid[]=<?echo $status_sid?>&set_filter=Y&lang=<?=LANGUAGE_ID?>" title='<?=GetMessage("AD_BANNER_ALT")?>'><?=$count?></a></td>
 				</tr>
 				<? endwhile;?>
 				<tr>
 					<td><b><?=GetMessage("AD_TOTAL")?>&nbsp;</b></td>
-					<td><a href="/bitrix/admin/adv_banner_list.php?find_contract_id[]=<?echo $ID?>&set_filter=Y&lang=<?=LANGUAGE_ID?>" title='<?=GetMessage("AD_BANNER_ALT")?>'><?echo $str_BANNER_COUNT?></a></td>
+					<td><a href="/bnpt/admin/adv_banner_list.php?find_contract_id[]=<?echo $ID?>&set_filter=Y&lang=<?=LANGUAGE_ID?>" title='<?=GetMessage("AD_BANNER_ALT")?>'><?echo $str_BANNER_COUNT?></a></td>
 				</tr>
 			</table></td>
 	</tr>
@@ -444,7 +444,7 @@ $tabControl->BeginNextTab();
 					?>
 					<div class="adm-list-item">
 						<div class="adm-list-control"><input type="checkbox" name="arrSITE[]" value="<?=htmlspecialcharsbx($sid)?>" id="site_<?=htmlspecialcharsbx($sid)?>" <?=$checked?>></div>
-						<div class="adm-list-label"><?echo '[<a href="/bitrix/admin/site_edit.php?LID='.urlencode($sid).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("AD_SITE_ALT").'">'.htmlspecialcharsex($sid).'</a>]&nbsp;<label for="site_'.htmlspecialcharsbx($sid).'">'.htmlspecialcharsex($arrS["NAME"])?></label></div>
+						<div class="adm-list-label"><?echo '[<a href="/bnpt/admin/site_edit.php?LID='.urlencode($sid).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("AD_SITE_ALT").'">'.htmlspecialcharsex($sid).'</a>]&nbsp;<label for="site_'.htmlspecialcharsbx($sid).'">'.htmlspecialcharsex($arrS["NAME"])?></label></div>
 					</div>
 				<?endwhile;?>
 				</div>
@@ -499,7 +499,7 @@ $tabControl->BeginNextTab();
 						id="arType_<?=$i?>">
 				</div>
 				<div class="adm-list-label">
-					<?="[<a href='/bitrix/admin/adv_type_edit.php?lang=".LANGUAGE_ID."&SID=".$arType["SID"]."&action=view' title='".GetMessage("AD_TYPE_ALT")."'>".$arType["SID"]."</a>] "."<label for='arType_".$i."'>".$arType["NAME"]."</label>"?>
+					<?="[<a href='/bnpt/admin/adv_type_edit.php?lang=".LANGUAGE_ID."&SID=".$arType["SID"]."&action=view' title='".GetMessage("AD_TYPE_ALT")."'>".$arType["SID"]."</a>] "."<label for='arType_".$i."'>".$arType["NAME"]."</label>"?>
 				</div>
 			</div>
 			<?
@@ -526,7 +526,7 @@ $tabControl->BeginNextTab();
 			foreach ($arContractTypes as $sid => $name):
 				if ($sid == "ALL") continue;
 			?>
-				[<a href="/bitrix/admin/adv_type_edit.php?lang=<?=LANGUAGE_ID?>&SID=<?=$sid?>&action=view" title="<?=GetMessage("AD_TYPE_ALT")?>"><?=$sid?></a>]
+				[<a href="/bnpt/admin/adv_type_edit.php?lang=<?=LANGUAGE_ID?>&SID=<?=$sid?>&action=view" title="<?=GetMessage("AD_TYPE_ALT")?>"><?=$sid?></a>]
 				<?=HtmlFilter::encode($name)?><br>
 			<?endforeach?>
 		</td>

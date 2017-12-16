@@ -449,7 +449,7 @@ if(!is_array($arWRes))
 			<?foreach($arMBoxes as $mbid=>$arMB):?>
 				<option value="<?=$mbid?>"<?if($arWRes['MAIL_FILTER_ID']==$mbid)echo ' selected'?>><?=$arMB["name"]?></option>
 			<?endforeach?>
-		</select> <a href="/bitrix/admin/mail_mailbox_admin.php?lang=<?=LANGUAGE_ID?>" target="_blank"><?echo GetMessage("FTL_EMAIL_MAILBOX_LINK")?></a>
+		</select> <a href="/bnpt/admin/mail_mailbox_admin.php?lang=<?=LANGUAGE_ID?>" target="_blank"><?echo GetMessage("FTL_EMAIL_MAILBOX_LINK")?></a>
 	</td>
 </tr>
 <tr style="display:none" id="EI_1">
@@ -583,7 +583,7 @@ function ChMBAcc()
 	var login = BX.util.urlencode(document.getElementById("EI_13").value);
 	var passw = BX.util.urlencode(document.getElementById("EI_14").value);
 
-	var url = '/bitrix/admin/mail_check_mailbox.php?lang=<?=LANGUAGE_ID?>';
+	var url = '/bnpt/admin/mail_check_mailbox.php?lang=<?=LANGUAGE_ID?>';
 	BX.showWait(document.getElementById('xcv'));
 	BX.ajax({
 		'url':url,

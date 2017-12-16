@@ -809,10 +809,10 @@ var EC_MESS = {
 
 <?if (!CCalendar::IsBitrix24()):?>
 <div class="bxec-popup-row">
-	<a href="/bitrix/admin/settings.php?mid=calendar&tabControl_active_tab=edit2" title="<?=GetMessage('EC_MANAGE_CALENDAR_TYPES_TITLE')?>" target="_blank"><?= GetMessage('EC_MANAGE_CALENDAR_TYPES')?></a>
+	<a href="/bnpt/admin/settings.php?mid=calendar&tabControl_active_tab=edit2" title="<?=GetMessage('EC_MANAGE_CALENDAR_TYPES_TITLE')?>" target="_blank"><?= GetMessage('EC_MANAGE_CALENDAR_TYPES')?></a>
 </div>
 <div class="bxec-popup-row">
-	<a href="/bitrix/admin/settings.php?mid=calendar&tabControl_active_tab=edit1" title="<?=GetMessage('EC_MANAGE_SETTING_TITLE')?>" target="_blank"><?= GetMessage('EC_MANAGE_SETTING')?></a>
+	<a href="/bnpt/admin/settings.php?mid=calendar&tabControl_active_tab=edit1" title="<?=GetMessage('EC_MANAGE_SETTING_TITLE')?>" target="_blank"><?= GetMessage('EC_MANAGE_SETTING')?></a>
 </div>
 <?endif;?>
 

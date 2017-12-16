@@ -61,7 +61,7 @@ class advertising extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/public", $_SERVER["DOCUMENT_ROOT"]."/bitrix");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/public/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/advertising/", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
@@ -195,7 +195,7 @@ class advertising extends CModule
 			}
 		}
 
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/advertising/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");//css
 		DeleteDirFilesEx("/bitrix/themes/.default/icons/advertising/");//icons
 		DeleteDirFilesEx("/bitrix/images/advertising/");//images

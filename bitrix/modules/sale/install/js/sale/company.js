@@ -11,7 +11,7 @@
 
 	BX.Sale.Company =
 	{
-		ajaxUrl: "/bitrix/admin/sale_company_ajax.php",
+		ajaxUrl: "/bnpt/admin/sale_company_ajax.php",
 
 		getRuleParamsHtml: function (params)
 		{

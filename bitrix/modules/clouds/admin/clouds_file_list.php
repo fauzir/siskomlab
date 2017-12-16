@@ -287,7 +287,7 @@ if($USER->CanDoOperation("clouds_upload") && is_array($arID))
 					"BUTTONS" => array(
 						array(
 							"VALUE" => GetMessage("CLO_STORAGE_FILE_STOP"),
-							"ONCLICK" => 'window.location = \''.CUtil::AddSlashes("/bitrix/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID)."&bucket=".urlencode($obBucket->ID)."&path=".urlencode($path)).'\'',
+							"ONCLICK" => 'window.location = \''.CUtil::AddSlashes("/bnpt/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID)."&bucket=".urlencode($obBucket->ID)."&path=".urlencode($path)).'\'',
 						),
 					),
 				));
@@ -493,7 +493,7 @@ if($USER->CanDoOperation("clouds_upload") && is_array($arID))
 					"BUTTONS" => array(
 						array(
 							"VALUE" => GetMessage("CLO_STORAGE_FILE_STOP"),
-							"ONCLICK" => 'window.location = \''.CUtil::JSEscape("/bitrix/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID)."&bucket=".urlencode($obBucket->ID)."&path=".urlencode($path)).'\'',
+							"ONCLICK" => 'window.location = \''.CUtil::JSEscape("/bnpt/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID)."&bucket=".urlencode($obBucket->ID)."&path=".urlencode($path)).'\'',
 						),
 					),
 				));
@@ -726,7 +726,7 @@ if(
 }
 $aContext[] = array(
 	"TEXT" => GetMessage("CLO_STORAGE_FILE_SHOW_DIR_SIZE"),
-	"LINK" => "/bitrix/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID).'&bucket='.urlencode($obBucket->ID).'&path='.urlencode($path).'&size=y',
+	"LINK" => "/bnpt/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID).'&bucket='.urlencode($obBucket->ID).'&path='.urlencode($path).'&size=y',
 	"TITLE" => GetMessage("CLO_STORAGE_FILE_SHOW_DIR_SIZE_TITLE"),
 );
 
@@ -776,7 +776,7 @@ $oFilter->Begin();
 <?
 $oFilter->Buttons(array(
 	"table_id"=>$sTableID,
-	"url"=>"/bitrix/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID).'&bucket='.urlencode($obBucket->ID).'&path='.urlencode($path),
+	"url"=>"/bnpt/admin/clouds_file_list.php?lang=".urlencode(LANGUAGE_ID).'&bucket='.urlencode($obBucket->ID).'&path='.urlencode($path),
 	"form"=>"find_form",
 ));
 $oFilter->End();

@@ -183,7 +183,7 @@ if(is_array($arID))
 						"BUTTONS" => array(
 							array(
 								"VALUE" => GetMessage("CLO_STORAGE_LIST_STOP"),
-								"ONCLICK" => 'window.location = \'/bitrix/admin/clouds_storage_list.php?lang='.LANGUAGE_ID.'\'',
+								"ONCLICK" => 'window.location = \'/bnpt/admin/clouds_storage_list.php?lang='.LANGUAGE_ID.'\'',
 							),
 						),
 					));
@@ -321,7 +321,7 @@ if(is_array($arID))
 						"BUTTONS" => array(
 							array(
 								"VALUE" => GetMessage("CLO_STORAGE_LIST_STOP"),
-								"ONCLICK" => 'window.location = \'/bitrix/admin/clouds_storage_list.php?lang='.LANGUAGE_ID.'\'',
+								"ONCLICK" => 'window.location = \'/bnpt/admin/clouds_storage_list.php?lang='.LANGUAGE_ID.'\'',
 							),
 						),
 					));
@@ -500,7 +500,7 @@ $lAdmin->AddFooter($arFooter);
 $aContext = array(
 	array(
 		"TEXT" => GetMessage("CLO_STORAGE_LIST_ADD"),
-		"LINK" => "/bitrix/admin/clouds_storage_edit.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/clouds_storage_edit.php?lang=".LANGUAGE_ID,
 		"TITLE" => GetMessage("CLO_STORAGE_LIST_ADD_TITLE"),
 		"ICON" => "btn_new",
 	),

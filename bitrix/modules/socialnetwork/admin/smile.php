@@ -10,22 +10,22 @@ IncludeModuleLangFile(__FILE__);
 
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/socialnetwork/prolog.php");
 
-// идентификатор таблицы
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $sTableID = "tbl_socnet_smile";
 
-// инициализация сортировки
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $oSort = new CAdminSorting($sTableID, "ID", "asc");
-// инициализация списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin = new CAdminList($sTableID, $oSort);
 
-// инициализация параметров списка - фильтры
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ - пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $arFilterFields = array();
 
 $lAdmin->InitFilter($arFilterFields);
 
 $arFilter = array();
 
-// обработка действий групповых и одиночных
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if (($arID = $lAdmin->GroupAction()) && $sonetModulePermissions >= "W")
 {
 	if ($_REQUEST['action_target']=='selected')
@@ -92,10 +92,10 @@ $dbResultList = CSocNetSmile::GetList(
 $dbResultList = new CAdminResult($dbResultList, $sTableID);
 $dbResultList->NavStart();
 
-// установке параметров списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->NavText($dbResultList->GetNavPrint(GetMessage("PAGES")));
 
-// заголовок списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddHeaders(array(
 	array("id"=>"ID", "content"=>GetMessage("SMILE_ID"), "sort"=>"ID", "default"=>true),
 	array("id"=>"SORT","content"=>GetMessage("SMILE_SORT"), "sort"=>"SORT", "default"=>true),
@@ -107,12 +107,12 @@ $lAdmin->AddHeaders(array(
 
 $arVisibleColumns = $lAdmin->GetVisibleHeaderColumns();
 
-// построение списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 while ($arSocNet = $dbResultList->NavNext(true, "f_"))
 {
 	$row =& $lAdmin->AddRow($f_ID, $arSocNet);
 
-	$row->AddField("ID", '<a href="/bitrix/admin/socnet_smile_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SONET_EDIT_DESCR").'">'.$f_ID.'</a>');
+	$row->AddField("ID", '<a href="/bnpt/admin/socnet_smile_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SONET_EDIT_DESCR").'">'.$f_ID.'</a>');
 	$row->AddField("SORT", $f_SORT);
 	$row->AddField("SMILE_TYPE", (($f_SMILE_TYPE=="I") ? GetMessage("SMILE_TYPE_ICON") : GetMessage("SMILE_TYPE_SMILE")));
 
@@ -141,7 +141,7 @@ while ($arSocNet = $dbResultList->NavNext(true, "f_"))
 	$row->AddActions($arActions);
 }
 
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array(
@@ -156,7 +156,7 @@ $lAdmin->AddFooter(
 	)
 );
 
-// показ формы с кнопками добавления, ...
+// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, ...
 $lAdmin->AddGroupActionTable(
 	array(
 		"delete" => GetMessage("MAIN_ADMIN_LIST_DELETE"),
@@ -176,7 +176,7 @@ if ($sonetModulePermissions >= "W")
 	$lAdmin->AddAdminContextMenu($aContext);
 }
 
-// проверка на вывод только списка (в случае списка, скрипт дальше выполняться не будет)
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ)
 $lAdmin->CheckListMode();
 
 

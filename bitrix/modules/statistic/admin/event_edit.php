@@ -222,7 +222,7 @@ if (strlen($success) <= 0 || $success == "Y")
 	elseif (CModule::IncludeModule("currency"))
 	{
 		CAdminMessage::ShowMessage(array(
-			"DETAILS" => GetMessage("STAT_BASE_CURRENCY_NOT_INSTALLED").'<br><a href="/bitrix/admin/settings.php?lang='.LANGUAGE_ID.'&amp;mid=statistic">'.GetMessage("STAT_CHOOSE_CURRENCY").'</a>',
+			"DETAILS" => GetMessage("STAT_BASE_CURRENCY_NOT_INSTALLED").'<br><a href="/bnpt/admin/settings.php?lang='.LANGUAGE_ID.'&amp;mid=statistic">'.GetMessage("STAT_CHOOSE_CURRENCY").'</a>',
 			"HTML" => true,
 			"TYPE" => "ERROR",
 		));
@@ -425,7 +425,7 @@ function SelectHandler()
 {
 	var objHandlerSelect, strHandlerValue;
 	var fileman_edit_link;
-	fileman_edit_link = "/bitrix/admin/fileman_file_edit.php?lang=<?=LANGUAGE_ID?>&full_src=Y&path=";
+	fileman_edit_link = "/bnpt/admin/fileman_file_edit.php?lang=<?=LANGUAGE_ID?>&full_src=Y&path=";
 	<?=$strJavaUserHandlerArray?>
 	objHandlerSelect = document.form1.handler;
 	strHandlerValue = objHandlerSelect[objHandlerSelect.selectedIndex].value;

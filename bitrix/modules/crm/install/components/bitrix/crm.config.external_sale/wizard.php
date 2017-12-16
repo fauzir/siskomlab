@@ -196,7 +196,7 @@ if ($currentStep == 3 && $processActions && empty($errorMessage))
 		{
 			$request = array(
 				"METHOD" => "GET",
-				"PATH" => "/bitrix/admin/sale_order_new.php",
+				"PATH" => "/bnpt/admin/sale_order_new.php",
 				"HEADERS" => array(),
 				"BODY" => array()
 			);

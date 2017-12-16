@@ -119,7 +119,7 @@ Class cluster extends CModule
 		global $DB;
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			if($DB->type == "MYSQL")
 				CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/wizards", $_SERVER["DOCUMENT_ROOT"]."/bitrix/wizards", true, true);
@@ -131,7 +131,7 @@ Class cluster extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/cluster/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");
 			DeleteDirFilesEx("/bitrix/themes/.default/icons/cluster/");
 		}

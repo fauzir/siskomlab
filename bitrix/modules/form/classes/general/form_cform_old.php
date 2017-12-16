@@ -1,6 +1,6 @@
 <?
 /*********************************************
-	Устаревшие функции (для совместимости)
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
 *********************************************/
 
 class CForm_old
@@ -16,12 +16,12 @@ class CForm_old
 	}
 
 	/*
-	выводит HTML формы с учетом прав посетителя
+	пїЅпїЅпїЅпїЅпїЅпїЅпїЅ HTML пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
-		WEB_FORM_VARNAME - идентификатор формы
-		VARS - массив значений для полей ввода
-		SHOW_TEMPLATE - имя шаблона формы
-		PREVIEW - если "Y" тогда кнопка "Сохранить" в шаблоне недоступна
+		WEB_FORM_VARNAME - пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		VARS - пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		SHOW_TEMPLATE - пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+		PREVIEW - пїЅпїЅпїЅпїЅ "Y" пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	*/
 	function Show($WEB_FORM_VARNAME, $arrVALUES=false, $SHOW_TEMPLATE=false, $PREVIEW="N")
 	{
@@ -54,21 +54,21 @@ class CForm_old
 					{
 						$arIcons[] =
 								Array(
-									"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+									"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 									"SRC" => "/bitrix/images/form/panel/edit_template.gif",
 									"ALT" => GetMessage("FORM_PUBLIC_ICON_TEMPLATE")
 								);
 						$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 						$arIcons[] =
 								Array(
-									"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+									"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 									"SRC" => "/bitrix/images/form/panel/edit_file.gif",
 									"ALT" => GetMessage("FORM_PUBLIC_ICON_HANDLER")
 								);
 					}
 					$arIcons[] =
 							Array(
-								"URL" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
+								"URL" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
 								"SRC" => "/bitrix/images/form/panel/edit_form.gif",
 								"ALT" => GetMessage("FORM_PUBLIC_ICON_SETTINGS")
 							);
@@ -110,8 +110,8 @@ class CForm_old
 		*/
 	}
 
-	// возвращает hidden поля для формирования массива
-	// вопросов формы значения которых не нужно менять в момент редактирования результата
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ hidden пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	function GetClosedFields($WEB_FORM_ID, $arrFields)
 	{
 		$err_mess = (CAllForm::err_mess())."<br>Function: GetClosedFields<br>Line: ";

@@ -299,7 +299,7 @@ $tabControl->BeginNextTab();
 		var query_str = "ACTION=update&STATUS="+status+"&TEST_ID="+testID+"&COMMENTS=Y"+"&perfomer_comment="+BX("performer_comment").value+"&lang=<?=LANG;?>";
 		if (_this)
 			query_str+="&CAN_SHOW_CP_MESSAGE=Y";
-		BX.ajax.post("/bitrix/admin/checklist.php?bxpublic=Y&<?=bitrix_sessid_get()?>",query_str,TestResultSimple);
+		BX.ajax.post("/bnpt/admin/checklist.php?bxpublic=Y&<?=bitrix_sessid_get()?>",query_str,TestResultSimple);
 	}
 
 	function StartPointAutoCheck()
@@ -356,7 +356,7 @@ $tabControl->BeginNextTab();
 				else if (json_data.IN_PROGRESS == "Y")
 				{
 					BX("bx_per_point_done").innerHTML = '<?=GetMessageJS("CL_PERCENT_LIVE")?>'+" "+json_data.PERCENT+"%";
-					BX.ajax.post("/bitrix/admin/checklist.php","ACTION=update&autotest=Y&bxpublic=Y&TEST_ID="+testID+"&STEP="+(++step)+"&lang=<?=LANG;?>&<?=bitrix_sessid_get()?>",callback);
+					BX.ajax.post("/bnpt/admin/checklist.php","ACTION=update&autotest=Y&bxpublic=Y&TEST_ID="+testID+"&STEP="+(++step)+"&lang=<?=LANG;?>&<?=bitrix_sessid_get()?>",callback);
 				}
 				else
 				{
@@ -384,7 +384,7 @@ $tabControl->BeginNextTab();
 		stoptest = false;
 		buttonText = BX.findChild(BX("bx_start_button_detail"), {className:'checklist-button-cont'}, true, false);
 		buttonText.innerHTML = '<?=GetMessageJS("CL_END_TEST");?>';
-		BX.ajax.post("/bitrix/admin/checklist.php","ACTION=update&autotest=Y&bxpublic=Y&TEST_ID="+testID+"&STEP="+step+"&lang=<?=LANG;?>&<?=bitrix_sessid_get()?>",callback);
+		BX.ajax.post("/bnpt/admin/checklist.php","ACTION=update&autotest=Y&bxpublic=Y&TEST_ID="+testID+"&STEP="+step+"&lang=<?=LANG;?>&<?=bitrix_sessid_get()?>",callback);
 	}
 
 	function Move(action)
@@ -398,7 +398,7 @@ $tabControl->BeginNextTab();
 		Dialog.hideNotify();
 		ShowWaitWindow();
 		BX.ajax.post(
-			"/bitrix/admin/checklist_detail.php?TEST_ID="+arStates["POINTS"][current].TEST_ID+"&lang=<?=LANG;?>&bxpublic=Y&<?=bitrix_sessid_get()?>",
+			"/bnpt/admin/checklist_detail.php?TEST_ID="+arStates["POINTS"][current].TEST_ID+"&lang=<?=LANG;?>&bxpublic=Y&<?=bitrix_sessid_get()?>",
 			data,
 			function(data)
 			{

@@ -7,7 +7,7 @@ if(!is_array($errors) && strlen($errors)<=0 || is_array($errors) && count($error
 {
 	echo CAdminMessage::ShowNote(GetMessage("MOD_INST_OK"));
 	if (COption::GetOptionString("intranet", "calendar_2", "N") != "Y")
-		echo "<form action=\"/bitrix/admin/calendar_convert.php\"><input type=\"hidden\" name=\"lang\" value=\"".LANG."\" /><input type=\"submit\" value=\"".GetMessage("CAL_GO_CONVERT")."\" />";
+		echo "<form action=\"/bnpt/admin/calendar_convert.php\"><input type=\"hidden\" name=\"lang\" value=\"".LANG."\" /><input type=\"submit\" value=\"".GetMessage("CAL_GO_CONVERT")."\" />";
 }
 else
 {

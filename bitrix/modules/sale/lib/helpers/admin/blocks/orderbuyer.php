@@ -194,11 +194,11 @@ class OrderBuyer
 	{
 		if (\CBXFeatures::IsFeatureEnabled('SaleAccounts'))
 		{
-			$strBuyerProfileUrl = '/bitrix/admin/sale_buyers_profile.php?USER_ID='.intval($order->getUserId()).'&lang='.LANGUAGE_ID;
+			$strBuyerProfileUrl = '/bnpt/admin/sale_buyers_profile.php?USER_ID='.intval($order->getUserId()).'&lang='.LANGUAGE_ID;
 		}
 		else
 		{
-			$strBuyerProfileUrl = '/bitrix/admin/user_edit.php?ID='.$order->getUserId().'&lang='.LANGUAGE_ID;
+			$strBuyerProfileUrl = '/bnpt/admin/user_edit.php?ID='.$order->getUserId().'&lang='.LANGUAGE_ID;
 		}
 
 		$result = array(

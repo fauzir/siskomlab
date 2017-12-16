@@ -177,7 +177,7 @@ $tabControl->Begin();
 
 		<?foreach($arTaskPerm as $group_id => $task_id):?>
 		<tr>
-			<td class="field-name" width="50%"><label for="TASKS_<?= $group_id?>"><?= htmlspecialcharsex($arGroupIndex[$group_id])." [<a title=\"".GetMessage("FM_ST_EDIT_GROUP_TITLE")."\" href=\"/bitrix/admin/group_edit.php?ID=".$group_id."&amp;lang=".LANGUAGE_ID."\">".$group_id."</a>]"?>:</label></td>
+			<td class="field-name" width="50%"><label for="TASKS_<?= $group_id?>"><?= htmlspecialcharsex($arGroupIndex[$group_id])." [<a title=\"".GetMessage("FM_ST_EDIT_GROUP_TITLE")."\" href=\"/bnpt/admin/group_edit.php?ID=".$group_id."&amp;lang=".LANGUAGE_ID."\">".$group_id."</a>]"?>:</label></td>
 			<td  width="50%">
 				<select name="TASKS_<?= $group_id?>" id="TASKS_<?= $group_id?>">
 					<option value="">&lt;  <?= GetMessage('FM_ST_ACCESS_DEFAULT')?> &gt;</option>
@@ -205,7 +205,7 @@ $tabControl->Begin();
 			</tr>
 	</table>
 		<?= BeginNote();?>
-		<?= GetMessage("FM_ST_ACCESS_NOTE", array('#LINK_BEGIN#' => '<a href="/bitrix/admin/settings.php?lang='.LANGUAGE_ID.'&mid=fileman&tabControl_active_tab=edit3&'.bitrix_sessid_get().'">', '#LINK_END#' => '</a>'));?>
+		<?= GetMessage("FM_ST_ACCESS_NOTE", array('#LINK_BEGIN#' => '<a href="/bnpt/admin/settings.php?lang='.LANGUAGE_ID.'&mid=fileman&tabControl_active_tab=edit3&'.bitrix_sessid_get().'">', '#LINK_END#' => '</a>'));?>
 		<?= EndNote();?>
 		<div style="display: none;">
 		<select id="bxst_group_sel"><?= $strGroupsOpt?></select>
@@ -223,7 +223,7 @@ $tabControl->Begin();
 $tabControl->Buttons(
 	array(
 		"disabled" => false,
-		"back_url" => "/bitrix/admin/?lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+		"back_url" => "/bnpt/admin/?lang=".LANGUAGE_ID."&".bitrix_sessid_get()
 	)
 );
 ?>

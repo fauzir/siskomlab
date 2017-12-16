@@ -486,9 +486,9 @@ $lAdmin->AddHeaders(array(
 while($arRes = $rsData->NavNext(true, "f_")):
 	$row =& $lAdmin->AddRow($f_ID, $arRes);
 
-	$row->AddViewField("NAME", '<a href="/bitrix/admin/sender_mailing_chain_edit.php?MAILING_ID='.$MAILING_ID.'&ID='.$f_ID.'&amp;lang='.LANG.'">'.$f_NAME.'</a>');
+	$row->AddViewField("NAME", '<a href="/bnpt/admin/sender_mailing_chain_edit.php?MAILING_ID='.$MAILING_ID.'&ID='.$f_ID.'&amp;lang='.LANG.'">'.$f_NAME.'</a>');
 	$arUser = \Bitrix\Main\UserTable::getRowById(intval($f_CREATED_BY));
-	$row->AddViewField("CREATED_BY", '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$f_CREATED_BY.'">'.htmlspecialcharsbx($arUser['NAME']." ".$arUser['LAST_NAME'])."</a>");
+	$row->AddViewField("CREATED_BY", '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$f_CREATED_BY.'">'.htmlspecialcharsbx($arUser['NAME']." ".$arUser['LAST_NAME'])."</a>");
 
 	$arStatus = MailingChainTable::getStatusList();
 	$statusPercent = '';
@@ -549,7 +549,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 					"ICON" => "",
 					"DEFAULT" => false,
 					"TEXT" => GetMessage("sender_mailing_chain_adm_action_send"),
-					"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=send&lang=" . LANGUAGE_ID)
+					"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=send&lang=" . LANGUAGE_ID)
 				);
 			}
 			break;
@@ -561,7 +561,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 					"ICON" => "",
 					"DEFAULT" => false,
 					"TEXT" => GetMessage("sender_mailing_chain_adm_action_pause"),
-					"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=pause&lang=" . LANGUAGE_ID)
+					"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=pause&lang=" . LANGUAGE_ID)
 				);
 			}
 			break;
@@ -572,14 +572,14 @@ while($arRes = $rsData->NavNext(true, "f_")):
 					"ICON" => "",
 					"DEFAULT" => false,
 					"TEXT" => GetMessage("sender_mailing_chain_adm_action_send"),
-					"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=send&lang=" . LANGUAGE_ID)
+					"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=send&lang=" . LANGUAGE_ID)
 				);
 
 				$arActions[] = array(
 					"ICON" => "",
 					"DEFAULT" => false,
 					"TEXT" => GetMessage("sender_mailing_chain_adm_action_stop"),
-					"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=stop&lang=" . LANGUAGE_ID)
+					"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$f_ID."&action=stop&lang=" . LANGUAGE_ID)
 				);
 			}
 			break;
@@ -605,7 +605,7 @@ $lAdmin->AddGroupActionTable(Array(
 $aContext = array(
 	array(
 		"TEXT"=>GetMessage("MAIN_ADD"),
-		"LINK"=>"/bitrix/admin/sender_mailing_chain_edit.php?MAILING_ID=".$MAILING_ID."&lang=".LANGUAGE_ID,
+		"LINK"=>"/bnpt/admin/sender_mailing_chain_edit.php?MAILING_ID=".$MAILING_ID."&lang=".LANGUAGE_ID,
 		"TITLE"=>GetMessage("POST_ADD_TITLE"),
 		"ICON"=>"btn_new",
 	),
@@ -698,7 +698,7 @@ if(in_array($jsAction, array('send', 'pause', 'stop', 'send_error'))):
 				if(stop)
 					return;
 
-				var url = '/bitrix/admin/sender_mailing_chain_admin.php?lang=<?echo LANGUAGE_ID?>&MAILING_ID=<?echo $MAILING_ID?>&ID=<?echo $ID?>&<?echo bitrix_sessid_get()?>&action=js_<?=htmlspecialcharsbx($jsAction)?>';
+				var url = '/bnpt/admin/sender_mailing_chain_admin.php?lang=<?echo LANGUAGE_ID?>&MAILING_ID=<?echo $MAILING_ID?>&ID=<?echo $ID?>&<?echo bitrix_sessid_get()?>&action=js_<?=htmlspecialcharsbx($jsAction)?>';
 				ShowWaitWindow();
 				BX.ajax.post(
 					url,

@@ -350,7 +350,7 @@ var phpVars = {
 						$ssoMenu[] =  array(
 							"TEXT" => $site["TITLE"],
 							"TITLE"=> "Go to ". $site["TITLE"],
-							"LINK"=>$site["URL"]."bitrix/admin/",
+							"LINK"=>$site["URL"]."bnpt/admin/",
 						);
 					}
 				}
@@ -715,8 +715,8 @@ class CAdminMenu
 				if(empty($all_links[$j]))
 					continue;
 
-				if(strpos($all_links[$j], "/bitrix/admin/") !== 0)
-					$tested_link = "/bitrix/admin/".$all_links[$j];
+				if(strpos($all_links[$j], "/bnpt/admin/") !== 0)
+					$tested_link = "/bnpt/admin/".$all_links[$j];
 				else
 					$tested_link = $all_links[$j];
 
@@ -1884,7 +1884,7 @@ class CAdminChain
 		$cnt = count($this->items)-1;
 		foreach($this->items as $n => $item)
 		{
-			$openerUrl = '/bitrix/admin/get_start_menu.php?skip_recent=Y&lang='.LANGUAGE_ID.($item['ID'] ? '&mode=chain&admin_mnu_menu_id='.urlencode($item['ID']) : '');
+			$openerUrl = '/bnpt/admin/get_start_menu.php?skip_recent=Y&lang='.LANGUAGE_ID.($item['ID'] ? '&mode=chain&admin_mnu_menu_id='.urlencode($item['ID']) : '');
 
 			$className = !empty($item['CLASS'])?' '.htmlspecialcharsbx($item['CLASS']):'';
 
@@ -1966,7 +1966,7 @@ class CAdminMainChain extends CAdminChain
 		$adminPage->Init();
 		$adminMenu->Init($adminPage->aModules);
 
-		parent::AddItem(array("TEXT"=> GetMessage("admin_lib_navchain_first"), "LINK"=>"/bitrix/admin/index.php?lang=".LANGUAGE_ID, "CLASS" => "adm-navchain-item-desktop"));
+		parent::AddItem(array("TEXT"=> GetMessage("admin_lib_navchain_first"), "LINK"=>"/bnpt/admin/index.php?lang=".LANGUAGE_ID, "CLASS" => "adm-navchain-item-desktop"));
 
 		foreach($adminMenu->aActiveSections as $sect)
 		{

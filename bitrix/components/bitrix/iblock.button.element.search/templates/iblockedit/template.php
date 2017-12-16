@@ -5,7 +5,7 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 	?>" title="<?php
 		echo ('' != $arParams['BUTTON_TITLE'] ? $arParams['BUTTON_TITLE'] : '');
 	?>" onClick="<?
-		$url = "/bitrix/admin/iblock_element_search.php"
+		$url = "/bnpt/admin/iblock_element_search.php"
 			."?lang=".urlencode($arParams['~LANG'])
 			."&IBLOCK_ID=".urlencode($arParams["IBLOCK_ID"])
 			."&n=&k="

@@ -952,7 +952,7 @@ BX.Sale.Admin.GeneralShipment =
 	createNewShipment : function()
 	{
 		var orderId = BX('ID').value;
-		window.location = '/bitrix/admin/sale_order_shipment_edit.php?lang='+BX.Sale.Admin.OrderEditPage.languageId+'&order_id='+orderId+'&backurl='+encodeURIComponent(window.location.pathname+window.location.search);
+		window.location = '/bnpt/admin/sale_order_shipment_edit.php?lang='+BX.Sale.Admin.OrderEditPage.languageId+'&order_id='+orderId+'&backurl='+encodeURIComponent(window.location.pathname+window.location.search);
 	},
 
 	findProductByBarcode : function(_this)

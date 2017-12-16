@@ -49,7 +49,7 @@ if (!$errorMessage)
 	CBaseSaleReportHelper::init();
 
 	$arParams = array(
-		'PATH_TO_REPORT_LIST' => '/bitrix/admin/sale_report.php?lang='.LANG
+		'PATH_TO_REPORT_LIST' => '/bnpt/admin/sale_report.php?lang='.LANG
 	);
 
 	// <editor-fold defaultstate="collapsed" desc="Creating or updating base reports">

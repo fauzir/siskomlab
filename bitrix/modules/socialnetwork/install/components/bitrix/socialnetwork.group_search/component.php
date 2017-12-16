@@ -212,7 +212,7 @@ if (CSocNetUser::IsCurrentUserModuleAdmin() && CModule::IncludeModule('intranet'
 	global $INTRANET_TOOLBAR;
 
 	$INTRANET_TOOLBAR->AddButton(array(
-		'HREF' => "/bitrix/admin/socnet_subject.php?lang=".LANGUAGE_ID,
+		'HREF' => "/bnpt/admin/socnet_subject.php?lang=".LANGUAGE_ID,
 		"TEXT" => GetMessage('SONET_C24_EDIT_ENTRIES'),
 		'ICON' => 'settings',
 		"SORT" => 1000,

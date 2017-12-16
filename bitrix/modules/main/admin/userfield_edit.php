@@ -116,11 +116,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["save"] != "" || $_POST["appl
 	if($res)
 	{
 		if($_POST["apply"] != "")
-			LocalRedirect("/bitrix/admin/userfield_edit.php?ID=".$ID."&lang=".LANG."&back_url=".urlencode($back_url)."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bnpt/admin/userfield_edit.php?ID=".$ID."&lang=".LANG."&back_url=".urlencode($back_url)."&".$tabControl->ActiveTabParam());
 		elseif($back_url)
 			LocalRedirect($back_url);
 		else
-			LocalRedirect("/bitrix/admin/userfield_admin.php?lang=".LANG);
+			LocalRedirect("/bnpt/admin/userfield_admin.php?lang=".LANG);
 	}
 	else
 	{

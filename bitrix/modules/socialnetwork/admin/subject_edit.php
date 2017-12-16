@@ -59,7 +59,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $socialnetworkModulePermissi
 	if (strlen($errorMessage) <= 0)
 	{
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bitrix/admin/socnet_subject.php?lang=".LANG."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/socnet_subject.php?lang=".LANG."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -113,7 +113,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SONETE_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/socnet_subject.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/socnet_subject.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -124,13 +124,13 @@ if ($ID > 0 && $socialnetworkModulePermissions >= "W")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SONETE_NEW_SUBJECT"),
 			"ICON" => "btn_new",
-			"LINK" => "/bitrix/admin/socnet_subject_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+			"LINK" => "/bnpt/admin/socnet_subject_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SONETE_DELETE_SUBJECT"), 
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("SONETE_DELETE_SUBJECT_CONFIRM")."')) window.location='/bitrix/admin/socnet_subject.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("SONETE_DELETE_SUBJECT_CONFIRM")."')) window.location='/bnpt/admin/socnet_subject.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y"
 		);
 }
@@ -201,7 +201,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($socialnetworkModulePermissions < "W"),
-				"back_url" => "/bitrix/admin/socnet_subject.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bnpt/admin/socnet_subject.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 	);
 ?>

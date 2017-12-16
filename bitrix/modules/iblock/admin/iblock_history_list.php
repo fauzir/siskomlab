@@ -32,7 +32,7 @@ if(!$zr=$z->Fetch())
 {
 	$APPLICATION->SetTitle(GetMessage("IBLOCK_ADM_HISTORY_TITLE", array("#ID#" => $ELEMENT_ID)));
 	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
-	?><a href="/bitrix/admin/iblock_admin.php?type=<?echo htmlspecialcharsbx($type)?>&amp;lang=<?echo LANG?>"><?echo htmlspecialcharsex($arIBTYPE["NAME"])?></a> - <a href="<?echo htmlspecialcharsbx(CIBlock::GetAdminElementListLink($IBLOCK_ID, array()))?>"><?echo htmlspecialcharsbx($arIBlock["NAME"])?></a><?
+	?><a href="/bnpt/admin/iblock_admin.php?type=<?echo htmlspecialcharsbx($type)?>&amp;lang=<?echo LANG?>"><?echo htmlspecialcharsex($arIBTYPE["NAME"])?></a> - <a href="<?echo htmlspecialcharsbx(CIBlock::GetAdminElementListLink($IBLOCK_ID, array()))?>"><?echo htmlspecialcharsbx($arIBlock["NAME"])?></a><?
 	echo ShowError(GetMessage("IBLOCK_ADM_HISTORY_BAD_ELEMENT"));
 	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");
 	die();

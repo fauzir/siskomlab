@@ -44,9 +44,9 @@ try
 		}
 
 		if ($apply != "")
-			LocalRedirect("/bitrix/admin/bitrixcloud_monitoring_edit.php?lang=".LANGUAGE_ID."&domain=".urlencode($_REQUEST["domain"]));
+			LocalRedirect("/bnpt/admin/bitrixcloud_monitoring_edit.php?lang=".LANGUAGE_ID."&domain=".urlencode($_REQUEST["domain"]));
 		else
-			LocalRedirect("/bitrix/admin/bitrixcloud_monitoring_admin.php?lang=".LANGUAGE_ID);
+			LocalRedirect("/bnpt/admin/bitrixcloud_monitoring_admin.php?lang=".LANGUAGE_ID);
 	}
 
 	$arResult = $monitoring->getList();

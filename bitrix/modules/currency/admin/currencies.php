@@ -269,7 +269,7 @@ while ($arRes = $currencyIterator->Fetch())
 			$userIDs[$arRes['MODIFIED_BY']] = true;
 	}
 
-	$urlEdit = '/bitrix/admin/currency_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes['CURRENCY'];
+	$urlEdit = '/bnpt/admin/currency_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes['CURRENCY'];
 
 	$arRows[$arRes['CURRENCY']] = $row =& $adminList->AddRow($arRes['CURRENCY'], $arRes, $urlEdit, GetMessage('CURRENCY_A_EDIT'));
 
@@ -338,7 +338,7 @@ if ($selectFieldsMap['CREATED_BY'] || $selectFieldsMap['MODIFIED_BY'])
 		{
 			$oneUser['ID'] = (int)$oneUser['ID'];
 			if ($canViewUserList)
-				$userList[$oneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
+				$userList[$oneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
 			else
 				$userList[$oneUser['ID']] = CUser::FormatName($nameFormat, $oneUser);
 		}
@@ -390,13 +390,13 @@ $aContext = array(
 	array(
 		"ICON" => "btn_new",
 		"TEXT" => GetMessage("currency_add"),
-		"LINK" => "/bitrix/admin/currency_edit.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/currency_edit.php?lang=".LANGUAGE_ID,
 		"TITLE" => GetMessage("currency_add")
 	),
 	array(
 		"ICON" => "",
 		"TEXT" => GetMessage("currency_list"),
-		"LINK" => "/bitrix/admin/currencies_rates.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/currencies_rates.php?lang=".LANGUAGE_ID,
 		"TITLE" => GetMessage("currency_list")
 	),
 );

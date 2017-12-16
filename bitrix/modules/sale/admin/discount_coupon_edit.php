@@ -276,7 +276,7 @@ if (!$subWindow && !$readOnly && $couponID > 0)
 		$contextMenuItems[] = array(
 			'ICON' => 'btn_delete',
 			'TEXT' => Loc::getMessage('BX_SALE_DISCOUNT_COUPON_CONTEXT_DELETE'),
-			'LINK' => "javascript:if(confirm('".CUtil::JSEscape(Loc::getMessage('BX_SALE_DISCOUNT_COUPON_CONTEXT_DELETE_CONFIRM'))."')) window.location='/bitrix/admin/sale_discount_coupons.php?lang=".LANGUAGE_ID."&ID=".$couponID."&action=delete&".bitrix_sessid_get()."';",
+			'LINK' => "javascript:if(confirm('".CUtil::JSEscape(Loc::getMessage('BX_SALE_DISCOUNT_COUPON_CONTEXT_DELETE_CONFIRM'))."')) window.location='/bnpt/admin/sale_discount_coupons.php?lang=".LANGUAGE_ID."&ID=".$couponID."&action=delete&".bitrix_sessid_get()."';",
 			'WARNING' => 'Y',
 		);
 	}

@@ -78,7 +78,7 @@ class CEventIBlock
 		{
 			$rsElement = CIBlock::GetList(array(), array("=ID"=>$row["ITEM_ID"]), false);
 			if ($arElement = $rsElement->GetNext())
-				$IblockURL = SITE_DIR."bitrix/admin/iblock_edit.php?ID=".$row["ITEM_ID"]."&type=".$arElement["IBLOCK_TYPE_ID"];
+				$IblockURL = SITE_DIR."bnpt/admin/iblock_edit.php?ID=".$row["ITEM_ID"]."&type=".$arElement["IBLOCK_TYPE_ID"];
 		}
 
 		if($IblockURL)

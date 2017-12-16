@@ -162,7 +162,7 @@ class Template
 											}
 											BX.ready(function(){
 												BX.ajax.insertToNode(
-													'/bitrix/admin/update_system_market.php?category=55&lang=ru&mode=list',
+													'/bnpt/admin/update_system_market.php?category=55&lang=ru&mode=list',
 													BX('sender-template-list-type-container-<?=$templateType?>')
 												);
 											});

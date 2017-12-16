@@ -1203,7 +1203,7 @@ BX.userOptions = {
 	options: null,
 	bSend: false,
 	delay: 5000,
-	path: '/bitrix/admin/user_options.php?'
+	path: '/bnpt/admin/user_options.php?'
 };
 
 BX.userOptions.setAjaxPath = function(url)

@@ -699,7 +699,7 @@ BX.admin.panel = {
 			if (notifyId > 0)
 			{
 				BX.ajax({
-					url: '/bitrix/admin/admin_notify.php',
+					url: '/bnpt/admin/admin_notify.php',
 					method: 'POST',
 					dataType: 'json',
 					data: {'ID' : notifyId, 'sessid': BX.bitrix_sessid()}
@@ -1074,7 +1074,7 @@ BX.admin.moreButton = {
 
 BX.admin.startMenuRecent = function(itemInfo)
 {
-	BX.ajax.get('/bitrix/admin/get_start_menu.php', {
+	BX.ajax.get('/bnpt/admin/get_start_menu.php', {
 		mode: 'save_recent',
 		url: itemInfo['LINK'],
 		text: itemInfo['TEXT'],
@@ -1086,7 +1086,7 @@ BX.admin.startMenuRecent = function(itemInfo)
 
 BX.admin.startMenuFavAdd = function(back_url)
 {
-	window.location.href = '/bitrix/admin/favorite_edit.php?lang='+BX.message('LANGUAGE_ID')+'&name='+BX.util.urlencode(document.title)+'&addurl='+BX.util.urlencode(window.location.href)+'&encoded=Y' + (!!back_url ? '&back_url_pub=' + BX.util.urlencode(back_url) : '');
+	window.location.href = '/bnpt/admin/favorite_edit.php?lang='+BX.message('LANGUAGE_ID')+'&name='+BX.util.urlencode(document.title)+'&addurl='+BX.util.urlencode(window.location.href)+'&encoded=Y' + (!!back_url ? '&back_url_pub=' + BX.util.urlencode(back_url) : '');
 }
 
 /************************** init admin panel **********************************/

@@ -623,14 +623,14 @@ JCComponentUtils.prototype.ClearCache = function(params)
 {
 	CHttpRequest.Action = function(result){window.location = window.location.href;};
 	ShowWaitWindow();
-	CHttpRequest.Send('/bitrix/admin/clear_component_cache.php?' + params);
+	CHttpRequest.Send('/bnpt/admin/clear_component_cache.php?' + params);
 };
 
 JCComponentUtils.prototype.EnableComponent = function(params)
 {
 	CHttpRequest.Action = function(result){window.location = window.location.href;};
 	ShowWaitWindow();
-	CHttpRequest.Send('/bitrix/admin/enable_component.php?' + params);
+	CHttpRequest.Send('/bnpt/admin/enable_component.php?' + params);
 };
 
 function COpacity(element)
@@ -891,7 +891,7 @@ var jsExtLoader = {
 		jsExtLoader.arLoadedScripts.push(script_src);
 
 		if (script_src.substring(0, 8) != '/bitrix/')
-			script_src = '/bitrix/admin/' + script_src;
+			script_src = '/bnpt/admin/' + script_src;
 
 		// fix Opera bug with combining syncronous and asynchronuos requests using one XHR object.
 		if (jsUtils.IsOpera())

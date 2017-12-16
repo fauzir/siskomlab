@@ -367,7 +367,7 @@ final class LocationHelper extends NameHelper
 		{
 			// 2) node id comes in $_REQUEST['id'] or in $_REQUEST['parent_id'] when user enters self::LIST_PAGE_URL or self::EDIT_PAGE_URL page
 			$page = $GLOBALS['APPLICATION']->GetCurPage();
-			if($page == '/bitrix/admin/'.self::LIST_PAGE_URL || $page == '/bitrix/admin/'.self::EDIT_PAGE_URL)
+			if($page == '/bnpt/admin/'.self::LIST_PAGE_URL || $page == '/bnpt/admin/'.self::EDIT_PAGE_URL)
 			{
 				$requiredToShow = true;
 

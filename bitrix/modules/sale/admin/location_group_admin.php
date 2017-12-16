@@ -18,7 +18,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sale/prolog.php");
 
 /// redirect to newer version
 if(CSaleLocation::isLocationProEnabled())
-	LocalRedirect('/bitrix/admin/sale_location_group_list.php');
+	LocalRedirect('/bnpt/admin/sale_location_group_list.php');
 
 $sTableID = "tbl_sale_location_group";
 

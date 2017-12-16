@@ -406,19 +406,19 @@ function ShowVote($VOTE_ID, $template1="")
 				if (CModule::IncludeModule("fileman"))
 				{
 					$arIcons[] = Array(
-								"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+								"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 								"SRC" => "/bitrix/images/vote/panel/edit_template.gif",
 								"ALT" => GetMessage("VOTE_PUBLIC_ICON_TEMPLATE")
 							);
 					$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 					$arIcons[] = Array(
-								"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+								"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 								"SRC" => "/bitrix/images/vote/panel/edit_file.gif",
 								"ALT" => GetMessage("VOTE_PUBLIC_ICON_HANDLER")
 							);
 				}
 				$arIcons[] = Array(
-							"URL" => "/bitrix/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$VOTE_ID,
+							"URL" => "/bnpt/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$VOTE_ID,
 							"SRC" => "/bitrix/images/vote/panel/edit_vote.gif",
 							"ALT" => GetMessage("VOTE_PUBLIC_ICON_SETTINGS")
 						);
@@ -460,21 +460,21 @@ function ShowVoteResults($VOTE_ID, $template1="")
 				{
 					$arIcons[] =
 							Array(
-								"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+								"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 								"SRC" => "/bitrix/images/vote/panel/edit_template.gif",
 								"ALT" => GetMessage("VOTE_PUBLIC_ICON_TEMPLATE")
 							);
 					$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 					$arIcons[] =
 							Array(
-								"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+								"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 								"SRC" => "/bitrix/images/vote/panel/edit_file.gif",
 								"ALT" => GetMessage("VOTE_PUBLIC_ICON_HANDLER")
 							);
 				}
 				$arIcons[] =
 						Array(
-							"URL" => "/bitrix/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$VOTE_ID,
+							"URL" => "/bnpt/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$VOTE_ID,
 							"SRC" => "/bitrix/images/vote/panel/edit_vote.gif",
 							"ALT" => GetMessage("VOTE_PUBLIC_ICON_SETTINGS")
 						);

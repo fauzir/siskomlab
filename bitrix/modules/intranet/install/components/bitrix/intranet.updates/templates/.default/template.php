@@ -162,7 +162,7 @@ if (!$arResult["IS_LICENSE_SIGNED"])
 			}
 
 			updRand++;
-			CHttpRequest.Send('/bitrix/admin/update_system_act.php?query_type=licence&<?= bitrix_sessid_get() ?>&updRand=' + updRand);
+			CHttpRequest.Send('/bnpt/admin/update_system_act.php?query_type=licence&<?= bitrix_sessid_get() ?>&updRand=' + updRand);
 		}
 
 		function UnLockControls()
@@ -230,7 +230,7 @@ if ($arResult["IS_LICENSE_FOUND"])
 				}
 
 				updRand++;
-				CHttpRequest.Send('/bitrix/admin/update_system_act.php?query_type=updateupdate&<?= bitrix_sessid_get() ?>&updRand=' + updRand);
+				CHttpRequest.Send('/bnpt/admin/update_system_act.php?query_type=updateupdate&<?= bitrix_sessid_get() ?>&updRand=' + updRand);
 			}
 		</script>
 	<?
@@ -394,7 +394,7 @@ if ($arResult["IS_LICENSE_FOUND"])
 		}
 
 		updRand++;
-		CHttpRequest.Send('/bitrix/admin/update_system_call.php?' + aStrParams + "&<?= bitrix_sessid_get() ?>&query_type=" + param + "&updRand=" + updRand);
+		CHttpRequest.Send('/bnpt/admin/update_system_call.php?' + aStrParams + "&<?= bitrix_sessid_get() ?>&query_type=" + param + "&updRand=" + updRand);
 	}
 
 	function InstallUpdatesDoStep(data)

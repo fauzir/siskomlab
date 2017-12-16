@@ -95,8 +95,8 @@ class DiscountManager
 		if (empty(self::$editUrlTemplate))
 		{
 			self::$editUrlTemplate = array(
-				Catalog\DiscountTable::TYPE_DISCOUNT => '/bitrix/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID=',
-				Catalog\DiscountTable::TYPE_DISCOUNT_SAVE => '/bitrix/admin/cat_discsave_edit.php?lang='.LANGUAGE_ID.'&ID='
+				Catalog\DiscountTable::TYPE_DISCOUNT => '/bnpt/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID=',
+				Catalog\DiscountTable::TYPE_DISCOUNT_SAVE => '/bnpt/admin/cat_discsave_edit.php?lang='.LANGUAGE_ID.'&ID='
 			);
 		}
 		$result = '';

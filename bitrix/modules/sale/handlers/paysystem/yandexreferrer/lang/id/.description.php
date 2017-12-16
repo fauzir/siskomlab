@@ -39,7 +39,7 @@ $MESS["SALE_HPS_YANDEX_DESCRIPTION"] = "Payment collector engine - <a href=\"htt
                                                         Waktu habis
                                                         method: 'POST',
                                                         dataType: 'json',
-                                                        url: '/bitrix/admin/sale_pay_system_ajax.php',
+                                                        url: '/bnpt/admin/sale_pay_system_ajax.php',
                                                         data: postData,
  
                                                         onsuccess: function (result)

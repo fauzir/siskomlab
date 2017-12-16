@@ -11,7 +11,7 @@ $bAdmin = CTicket::IsAdmin();
 if(!$bAdmin && !$bDemo)
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 	
-$EDIT_URL = "/bitrix/admin/ticket_group_edit.php";
+$EDIT_URL = "/bnpt/admin/ticket_group_edit.php";
 $LIST_URL = $APPLICATION->GetCurPage();
 
 
@@ -63,7 +63,7 @@ foreach($arFilterFields as $key)
 	}
 }
 
-if ($bAdmin && $lAdmin->EditAction()) //если идет сохранение со списка
+if ($bAdmin && $lAdmin->EditAction()) //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 {
 	$obSUG = new CSupportUserGroup();
 	foreach($FIELDS as $ID => $arFields)

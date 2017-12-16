@@ -288,9 +288,9 @@ if (
 	if (empty($errors))
 	{
 		if (empty($_POST['apply']))
-			LocalRedirect("/bitrix/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/sale_discount_edit.php?lang=".LANGUAGE_ID."&ID=".$discountID.'&'.$control->ActiveTabParam());
+			LocalRedirect("/bnpt/admin/sale_discount_edit.php?lang=".LANGUAGE_ID."&ID=".$discountID.'&'.$control->ActiveTabParam());
 	}
 }
 
@@ -358,7 +358,7 @@ else
 
 if (!empty($arDiscount['PRESET_ID']))
 {
-	LocalRedirect('/bitrix/admin/sale_discount_preset_detail.php?DISCOUNT_ID='.$arDiscount['ID'].'&from_list=order&lang='.LANGUAGE_ID);
+	LocalRedirect('/bnpt/admin/sale_discount_preset_detail.php?DISCOUNT_ID='.$arDiscount['ID'].'&from_list=order&lang='.LANGUAGE_ID);
 }
 
 if (!empty($errors))
@@ -387,7 +387,7 @@ if (!empty($errors))
 $contextMenuItems = array(
 	array(
 		"TEXT" => GetMessage("BT_SALE_DISCOUNT_EDIT_MESS_DISCOUNT_LIST"),
-		"LINK" => "/bitrix/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+		"LINK" => "/bnpt/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 		"ICON" => "btn_list"
 	)
 );
@@ -399,17 +399,17 @@ if ($discountID > 0 && $saleModulePermissions == 'W')
 		$contextMenuItems[] = array("SEPARATOR" => "Y");
 		$contextMenuItems[] = array(
 			"TEXT" => GetMessage("BT_SALE_DISCOUNT_EDIT_MESS_NEW_DISCOUNT"),
-			"LINK" => "/bitrix/admin/sale_discount_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+			"LINK" => "/bnpt/admin/sale_discount_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 			"ICON" => "btn_new"
 		);
 		$contextMenuItems[] = array(
 			"TEXT"=>GetMessage("BT_SALE_DISCOUNT_EDIT_MESS_COPY_DISCOUNT"),
-			"LINK"=>'/bitrix/admin/sale_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$discountID.'&action=copy&'.GetFilterParams('filter_'),
+			"LINK"=>'/bnpt/admin/sale_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$discountID.'&action=copy&'.GetFilterParams('filter_'),
 			"ICON"=>"btn_copy",
 		);
 		$contextMenuItems[] = array(
 			"TEXT" => GetMessage("BT_SALE_DISCOUNT_EDIT_MESS_DELETE_DISCOUNT"),
-			"LINK" => "javascript:if(confirm('".GetMessageJS("BT_SALE_DISCOUNT_EDIT_MESS_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bitrix/admin/sale_discount.php?lang=".LANGUAGE_ID."&ID=".$discountID."&action=delete&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessageJS("BT_SALE_DISCOUNT_EDIT_MESS_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bnpt/admin/sale_discount.php?lang=".LANGUAGE_ID."&ID=".$discountID."&action=delete&".bitrix_sessid_get()."';",
 			"WARNING" => "Y",
 			"ICON" => "btn_delete"
 		);
@@ -479,7 +479,7 @@ if ($copy)
 echo bitrix_sessid_post();
 $control->EndEpilogContent();
 $control->Begin(array(
-	"FORM_ACTION" => '/bitrix/admin/sale_discount_edit.php?lang='.LANGUAGE_ID,
+	"FORM_ACTION" => '/bnpt/admin/sale_discount_edit.php?lang='.LANGUAGE_ID,
 ));
 $control->BeginNextFormTab();
 	if ($discountID > 0 && !$copy)
@@ -761,7 +761,7 @@ $control->BeginNextFormTab();
 $control->Buttons(
 	array(
 		"disabled" => ($saleModulePermissions < "W"),
-		"back_url" => "/bitrix/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"back_url" => "/bnpt/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	)
 );
 $control->Show();

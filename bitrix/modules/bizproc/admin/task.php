@@ -56,7 +56,7 @@ else
 	$arTask["PARAMETERS"]["DOCUMENT_ID"] = CBPStateService::GetStateDocumentId($arTask['WORKFLOW_ID']);
 	$backUrl = !empty($_REQUEST["back_url"]) ? "/".ltrim(trim($_REQUEST["back_url"]), "\\/") : '';
 	if (strlen($backUrl) <= 0)
-		$backUrl = "/bitrix/admin/bizproc_task_list.php?lang=".LANGUAGE_ID;
+		$backUrl = "/bnpt/admin/bizproc_task_list.php?lang=".LANGUAGE_ID;
 	if (strlen($backUrl) <= 0 && !empty($arTask["PARAMETERS"]["DOCUMENT_ID"]))
 		$backUrl = CBPDocument::GetDocumentAdminPage($arTask["PARAMETERS"]["DOCUMENT_ID"]);
 
@@ -179,7 +179,7 @@ else
 	<script type="text/javascript">
 		function bizprocShowDelegateDialog()
 		{
-			window.open('/bitrix/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=task_delegate&FC=delegate_to',
+			window.open('/bnpt/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=task_delegate&FC=delegate_to',
 				'',
 				'scrollbars=yes,resizable=yes,width=760,height=500,top='
 				+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5)

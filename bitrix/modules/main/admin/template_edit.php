@@ -28,7 +28,7 @@ $edit_php = $USER->CanDoOperation('edit_php');
 if(!$edit_php && !$USER->CanDoOperation('view_other_settings') && !$USER->CanDoOperation('lpa_template_edit'))
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
-$isEditingMessageThemePage = $APPLICATION->GetCurPage() == '/bitrix/admin/message_theme_edit.php';
+$isEditingMessageThemePage = $APPLICATION->GetCurPage() == '/bnpt/admin/message_theme_edit.php';
 
 IncludeModuleLangFile(__FILE__);
 
@@ -205,7 +205,7 @@ CAdminMessage::ShowNote($strOK);
 $aMenu = array(
 	array(
 		"TEXT"	=> ($isEditingMessageThemePage ? GetMessage("MAIN_T_EDIT_TEMPL_LIST_THEME") : GetMessage("MAIN_T_EDIT_TEMPL_LIST")),
-		"LINK"	=> "/bitrix/admin/".($isEditingMessageThemePage ? "message_theme_admin.php" : "template_admin.php")."?lang=".LANGUAGE_ID."&set_default=Y",
+		"LINK"	=> "/bnpt/admin/".($isEditingMessageThemePage ? "message_theme_admin.php" : "template_admin.php")."?lang=".LANGUAGE_ID."&set_default=Y",
 		"TITLE"	=> GetMessage("MAIN_T_EDIT_TEMPL_LIST_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -217,21 +217,21 @@ if (strlen($ID)>0 && $edit_php)
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_NEW_RECORD"),
-		"LINK"	=> "/bitrix/admin/".($isEditingMessageThemePage ? "message_theme_edit.php" : "template_edit.php")."?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/".($isEditingMessageThemePage ? "message_theme_edit.php" : "template_edit.php")."?lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("MAIN_NEW_RECORD_TITLE"),
 		"ICON"	=> "btn_new"
 	);
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_COPY_RECORD"),
-		"LINK"	=> "/bitrix/admin/".($isEditingMessageThemePage ? "message_theme_admin.php" : "template_admin.php")."?lang=".LANGUAGE_ID."&ID=".urlencode($ID)."&action=copy&".bitrix_sessid_get(),
+		"LINK"	=> "/bnpt/admin/".($isEditingMessageThemePage ? "message_theme_admin.php" : "template_admin.php")."?lang=".LANGUAGE_ID."&ID=".urlencode($ID)."&action=copy&".bitrix_sessid_get(),
 		"TITLE"	=> GetMessage("MAIN_COPY_RECORD_TITLE"),
 		"ICON"	=> "btn_copy"
 	);
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_DELETE_RECORD"),
-		"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/".($isEditingMessageThemePage ? "message_theme_admin.php" : "template_admin.php")."?ID=".urlencode(urlencode($ID))."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
+		"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/".($isEditingMessageThemePage ? "message_theme_admin.php" : "template_admin.php")."?ID=".urlencode(urlencode($ID))."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
 		"TITLE"	=> GetMessage("MAIN_DELETE_RECORD_TITLE"),
 		"ICON"	=> "btn_delete"
 	);

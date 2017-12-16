@@ -461,7 +461,7 @@ class CCatalogAdminToolsAll
 		if (isset($catalogButtons['add_product']))
 		{
 			$params[self::$strMainPrefix.self::TAB_KEY] = self::TAB_CATALOG;
-			$url = '/bitrix/admin/'.CIBlock::GetAdminElementEditLink($iblock, null, $params);
+			$url = '/bnpt/admin/'.CIBlock::GetAdminElementEditLink($iblock, null, $params);
 			$action = $APPLICATION->GetPopupLink(
 				array(
 					"URL" => $url,
@@ -498,7 +498,7 @@ class CCatalogAdminToolsAll
 		if (isset($catalogButtons['add_sku']))
 		{
 			$params[self::$strMainPrefix.self::TAB_KEY] = self::TAB_SKU;
-			$url = '/bitrix/admin/'.CIBlock::GetAdminElementEditLink($iblock, null, $params);
+			$url = '/bnpt/admin/'.CIBlock::GetAdminElementEditLink($iblock, null, $params);
 			$action = $APPLICATION->GetPopupLink(
 				array(
 					"URL" => $url,

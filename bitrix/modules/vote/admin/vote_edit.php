@@ -237,7 +237,7 @@ if (isset($vote))
 	$context = new CAdminContextMenu(array(
 		array(
 			"TEXT"	=> GetMessage("VOTE_GOTO_LIST"),
-			"LINK"	=> "/bitrix/admin/vote_user_votes_table.php?lang=".LANGUAGE_ID."&VOTE_ID=".$ID,
+			"LINK"	=> "/bnpt/admin/vote_user_votes_table.php?lang=".LANGUAGE_ID."&VOTE_ID=".$ID,
 			"ICON" => "btn_list"),
 		array(
 			"TEXT"	=> GetMessage("VOTE_COPY"),
@@ -247,11 +247,11 @@ if (isset($vote))
 		array(
 			"TEXT"	=> GetMessage("VOTE_DELETE"),
 			"TITLE"	=> GetMessage("VOTE_DELETE_RECORD"),
-			"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_DELETE_RECORD_CONFIRM")."')) window.location='/bitrix/admin/vote_list.php?action=delete&ID=".$ID."&".bitrix_sessid_get()."&lang=".LANGUAGE_ID."';",
+			"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_DELETE_RECORD_CONFIRM")."')) window.location='/bnpt/admin/vote_list.php?action=delete&ID=".$ID."&".bitrix_sessid_get()."&lang=".LANGUAGE_ID."';",
 			"ICON" => "btn_delete"),
 		array(
 			"TITLE"	=> GetMessage("VOTE_RESET_RECORD"),
-			"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_RESET_RECORD_CONFIRM")."')) window.location='/bitrix/admin/vote_list.php?reset_id=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+			"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_RESET_RECORD_CONFIRM")."')) window.location='/bnpt/admin/vote_list.php?reset_id=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 			"TEXT"	=> GetMessage("VOTE_RESET"),
 			"ICON" => "btn_refresh"),
 		array(
@@ -267,11 +267,11 @@ if (isset($vote))
 		array(
 			"TEXT"	=> GetMessage("VOTE_QUESTIONS").($cnt > 0 ?" [".$cnt."]":""),
 			"TITLE"	=> GetMessage("VOTE_QUESTIONS_TITLE"),
-			"LINK"	=> "/bitrix/admin/vote_question_list.php?lang=".LANGUAGE_ID."&VOTE_ID=".$ID),
+			"LINK"	=> "/bnpt/admin/vote_question_list.php?lang=".LANGUAGE_ID."&VOTE_ID=".$ID),
 		array(
 			"TEXT"	=> GetMessage("VOTE_QUESTIONS_ADD"),
 			"TITLE"	=> GetMessage("VOTE_QUESTIONS_ADD_TITLE"),
-			"LINK"	=> "/bitrix/admin/vote_question_edit.php?lang=".LANGUAGE_ID."&VOTE_ID=$ID",
+			"LINK"	=> "/bnpt/admin/vote_question_edit.php?lang=".LANGUAGE_ID."&VOTE_ID=$ID",
 			"ICON" => "btn_new")));
 	$context->Show();
 }
@@ -315,7 +315,7 @@ if ($fields["AUTHOR_ID"] > 0 && ($arAuthor = CUser::GetByID($fields["AUTHOR_ID"]
 	<tr>
 		<td width="40%"><?=GetMessage("VOTE_AUTHOR")?></td>
 		<td width="60%">
-			<a href="/bitrix/admin/user_edit.php?ID=<?=$fields["AUTHOR_ID"]?>&lang=<?=LANG?>"> [<?=$fields["AUTHOR_ID"]?>] <?=$arAuthor["NAME"]?></a>
+			<a href="/bnpt/admin/user_edit.php?ID=<?=$fields["AUTHOR_ID"]?>&lang=<?=LANG?>"> [<?=$fields["AUTHOR_ID"]?>] <?=$arAuthor["NAME"]?></a>
 		</td>
 	</tr>
 	<tr>

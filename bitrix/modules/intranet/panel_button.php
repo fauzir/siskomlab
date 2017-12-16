@@ -80,7 +80,7 @@ class CWizardSolPanelIntranet
 				$result = $obSite->Add($arFields);
 				if ($result)
 				{
-					LocalRedirect("/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:portal&wizardSiteID=".$newSiteID."&".bitrix_sessid_get());
+					LocalRedirect("/bnpt/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardName=bitrix:portal&wizardSiteID=".$newSiteID."&".bitrix_sessid_get());
 				}
 				else
 				{

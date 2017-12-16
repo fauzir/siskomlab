@@ -39,8 +39,8 @@ function __GetSubmenu($menu)
 			if($item["url"] <> "")
 			{
 				$link = htmlspecialcharsback($item["url"]);
-				if(strpos($link, "/bitrix/admin/") !== 0)
-					$link = "/bitrix/admin/".$link;
+				if(strpos($link, "/bnpt/admin/") !== 0)
+					$link = "/bnpt/admin/".$link;
 
 				if ($_REQUEST['back_url_pub'])
 					$link .= (strpos($link, '?') > 0 ? '&' : '?')."back_url_pub=".urlencode($_REQUEST["back_url_pub"]);
@@ -59,7 +59,7 @@ function __GetSubmenu($menu)
 			}
 			elseif($item["dynamic"] == true)
 			{
-				$aItem["MENU_URL"] = '/bitrix/admin/get_start_menu.php?mode=dynamic&lang='.LANGUAGE_ID.'&admin_mnu_module_id='.urlencode($item['module_id']).'&admin_mnu_menu_id='.urlencode($item['items_id']).($bSkipRecent?'&skip_recent=Y':'').($_REQUEST["back_url_pub"]<>''? '&back_url_pub='.urlencode($_REQUEST["back_url_pub"]):'').'&'.bitrix_sessid_get();
+				$aItem["MENU_URL"] = '/bnpt/admin/get_start_menu.php?mode=dynamic&lang='.LANGUAGE_ID.'&admin_mnu_module_id='.urlencode($item['module_id']).'&admin_mnu_menu_id='.urlencode($item['items_id']).($bSkipRecent?'&skip_recent=Y':'').($_REQUEST["back_url_pub"]<>''? '&back_url_pub='.urlencode($_REQUEST["back_url_pub"]):'').'&'.bitrix_sessid_get();
 				$aItem['MENU_PRELOAD'] = false;
 
 				if($item["url"] <> "" && $aUserOpt['start_menu_title'] <> 'N')
@@ -154,7 +154,7 @@ else
 			"TEXT"=>$menu["text"],
 			"TITLE"=>($aUserOpt['start_menu_title'] <> 'N'? $menu["title"].' '.GetMessage("get_start_menu_dbl"):''),
 			"GLOBAL_ICON"=>'adm-menu-'.$menu["menu_id"],
-			"LINK"=>$menu['url'] ? '/bitrix/admin/'.$menu['url'] : '',
+			"LINK"=>$menu['url'] ? '/bnpt/admin/'.$menu['url'] : '',
 			"MENU"=>__GetSubmenu($menu["items"])
 		);
 	}
@@ -211,7 +211,7 @@ else
 
 				if (!preg_match('/^(http:|https:|\/)/i', $aItem["LINK"]))
 				{
-					$aItem["LINK"] = '/bitrix/admin/'.$aItem["LINK"];
+					$aItem["LINK"] = '/bnpt/admin/'.$aItem["LINK"];
 				}
 
 				$aItem["ONCLICK"] = 'BX.admin.startMenuRecent('.CUtil::PhpToJsObject($aItem).')';
@@ -223,7 +223,7 @@ else
 
 				if(!is_array($aSubmenu) || empty($aSubmenu))
 				{
-					$aItem["MENU_URL"] = '/bitrix/admin/get_start_menu.php?mode=dynamic&lang='.LANGUAGE_ID.'&admin_mnu_module_id='.urlencode($db_fav_arr['MODULE_ID']).'&admin_mnu_menu_id='.urlencode($db_fav_arr['MENU_ID']).($_REQUEST["back_url_pub"]<>''? '&back_url_pub='.urlencode($_REQUEST["back_url_pub"]):'').'&'.bitrix_sessid_get();
+					$aItem["MENU_URL"] = '/bnpt/admin/get_start_menu.php?mode=dynamic&lang='.LANGUAGE_ID.'&admin_mnu_module_id='.urlencode($db_fav_arr['MODULE_ID']).'&admin_mnu_menu_id='.urlencode($db_fav_arr['MENU_ID']).($_REQUEST["back_url_pub"]<>''? '&back_url_pub='.urlencode($_REQUEST["back_url_pub"]):'').'&'.bitrix_sessid_get();
 					$aItem['MENU_PRELOAD'] = false;
 				}
 

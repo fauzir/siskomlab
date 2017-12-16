@@ -482,7 +482,7 @@ ML_MESS.Save = '<?= GetMessageJS('ML_SAVE')?>';
 		<div id="mlsd_item" class="mlsd_admin">
 		<table>
 		<tr><td class="ml-content-cell">
-<form name="ml_item_form" action="/bitrix/admin/fileman_medialib.php?action=edit_item&<?=bitrix_sessid_get()?>" onsubmit="return parent.oBXMediaLib.EditItemDialogOnsubmit();" method="post" enctype="multipart/form-data"><table class="mlsd-ifrm-tbl">
+<form name="ml_item_form" action="/bnpt/admin/fileman_medialib.php?action=edit_item&<?=bitrix_sessid_get()?>" onsubmit="return parent.oBXMediaLib.EditItemDialogOnsubmit();" method="post" enctype="multipart/form-data"><table class="mlsd-ifrm-tbl">
 		<tr><td colSpan="2">
 			<div id="mlsd_fname_cont">
 				<b><?=GetMessage('ML_FILE')?>:</b><span style="padding: 0px 15px" id="ml_file_name"></span>
@@ -608,7 +608,7 @@ ML_MESS.Save = '<?= GetMessageJS('ML_SAVE')?>';
 </style>
 </HEAD>
 <BODY style="margin:0px !important;">
-<form name="ml_item_form" action="/bitrix/admin/fileman_medialib.php?action=edit_item&<?=bitrix_sessid_get()?>" onsubmit="return parent.oBXMediaLib.EditItemDialogOnsubmit();" method="post" enctype="multipart/form-data"><table class="mlsd-ifrm-tbl">
+<form name="ml_item_form" action="/bnpt/admin/fileman_medialib.php?action=edit_item&<?=bitrix_sessid_get()?>" onsubmit="return parent.oBXMediaLib.EditItemDialogOnsubmit();" method="post" enctype="multipart/form-data"><table class="mlsd-ifrm-tbl">
 		<tr><td colSpan="2">
 			<div id="mlsd_fname_cont">
 				<b><?=GetMessage('ML_FILE')?>:</b><span style="padding: 0px 15px" id="ml_file_name"></span>

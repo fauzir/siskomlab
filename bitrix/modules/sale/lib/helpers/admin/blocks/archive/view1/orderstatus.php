@@ -29,7 +29,7 @@ class OrderStatus extends Template
 						<td class="adm-detail-content-cell-r">
 							<div>'.
 								$data["DATE_INSERT"].
-								'&nbsp;<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["USER_ID"].'">'.
+								'&nbsp;<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["USER_ID"].'">'.
 									htmlspecialcharsbx(OrderEdit::getUserName($data["USER_ID"], $data["LID"])).
 								'</a>
 							</div>
@@ -79,7 +79,7 @@ class OrderStatus extends Template
 				<div class="adm-s-select-popup-element-selected-bad">
 					<span>'.Loc::getMessage("SALE_ORDER_STATUS_CANCELED").'</span>
 					'.$order->getField('DATE_CANCELED').'
-					<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $order->getField("EMP_CANCELED_ID").'">'
+					<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $order->getField("EMP_CANCELED_ID").'">'
 						.htmlspecialcharsbx(OrderEdit::getUserName($order->getField("EMP_CANCELED_ID"), $order->getSiteId())).
 					'</a>
 				</div>

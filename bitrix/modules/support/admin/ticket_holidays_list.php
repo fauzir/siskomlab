@@ -95,8 +95,8 @@ $lAdmin->NavText($dbResultList->GetNavPrint(GetMessage("SUP_GROUP_NAV")));
 
 while ($arBlog = $dbResultList->NavNext(true, "f_"))
 {    
-	$row =& $lAdmin->AddRow($f_ID, $arBlog, "/bitrix/admin/ticket_holidays_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID, GetMessage("SUP_UPDATE_ALT"));
-	$row->AddField("NAME", '<a href="/bitrix/admin/ticket_holidays_edit.php?ID=' . $f_ID . '&lang=' . LANGUAGE_ID . '" title="' . GetMessage("SUP_UPDATE_ALT").'">'.$f_NAME.'</a>');
+	$row =& $lAdmin->AddRow($f_ID, $arBlog, "/bnpt/admin/ticket_holidays_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID, GetMessage("SUP_UPDATE_ALT"));
+	$row->AddField("NAME", '<a href="/bnpt/admin/ticket_holidays_edit.php?ID=' . $f_ID . '&lang=' . LANGUAGE_ID . '" title="' . GetMessage("SUP_UPDATE_ALT").'">'.$f_NAME.'</a>');
 	$row->AddField("OPEN_TIME", GetMessage(CSupportHolidays::GetOpenTimeT($f_OPEN_TIME)));
 	if($f_OPEN_TIME != "HOLIDAY_H" && $f_OPEN_TIME != "WORKDAY_H")
 	{
@@ -110,7 +110,7 @@ while ($arBlog = $dbResultList->NavNext(true, "f_"))
 	$rs = CSupportHolidays::GetSLAByID($f_ID);
 	while($arR = $rs->Fetch())
 	{
-		$SLA .= '<a href="/bitrix/admin/ticket_sla_edit.php?ID=' . intval($arR["SLA_ID"]) . '&lang=' . LANGUAGE_ID . '">' . htmlspecialcharsbx($arR["NAME"]) . '</a><br/>';
+		$SLA .= '<a href="/bnpt/admin/ticket_sla_edit.php?ID=' . intval($arR["SLA_ID"]) . '&lang=' . LANGUAGE_ID . '">' . htmlspecialcharsbx($arR["NAME"]) . '</a><br/>';
 	}
 	$row->AddField("SLA", $SLA);
 

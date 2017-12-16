@@ -245,7 +245,7 @@ Class lists extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/lists/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/lists/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/lists/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", True, True);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/lists/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/lists", True, True);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/lists/install/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js", true, true);

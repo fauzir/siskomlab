@@ -446,7 +446,7 @@ while($arRes = $dbResultList->Fetch())
 		$contractorTitle = '';
 		if(0 < intval($arRes['CONTRACTOR_ID']))
 		{
-			$contractorTitle = '<a href="/bitrix/admin/cat_contractor_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes['CONTRACTOR_ID'].'">'.htmlspecialcharsbx(getContractorTitle($arRes['CONTRACTOR_ID'])).'</a>';
+			$contractorTitle = '<a href="/bnpt/admin/cat_contractor_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes['CONTRACTOR_ID'].'">'.htmlspecialcharsbx(getContractorTitle($arRes['CONTRACTOR_ID'])).'</a>';
 		}
 		$row->AddViewField("CONTRACTOR_ID", $contractorTitle);
 	}
@@ -507,7 +507,7 @@ if($arSelectFieldsMap['CREATED_BY'] || $arSelectFieldsMap['MODIFIED_BY'])
 		while($arOneUser = $rsUsers->Fetch())
 		{
 			$arOneUser['ID'] = (int)$arOneUser['ID'];
-			$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+			$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 		}
 	}
 	foreach($arRows as &$row)

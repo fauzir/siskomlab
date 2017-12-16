@@ -321,7 +321,7 @@ while ($row = $iterator->fetch())
 {
 	$siteList[] = $row;
 	$arSiteList[$row['LID']] = $row['LID'];
-	$arSiteLinkList[$row['LID']] = '<a href="/bitrix/admin/site_edit.php?lang='.LANGUAGE_ID.'&LID='.$row['LID'].'" title="'.GetMessage('BT_CAT_DISCOUNT_ADM_MESS_SITE_ID').'">'.$row['LID'].'</a>';
+	$arSiteLinkList[$row['LID']] = '<a href="/bnpt/admin/site_edit.php?lang='.LANGUAGE_ID.'&LID='.$row['LID'].'" title="'.GetMessage('BT_CAT_DISCOUNT_ADM_MESS_SITE_ID').'">'.$row['LID'].'</a>';
 }
 unset($row, $iterator);
 
@@ -385,7 +385,7 @@ while($arRes = $rsDiscSaves->Fetch())
 	if ($arSelectFieldsMap['TIMESTAMP_X'])
 		$row->AddCalendarField("TIMESTAMP_X", false);
 
-	$row->AddViewField("ID", '<a href="/bitrix/admin/cat_discsave_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'">'.$arRes["ID"].'</a>');
+	$row->AddViewField("ID", '<a href="/bnpt/admin/cat_discsave_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'">'.$arRes["ID"].'</a>');
 
 	if ($arSelectFieldsMap['ACTION'])
 	{
@@ -469,7 +469,7 @@ while($arRes = $rsDiscSaves->Fetch())
 		if ($arSelectFieldsMap['SITE_ID'])
 			$row->AddViewField('SITE_ID',$arSiteLinkList[$arRes['SITE_ID']]);
 		if ($arSelectFieldsMap['NAME'])
-			$row->AddViewField("NAME", '<a href="/bitrix/admin/cat_discsave_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'">'.htmlspecialcharsEx($arRes['NAME']).'</a>');
+			$row->AddViewField("NAME", '<a href="/bnpt/admin/cat_discsave_edit.php?lang='.LANGUAGE_ID.'&ID='.$arRes["ID"].'">'.htmlspecialcharsEx($arRes['NAME']).'</a>');
 		if ($arSelectFieldsMap['ACTIVE'])
 			$row->AddCheckField("ACTIVE", false);
 		if ($arSelectFieldsMap['SORT'])
@@ -502,7 +502,7 @@ while($arRes = $rsDiscSaves->Fetch())
 		"ICON" => "edit",
 		"DEFAULT" => true,
 		"TEXT" => GetMessage("BT_CAT_DISC_SAVE_ADM_CONT_EDIT"),
-		"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_discsave_edit.php?ID=".$arRes['ID'].'&lang='.LANGUAGE_ID)
+		"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_discsave_edit.php?ID=".$arRes['ID'].'&lang='.LANGUAGE_ID)
 	);
 	if (!$bReadOnly)
 	{
@@ -510,7 +510,7 @@ while($arRes = $rsDiscSaves->Fetch())
 			"ICON" => "copy",
 			"DEFAULT" => false,
 			"TEXT" => GetMessage("BT_CAT_DISC_SAVE_ADM_CONT_COPY"),
-			"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_discsave_edit.php?ID=".$arRes['ID'].'&action=copy&lang='.LANGUAGE_ID)
+			"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_discsave_edit.php?ID=".$arRes['ID'].'&action=copy&lang='.LANGUAGE_ID)
 		);
 
 		$arActions[] = array(
@@ -544,7 +544,7 @@ if ($arSelectFieldsMap['CREATED_BY'] || $arSelectFieldsMap['MODIFIED_BY'])
 		while ($arOneUser = $rsUsers->Fetch())
 		{
 			$arOneUser['ID'] = (int)$arOneUser['ID'];
-			$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+			$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 		}
 	}
 
@@ -595,7 +595,7 @@ if (!$bReadOnly)
 	$aContext = array(
 		array(
 			"TEXT" => GetMessage("BT_CAT_DISC_SAVE_ADM_PAGECONT_ADD"),
-			"LINK" => "/bitrix/admin/cat_discsave_edit.php?lang=".LANGUAGE_ID,
+			"LINK" => "/bnpt/admin/cat_discsave_edit.php?lang=".LANGUAGE_ID,
 			"TITLE" => GetMessage("BT_CAT_DISC_SAVE_ADM_PAGECONT_ADD_TITLE"),
 			"ICON" => "btn_new",
 		),

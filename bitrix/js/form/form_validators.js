@@ -214,7 +214,7 @@ function CFormValidatorSettings(bSimple)
 			{
 				if (arValidators[current_item].HAS_SETTINGS == "Y")
 				{
-					var url = '/bitrix/admin/form_validator_props.php?validator=' + current_item;
+					var url = '/bnpt/admin/form_validator_props.php?validator=' + current_item;
 					if (phpVars.LANGUAGE_ID) url += '&lang=' + phpVars.LANGUAGE_ID;
 					oCFVS.OpenDialog(url);
 				}

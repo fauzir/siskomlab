@@ -142,15 +142,15 @@ $lAdmin->NavText($dbResultList->GetNavPrint(GetMessage("BLB_GROUP_NAV")));
 
 while ($arBlog = $dbResultList->NavNext(true, "f_"))
 {      
-	$row =& $lAdmin->AddRow($f_ID, $arBlog, "/bitrix/admin/blog_blog_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID, GetMessage("BLB_UPDATE_ALT"));
+	$row =& $lAdmin->AddRow($f_ID, $arBlog, "/bnpt/admin/blog_blog_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID, GetMessage("BLB_UPDATE_ALT"));
 
-	$row->AddField("ID", '<a href="/bitrix/admin/blog_blog_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BLB_UPDATE_ALT").'">'.$f_ID.'</a>');
+	$row->AddField("ID", '<a href="/bnpt/admin/blog_blog_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BLB_UPDATE_ALT").'">'.$f_ID.'</a>');
 	$row->AddField("NAME", "<a href=\"".CBlog::PreparePath($f_URL, $f_GROUP_SITE_ID, false, $f_OWNER_ID, $f_SOCNET_GROUP_ID)."\">".$f_NAME."</a>");
 	$row->AddField("DATE_CREATE", $f_DATE_CREATE);
 	$row->AddField("DATE_UPDATE", $f_DATE_UPDATE);
 	$row->AddField("ACTIVE", (($f_ACTIVE == "Y") ? GetMessage("BLB_YES") : GetMessage("BLB_NO")));
 	if(IntVal($f_OWNER_ID) > 0)
-		$row->AddField("OWNER_INFO", "<a href=\"/bitrix/admin/user_edit.php?ID=".$f_OWNER_ID."&lang=".LANG."\">[".$f_OWNER_ID."] ".$f_OWNER_NAME." ".$f_OWNER_LAST_NAME." (".$f_OWNER_LOGIN.")</a>");
+		$row->AddField("OWNER_INFO", "<a href=\"/bnpt/admin/user_edit.php?ID=".$f_OWNER_ID."&lang=".LANG."\">[".$f_OWNER_ID."] ".$f_OWNER_NAME." ".$f_OWNER_LAST_NAME." (".$f_OWNER_LOGIN.")</a>");
 	if(IntVal($f_SOCNET_GROUP_ID) > 0)
 	{
 		$row->AddField("SOCNET_GROUP_ID", $f_SOCNET_GROUP_ID);	
@@ -165,7 +165,7 @@ while ($arBlog = $dbResultList->NavNext(true, "f_"))
 		
 	}
 	$row->AddField("URL", $f_URL);
-	$row->AddField("GROUP_ID", "<a href=\"/bitrix/admin/blog_group_edit.php?ID=".$f_GROUP_ID."&lang=".LANG."\">[".$f_GROUP_SITE_ID."] ".$f_GROUP_NAME."</a>");
+	$row->AddField("GROUP_ID", "<a href=\"/bnpt/admin/blog_group_edit.php?ID=".$f_GROUP_ID."&lang=".LANG."\">[".$f_GROUP_SITE_ID."] ".$f_GROUP_NAME."</a>");
 	$row->AddField("USE_SOCNET", (($f_USE_SOCNET == "Y") ? GetMessage("BLB_YES") : GetMessage("BLB_NO")));
 	
 	$USER_FIELD_MANAGER->AddUserFields("BLOG_BLOG", $arBlog, $row);

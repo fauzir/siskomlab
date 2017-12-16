@@ -274,12 +274,12 @@ class CSupportPage
 		if($presSave || $presApply)
 		{
 			self::$id = intval(CSupportTimetable::Set(self::$postTimeTableFields, self::$postTimeTableSheduleFields));
-			// Если сохранить не удалось то self::$id будет равен 0 и read() не сработает данные возьмутся из POST без изменений
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ self::$id пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ 0 пїЅ read() пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ POST пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			if(self::$id > 0)
 			{
 				if(!$presApply)
 				{
-					LocalRedirect("/bitrix/admin/" . self::LIST_URL . "?lang=". LANG . GetFilterParams("filter_", false));
+					LocalRedirect("/bnpt/admin/" . self::LIST_URL . "?lang=". LANG . GetFilterParams("filter_", false));
 				}
 				return true;
 			}
@@ -554,7 +554,7 @@ class CSupportPage
 			$res[self::$timeTableSheduleFields->WEEKDAY_NUMBER]["CUSTOM_TIME"][] = array("MINUTE_FROM" => self::TimeToStr(self::$timeTableSheduleFields->MINUTE_FROM), "MINUTE_TILL" => self::TimeToStr(self::$timeTableSheduleFields->MINUTE_TILL));
 				
 		}
-		// дополняем для покза
+		// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		for($i=0; $i<=6; $i++)
 		{
 			if(!isset($res[$i]) || !is_array($res[$i]) || (count($res[$i]) <= 0))

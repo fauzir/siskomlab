@@ -56,7 +56,7 @@ BX.Sale.Admin.DiscountPreset.SelectProduct = (function(){
 	SelectProduct.prototype.onClickSectionToShowPopup = function(event) {
 		var target = event.srcElement || event.target;
 		var sectionNumber = target.getAttribute('data-section-number');
-		var url = '/bitrix/admin/cat_section_search.php?land=ru&discount=Y&n=sect_' + sectionNumber;
+		var url = '/bnpt/admin/cat_section_search.php?land=ru&discount=Y&n=sect_' + sectionNumber;
 		window.open(url, '', 'scrollbars=yes,resizable=yes,width=900,height=600,top=' + parseInt((screen.height - 500) / 2 - 14, 10) + ',left=' + parseInt((screen.width - 600) / 2 - 5, 10));
 
 		BX.PreventDefault(event);
@@ -485,7 +485,7 @@ BX.Sale.Admin.DiscountPreset.SelectProduct = (function(){
 
 	SelectProduct.prototype.getParamsByProductId = function(product, iblockId) {
 		BX.ajax({
-			url: '/bitrix/admin/sale_discount_preset_detail.php?' +
+			url: '/bnpt/admin/sale_discount_preset_detail.php?' +
 					'lang=' + BX.message.LANGUAGE_ID + '&' +
 					'action=getProductDetails&' +
 					'PRESET_ID=' + BX.util.urlencode(this.presetId)
@@ -557,7 +557,7 @@ BX.Sale.Admin.DiscountPreset.SelectProduct = (function(){
 			}));
 		}
 
-		var url = '/bitrix/admin/cat_section_search.php?land=ru&discount=Y&n=sect_stub';
+		var url = '/bnpt/admin/cat_section_search.php?land=ru&discount=Y&n=sect_stub';
 		var popup = window.open(url, '', 'scrollbars=yes,resizable=yes,width=900,height=600,top=' + parseInt((screen.height - 500) / 2 - 14, 10) + ',left=' + parseInt((screen.width - 600) / 2 - 5, 10));
 
 		popup.onbeforeunload = function(){

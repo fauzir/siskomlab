@@ -10,7 +10,7 @@
 
 	BX.Sale.PaySystem = {
 
-		ajaxUrl: "/bitrix/admin/sale_pay_system_ajax.php",
+		ajaxUrl: "/bnpt/admin/sale_pay_system_ajax.php",
 
 		setLHEClass: function (lheDivId)
 		{

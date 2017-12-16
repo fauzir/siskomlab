@@ -216,7 +216,7 @@ class Step4 extends CBaseWizardStep
 
 		CClusterSlave::SetOnLine($this->arNode["ID"], $this->arMaster["ID"]);
 		$this->OpenSite();
-		$this->location = '/bitrix/admin/cluster_slave_list.php?lang='.LANGUAGE_ID.'&group_id='.$group_id;
+		$this->location = '/bnpt/admin/cluster_slave_list.php?lang='.LANGUAGE_ID.'&group_id='.$group_id;
 	}
 
 	function ShowStepNoError()

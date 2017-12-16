@@ -77,7 +77,7 @@ foreach($NEW_LANGS as $i=>$vvv):
 				{
 					$bFound = true;
 					$k = "#$k";
-					$stf .= ' <a href="/bitrix/admin/translate_edit.php?lang='.LANGUAGE_ID.'&file='.$NEW_LANGS[$i].$k.'">'.htmlspecialcharsbx($v)."</a><br>";
+					$stf .= ' <a href="/bnpt/admin/translate_edit.php?lang='.LANGUAGE_ID.'&file='.$NEW_LANGS[$i].$k.'">'.htmlspecialcharsbx($v)."</a><br>";
 				}
 			}
 			$MESS = $MESS_t;
@@ -87,7 +87,7 @@ foreach($NEW_LANGS as $i=>$vvv):
 ?>
 <tr>
 <td valign="top"><font class="text">
-<a href="/bitrix/admin/translate_edit.php?lang=<?=LANGUAGE_ID?>&file=<?=$NEW_LANGS[$i]?>"><?=$NEW_LANGS[$i]?></a>
+<a href="/bnpt/admin/translate_edit.php?lang=<?=LANGUAGE_ID?>&file=<?=$NEW_LANGS[$i]?>"><?=$NEW_LANGS[$i]?></a>
 </font>
 </td>
 <td valign="top"><font class="text"><?=$stf?></font></td>

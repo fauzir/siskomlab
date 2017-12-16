@@ -170,7 +170,7 @@ if (is_array($arResult['SECTIONS_CHAIN']))
 $IBLOCK_PERMISSION = CIBlock::GetPermission(COption::GetOptionInt('intranet', 'iblock_structure'));
 if ($arParams['bAdmin'] = $IBLOCK_PERMISSION >= 'U')
 {
-	$arParams['addUrl'] = "/bitrix/admin/iblock_section_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure');
+	$arParams['addUrl'] = "/bnpt/admin/iblock_section_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure');
 
 	if ($current_section > 0)
 	{
@@ -178,7 +178,7 @@ if ($arParams['bAdmin'] = $IBLOCK_PERMISSION >= 'U')
 		$arParams['addUrl'] .= "&IBLOCK_SECTION_ID=".$current_section;
 	}
 
-	$arParams['editAllUrl'] = "/bitrix/admin/iblock_section_admin.php?lang=".LANGUAGE_ID."&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure')."&find_section_section=".intval($current_section);
+	$arParams['editAllUrl'] = "/bnpt/admin/iblock_section_admin.php?lang=".LANGUAGE_ID."&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure')."&find_section_section=".intval($current_section);
 }
 
 if ($GLOBALS['APPLICATION']->GetShowIncludeAreas() && $GLOBALS['USER']->IsAdmin())
@@ -190,7 +190,7 @@ if ($GLOBALS['APPLICATION']->GetShowIncludeAreas() && $GLOBALS['USER']->IsAdmin(
 			array(
 				'URL' => "javascript:".$GLOBALS['APPLICATION']->GetPopupLink(
 					array(
-					'URL' => "/bitrix/admin/iblock_section_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure')."&ID=".$current_section."&back_url=".urlencode($_SERVER["REQUEST_URI"]),
+					'URL' => "/bnpt/admin/iblock_section_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure')."&ID=".$current_section."&back_url=".urlencode($_SERVER["REQUEST_URI"]),
 						'PARAMS' => array(
 							'width' => 700,
 							'height' => 500,
@@ -207,7 +207,7 @@ if ($GLOBALS['APPLICATION']->GetShowIncludeAreas() && $GLOBALS['USER']->IsAdmin(
 	$arIcons[] = array(
 			'URL' => "javascript:".$GLOBALS['APPLICATION']->GetPopupLink(
 				array(
-					'URL' => "/bitrix/admin/iblock_section_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure')."&IBLOCK_SECTION_ID=".$current_section."&back_url=".urlencode($_SERVER["REQUEST_URI"]),
+					'URL' => "/bnpt/admin/iblock_section_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=intranet&type=".COption::GetOptionString('intranet', 'iblock_type')."&IBLOCK_ID=".COption::GetOptionInt('intranet', 'iblock_structure')."&IBLOCK_SECTION_ID=".$current_section."&back_url=".urlencode($_SERVER["REQUEST_URI"]),
 					'PARAMS' => array(
 						'width' => 700,
 						'height' => 500,

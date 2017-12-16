@@ -265,7 +265,7 @@ while ($arRes = $rsData->Fetch())
 		$arActions[] = array(
 			"ICON" => "other",
 			"TEXT" => GetMessage("CTRLR_TASK_MENU_LOG"),
-			"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/controller_log_admin.php?lang=".urlencode(LANGUAGE_ID)."&set_filter=Y&find_task_id=".urlencode($arRes["ID"])),
+			"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/controller_log_admin.php?lang=".urlencode(LANGUAGE_ID)."&set_filter=Y&find_task_id=".urlencode($arRes["ID"])),
 		);
 	}
 

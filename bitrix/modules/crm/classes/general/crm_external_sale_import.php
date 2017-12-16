@@ -10,7 +10,7 @@ class CCrmExternalSaleImport
 	/** @var CCrmExternalSaleProxy*/
 	private $proxy = null;
 
-	private $path = "/bitrix/admin/1c_exchange.php";
+	private $path = "/bnpt/admin/1c_exchange.php";
 
 	/** @var CCrmExternalSaleImportResult*/
 	private $arImportResult = null;

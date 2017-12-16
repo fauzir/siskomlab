@@ -68,7 +68,7 @@ if(isset($_REQUEST["reorder"]) && IntVal($_REQUEST["reorder"]) > 0)
 	while ($arBasket = $dbBasketList->fetch())
 		$urlProduct .= "&product[".$arBasket["PRODUCT_ID"]."]=".$arBasket["QUANTITY"];
 
-	LocalRedirect("/bitrix/admin/sale_order_create.php?USER_ID=".CUtil::JSEscape($ID)."&lang=".LANG."&SITE_ID=".CUtil::JSEscape($lid).CUtil::JSEscape($urlProduct));
+	LocalRedirect("/bnpt/admin/sale_order_create.php?USER_ID=".CUtil::JSEscape($ID)."&lang=".LANG."&SITE_ID=".CUtil::JSEscape($lid).CUtil::JSEscape($urlProduct));
 }
 
 //USER INFO
@@ -361,7 +361,7 @@ if (isset($_REQUEST['apply']) && isset($_REQUEST['action']) && $saleModulePermis
 						if (strlen($basketError) <= 0)
 						{
 							echo "<script language=\"JavaScript\">";
-							echo "window.parent.location.href = '/bitrix/admin/sale_order_create.php?USER_ID=".CUtil::JSEscape($ID)."&lang=".LANG."&SITE_ID=".CUtil::JSEscape($LID).CUtil::JSEscape($urlProduct)."';";
+							echo "window.parent.location.href = '/bnpt/admin/sale_order_create.php?USER_ID=".CUtil::JSEscape($ID)."&lang=".LANG."&SITE_ID=".CUtil::JSEscape($LID).CUtil::JSEscape($urlProduct)."';";
 							echo "</script>";
 							exit;
 						}
@@ -549,7 +549,7 @@ if(!empty($arUser))
 	while ($arProfList = $dbProfileList->GetNext())
 	{
 		$row =& $lAdmin_tab2->AddRow($arProfList["ID"], $arProfList, "sale_buyers_profile_edit.php?id=".$arProfList["ID"]."&lang=".LANG, GetMessage("BUYER_P_PROFILE_EDIT"));
-		$row->AddField("NAME", "[".$arProfList["ID"]."] <a href=\"/bitrix/admin/sale_buyers_profile_edit.php?id=".$arProfList["ID"]."&lang=".LANG."\">".$arProfList["NAME"]."</a>");
+		$row->AddField("NAME", "[".$arProfList["ID"]."] <a href=\"/bnpt/admin/sale_buyers_profile_edit.php?id=".$arProfList["ID"]."&lang=".LANG."\">".$arProfList["NAME"]."</a>");
 		$row->AddField("PERSON_TYPE_ID", htmlspecialcharsbx($arPErsonTypes[$arProfList["PERSON_TYPE_ID"]]["NAME"]));
 
 		if (count($arSites) > 1)
@@ -789,7 +789,7 @@ if(!empty($arUser))
 		$orderLink = "<a href=\"sale_order_view.php?ID=".$arOrder["ID"]."&lang=".LANG."\">".$arOrder["ID"]."</a>";
 		$row->AddField("ID", $orderLink);
 
-		$status_id = "<a title=\"".GetMessage('BUYERS_ORDER_DETAIL_PAGE')."\" href=\"/bitrix/admin/sale_order_view.php?ID=".$arOrder["ID"]."&lang=".LANG."\">".GetMessage('BUYERS_PREF').$arOrder["ID"]."</a>";
+		$status_id = "<a title=\"".GetMessage('BUYERS_ORDER_DETAIL_PAGE')."\" href=\"/bnpt/admin/sale_order_view.php?ID=".$arOrder["ID"]."&lang=".LANG."\">".GetMessage('BUYERS_PREF').$arOrder["ID"]."</a>";
 		$status_id .= "<input type=\"hidden\" name=\"table_id\" value=\"".$sTableID_tab3."\">";
 		$row->AddField("STATUS_ID", $status_id);
 
@@ -805,7 +805,7 @@ if(!empty($arUser))
 			if (strval($payed) != "")
 				$payed .= "<hr>";
 
-			$payed .= "[<a href='/bitrix/admin/sale_order_payment_edit.php?order_id=".$arOrder['ID']."&payment_id=".$payment["ID"]."&lang=".LANGUAGE_ID."'>".$payment["ID"]."</a>], ".
+			$payed .= "[<a href='/bnpt/admin/sale_order_payment_edit.php?order_id=".$arOrder['ID']."&payment_id=".$payment["ID"]."&lang=".LANGUAGE_ID."'>".$payment["ID"]."</a>], ".
 				htmlspecialcharsbx($payment["PAY_SYSTEM_NAME"]).", ".
 				($payment["PAID"] == "Y" ? \Bitrix\Main\Localization\Loc::getMessage("SOB_PAYMENTS_PAID") :  \Bitrix\Main\Localization\Loc::getMessage("SOB_PAYMENTS_UNPAID")).", ".
 				(strlen($payment["PS_STATUS"]) > 0 ? \Bitrix\Main\Localization\Loc::getMessage("SOB_PAYMENTS_STATUS").": ".htmlspecialcharsbx($payment["PS_STATUS"]).", " : "").
@@ -839,13 +839,13 @@ if(!empty($arUser))
 
 		while($shipment = $res->fetch())
 		{
-			$shipment["ID_LINKED"] = '[<a href="/bitrix/admin/sale_order_shipment_edit.php?order_id='.$arOrder['ID'].'&shipment_id='.$shipment["ID"].'&lang='.LANGUAGE_ID.'">'.$shipment["ID"].'</a>]';
+			$shipment["ID_LINKED"] = '[<a href="/bnpt/admin/sale_order_shipment_edit.php?order_id='.$arOrder['ID'].'&shipment_id='.$shipment["ID"].'&lang='.LANGUAGE_ID.'">'.$shipment["ID"].'</a>]';
 
 
 			if (strval($allowDelivery) != "")
 				$allowDelivery .= "<hr>";
 
-			$allowDelivery .= "[<a href='/bitrix/admin/sale_order_shipment_edit.php?order_id=".$arOrder['ID']."&shipment_id=".$shipment["ID"]."&lang=".LANGUAGE_ID."'>".$shipment["ID"]."</a>], ".
+			$allowDelivery .= "[<a href='/bnpt/admin/sale_order_shipment_edit.php?order_id=".$arOrder['ID']."&shipment_id=".$shipment["ID"]."&lang=".LANGUAGE_ID."'>".$shipment["ID"]."</a>], ".
 				htmlspecialcharsbx($shipment["DELIVERY_NAME"]).", ".
 				'<span>'.htmlspecialcharsEx(SaleFormatCurrency($shipment["PRICE_DELIVERY"], $shipment["CURRENCY"]))."</span>, ".
 				($shipment["ALLOW_DELIVERY"] == "Y" ? \Bitrix\Main\Localization\Loc::getMessage("SOB_SHIPMENTS_ALLOW_DELIVERY") : \Bitrix\Main\Localization\Loc::getMessage("SOB_SHIPMENTS_NOT_ALLOW_DELIVERY")).", ".
@@ -912,7 +912,7 @@ if(!empty($arUser))
 
 		$arActions = array();
 		$arActions[] = array("ICON"=>"view", "TEXT"=>GetMessage("BUYERS_ORDER_EDIT"),"ACTION"=>$lAdmin_tab3->ActionRedirect("sale_order_view.php?ID=".$arOrder["ID"]."&lang=".LANG), "DEFAULT"=>true);
-		$arActions[] = array("ICON"=>"edit", "TEXT"=>GetMessage("BUYER_PD_REORDER"),"ACTION"=>$lAdmin_tab3->ActionRedirect("/bitrix/admin/sale_buyers_profile.php?USER_ID=".$ID."&lang=".LANG."&reorder=".$arOrder["ID"]."&lid=".$arOrder["LID"]));
+		$arActions[] = array("ICON"=>"edit", "TEXT"=>GetMessage("BUYER_PD_REORDER"),"ACTION"=>$lAdmin_tab3->ActionRedirect("/bnpt/admin/sale_buyers_profile.php?USER_ID=".$ID."&lang=".LANG."&reorder=".$arOrder["ID"]."&lid=".$arOrder["LID"]));
 
 		$row->AddActions($arActions);
 	}
@@ -1321,7 +1321,7 @@ if(!empty($arUser))
 			$linkOrder = "showOfferPopup(".CUtil::PhpToJsObject($arResult['SKU_ELEMENTS']).", ".CUtil::PhpToJsObject($arResult['SKU_PROPERTIES']).", 'order', ".CUtil::PhpToJsObject($arResult["POPUP_MESSAGE"]).");";
 			$linkBasket = "showOfferPopup(".CUtil::PhpToJsObject($arResult['SKU_ELEMENTS']).", ".CUtil::PhpToJsObject($arResult['SKU_PROPERTIES']).", 'basket', ".CUtil::PhpToJsObject($arResult["POPUP_MESSAGE"]).");";
 		else:
-			$linkOrder = 'BX.adminPanel.Redirect([], \'/bitrix/admin/sale_order_create.php?USER_ID='.$ID.'&lang='.LANG.'&SITE_ID='.$arViews["SITE_ID"].'&product['.$arViews["PRODUCT_ID"].']=1\', event);';
+			$linkOrder = 'BX.adminPanel.Redirect([], \'/bnpt/admin/sale_order_create.php?USER_ID='.$ID.'&lang='.LANG.'&SITE_ID='.$arViews["SITE_ID"].'&product['.$arViews["PRODUCT_ID"].']=1\', event);';
 			$linkBasket = 'fAddToBasketViewed('.$arViews["PRODUCT_ID"].', \''.$arViews["SITE_ID"].'\')';
 		endif;
 
@@ -1546,7 +1546,7 @@ if(!empty($arUser))
 			{
 				foreach($listUserData[$user['ID']] as $subscribeId)
 				{
-					$userString='<a href="/bitrix/admin/user_edit.php?ID='.$user['ID'].'&lang='.LANGUAGE_ID.'" target="_blank">'.
+					$userString='<a href="/bnpt/admin/user_edit.php?ID='.$user['ID'].'&lang='.LANGUAGE_ID.'" target="_blank">'.
 						CUser::formatName(CSite::getNameFormat(false), $user, true, false).'</a>';
 					$rowList[$subscribeId]->addField('USER_ID', $userString);
 				}
@@ -1608,12 +1608,12 @@ if(!empty($arUser))
 	$arMenu = array(
 		array(
 			"TEXT"=>GetMessage("BUYER_LIST"),
-			"LINK" => "/bitrix/admin/sale_buyers.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+			"LINK" => "/bnpt/admin/sale_buyers.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 			"ICON" => "btn_list",
 		),
 		array(
 			"TEXT"=>GetMessage("BUYER_NEW_ORDER"),
-			"LINK" => "/bitrix/admin/sale_order_create.php?lang=".LANGUAGE_ID.$siteLID,
+			"LINK" => "/bnpt/admin/sale_order_create.php?lang=".LANGUAGE_ID.$siteLID,
 			"TITLE"=>GetMessage("BUYER_NEW_ORDER"),
 			"ICON" => "btn_new",
 			"MENU" => $arSiteMenu
@@ -1682,7 +1682,7 @@ if(!empty($arUser))
 				<tr>
 					<td class="adm-detail-content-cell-l" width="40%"><?=GetMessage("BUYER_FILED_LOGIN")?>:</td>
 					<td class="adm-detail-content-cell-r">
-						<div><a href="/bitrix/admin/user_edit.php?ID=<?=$u_ID?>&lang=<?=LANG?>"><?=$u_LOGIN?></a></div>
+						<div><a href="/bnpt/admin/user_edit.php?ID=<?=$u_ID?>&lang=<?=LANG?>"><?=$u_LOGIN?></a></div>
 					</td>
 				</tr>
 				<?if(strlen($userFIO) > 0):?>
@@ -2149,8 +2149,8 @@ if(!empty($arUser))
 
 						function fAddToBasketViewed(product_id, lid)
 						{
-							t_stat_list_tab5.GetAdminList('/bitrix/admin/sale_buyers_profile.php?USER_ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>&action=viewed_apply&viewed_id='+product_id+'&viewed_lid='+lid);
-							t_stat_list_tab4.GetAdminList('/bitrix/admin/sale_buyers_profile.php?USER_ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>');
+							t_stat_list_tab5.GetAdminList('/bnpt/admin/sale_buyers_profile.php?USER_ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>&action=viewed_apply&viewed_id='+product_id+'&viewed_lid='+lid);
+							t_stat_list_tab4.GetAdminList('/bnpt/admin/sale_buyers_profile.php?USER_ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>');
 						}
 
 						function showOfferPopup(arSKU, arProperties, type, message)
@@ -2285,7 +2285,7 @@ if(!empty($arUser))
 										else
 										{
 											BX('sku_to_basket_apply').value = "N";
-											BX('viewed_url_action').value = '/bitrix/admin/sale_order_create.php?USER_ID='+arSKU[i]["USER_ID"]+'&lang=<?=LANG?>&SITE_ID='+arSKU[i]["LID"]+'&product['+arSKU[i]["ID"]+']=1';
+											BX('viewed_url_action').value = '/bnpt/admin/sale_order_create.php?USER_ID='+arSKU[i]["USER_ID"]+'&lang=<?=LANG?>&SITE_ID='+arSKU[i]["LID"]+'&product['+arSKU[i]["ID"]+']=1';
 											btnText = BX.message('PRODUCT_ADD_TO_ORDER');
 										}
 

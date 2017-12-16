@@ -5,7 +5,7 @@ BX.Sale.Admin.OrderAdditionalInfo =
 	choosePerson: function(formName, languageId)
 	{
 		window.open(
-			'/bitrix/admin/user_search.php?lang='+languageId+'&FN='+formName+'&FC=RESPONSIBLE_ID',
+			'/bnpt/admin/user_search.php?lang='+languageId+'&FN='+formName+'&FC=RESPONSIBLE_ID',
 			'',
 			'scrollbars=yes,resizable=yes,width=840,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 840)/2-5)
 		);
@@ -17,7 +17,7 @@ BX.Sale.Admin.OrderAdditionalInfo =
 			responsibleId = BX('RESPONSIBLE_ID').value;
 
 		if(node)
-			node.href = '/bitrix/admin/user_edit.php?lang='+BX.Sale.Admin.OrderEditPage.languageId+'&ID='+responsibleId;
+			node.href = '/bnpt/admin/user_edit.php?lang='+BX.Sale.Admin.OrderEditPage.languageId+'&ID='+responsibleId;
 
 		var params = {
 			action : 'changeResponsibleUser',

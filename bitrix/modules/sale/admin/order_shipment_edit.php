@@ -38,7 +38,7 @@ $save = $_SERVER["REQUEST_METHOD"] == "POST" && (isset($_POST["apply"]) || isset
 $refresh = $_SERVER["REQUEST_METHOD"] == "POST" && !$save;
 
 if($orderId <= 0 || !($saleOrder = Bitrix\Sale\Order::load($orderId)))
-	LocalRedirect("/bitrix/admin/sale_order.php?lang=".$lang.GetFilterParams("filter_", false));
+	LocalRedirect("/bnpt/admin/sale_order.php?lang=".$lang.GetFilterParams("filter_", false));
 
 
 $allowedOrderStatusesView = \Bitrix\Sale\OrderStatus::getStatusesUserCanDoOperations($USER->GetID(), array('view'));
@@ -56,7 +56,7 @@ if (intval($shipmentId) > 0)
 	$shipment = $shipmentCollection->getItemById($shipmentId);
 
 	if(!$shipment)
-		LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 
 	$allowedDeliveryStatusesView = \Bitrix\Sale\DeliveryStatus::getStatusesUserCanDoOperations($USER->GetID(), array('view'));
 	$allowedDeliveryStatusesUpdate = \Bitrix\Sale\DeliveryStatus::getStatusesUserCanDoOperations($USER->GetID(), array('update'));
@@ -80,7 +80,7 @@ if ($saleModulePermissions == 'P')
 
 	if (!$isUserResponsible && !$isAllowCompany)
 	{
-		LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 	}
 }
 
@@ -88,7 +88,7 @@ if ($request->get('delete') == 'Y' && check_bitrix_sessid())
 {
 	if(!$allowDelete)
 	{
-		LocalRedirect('/bitrix/admin/sale_order_shipment.php?lang='.$lang.GetFilterParams('filter_', false));
+		LocalRedirect('/bnpt/admin/sale_order_shipment.php?lang='.$lang.GetFilterParams('filter_', false));
 	}
 
 	$delResult = $shipment->delete();
@@ -104,7 +104,7 @@ if ($request->get('delete') == 'Y' && check_bitrix_sessid())
 			if ($backUrl)
 				LocalRedirect($backUrl);
 			else
-				LocalRedirect('/bitrix/admin/sale_order_shipment.php?lang='.$lang.GetFilterParams('filter_', false));
+				LocalRedirect('/bnpt/admin/sale_order_shipment.php?lang='.$lang.GetFilterParams('filter_', false));
 		}
 		else
 		{
@@ -119,11 +119,11 @@ if ($request->isPost() && ($save || $refresh) && check_bitrix_sessid())
 	{
 		if (isset($_POST["apply"]))
 		{
-			LocalRedirect("/bitrix/admin/sale_order_shipment_edit.php?lang=".$lang."&order_id=".$orderId."&shipment_id=".$shipmentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/sale_order_shipment_edit.php?lang=".$lang."&order_id=".$orderId."&shipment_id=".$shipmentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
 		}
 		else
 		{
-			LocalRedirect('/bitrix/admin/sale_order_shipment.php?lang='.$lang.GetFilterParams('filter_', false));
+			LocalRedirect('/bnpt/admin/sale_order_shipment.php?lang='.$lang.GetFilterParams('filter_', false));
 		}
 
 	}
@@ -148,11 +148,11 @@ if ($request->isPost() && ($save || $refresh) && check_bitrix_sessid())
 					LocalRedirect($backUrl);
 
 				else
-					LocalRedirect("/bitrix/admin/sale_order_shipment.php?lang=".$lang.GetFilterParams("filter_", false));
+					LocalRedirect("/bnpt/admin/sale_order_shipment.php?lang=".$lang.GetFilterParams("filter_", false));
 			}
 			else
 			{
-				LocalRedirect("/bitrix/admin/sale_order_shipment_edit.php?lang=".$lang."&order_id=".$orderId."&shipment_id=".$shipmentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
+				LocalRedirect("/bnpt/admin/sale_order_shipment_edit.php?lang=".$lang."&order_id=".$orderId."&shipment_id=".$shipmentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
 			}
 		}
 		else
@@ -194,7 +194,7 @@ else
 }
 
 if (!$shipment || (!$allowView && !$allowUpdate) || Order::isLocked($orderId))
-	LocalRedirect("/bitrix/admin/sale_order_shipment.php?lang=".$lang.GetFilterParams("filter_", false));
+	LocalRedirect("/bnpt/admin/sale_order_shipment.php?lang=".$lang.GetFilterParams("filter_", false));
 
 if ($shipmentId)
 	$title = str_replace("#ID#", $shipmentId, GetMessage("EDIT_ORDER_SHIPMENT"));
@@ -227,7 +227,7 @@ $aMenu = array();
 		"ICON" => "btn_list",
 		"TEXT" => Loc::getMessage("SOPE_SHIPMENT_TRANSITION"),
 		"TITLE"=> Loc::getMessage("SOPE_SHIPMENT_TRANSITION_TITLE"),
-		"LINK" => "/bitrix/admin/sale_order_view.php?ID=".$orderId."&lang=".$lang.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_order_view.php?ID=".$orderId."&lang=".$lang.GetFilterParams("filter_")
 	);
 
 if (!$new)
@@ -238,7 +238,7 @@ if (!$new)
 			"TEXT" => Loc::getMessage("SOPE_SHIPMENT_DELETE"),
 			"TITLE" => Loc::getMessage("SOPE_SHIPMENT_DELETE_TITLE"),
 			"LINK" => 'javascript:void(0)',
-			"ONCLICK" => "if(confirm('".Loc::getMessage('SOPE_SHIPMENT_DELETE_MESSAGE')."')) window.location.href='/bitrix/admin/sale_order_shipment_edit.php?order_id=".$orderId."&shipment_id=".$shipmentId."&delete=Y&".bitrix_sessid_get()."&lang=".$lang.GetFilterParams("filter_")."'"
+			"ONCLICK" => "if(confirm('".Loc::getMessage('SOPE_SHIPMENT_DELETE_MESSAGE')."')) window.location.href='/bnpt/admin/sale_order_shipment_edit.php?order_id=".$orderId."&shipment_id=".$shipmentId."&delete=Y&".bitrix_sessid_get()."&lang=".$lang.GetFilterParams("filter_")."'"
 		);
 	}
 }
@@ -246,7 +246,7 @@ if (!$new)
 $aMenu[] = array(
 	"TEXT" => Loc::getMessage("SOPE_SHIPMENT_LIST"),
 	"TITLE"=> Loc::getMessage("SOPE_SHIPMENT_LIST_TITLE"),
-	"LINK" => "/bitrix/admin/sale_order_shipment.php?lang=".$lang.GetFilterParams("filter_")
+	"LINK" => "/bnpt/admin/sale_order_shipment.php?lang=".$lang.GetFilterParams("filter_")
 );
 
 if (!$new)
@@ -259,7 +259,7 @@ while ($arLang = $db_lang->Fetch())
 
 $arReports = array();
 $dirs = array(
-	$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/",
+	$_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/",
 	$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sale/reports/"
 
 );
@@ -313,7 +313,7 @@ foreach ($dirs as $dir)
 
 					$arReports[] = array(
 						"TEXT" => $rep_title,
-						"ONCLICK" => "window.open('/bitrix/admin/sale_order_print_new.php?&ORDER_ID=".$orderId."&SHIPMENT_ID=".$shipmentId."&doc=".substr($file, 0, strlen($file)-4)."&".bitrix_sessid_get()."', '_blank');"
+						"ONCLICK" => "window.open('/bnpt/admin/sale_order_print_new.php?&ORDER_ID=".$orderId."&SHIPMENT_ID=".$shipmentId."&doc=".substr($file, 0, strlen($file)-4)."&".bitrix_sessid_get()."', '_blank');"
 					);
 				}
 			}

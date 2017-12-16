@@ -297,9 +297,9 @@ if(
 		if($mxRes)
 		{
 			if (!empty($apply))
-				LocalRedirect("/bitrix/admin/cat_discsave_edit.php?ID=".$ID."&mess=ok&lang=".urlencode(LANGUAGE_ID)."&".$tabControl->ActiveTabParam());
+				LocalRedirect("/bnpt/admin/cat_discsave_edit.php?ID=".$ID."&mess=ok&lang=".urlencode(LANGUAGE_ID)."&".$tabControl->ActiveTabParam());
 			else
-				LocalRedirect("/bitrix/admin/cat_discsave_admin.php?lang=".urlencode(LANGUAGE_ID));
+				LocalRedirect("/bnpt/admin/cat_discsave_admin.php?lang=".urlencode(LANGUAGE_ID));
 		}
 		else
 		{
@@ -434,7 +434,7 @@ $aMenu = array(
 	array(
 		"TEXT"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_NAME_LIST"),
 		"TITLE"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_TITLE_LIST"),
-		"LINK"=>"/bitrix/admin/cat_discsave_admin.php?lang=".urlencode(LANGUAGE_ID),
+		"LINK"=>"/bnpt/admin/cat_discsave_admin.php?lang=".urlencode(LANGUAGE_ID),
 		"ICON"=>"btn_list",
 	)
 );
@@ -447,7 +447,7 @@ if (!$bReadOnly)
 		$aMenu[] = array(
 			"TEXT"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_NAME_ADD"),
 			"TITLE"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_TITLE_ADD"),
-			"LINK"=>"/bitrix/admin/cat_discsave_edit.php?lang=".urlencode(LANGUAGE_ID),
+			"LINK"=>"/bnpt/admin/cat_discsave_edit.php?lang=".urlencode(LANGUAGE_ID),
 			"ICON"=>"btn_new",
 		);
 		if (!$boolCopy)
@@ -455,13 +455,13 @@ if (!$bReadOnly)
 			$aMenu[] = array(
 				"TEXT"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_NAME_COPY"),
 				"TITLE"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_TITLE_COPY"),
-				"LINK"=>"/bitrix/admin/cat_discsave_edit.php?ID=".$ID."&action=copy&lang=".urlencode(LANGUAGE_ID),
+				"LINK"=>"/bnpt/admin/cat_discsave_edit.php?ID=".$ID."&action=copy&lang=".urlencode(LANGUAGE_ID),
 				"ICON"=>"btn_copy",
 			);
 			$aMenu[] = array(
 				"TEXT"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_NAME_DELETE"),
 				"TITLE"=>GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_TITLE_DELETE"),
-				"LINK"=>"javascript:if(confirm('".GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_CONF_DELETE")."'))window.location='/bitrix/admin/cat_discsave_admin.php?ID=".$ID."&action=delete&lang=".urlencode(LANGUAGE_ID)."&".bitrix_sessid_get()."';",
+				"LINK"=>"javascript:if(confirm('".GetMessage("BT_CAT_DISC_SAVE_EDIT_CONT_CONF_DELETE")."'))window.location='/bnpt/admin/cat_discsave_admin.php?ID=".$ID."&action=delete&lang=".urlencode(LANGUAGE_ID)."&".bitrix_sessid_get()."';",
 				"ICON"=>"btn_delete",
 			);
 		}
@@ -526,7 +526,7 @@ if ($boolCopy)
 
 $tabControl->EndEpilogContent();
 $tabControl->Begin(array(
-	"FORM_ACTION" => '/bitrix/admin/cat_discsave_edit.php?lang='.urlencode(LANGUAGE_ID),
+	"FORM_ACTION" => '/bnpt/admin/cat_discsave_edit.php?lang='.urlencode(LANGUAGE_ID),
 ));
 $tabControl->BeginNextFormTab();
 if ($ID > 0 && !$boolCopy)
@@ -726,7 +726,7 @@ $tabControl->AddEditField("SORT", GetMessage("BT_CAT_DISC_SAVE_EDIT_FIELDS_SORT"
 
 $arButtonsParams = array(
 	'disabled' => $bReadOnly,
-	'back_url' => '/bitrix/admin/cat_discsave_admin.php?lang='.urlencode(LANGUAGE_ID)
+	'back_url' => '/bnpt/admin/cat_discsave_admin.php?lang='.urlencode(LANGUAGE_ID)
 );
 
 $tabControl->Buttons($arButtonsParams);

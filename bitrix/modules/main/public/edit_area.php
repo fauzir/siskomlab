@@ -407,7 +407,7 @@ class CComponentPanel
 		{
 			$url = $APPLICATION->GetPopupLink(
 				array(
-					'URL' => "/bitrix/admin/component_props.php?".
+					'URL' => "/bnpt/admin/component_props.php?".
 					"component_name=".urlencode(CUtil::addslashes($this->componentName)). //$rel_path
 					"&component_template=".urlencode(CUtil::addslashes($this->componentTemplate)).
 					"&template_id=".urlencode(CUtil::addslashes(SITE_TEMPLATE_ID)).
@@ -452,7 +452,7 @@ class CComponentPanel
 				if($this->bSrcFound && $template->IsInTheme() == false)
 				{
 					//copy template dialog
-					$urlCopy = "/bitrix/admin/template_copy.php?".
+					$urlCopy = "/bnpt/admin/template_copy.php?".
 						"lang=".urlencode(CUtil::addslashes(LANGUAGE_ID)).
 						"&component_name=".urlencode(CUtil::addslashes($this->componentName)).
 						"&component_template=".urlencode(CUtil::addslashes($this->componentTemplate)).
@@ -481,7 +481,7 @@ class CComponentPanel
 					//edit template copied to site template
 					$arIcons[] = array(
 						'URL' => 'javascript:'.$APPLICATION->GetPopupLink(array(
-							'URL' => "/bitrix/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFile())."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
+							'URL' => "/bnpt/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFile())."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
 							'PARAMS' => array(
 								'width' => 770,
 								'height' => 470,
@@ -502,7 +502,7 @@ class CComponentPanel
 							//edit template CSS copied to site template
 							$arIcons[] = array(
 								'URL' => 'javascript:'.$APPLICATION->GetPopupLink(array(
-									'URL' => "/bitrix/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFolder()."/style.css")."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
+									'URL' => "/bnpt/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFolder()."/style.css")."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
 									'PARAMS' => array(
 										'width' => 770,
 										'height' => 470,
@@ -524,7 +524,7 @@ class CComponentPanel
 							$arIcons[] = array('SEPARATOR'=>true);
 							$arIcons[] = array(
 								'URL' => 'javascript:'.$APPLICATION->GetPopupLink(array(
-									'URL' => "/bitrix/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFolder()."/result_modifier.php")."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
+									'URL' => "/bnpt/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFolder()."/result_modifier.php")."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
 									'PARAMS' => array(
 										'width' => 770,
 										'height' => 470,
@@ -544,7 +544,7 @@ class CComponentPanel
 								$arIcons[] = array('SEPARATOR'=>true);
 							$arIcons[] = array(
 								'URL' => 'javascript:'.$APPLICATION->GetPopupLink(array(
-									'URL' => "/bitrix/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFolder()."/component_epilog.php")."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
+									'URL' => "/bnpt/admin/public_file_edit_src.php?site=".SITE_ID."&".'path='.urlencode($template->GetFolder()."/component_epilog.php")."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&lang=".LANGUAGE_ID,
 									'PARAMS' => array(
 										'width' => 770,
 										'height' => 470,

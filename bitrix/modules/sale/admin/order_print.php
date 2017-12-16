@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Print)>0 && check_bitrix_ses
 		for ($i = 0; $i < $countReportId; $i++)
 		{
 			?>
-			window.open('/bitrix/admin/sale_print.php?PROPS_ENABLE=<?=$PROPS_ENABLE?>&doc=<?echo CUtil::JSEscape($REPORT_ID[$i]) ?>&ORDER_ID=<?echo $ID ?>&<?=$urlParams?>', '_blank');
+			window.open('/bnpt/admin/sale_print.php?PROPS_ENABLE=<?=$PROPS_ENABLE?>&doc=<?echo CUtil::JSEscape($REPORT_ID[$i]) ?>&ORDER_ID=<?echo $ID ?>&<?=$urlParams?>', '_blank');
 			<?
 		}
 		?>
@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Print)>0 && check_bitrix_ses
 $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SOP_TO_LIST"),
-				"LINK" => "/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+				"LINK" => "/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 			)
 	);
 
@@ -101,7 +101,7 @@ if ($bUserCanEditOrder)
 {
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SOP_TO_EDIT"),
-			"LINK" => "/bitrix/admin/sale_order_edit.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
+			"LINK" => "/bnpt/admin/sale_order_edit.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
 		);
 }
 
@@ -109,7 +109,7 @@ if ($bUserCanViewOrder)
 {
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SOP_TO_DETAIL"),
-			"LINK" => "/bitrix/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
+			"LINK" => "/bnpt/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
 		);
 }
 
@@ -305,19 +305,19 @@ else
 						$arSysLangs[] = $arLang["LID"];
 
 					$arReports = array();
-					if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/"))
+					if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/"))
 					{
-						if ($handle = opendir($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/"))
+						if ($handle = opendir($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/"))
 						{
 							while (($file = readdir($handle)) !== false)
 							{
 								if ($file == "." || $file == ".." || $file == ".access.php")
 									continue;
 
-								if (is_file($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/".$file) && ToUpper(substr($file, -4))==".PHP")
+								if (is_file($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/".$file) && ToUpper(substr($file, -4))==".PHP")
 								{
 									$rep_title = $file;
-									$file_contents = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/".$file);
+									$file_contents = file_get_contents($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/".$file);
 
 									$rep_langs = "";
 									$arMatches = array();
@@ -346,7 +346,7 @@ else
 									}
 
 									$arReports[] = array(
-										"PATH" => $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/reports/".$file,
+										"PATH" => $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/reports/".$file,
 										"FILE" => $file,
 										"TITLE" => $rep_title
 									);

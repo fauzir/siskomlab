@@ -63,7 +63,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("FPPN_2FLIST"),
-		"LINK" => "/bitrix/admin/forum_points2post.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bnpt/admin/forum_points2post.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_list",
 	)
 );
@@ -74,13 +74,13 @@ if ($ID > 0 && $forumPermissions == "W")
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FPPN_NEW_POINT"),
-		"LINK" => "/bitrix/admin/forum_points2post_edit.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bnpt/admin/forum_points2post_edit.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_new",
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FPPN_DELETE_POINT"), 
-		"LINK" => "javascript:if(confirm('".GetMessage("FPPN_DELETE_POINT_CONFIRM")."')) window.location='/bitrix/admin/forum_points2post.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("FPPN_DELETE_POINT_CONFIRM")."')) window.location='/bnpt/admin/forum_points2post.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"ICON" => "btn_delete",
 	);
 }
@@ -135,7 +135,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($forumPermissions < "W"),
-				"back_url" => "/bitrix/admin/forum_points2post.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bnpt/admin/forum_points2post.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 	);
 $tabControl->End();

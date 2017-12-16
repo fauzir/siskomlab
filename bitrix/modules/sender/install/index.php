@@ -177,7 +177,7 @@ class sender extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", True, True);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images", true, true);
@@ -193,7 +193,7 @@ class sender extends CModule
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
 			//admin files
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
 			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/tools", $_SERVER["DOCUMENT_ROOT"]."/bitrix/tools");
 			//css
 			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/sender/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");

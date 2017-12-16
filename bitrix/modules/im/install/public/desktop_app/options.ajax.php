@@ -1,3 +1,3 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/user_options.php");
+require($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/user_options.php");
 ?>

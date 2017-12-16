@@ -16,7 +16,7 @@ $aContext = Array();
 $aContext[] = Array(
 	"TEXT" => GetMessage("FM_ML_BACK_IN_ML"),
 	"ICON" => "",
-	"LINK" => "/bitrix/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
+	"LINK" => "/bnpt/admin/fileman_medialib_admin.php?lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
 	"TITLE" => GetMessage("FM_ML_BACK_IN_ML")
 );
 $menu = new CAdminContextMenu($aContext);
@@ -106,7 +106,7 @@ $tabControl->Begin();
 			?>
 			<tr valign="top">
 				<td>
-					[<a href="/bitrix/admin/group_edit.php?ID=<?= $arGroup['ID']?>&lang=<?=LANGUAGE_ID?>"><?= $arGroup['ID']?></a>]&nbsp;<?= htmlspecialcharsex($arGroup['NAME'])?>:
+					[<a href="/bnpt/admin/group_edit.php?ID=<?= $arGroup['ID']?>&lang=<?=LANGUAGE_ID?>"><?= $arGroup['ID']?></a>]&nbsp;<?= htmlspecialcharsex($arGroup['NAME'])?>:
 				</td>
 				<td>
 					<select name="g_<?= $arGroup['ID']?>" class="typeselect">
@@ -140,7 +140,7 @@ $tabControl->Buttons(
 
 </form>
 <script>
-function colsOnChange(pSel){window.location = "/bitrix/admin/fileman_medialib_access.php?col_id=" + pSel.value + "&lang=<?= LANGUAGE_ID?>&<?= bitrix_sessid_get()?>";}
+function colsOnChange(pSel){window.location = "/bnpt/admin/fileman_medialib_access.php?col_id=" + pSel.value + "&lang=<?= LANGUAGE_ID?>&<?= bitrix_sessid_get()?>";}
 </script>
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");

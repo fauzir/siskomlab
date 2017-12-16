@@ -416,7 +416,7 @@ while ($shipment = $dbResultList->Fetch())
 	$row->AddField("ACCOUNT_NUMBER", htmlspecialcharsbx($shipment['SALE_INTERNALS_SHIPMENT_ORDER_ACCOUNT_NUMBER']));
 	$row->AddField("ALLOW_DELIVERY", ($shipment["ALLOW_DELIVERY"] == "Y") ? GetMessage("SHIPMENT_ORDER_YES") : GetMessage("SHIPMENT_ORDER_NO"));
 	$row->AddField("COMPANY_BY", "<a href=\"sale_company_edit.php?ID=".$shipment['COMPANY_ID']."&lang=".$lang.GetFilterParams("filter_")."\">".htmlspecialcharsbx($shipment['SALE_INTERNALS_SHIPMENT_COMPANY_BY_NAME'])."</a>");
-	$row->AddField("ORDER_USER_NAME", "<a href='/bitrix/admin/user_edit.php?ID=".$shipment['ORDER_USER_ID']."&lang=".$lang."'>".htmlspecialcharsbx($shipment['ORDER_USER_NAME'])." ".htmlspecialcharsbx($shipment['ORDER_USER_LAST_NAME'])."</a>");
+	$row->AddField("ORDER_USER_NAME", "<a href='/bnpt/admin/user_edit.php?ID=".$shipment['ORDER_USER_ID']."&lang=".$lang."'>".htmlspecialcharsbx($shipment['ORDER_USER_NAME'])." ".htmlspecialcharsbx($shipment['ORDER_USER_LAST_NAME'])."</a>");
 	$row->AddField("PRICE_DELIVERY", \CCurrencyLang::CurrencyFormat($shipment['PRICE_DELIVERY'], $shipment['SALE_INTERNALS_SHIPMENT_ORDER_CURRENCY']));
 
 	$row->AddField("DEDUCTED", (($shipment["DEDUCTED"] == "Y") ? GetMessage("SHIPMENT_ORDER_YES") : GetMessage("SHIPMENT_ORDER_NO"))."<br><a href=\"user_edit.php?ID=".$shipment['EMP_DEDUCTED_ID']."\">".htmlspecialcharsbx($shipment['SALE_INTERNALS_SHIPMENT_EMP_DEDUCTED_BY_LAST_NAME'])." ".htmlspecialcharsbx($shipment['SALE_INTERNALS_SHIPMENT_EMP_DEDUCTED_BY_NAME'])."</a><br>".htmlspecialcharsbx($shipment['DATE_DEDUCTED']));

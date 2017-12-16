@@ -260,7 +260,7 @@ function GenerateMailTemplate()
 {
 	if (bInProcess) return;
 
-	var url = '/bitrix/admin/form_status_mail.php?lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=$WEB_FORM_ID;?>&STATUS_ID=<?=intval($ID)?>';
+	var url = '/bnpt/admin/form_status_mail.php?lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=$WEB_FORM_ID;?>&STATUS_ID=<?=intval($ID)?>';
 	CHttpRequest.Action = function() {CloseWaitWindow(); bInProcess = false;}
 	ShowWaitWindow();
 	bInProcess = true;
@@ -308,7 +308,7 @@ function _processData(arReturn)
 			});
 
 			obCell.appendChild(obCheckbox);
-			obCell.innerHTML += '[<a class="tablebodylink" href="/bitrix/admin/message_edit.php?ID=' + arReturn.TEMPLATES[i].ID + '&lang=<?=LANGUAGE_ID?>">' + arReturn.TEMPLATES[i].ID + '</a>]&nbsp;';
+			obCell.innerHTML += '[<a class="tablebodylink" href="/bnpt/admin/message_edit.php?ID=' + arReturn.TEMPLATES[i].ID + '&lang=<?=LANGUAGE_ID?>">' + arReturn.TEMPLATES[i].ID + '</a>]&nbsp;';
 
 			var obLabel = document.createElement('LABEL');
 			obLabel.setAttribute('for', arReturn.TEMPLATES[i].ID);
@@ -353,7 +353,7 @@ function DeleteMailTemplate(template_id)
 		}
 
 		//var url = 'message_admin.php?action=delete&ID=' + template_id + '&lang=<?echo LANGUAGE_ID?>&<?=bitrix_sessid_get()?>';
-		var url = '/bitrix/admin/form_status_mail.php?action=delete&ID=' + template_id + '&lang=<?echo LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=intval($ID)?>';
+		var url = '/bnpt/admin/form_status_mail.php?action=delete&ID=' + template_id + '&lang=<?echo LANGUAGE_ID?>&<?=bitrix_sessid_get()?>&WEB_FORM_ID=<?=intval($ID)?>';
 
 		CHttpRequest.Action = __process;
 		ShowWaitWindow();
@@ -387,7 +387,7 @@ function DeleteMailTemplate(template_id)
 					$checked = (is_array($arMAIL_TEMPLATE) && in_array($mail_id, $arMAIL_TEMPLATE)) ? "checked" : "";
 				?>
 					<tr id="ft_<?=htmlspecialcharsbx($mail_id)?>">
-						<td nowrap style="padding:0px"><input type="checkbox" name="arMAIL_TEMPLATE[]" value="<?=htmlspecialcharsbx($mail_id)?>" id="<?=htmlspecialcharsbx($mail_id)?>" <?=$checked?>><?echo "[<a class=tablebodylink href='/bitrix/admin/message_edit.php?ID=".htmlspecialcharsbx($mail_id)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($mail_id). "</a>]";?>&nbsp;<label for="<?=htmlspecialcharsbx($mail_id)?>"><?=htmlspecialcharsbx($mail_name)?></label></td>
+						<td nowrap style="padding:0px"><input type="checkbox" name="arMAIL_TEMPLATE[]" value="<?=htmlspecialcharsbx($mail_id)?>" id="<?=htmlspecialcharsbx($mail_id)?>" <?=$checked?>><?echo "[<a class=tablebodylink href='/bnpt/admin/message_edit.php?ID=".htmlspecialcharsbx($mail_id)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($mail_id). "</a>]";?>&nbsp;<label for="<?=htmlspecialcharsbx($mail_id)?>"><?=htmlspecialcharsbx($mail_name)?></label></td>
 						<td nowrap style="padding:0px">&nbsp;[&nbsp;<a href="javascript:void(0)" onclick="DeleteMailTemplate('<?=htmlspecialcharsbx($mail_id)?>')"><?=GetMessage("FORM_DELETE_MAIL_TEMPLATE")?></a>&nbsp;]</td>
 					</tr>
 				<?endforeach;?>
@@ -403,7 +403,7 @@ function DeleteMailTemplate(template_id)
 					<tr>
 						<td colspan=2 style="padding:0px"><?if (count($arrMAIL)>0) echo "<br>"?>&nbsp;[&nbsp;<a title="<?=GetMessage("FORM_GENERATE_TEMPLATE_ALT")?>" onClick="GenerateMailTemplate()" href="javascript:void(0)"><?echo GetMessage("FORM_CREATE_S")?></a>&nbsp;]<?
 						if (count($arrMAIL)>0):
-							?>&nbsp;&nbsp;&nbsp;[&nbsp;<a href="/bitrix/admin/message_admin.php?find_type_id=FORM_STATUS_CHANGE_<?=$arForm['SID']?>_<?=$ID?>&set_filter=Y"><?echo GetMessage("FORM_VIEW_TEMPLATE_LIST")?></a>&nbsp;]<?
+							?>&nbsp;&nbsp;&nbsp;[&nbsp;<a href="/bnpt/admin/message_admin.php?find_type_id=FORM_STATUS_CHANGE_<?=$arForm['SID']?>_<?=$ID?>&set_filter=Y"><?echo GetMessage("FORM_VIEW_TEMPLATE_LIST")?></a>&nbsp;]<?
 						endif;
 						?></td>
 					</tr>

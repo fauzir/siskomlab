@@ -2613,7 +2613,7 @@ class FinishStep extends CWizardStep
 		{
 			$this->content .= '<style type="text/css">.instal-btn-wrap {border-top: none !important; margin-top:0; }</style>';
 			$this->content .=  "<br clear=\"all\"><div style='text-align: right; margin-top: 40px; padding-top: 18px; border-top: 1px solid #e5e5e5;'>
-				<input style='padding: 0 21px 0 11px' class='wizard-next-button' value='".GetMessage("wizard_extranet_config")."' onclick='document.location.href=\"/bitrix/admin/wizard_install.php?".bitrix_sessid_get()."&lang=".LANGUAGE_ID."&wizardName=bitrix:extranet\"'/>
+				<input style='padding: 0 21px 0 11px' class='wizard-next-button' value='".GetMessage("wizard_extranet_config")."' onclick='document.location.href=\"/bnpt/admin/wizard_install.php?".bitrix_sessid_get()."&lang=".LANGUAGE_ID."&wizardName=bitrix:extranet\"'/>
 			</div>";//$this->extranet_button = GetMessage("wizard_extranet_config");
 		}
 	}

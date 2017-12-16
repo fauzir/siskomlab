@@ -121,7 +121,7 @@ elseif($postingId)
 	$arResult['DATA']['posting']['createdBy'] = array(
 		'id' => $arResult['POSTING']['CREATED_BY'],
 		'name' => '',
-		'url' => '/bitrix/admin/user_edit.php?ID=' . intval($arResult['POSTING']['CREATED_BY']) . '&lang=' . LANGUAGE_ID,
+		'url' => '/bnpt/admin/user_edit.php?ID=' . intval($arResult['POSTING']['CREATED_BY']) . '&lang=' . LANGUAGE_ID,
 	);
 	$arResult['DATA']['posting']['createdBy']['name'] = \CUser::FormatName(
 		\CSite::GetNameFormat(true),

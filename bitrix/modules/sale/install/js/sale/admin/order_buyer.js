@@ -128,7 +128,7 @@ BX.Sale.Admin.OrderBuyer =
 	showChooseBuyerWindow: function(languageId)
 	{
 		window.open(
-			'/bitrix/admin/user_search.php?lang='+languageId+'&FN='+BX.Sale.Admin.OrderEditPage.formId+'&FC=USER_ID',
+			'/bnpt/admin/user_search.php?lang='+languageId+'&FN='+BX.Sale.Admin.OrderEditPage.formId+'&FC=USER_ID',
 			'',
 			'scrollbars=yes,resizable=yes,width=840,height=500,top='+Math.floor((screen.height - 840)/2-14)+',left='+Math.floor((screen.width - 760)/2-5)
 		);
@@ -254,9 +254,9 @@ BX.Sale.Admin.OrderBuyer =
 	updateBuyerProfileLink: function(buyerId)
 	{
 		if(BX.Sale.Admin.OrderBuyer.isFeatureSaleAccountsEnabled)
-			BX("BUYER_USER_NAME").href = "/bitrix/admin/sale_buyers_profile.php?lang="+BX.Sale.Admin.OrderEditPage.languageId+"&USER_ID="+buyerId;
+			BX("BUYER_USER_NAME").href = "/bnpt/admin/sale_buyers_profile.php?lang="+BX.Sale.Admin.OrderEditPage.languageId+"&USER_ID="+buyerId;
 		else
-			BX("BUYER_USER_NAME").href = "/bitrix/admin/user_edit.php?lang="+BX.Sale.Admin.OrderEditPage.languageId+"&ID="+buyerId;
+			BX("BUYER_USER_NAME").href = "/bnpt/admin/user_edit.php?lang="+BX.Sale.Admin.OrderEditPage.languageId+"&ID="+buyerId;
 	},
 
 	setOrderPropsArray: function(props)

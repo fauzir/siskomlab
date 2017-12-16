@@ -1,7 +1,7 @@
 <?
 $MESS["MAIN_PROLOG_ADMIN_LOGOUT"] = "Log off";
 $MESS["MAIN_PROLOG_ADMIN_TITLE"] = "Administrative section";
-$MESS["TRIAL_ATTENTION"] = "ATTENTION! Use <a href=\"/bitrix/admin/sysupdate.php\">SiteUpdate</a> technology to get the latest product version.<br>";
+$MESS["TRIAL_ATTENTION"] = "ATTENTION! Use <a href=\"/bnpt/admin/sysupdate.php\">SiteUpdate</a> technology to get the latest product version.<br>";
 $MESS["TRIAL_ATTENTION_TEXT2"] = "Evaluation period expires in";
 $MESS["TRIAL_ATTENTION_TEXT3"] = "days";
 $MESS["main_prolog_help"] = "Help";

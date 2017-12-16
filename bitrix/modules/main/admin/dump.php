@@ -73,7 +73,7 @@ if($_REQUEST['process'] == "Y")
 		if(!file_exists(DOCUMENT_ROOT.BX_ROOT."/backup/index.php"))
 		{
 			$f = fopen(DOCUMENT_ROOT.BX_ROOT."/backup/index.php","w");
-			fwrite($f,"<head><meta http-equiv=\"REFRESH\" content=\"0;URL=/bitrix/admin/index.php\"></head>");
+			fwrite($f,"<head><meta http-equiv=\"REFRESH\" content=\"0;URL=/bnpt/admin/index.php\"></head>");
 			fclose($f);
 		}
 
@@ -844,7 +844,7 @@ if (defined('DUMP_DEBUG_MODE'))
 $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("MAIN_DUMP_LIST_PAGE_TITLE"),
-		"LINK"	=> "/bitrix/admin/dump_list.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/dump_list.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("MAIN_DUMP_LIST_PAGE_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -1243,7 +1243,7 @@ function RetryRequest()
 		<tr>
 			<td colspan=2><?
 			echo BeginNote();
-			echo GetMessage('MAIN_DUMP_AUTO_WARN', array('#LINK#' => '/bitrix/admin/dump_auto.php?lang='.LANGUAGE_ID));
+			echo GetMessage('MAIN_DUMP_AUTO_WARN', array('#LINK#' => '/bnpt/admin/dump_auto.php?lang='.LANGUAGE_ID));
 			echo EndNote();
 			?></td>
 		</tr>

@@ -29,13 +29,13 @@ class CBitrixCloudMobile
 				"items" => array(
 					array(
 						"text" => GetMessage("BCL_MON_MOB_MENU_IPAGE"),
-						"data-url" => "/bitrix/admin/mobile/bitrixcloud_monitoring_ipage.php",
+						"data-url" => "/bnpt/admin/mobile/bitrixcloud_monitoring_ipage.php",
 						"data-pageid" => "bitrix_cloud_monitoring_info",
 						"push-param" => "bc"
 					),
 					array(
 						"text" => GetMessage("BCL_MON_MOB_MENU_PUSH"),
-						"data-url" => "/bitrix/admin/mobile/bitrixcloud_monitoring_push.php",
+						"data-url" => "/bnpt/admin/mobile/bitrixcloud_monitoring_push.php",
 						"data-pageid" => "bitrix_cloud_monitoring_push",
 					),
 				),

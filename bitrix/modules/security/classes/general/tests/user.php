@@ -144,7 +144,7 @@ class CSecurityUserTest
 		foreach (static::getUsersLogins($weakUsers) as $id => $login)
 		{
 			$result .= sprintf(
-				'<br><a href="/bitrix/admin/user_edit.php?ID=%d" target="_blank">%s<a/>',
+				'<br><a href="/bnpt/admin/user_edit.php?ID=%d" target="_blank">%s<a/>',
 				$id, $login
 			);
 		}

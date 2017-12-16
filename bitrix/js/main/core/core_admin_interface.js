@@ -90,7 +90,7 @@ BX.adminPanel.prototype.addDesktop = function()
 {
 	(new BX.CAdminDialog({
 		'content_url': '/bitrix/components/bitrix/desktop/admin_settings.php?lang='+BX.message('LANGUAGE_ID')+'&bxpublic=Y',
-		'content_post': 'sessid='+BX.bitrix_sessid()+'&type=desktop&desktop_page=0&action=new&desktop_backurl=/bitrix/admin/',
+		'content_post': 'sessid='+BX.bitrix_sessid()+'&type=desktop&desktop_page=0&action=new&desktop_backurl=/bnpt/admin/',
 		'draggable': true,
 		'resizable': true,
 		'buttons': [BX.CAdminDialog.btnSave, BX.CAdminDialog.btnCancel]
@@ -241,7 +241,7 @@ BX.adminPanel.prototype.hideNotify = function(element)
 		if (notifyId > 0)
 		{
 			BX.ajax({
-				url: '/bitrix/admin/admin_notify.php',
+				url: '/bnpt/admin/admin_notify.php',
 				method: 'POST',
 				dataType: 'json',
 				data: {'ID' : notifyId, 'sessid': BX.bitrix_sessid()}
@@ -986,7 +986,7 @@ BX.adminMenu.prototype.toggleDynSection = function(padding, cell, module_id, div
 	}, this), 200);
 
 	BX.ajax.get(
-		'/bitrix/admin/get_menu.php',
+		'/bnpt/admin/get_menu.php',
 		{
 			lang: BX.message('LANGUAGE_ID'),
 			admin_mnu_module_id: module_id,
@@ -1322,7 +1322,7 @@ BX.adminMenuResizer.prototype.Maximize = function()
 /*************************** admin favorites **********************************/
 
 BX.adminFav = {
-	url: '/bitrix/admin/favorite_act.php',
+	url: '/bnpt/admin/favorite_act.php',
 	lastId: null,
 	add: function(nameToSave,urlToSave,menu_id,module_id,callback)
 	{
@@ -2682,7 +2682,7 @@ BX.adminTabControl.prototype.SaveSettings =  function(el)
 		sParam += '&p[0][d]=Y';
 	sParam += '&p[0][v][tabs]=' + BX.util.urlencode(sTabs);
 
-	var options_url = '/bitrix/admin/user_options.php?lang='+BX.message('LANGUAGE_ID')+'&sessid=' + BX.bitrix_sessid();
+	var options_url = '/bnpt/admin/user_options.php?lang='+BX.message('LANGUAGE_ID')+'&sessid=' + BX.bitrix_sessid();
 	options_url += '&action=delete&c=form&n='+this.name+'_disabled';
 
 	BX.WindowManager.Get().showWait(el);
@@ -2707,7 +2707,7 @@ BX.adminTabControl.prototype.DisableSettings = function()
 	sParam += '&p[0][c]=form';
 	sParam += '&p[0][n]='+encodeURIComponent(this.name+'_disabled');
 	sParam += '&p[0][v][disabled]=Y';
-	request.Send('/bitrix/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
+	request.Send('/bnpt/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
 };
 
 BX.adminTabControl.prototype.EnableSettings = function()
@@ -2718,7 +2718,7 @@ BX.adminTabControl.prototype.EnableSettings = function()
 	sParam += '&c=form';
 	sParam += '&n='+encodeURIComponent(this.name)+'_disabled';
 	sParam += '&action=delete';
-	request.Send('/bitrix/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
+	request.Send('/bnpt/admin/user_options.php?lang=' + phpVars.LANGUAGE_ID + sParam + '&sessid='+phpVars.bitrix_sessid);
 };
 
 BX.adminViewTabControl = function(aTabs)
@@ -4204,7 +4204,7 @@ BX.AdminFilter = function(filter_id, aRows)
 				alert(BX.message('JSADM_FLT_DEL_ERROR'));
 		};
 
-		BX.ajax.post('/bitrix/admin/filter_act.php', data, callback);
+		BX.ajax.post('/bnpt/admin/filter_act.php', data, callback);
 
 	};
 
@@ -4256,7 +4256,7 @@ BX.AdminFilter = function(filter_id, aRows)
 				alert(BX.message('JSADM_FLT_SAVE_ERROR'));
 		};
 
-		BX.ajax.post('/bitrix/admin/filter_act.php', data, callback);
+		BX.ajax.post('/bnpt/admin/filter_act.php', data, callback);
 	};
 
 
@@ -4320,7 +4320,7 @@ BX.AdminFilter = function(filter_id, aRows)
 				alert(BX.message('JSADM_FLT_SAVE_ERROR'));
 		};
 
-		BX.ajax.post('/bitrix/admin/filter_act.php', data, callback);
+		BX.ajax.post('/bnpt/admin/filter_act.php', data, callback);
 
 		return data;
 	};
@@ -5054,7 +5054,7 @@ BX.AdminFilter = function(filter_id, aRows)
 			'lang': BX.message("LANGUAGE_ID")
 		};
 
-		BX.ajax.post('/bitrix/admin/filter_act.php', data);
+		BX.ajax.post('/bnpt/admin/filter_act.php', data);
 	};
 
 	this.SaveFilteredId = function(id)
@@ -5067,7 +5067,7 @@ BX.AdminFilter = function(filter_id, aRows)
 			'lang': BX.message("LANGUAGE_ID")
 		};
 
-		BX.ajax.post('/bitrix/admin/filter_act.php', data);
+		BX.ajax.post('/bnpt/admin/filter_act.php', data);
 	};
 
 	this.ToggleAllFilterRows = function(on)

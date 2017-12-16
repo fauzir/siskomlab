@@ -18,14 +18,14 @@ $this->createFrame()->begin();
 		<div class="inner-dots">
 			<div class="left"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo GetMessage("STATT_HITS")?></a><?
+					?><a href="/bnpt/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo GetMessage("STATT_HITS")?></a><?
 				else :
 					?><?echo GetMessage("STATT_HITS")?><?
 				endif;
 			?></div>
 			<div class="right"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TOTAL_HITS"]?></a><?
+					?><a href="/bnpt/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TOTAL_HITS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["TOTAL_HITS"]?><?
 				endif;
@@ -37,7 +37,7 @@ $this->createFrame()->begin();
 		<div class="inner">
 			<div class="right today"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;find_date1=<?echo $arResult["TODAY"]?>&amp;find_date2=<?echo $arResult["TODAY"]?>&amp;set_filter=Y"><?echo $arResult["STATISTIC"]["TODAY_HITS"]?></a><?
+					?><a href="/bnpt/admin/hit_list.php?lang=<?=LANGUAGE_ID?>&amp;find_date1=<?echo $arResult["TODAY"]?>&amp;find_date2=<?echo $arResult["TODAY"]?>&amp;set_filter=Y"><?echo $arResult["STATISTIC"]["TODAY_HITS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["TODAY_HITS"]?><?
 				endif;
@@ -50,14 +50,14 @@ $this->createFrame()->begin();
 		<div class="inner-dots">
 			<div class="left"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/stat_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo GetMessage("STATT_HOSTS")?></a><?
+					?><a href="/bnpt/admin/stat_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo GetMessage("STATT_HOSTS")?></a><?
 				else :
 					?><?echo GetMessage("STATT_HOSTS")?><?
 				endif;
 			?></div>
 			<div class="right"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/stat_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TOTAL_HOSTS"]?></a><?
+					?><a href="/bnpt/admin/stat_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TOTAL_HOSTS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["TOTAL_HOSTS"]?><?
 				endif;
@@ -69,7 +69,7 @@ $this->createFrame()->begin();
 		<div class="inner">
 			<div class="right today"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/stat_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TODAY_HOSTS"]?></a><?
+					?><a href="/bnpt/admin/stat_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TODAY_HOSTS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["TODAY_HOSTS"]?><?
 				endif;
@@ -82,14 +82,14 @@ $this->createFrame()->begin();
 		<div class="inner-dots">
 			<div class="left"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo GetMessage("STATT_VISITORS")?></a><?
+					?><a href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo GetMessage("STATT_VISITORS")?></a><?
 				else :
 					?><?echo GetMessage("STATT_VISITORS")?><?
 				endif;
 			?></div>
 			<div class="right"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TOTAL_GUESTS"]?></a><?
+					?><a href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;del_filter=Y"><?echo $arResult["STATISTIC"]["TOTAL_GUESTS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["TOTAL_GUESTS"]?><?
 				endif;
@@ -101,7 +101,7 @@ $this->createFrame()->begin();
 		<div class="inner">
 			<div class="right today"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;find_period_date1=<?echo $arResult["TODAY"]?>&amp;find_period_date2=<?echo $arResult["TODAY"]?>&amp;set_filter=Y"><?echo $arResult["STATISTIC"]["TODAY_GUESTS"]?></a><?
+					?><a href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&amp;find_period_date1=<?echo $arResult["TODAY"]?>&amp;find_period_date2=<?echo $arResult["TODAY"]?>&amp;set_filter=Y"><?echo $arResult["STATISTIC"]["TODAY_GUESTS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["TODAY_GUESTS"]?><?
 				endif;
@@ -113,7 +113,7 @@ $this->createFrame()->begin();
 		<div class="inner">
 			<div class="right today"><?
 				if ($arResult["IS_ADMIN"]) :
-					?><a href="/bitrix/admin/users_online.php?lang=<?=LANGUAGE_ID?>"><?echo $arResult["STATISTIC"]["ONLINE_GUESTS"]?></a><?
+					?><a href="/bnpt/admin/users_online.php?lang=<?=LANGUAGE_ID?>"><?echo $arResult["STATISTIC"]["ONLINE_GUESTS"]?></a><?
 				else :
 					?><?echo $arResult["STATISTIC"]["ONLINE_GUESTS"]?><?
 				endif;

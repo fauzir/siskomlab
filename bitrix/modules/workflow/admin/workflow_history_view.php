@@ -159,7 +159,7 @@ $tabControl->BeginNextTab();
 	</tr>
 	<tr>
 		<td><?echo GetMessage("FLOW_HIST_VIEW_SITE")?></td>
-		<td><a href="/bitrix/admin/site_edit.php?lang=<?=LANG?>&LID=<?=$str_SITE_ID?>" title="<?=GetMessage('FLOW_SITE_ALT')?>"><?=$str_SITE_ID?></a></td>
+		<td><a href="/bnpt/admin/site_edit.php?lang=<?=LANG?>&LID=<?=$str_SITE_ID?>" title="<?=GetMessage('FLOW_SITE_ALT')?>"><?=$str_SITE_ID?></a></td>
 	</tr>
 	<tr>
 		<td><?=GetMessage("FLOW_FILENAME")?></td>

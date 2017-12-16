@@ -53,9 +53,9 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && $POST_RIGHT=="W" &&
 	if($res)
 	{
 		if($apply!="")
-			LocalRedirect("/bitrix/admin/rubric_edit.php?ID=".$ID."&mess=ok&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bnpt/admin/rubric_edit.php?ID=".$ID."&mess=ok&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bitrix/admin/rubric_admin.php?lang=".LANG);
+			LocalRedirect("/bnpt/admin/rubric_admin.php?lang=".LANG);
 	}
 	else
 	{
@@ -248,7 +248,7 @@ if(count($arTemplates)>0):
 			<td>
 				<label for="TEMPLATE<?=$i?>" title="<?=$arTemplate["DESCRIPTION"]?>"><?=(strlen($arTemplate["NAME"])>0?$arTemplate["NAME"]:GetMessage("rub_no_name"))?></label><br>
 				<?if(IsModuleInstalled("fileman")):?>
-					<a title="<?=GetMessage("rub_manage")?>" href="/bitrix/admin/fileman_admin.php?path=<?=urlencode("/".$arTemplate["PATH"])?>"><?=$arTemplate["PATH"]?></a>
+					<a title="<?=GetMessage("rub_manage")?>" href="/bnpt/admin/fileman_admin.php?path=<?=urlencode("/".$arTemplate["PATH"])?>"><?=$arTemplate["PATH"]?></a>
 				<?else:?>
 					<?=$arTemplate["PATH"]?>
 				<?endif?>

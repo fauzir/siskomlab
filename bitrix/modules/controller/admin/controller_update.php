@@ -43,19 +43,19 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $arMenu = array(
 	array(
 		"TEXT" => GetMessage("SUP_CHECK_UPDATES"),
-		"LINK" => "/bitrix/admin/controller_update.php?refresh=Y&lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/controller_update.php?refresh=Y&lang=".LANGUAGE_ID,
 		"ICON"=>"btn_update",
 	),
 	array("SEPARATOR" => "Y"),
 	array(
 		"TEXT" => GetMessage("SUP_SETTINGS"),
-		"LINK" => "/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=controller&back_url_settings=%2Fbitrix%2Fadmin%2Fcontroller_update.php%3Flang%3D".LANGUAGE_ID."",
+		"LINK" => "/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=controller&back_url_settings=%2Fbitrix%2Fadmin%2Fcontroller_update.php%3Flang%3D".LANGUAGE_ID."",
 	),
 	/*
 	array("SEPARATOR" => "Y"),
 	array(
 		"TEXT" => GetMessage("SUP_HISTORY"),
-		"LINK" => "/bitrix/admin/sysupdate_log.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/sysupdate_log.php?lang=".LANGUAGE_ID,
 		"ICON"=>"btn_update_log",
 	)
 	*/
@@ -281,7 +281,7 @@ $tabControl->BeginNextTab();
 							}
 						}
 
-						CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=licence&<?= bitrix_sessid_get() ?>');
+						CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=licence&<?= bitrix_sessid_get() ?>');
 					}
 
 					function CloseLicence()
@@ -441,7 +441,7 @@ $tabControl->BeginNextTab();
 							}
 						}
 
-						CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=key&<?= bitrix_sessid_get() ?>&NEW_LICENSE_KEY=' + escape(document.licence_key_form.NEW_LICENSE_KEY.value));
+						CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=key&<?= bitrix_sessid_get() ?>&NEW_LICENSE_KEY=' + escape(document.licence_key_form.NEW_LICENSE_KEY.value));
 					}
 					//-->
 					</SCRIPT>
@@ -719,7 +719,7 @@ $tabControl->BeginNextTab();
 								}
 							}
 
-							CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=activate&<?= bitrix_sessid_get() ?>&' + param);
+							CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=activate&<?= bitrix_sessid_get() ?>&' + param);
 						}
 
 						function CloseActivateForm()
@@ -783,7 +783,7 @@ $tabControl->BeginNextTab();
 									}
 								}
 
-								CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=updateupdate&<?= bitrix_sessid_get() ?>');
+								CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=updateupdate&<?= bitrix_sessid_get() ?>');
 							}
 							//-->
 							</SCRIPT>
@@ -840,7 +840,7 @@ $tabControl->BeginNextTab();
 							}
 						}
 
-						CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=register&<?= bitrix_sessid_get() ?>');
+						CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=register&<?= bitrix_sessid_get() ?>');
 					}
 					//-->
 					</SCRIPT>
@@ -912,7 +912,7 @@ $tabControl->BeginNextTab();
 						}
 
 						if (requestedModules.length > 0)
-							CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=sources&<?= bitrix_sessid_get() ?>&requested_modules=' + requestedModules);
+							CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=sources&<?= bitrix_sessid_get() ?>&requested_modules=' + requestedModules);
 						else
 							LoadSourcesResult("FIN");
 					}
@@ -1222,7 +1222,7 @@ $tabControl->BeginNextTab();
 						}
 					}
 
-					CHttpRequest.Send('/bitrix/admin/controller_update_call.php?' + aStrParams + "&<?= bitrix_sessid_get() ?>&query_type=" + param);
+					CHttpRequest.Send('/bnpt/admin/controller_update_call.php?' + aStrParams + "&<?= bitrix_sessid_get() ?>&query_type=" + param);
 				}
 
 				function InstallUpdatesDoStep(data)
@@ -1858,7 +1858,7 @@ $tabControl->BeginNextTab();
 
 				if (param.length > 0)
 				{
-					CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=coupon&<?= bitrix_sessid_get() ?>&COUPON=' + escape(param));
+					CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=coupon&<?= bitrix_sessid_get() ?>&COUPON=' + escape(param));
 				}
 				else
 				{
@@ -1921,7 +1921,7 @@ $tabControl->BeginNextTab();
 					}
 				}
 
-				CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=stability&<?= bitrix_sessid_get() ?>&STABILITY=' + escape("<?= $stableVersionsOnly ?>"));
+				CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=stability&<?= bitrix_sessid_get() ?>&STABILITY=' + escape("<?= $stableVersionsOnly ?>"));
 			}
 			//-->
 			</SCRIPT>
@@ -1977,7 +1977,7 @@ $tabControl->BeginNextTab();
 
 				if (param.length > 0)
 				{
-					CHttpRequest.Send('/bitrix/admin/controller_update_act.php?query_type=mail&<?= bitrix_sessid_get() ?>&EMAIL=' + escape(param));
+					CHttpRequest.Send('/bnpt/admin/controller_update_act.php?query_type=mail&<?= bitrix_sessid_get() ?>&EMAIL=' + escape(param));
 				}
 				else
 				{

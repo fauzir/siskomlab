@@ -150,7 +150,7 @@ class timeman extends CModule
 
 			CopyDirFiles(
 				$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/admin",
-				$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin",
+				$_SERVER["DOCUMENT_ROOT"]."/bnpt/admin",
 				true, true
 			);
 

@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"
 	if($_REQUEST['save'] != "" && $_GET["return_url"] != "")
 		LocalRedirect($_GET["return_url"]);
 
-	LocalRedirect("/bitrix/admin/security_stat_activity.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
+	LocalRedirect("/bnpt/admin/security_stat_activity.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
 }
 
 $DEFENCE_ON = COption::GetOptionString($module_id, "DEFENCE_ON");
@@ -123,7 +123,7 @@ $tabControl->BeginNextTab();
 <?if (CModule::IncludeModule("fileman")):?>
 	<tr>
 		<td><?echo GetMessage("SEC_STATACT_503_TEMPLATE")?>:</td>
-		<td><a href="/bitrix/admin/fileman_file_edit.php?lang=<?=LANGUAGE_ID?>&amp;full_src=Y&amp;path=%2Fbitrix%2Factivity_limit.php"><?echo GetMessage("SEC_STATACT_GRABBER_EDIT_503_TEMPLATE_LINK")?></a></td>
+		<td><a href="/bnpt/admin/fileman_file_edit.php?lang=<?=LANGUAGE_ID?>&amp;full_src=Y&amp;path=%2Fbitrix%2Factivity_limit.php"><?echo GetMessage("SEC_STATACT_GRABBER_EDIT_503_TEMPLATE_LINK")?></a></td>
 	</tr>
 <?endif;?>
 	<tr>
@@ -139,7 +139,7 @@ $tabControl->BeginNextTab();
 		<td><input size="3" type="text" name="DEFENCE_MAX_STACK_HITS" id="DEFENCE_MAX_STACK_HITS" value="<?=htmlspecialcharsbx($DEFENCE_MAX_STACK_HITS)?>">&nbsp;<?echo GetMessage("SEC_STATACT_DEFENCE_MAX_HITS_MEAS")?></td>
 	</tr>
 	<tr>
-		<td nowrap><label for="DEFENCE_LOG"><?echo GetMessage("SEC_STATACT_DEFENCE_LOG", array("#HREF#"=>"/bitrix/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=STAT_ACTIVITY_LIMIT"))?></label></td>
+		<td nowrap><label for="DEFENCE_LOG"><?echo GetMessage("SEC_STATACT_DEFENCE_LOG", array("#HREF#"=>"/bnpt/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=STAT_ACTIVITY_LIMIT"))?></label></td>
 		<td><?echo InputType("checkbox", "DEFENCE_LOG", "Y", $DEFENCE_LOG)?></td>
 	</tr>
 <?

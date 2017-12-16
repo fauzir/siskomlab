@@ -109,7 +109,7 @@ class CCalendarConvert
 		}
 
 		$this->AddTypesFromIblockType();
-		?><script>top.location = "/bitrix/admin/calendar_convert.php?lang=<?= LANG?>&content_parsed=Y";</script><?
+		?><script>top.location = "/bnpt/admin/calendar_convert.php?lang=<?= LANG?>&content_parsed=Y";</script><?
 	}
 
 	function ParseFile($file)
@@ -1016,7 +1016,7 @@ if (CModule::IncludeModule("intranet") && CModule::IncludeModule("calendar"))
 	}
 }
 	?>
-	<form style="border: 2px solid #B8C1DD; padding: 10px; background: #F8F8F8;" method="post" name="calendar_form" action="/bitrix/admin/calendar_convert.php" enctype="multipart/form-data" encoding="multipart/form-data">
+	<form style="border: 2px solid #B8C1DD; padding: 10px; background: #F8F8F8;" method="post" name="calendar_form" action="/bnpt/admin/calendar_convert.php" enctype="multipart/form-data" encoding="multipart/form-data">
 		<?= bitrix_sessid_post();?>
 		<input type="hidden" name="lang" value="<?=LANG?>" />
 		<h1><?= GetMessage('CAL_CONVERT')?></h1>
@@ -1217,7 +1217,7 @@ if (CModule::IncludeModule("intranet") && CModule::IncludeModule("calendar"))
 		</div>
 
 		<input id="bxconv_but_start" type="button" value="<?= GetMessage('CAL_CONVERT_START')?>" onclick="startConvert();"/>
-		<input id="bxconv_go_to_settings" type="button" value="<?= GetMessage('CAL_GO_TO_SETTINGS')?>" onclick="window.location='/bitrix/admin/settings.php?lang=<?= LANG?>&mid=calendar';" style="display: none;"/>
+		<input id="bxconv_go_to_settings" type="button" value="<?= GetMessage('CAL_GO_TO_SETTINGS')?>" onclick="window.location='/bnpt/admin/settings.php?lang=<?= LANG?>&mid=calendar';" style="display: none;"/>
 		<?endif;?>
 	</form>
 <script>

@@ -1525,38 +1525,38 @@ class CSaleReportSaleOrderHelper extends CBaseSaleReportHelper
 							true))
 				{
 					$userDef = substr($elem['name'], 0, -11);
-					$href = array('pattern' => '/bitrix/admin/sale_buyers_profile.php?USER_ID=#'.$userDef.'.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_buyers_profile.php?USER_ID=#'.$userDef.'.ID#&lang='.LANG);
 				}
 			}
 			else if ($field->getEntity()->getName() == 'Order')
 			{
 				if ($elem['name'] === 'ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_view.php?ID=#ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_view.php?ID=#ID#&lang='.LANG);
 				}
 			}
 			else if ($field->getEntity()->getName() === 'Payment')
 			{
 				if ($elem['name'] === 'Payment:ORDER.ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_payment_edit.php?order_id=#Payment:ORDER.ORDER_ID#&payment_id=#Payment:ORDER.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_payment_edit.php?order_id=#Payment:ORDER.ORDER_ID#&payment_id=#Payment:ORDER.ID#&lang='.LANG);
 				}
 				else if ($elem['name'] === 'Payment:ORDER.PAY_SYSTEM_ID'
 					|| $elem['name'] === 'Payment:ORDER.PAY_SYSTEM_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_pay_system_edit.php?ID=#Payment:ORDER.PAY_SYSTEM_ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_pay_system_edit.php?ID=#Payment:ORDER.PAY_SYSTEM_ID#&lang='.LANG);
 				}
 			}
 			else if ($field->getEntity()->getName() === 'Shipment')
 			{
 				if ($elem['name'] === 'Shipment:REPS_ORDER.ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_shipment_edit.php?order_id=#Shipment:REPS_ORDER.ORDER_ID#&shipment_id=#Shipment:REPS_ORDER.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_shipment_edit.php?order_id=#Shipment:REPS_ORDER.ORDER_ID#&shipment_id=#Shipment:REPS_ORDER.ID#&lang='.LANG);
 				}
 				else if ($elem['name'] === 'Shipment:REPS_ORDER.DELIVERY_ID'
 					|| $elem['name'] === 'Shipment:REPS_ORDER.DELIVERY_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_delivery_service_edit.php?ID=#Shipment:REPS_ORDER.DELIVERY_ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_delivery_service_edit.php?ID=#Shipment:REPS_ORDER.DELIVERY_ID#&lang='.LANG);
 				}
 			}
 		}
@@ -2051,7 +2051,7 @@ class CSaleReportUserHelper extends CBaseSaleReportHelper
 			{
 				if ($elem['name'] == 'SHORT_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_buyers_profile.php?USER_ID=#ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_buyers_profile.php?USER_ID=#ID#&lang='.LANG);
 				}
 				else if ($elem['name'] == 'EMAIL')
 				{
@@ -2059,7 +2059,7 @@ class CSaleReportUserHelper extends CBaseSaleReportHelper
 				}
 				else if ($elem['name'] == 'Bitrix\Sale\Internals\Order:USER.EMP_STATUS_BY.SHORT_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_buyers_profile.php?USER_ID=#Bitrix\Sale\Internals\Order:USER.EMP_STATUS_BY.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_buyers_profile.php?USER_ID=#Bitrix\Sale\Internals\Order:USER.EMP_STATUS_BY.ID#&lang='.LANG);
 				}
 				else if ($elem['name'] == 'Bitrix\Sale\Internals\Order:USER.EMP_STATUS_BY.EMAIL')
 				{
@@ -2067,7 +2067,7 @@ class CSaleReportUserHelper extends CBaseSaleReportHelper
 				}
 				else if ($elem['name'] == 'Bitrix\Sale\Internals\Order:USER.EMP_CANCELED_BY.SHORT_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_buyers_profile.php?USER_ID=#Bitrix\Sale\Internals\Order:USER.EMP_CANCELED_BY.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_buyers_profile.php?USER_ID=#Bitrix\Sale\Internals\Order:USER.EMP_CANCELED_BY.ID#&lang='.LANG);
 				}
 				else if ($elem['name'] == 'Bitrix\Sale\Internals\Order:USER.EMP_CANCELED_BY.EMAIL')
 				{
@@ -2078,7 +2078,7 @@ class CSaleReportUserHelper extends CBaseSaleReportHelper
 			{
 				if ($elem['name'] == 'Bitrix\Sale\Internals\Order:USER.ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_view.php?ID=#Bitrix\Sale\Internals\Order:USER.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_view.php?ID=#Bitrix\Sale\Internals\Order:USER.ID#&lang='.LANG);
 				}
 			}
 		}
@@ -2770,51 +2770,51 @@ class CSaleReportSaleBasketHelper extends CBaseSaleReportHelper
 					true))
 				{
 					$userDef = substr($elem['name'], 0, -11);
-					$href = array('pattern' => '/bitrix/admin/sale_buyers_profile.php?USER_ID=#'.$userDef.'.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_buyers_profile.php?USER_ID=#'.$userDef.'.ID#&lang='.LANG);
 				}
 			}
 			elseif ($field->getEntity()->getName() == 'Basket')
 			{
 				if ($elem['name'] == 'NAME' || $elem['name'] == 'NAME_WITH_IDENT')
 				{
-					$href = array('pattern' => '/bitrix/admin/cat_product_edit.php?IBLOCK_ID='.
+					$href = array('pattern' => '/bnpt/admin/cat_product_edit.php?IBLOCK_ID='.
 						'#PRODUCT.IBLOCK.IBLOCK.ID#&type=#PRODUCT.IBLOCK.IBLOCK.IBLOCK_TYPE_ID#&ID='.
 						'#PRODUCT_ID#&lang='.LANG.'&WF=Y');
 				}
 				elseif ($elem['name'] == 'ORDER_ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_view.php?ID=#ORDER_ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_view.php?ID=#ORDER_ID#&lang='.LANG);
 				}
 			}
 			else if ($field->getEntity()->getName() == 'Order')
 			{
 				if ($elem['name'] === 'ORDER.ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_view.php?ID=#ORDER.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_view.php?ID=#ORDER.ID#&lang='.LANG);
 				}
 			}
 			else if ($field->getEntity()->getName() === 'Payment')
 			{
 				if ($elem['name'] === 'ORDER.Payment:ORDER.ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_payment_edit.php?order_id=#ORDER.Payment:ORDER.ORDER_ID#&payment_id=#ORDER.Payment:ORDER.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_payment_edit.php?order_id=#ORDER.Payment:ORDER.ORDER_ID#&payment_id=#ORDER.Payment:ORDER.ID#&lang='.LANG);
 				}
 				else if ($elem['name'] === 'ORDER.Payment:ORDER.PAY_SYSTEM_ID'
 					|| $elem['name'] === 'ORDER.Payment:ORDER.PAY_SYSTEM_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_pay_system_edit.php?ID=#ORDER.Payment:ORDER.PAY_SYSTEM_ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_pay_system_edit.php?ID=#ORDER.Payment:ORDER.PAY_SYSTEM_ID#&lang='.LANG);
 				}
 			}
 			else if ($field->getEntity()->getName() === 'Shipment')
 			{
 				if ($elem['name'] === 'ORDER.Shipment:REPS_ORDER.ID')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_order_shipment_edit.php?order_id=#ORDER.Shipment:REPS_ORDER.ORDER_ID#&shipment_id=#ORDER.Shipment:REPS_ORDER.ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_order_shipment_edit.php?order_id=#ORDER.Shipment:REPS_ORDER.ORDER_ID#&shipment_id=#ORDER.Shipment:REPS_ORDER.ID#&lang='.LANG);
 				}
 				else if ($elem['name'] === 'ORDER.Shipment:REPS_ORDER.DELIVERY_ID'
 					|| $elem['name'] === 'ORDER.Shipment:REPS_ORDER.DELIVERY_NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/sale_delivery_service_edit.php?ID=#ORDER.Shipment:REPS_ORDER.DELIVERY_ID#&lang='.LANG);
+					$href = array('pattern' => '/bnpt/admin/sale_delivery_service_edit.php?ID=#ORDER.Shipment:REPS_ORDER.DELIVERY_ID#&lang='.LANG);
 				}
 			}
 		}
@@ -3456,7 +3456,7 @@ class CSaleReportSaleProductHelper extends CBaseSaleReportHelper
 			{
 				if ($elem['name'] == 'NAME')
 				{
-					$href = array('pattern' => '/bitrix/admin/cat_product_edit.php?IBLOCK_ID='.
+					$href = array('pattern' => '/bnpt/admin/cat_product_edit.php?IBLOCK_ID='.
 						'#IBLOCK.IBLOCK.ID#&type=#IBLOCK.IBLOCK.IBLOCK_TYPE_ID#&ID='.
 						'#ID#&lang='.LANG.'&WF=Y');
 				}

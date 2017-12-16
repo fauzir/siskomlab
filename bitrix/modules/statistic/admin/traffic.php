@@ -140,43 +140,43 @@ elseif (count($lAdmin->arFilterErrors)==0) :
 <table cellspacing="0" cellpadding="0" class="graph" border="0" align="center">
 <tr>
 	<td valign="center" class="graph">
-		<img class="graph" src="/bitrix/admin/traffic_graph.php?<?=GetFilterParams($FilterArr1)?>&<?=GetFilterParams($FilterArr2)?>&width=<?=$width?>&height=<?=$height?>&lang=<?=LANG?>&rand=<?=rand()?>&find_graph_type=<?=$graph_type?>" width="<?=$width?>" height="<?=$height?>">
+		<img class="graph" src="/bnpt/admin/traffic_graph.php?<?=GetFilterParams($FilterArr1)?>&<?=GetFilterParams($FilterArr2)?>&width=<?=$width?>&height=<?=$height?>&lang=<?=LANG?>&rand=<?=rand()?>&find_graph_type=<?=$graph_type?>" width="<?=$width?>" height="<?=$height?>">
 	</td>
 	<td valign="center">
 	<table cellpadding="2" cellspacing="0" border="0" class="legend">
 		<?if ($find_hit=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["HITS"]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["HITS"]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_HITS_2")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_host=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["HOSTS"]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["HOSTS"]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_HOSTS_2")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_session=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["SESSIONS"]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["SESSIONS"]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_SESSIONS_2")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_event=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["EVENTS"]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["EVENTS"]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_EVENTS_2")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_guest=="Y" && !$site_filtered):?>
 		<tr>
-			<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["GUESTS"]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["GUESTS"]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_GUESTS_2")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_new_guest=="Y" && !$site_filtered):?>
 		<tr>
-			<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["NEW_GUESTS"]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["NEW_GUESTS"]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_NEW_GUESTS_2")?></td>
 		</tr>
 		<?endif;?>

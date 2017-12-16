@@ -498,7 +498,7 @@ if ((($res = CCheckListResult::GetList(Array(),Array("REPORT"=>"N"))->Fetch()) |
 				{
 					title: head_name+" - "+testID,
 					head: "",
-					content_url: "/bitrix/admin/checklist_detail.php?TEST_ID="+testID+"&lang=<?=LANG;?>&bxpublic=Y",
+					content_url: "/bnpt/admin/checklist_detail.php?TEST_ID="+testID+"&lang=<?=LANG;?>&bxpublic=Y",
 					icon: "head-block",
 					resizable: false,
 					draggable: true,
@@ -781,7 +781,7 @@ if ((($res = CCheckListResult::GetList(Array(),Array("REPORT"=>"N"))->Fetch()) |
 					break;
 				}
 			}
-			BX.ajax.post("/bitrix/admin/checklist.php"+"?lang=<?=LANG;?>&bxpublic=Y&<?=bitrix_sessid_get()?>",data,callback);
+			BX.ajax.post("/bnpt/admin/checklist.php"+"?lang=<?=LANG;?>&bxpublic=Y&<?=bitrix_sessid_get()?>",data,callback);
 		}
 
 		/*function SaveReport()
@@ -1237,7 +1237,7 @@ function ShowReportList()
 						<td><?=$arReport["TOTAL"]?></td>
 						<td><?=$arReport["SUCCESS"]?></td>
 						<td><?=$arReport["FAILED"]?></td>
-						<td><a class="checklist-archive-table-detail" href="/bitrix/admin/checklist_report.php?ID=<?=$arReport["ID"];?>&lang=<?=LANG;?>"><?=GetMessage("CL_REPORT_TABLE_DETAIL");?></a></td>
+						<td><a class="checklist-archive-table-detail" href="/bnpt/admin/checklist_report.php?ID=<?=$arReport["ID"];?>&lang=<?=LANG;?>"><?=GetMessage("CL_REPORT_TABLE_DETAIL");?></a></td>
 						<td>
 							<?if ($arReport["SENDED_TO_BITRIX"] == 'N' && $k == 0) {?>
 								<?if(!$exists_sended_to_bitrix) {?>

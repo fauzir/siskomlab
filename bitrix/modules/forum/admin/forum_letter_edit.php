@@ -54,7 +54,7 @@
 	$aMenu = array(
 		array(
 			"TEXT" => GetMessage("FLTR_LIST"),
-			"LINK" => "/bitrix/admin/forum_letter.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
+			"LINK" => "/bnpt/admin/forum_letter.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
 			"ICON" => "btn_list",
 		)
 	);
@@ -64,12 +64,12 @@
 		$aMenu[] = array("SEPARATOR" => "Y");
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FLTR_NEW"),
-			"LINK" => "/bitrix/admin/forum_dictionary_edit.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
+			"LINK" => "/bnpt/admin/forum_dictionary_edit.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
 			"ICON" => "btn_new",
 		);
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FLTR_DEL"), 
-			"LINK" => "javascript:if(confirm('".GetMessage("FLTR_DEL_CONFIRM")."')) window.location='/bitrix/admin/forum_letter.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG."&action=delete&ID[]=".$ID."&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessage("FLTR_DEL_CONFIRM")."')) window.location='/bnpt/admin/forum_letter.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG."&action=delete&ID[]=".$ID."&".bitrix_sessid_get()."';",
 			"ICON" => "btn_delete",
 		);
 	}
@@ -116,7 +116,7 @@
 <?$tabControl->Buttons(
 		array(
 				"disabled" => (!$forumPermWrite),
-				"back_url" => "/bitrix/admin/forum_letter.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG
+				"back_url" => "/bnpt/admin/forum_letter.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG
 			)
 	);?>
 <?$tabControl->End();?>

@@ -41,9 +41,9 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && strlen($Update)>0 && !$bReadOnly && 
 	{
 		$DB->Commit();
 		if (strlen($apply)<=0)
-			LocalRedirect("/bitrix/admin/cat_vat_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_vat_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bitrix/admin/cat_vat_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_vat_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -83,7 +83,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CVAT_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/cat_vat_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/cat_vat_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -94,13 +94,13 @@ if ($ID > 0 && !$bReadOnly)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CVAT_NEW"),
 		"ICON" => "btn_new",
-		"LINK" => "/bitrix/admin/cat_vat_edit.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/cat_vat_edit.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CVAT_DELETE"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessageJS("CVAT_DELETE_CONFIRM")."')) window.location='/bitrix/admin/cat_vat_admin.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessageJS("CVAT_DELETE_CONFIRM")."')) window.location='/bnpt/admin/cat_vat_admin.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -159,7 +159,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => $bReadOnly,
-		"back_url" => "/bitrix/admin/cat_vat_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+		"back_url" => "/bnpt/admin/cat_vat_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 	)
 );
 $tabControl->End();

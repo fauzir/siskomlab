@@ -2289,7 +2289,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 				continue;
 
 			$arStr1[$vv["TEMPLATE_ID"]] = $vv["TEMPLATE_NAME"];
-			$arStr[$vv["TEMPLATE_ID"]] .= "<a href=\"/bitrix/admin/bizproc_log.php?ID=".$kk."\">".(strlen($vv["STATE_TITLE"]) > 0 ? $vv["STATE_TITLE"] : $vv["STATE_NAME"])."</a><br />";
+			$arStr[$vv["TEMPLATE_ID"]] .= "<a href=\"/bnpt/admin/bizproc_log.php?ID=".$kk."\">".(strlen($vv["STATE_TITLE"]) > 0 ? $vv["STATE_TITLE"] : $vv["STATE_NAME"])."</a><br />";
 
 			if (strlen($vv["ID"]) > 0)
 			{

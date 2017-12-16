@@ -363,7 +363,7 @@ class CHTMLEditor
 
 		if(!isset($arParams["initConponentParams"]))
 			$arParams["initConponentParams"] = $arParams["showTaskbars"] !== false && $arParams["showComponents"] && ($arParams['limitPhpAccess'] || $arParams['bAllowPhp']);
-		$arParams["actionUrl"] = $arParams["bbCode"] ? '/bitrix/tools/html_editor_action.php' : '/bitrix/admin/fileman_html_editor_action.php';
+		$arParams["actionUrl"] = $arParams["bbCode"] ? '/bitrix/tools/html_editor_action.php' : '/bnpt/admin/fileman_html_editor_action.php';
 
 		$arParams["lazyLoad"] = isset($arParams["lazyLoad"]) ? $arParams["lazyLoad"] : false;
 
@@ -496,7 +496,7 @@ class CHTMLEditor
 		if ($arParams["initConponentParams"])
 		{
 			CComponentParamsManager::Init(array(
-				'requestUrl' => '/bitrix/admin/fileman_component_params.php'
+				'requestUrl' => '/bnpt/admin/fileman_component_params.php'
 			));
 		}
 	}

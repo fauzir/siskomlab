@@ -162,7 +162,7 @@ while ($arAccount = $dbResultList->NavNext(true, "f_"))
 
 	$row->AddField("ID", $f_ID);
 
-	$fieldValue = "[<a href=\"/bitrix/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\" title=\"".GetMessage("SAA_USER_INFO")."\">".$f_USER_ID."</a>] ";
+	$fieldValue = "[<a href=\"/bnpt/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\" title=\"".GetMessage("SAA_USER_INFO")."\">".$f_USER_ID."</a>] ";
 	$fieldValue .= htmlspecialcharsEx($arAccount["USER_NAME"].((strlen($arAccount["USER_NAME"])<=0 || strlen($arAccount["USER_LAST_NAME"])<=0) ? "" : " ").$arAccount["USER_LAST_NAME"])."<br>";
 	$fieldValue .= htmlspecialcharsEx($arAccount["USER_LOGIN"])."&nbsp;&nbsp;&nbsp; ";
 	$fieldValue .= "<a href=\"mailto:".htmlspecialcharsbx($arAccount["USER_EMAIL"])."\" title=\"".GetMessage("SAA_MAILTO")."\">".htmlspecialcharsEx($arAccount["USER_EMAIL"])."</a>";

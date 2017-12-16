@@ -173,7 +173,7 @@ $tabControl->ShowWarnings("smile_import", $message);
 
 ?>
 <?=BeginNote();?>
-<div><?=GetMessage('IM_IMPORT_HELP_1', Array('#LINK_START#'=>'<a href="/bitrix/admin/fileman_admin.php?lang='.LANG.'&path=%2Fbitrix%2Fmodules%2Fmain%2Finstall%2Fsmiles">', '#LINK_END#'=>'</a>'))?></div>
+<div><?=GetMessage('IM_IMPORT_HELP_1', Array('#LINK_START#'=>'<a href="/bnpt/admin/fileman_admin.php?lang='.LANG.'&path=%2Fbitrix%2Fmodules%2Fmain%2Finstall%2Fsmiles">', '#LINK_END#'=>'</a>'))?></div>
 <div style="padding-top:5px"><?=GetMessage('IM_IMPORT_HELP_2')?></div>
 <div style="padding-top:5px"><?=GetMessage('IM_IMPORT_HELP_3')?></div>
 <div style="padding-top:15px"><?=GetMessage('IM_IMPORT_HELP_4')?></div>

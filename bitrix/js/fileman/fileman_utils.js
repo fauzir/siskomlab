@@ -880,7 +880,7 @@ BXFMSearch.prototype = {
 		if (bShowWaitWin)
 			BX.showWait();
 
-		var actionUrl = '/bitrix/admin/fileman_admin.php?lang=' + this.lang + "&fu_action=" + action + "&site=" + this.site + "&" + this.sessid_get + "&fu_site=" + this.oSiteSel.value;
+		var actionUrl = '/bnpt/admin/fileman_admin.php?lang=' + this.lang + "&fu_action=" + action + "&site=" + this.site + "&" + this.sessid_get + "&fu_site=" + this.oSiteSel.value;
 
 		return BX.ajax.post(actionUrl, postParams || {},
 			function(result)
@@ -1099,7 +1099,7 @@ BXFMServerPerm.prototype = {
 
 		if (bShowWaitWin)
 			BX.showWait();
-		return BX.ajax.post('/bitrix/admin/fileman_server_access.php?lang=' + this.Params.lang + "&fu_action=" + action + "&site=" + this.Params.site + "&" + this.Params.sessid_get, postParams || {},
+		return BX.ajax.post('/bnpt/admin/fileman_server_access.php?lang=' + this.Params.lang + "&fu_action=" + action + "&site=" + this.Params.site + "&" + this.Params.sessid_get, postParams || {},
 			function(result)
 			{
 				if (bShowWaitWin)
@@ -1516,7 +1516,7 @@ BXFMCopy.prototype = {
 		if (bShowWaitWin)
 			BX.showWait();
 
-		var actionUrl = '/bitrix/admin/fileman_admin.php?lang=' + this.lang + "&fu_action=" + action + "&site=" + this.site + "&" + this.sessid_get + "&fu_site=" + this.oSiteSel.value;
+		var actionUrl = '/bnpt/admin/fileman_admin.php?lang=' + this.lang + "&fu_action=" + action + "&site=" + this.site + "&" + this.sessid_get + "&fu_site=" + this.oSiteSel.value;
 
 		return BX.ajax.post(actionUrl, postParams || {},
 			function(result)
@@ -2097,7 +2097,7 @@ BXFMPack.prototype =
 					{
 						var fileID = _this.GetFileName(postParams.packTo),
 							filePath = _this.GetFolderPath(postParams.packTo),
-							deleteFileUrl = "/bitrix/admin/fileman_admin.php?action=delete&ID="
+							deleteFileUrl = "/bnpt/admin/fileman_admin.php?action=delete&ID="
 							 + fileID + "&path=" + filePath + "&" + _this.sessid_get + "&lang=" + _this.lang + "&site=" + _this.site;
 
 						_this.bStopPacking = false;
@@ -2345,7 +2345,7 @@ BXFMPack.prototype =
 		if (bShowWaitWin)
 			BX.showWait();
 
-		var actionUrl = '/bitrix/admin/fileman_admin.php?lang=' + this.lang
+		var actionUrl = '/bnpt/admin/fileman_admin.php?lang=' + this.lang
 			+ "&fu_action=" + action + "&site=" + this.site + "&"
 			+ this.sessid_get;
 

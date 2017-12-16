@@ -222,7 +222,7 @@ HTML
 	{
 		$this->id = $params['id'];
 		$this->url = $params['url'];
-		$this->previewUrl = isset($params['previewUrl']) ? $params['previewUrl'] : '/bitrix/admin/fileman_block_editor.php?action=preview';
+		$this->previewUrl = isset($params['previewUrl']) ? $params['previewUrl'] : '/bnpt/admin/fileman_block_editor.php?action=preview';
 		$this->templateType = $params['templateType'];
 		$this->templateId = $params['templateId'];
 		$this->site = $params['site'];

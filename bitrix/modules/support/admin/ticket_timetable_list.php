@@ -95,10 +95,10 @@ $lAdmin->NavText($dbResultList->GetNavPrint(GetMessage("SUP_GROUP_NAV")));
 
 while ($arBlog = $dbResultList->NavNext(true, "f_"))
 {      
-	$row =& $lAdmin->AddRow($f_ID, $arBlog, "/bitrix/admin/ticket_timetable_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID, GetMessage("SUP_UPDATE_ALT"));
+	$row =& $lAdmin->AddRow($f_ID, $arBlog, "/bnpt/admin/ticket_timetable_edit.php?ID=".$f_ID."&lang=".LANGUAGE_ID, GetMessage("SUP_UPDATE_ALT"));
 
-	$row->AddField("ID", '<a href="/bitrix/admin/ticket_timetable_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SUP_UPDATE_ALT").'">'.$f_ID.'</a>');
-	$row->AddField("NAME", '<a href="/bitrix/admin/ticket_timetable_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SUP_UPDATE_ALT").'">'.$f_NAME.'</a>');
+	$row->AddField("ID", '<a href="/bnpt/admin/ticket_timetable_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SUP_UPDATE_ALT").'">'.$f_ID.'</a>');
+	$row->AddField("NAME", '<a href="/bnpt/admin/ticket_timetable_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SUP_UPDATE_ALT").'">'.$f_NAME.'</a>');
 	$row->AddField("DESCRIPTION", $f_DESCRIPTION);
 	
 	//$USER_FIELD_MANAGER->AddUserFields("TIMETABLE", $arBlog, $row);

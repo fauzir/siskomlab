@@ -490,7 +490,7 @@ $data['std']['ITEMS'][] = array(
 		'&nbsp;':
 		(IsModuleInstalled('fileman') && ($USER->CanDoOperation('fileman_admin_files') || $USER->CanDoOperation('fileman_edit_existent_files'))?
 			GetMessage("SEC_PANEL_QUERY_DEBUG_RECOMMENDATION_WITH_HREF", array(
-				"#HREF#" => '/bitrix/admin/fileman_file_edit.php?lang='.LANGUAGE_ID.'&amp;full_src=Y&amp;path='.urlencode(BX_PERSONAL_ROOT.'/php_interface/dbconn.php').'&amp;back_url='.urlencode('/bitrix/admin/security_panel.php?lang='.LANGUAGE_ID),
+				"#HREF#" => '/bnpt/admin/fileman_file_edit.php?lang='.LANGUAGE_ID.'&amp;full_src=Y&amp;path='.urlencode(BX_PERSONAL_ROOT.'/php_interface/dbconn.php').'&amp;back_url='.urlencode('/bnpt/admin/security_panel.php?lang='.LANGUAGE_ID),
 			)):
 			GetMessage("SEC_PANEL_QUERY_DEBUG_RECOMMENDATION_WO_HREF")
 		)

@@ -238,7 +238,7 @@ class FinalStep extends CBaseWizardStep
 				"STATUS" => "READY",
 			));
 
-			$this->location = '/bitrix/admin/cluster_dbnode_list.php?lang='.LANGUAGE_ID;
+			$this->location = '/bnpt/admin/cluster_dbnode_list.php?lang='.LANGUAGE_ID;
 		}
 	}
 }

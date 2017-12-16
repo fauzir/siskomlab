@@ -436,7 +436,7 @@ while ($payment = $dbResultList->Fetch())
 	$row->AddField("PAID", ($payment['PAID'] == 'Y') ? GetMessage("PAYMENT_ORDER_PAID_YES"): GetMessage("PAYMENT_ORDER_PAID_NO"));
 	$row->AddField("PAY_SYSTEM_NAME", "<a href='sale_pay_system_edit.php?ID=".$payment['PAY_SYSTEM_ID']."&lang=".$lang."'>".htmlspecialcharsbx($payment['PAY_SYSTEM_NAME'])."</a>");
 	$row->AddField("COMPANY_BY", "<a href='sale_pay_system_edit.php?ID=".$payment['COMPANY_ID']."&lang=".$lang."'>".htmlspecialcharsbx($payment['COMPANY_BY_NAME'])."</a>");
-	$row->AddField("ORDER_USER_NAME", "<a href='/bitrix/admin/user_edit.php?ID=".$payment['ORDER_USER_ID']."&lang=".$lang."'>".$userName."</a>");
+	$row->AddField("ORDER_USER_NAME", "<a href='/bnpt/admin/user_edit.php?ID=".$payment['ORDER_USER_ID']."&lang=".$lang."'>".$userName."</a>");
 	$row->AddField("RESPONSIBLE_BY", "<a href=\"user_edit.php?ID=".$payment['RESPONSIBLE_ID']."\">".htmlspecialcharsbx($payment['RESPONSIBLE_BY_NAME'])." ".htmlspecialcharsbx($payment['RESPONSIBLE_BY_LAST_NAME'])."</a>");
 	$arActions = array();
 	$arActions[] = array("ICON"=>"edit", "TEXT"=>GetMessage("EDIT_PAYMENT_ALT"), "ACTION"=>$lAdmin->ActionRedirect("sale_order_payment_edit.php?order_id=".$payment['ORDER_ID']."&payment_id=".$payment['ID']."&lang=".$lang.GetFilterParams("filter_").""), "DEFAULT"=>true);

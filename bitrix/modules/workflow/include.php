@@ -26,7 +26,7 @@ function GetDefaultEpilog()
 
 function PathToWF($text, $DOCUMENT_ID)
 {
-	return preg_replace("'(<img[^>]+?src\\s*=\\s*\")(\\S+)(\"[^>]*>)'i", "\\1/bitrix/admin/workflow_get_file.php?did=".$DOCUMENT_ID."&fname=\\2\\3", $text);
+	return preg_replace("'(<img[^>]+?src\\s*=\\s*\")(\\S+)(\"[^>]*>)'i", "\\1/bnpt/admin/workflow_get_file.php?did=".$DOCUMENT_ID."&fname=\\2\\3", $text);
 }
 
 function convert_image($img="",$query="",$param="")
@@ -50,7 +50,7 @@ function convert_image($img="",$query="",$param="")
 
 function WFToPath($text)
 {
-	return preg_replace_callback("'(<img[^>]+?src\\s*=\\s*[\"\'])/bitrix/admin/workflow_get_file.php\\?([^>]+)([\"\'][^>]*>)'i", "convert_image", $text);
+	return preg_replace_callback("'(<img[^>]+?src\\s*=\\s*[\"\'])/bnpt/admin/workflow_get_file.php\\?([^>]+)([\"\'][^>]*>)'i", "convert_image", $text);
 }
 
 function SavePreviewContent($abs_path, $strContent)

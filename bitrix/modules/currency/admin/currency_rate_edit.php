@@ -62,9 +62,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['Update']) && $CURRENC
 			if (!empty($return_url))
 				LocalRedirect($return_url);
 			else
-				LocalRedirect("/bitrix/admin/currencies_rates.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+				LocalRedirect("/bnpt/admin/currencies_rates.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		}
-		LocalRedirect("/bitrix/admin/currency_rate_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&".GetFilterParams("filter_", false));
+		LocalRedirect("/bnpt/admin/currency_rate_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&".GetFilterParams("filter_", false));
 	}
 }
 
@@ -108,7 +108,7 @@ $aContext = array(
 	array(
 		"ICON" => "btn_list",
 		"TEXT" => GetMessage("MAIN_ADMIN_MENU_LIST"),
-		"LINK" => "/bitrix/admin/currencies_rates.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/currencies_rates.php?lang=".LANGUAGE_ID,
 		"TITLE" => GetMessage("MAIN_ADMIN_MENU_LIST")
 	),
 );
@@ -118,7 +118,7 @@ if ($ID > 0)
 	$aContext[] = 	array(
 		"ICON" => "btn_new",
 		"TEXT" => GetMessage("MAIN_ADMIN_MENU_CREATE"),
-		"LINK" => "/bitrix/admin/currency_rate_edit.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/currency_rate_edit.php?lang=".LANGUAGE_ID,
 		"TITLE" => GetMessage("MAIN_ADMIN_MENU_CREATE")
 	);
 
@@ -127,7 +127,7 @@ if ($ID > 0)
 		$aContext[] = 	array(
 			"ICON" => "btn_delete",
 			"TEXT" => GetMessage("MAIN_ADMIN_MENU_DELETE"),
-			"LINK" => "javascript:if(confirm('".GetMessage("CONFIRM_DEL_MESSAGE")."'))window.location='/bitrix/admin/currencies_rates.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessage("CONFIRM_DEL_MESSAGE")."'))window.location='/bnpt/admin/currencies_rates.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 		);
 	}
 }
@@ -147,7 +147,7 @@ if ($baseCurrency != '' && isset($currencyList[$baseCurrency]))
 		unset($currencyList[$baseCurrency]);
 }
 if (empty($currencyList))
-	LocalRedirect("/bitrix/admin/currency_edit.php?lang=".LANGUAGE_ID);
+	LocalRedirect("/bnpt/admin/currency_edit.php?lang=".LANGUAGE_ID);
 
 $showGetRate = ($baseCurrency != '' && in_array($baseCurrency, array('RUB', 'BYR', 'BYN', 'UAH')));
 ?>
@@ -214,7 +214,7 @@ if ($showGetRate)
 $tabControl->Buttons(
 	array(
 		"disabled" => $CURRENCY_RIGHT<"W",
-		"back_url" =>"/bitrix/admin/currencies_rates.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"back_url" =>"/bnpt/admin/currencies_rates.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	)
 );
 $tabControl->End();?>

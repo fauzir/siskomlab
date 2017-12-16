@@ -3,7 +3,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/bitrix/modules/mobileapp/include/prol
 require_once($_SERVER["DOCUMENT_ROOT"] . '/bitrix/modules/mobileapp/include/prolog_admin_mobile_after.php');
 
 $arParams = array(
-	"ORDERS_LIST_PATH" => '/bitrix/admin/mobile/sale_orders_list.php'
+	"ORDERS_LIST_PATH" => '/bnpt/admin/mobile/sale_orders_list.php'
 	);
 
 $APPLICATION->IncludeComponent(

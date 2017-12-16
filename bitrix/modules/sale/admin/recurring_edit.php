@@ -131,7 +131,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions >= "U
 		else
 		{
 			if (strlen($apply)<=0)
-				LocalRedirect("/bitrix/admin/sale_recurring_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+				LocalRedirect("/bnpt/admin/sale_recurring_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		}
 	}
 	else
@@ -174,7 +174,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SREN_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/sale_recurring_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_recurring_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	)
 );
 
@@ -185,7 +185,7 @@ if ($ID > 0 && $saleModulePermissions >= "U")
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SREN_NEW_RECURR"),
 		"ICON" => "btn_new",
-		"LINK" => "/bitrix/admin/sale_recurring_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bnpt/admin/sale_recurring_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	);
 
 	if ($saleModulePermissions >= "W")
@@ -193,7 +193,7 @@ if ($ID > 0 && $saleModulePermissions >= "U")
 		$aMenu[] = array(
 			"TEXT" => GetMessage("SREN_DELETE_RECURR"),
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessageJS("SREN_DELETE_RECURR_CONFIRM")."')) window.location='/bitrix/admin/sale_recurring_admin.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessageJS("SREN_DELETE_RECURR_CONFIRM")."')) window.location='/bnpt/admin/sale_recurring_admin.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y"
 		);
 	}
@@ -234,7 +234,7 @@ $tabControl->BeginNextTab();
 		<td width="60%"><?
 			$user_name = "";
 			if ($ID>0 && $str_USER_ID>0)
-				$user_name = "[<a title=\"".GetMessage("SRE_USER_PROFILE")."\" href=\"/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".$str_USER_LOGIN.") ".$str_USER_NAME." ".$str_USER_LAST_NAME;
+				$user_name = "[<a title=\"".GetMessage("SRE_USER_PROFILE")."\" href=\"/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".$str_USER_LOGIN.") ".$str_USER_NAME." ".$str_USER_LAST_NAME;
 
 			if ($saleModulePermissions>="W"):
 				echo FindUserID("USER_ID", $str_USER_ID, $user_name, "frecurring_edit");
@@ -446,7 +446,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => ($saleModulePermissions < "U"),
-		"back_url" => "/bitrix/admin/sale_recurring_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"back_url" => "/bnpt/admin/sale_recurring_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	)
 );
 

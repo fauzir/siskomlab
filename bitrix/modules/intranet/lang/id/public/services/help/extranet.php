@@ -38,13 +38,13 @@ stricter security policy.</p>
  
 <h3>How To Install?</h3>
  
-<p>When installing Bitrix24, you get the Extranet module installed automatically. However, this might not be the case when upgrading an older version. If the Extranet module is not present on the existing modules list, you have to <a href='/bitrix/admin/module_admin.php' >install it</a> before you proceed.</p>
+<p>When installing Bitrix24, you get the Extranet module installed automatically. However, this might not be the case when upgrading an older version. If the Extranet module is not present on the existing modules list, you have to <a href='/bnpt/admin/module_admin.php' >install it</a> before you proceed.</p>
  
 <div align='center'><img width='361' height='205' src='#SITE#images/en/docs/cp/extranet_setup.png' complete='complete' />
   <br
   <i>Installing the Extranet module</i> </div>
  
-<p>After you have successfully installed the module, you will be prompted to run <a href='/bitrix/admin/wizard_install.php?lang=en&amp;wizardName=bitrix:extranet&amp;<?=bitrix_sessid_get()?>' >Extranet Site Wizard</a>
+<p>After you have successfully installed the module, you will be prompted to run <a href='/bnpt/admin/wizard_install.php?lang=en&amp;wizardName=bitrix:extranet&amp;<?=bitrix_sessid_get()?>' >Extranet Site Wizard</a>
 in which you will configure the extranet website parameters.</p>
  
 <p>As soon as the wizard is complete, an <b>Extranet</b> item will show up in

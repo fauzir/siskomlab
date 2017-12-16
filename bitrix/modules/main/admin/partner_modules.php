@@ -366,7 +366,7 @@ while($info = $rsData->Fetch())
 		$status = "<span class=\"required\">".GetMessage("MOD_NOT_INSTALLED")."</span>";
 
 	if(!empty($modules[$info["MODULE_ID"]]["VERSION"]))
-		$status .= "<br /><a href=\"/bitrix/admin/update_system_partner.php?tabControl_active_tab=tab2&addmodule=".$info["MODULE_ID"]."\" style=\"color:green;\">".GetMessage("MOD_SMP_NEW_UPDATES")."</a>";
+		$status .= "<br /><a href=\"/bnpt/admin/update_system_partner.php?tabControl_active_tab=tab2&addmodule=".$info["MODULE_ID"]."\" style=\"color:green;\">".GetMessage("MOD_SMP_NEW_UPDATES")."</a>";
 	$row->AddViewField("STATUS", $status);
 
 	$arActions = Array();
@@ -376,7 +376,7 @@ while($info = $rsData->Fetch())
 			"ICON" => "",
 			"DEFAULT" => true,
 			"TEXT" => GetMessage("MOD_SMP_UPDATE"),
-			"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/update_system_partner.php?tabControl_active_tab=tab2&addmodule=".$info["MODULE_ID"]),
+			"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/update_system_partner.php?tabControl_active_tab=tab2&addmodule=".$info["MODULE_ID"]),
 		);
 	}
 
@@ -465,7 +465,7 @@ while($info = $rsData->Fetch())
 			"ICON" => "",
 			"DEFAULT" => true,
 			"TEXT" => GetMessage("MOD_SMP_DOWNLOAD"),
-			"ACTION" => $lAdmin1->ActionRedirect("/bitrix/admin/update_system_partner.php?tabControl_active_tab=tab2&addmodule=".$info["MODULE_ID"]),
+			"ACTION" => $lAdmin1->ActionRedirect("/bnpt/admin/update_system_partner.php?tabControl_active_tab=tab2&addmodule=".$info["MODULE_ID"]),
 		);
 	}
 

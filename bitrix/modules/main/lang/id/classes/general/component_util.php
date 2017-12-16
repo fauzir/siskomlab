@@ -59,7 +59,7 @@ $MESS["COMP_NAME_TEMPLATE_SMITH_COMMA_J"] = "Smith, L.";
 $MESS["COMP_NAME_TEMPLATE_SMITH_COMMA_J_L"] = "Smith, J.L.";
 $MESS["COMP_NAME_TEMPLATE_JOHN_SMITH"] = "John Smith";
 $MESS["COMP_NAME_TEMPLATE_JOHN_L_SMITH"] = "John L. Smith";
-$MESS["COMP_PROP_CACHE_NOTE"] = "Current Kernel settings: <b>autocache</b> is #AUTO_MODE#, <b>managed cache</b> is #MANAGED_MODE#. You can increase the cache lifetime if a component supports managed cache technology. <a href=\"/bitrix/admin/cache.php?lang=#LANG#\">Edit cache settings</a>.";
+$MESS["COMP_PROP_CACHE_NOTE"] = "Current Kernel settings: <b>autocache</b> is #AUTO_MODE#, <b>managed cache</b> is #MANAGED_MODE#. You can increase the cache lifetime if a component supports managed cache technology. <a href=\"/bnpt/admin/cache.php?lang=#LANG#\">Edit cache settings</a>.";
 $MESS["COMP_PARAM_CACHE_AUTO_ON"] = "di";
 $MESS["COMP_PARAM_CACHE_AUTO_OFF"] = "<span style=\"color:red\">off</span>";
 $MESS["COMP_PARAM_CACHE_MANAGED_ON"] = "di";

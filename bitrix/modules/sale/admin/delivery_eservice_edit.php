@@ -182,7 +182,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SALE_ESDE_TO_LIST"),
-		"LINK" => isset($_GET["back_url"]) ? $_GET["back_url"] : "/bitrix/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID."&ID=".$DELIVERY_ID,
+		"LINK" => isset($_GET["back_url"]) ? $_GET["back_url"] : "/bnpt/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID."&ID=".$DELIVERY_ID,
 		"ICON" => "btn_list"
 	)
 );
@@ -193,7 +193,7 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 
 	$aMenu[] = array(
 		"TEXT" => Loc::getMessage("SALE_ESDE_CREATE_NEW"),
-		"LINK" => "/bitrix/admin/sale_delivery_eservice_edit.php?lang=".LANGUAGE_ID."&DELIVERY_ID=".$DELIVERY_ID.(isset($_REQUEST["back_url"]) ? "&back_url=".urlencode($_REQUEST["back_url"]) : ""),
+		"LINK" => "/bnpt/admin/sale_delivery_eservice_edit.php?lang=".LANGUAGE_ID."&DELIVERY_ID=".$DELIVERY_ID.(isset($_REQUEST["back_url"]) ? "&back_url=".urlencode($_REQUEST["back_url"]) : ""),
 		"ICON" => "btn_new"
 	);
 
@@ -316,7 +316,7 @@ $manager = new ExtraServices\Manager(array($fields), $deliveryService->getCurren
 $tabControl->Buttons(
 	array(
 		"disabled" => ($saleModulePermissions < "W"),
-		"back_url" => isset($_REQUEST["back_url"]) ? $_REQUEST["back_url"] : ("/bitrix/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID.'&ID='.(isset($_REQUEST["DELIVERY_ID"]) ? $_REQUEST["DELIVERY_ID"] :0))
+		"back_url" => isset($_REQUEST["back_url"]) ? $_REQUEST["back_url"] : ("/bnpt/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID.'&ID='.(isset($_REQUEST["DELIVERY_ID"]) ? $_REQUEST["DELIVERY_ID"] :0))
 	)
 );
 

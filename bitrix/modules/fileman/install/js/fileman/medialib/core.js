@@ -1962,7 +1962,7 @@ BXMediaLib.prototype =
 
 	GetRequestUrl: function(action)
 	{
-		return '/bitrix/admin/fileman_medialib.php?sessid=' + this.sessid + '&lang=' + this.oConfig.lang + (action ? '&action=' + action : '');
+		return '/bnpt/admin/fileman_medialib.php?sessid=' + this.sessid + '&lang=' + this.oConfig.lang + (action ? '&action=' + action : '');
 	},
 
 	CheckReqLostSessid: function(result)

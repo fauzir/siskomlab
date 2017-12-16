@@ -23,11 +23,11 @@ InitSorting();
 $err_mess = "File: ".__FILE__."<br>Line: ";
 
 /***************************************************************************
-								Функции
+								пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 ****************************************************************************/
 
 /***************************************************************************
-							Обработка GET | POST
+							пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ GET | POST
 ****************************************************************************/
 if (
 	!isset($find_type) ||
@@ -38,8 +38,8 @@ if (
 
 
 $sTableID = "t_dict_list_" . strtolower($find_type);
-$oSort = new CAdminSorting($sTableID, "SORT", "asc");// инициализация сортировки
-$lAdmin = new CAdminList($sTableID, $oSort);// инициализация списка
+$oSort = new CAdminSorting($sTableID, "SORT", "asc");// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+$lAdmin = new CAdminList($sTableID, $oSort);// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 $oFilter = new CAdminFilter(
@@ -77,7 +77,7 @@ $arFilterFields = Array(
 	"find_default"
 	);
 
-$lAdmin->InitFilter($arFilterFields);//инициализация фильтра
+$lAdmin->InitFilter($arFilterFields);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 
 InitBVar($find_id_exact_match);
@@ -106,7 +106,7 @@ $arFilter = Array(
 
 
 
-if ($bAdmin=="Y" && $lAdmin->EditAction()) //если идет сохранение со списка
+if ($bAdmin=="Y" && $lAdmin->EditAction()) //пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 {
 
 	foreach($FIELDS as $ID => $arFields)
@@ -164,7 +164,7 @@ if($bAdmin=="Y" && $arID = $lAdmin->GroupAction())
 		}
 	}
 }
-// если была нажата кнопка "Сохранить изменения"
+// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 
 if ($find_type=="C" || 
 	$find_type=="K" || 
@@ -177,7 +177,7 @@ $rsData = CTicketDictionary::GetList($by, $order, $arFilter, $is_filtered);
 $rsData = new CAdminResult($rsData, $sTableID);
 $rsData->NavStart();
 
-// установка строки навигации
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->NavText($rsData->GetNavPrint(GetMessage("SUP_PAGES")));
 
 //$tdic = CTicketDictionary::GetList($by, $order, $arFilter, $is_filtered);
@@ -195,7 +195,7 @@ if ($show_responsible_column=="Y")
 
 $lAdmin->AddHeaders($arHeaders);
 
-// построение списка
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 $arRows = array();
 $arSiteArrayForAllDict = CTicketDictionary::GetSiteArrayForAllDictionaries();
 $arRespUserIDs = array();
@@ -217,7 +217,7 @@ while($arRes = $rsData->Fetch())
 		foreach($arrSITE as $sid)
 		{
 			$sidS = htmlspecialcharsbx($sid);
-			$str_SITE .= ($str_SITE == "" ? "" : " / ") . '<a title="' . GetMessage("MAIN_ADMIN_MENU_EDIT") . '" href="/bitrix/admin/site_edit.php?LID=' . $sidS . '&lang=' . LANG . '">' . $sidS . '</a>';
+			$str_SITE .= ($str_SITE == "" ? "" : " / ") . '<a title="' . GetMessage("MAIN_ADMIN_MENU_EDIT") . '" href="/bnpt/admin/site_edit.php?LID=' . $sidS . '&lang=' . LANG . '">' . $sidS . '</a>';
 		}
 	}
 
@@ -259,21 +259,21 @@ while($ar = $rs->Fetch())
 {
 	$arRespUsersProp[$ar["ID"]] = $ar;
 }
-// Еще один проход для ответственных пользователей
+// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 foreach($arRows as $k => $v)
 {
 	$str = "&nbsp;";
 	$rUserID = intval($v["arFields"]["RESPONSIBLE_USER_ID"]);
 	if ($rUserID > 0 && array_key_exists($rUserID, $arRespUsersProp)):
 		$arUserPr = $arRespUsersProp[$rUserID];
-		$str = '[<a title="' . GetMessage("SUP_USER_PROFILE") . '" href="/bitrix/admin/user_edit.php?lang=' . LANG . '&ID=' . $rUserID . '">' .
+		$str = '[<a title="' . GetMessage("SUP_USER_PROFILE") . '" href="/bnpt/admin/user_edit.php?lang=' . LANG . '&ID=' . $rUserID . '">' .
 			$rUserID.'</a>] (' . $arUserPr["LOGIN"] . ') ' . $arUserPr["NAME"] . "  " . $arUserPr["LAST_NAME"];
 
 	endif;
 	$v["objRow"]->AddViewField("RESPONSIBLE_USER_ID", $str);
 }
 
-// "подвал" списка
+// "пїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅ
 $lAdmin->AddFooter(
 	array(
 		array("title"=>GetMessage("MAIN_ADMIN_LIST_SELECTED"), "value"=>$rsData->SelectedRowsCount()),
@@ -298,34 +298,34 @@ $aContext = array(
 		"MENU" => Array(
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_CATEGORY"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=C';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=C';"
 			),
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_CRITICALITY"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=K';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=K';"
 			),
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_STATUS"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=S';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=S';"
 			),
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_MARK"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=M';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=M';"
 			),
 
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_FUA"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=F';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=F';"
 			),
 
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_SOURCE"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=SR';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=SR';"
 			),
 
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_DIFFICULTY"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=D';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=D';"
 			),
 
 		)

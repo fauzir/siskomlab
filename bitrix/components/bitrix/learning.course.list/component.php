@@ -89,7 +89,7 @@ if (CLearnAccessMacroses::CanUserAddLessonWithoutParentLesson() || $USER->IsAdmi
 			"TITLE" => GetMessage("LEARNING_COURSES_COURSE_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bitrix/admin/learn_course_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=learning",
+					"URL" => "/bnpt/admin/learn_course_edit.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=learning",
 					"PARAMS" => array(
 						"width" => 700, 'height' => 500, 'resize' => false,
 					),
@@ -108,14 +108,14 @@ if (CLearnAccessMacroses::CanUserAddLessonWithoutParentLesson() || $USER->IsAdmi
 			'TEXT' => GetMessage("comp_course_list_toolbar_add"),
 			'TITLE' => GetMessage("comp_course_list_toolbar_add_title"),
 			'ICON' => 'add',
-			'HREF' => '/bitrix/admin/learn_course_edit.php?lang='.LANGUAGE_ID,
+			'HREF' => '/bnpt/admin/learn_course_edit.php?lang='.LANGUAGE_ID,
 			'SORT' => '100',
 		));
 		$GLOBALS['INTRANET_TOOLBAR']->AddButton(array(
 			'TEXT' => GetMessage("comp_course_list_toolbar_list"),
 			'TITLE' => GetMessage("comp_course_list_toolbar_list_title"),
 			'ICON' => 'settings',
-			'HREF' => '/bitrix/admin/learn_unilesson_admin.php?lang=' . LANGUAGE_ID . '&PARENT_LESSON_ID=-1',
+			'HREF' => '/bnpt/admin/learn_unilesson_admin.php?lang=' . LANGUAGE_ID . '&PARENT_LESSON_ID=-1',
 			'SORT' => '200',
 		));
 	}

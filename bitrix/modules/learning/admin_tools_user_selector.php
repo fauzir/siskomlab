@@ -157,14 +157,14 @@ class Learning_CIBlockPropertyUserID
 		if ($default_value == $USER->GetID())
 		{
 			$select = "CU";
-			$res = "[<a title='".GetMessage("LEARNING_USER_SELECTOR_USER_PROFILE")."'  href='/bitrix/admin/user_edit.php?ID=".$USER->GetID()."&lang=".LANG."'>".$USER->GetID()."</a>] (".htmlspecialcharsbx($USER->GetLogin()).") ".htmlspecialcharsbx($USER->GetFirstName())." ".htmlspecialcharsbx($USER->GetLastName());
+			$res = "[<a title='".GetMessage("LEARNING_USER_SELECTOR_USER_PROFILE")."'  href='/bnpt/admin/user_edit.php?ID=".$USER->GetID()."&lang=".LANG."'>".$USER->GetID()."</a>] (".htmlspecialcharsbx($USER->GetLogin()).") ".htmlspecialcharsbx($USER->GetFirstName())." ".htmlspecialcharsbx($USER->GetLastName());
 		}
 		elseif ($default_value > 0)
 		{
 			$select = "SU";
 			$rsUsers = CUser::GetList($by, $order, array("ID" => $default_value));
 			if ($arUser = $rsUsers->Fetch())
-				$res = "[<a title='".GetMessage("LEARNING_USER_SELECTOR_USER_PROFILE")."'  href='/bitrix/admin/user_edit.php?ID=".$arUser["ID"]."&lang=".LANG."'>".$arUser["ID"]."</a>] (".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+				$res = "[<a title='".GetMessage("LEARNING_USER_SELECTOR_USER_PROFILE")."'  href='/bnpt/admin/user_edit.php?ID=".$arUser["ID"]."&lang=".LANG."'>".$arUser["ID"]."</a>] (".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 			else
 				$res = "&nbsp;".GetMessage("LEARNING_USER_SELECTOR_NOT_FOUND");
 		}
@@ -214,7 +214,7 @@ function Learning_FindUserIDNew(
 	$button_value = "...",
 	$tag_class = "typeinput",
 	$button_class = "tablebodybutton",
-	$search_page = "/bitrix/admin/user_search.php"
+	$search_page = "/bnpt/admin/user_search.php"
 )
 {
 	global $APPLICATION, $USER;
@@ -270,12 +270,12 @@ function Ch".$tag_name_x."()
 
 				if (tv".$tag_name_x."!=".intVal($USER->GetID()).")
 				{
-					document.getElementById(\"hiddenframe".$tag_name_escaped."\").src='/bitrix/admin/get_user.php?ID=' + tv".$tag_name_x."+'&strName=".$tag_name_escaped."&lang=".LANG.(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")."';
+					document.getElementById(\"hiddenframe".$tag_name_escaped."\").src='/bnpt/admin/get_user.php?ID=' + tv".$tag_name_x."+'&strName=".$tag_name_escaped."&lang=".LANG.(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")."';
 					document.getElementById('SELECT".$tag_name_escaped."').value = 'SU';
 				}
 				else
 				{
-					DV_".$tag_name_x.".innerHTML = '".CUtil::JSEscape("[<a title=\"".GetMessage("LEARNING_USER_SELECTOR_USER_PROFILE")."\" class=\"tablebodylink\" href=\"/bitrix/admin/user_edit.php?ID=".$USER->GetID()."&lang=".LANG."\">".$USER->GetID()."</a>] (".htmlspecialcharsbx($USER->GetLogin()).") ".htmlspecialcharsbx($USER->GetFirstName())." ".htmlspecialcharsbx($USER->GetLastName()))."';
+					DV_".$tag_name_x.".innerHTML = '".CUtil::JSEscape("[<a title=\"".GetMessage("LEARNING_USER_SELECTOR_USER_PROFILE")."\" class=\"tablebodylink\" href=\"/bnpt/admin/user_edit.php?ID=".$USER->GetID()."&lang=".LANG."\">".$USER->GetID()."</a>] (".htmlspecialcharsbx($USER->GetLogin()).") ".htmlspecialcharsbx($USER->GetFirstName())." ".htmlspecialcharsbx($USER->GetLastName()))."';
 					document.getElementById('SELECT".$tag_name_escaped."').value = 'CU';
 				}
 			}

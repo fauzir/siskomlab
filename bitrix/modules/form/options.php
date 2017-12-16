@@ -15,7 +15,7 @@ if ($REQUEST_METHOD=="GET" && CForm::IsAdmin() && strlen($RestoreDefaults)>0 && 
 	{
 		$ar = array();
 		$ar["ID"] = intval($zr["ID"]);
-		$ar["NAME"] = htmlspecialcharsbx($zr["NAME"])." [<a title=\"".GetMessage("MAIN_USER_GROUP_TITLE")."\" href=\"/bitrix/admin/group_edit.php?ID=".intval($zr["ID"])."&lang=".LANGUAGE_ID."\">".intval($zr["ID"])."</a>]";
+		$ar["NAME"] = htmlspecialcharsbx($zr["NAME"])." [<a title=\"".GetMessage("MAIN_USER_GROUP_TITLE")."\" href=\"/bnpt/admin/group_edit.php?ID=".intval($zr["ID"])."&lang=".LANGUAGE_ID."\">".intval($zr["ID"])."</a>]";
 		$groups[$zr["ID"]] = "[".$zr["ID"]."] ".$zr["NAME"];
 		$arGROUPS[] = $ar;
 	}
@@ -323,7 +323,7 @@ function CRMRedraw(data)
 		if (!!data[i].LOGIN && !!data[i].PASSWORD)
 		{
 			authCell.appendChild(document.createTextNode('<?=CUtil::JSEscape(GetMessage('FORM_TAB_CRM_CHECK_LOADING'))?>'));
-			BX.ajax.loadJSON('/bitrix/admin/form_crm.php?action=check&reload=Y&ID=' + BX.util.urlencode(data[i].ID) + '&LOGIN=' + BX.util.urlencode(data[i].LOGIN) + '&PASSWORD=' + BX.util.urlencode(data[i].PASSWORD) + '&<?=bitrix_sessid_get()?>', BX.delegate(function(data) {
+			BX.ajax.loadJSON('/bnpt/admin/form_crm.php?action=check&reload=Y&ID=' + BX.util.urlencode(data[i].ID) + '&LOGIN=' + BX.util.urlencode(data[i].LOGIN) + '&PASSWORD=' + BX.util.urlencode(data[i].PASSWORD) + '&<?=bitrix_sessid_get()?>', BX.delegate(function(data) {
 					BX.cleanNode(this);
 					this.innerHTML = (data && data.result == 'ok') ? 'OK' : ('<?=CUtil::JSEscape(GetMessage('FORM_TAB_CRM_CHECK_ERROR'))?>'.replace('#ERROR#', data.error||''));
 				}, authCell));
@@ -445,7 +445,7 @@ function CRMCheck(ID)
 		c.innerHTML = '<?=CUtil::JSEscape(GetMessage('FORM_TAB_CRM_CHECK_LOADING'))?>';
 	}
 
-	BX.ajax.loadJSON('/bitrix/admin/form_crm.php?action=check&ID='+ID+'&reload=Y&<?=bitrix_sessid_get();?>', function(res)
+	BX.ajax.loadJSON('/bnpt/admin/form_crm.php?action=check&ID='+ID+'&reload=Y&<?=bitrix_sessid_get();?>', function(res)
 	{
 		if (!!res)
 		{

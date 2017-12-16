@@ -47,7 +47,7 @@ if ($RESULT_ID > 0)
 		// result not found
 		$title = str_replace("#FORM_ID#","$WEB_FORM_ID",GetMessage("FORM_RESULT_LIST"));
 		require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
-		echo "<p><a href='/bitrix/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>".$title."</a></p>";
+		echo "<p><a href='/bnpt/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>".$title."</a></p>";
 		echo ShowError(GetMessage("FORM_RESULT_NOT_FOUND"));
 		require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");
 		die();
@@ -174,8 +174,8 @@ if ($old_module_version != 'Y' && $_SERVER['REQUEST_METHOD'] == "POST" && intval
 
 		if (strlen($strError) <= 0)
 		{
-			if (strlen($_REQUEST['apply'])>0) LocalRedirect("/bitrix/admin/form_result_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&RESULT_ID=".$RESULT_ID);
-			else LocalRedirect("/bitrix/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID);
+			if (strlen($_REQUEST['apply'])>0) LocalRedirect("/bnpt/admin/form_result_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&RESULT_ID=".$RESULT_ID);
+			else LocalRedirect("/bnpt/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID);
 		}
 	}
 	else $strError .= $error;
@@ -210,7 +210,7 @@ if ($can_add)
 		"ICON"		=> "btn_new",
 		"TEXT"		=> GetMessage("FORM_ADD"),
 		"TITLE"		=> GetMessage("FORM_NEW_RESULT"),
-		"LINK"		=> "/bitrix/admin/form_result_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID
+		"LINK"		=> "/bnpt/admin/form_result_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID
 		);
 }
 
@@ -219,7 +219,7 @@ if ($can_view)
 {
 	$aMenu[] = array(
 		"TEXT"		=> GetMessage("FORM_VIEW"),
-		"LINK"		=> "/bitrix/admin/form_result_view.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&RESULT_ID=".$RESULT_ID
+		"LINK"		=> "/bnpt/admin/form_result_view.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&RESULT_ID=".$RESULT_ID
 		);
 }
 */
@@ -289,13 +289,13 @@ if ($can_edit) :
 			<?if (intval($arrResult["STAT_GUEST_ID"])>0):?>
 			<tr>
 				<td><b><?=GetMessage("FORM_GUEST")?></b></td>
-				<td>[<a title="<?=GetMessage("FORM_GUEST_ALT")?>" href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_GUEST_ID"]?>&set_filter=Y"><?=$arrResult["STAT_GUEST_ID"]?></a>]</td>
+				<td>[<a title="<?=GetMessage("FORM_GUEST_ALT")?>" href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_GUEST_ID"]?>&set_filter=Y"><?=$arrResult["STAT_GUEST_ID"]?></a>]</td>
 			</tr>
 			<?endif;?>
 			<?if (intval($arrResult["STAT_SESSION_ID"])>0):?>
 			<tr>
 				<td><b><?=GetMessage("FORM_SESSION")?></b></td>
-				<td>[<a title="<?=GetMessage("FORM_SESSION_ALT")?>" href="/bitrix/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_SESSION_ID"]?>&set_filter=Y"><?=$arrResult["STAT_SESSION_ID"]?></a>]</td>
+				<td>[<a title="<?=GetMessage("FORM_SESSION_ALT")?>" href="/bnpt/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_SESSION_ID"]?>&set_filter=Y"><?=$arrResult["STAT_SESSION_ID"]?></a>]</td>
 			</tr>
 			<?endif;?>
 			<?endif;?>
@@ -321,7 +321,7 @@ if ($can_edit) :
 
 // *************************************** NORMAL FORM WITHOUT ARCHAISTIC PERVERSIONS ***********************
 ?>
-<form name="form1" action="/bitrix/admin/form_result_edit.php?lang=<?echo LANG?>&WEB_FORM_ID=<?echo $WEB_FORM_ID?><?if($RESULT_ID>0): echo '&RESULT_ID='.$RESULT_ID; endif;?>" method="POST" enctype="multipart/form-data">
+<form name="form1" action="/bnpt/admin/form_result_edit.php?lang=<?echo LANG?>&WEB_FORM_ID=<?echo $WEB_FORM_ID?><?if($RESULT_ID>0): echo '&RESULT_ID='.$RESULT_ID; endif;?>" method="POST" enctype="multipart/form-data">
 <input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
 <?echo bitrix_sessid_post();?>
 <?
@@ -376,7 +376,7 @@ if ($can_edit) :
 		{
 			$arStatus['REFERENCE'] = str_replace(
 				'['.$arStatus['REFERENCE_ID'].']',
-				'[<a href="/bitrix/admin/form_status_edit.php?lang='.LANG.'&WEB_FORM_ID='.$WEB_FORM_ID.'&ID='.$arStatus['REFERENCE_ID'].'">'.$arStatus['REFERENCE_ID'].'</a>]',
+				'[<a href="/bnpt/admin/form_status_edit.php?lang='.LANG.'&WEB_FORM_ID='.$WEB_FORM_ID.'&ID='.$arStatus['REFERENCE_ID'].'">'.$arStatus['REFERENCE_ID'].'</a>]',
 				htmlspecialcharsEx($arStatus['REFERENCE'])
 			);
 
@@ -407,7 +407,7 @@ if ($can_edit) :
 ?>
 	<tr>
 		<td><?echo GetMessage('FORM_RESULT_EDIT_FORM')?>: </td>
-		<td>[<a href="/bitrix/admin/form_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$WEB_FORM_ID?>"><?=$WEB_FORM_ID?></a>]&nbsp;<a href="/bitrix/admin/form_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$WEB_FORM_ID?>"><?=htmlspecialcharsbx($arForm["NAME"])?> (<?=htmlspecialcharsbx($arForm["SID"])?>)</a></td>
+		<td>[<a href="/bnpt/admin/form_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$WEB_FORM_ID?>"><?=$WEB_FORM_ID?></a>]&nbsp;<a href="/bnpt/admin/form_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$WEB_FORM_ID?>"><?=htmlspecialcharsbx($arForm["NAME"])?> (<?=htmlspecialcharsbx($arForm["SID"])?>)</a></td>
 	</tr>
 	<tr>
 		<td><?echo GetMessage('FORM_RESULT_EDIT_AUTHOR')?>:</td>
@@ -417,7 +417,7 @@ if ($can_edit) :
 		echo FindUserID("USER_ID", $arUser['ID']);
 	elseif (is_array($arUser)):
 ?>
-			[<a title="<?echo GetMessage('FORM_RESULT_EDIT_USER')?>" href='/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arUser["ID"]?>'><?=$arUser['ID']?></a>] <a title="<?echo GetMessage('FORM_RESULT_EDIT_USER')?>" href='/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arUser["ID"]?>'><?=htmlspecialcharsbx($arUser["NAME"])?> <?=htmlspecialcharsbx($arUser["LAST_NAME"])?> (<?=htmlspecialcharsbx($arUser['LOGIN'])?>)</a><?if($arrResult["RESULT_USER_AUTH"] == "N"): ?>&nbsp;<?echo GetMessage('FORM_RESULT_EDIT_USER_NOTAUTH')?><?endif;?>
+			[<a title="<?echo GetMessage('FORM_RESULT_EDIT_USER')?>" href='/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arUser["ID"]?>'><?=$arUser['ID']?></a>] <a title="<?echo GetMessage('FORM_RESULT_EDIT_USER')?>" href='/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arUser["ID"]?>'><?=htmlspecialcharsbx($arUser["NAME"])?> <?=htmlspecialcharsbx($arUser["LAST_NAME"])?> (<?=htmlspecialcharsbx($arUser['LOGIN'])?>)</a><?if($arrResult["RESULT_USER_AUTH"] == "N"): ?>&nbsp;<?echo GetMessage('FORM_RESULT_EDIT_USER_NOTAUTH')?><?endif;?>
 <?
 	else:
 ?>
@@ -444,11 +444,11 @@ if ($can_edit) :
 ?>
 	<tr>
 		<td><?=GetMessage("FORM_GUEST")?></td>
-		<td>[<a title="<?=GetMessage("FORM_GUEST_ALT")?>" href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_GUEST_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arrResult["STAT_GUEST_ID"]?></a>]</td>
+		<td>[<a title="<?=GetMessage("FORM_GUEST_ALT")?>" href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_GUEST_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arrResult["STAT_GUEST_ID"]?></a>]</td>
 	</tr>
 	<tr>
 		<td><?=GetMessage("FORM_SESSION")?></td>
-		<td>[<a href="/bitrix/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_SESSION_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arrResult["STAT_SESSION_ID"]?></a>]</td>
+		<td>[<a href="/bnpt/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arrResult["STAT_SESSION_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arrResult["STAT_SESSION_ID"]?></a>]</td>
 	</tr>
 <?
 		}

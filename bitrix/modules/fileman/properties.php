@@ -748,7 +748,7 @@ function saveYandexKey(domain, input)
 
 	var data = 'key_type=yandex&domain=' + domain + '&key=' + value + '&<?echo bitrix_sessid_get()?>';
 	ShowWaitWindow();
-	CHttpRequest.Post('/bitrix/admin/settings.php?lang=<?echo LANGUAGE_ID?>&mid=fileman&save_map_key=Y', data);
+	CHttpRequest.Post('/bnpt/admin/settings.php?lang=<?echo LANGUAGE_ID?>&mid=fileman&save_map_key=Y', data);
 }
 </script>
 <?

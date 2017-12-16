@@ -154,7 +154,7 @@ function __SortLinkStat($ar1, $ar2)
 
 function __IsHiddenLink($link)
 {
-	return preg_match("#(/bitrix/admin/|show_link_stat|bitrix_include_areas|logout|javascript)#", $link);
+	return preg_match("#(/bnpt/admin/|show_link_stat|bitrix_include_areas|logout|javascript)#", $link);
 }
 
 function __ModifyATags($matches)
@@ -352,7 +352,7 @@ function __GetFullRequestUri($url=false, $host=false, $port=false, $protocol=fal
 	}
 	if (strlen($url)>0) $res .= $url;
 
-	if(strpos($res, "/bitrix/admin/")!==false)
+	if(strpos($res, "/bnpt/admin/")!==false)
 	{
 		$res = str_replace("&mode=list", "", $res);
 		$res = str_replace("&mode=frame", "", $res);
@@ -1110,7 +1110,7 @@ function is_utf8_url($url)
 }
 /*
 $arTest = array(
-	"http://bsm6.business.ru.mysql.max/bitrix/admin/php_command_line.php?lang=ru", //ASCII
+	"http://bsm6.business.ru.mysql.max/bnpt/admin/php_command_line.php?lang=ru", //ASCII
 	"http://www.yandex.ru/yandsearch?text=%D0%B1%D1%8B%D0%BB%D0%BE+", //Yndex utf
 	"http://www.yandex.ru/yandsearch?text=%E1%E8%F2&rpt=rad", //Yandex koi
 	"http://www.google.cn/search?hl=zh-CN&ie=GB2312&q=%CB%F9%D3%D0%CD%F8%D2%B3&btnG=Google+%CB%D1%CB%F7&meta=", //China multibyte

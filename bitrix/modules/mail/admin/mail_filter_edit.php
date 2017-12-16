@@ -403,7 +403,7 @@ $tabControl->Begin();
 		<td><input type="checkbox" name="ACTION_STOP_EXEC" value="Y"<?if($str_ACTION_STOP_EXEC=="Y")echo " checked"?>></td>
 	</tr>
 <?
-$tabControl->Buttons(Array("disabled"=>$MOD_RIGHT<"W", "back_url" =>"/bitrix/admin/mail_filter_admin.php?lang=".LANG));
+$tabControl->Buttons(Array("disabled"=>$MOD_RIGHT<"W", "back_url" =>"/bnpt/admin/mail_filter_admin.php?lang=".LANG));
 $tabControl->End();
 ?>
 

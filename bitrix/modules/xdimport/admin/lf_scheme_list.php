@@ -190,12 +190,12 @@ $aAdd = array(
 	array(
 		"TEXT" => GetMessage("LFP_SCHEME_LIST_POST"),
 		"TITLE" => GetMessage("LFP_SCHEME_LIST_POST"),
-		"ACTION" => "window.location='".addslashes("/bitrix/admin/xdi_lf_scheme_edit.php")."?lang=".LANGUAGE_ID."&TYPE=POST';"
+		"ACTION" => "window.location='".addslashes("/bnpt/admin/xdi_lf_scheme_edit.php")."?lang=".LANGUAGE_ID."&TYPE=POST';"
 	),
 	array(
 		"TEXT" => GetMessage("LFP_SCHEME_LIST_RSS"),
 		"TITLE" => GetMessage("LFP_SCHEME_LIST_RSS"),
-		"ACTION" => "window.location='".addslashes("/bitrix/admin/xdi_lf_scheme_edit.php")."?lang=".LANGUAGE_ID."&TYPE=RSS';"
+		"ACTION" => "window.location='".addslashes("/bnpt/admin/xdi_lf_scheme_edit.php")."?lang=".LANGUAGE_ID."&TYPE=RSS';"
 	)
 );
 
@@ -203,7 +203,7 @@ if (IsModuleInstalled("webservice"))
 	$aAdd[] = array(
 		"TEXT" => GetMessage("LFP_SCHEME_LIST_XML"),
 		"TITLE" => GetMessage("LFP_SCHEME_LIST_XML"),
-		"ACTION" => "window.location='".addslashes("/bitrix/admin/xdi_lf_scheme_edit.php")."?lang=".LANGUAGE_ID."&TYPE=XML';"
+		"ACTION" => "window.location='".addslashes("/bnpt/admin/xdi_lf_scheme_edit.php")."?lang=".LANGUAGE_ID."&TYPE=XML';"
 	);
 
 $aContext = array(

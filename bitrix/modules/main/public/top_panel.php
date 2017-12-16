@@ -153,7 +153,7 @@ class CTopPanel
 		{
 			$defaultUrl = $APPLICATION->GetPopupLink(
 				Array(
-					"URL"=>"/bitrix/admin/public_file_new.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&templateID=".$encSiteTemplateId.
+					"URL"=>"/bnpt/admin/public_file_new.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&templateID=".$encSiteTemplateId.
 						"&path=".$encCurrentDirPath."&back_url=".$encRequestUri,
 					"PARAMS"=> Array("min_width"=>450, "min_height" => 250)
 				)
@@ -242,7 +242,7 @@ class CTopPanel
 		if ($bCanCreateSection)
 		{
 			$defaultUrl = $APPLICATION->GetPopupLink(Array(
-				"URL"=>"/bitrix/admin/public_file_new.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&templateID=".$encSiteTemplateId.
+				"URL"=>"/bnpt/admin/public_file_new.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&templateID=".$encSiteTemplateId.
 					"&newFolder=Y&path=".$encCurrentDirPath."&back_url=".$encRequestUri,
 				"PARAMS"=>Array("min_width"=>450, "min_height" => 250)));
 
@@ -336,7 +336,7 @@ class CTopPanel
 		if (CTopPanel::IsCanEditPage($currentFilePath, $documentRoot, $filemanExists))
 		{
 			$defaultUrl = $APPLICATION->GetPopupLink(array(
-				"URL"=> "/bitrix/admin/public_file_edit.php?lang=".LANGUAGE_ID."&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encRequestUri."&templateID=".$encSiteTemplateId,
+				"URL"=> "/bnpt/admin/public_file_edit.php?lang=".LANGUAGE_ID."&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encRequestUri."&templateID=".$encSiteTemplateId,
 				"PARAMS"=>array(
 					"width"=>780,
 					"height"=>470,
@@ -362,7 +362,7 @@ class CTopPanel
 				"TITLE"=>GetMessage("top_panel_page_prop_title"),
 				"ICON"=>"panel-file-props",
 				"ACTION"=> $APPLICATION->GetPopupLink(Array(
-					"URL"=>"/bitrix/admin/public_file_property.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&back_url=".$encRequestUri,
+					"URL"=>"/bnpt/admin/public_file_property.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&back_url=".$encRequestUri,
 					"PARAMS" => Array("min_width"=>450, "min_height" => 250))
 				),
 				"SORT" => 20,
@@ -376,7 +376,7 @@ class CTopPanel
 				"TITLE"=>GetMessage("top_panel_edit_page_html_title"),
 				"ICON"=>"panel-edit-text",
 				"ACTION"=>$APPLICATION->GetPopupLink(Array(
-					"URL"=>"/bitrix/admin/public_file_edit.php?lang=".LANGUAGE_ID."&noeditor=Y&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encRequestUri,
+					"URL"=>"/bnpt/admin/public_file_edit.php?lang=".LANGUAGE_ID."&noeditor=Y&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encRequestUri,
 					"PARAMS"=>array("width"=>780, "height"=>470, 'dialog_type' => 'EDITOR', "min_width" => 700, "min_height" => 400))
 				),
 				"SORT" => 50,
@@ -390,7 +390,7 @@ class CTopPanel
 					"TITLE"=>GetMessage("top_panel_edit_page_php_title"),
 					"ICON"=>"panel-edit-php",
 					"ACTION"=>$APPLICATION->GetPopupLink(Array(
-						"URL" => "/bitrix/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encRequestUri."&templateID=".$encSiteTemplateId,
+						"URL" => "/bnpt/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encRequestUri."&templateID=".$encSiteTemplateId,
 						"PARAMS" => Array("width"=>770, "height" => 470, 'dialog_type' => 'EDITOR', "min_width" => 700, "min_height" => 400))
 					),
 					"SORT" => 60,
@@ -409,7 +409,7 @@ class CTopPanel
 				"TITLE"=>GetMessage("top_panel_access_page_title"),
 				"ICON"=>"panel-file-access",
 				"ACTION"=>$APPLICATION->GetPopupLink(Array(
-					"URL"=>"/bitrix/admin/public_access_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&back_url=".$encRequestUri,
+					"URL"=>"/bnpt/admin/public_access_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&back_url=".$encRequestUri,
 					"PARAMS" => Array("min_width"=>450, "min_height" => 250)
 				)),
 				"SORT" => 30,
@@ -428,7 +428,7 @@ class CTopPanel
 				"ALT" => GetMessage("top_panel_del_page"),
 				"TEXT" => GetMessage("top_panel_del_page"),
 				"ACTION" => $APPLICATION->GetPopupLink(array(
-					"URL" => "/bitrix/admin/public_file_delete.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath,
+					"URL" => "/bnpt/admin/public_file_delete.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath,
 					"PARAMS" => Array(
 						"min_width"=>250,
 						"min_height" => 180,
@@ -478,7 +478,7 @@ class CTopPanel
 		if (CTopPanel::IsCanEditSection($currentDirPath, $filemanExists))
 		{
 			$defaultUrl = 'javascript:'.$APPLICATION->GetPopupLink(array(
-					"URL"=>"/bitrix/admin/public_folder_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".urlencode($APPLICATION->GetCurDir())."&back_url=".$encRequestUri,
+					"URL"=>"/bnpt/admin/public_folder_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".urlencode($APPLICATION->GetCurDir())."&back_url=".$encRequestUri,
 					"PARAMS" => Array("min_width"=>450, "min_height" => 250)
 				)
 			);
@@ -502,7 +502,7 @@ class CTopPanel
 				"TITLE"=>GetMessage("top_panel_access_folder_title"),
 				"ICON"=>"panel-folder-access",
 				"ACTION"=>$APPLICATION->GetPopupLink(Array(
-					"URL"=>"/bitrix/admin/public_access_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentDirPath."&back_url=".$encRequestUri,
+					"URL"=>"/bnpt/admin/public_access_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentDirPath."&back_url=".$encRequestUri,
 					"PARAMS" => Array("min_width"=>450, "min_height" => 250))
 				),
 				"SORT"=>30,
@@ -543,7 +543,7 @@ class CTopPanel
 		if($USER->CanDoOperation('fileman_view_file_structure') && $USER->CanDoFileOperation('fm_edit_existent_folder', array(SITE_ID, "/")))
 		{
 			$defaultUrl = $APPLICATION->GetPopupLink(array(
-				"URL" => "/bitrix/admin/public_structure.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&templateID=".$encSiteTemplateId,
+				"URL" => "/bnpt/admin/public_structure.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&templateID=".$encSiteTemplateId,
 				"PARAMS" => Array("width"=>350, "height"=>470, "resize" => true)));
 			$arMenu = Array();
 			if($filemanExists)
@@ -559,7 +559,7 @@ class CTopPanel
 				$arMenu[] = array(
 					"TEXT" => GetMessage("main_top_panel_struct_panel"),
 					"TITLE" => GetMessage("main_top_panel_struct_panel_title"),
-					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/fileman_admin.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".urlencode($APPLICATION->GetCurDir()))."')",
+					"ACTION" => "jsUtils.Redirect([], '".CUtil::JSEscape("/bnpt/admin/fileman_admin.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".urlencode($APPLICATION->GetCurDir()))."')",
 					"HK_ID" => "main_top_panel_struct_panel",
 				);
 			}
@@ -711,7 +711,7 @@ class CTopPanel
 						"HK_ID" => "top_panel_templ_site_css",
 						"ACTION"=> $APPLICATION->GetPopupLink(
 							array(
-								"URL" => "/bitrix/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".urlencode($filePath)."&site=".SITE_ID."&back_url=".$encRequestUri,
+								"URL" => "/bnpt/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".urlencode($filePath)."&site=".SITE_ID."&back_url=".$encRequestUri,
 								"PARAMS" => array(
 									"width" => 770,
 									'height' => 470,
@@ -737,7 +737,7 @@ class CTopPanel
 							"HK_ID"  => "top_panel_templ_templ_css",
 							"ACTION" => $APPLICATION->GetPopupLink(
 								array(
-									"URL" => "/bitrix/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".urlencode($filePath)."&site=".SITE_ID."&back_url=".$encRequestUri,
+									"URL" => "/bnpt/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".urlencode($filePath)."&site=".SITE_ID."&back_url=".$encRequestUri,
 									"PARAMS" => array(
 										"width" => 770,
 										'height' => 470,
@@ -758,7 +758,7 @@ class CTopPanel
 					"TEXT"		=>GetMessage("top_panel_templ_edit"),
 					"TITLE"		=>GetMessage("top_panel_templ_edit_title"),
 					"ICON"		=>"icon-edit",
-					"ACTION"	=> "jsUtils.Redirect([], '/bitrix/admin/template_edit.php?lang=".LANGUAGE_ID."&ID=".$encSiteTemplateId."')",
+					"ACTION"	=> "jsUtils.Redirect([], '/bnpt/admin/template_edit.php?lang=".LANGUAGE_ID."&ID=".$encSiteTemplateId."')",
 					"DEFAULT"	=>!$bUseSubmenu,
 					"HK_ID"		=>"top_panel_templ_edit",
 				),
@@ -767,7 +767,7 @@ class CTopPanel
 					"TEXT"		=> GetMessage("top_panel_templ_site"),
 					"TITLE"		=> GetMessage("top_panel_templ_site_title"),
 					"ICON"		=> "icon-edit",
-					"ACTION"	=> "jsUtils.Redirect([], '/bitrix/admin/site_edit.php?lang=".LANGUAGE_ID."&LID=".SITE_ID."')",
+					"ACTION"	=> "jsUtils.Redirect([], '/bnpt/admin/site_edit.php?lang=".LANGUAGE_ID."&LID=".SITE_ID."')",
 					"DEFAULT"	=> false,
 					"HK_ID"		=>"top_panel_templ_site",
 				),
@@ -893,7 +893,7 @@ class CTopPanel
 		{
 			$url = $APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bitrix/admin/short_uri_edit.php?lang=".LANGUAGE_ID."&public=Y&bxpublic=Y&str_URI=".urlencode($APPLICATION->GetCurPageParam("", array("clear_cache", "sessid", "login", "logout", "register", "forgot_password", "change_password", "confirm_registration", "confirm_code", "confirm_user_id", "bitrix_include_areas", "show_page_exec_time", "show_include_exec_time", "show_sql_stat", "show_link_stat")))."&site=".SITE_ID."&back_url=".$encRequestUri,
+					"URL" => "/bnpt/admin/short_uri_edit.php?lang=".LANGUAGE_ID."&public=Y&bxpublic=Y&str_URI=".urlencode($APPLICATION->GetCurPageParam("", array("clear_cache", "sessid", "login", "logout", "register", "forgot_password", "change_password", "confirm_registration", "confirm_code", "confirm_user_id", "bitrix_include_areas", "show_page_exec_time", "show_include_exec_time", "show_sql_stat", "show_link_stat")))."&site=".SITE_ID."&back_url=".$encRequestUri,
 					"PARAMS" => array(
 						"width" => 770,
 						'height' => 270,
@@ -919,7 +919,7 @@ class CTopPanel
 					array(
 						"TEXT" => GetMessage("MTP_SHORT_URI_LIST"),
 						"TITLE" => GetMessage("MTP_SHORT_URI_LIST_ALT"),
-						"ACTION"=>"jsUtils.Redirect([], '".CUtil::addslashes("/bitrix/admin/short_uri_admin.php?lang=".LANGUAGE_ID."")."');",
+						"ACTION"=>"jsUtils.Redirect([], '".CUtil::addslashes("/bnpt/admin/short_uri_admin.php?lang=".LANGUAGE_ID."")."');",
 						"HK_ID"=>"MTP_SHORT_URI_LIST",
 					)
 				),
@@ -1150,14 +1150,14 @@ class CTopPanel
 				<a id="bx-panel-menu" href="" '.CTopPanel::AddAttrHint(GetMessage('top_panel_start_menu_tooltip_title'), GetMessage('top_panel_start_menu_tooltip')).'><span id="bx-panel-menu-icon"></span><span id="bx-panel-menu-text">'.GetMessage("top_panel_menu").'</span></a><a id="bx-panel-view-tab"><span>'.GetMessage("top_panel_site").'</span></a><a id="bx-panel-admin-tab" href="'.(
 						isset($_SESSION["BACK_URL_ADMIN"]) && $_SESSION["BACK_URL_ADMIN"] <> ""
 						? htmlspecialcharsbx($_SESSION["BACK_URL_ADMIN"]).(strpos($_SESSION["BACK_URL_ADMIN"], "?") !== false? "&amp;":"?")
-						: '/bitrix/admin/index.php?lang='.LANGUAGE_ID.'&amp;'
+						: '/bnpt/admin/index.php?lang='.LANGUAGE_ID.'&amp;'
 					).'back_url_pub='.urlencode($href.($params<>""? "?".$params:"")).'"><span>'.GetMessage("top_panel_admin").'</span></a>';
 
 		$back_url = CUtil::JSUrlEscape(CUtil::addslashes($href.($params<>""? "?".$params:"")));
 		$arStartMenuParams = array(
 			'DIV' => 'bx-panel-menu',
 			'ACTIVE_CLASS' => 'bx-pressed',
-			'MENU_URL' => '/bitrix/admin/get_start_menu.php?lang='.LANGUAGE_ID.'&back_url_pub='.urlencode($back_url).'&'.bitrix_sessid_get(),
+			'MENU_URL' => '/bnpt/admin/get_start_menu.php?lang='.LANGUAGE_ID.'&back_url_pub='.urlencode($back_url).'&'.bitrix_sessid_get(),
 			'MENU_PRELOAD' => ($aUserOptGlobal["start_menu_preload"] == 'Y')
 		);
 
@@ -1201,7 +1201,7 @@ class CTopPanel
 
 		if ($bCanProfile)
 		{
-			$result .= '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$USER->GetID().'" id="bx-panel-user" '.CTopPanel::AddAttrHint(GetMessage('top_panel_profile_tooltip')).'><span id="bx-panel-user-icon"></span><span id="bx-panel-user-text">'.$userName.'</span></a>';
+			$result .= '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$USER->GetID().'" id="bx-panel-user" '.CTopPanel::AddAttrHint(GetMessage('top_panel_profile_tooltip')).'><span id="bx-panel-user-icon"></span><span id="bx-panel-user-text">'.$userName.'</span></a>';
 		}
 		else
 		{

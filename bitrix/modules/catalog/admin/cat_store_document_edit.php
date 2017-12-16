@@ -155,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_REQUEST["Update"]) > 0 && !
 		}
 
 		if ($_REQUEST["save_document"] && $docId)
-			LocalRedirect("/bitrix/admin/cat_store_document_edit.php?lang=".LANGUAGE_ID."&ID=".$docId.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_store_document_edit.php?lang=".LANGUAGE_ID."&ID=".$docId.GetFilterParams("filter_", false));
 	}
 
 	if ($_REQUEST["save_and_conduct"] || $_REQUEST["cancellation"])
@@ -189,7 +189,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_REQUEST["Update"]) > 0 && !
 		}
 		else
 		{
-			LocalRedirect("/bitrix/admin/cat_store_document_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bnpt/admin/cat_store_document_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		}
 	}
 }
@@ -221,7 +221,7 @@ if($ID > 0)
 
 $requiredFields = CCatalogStoreControlUtil::getFields($docType);
 if(!$requiredFields || $_REQUEST["dontsave"])
-	LocalRedirect("/bitrix/admin/cat_store_document_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+	LocalRedirect("/bnpt/admin/cat_store_document_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 
 $sTableID = "b_catalog_store_docs_".$docType;
 $oSort = new CAdminSorting($sTableID, "ID", "ASC");
@@ -666,7 +666,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CAT_DOC_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bitrix/admin/cat_store_document_list.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+		"LINK" => "/bnpt/admin/cat_store_document_list.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -758,7 +758,7 @@ CAdminMessage::ShowMessage($errorMessage);
 									?>
 									</select>
 								<?else:?>
-									<a href="/bitrix/admin/cat_contractor_edit.php?lang=<? echo urlencode(LANGUAGE_ID); ?>"><?echo GetMessage("CAT_DOC_CONTRACTOR_ADD")?></a>
+									<a href="/bnpt/admin/cat_contractor_edit.php?lang=<? echo urlencode(LANGUAGE_ID); ?>"><?echo GetMessage("CAT_DOC_CONTRACTOR_ADD")?></a>
 								<?endif;?>
 							</td>
 						</tr>
@@ -794,7 +794,7 @@ $tabControl->Buttons(
 		"btnSave" => false,
 		"btnApply" => false,
 		"btnCancel" => false,
-		"back_url" => "/bitrix/admin/cat_store_document_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false),
+		"back_url" => "/bnpt/admin/cat_store_document_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false),
 	)
 );
 if(!$bReadOnly && !$isDocumentConduct)
@@ -926,7 +926,7 @@ if (typeof showTotalSum === 'undefined')
 			store_id = params.store_id || '0';
 
 		var popup = new BX.CDialog({
-			content_url: '/bitrix/admin/cat_product_search_dialog.php?lang='+lang+'&LID='+site_id+'&caller=' + caller + '&func_name='+callback+'&STORE_FROM_ID='+store_id,
+			content_url: '/bnpt/admin/cat_product_search_dialog.php?lang='+lang+'&LID='+site_id+'&caller=' + caller + '&func_name='+callback+'&STORE_FROM_ID='+store_id,
 			height: Math.max(500, window.innerHeight-400),
 			width: Math.max(800, window.innerWidth-400),
 			draggable: true,
@@ -1003,7 +1003,7 @@ if (typeof showTotalSum === 'undefined')
 		var dateURL = '<?=bitrix_sessid_get()?>&BARCODE_AJAX=Y&BARCODE='+barcode+'&lang=<? echo LANGUAGE_ID; ?>';
 
 		BX.showWait();
-		BX.ajax.post('/bitrix/admin/cat_store_product_search.php', dateURL, fSearchProductResult);
+		BX.ajax.post('/bnpt/admin/cat_store_product_search.php', dateURL, fSearchProductResult);
 	}
 
 	function fSearchProductResult(result)

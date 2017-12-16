@@ -166,7 +166,7 @@ function preview_template(ID, sess_id, sign)
 	}
 
 	BX.showWait();
-	BX.ajax.post('/bitrix/admin/template_create_preview.php?ID='+ID,
+	BX.ajax.post('/bnpt/admin/template_create_preview.php?ID='+ID,
 		{
 			CONTENT : decodeContentFromLCA(content),
 			STYLES : BX('__STYLES').value,

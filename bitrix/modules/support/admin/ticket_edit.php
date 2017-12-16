@@ -602,7 +602,7 @@ $aMenu = array(
 
 		"TEXT" => GetMessage("MAIN_ADMIN_MENU_LIST"),
 		"TITLE" => GetMessage("SUP_RECORDS_LIST"),
-		"LINK" => "/bitrix/admin/ticket_list.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bnpt/admin/ticket_list.php?lang=".LANGUAGE_ID,
 		"ICON" => "btn_list",
 	),
 );
@@ -615,7 +615,7 @@ if(intval($ID)>0)
 		"TEXT"	=> GetMessage("MAIN_ADMIN_MENU_CREATE"),
 		"TITLE" => GetMessage("SUP_CREATE_NEW_TICKET"),
 		"ICON" => "btn_new",
-		"LINK"	=> "/bitrix/admin/ticket_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bnpt/admin/ticket_edit.php?lang=".LANGUAGE_ID,
 		);
 
 	if (strlen($str_DATE_CLOSE)<=0)
@@ -624,7 +624,7 @@ if(intval($ID)>0)
 			//"ICON" => "btn_close",
 			"TEXT"	=> GetMessage("MAIN_ADMIN_MENU_CLOSE"),
 			"TITLE"	=> GetMessage("SUP_CLOSE_TICKET"),
-			"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=close&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+			"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=close&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
 			);
 	}
 	else
@@ -633,7 +633,7 @@ if(intval($ID)>0)
 			//"ICON" => "btn_open",
 			"TEXT" => GetMessage("MAIN_ADMIN_MENU_OPEN"),
 			"TITLE"	=> GetMessage("SUP_OPEN_TICKET"),
-			"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+			"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
 			);
 	}
 
@@ -646,7 +646,7 @@ if(intval($ID)>0)
 		{
 			$arSpamMenu[] = array(
 				"TEXT"	=> GetMessage("SUP_UNMARK_TICKET"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_edit.php?ID=".$ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_edit.php?ID=".$ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';"
 				);
 		}
 
@@ -654,7 +654,7 @@ if(intval($ID)>0)
 		{
 			$arSpamMenu[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_AS_POSSIBLE_SPAM"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_edit.php?ID=".$ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_edit.php?ID=".$ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';"
 				);
 		}
 
@@ -662,7 +662,7 @@ if(intval($ID)>0)
 		{
 			$arSpamMenu[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_AS_SPAM"),
-				"ACTION"	=> "window.location='/bitrix/admin/ticket_edit.php?ID=".$ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';"
+				"ACTION"	=> "window.location='/bnpt/admin/ticket_edit.php?ID=".$ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';"
 				);
 		}
 
@@ -670,14 +670,14 @@ if(intval($ID)>0)
 		{
 			$arSpamMenu[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_AS_SPAM_DELETE"),
-				"ACTION"	=> "javascript:if(confirm('".GetMessage("SUP_MARK_AS_SPAM_DELETE_CONFIRM")."')) window.location='/bitrix/admin/ticket_list.php?ID=".$ID."&action=mark_spam_delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+				"ACTION"	=> "javascript:if(confirm('".GetMessage("SUP_MARK_AS_SPAM_DELETE_CONFIRM")."')) window.location='/bnpt/admin/ticket_list.php?ID=".$ID."&action=mark_spam_delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 				);
 
 			$aMenu[] = array(
 				"TEXT"	=> GetMessage("MAIN_ADMIN_MENU_DELETE"),
 				"TITLE"	=> GetMessage("SUP_DELETE_TICKET"),
 				"ICON" => "btn_delete",
-				"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_TICKET_CONFIRM")."')) window.location='/bitrix/admin/ticket_list.php?ID=".$ID."&action=delete&redirectafter=Y&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+				"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_TICKET_CONFIRM")."')) window.location='/bnpt/admin/ticket_list.php?ID=".$ID."&action=delete&redirectafter=Y&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 				);
 		}
 
@@ -1107,7 +1107,7 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 			<?
 			/*if (intval($str_OWNER_USER_ID)>0)
 			{
-				$owner_name = "[<a title=\"".GetMessage("SUP_USER_PROFILE")."\" href=\"/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_OWNER_USER_ID."\">".$str_OWNER_USER_ID."</a>] (".$str_OWNER_LOGIN.") ".$str_OWNER_NAME;
+				$owner_name = "[<a title=\"".GetMessage("SUP_USER_PROFILE")."\" href=\"/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_OWNER_USER_ID."\">".$str_OWNER_USER_ID."</a>] (".$str_OWNER_LOGIN.") ".$str_OWNER_NAME;
 			}
 			*/
 			if(intval($str_OWNER_USER_ID)>0)
@@ -1116,7 +1116,7 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 			}
 			echo FindUserID("OWNER_USER_ID", $str_OWNER_USER_ID, $owner_name);
 			if ($ID>0):
-				?><br>[&nbsp;<a href="/bitrix/admin/ticket_list.php?set_filter=Y&lang=<?=LANGUAGE_ID?>&<?=implode("&",$arAuthorFilter)?>"><?=GetMessage("SUP_AUTHOR_TICKETS")?></a>&nbsp;]<?
+				?><br>[&nbsp;<a href="/bnpt/admin/ticket_list.php?set_filter=Y&lang=<?=LANGUAGE_ID?>&<?=implode("&",$arAuthorFilter)?>"><?=GetMessage("SUP_AUTHOR_TICKETS")?></a>&nbsp;]<?
 			endif;
 			?>
 		</td>
@@ -1149,13 +1149,13 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 		{
 			if (intval($str_OWNER_USER_ID)>0)
 			{
-				/*?>[<a title="<?echo GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?echo LANG?>&ID=<?=$str_OWNER_USER_ID?>"><?echo $str_OWNER_USER_ID?></a>]  (<?=$str_OWNER_LOGIN?>) <?=$str_OWNER_NAME?> */
+				/*?>[<a title="<?echo GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?echo LANG?>&ID=<?=$str_OWNER_USER_ID?>"><?echo $str_OWNER_USER_ID?></a>]  (<?=$str_OWNER_LOGIN?>) <?=$str_OWNER_NAME?> */
 				echo $arStrUsers["arUsers"][intval($str_OWNER_USER_ID)]["HTML_NAME"] . " " . $arrSUPPORT_TEAM[$str_OWNER_USER_ID];
 			}
 
 			if (intval($str_OWNER_GUEST_ID)>0 && CModule::IncludeModule("statistic"))
 			{
-				/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=".LANG."&find_id=".$str_OWNER_GUEST_ID."&find_id_exact_match=Y&set_filter=Y'>".$str_OWNER_GUEST_ID."</a>]";*/
+				/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=".LANG."&find_id=".$str_OWNER_GUEST_ID."&find_id_exact_match=Y&set_filter=Y'>".$str_OWNER_GUEST_ID."</a>]";*/
 				echo $arStrUsers["arGuests"][intval($str_OWNER_GUEST_ID)]["HTML_NAME"];
 			}
 		}
@@ -1189,11 +1189,11 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 			if ($bAdmin=="Y" || $bDemo=="Y" || $bSupportTeam=="Y")
 			{
 
-				/*?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$str_CREATED_USER_ID?>"><?echo $str_CREATED_USER_ID?></a>] (<?=$str_CREATED_LOGIN?>) <?=$str_CREATED_NAME?> <?=$arrSUPPORT_TEAM[$str_CREATED_USER_ID]?><?*/
+				/*?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$str_CREATED_USER_ID?>"><?echo $str_CREATED_USER_ID?></a>] (<?=$str_CREATED_LOGIN?>) <?=$str_CREATED_NAME?> <?=$arrSUPPORT_TEAM[$str_CREATED_USER_ID]?><?*/
 
 				if ($uid <= 0 && intval($str_CREATED_GUEST_ID) > 0 && CModule::IncludeModule("statistic"))
 				{
-					/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=".LANG."&find_id=". $str_CREATED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y' class='tablebodylink'>".$str_CREATED_GUEST_ID."</a>]";*/
+					/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=".LANG."&find_id=". $str_CREATED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y' class='tablebodylink'>".$str_CREATED_GUEST_ID."</a>]";*/
 					echo $arStrUsers["arGuests"][intval($str_CREATED_GUEST_ID)]["HTML_NAME"];
 				}
 				elseif($uid > 0)
@@ -1231,12 +1231,12 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 			if ($bAdmin=="Y" || $bDemo=="Y" || $bSupportTeam=="Y")
 			{
 
-				/*?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?echo $str_MODIFIED_USER_ID?>"><?=$str_MODIFIED_USER_ID?></a>] (<?=$str_MODIFIED_BY_LOGIN?>) <?=$str_MODIFIED_BY_NAME?> <?=$arrSUPPORT_TEAM[$str_MODIFIED_USER_ID]?><?*/
+				/*?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?echo $str_MODIFIED_USER_ID?>"><?=$str_MODIFIED_USER_ID?></a>] (<?=$str_MODIFIED_BY_LOGIN?>) <?=$str_MODIFIED_BY_NAME?> <?=$arrSUPPORT_TEAM[$str_MODIFIED_USER_ID]?><?*/
 
 				if($uid <= 0 && intval($str_MODIFIED_GUEST_ID)>0 && CModule::IncludeModule("statistic"))
 				{
 					echo $arStrUsers["arGuests"][intval($str_MODIFIED_GUEST_ID)]["HTML_NAME"];
-					/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=".LANG."&find_id=".$str_MODIFIED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y' >".$str_MODIFIED_GUEST_ID."</a>]";*/
+					/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=".LANG."&find_id=".$str_MODIFIED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y' >".$str_MODIFIED_GUEST_ID."</a>]";*/
 				}
 				elseif($uid > 0)
 				{
@@ -1319,7 +1319,7 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 		if ($saleModulePermissions > "D"):?>
 			<tr>
 				<td valign="top" align="right" width="20%" nowrap><?=GetMessage("SUP_SALE_ORDER")?></td>
-				<td width="80%" nowrap>[ <a href="/bitrix/admin/sale_order.php?lang=<?=LANGUAGE_ID?>&set_filter=Y&filter_user_id=<?=$str_CREATED_USER_ID?>" target="_blank"><?=GetMessage("SUP_SALE_ORDER_LIST")?></a> ]</td>
+				<td width="80%" nowrap>[ <a href="/bnpt/admin/sale_order.php?lang=<?=LANGUAGE_ID?>&set_filter=Y&filter_user_id=<?=$str_CREATED_USER_ID?>" target="_blank"><?=GetMessage("SUP_SALE_ORDER_LIST")?></a> ]</td>
 			</tr>
 	<?  endif;
 	endif;?>
@@ -1511,7 +1511,7 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 															{
 																echo " | ";
 															}
-															echo '<a title="' . GetMessage("SUP_VIEW_SOURCE_ALT") . '" href="/bitrix/admin/mail_message_view.php?lang=' . LANGUAGE_ID . '&ID=' . $arM["EXTERNAL_ID"] . '">' . GetMessage("SUP_VIEW_SOURCE") . '</a>';
+															echo '<a title="' . GetMessage("SUP_VIEW_SOURCE_ALT") . '" href="/bnpt/admin/mail_message_view.php?lang=' . LANGUAGE_ID . '&ID=' . $arM["EXTERNAL_ID"] . '">' . GetMessage("SUP_VIEW_SOURCE") . '</a>';
 															$bSep = true;
 														}
 
@@ -1579,7 +1579,7 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 													{
 														/*if($oUID > 0)
 														{
-															?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?echo LANG?>&ID=<?echo $arM["OWNER_USER_ID"]; ?>"><?echo $arM["OWNER_USER_ID"]; ?></a>] (<? echo $arM["OWNER_LOGIN"]; ?>) <? echo $arM["OWNER_USER_NAME"]; ?>
+															?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?echo LANG?>&ID=<?echo $arM["OWNER_USER_ID"]; ?>"><?echo $arM["OWNER_USER_ID"]; ?></a>] (<? echo $arM["OWNER_LOGIN"]; ?>) <? echo $arM["OWNER_USER_NAME"]; ?>
 															<?=$arrSUPPORT_TEAM[$arM["OWNER_USER_ID"]]?>
 															<?
 														}*/
@@ -1590,7 +1590,7 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 															?>
 															<? echo ($oUID > 0 ? $arrSUPPORT_TEAM[$oUID] : ""); ?>
 															<?
-															//echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=" . LANG . "&find_id=" . $arM["OWNER_GUEST_ID"] . "&find_id_exact_match=Y&set_filter=Y'>" . $arM["OWNER_GUEST_ID"] . "</a>]";
+															//echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=" . LANG . "&find_id=" . $arM["OWNER_GUEST_ID"] . "&find_id_exact_match=Y&set_filter=Y'>" . $arM["OWNER_GUEST_ID"] . "</a>]";
 														}
 														elseif($oUID > 0)
 														{
@@ -1637,13 +1637,13 @@ if (isset($_GET['TICKET_ID']) && isset($_GET['MESSAGE_ID']))
 
 													if (strlen($arM["CREATED_MODULE_NAME"])<=0 || $arM["CREATED_MODULE_NAME"] == "support")
 													{
-														/*?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<? echo $arM["CREATED_USER_ID"]; ?>"><? echo $arM["CREATED_USER_ID"]; ?></a>] (<? echo $arM["CREATED_LOGIN"]; ?>) <? echo $arM["CREATED_USER_NAME"]; ?> <? echo $arrSUPPORT_TEAM[$arM["CREATED_USER_ID"]]; ?><?*/
+														/*?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<? echo $arM["CREATED_USER_ID"]; ?>"><? echo $arM["CREATED_USER_ID"]; ?></a>] (<? echo $arM["CREATED_LOGIN"]; ?>) <? echo $arM["CREATED_USER_NAME"]; ?> <? echo $arrSUPPORT_TEAM[$arM["CREATED_USER_ID"]]; ?><?*/
 
 														if ($cUID <= 0 && $cGID > 0 && CModule::IncludeModule("statistic"))
 														{
 															echo $arStrUsersM["arGuests"][$cGID]["HTML_NAME"];
 															echo ($cUID > 0 ? " " . $arrSUPPORT_TEAM[$cUID] : "");
-															/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=".LANG."&find_id=". $arM["CREATED_GUEST_ID"]."&find_id_exact_match=Y&set_filter=Y'>".$arM["CREATED_GUEST_ID"]."</a>]";*/
+															/*echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=".LANG."&find_id=". $arM["CREATED_GUEST_ID"]."&find_id_exact_match=Y&set_filter=Y'>".$arM["CREATED_GUEST_ID"]."</a>]";*/
 														}
 														elseif($cUID > 0)
 														{
@@ -1988,7 +1988,7 @@ function OnModeClick(mode, btn1, btn2)
 		document.getElementById("icon_2").style.display = "inline";
 	}
 
-	document.getElementById("online_frame").src = "/bitrix/admin/ticket_online.php?TICKET_ID=<?=$ID?>&OWNER_USER_ID=<?=intval($str_OWNER_USER_ID)?>&lang=<?=LANGUAGE_ID?>&mode="+mode+"&ONLINE_AUTO_REFRESH=<?=$ONLINE_AUTO_REFRESH?>";
+	document.getElementById("online_frame").src = "/bnpt/admin/ticket_online.php?TICKET_ID=<?=$ID?>&OWNER_USER_ID=<?=intval($str_OWNER_USER_ID)?>&lang=<?=LANGUAGE_ID?>&mode="+mode+"&ONLINE_AUTO_REFRESH=<?=$ONLINE_AUTO_REFRESH?>";
 	
 	EnDisUserFields( mode );
 }
@@ -2110,7 +2110,7 @@ function OnModeClick(mode, btn1, btn2)
 			?>&nbsp;<input type="text" size="12" name="MESSAGE_AUTHOR_SID" id="MESSAGE_AUTHOR_SID" value="<?=$str_MESSAGE_AUTHOR_SID?>">
 
 <input type="text" name="MESSAGE_AUTHOR_USER_ID" id="MESSAGE_AUTHOR_USER_ID" value="" size="3" >
-<input type="button" name="FindUser" id="FindUser" OnClick="window.open('/bitrix/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=form1&FC=MESSAGE_AUTHOR_USER_ID', '', 'scrollbars=yes,resizable=yes,width=760,height=560,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));" value="..."-->
+<input type="button" name="FindUser" id="FindUser" OnClick="window.open('/bnpt/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=form1&FC=MESSAGE_AUTHOR_USER_ID', '', 'scrollbars=yes,resizable=yes,width=760,height=560,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));" value="..."-->
 
 
 			</td>
@@ -2221,10 +2221,10 @@ function OnModeClick(mode, btn1, btn2)
 			<table cellspacing=0 cellpadding=0 width="100%" border=0>
 				<tr>
 					<td style="padding-top:13px; padding-right: 10px" nowrap><?=GetMessage("SUP_ONLINE_TITLE")?></td>
-					<td style="padding-top:13px;" width="100%" align="left"><a target="online_frame" href="/bitrix/admin/ticket_online.php?TICKET_ID=<?=$ID?>&OWNER_USER_ID=<?=intval($str_OWNER_USER_ID)?>&lang=<?=LANGUAGE_ID?>&ONLINE_AUTO_REFRESH=<?=$ONLINE_AUTO_REFRESH?>"><img src="/bitrix/images/support/refresh.gif" width="14" height="14" border="0" alt="<?=GetMessage("SUP_REFRESH_ALT")?>"></a></td>
+					<td style="padding-top:13px;" width="100%" align="left"><a target="online_frame" href="/bnpt/admin/ticket_online.php?TICKET_ID=<?=$ID?>&OWNER_USER_ID=<?=intval($str_OWNER_USER_ID)?>&lang=<?=LANGUAGE_ID?>&ONLINE_AUTO_REFRESH=<?=$ONLINE_AUTO_REFRESH?>"><img src="/bitrix/images/support/refresh.gif" width="14" height="14" border="0" alt="<?=GetMessage("SUP_REFRESH_ALT")?>"></a></td>
 				</tr>
 				<tr>
-					<td colspan="2" width="100%" nowrap><iframe name="online_frame" id="online_frame" frameborder="0" style="width:100%; border:0; height:300px;" src="/bitrix/admin/ticket_online.php?TICKET_ID=<?=$ID?>&OWNER_USER_ID=<?=intval($str_OWNER_USER_ID)?>&lang=<?=LANGUAGE_ID?>&mode=<?=$default_mode?>&ONLINE_AUTO_REFRESH=<?=$ONLINE_AUTO_REFRESH?>"></iframe></td>
+					<td colspan="2" width="100%" nowrap><iframe name="online_frame" id="online_frame" frameborder="0" style="width:100%; border:0; height:300px;" src="/bnpt/admin/ticket_online.php?TICKET_ID=<?=$ID?>&OWNER_USER_ID=<?=intval($str_OWNER_USER_ID)?>&lang=<?=LANGUAGE_ID?>&mode=<?=$default_mode?>&ONLINE_AUTO_REFRESH=<?=$ONLINE_AUTO_REFRESH?>"></iframe></td>
 				</tr>
 			</table></td>
 		<?endif;?>

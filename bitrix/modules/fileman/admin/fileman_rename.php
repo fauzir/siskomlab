@@ -104,7 +104,7 @@ else
 			$path = $pathTmp;
 			$arParsedPath = CFileMan::ParsePath(Array($site, $path), false, false, "", $logical == "Y");
 			$abs_path = $DOC_ROOT.$path;
-			LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+			LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 		}
 	}
 }
@@ -137,7 +137,7 @@ $tabControl->BeginNextTab();?>
 <?
 $tabControl->EndTab();
 $tabControl->Buttons();?>
-<input type="submit" class="adm-btn-save" name="saveb" value="<?=GetMessage("admin_lib_edit_save")?>">&nbsp;<input class="button" type="reset" value="<?=GetMessage("admin_lib_edit_cancel")?>" onclick="javascript:window.location='/bitrix/admin/fileman_admin.php?<?=$addUrl?>&site=<?=UrlEncode($site)?>&path=<?=UrlEncode($path)?>'">
+<input type="submit" class="adm-btn-save" name="saveb" value="<?=GetMessage("admin_lib_edit_save")?>">&nbsp;<input class="button" type="reset" value="<?=GetMessage("admin_lib_edit_cancel")?>" onclick="javascript:window.location='/bnpt/admin/fileman_admin.php?<?=$addUrl?>&site=<?=UrlEncode($site)?>&path=<?=UrlEncode($path)?>'">
 </form>
 <?$tabControl->End();
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");

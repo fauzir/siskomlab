@@ -248,13 +248,13 @@ if ( ($_SERVER["REQUEST_METHOD"] == "POST") && ($Perm >= "X") && (strlen($_POST[
 				}
 				else
 				{
-					LocalRedirect("/bnpt/admin/learn_unilesson_admin.php?lang=" . LANG
+					LocalRedirect("/bitrix/admin/learn_unilesson_admin.php?lang=" . LANG
 						. $returnPath
 						. GetFilterParams("filter_", false));
 				}
 			}
 
-			LocalRedirect("/bnpt/admin/learn_course_edit.php?lang=".LANG
+			LocalRedirect("/bitrix/admin/learn_course_edit.php?lang=".LANG
 				. $returnPath
 				. "&COURSE_ID=".$COURSE_ID
 				."&".$tabControl->ActiveTabParam()
@@ -706,7 +706,7 @@ $tabControl->EndCustomField("UFS");
 $tabControl->Buttons(
 	array(
 		'disabled' => $isBtnsDisabled,
-		"back_url" => "/bnpt/admin/learn_unilesson_admin.php?lang=".LANG."&PARENT_LESSON_ID=-1"
+		"back_url" => "/bitrix/admin/learn_unilesson_admin.php?lang=".LANG."&PARENT_LESSON_ID=-1"
 			. $uriParentLessonPath
 			. GetFilterParams("filter_", false)
 		)

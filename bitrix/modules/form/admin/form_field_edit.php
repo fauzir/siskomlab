@@ -273,8 +273,8 @@ if ($additional!="Y")
 	$aMenu[] = array(
 		"ICON"			=> "btn_list",
 		"TEXT"			=> GetMessage("FORM_QUESTIONS")." [".$arForm["QUESTIONS"]."]",
-		"LINK"			=> "/bnpt/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
-		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_QUESTION")."  href='/bnpt/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>+</a>]",
+		"LINK"			=> "/bitrix/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_QUESTION")."  href='/bitrix/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>+</a>]",
 		"TITLE"			=> GetMessage("FORM_QUESTIONS_ALT")
 		);
 
@@ -284,8 +284,8 @@ else
 	$aMenu[] = array(
 		"ICON"			=> "btn_list",
 		"TEXT"			=> GetMessage("FORM_FIELDS")." [".$arForm["C_FIELDS"]."]",
-		"LINK"			=> "/bnpt/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y",
-		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_FIELD")."  href='/bnpt/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y'>+</a>]",
+		"LINK"			=> "/bitrix/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y",
+		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_FIELD")."  href='/bitrix/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y'>+</a>]",
 		"TITLE"			=> GetMessage("FORM_FIELDS_ALT")
 		);
 }
@@ -353,16 +353,16 @@ $aMenu[] = array("NEWBAR"=>"Y");
 
 $aMenu[] = array(
 	"TEXT"			=> GetMessage("FORM_STATUSES")." [".$arForm["STATUSES"]."]",
-	"LINK"			=> "/bnpt/admin/form_status_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
-	"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_STATUS")."  href='/bnpt/admin/form_status_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>+</a>]",
+	"LINK"			=> "/bitrix/admin/form_status_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+	"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_STATUS")."  href='/bitrix/admin/form_status_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>+</a>]",
 	"TITLE"			=> GetMessage("FORM_STATUSES_ALT")
 	);
 if ($additional!="Y")
 {
 	$aMenu[] = array(
 		"TEXT"			=> GetMessage("FORM_FIELDS")." [".$arForm["C_FIELDS"]."]",
-		"LINK"			=> "/bnpt/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y",
-		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_FIELD")."  href='/bnpt/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y'>+</a>]",
+		"LINK"			=> "/bitrix/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y",
+		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_FIELD")."  href='/bitrix/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y'>+</a>]",
 		"TITLE"			=> GetMessage("FORM_FIELDS_ALT")
 		);
 }
@@ -370,8 +370,8 @@ else
 {
 	$aMenu[] = array(
 		"TEXT"			=> GetMessage("FORM_QUESTIONS")." [".$arForm["QUESTIONS"]."]",
-		"LINK"			=> "/bnpt/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
-		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_QUESTION")."  href='/bnpt/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>+</a>]",
+		"LINK"			=> "/bitrix/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+		"TEXT_PARAM"	=> " [<a title=".GetMessage("FORM_ADD_QUESTION")."  href='/bitrix/admin/form_field_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."'>+</a>]",
 		"TITLE"			=> GetMessage("FORM_QUESTIONS_ALT")
 		);
 }

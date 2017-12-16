@@ -751,7 +751,7 @@ class CAutoCheck
 			"install/components/bitrix/" => "/bitrix/components/bitrix/",
 			"install/js/" => "/bitrix/js/",
 			"install/activities/" => "/bitrix/activities/",
-			"install/admin/" => "/bnpt/admin/",
+			"install/admin/" => "/bitrix/admin/",
 			"install/wizards/" => "/bitrix/wizards/",
 		);
 

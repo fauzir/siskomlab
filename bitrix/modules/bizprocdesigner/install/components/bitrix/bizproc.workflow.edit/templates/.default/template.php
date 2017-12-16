@@ -168,7 +168,7 @@ function BCPSaveTemplate(save)
 function BCPShowParams()
 {
 	(new BX.CAdminDialog({
-	'content_url': "/bnpt/admin/<?=MODULE_ID?>_bizproc_wf_settings.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>&entity=<?=ENTITY?>",
+	'content_url': "/bitrix/admin/<?=MODULE_ID?>_bizproc_wf_settings.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>&entity=<?=ENTITY?>",
 	'content_post': 'workflowTemplateName=' 		+ encodeURIComponent(workflowTemplateName) + '&' +
 			'workflowTemplateDescription=' 	+ encodeURIComponent(workflowTemplateDescription) + '&' +
 			'workflowTemplateAutostart=' 	+ encodeURIComponent(workflowTemplateAutostart) + '&' +

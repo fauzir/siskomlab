@@ -2,7 +2,7 @@
 $MESS["STAT_EDIT_RECORD"] = "Event type parameters # #ID#";
 $MESS["STAT_NEW_RECORD"] = "New event type";
 $MESS["STAT_RECORDS_LIST"] = "Event types";
-$MESS["STAT_ADV_VISIBLE"] = "Include in <a href='/bnpt/admin/adv_list.php?lang=#LANG#'>advertising report</a>:";
+$MESS["STAT_ADV_VISIBLE"] = "Include in <a href='/bitrix/admin/adv_list.php?lang=#LANG#'>advertising report</a>:";
 $MESS["STAT_NAME"] = "Nama:";
 $MESS["STAT_KEEP_DAYS"] = "Days to keep each instance<br>of this event type:";
 $MESS["STAT_DESCRIPTION"] = "Deskripsi:";

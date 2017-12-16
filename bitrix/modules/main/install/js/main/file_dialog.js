@@ -176,7 +176,7 @@ BXFileDialog.prototype =
 
 	GetRequestUrl: function(site, sessid)
 	{
-		return '/bnpt/admin/file_dialog.php?'
+		return '/bitrix/admin/file_dialog.php?'
 			+ 'lang=' + this.oConfig.lang
 			+ '&operation=' + this.oConfig.operation
 			+ '&site=' + (site || this.oConfig.site)

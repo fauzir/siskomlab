@@ -245,7 +245,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 	$row->AddViewField("QUESTIONS", "<a href=\"learn_test_result_admin.php?lang=".LANG."&ATTEMPT_ID=".$f_ID."\">".$f_QUESTIONS."</a>");
 
-	$row->AddViewField("TEST_NAME", "<a href=\"/bnpt/admin/learn_test_edit.php?lang=".LANGUAGE_ID."&COURSE_ID=".$f_COURSE_ID."&PARENT_LESSON_ID=".$f_LINKED_LESSON_ID."&LESSON_PATH=".$f_LINKED_LESSON_ID."&ID=".$f_TEST_ID."&filter=Y&set_filter=Y\">".$f_TEST_NAME."</a>");
+	$row->AddViewField("TEST_NAME", "<a href=\"/bitrix/admin/learn_test_edit.php?lang=".LANGUAGE_ID."&COURSE_ID=".$f_COURSE_ID."&PARENT_LESSON_ID=".$f_LINKED_LESSON_ID."&LESSON_PATH=".$f_LINKED_LESSON_ID."&ID=".$f_TEST_ID."&filter=Y&set_filter=Y\">".$f_TEST_NAME."</a>");
 
 	$row->AddViewField("SPEED", intval($f_SPEED));
 

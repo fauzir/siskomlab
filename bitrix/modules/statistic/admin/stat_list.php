@@ -1303,23 +1303,23 @@ $lAdmin_tab1->DisplayList();
 ?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bnpt/admin/adv_list.php?lang=<?echo LANG?>"><?echo GetMessage("STAT_VIEW_ALL_CAPMPAIGNS")?></a><br><br>
+<a href="/bitrix/admin/adv_list.php?lang=<?echo LANG?>"><?echo GetMessage("STAT_VIEW_ALL_CAPMPAIGNS")?></a><br><br>
 <?$lAdmin_tab2->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bnpt/admin/event_type_list.php?lang=<?echo LANG?>"><?echo GetMessage("STAT_VIEW_ALL_EVENTS")?></a><br><br>
+<a href="/bitrix/admin/event_type_list.php?lang=<?echo LANG?>"><?echo GetMessage("STAT_VIEW_ALL_EVENTS")?></a><br><br>
 <?$lAdmin_tab3->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bnpt/admin/referer_list.php?lang=<?echo LANG?>&amp;group_by=none&amp;del_filter=Y"><?echo GetMessage("STAT_VIEW_ALL_REFERERS")?></a><br><br>
+<a href="/bitrix/admin/referer_list.php?lang=<?echo LANG?>&amp;group_by=none&amp;del_filter=Y"><?echo GetMessage("STAT_VIEW_ALL_REFERERS")?></a><br><br>
 <?$lAdmin_tab4->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bnpt/admin/phrase_list.php?lang=<?echo LANG?>&amp;set_default=Y&amp;group_by=none&amp;menu_item_id=1"><?echo GetMessage("STAT_VIEW_ALL_PHRASES")?></a><br><br>
+<a href="/bitrix/admin/phrase_list.php?lang=<?echo LANG?>&amp;set_default=Y&amp;group_by=none&amp;menu_item_id=1"><?echo GetMessage("STAT_VIEW_ALL_PHRASES")?></a><br><br>
 <?$lAdmin_tab5->DisplayList();?>
 
 <?$tabControl->BeginNextTab();?>
-<a href="/bnpt/admin/searcher_list.php?lang=<?echo LANG?>"><?echo GetMessage("STAT_VIEW_ALL_SEACHERS")?></a><br><br>
+<a href="/bitrix/admin/searcher_list.php?lang=<?echo LANG?>"><?echo GetMessage("STAT_VIEW_ALL_SEACHERS")?></a><br><br>
 <?$lAdmin_tab6->DisplayList();?>
 
 <?$tabControl->End();?>

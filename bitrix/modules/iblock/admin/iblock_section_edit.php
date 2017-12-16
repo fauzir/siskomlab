@@ -383,7 +383,7 @@ if(
 			}
 			else
 			{
-				LocalRedirect("/bnpt/admin/".CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>intval($find_section_section))));
+				LocalRedirect("/bitrix/admin/".CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>intval($find_section_section))));
 			}
 		}
 		elseif(strlen($save_and_add) > 0)
@@ -394,7 +394,7 @@ if(
 				?>
 					<script type="text/javascript">
 						top.BX.ajax.post(
-							'/bnpt/admin/<?echo $l = CUtil::JSEscape(CIBlock::GetAdminSectionEditLink($IBLOCK_ID, 0, array(
+							'/bitrix/admin/<?echo $l = CUtil::JSEscape(CIBlock::GetAdminSectionEditLink($IBLOCK_ID, 0, array(
 								"find_section_section" => intval($find_section_section),
 								"return_url" => (strlen($return_url) > 0? $return_url: null),
 								"IBLOCK_SECTION_ID" => $IBLOCK_SECTION_ID,
@@ -415,7 +415,7 @@ if(
 			}
 			else
 			{
-				LocalRedirect("/bnpt/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, 0, array(
+				LocalRedirect("/bitrix/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, 0, array(
 					"find_section_section" => intval($find_section_section),
 					"IBLOCK_SECTION_ID" => $IBLOCK_SECTION_ID,
 					"return_url" => (strlen($return_url) > 0? $return_url: null),
@@ -424,7 +424,7 @@ if(
 		}
 		else
 		{
-			LocalRedirect("/bnpt/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, $ID, array(
+			LocalRedirect("/bitrix/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, $ID, array(
 				'find_section_section' => intval($find_section_section),
 				'return_url' => strlen($return_url) > 0? $return_url: null,
 			), "&".$tabControl->ActiveTabParam()));
@@ -687,7 +687,7 @@ if($arTranslit["TRANSLITERATION"] == "Y")
 <script type="text/javascript">
 	var InheritedPropertiesTemplates = new JCInheritedPropertiesTemplates(
 		'<?echo $tabControl->GetName()?>_form',
-		'/bnpt/admin/iblock_templates.ajax.php?ENTITY_TYPE=S&IBLOCK_ID=<?echo intval($IBLOCK_ID)?>&ENTITY_ID=<?echo intval($ID)?>'
+		'/bitrix/admin/iblock_templates.ajax.php?ENTITY_TYPE=S&IBLOCK_ID=<?echo intval($IBLOCK_ID)?>&ENTITY_ID=<?echo intval($ID)?>'
 	);
 	BX.ready(function(){
 		setTimeout(function(){
@@ -722,7 +722,7 @@ if ($bAutocomplete)
 }
 
 $tabControl->Begin(array(
-	"FORM_ACTION" => "/bnpt/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, null, $arEditLinkParams),
+	"FORM_ACTION" => "/bitrix/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, null, $arEditLinkParams),
 ));
 $tabControl->BeginNextFormTab();
 ?>
@@ -1226,7 +1226,7 @@ if(
 		?>
 			<tr>
 				<td align="left" colspan="2">
-					<a href="/bnpt/admin/userfield_edit.php?lang=<?echo LANGUAGE_ID?>&amp;ENTITY_ID=<?echo urlencode($entity_id)?>&amp;back_url=<?echo urlencode($APPLICATION->GetCurPageParam('', array('bxpublic'))."&tabControl_active_tab=user_fields_tab")?>"><?echo $tabControl->GetCustomLabelHTML()?></a>
+					<a href="/bitrix/admin/userfield_edit.php?lang=<?echo LANGUAGE_ID?>&amp;ENTITY_ID=<?echo urlencode($entity_id)?>&amp;back_url=<?echo urlencode($APPLICATION->GetCurPageParam('', array('bxpublic'))."&tabControl_active_tab=user_fields_tab")?>"><?echo $tabControl->GetCustomLabelHTML()?></a>
 				</td>
 			</tr>
 		<?
@@ -1542,7 +1542,7 @@ if($arIBlock["SECTION_PROPERTY"] === "Y")
 					target_select_id = select_id;
 					target_shadow_id = shadow_id;
 					(new BX.CAdminDialog({
-						'content_url' : '/bnpt/admin/iblock_edit_property.php?lang=<?echo LANGUAGE_ID?>&IBLOCK_ID='+iblock_id+'&ID=n0&bxpublic=Y&from_module=iblock&return_url=section_edit',
+						'content_url' : '/bitrix/admin/iblock_edit_property.php?lang=<?echo LANGUAGE_ID?>&IBLOCK_ID='+iblock_id+'&ID=n0&bxpublic=Y&from_module=iblock&return_url=section_edit',
 						'width' : 700,
 						'height' : 400,
 						'buttons': [BX.CAdminDialog.btnSave, BX.CAdminDialog.btnCancel]
@@ -1936,7 +1936,7 @@ if($arIBlock["SECTION_PROPERTY"] === "Y")
 if(strlen($return_url)>0)
 	$bu = $return_url;
 else
-	$bu = "/bnpt/admin/".CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>intval($find_section_section)));
+	$bu = "/bitrix/admin/".CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>intval($find_section_section)));
 
 if (!defined('BX_PUBLIC_MODE') || BX_PUBLIC_MODE != 1):
 	$tabControl->Buttons(array(

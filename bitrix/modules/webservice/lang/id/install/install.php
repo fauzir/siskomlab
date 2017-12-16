@@ -1,6 +1,0 @@
-<?
-$MESS["WEBS_MODULE_NAME"] = "Negara";
-$MESS["WEBS_MODULE_DESCRIPTION"] = "Catatan";
-$MESS["WEBS_INSTALL_TITLE"] = "Posisi";
-$MESS["WEBS_UNINSTALL_TITLE"] = "Telepon Kantor";
-?>

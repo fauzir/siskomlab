@@ -433,7 +433,7 @@ if (($bCanEdit || $bCanExec) && check_bitrix_sessid())
 				{
 					$randVal = rand(1, 1000);
 					$_SESSION["COMMERCEML_IMPORT_".$randVal] = $strOKMessage;
-					LocalRedirect("/bnpt/admin/cat_import_setup.php?lang=".LANGUAGE_ID."&success_import=Y&message_sess_id=".$randVal);
+					LocalRedirect("/bitrix/admin/cat_import_setup.php?lang=".LANGUAGE_ID."&success_import=Y&message_sess_id=".$randVal);
 				}
 			}
 			//////////////////////////////////////////////
@@ -1107,7 +1107,7 @@ foreach($arReportsList as $strReportFile => $arReportParams)
 			}
 			else
 			{
-				$strProfileLink = '<a href="'.('Y' == $arProfile["IN_MENU"] ? '/bnpt/admin/cat_exec_imp.php' : $APPLICATION->GetCurPage()).'?lang='.LANGUAGE_ID."&amp;ACT_FILE=".urlencode($strReportFile)."&amp;ACTION=IMPORT&amp;PROFILE_ID=".$arProfile["ID"]."&amp;".bitrix_sessid_get().'" title="'.GetMessage("import_setup_begin").'"><i>'.GetMessage("CES_DEFAULT").'</i></a>';
+				$strProfileLink = '<a href="'.('Y' == $arProfile["IN_MENU"] ? '/bitrix/admin/cat_exec_imp.php' : $APPLICATION->GetCurPage()).'?lang='.LANGUAGE_ID."&amp;ACT_FILE=".urlencode($strReportFile)."&amp;ACTION=IMPORT&amp;PROFILE_ID=".$arProfile["ID"]."&amp;".bitrix_sessid_get().'" title="'.GetMessage("import_setup_begin").'"><i>'.GetMessage("CES_DEFAULT").'</i></a>';
 			}
 		}
 		else
@@ -1139,7 +1139,7 @@ foreach($arReportsList as $strReportFile => $arReportParams)
 				if ($arOneUser = $rsUsers->Fetch())
 				{
 					$arOneUser['ID'] = (int)$arOneUser['ID'];
-					$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arProfile['MODIFIED_BY'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+					$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arProfile['MODIFIED_BY'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 				}
 			}
 			if (isset($arUserList[$arProfile['MODIFIED_BY']]))
@@ -1334,7 +1334,7 @@ foreach($arReportsList as $strReportFile => $arReportParams)
 			}
 			else
 			{
-				$strProfileLink = '<a href="'.('Y' == $arProfile["IN_MENU"] ? "/bnpt/admin/cat_exec_imp.php" : $APPLICATION->GetCurPage())."?lang=".LANGUAGE_ID."&amp;ACT_FILE=".urlencode($strReportFile)."&amp;ACTION=IMPORT&amp;PROFILE_ID=".$arProfile["ID"]."&amp;".bitrix_sessid_get().'" title="'.GetMessage("export_setup_begin").'">'.htmlspecialcharsbx($arProfile["NAME"]).'</a>';
+				$strProfileLink = '<a href="'.('Y' == $arProfile["IN_MENU"] ? "/bitrix/admin/cat_exec_imp.php" : $APPLICATION->GetCurPage())."?lang=".LANGUAGE_ID."&amp;ACT_FILE=".urlencode($strReportFile)."&amp;ACTION=IMPORT&amp;PROFILE_ID=".$arProfile["ID"]."&amp;".bitrix_sessid_get().'" title="'.GetMessage("export_setup_begin").'">'.htmlspecialcharsbx($arProfile["NAME"]).'</a>';
 			}
 		}
 		else
@@ -1370,7 +1370,7 @@ foreach($arReportsList as $strReportFile => $arReportParams)
 				if ($arOneUser = $rsUsers->Fetch())
 				{
 					$arOneUser['ID'] = (int)$arOneUser['ID'];
-					$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arProfile['CREATED_BY'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+					$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arProfile['CREATED_BY'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 				}
 			}
 			if (isset($arUserList[$arProfile['CREATED_BY']]))
@@ -1392,7 +1392,7 @@ foreach($arReportsList as $strReportFile => $arReportParams)
 				if ($arOneUser = $rsUsers->Fetch())
 				{
 					$arOneUser['ID'] = (int)$arOneUser['ID'];
-					$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arProfile['MODIFIED_BY'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+					$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arProfile['MODIFIED_BY'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 				}
 			}
 			if (isset($arUserList[$arProfile['MODIFIED_BY']]))
@@ -1410,7 +1410,7 @@ foreach($arReportsList as $strReportFile => $arReportParams)
 				"DEFAULT" => false,
 				"TEXT" => GetMessage("CES_RUN_IMPORT"),
 				"TITLE" => GetMessage("CES_RUN_IMPORT_DESCR"),
-				"ACTION" => $lAdmin->ActionRedirect(('Y' == $arProfile["IN_MENU"] ? "/bnpt/admin/cat_exec_imp.php" : $APPLICATION->GetCurPage())."?lang=".LANGUAGE_ID."&ACT_FILE=".urlencode($strReportFile)."&".bitrix_sessid_get()."&ACTION=IMPORT&PROFILE_ID=".$arProfile["ID"]),
+				"ACTION" => $lAdmin->ActionRedirect(('Y' == $arProfile["IN_MENU"] ? "/bitrix/admin/cat_exec_imp.php" : $APPLICATION->GetCurPage())."?lang=".LANGUAGE_ID."&ACT_FILE=".urlencode($strReportFile)."&".bitrix_sessid_get()."&ACTION=IMPORT&PROFILE_ID=".$arProfile["ID"]),
 			);
 
 		if ($bCanEdit)

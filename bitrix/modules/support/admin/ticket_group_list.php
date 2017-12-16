@@ -11,7 +11,7 @@ $bAdmin = CTicket::IsAdmin();
 if(!$bAdmin && !$bDemo)
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 	
-$EDIT_URL = "/bnpt/admin/ticket_group_edit.php";
+$EDIT_URL = "/bitrix/admin/ticket_group_edit.php";
 $LIST_URL = $APPLICATION->GetCurPage();
 
 

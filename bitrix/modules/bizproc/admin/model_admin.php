@@ -299,7 +299,7 @@ while($dbrs = $rsIBlocks->NavNext(true, "f_"))
 		$cnt = CBPDocument::GetNumberOfWorkflowTemplatesForDocumentType(
 			array("iblock", "CIBlockDocument", "iblock_".$f_ID)
 		);
-		$row->AddViewField("WORKFLOW_TEMPLATES", '<a href="/bnpt/admin/iblock_bizproc_workflow_admin.php?document_type=iblock_'.$f_ID.'&lang='.LANGUAGE_ID.'&back_url_list='.urlencode($APPLICATION->GetCurPageParam("", array())).'">'.$cnt.'</a>');
+		$row->AddViewField("WORKFLOW_TEMPLATES", '<a href="/bitrix/admin/iblock_bizproc_workflow_admin.php?document_type=iblock_'.$f_ID.'&lang='.LANGUAGE_ID.'&back_url_list='.urlencode($APPLICATION->GetCurPageParam("", array())).'">'.$cnt.'</a>');
 	}
 
 	$arActions = array();
@@ -332,7 +332,7 @@ while($dbrs = $rsIBlocks->NavNext(true, "f_"))
 		$arActions[] = array(
 			"ICON"=>"",
 			"TEXT"=>GetMessage("IBLOCK_ADM_MENU_BIZPROC"),
-			"ACTION"=>"window.location='/bnpt/admin/iblock_bizproc_workflow_admin.php?document_type=iblock_".$f_ID."&lang=".LANGUAGE_ID."';"
+			"ACTION"=>"window.location='/bitrix/admin/iblock_bizproc_workflow_admin.php?document_type=iblock_".$f_ID."&lang=".LANGUAGE_ID."';"
 		);
 	}
 

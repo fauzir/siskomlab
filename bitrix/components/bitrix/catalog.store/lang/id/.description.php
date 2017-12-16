@@ -1,6 +1,0 @@
-<?
-$MESS["CP_CATALOG_STORE_MAIN_SECTION"] = "e-Store";
-$MESS["CP_CATALOG_STORE_STORE_SECTION"] = "Daftar Gudang";
-$MESS["CP_CATALOG_STORE_CS_NAME"] = "Daftar Gudang";
-$MESS["CP_CATALOG_STORE_CS_DESCRIPTION"] = "Menunjukkan gudang";
-?>

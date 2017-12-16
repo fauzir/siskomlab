@@ -192,7 +192,7 @@ Class learning extends CModule
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
 			//Admin files
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", false);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", false);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/learning", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/public/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js", true, true);
@@ -252,7 +252,7 @@ Class learning extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/learning/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");//css
 		DeleteDirFilesEx("/bitrix/themes/.default/icons/learning/");//icons
 		DeleteDirFilesEx("/bitrix/images/learning/");//images

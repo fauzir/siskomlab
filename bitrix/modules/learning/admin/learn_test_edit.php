@@ -305,7 +305,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_POST["Update"])>0 && check_
 		{
 			if($from == "learn_admin")
 			{
-				LocalRedirect("/bnpt/admin/learn_unilesson_admin.php?lang=".LANG
+				LocalRedirect("/bitrix/admin/learn_unilesson_admin.php?lang=".LANG
 					. '&PARENT_LESSON_ID=' . ($_GET['PARENT_LESSON_ID'] + 0)
 					. '&LESSON_PATH=' . urlencode($_GET['LESSON_PATH'])
 					."&".GetFilterParams("filter_", false));
@@ -320,14 +320,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_POST["Update"])>0 && check_
 			}
 			else
 			{
-				LocalRedirect("/bnpt/admin/learn_test_admin.php?lang=".LANG
+				LocalRedirect("/bitrix/admin/learn_test_admin.php?lang=".LANG
 					. "&COURSE_ID=" . $COURSE_ID
 					. '&PARENT_LESSON_ID=' . ($_GET['PARENT_LESSON_ID'] + 0)
 					. '&LESSON_PATH=' . urlencode($_GET['LESSON_PATH'])
 					.GetFilterParams("filter_", false));
 			}
 		}
-		LocalRedirect("/bnpt/admin/learn_test_edit.php?lang=" . LANG 
+		LocalRedirect("/bitrix/admin/learn_test_edit.php?lang=" . LANG 
 			. "&COURSE_ID=" . $COURSE_ID
 			. '&PARENT_LESSON_ID=' . ($_GET['PARENT_LESSON_ID'] + 0)
 			. '&LESSON_PATH=' . urlencode($_GET['LESSON_PATH'])
@@ -468,7 +468,7 @@ if ($ID > 0)
 		"TITLE"=>GetMessage("LEARNING_ADD")
 	);
 
-	$returnUrl = "/bnpt/admin/learn_test_admin.php?lang=" . LANG
+	$returnUrl = "/bitrix/admin/learn_test_admin.php?lang=" . LANG
 		. "&amp;COURSE_ID=" . $COURSE_ID
 		. '&amp;PARENT_LESSON_ID=' . ($_GET['PARENT_LESSON_ID'] + 0)
 		. '&amp;LESSON_PATH=' . urlencode($_GET['LESSON_PATH'])

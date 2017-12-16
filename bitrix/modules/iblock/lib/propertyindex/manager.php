@@ -155,7 +155,7 @@ class Manager
 			{
 				\CAdminNotify::add(array(
 					"MESSAGE" => Loc::getMessage("IBLOCK_NOTIFY_PROPERTY_REINDEX", array(
-						"#LINK#" => "/bnpt/admin/iblock_reindex.php?lang=".\Bitrix\Main\Application::getInstance()->getContext()->getLanguage(),
+						"#LINK#" => "/bitrix/admin/iblock_reindex.php?lang=".\Bitrix\Main\Application::getInstance()->getContext()->getLanguage(),
 					)),
 					"TAG" => "iblock_property_reindex",
 					"MODULE_ID" => "iblock",

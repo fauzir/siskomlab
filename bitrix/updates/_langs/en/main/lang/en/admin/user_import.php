@@ -43,7 +43,7 @@ $MESS["USER_IMPORT_1C_HELP"] = "Importing of users from 1C: Human Resources can 
 1. Bitrix24 settings<br />
 2. Import from 1C: Human Resources
 <br /><br />
-Bitri24 settings can be managed at the <a target=\"_blank\" href=\"/bnpt/admin/settings.php?mid=intranet&lang=en&back_url_settings=&tabControl_active_tab=edit2\">Intranet module settings page</a>.
+Bitri24 settings can be managed at the <a target=\"_blank\" href=\"/bitrix/admin/settings.php?mid=intranet&lang=en&back_url_settings=&tabControl_active_tab=edit2\">Intranet module settings page</a>.
 <br /><br />
 Pay attention to the correct choice of the user groups that will be allowed to perform user importing from 1C: Human Resources. Choose correct site to link users after importing.
 <br /><br />

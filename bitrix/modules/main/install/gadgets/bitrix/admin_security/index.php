@@ -6,7 +6,7 @@ global $APPLICATION;
 /** @global CUser $USER */
 global $USER;
 
-$APPLICATION->SetAdditionalCSS('/bitrix/gadgets/bnpt/admin_security/styles.css');
+$APPLICATION->SetAdditionalCSS('/bitrix/gadgets/bitrix/admin_security/styles.css');
 
 $aGlobalOpt = CUserOptions::GetOption("global", "settings", array());
 $bShowSecurity = (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/index.php") && $aGlobalOpt['messages']['security'] <> 'N');
@@ -64,8 +64,8 @@ if(!$bSecurityFilter || !$isScanNeeded || !isset($lastResult["results"]) || !emp
 } else {
 	$shieldClassColor = "blue";
 }
-$eventLogUrl = '/bnpt/admin/event_log.php?set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_VIRUS&find_audit_type[]=SECURITY_FILTER_SQL&find_audit_type[]=SECURITY_FILTER_XSS&find_audit_type[]=SECURITY_FILTER_XSS2&find_audit_type[]=SECURITY_FILTER_PHP&find_audit_type[]=SECURITY_REDIRECT&find_audit_type[]=SECURITY_HOST_RESTRICTION&mod=security&lang='.LANGUAGE_ID;
-$securityScannerUrl = '/bnpt/admin/security_scanner.php?lang='.LANGUAGE_ID;
+$eventLogUrl = '/bitrix/admin/event_log.php?set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_VIRUS&find_audit_type[]=SECURITY_FILTER_SQL&find_audit_type[]=SECURITY_FILTER_XSS&find_audit_type[]=SECURITY_FILTER_XSS2&find_audit_type[]=SECURITY_FILTER_PHP&find_audit_type[]=SECURITY_REDIRECT&find_audit_type[]=SECURITY_HOST_RESTRICTION&mod=security&lang='.LANGUAGE_ID;
+$securityScannerUrl = '/bitrix/admin/security_scanner.php?lang='.LANGUAGE_ID;
 ?><table class="bx-gadgets-content-layout"><?
 	?><tr><?
 		?><td><div class="bx-gadgets-title"><?=GetMessage("GD_SECURITY_SCANNER_TITLE")?></div></td><?
@@ -76,7 +76,7 @@ $securityScannerUrl = '/bnpt/admin/security_scanner.php?lang='.LANGUAGE_ID;
 		if (!$bSecModuleInstalled && $USER->CanDoOperation('edit_other_settings'))
 		{
 			?><td class="bx-gadgets-colourful-cell"><?
-				?><a class="bx-gadget-button bx-gadget-button-clickable" href="/bnpt/admin/module_admin.php?id=security&install=Y&lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>">
+				?><a class="bx-gadget-button bx-gadget-button-clickable" href="/bitrix/admin/module_admin.php?id=security&install=Y&lang=<?=LANGUAGE_ID?>&<?=bitrix_sessid_get()?>">
 					<div class="bx-gadget-button-lamp"></div>
 					<div class="bx-gadget-button-text"><?=GetMessage("GD_SECURITY_MODULE_INSTALL")?></div>
 				</a><?

@@ -372,7 +372,7 @@ $popupWindow->StartContent();
 ?>
 	<tr>
 		<td width="50%" align="right" valign="top">
-			<a href="/bnpt/admin/userfield_edit.php?ID=<?=$field["ID"]?>&back_url=<?=htmlspecialcharsbx($backUrl)?>"><?=htmlspecialcharsbx($name)?></a>:
+			<a href="/bitrix/admin/userfield_edit.php?ID=<?=$field["ID"]?>&back_url=<?=htmlspecialcharsbx($backUrl)?>"><?=htmlspecialcharsbx($name)?></a>:
 		</td>
 		<td width="50%">
 			<i><?=htmlspecialcharsbx($type);?></i>
@@ -383,7 +383,7 @@ $popupWindow->StartContent();
 ?>
 	<tr>
 		<td colspan="2" align="center" valign="top">
-			<a href="/bnpt/admin/userfield_edit.php?ENTITY_ID=<?=htmlspecialcharsbx($UF_ENTITY)?>&back_url=<?=htmlspecialcharsbx($backUrl)?>"><?=GetMessage("IB_WDUF_ADD")?></a>
+			<a href="/bitrix/admin/userfield_edit.php?ENTITY_ID=<?=htmlspecialcharsbx($UF_ENTITY)?>&back_url=<?=htmlspecialcharsbx($backUrl)?>"><?=GetMessage("IB_WDUF_ADD")?></a>
 		</td>
 	</tr>
 <? } ?>

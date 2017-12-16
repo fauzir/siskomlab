@@ -258,7 +258,7 @@ if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/.config.php"))
 
 //Title
 $curPage = $APPLICATION->GetCurPage(true);
-if ($curPage != "/bnpt/admin/index.php")
+if ($curPage != "/bitrix/admin/index.php")
 {
 	$currentFavId = null;
 	$currentItemsId = '';
@@ -285,7 +285,7 @@ foreach (GetModuleEvents("main", "OnPrologAdminTitle", true) as $arEvent)
 	ExecuteModuleEventEx($arEvent, $arPageParams);
 }
 
-if ($curPage != "/bnpt/admin/index.php")
+if ($curPage != "/bitrix/admin/index.php")
 {
 	?>
 		<h1 class="adm-title" id="adm-title"><?$adminPage->ShowTitle()?><?if(!defined('BX_ADMIN_SECTION_404') || BX_ADMIN_SECTION_404 != 'Y'):?><a href="javascript:void(0)" class="adm-fav-link<?=$currentFavId>0?' adm-fav-link-active':''?>" onclick="BX.adminFav.titleLinkClick(this, <?=intval($currentFavId)?>, '<?=$currentItemsId?>')" title="<?= $currentFavId ? GetMessage("MAIN_PR_ADMIN_FAV_DEL") : GetMessage("MAIN_PR_ADMIN_FAV_ADD")?>"></a><?endif;?><a id="navchain-link" href="<?echo htmlspecialcharsbx($_SERVER["REQUEST_URI"])?>" title="<?echo GetMessage("MAIN_PR_ADMIN_CUR_LINK")?>"></a></h1>
@@ -390,7 +390,7 @@ if($USER->IsAuthorized()):
 					$userOption = CUserOptions::GetOption("main", "admSupInf");
 					if(time() > $userOption["showInformerDate"])
 					{
-						$prolongUrl = "/bnpt/admin/buy_support.php?lang=".LANGUAGE_ID;
+						$prolongUrl = "/bitrix/admin/buy_support.php?lang=".LANGUAGE_ID;
 						if(!in_array(LANGUAGE_ID, array("ru", "ua")) || IntVal(COption::GetOptionString("main", "~PARAM_PARTNER_ID")) <= 0)
 						{
 							require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/classes/general/update_client.php");

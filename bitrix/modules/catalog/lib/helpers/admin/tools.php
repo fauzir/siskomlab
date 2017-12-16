@@ -45,7 +45,7 @@ class Tools
 			$id = (int)$priceType['ID'];
 			$title = (string)$priceType['NAME_LANG'];
 			$fullTitle = '['.$id.'] ['.$priceType['NAME'].']'.($title != '' ? ' '.$title : '');
-			$result[$id] = '<a href="/bnpt/admin/cat_group_edit.php?ID='.$id.'&lang='.LANGUAGE_ID.
+			$result[$id] = '<a href="/bitrix/admin/cat_group_edit.php?ID='.$id.'&lang='.LANGUAGE_ID.
 				'" title="'.$priceTypeLinkTitle.'">'.Main\Text\HtmlFilter::encode($fullTitle).'</a>';
 
 			unset($fullTitle, $title, $id);

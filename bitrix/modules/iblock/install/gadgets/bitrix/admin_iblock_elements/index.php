@@ -209,7 +209,7 @@ if (
 
 					if (strlen($strTitle) > 0)
 					{
-						?><a href="/bnpt/admin/iblock_element_edit.php?ID=<?=$arIBlockElement["ID"]?>&type=<?=$arGadgetParams["IBLOCK_TYPE"]?>&IBLOCK_ID=<?=$arGadgetParams["IBLOCK_ID"]?>&lang=<?=LANGUAGE_ID?>"><?=$strTitle?></a><br><?
+						?><a href="/bitrix/admin/iblock_element_edit.php?ID=<?=$arIBlockElement["ID"]?>&type=<?=$arGadgetParams["IBLOCK_TYPE"]?>&IBLOCK_ID=<?=$arGadgetParams["IBLOCK_ID"]?>&lang=<?=LANGUAGE_ID?>"><?=$strTitle?></a><br><?
 					}
 				}
 

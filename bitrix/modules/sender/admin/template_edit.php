@@ -83,9 +83,9 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && $POST_RIGHT=="W" &&
 	if($res)
 	{
 		if($apply!="")
-			LocalRedirect("/bnpt/admin/sender_template_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/sender_template_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bnpt/admin/sender_template_admin.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/sender_template_admin.php?lang=".LANG);
 	}
 	else
 	{
@@ -193,7 +193,7 @@ $tabControl->BeginNextTab();
 			<?=\Bitrix\Sender\TemplateTable::initEditor(array(
 				'FIELD_NAME' => 'MESSAGE',
 				'FIELD_VALUE' => $str_CONTENT,
-				'CONTENT_URL' => '/bnpt/admin/sender_template_admin.php?action=get_template&template_type=USER&template_id=' . $blockTemplateId . '&lang=' . LANGUAGE_ID . '&' . bitrix_sessid_get(),
+				'CONTENT_URL' => '/bitrix/admin/sender_template_admin.php?action=get_template&template_type=USER&template_id=' . $blockTemplateId . '&lang=' . LANGUAGE_ID . '&' . bitrix_sessid_get(),
 				'HAVE_USER_ACCESS' => $isUserHavePhpAccess,
 				'SHOW_SAVE_TEMPLATE' => false,
 				'IS_TEMPLATE_MODE' => false,

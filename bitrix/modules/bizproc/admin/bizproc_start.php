@@ -151,7 +151,7 @@ if (strlen($fatalErrorMessage) <= 0)
 			{
 				$showMode = "StartWorkflowSuccess";
 				if (strlen($backUrl) <= 0)
-					$backUrl = "/bnpt/admin/bizproc_log.php?ID=#WF#";
+					$backUrl = "/bitrix/admin/bizproc_log.php?ID=#WF#";
 				LocalRedirect(str_replace("#WF#", $wfId, $backUrl));
 				die();
 			}

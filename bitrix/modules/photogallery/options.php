@@ -39,11 +39,11 @@ if ($RIGHTS > "D"):
 		COption::SetOptionString("photogallery", "pictures", serialize($arSights));
 
 		if($apply!="")
-			LocalRedirect("/bnpt/admin/settings.php?&lang=".LANG."&back_url=".urlencode($back_url)."&mid=photogallery");
+			LocalRedirect("/bitrix/admin/settings.php?&lang=".LANG."&back_url=".urlencode($back_url)."&mid=photogallery");
 		elseif($back_url)
 			LocalRedirect($back_url);
 		else
-			LocalRedirect("/bnpt/admin/settings.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/settings.php?lang=".LANG);
 	}
 	//*****************************************************************************************************************
 ?><form method="POST" action="<?=$APPLICATION->GetCurPage()?>?mid=photogallery&lang=<?=LANGUAGE_ID?>" id="FORMACTION">
@@ -77,7 +77,7 @@ if (!$file_exist)
 	?><?=GetMessage("P_FONT_IS_NOT_EXISTS")?><br /><?
 }
 ?>
-<a href="/bnpt/admin/fileman_file_upload.php?path=/bitrix/modules/photogallery/fonts/"><?=GetMessage("P_UPLOAD")?></a>
+<a href="/bitrix/admin/fileman_file_upload.php?path=/bitrix/modules/photogallery/fonts/"><?=GetMessage("P_UPLOAD")?></a>
 </td></tr>
 
 <?/*
@@ -126,8 +126,8 @@ $tabControl->End();
 		"#FILEMAN_ADMIN#",
 		"#FILEMAN_FILE_UPLOAD#"),
 	array(
-		"/bnpt/admin/fileman_admin.php?site=&path=/bitrix/modules/photogallery/fonts/",
-		"/bnpt/admin/fileman_file_upload.php?path=/bitrix/modules/photogallery/fonts/"),
+		"/bitrix/admin/fileman_admin.php?site=&path=/bitrix/modules/photogallery/fonts/",
+		"/bitrix/admin/fileman_file_upload.php?path=/bitrix/modules/photogallery/fonts/"),
 	Getmessage("P_FONTS_NOTE"))?>
 
 <?=EndNote();?>

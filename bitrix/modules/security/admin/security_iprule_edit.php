@@ -107,9 +107,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST["save"].$_REQUEST["apply"] 
 			if($res)
 			{
 				if($_REQUEST["apply"] != "")
-					LocalRedirect("/bnpt/admin/security_iprule_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
+					LocalRedirect("/bitrix/admin/security_iprule_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
 				else
-					LocalRedirect("/bnpt/admin/security_iprule_list.php?lang=".LANG);
+					LocalRedirect("/bitrix/admin/security_iprule_list.php?lang=".LANG);
 			}
 			else
 			{

@@ -89,7 +89,7 @@ if(!CMain::IsHTTPS() && COption::GetOptionString('main', 'use_encrypted_auth', '
 }
 
 $sDocPath = $APPLICATION->GetCurPage();
-$authUrl = (defined('BX_ADMIN_SECTION_404') && BX_ADMIN_SECTION_404 == 'Y') ? '/bnpt/admin/' : $sDocPath;
+$authUrl = (defined('BX_ADMIN_SECTION_404') && BX_ADMIN_SECTION_404 == 'Y') ? '/bitrix/admin/' : $sDocPath;
 ?>
 <script type="text/javascript">
 BX.message({

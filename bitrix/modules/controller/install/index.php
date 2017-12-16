@@ -93,7 +93,7 @@ Class controller extends CModule
 	{
 		if ($_ENV["COMPUTERNAME"] != 'BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/controller/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", false);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/controller/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", false);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/controller/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/controller", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/controller/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/controller/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", True, True);
@@ -117,7 +117,7 @@ Class controller extends CModule
 	{
 		if ($_ENV["COMPUTERNAME"] != 'BX')
 		{
-			DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/controller/install/admin/', $_SERVER['DOCUMENT_ROOT'].'/bnpt/admin');
+			DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/controller/install/admin/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin');
 			DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/controller/install/themes/.default/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/themes/.default');//css
 			DeleteDirFilesEx('/bitrix/themes/.default/icons/controller/');//icons
 			DeleteDirFilesEx('/bitrix/images/controller/');//images

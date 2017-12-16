@@ -32,7 +32,7 @@ $tableId = "order_payment_edit_info";
 $backUrl = $request->get('backurl');
 
 if($orderId <= 0 || !($saleOrder = Bitrix\Sale\Order::load($orderId)))
-	LocalRedirect("/bnpt/admin/sale_order.php?lang=".$lang.GetFilterParams("filter_", false));
+	LocalRedirect("/bitrix/admin/sale_order.php?lang=".$lang.GetFilterParams("filter_", false));
 
 $allowedOrderStatusesView = \Bitrix\Sale\OrderStatus::getStatusesUserCanDoOperations($USER->GetID(), array('view'));
 $allowedOrderStatusesUpdate = \Bitrix\Sale\OrderStatus::getStatusesUserCanDoOperations($USER->GetID(), array('update'));
@@ -51,7 +51,7 @@ if ($paymentId > 0)
 	$payment = $paymentCollection->getItemById($paymentId);
 
 	if (!$payment)
-		LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 }
 
 $isUserResponsible = false;
@@ -75,7 +75,7 @@ if ($saleModulePermissions == 'P')
 
 	if (!$isUserResponsible && !$isAllowCompany)
 	{
-		LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 	}
 }
 
@@ -83,7 +83,7 @@ if ($request->get('delete') == 'Y' && check_bitrix_sessid())
 {
 	if(!$allowDelete)
 	{
-		LocalRedirect('/bnpt/admin/sale_order_payment.php?lang='.$lang.GetFilterParams('filter_', false));
+		LocalRedirect('/bitrix/admin/sale_order_payment.php?lang='.$lang.GetFilterParams('filter_', false));
 	}
 
 
@@ -102,7 +102,7 @@ if ($request->get('delete') == 'Y' && check_bitrix_sessid())
 				if ($backUrl)
 					LocalRedirect($backUrl);
 				else
-					LocalRedirect('/bnpt/admin/sale_order_payment.php?lang=' . $lang . GetFilterParams('filter_', false));
+					LocalRedirect('/bitrix/admin/sale_order_payment.php?lang=' . $lang . GetFilterParams('filter_', false));
 			}
 			else
 			{
@@ -119,11 +119,11 @@ if ($request->isPost() && check_bitrix_sessid() && $request->get('update'))
 	{
 		if (isset($_POST["apply"]))
 		{
-			LocalRedirect("/bnpt/admin/sale_order_payment_edit.php?lang=".$lang."&order_id=".$orderId."&payment_id=".$paymentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/sale_order_payment_edit.php?lang=".$lang."&order_id=".$orderId."&payment_id=".$paymentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
 		}
 		else
 		{
-			LocalRedirect('/bnpt/admin/sale_order_payment.php?lang='.$lang.GetFilterParams('filter_', false));
+			LocalRedirect('/bitrix/admin/sale_order_payment.php?lang='.$lang.GetFilterParams('filter_', false));
 		}
 	}
 
@@ -146,9 +146,9 @@ if ($request->isPost() && check_bitrix_sessid() && $request->get('update'))
 				if ($backUrl)
 					LocalRedirect($backUrl);
 				else
-					LocalRedirect('/bnpt/admin/sale_order_payment.php?lang='.$lang.GetFilterParams('filter_', false));
+					LocalRedirect('/bitrix/admin/sale_order_payment.php?lang='.$lang.GetFilterParams('filter_', false));
 			else
-				LocalRedirect("/bnpt/admin/sale_order_payment_edit.php?lang=".$lang."&order_id=".$orderId."&payment_id=".$paymentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
+				LocalRedirect("/bitrix/admin/sale_order_payment_edit.php?lang=".$lang."&order_id=".$orderId."&payment_id=".$paymentId."&backurl=".urlencode($backUrl).GetFilterParams("filter_", false));
 		}
 		else
 		{
@@ -168,11 +168,11 @@ else
 	}
 
 	if (!$payment)
-		LocalRedirect("/bnpt/admin/sale_order_payment.php?lang=".$lang.GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/sale_order_payment.php?lang=".$lang.GetFilterParams("filter_", false));
 }
 
 if ((!$allowView && !$allowUpdate) || Order::isLocked($orderId))
-	LocalRedirect('/bnpt/admin/sale_order_payment.php?lang=' . $lang . GetFilterParams('filter_', false));
+	LocalRedirect('/bitrix/admin/sale_order_payment.php?lang=' . $lang . GetFilterParams('filter_', false));
 
 
 $companyParams = array(
@@ -210,7 +210,7 @@ $aMenu[] = array(
 	"ICON" => "btn_list",
 	"TEXT" => Loc::getMessage("SOPE_PAYMENT_TRANSITION"),
 	"TITLE"=> Loc::getMessage("SOPE_PAYMENT_TRANSITION_TITLE"),
-	"LINK" => "/bnpt/admin/sale_order_view.php?ID=".$orderId."&lang=".$lang.GetFilterParams("filter_")
+	"LINK" => "/bitrix/admin/sale_order_view.php?ID=".$orderId."&lang=".$lang.GetFilterParams("filter_")
 );
 if (!$new)
 {
@@ -220,7 +220,7 @@ if (!$new)
 			"TEXT" => Loc::getMessage("SOPE_PAYMENT_DELETE"),
 			"TITLE" => Loc::getMessage("SOPE_PAYMENT_DELETE_TITLE"),
 			"LINK" => "javascript:void(0)",
-			"ONCLICK" => "if(confirm('".Loc::getMessage('SOPE_PAYMENT_DELETE_MESSAGE')."')) window.location.href='/bnpt/admin/sale_order_payment_edit.php?order_id=".$orderId."&payment_id=".$paymentId."&delete=Y&".bitrix_sessid_get()."&lang=".LANGUAGE_ID.GetFilterParams("filter_")."'"
+			"ONCLICK" => "if(confirm('".Loc::getMessage('SOPE_PAYMENT_DELETE_MESSAGE')."')) window.location.href='/bitrix/admin/sale_order_payment_edit.php?order_id=".$orderId."&payment_id=".$paymentId."&delete=Y&".bitrix_sessid_get()."&lang=".LANGUAGE_ID.GetFilterParams("filter_")."'"
 		);
 	}
 }
@@ -228,7 +228,7 @@ if (!$new)
 $aMenu[] = array(
 	"TEXT" => Loc::getMessage("SOPE_PAYMENT_LIST"),
 	"TITLE"=> Loc::getMessage("SOPE_PAYMENT_LIST_TITLE"),
-	"LINK" => "/bnpt/admin/sale_order_payment.php?lang=".$lang.GetFilterParams("filter_")
+	"LINK" => "/bitrix/admin/sale_order_payment.php?lang=".$lang.GetFilterParams("filter_")
 );
 
 $context = new CAdminContextMenu($aMenu);

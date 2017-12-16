@@ -77,6 +77,7 @@ when you have least visitors.<br><br>Conversion will:</p>
   <li>migrate properties and statuses;</li><li>migrate data.</li></ul><br><b>Please
 wait until conversion has completed.</b>";
 $MESS["SALE_CONVERTER_COPY_FILES_ERROR"] = "Error copying files from #FROM# to #TO#";
+$MESS["SALE_CONVERTER_CHOOSE_DELIVERY_SERVICE"] = "";
 $MESS["SALE_CONVERTER_MODULE_DO_NOT_SUPPORT"] = "The \"Intranet\" module is temporarily not supported.";
 $MESS["SALE_CONVERTER_DB_DO_NOT_SUPPORT"] = "Oracle and MSSQL are temporarily not supported.";
 $MESS["SALE_CONVERTER_AJAX_STEP_UPDATE_REPORT"] = "Migrate reports";

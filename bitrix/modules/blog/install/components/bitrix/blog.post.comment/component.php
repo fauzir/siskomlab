@@ -1054,11 +1054,11 @@ if(((!empty($arPost) && $arPost["PUBLISH_STATUS"] == BLOG_PUBLISH_STATUS_PUBLISH
 									if($arParams["SHOW_SPAM"] == "Y")
 									{
 										if(IntVal($arComment["AUTHOR_ID"]) > 0)
-											$arComment["urlToSpam"] = "/bnpt/admin/blog_comment.php?lang=ru&set_filter=Y&filter_author_id=".$arComment["AUTHOR_ID"];
+											$arComment["urlToSpam"] = "/bitrix/admin/blog_comment.php?lang=ru&set_filter=Y&filter_author_id=".$arComment["AUTHOR_ID"];
 										elseif(strlen($arComment["AUTHOR_IP"]) > 0)
-											$arComment["urlToSpam"] = "/bnpt/admin/blog_comment.php?lang=ru&set_filter=Y&filter_author_anonym=Y&filter_author_ip=".$arComment["AUTHOR_IP"];
+											$arComment["urlToSpam"] = "/bitrix/admin/blog_comment.php?lang=ru&set_filter=Y&filter_author_anonym=Y&filter_author_ip=".$arComment["AUTHOR_IP"];
 										else
-											$arComment["urlToSpam"] = "/bnpt/admin/blog_comment.php?lang=ru&set_filter=Y&filter_author_anonym=Y&filter_author_email=".$arComment["AUTHOR_EMAIL"];
+											$arComment["urlToSpam"] = "/bitrix/admin/blog_comment.php?lang=ru&set_filter=Y&filter_author_anonym=Y&filter_author_email=".$arComment["AUTHOR_EMAIL"];
 									}
 								}
 

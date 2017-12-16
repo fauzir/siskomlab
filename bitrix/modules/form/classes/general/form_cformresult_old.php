@@ -55,21 +55,21 @@ class CFormResult_old
 						{
 							$arIcons[] =
 									Array(						
-										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 										"SRC" => "/bitrix/images/form/panel/edit_template.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_TEMPLATE")
 									);
 							$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 							$arIcons[] =
 									Array(						
-										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 										"SRC" => "/bitrix/images/form/panel/edit_file.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_HANDLER")
 									);
 						}
 						$arIcons[] =
 								Array(						
-									"URL" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
+									"URL" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
 									"SRC" => "/bitrix/images/form/panel/edit_form.gif",
 									"ALT" => GetMessage("FORM_PUBLIC_ICON_SETTINGS")
 								);
@@ -148,21 +148,21 @@ class CFormResult_old
 						{
 							$arIcons[] =
 									Array(						
-										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
+										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($path.$template),
 										"SRC" => "/bitrix/images/form/panel/edit_template.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_TEMPLATE")
 									);
 							$arrUrl = parse_url($_SERVER["REQUEST_URI"]);
 							$arIcons[] =
 									Array(						
-										"URL" => "/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
+										"URL" => "/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&full_src=Y&path=". urlencode($arrUrl["path"]),
 										"SRC" => "/bitrix/images/form/panel/edit_file.gif",
 										"ALT" => GetMessage("FORM_PUBLIC_ICON_HANDLER")
 									);
 						}
 						$arIcons[] =
 								Array(						
-									"URL" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
+									"URL" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
 									"SRC" => "/bitrix/images/form/panel/edit_form.gif",
 									"ALT" => GetMessage("FORM_PUBLIC_ICON_SETTINGS")
 								);

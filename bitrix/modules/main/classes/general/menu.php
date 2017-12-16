@@ -478,7 +478,7 @@ class CMenu
 			if($menu_perm >= "W")
 			{
 				$arIcons[] = array(
-					"URL"=>"/bnpt/admin/fileman_menu_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&path=".urlencode($this->MenuDir)."&name=".$this->type,
+					"URL"=>"/bitrix/admin/fileman_menu_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&path=".urlencode($this->MenuDir)."&name=".$this->type,
 					"ICON"=>"menu-edit",
 					"TITLE"=>GetMessage("MAIN_MENU_EDIT")
 				);
@@ -486,7 +486,7 @@ class CMenu
 			if($templ_perm>="W" && $USER->IsAdmin())
 			{
 				$arIcons[] = array(
-					"URL"=>"/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&full_src=Y&path=".urlencode($this->template),
+					"URL"=>"/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&full_src=Y&path=".urlencode($this->template),
 					"ICON"=>"menu-template",
 					"TITLE"=>GetMessage("MAIN_MENU_TEMPLATE_EDIT")
 				);
@@ -567,7 +567,7 @@ class CMenu
 			if($menu_perm >= "W")
 			{
 				$arIcons[] = array(
-					"URL"=>"/bnpt/admin/fileman_menu_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&path=".urlencode($this->MenuDir)."&name=".$this->type,
+					"URL"=>"/bitrix/admin/fileman_menu_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&path=".urlencode($this->MenuDir)."&name=".$this->type,
 					"ICON"=>"menu-edit",
 					"TITLE"=>GetMessage("MAIN_MENU_EDIT")
 				);
@@ -576,7 +576,7 @@ class CMenu
 			if($templ_perm >= "W" && $USER->IsAdmin())
 			{
 				$arIcons[] = array(
-					"URL"=>"/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&full_src=Y&path=".urlencode($this->template),
+					"URL"=>"/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&full_src=Y&path=".urlencode($this->template),
 					"ICON"=>"menu-template",
 					"TITLE"=>GetMessage("MAIN_MENU_TEMPLATE_EDIT")
 				);

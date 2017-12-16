@@ -1,1 +1,1 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/crm/css/crm.css" => "1511316478179552","/bitrix/js/crm/css/autorun_proc.css" => "15113164784099","/bitrix/js/crm/css/crm-activity-planner.css" => "151131647852051","/bitrix/js/crm/css/crm-recorder.css" => "1511316478341","/bitrix/js/crm/css/visit.css" => "1511316478430",), 'CUR_SEL_CNT' => '2118', 'CUR_IE_CNT' => '0'); ?>
+<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/crm/css/crm.css" => "1511316478179552",), 'CUR_SEL_CNT' => '1635', 'CUR_IE_CNT' => '0'); ?>

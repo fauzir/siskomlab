@@ -141,7 +141,7 @@ while ($arSubject = $dbResultList->NavNext(true, "f_"))
 {
 	$row =& $lAdmin->AddRow($f_ID, $arSubject);
 
-	$row->AddField("ID", '<a href="/bnpt/admin/socnet_subject_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SONET_UPDATE_ALT").'">'.$f_ID.'</a>');
+	$row->AddField("ID", '<a href="/bitrix/admin/socnet_subject_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SONET_UPDATE_ALT").'">'.$f_ID.'</a>');
 	$row->AddInputField("NAME", array("size" => "35"));
 	
 	$f_SITE_ID = '';

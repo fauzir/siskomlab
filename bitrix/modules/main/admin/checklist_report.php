@@ -296,7 +296,7 @@ else:
 				</li>
 			<?endforeach;?>
 			</ul>
-			<a class="checklist-result-back" href="/bnpt/admin/checklist.php?lang=<?=LANG;?>"><?=GetMessage("CL_BACK_TO_CHECKLIST");?></a>
+			<a class="checklist-result-back" href="/bitrix/admin/checklist.php?lang=<?=LANG;?>"><?=GetMessage("CL_BACK_TO_CHECKLIST");?></a>
 		</div>
 	</div>
 <?endif;?>
@@ -381,7 +381,7 @@ else:
 					{
 						title: head_name+" - "+testID,
 						head: "",
-						content_url: "/bnpt/admin/checklist_report.php?ACTION=INFO&TEST_ID="+testID+"&ID=<?=$arReportID;?>&lang=<?=LANG;?>&bxpublic=Y",
+						content_url: "/bitrix/admin/checklist_report.php?ACTION=INFO&TEST_ID="+testID+"&ID=<?=$arReportID;?>&lang=<?=LANG;?>&bxpublic=Y",
 						opt_context_ctrl: true,
 						icon: "head-block",
 						resizable: true,
@@ -435,7 +435,7 @@ else:
 				current = next;
 			ShowWaitWindow();
 			BX.ajax.post(
-				"/bnpt/admin/checklist_report.php?bxpublic=Y&ACTION=INFO&TEST_ID="+arStates["POINTS"][current].TEST_ID+"&lang=<?=LANG;?>&ID=<?=$arReportID;?>&<?=bitrix_sessid_get()?>",
+				"/bitrix/admin/checklist_report.php?bxpublic=Y&ACTION=INFO&TEST_ID="+arStates["POINTS"][current].TEST_ID+"&lang=<?=LANG;?>&ID=<?=$arReportID;?>&<?=bitrix_sessid_get()?>",
 				data,
 				function(data)
 				{

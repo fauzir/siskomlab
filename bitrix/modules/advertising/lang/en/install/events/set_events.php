@@ -75,7 +75,7 @@ Created  - #CREATED_BY# [#DATE_CREATE#]
 Modified - #MODIFIED_BY# [#DATE_MODIFY#]
 
 To view the banner settings visit link:
-http://#SERVER_NAME#/bnpt/admin/adv_banner_edit.php?ID=#ID#&CONTRACT_ID=#CONTRACT_ID#&lang=#LANGUAGE_ID#
+http://#SERVER_NAME#/bitrix/admin/adv_banner_edit.php?ID=#ID#&CONTRACT_ID=#CONTRACT_ID#&lang=#LANGUAGE_ID#
 
 Automatically generated message.
 ";
@@ -125,7 +125,7 @@ Created  - #CREATED_BY# [#DATE_CREATE#]
 Changed  - #MODIFIED_BY# [#DATE_MODIFY#]
 
 To view the contract settings visit link:
-http://#SERVER_NAME#/bnpt/admin/adv_contract_edit.php?ID=#ID#&lang=#LANGUAGE_ID#
+http://#SERVER_NAME#/bitrix/admin/adv_contract_edit.php?ID=#ID#&lang=#LANGUAGE_ID#
 
 Automatically generated message.
 ";

@@ -159,7 +159,7 @@ elseif (empty($iblockDropDown))
 	$aMenu = array(
 		array(
 			"TEXT" => GetMessage("IBLOCK_BACK_TO_ADMIN"),
-			"LINK" => '/bnpt/admin/iblock_reindex_admin.php?lang='.LANGUAGE_ID,
+			"LINK" => '/bitrix/admin/iblock_reindex_admin.php?lang='.LANGUAGE_ID,
 			"ICON" => "btn_list",
 		)
 	);
@@ -254,7 +254,7 @@ else
 	$aMenu = array(
 		array(
 			"TEXT" => GetMessage("IBLOCK_BACK_TO_ADMIN"),
-			"LINK" => '/bnpt/admin/iblock_reindex_admin.php?lang='.LANGUAGE_ID,
+			"LINK" => '/bitrix/admin/iblock_reindex_admin.php?lang='.LANGUAGE_ID,
 			"ICON" => "btn_list",
 		)
 	);

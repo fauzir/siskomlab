@@ -135,7 +135,7 @@ class OrderAdditional
 		{
 			if ($saleModulePermissions >= "W")
 			{
-				$companies = str_replace("#URL#", "/bnpt/admin/sale_company_edit.php?lang=".$lang, Loc::getMessage('SALE_ORDER_SHIPMENT_ADD_COMPANY'));
+				$companies = str_replace("#URL#", "/bitrix/admin/sale_company_edit.php?lang=".$lang, Loc::getMessage('SALE_ORDER_SHIPMENT_ADD_COMPANY'));
 			}
 		}
 
@@ -162,7 +162,7 @@ class OrderAdditional
 						<td class="adm-detail-content-cell-l vat" width="40%">'.Loc::getMessage('SALE_ORDER_ADDITIONAL_INFO_RESPONSIBLE').':</td>
 						<td class="adm-detail-content-cell-r">
 							<div class="adm-s-order-person-choose">
-								<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["RESPONSIBLE_ID"].'" id="order_additional_info_responsible">'.
+								<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["RESPONSIBLE_ID"].'" id="order_additional_info_responsible">'.
 									htmlspecialcharsbx($data['RESPONSIBLE']).'
 								</a>&nbsp;
 								<a class="adm-s-bus-morelinkqhsw" onclick="BX.Sale.Admin.OrderAdditionalInfo.choosePerson(\''.$formName.'\', \''.LANGUAGE_ID.'\');" href="javascript:void(0);">
@@ -260,7 +260,7 @@ class OrderAdditional
 						<td class="adm-detail-content-cell-l vat" width="40%">'.Loc::getMessage('SALE_ORDER_ADDITIONAL_INFO_RESPONSIBLE').':</td>
 						<td class="adm-detail-content-cell-r">
 							<div>
-								<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["RESPONSIBLE_ID"].'" id="order_additional_info_responsible">'.
+								<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["RESPONSIBLE_ID"].'" id="order_additional_info_responsible">'.
 									htmlspecialcharsbx($data['RESPONSIBLE']).'
 								</a>
 							</div>

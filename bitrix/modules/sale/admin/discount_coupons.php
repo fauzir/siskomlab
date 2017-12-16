@@ -527,7 +527,7 @@ if (!empty($rowList) && ($selectFieldsMap['CREATED_BY'] || $selectFieldsMap['MOD
 		{
 			$oneUser['ID'] = (int)$oneUser['ID'];
 			if ($canViewUserList)
-				$userList[$oneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
+				$userList[$oneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
 			else
 				$userList[$oneUser['ID']] = CUser::FormatName($nameFormat, $oneUser);
 		}

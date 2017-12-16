@@ -1,7 +1,0 @@
-<?
-$MESS["VI_UI_HELPER_STAT_INDEX"] = "Nama depan";
-$MESS["VI_UI_HELPER_ENTITY_SEL_BTN"] = "Nama keluarga";
-$MESS["VI_UI_HELPER_ENTITY_SEL_SEARCH"] = "Nama keluarga";
-$MESS["VI_UI_HELPER_SEL_SEARCH_NO_RESULT"] = "E-mail";
-$MESS["VI_UI_HELPER_ENTITY_SEL_LAST"] = "Masuk";
-?>

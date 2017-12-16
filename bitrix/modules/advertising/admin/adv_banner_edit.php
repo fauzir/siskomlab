@@ -654,9 +654,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && ($_POST["save"] <> '' || $_POST["app
 		if (strlen($strError) <= 0)
 		{
 			if ($_POST["save"] <> '')
-				LocalRedirect("/bnpt/admin/adv_banner_list.php?lang=".LANGUAGE_ID);
+				LocalRedirect("/bitrix/admin/adv_banner_list.php?lang=".LANGUAGE_ID);
 			else
-				LocalRedirect("/bnpt/admin/adv_banner_edit.php?ID=".$ID."&CONTRACT_ID=".$CONTRACT_ID."&lang=".LANGUAGE_ID."&action=".$action."&".$tabControl->ActiveTabParam());
+				LocalRedirect("/bitrix/admin/adv_banner_edit.php?ID=".$ID."&CONTRACT_ID=".$CONTRACT_ID."&lang=".LANGUAGE_ID."&action=".$action."&".$tabControl->ActiveTabParam());
 		}
 	}
 	$TEMPLATE_FILES = serialize($templateFilesErr);
@@ -1029,7 +1029,7 @@ $context->Show();
 						if (intval($str_CREATED_BY) > 0) :
 							$rsUser = CUser::GetByID($str_CREATED_BY);
 							$arUser = $rsUser->Fetch();
-							echo "&nbsp;&nbsp;[<a href='/bnpt/admin/user_edit.php?ID=".$str_CREATED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_CREATED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+							echo "&nbsp;&nbsp;[<a href='/bitrix/admin/user_edit.php?ID=".$str_CREATED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_CREATED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 						endif;
 						?></td>
 				</tr>
@@ -1041,7 +1041,7 @@ $context->Show();
 						if (intval($str_MODIFIED_BY) > 0) :
 							$rsUser = CUser::GetByID($str_MODIFIED_BY);
 							$arUser = $rsUser->Fetch();
-							echo "&nbsp;&nbsp;[<a href='/bnpt/admin/user_edit.php?ID=".$str_MODIFIED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_MODIFIED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+							echo "&nbsp;&nbsp;[<a href='/bitrix/admin/user_edit.php?ID=".$str_MODIFIED_BY."&lang=".LANGUAGE_ID."' title='".GetMessage("AD_USER_ALT")."'>".$str_MODIFIED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 						endif;
 						?></td>
 				</tr>
@@ -1961,7 +1961,7 @@ $context->Show();
 									?>
 									<div class="adm-list-item">
 										<div class="adm-list-control"><input type="checkbox" name="arrSITE[]" value="<?=htmlspecialcharsbx($sid)?>" style="vertical-align:baseline; border-spacing: 0px; margin: 0px; padding: 0px;" id="site_<?=htmlspecialcharsbx($sid)?>" <?=$checked?>></div>
-										<div class="adm-list-label"><?='[<a href="/bnpt/admin/site_edit.php?LID='.urlencode($sid).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("AD_SITE_ALT").'">'.htmlspecialcharsex($sid).'</a>]&nbsp;<label for="site_'.htmlspecialcharsbx($sid).'">'.htmlspecialcharsex($arrS["NAME"])?></label></div>
+										<div class="adm-list-label"><?='[<a href="/bitrix/admin/site_edit.php?LID='.urlencode($sid).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("AD_SITE_ALT").'">'.htmlspecialcharsex($sid).'</a>]&nbsp;<label for="site_'.htmlspecialcharsbx($sid).'">'.htmlspecialcharsex($arrS["NAME"])?></label></div>
 									</div>
 									<?
 								endif;
@@ -1974,7 +1974,7 @@ $context->Show();
 							foreach ($arrSITE as $sid):
 								if (in_array($sid, $arrContractSite)) :
 									$arS = $arrSites[$sid];
-									echo '[<a href="/bnpt/admin/site_edit.php?LID='.urlencode($arS["ID"]).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("AD_SITE_ALT").'">'.htmlspecialcharsex($arS["ID"]).'</a>] '.htmlspecialcharsex($arS["NAME"]).'<br>';
+									echo '[<a href="/bitrix/admin/site_edit.php?LID='.urlencode($arS["ID"]).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("AD_SITE_ALT").'">'.htmlspecialcharsex($arS["ID"]).'</a>] '.htmlspecialcharsex($arS["NAME"]).'<br>';
 								endif;
 							endforeach;
 						endif;
@@ -2184,11 +2184,11 @@ $context->Show();
 							function stat_type_popup()
 							{
 								if (V_STAT_TYPE == 'CITY')
-									jsUtils.OpenWindow('/bnpt/admin/stat_city_multiselect.php?lang=<?=LANGUAGE_ID?>&form=bx_adv_edit_form&field=STAT_TYPE_VALUES[]', 600, 600);
+									jsUtils.OpenWindow('/bitrix/admin/stat_city_multiselect.php?lang=<?=LANGUAGE_ID?>&form=bx_adv_edit_form&field=STAT_TYPE_VALUES[]', 600, 600);
 								else if (V_STAT_TYPE == 'REGION')
-									jsUtils.OpenWindow('/bnpt/admin/stat_region_multiselect.php?lang=<?=LANGUAGE_ID?>&form=bx_adv_edit_form&field=STAT_TYPE_VALUES[]', 600, 600);
+									jsUtils.OpenWindow('/bitrix/admin/stat_region_multiselect.php?lang=<?=LANGUAGE_ID?>&form=bx_adv_edit_form&field=STAT_TYPE_VALUES[]', 600, 600);
 								else
-									jsUtils.OpenWindow('/bnpt/admin/stat_country_multiselect.php?lang=<?=LANGUAGE_ID?>&form=bx_adv_edit_form&field=STAT_TYPE_VALUES[]', 600, 600);
+									jsUtils.OpenWindow('/bitrix/admin/stat_country_multiselect.php?lang=<?=LANGUAGE_ID?>&form=bx_adv_edit_form&field=STAT_TYPE_VALUES[]', 600, 600);
 							}
 						</script>
 						<input type="hidden" id="ALL_STAT_TYPE_VALUES" name="ALL_STAT_TYPE_VALUES" value="<?=implode(",", array_keys($arDisplay))?>">
@@ -2517,7 +2517,7 @@ $context->Show();
 		if ($isManager || $isAdmin || ($isDemo && !$isOwner) || $isEditMode)
 			$disable = false;
 
-		$tabControl->Buttons(array("disabled" => $disable, "back_url"=>"/bnpt/admin/adv_banner_list.php?lang=".LANGUAGE_ID));
+		$tabControl->Buttons(array("disabled" => $disable, "back_url"=>"/bitrix/admin/adv_banner_list.php?lang=".LANGUAGE_ID));
 		$tabControl->End();
 		?>
 	</form>

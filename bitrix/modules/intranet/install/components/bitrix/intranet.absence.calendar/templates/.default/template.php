@@ -26,7 +26,7 @@ if ($arParams['bAdmin']):
 		$GLOBALS['INTRANET_TOOLBAR']->AddButton(array(
 			'ONCLICK' => $APPLICATION->GetPopupLink(
 				array(
-					'URL' => '/bnpt/admin/iblock_data_export.php?lang='.LANGUAGE_ID.'&bxpublic=Y',
+					'URL' => '/bitrix/admin/iblock_data_export.php?lang='.LANGUAGE_ID.'&bxpublic=Y',
 					'PARAMS' => array(
 						'height' => 300,
 						'width' => 800

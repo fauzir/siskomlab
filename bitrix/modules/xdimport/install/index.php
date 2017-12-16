@@ -77,7 +77,7 @@ Class xdimport extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/tools", $_SERVER["DOCUMENT_ROOT"]."/bitrix/tools", true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", true, true);
@@ -145,7 +145,7 @@ Class xdimport extends CModule
 		global $DB;
 		
 		// Delete files
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/tools/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/tools");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xdimport/install/components/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components");
 

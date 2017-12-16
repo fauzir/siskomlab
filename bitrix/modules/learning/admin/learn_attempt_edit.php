@@ -112,10 +112,10 @@ if (!$bBadAttempt && $_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 &
 			if (strlen($return_url)>0)
 				LocalRedirect($return_url);
 			else
-				LocalRedirect("/bnpt/admin/learn_attempt_admin.php?lang=". LANG.GetFilterParams("filter_", false));
+				LocalRedirect("/bitrix/admin/learn_attempt_admin.php?lang=". LANG.GetFilterParams("filter_", false));
 		}
 
-		LocalRedirect("/bnpt/admin/learn_attempt_edit.php?ID=".$ID."&tabControl_active_tab=".urlencode($tabControl_active_tab).GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/learn_attempt_edit.php?ID=".$ID."&tabControl_active_tab=".urlencode($tabControl_active_tab).GetFilterParams("filter_", false));
 	}
 }
 

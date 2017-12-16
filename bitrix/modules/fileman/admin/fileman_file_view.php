@@ -110,7 +110,7 @@ $fileTypeParent = $arFilemanPredifinedFileTypes[CFileMan::GetFileTypeEx($path)][
 	{
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FILEMAN_FILE_DELETE"),
-			"LINK" => "javascript:if(confirm('".GetMessage("FILEMAN_FILE_DELETE_CONFIRM")."')) window.location='/bnpt/admin/fileman_admin.php?ID=".urlencode(urlencode(GetFileName($path)))."&action=delete&".$addUrl."&site=".urlencode($site)."&path=".urlencode(urlencode($folder_path))."&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessage("FILEMAN_FILE_DELETE_CONFIRM")."')) window.location='/bitrix/admin/fileman_admin.php?ID=".urlencode(urlencode(GetFileName($path)))."&action=delete&".$addUrl."&site=".urlencode($site)."&path=".urlencode(urlencode($folder_path))."&".bitrix_sessid_get()."';",
 			"TITLE"	=> GetMessage("FILEMAN_FILE_DELETE"),
 			//"ICON" => "btn_delete"
 		);

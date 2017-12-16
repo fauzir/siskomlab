@@ -284,7 +284,7 @@ $obJSPopup->StartDescription('bx-core-edit-menu');
 <p class="title"><?=$TITLE?></p>
 <p class="note"><?=$DESCRIPTION?>
 </p><p>
-<a href="/bnpt/admin/fileman_menu_edit.php?<?="lang=".urlencode($_GET["lang"])."&site=".urlencode($_GET["site"])."&back_url=".urlencode($_GET["back_url"])."&path=".urlencode($_GET["path"])."&name=".urlencode($_GET["name"])?>"><?=GetMessage('MENU_EDIT_OLD_STYLE')?></a>
+<a href="/bitrix/admin/fileman_menu_edit.php?<?="lang=".urlencode($_GET["lang"])."&site=".urlencode($_GET["site"])."&back_url=".urlencode($_GET["back_url"])."&path=".urlencode($_GET["path"])."&name=".urlencode($_GET["name"])?>"><?=GetMessage('MENU_EDIT_OLD_STYLE')?></a>
 </p>
 <?
 if($strWarning <> "")

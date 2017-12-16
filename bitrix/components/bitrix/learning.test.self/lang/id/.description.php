@@ -1,6 +1,0 @@
-<?
-$MESS["LEARNING_TEST_SELF_NAME"] = "Tes diri";
-$MESS["LEARNING_TEST_SELF_DESC"] = "Tes diri";
-$MESS["LEARNING_SERVICE"] = "e-Learning";
-$MESS["LEARNING_TEST_SERVICE"] = "Pengujian";
-?>

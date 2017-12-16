@@ -158,7 +158,7 @@ function JsTc(oHandler, arSites, sParser)
 				return;
 			};
 		//alert(t.arSites);
-		var queryString = '/bnpt/admin/search_tags.php?search='+encodeURIComponent(sSearch);
+		var queryString = '/bitrix/admin/search_tags.php?search='+encodeURIComponent(sSearch);
 		try
 		{
 			if (t.arSites && t.arSites.constructor.toString().indexOf("Array") != -1)

@@ -25,7 +25,7 @@ if (
 		$ACTIVE = intval($_REQUEST["ACTIVE"]);
 		CPerfomanceKeeper::SetActive($ACTIVE > 0, time() + $ACTIVE);
 	}
-	LocalRedirect("/bnpt/admin/perfmon_activity.php?lang=".LANGU);
+	LocalRedirect("/bitrix/admin/perfmon_activity.php?lang=".LANGU);
 }
 
 $APPLICATION->SetTitle(GetMessage("PERFMON_ACTIVITY_TITLE"));

@@ -43,7 +43,7 @@ $MESS["SEO_PAGE_CURRENT_TITLE_EDIT"] = "Edit";
 $MESS["SEO_PAGE_TITLE_EDIT"] = "Edit";
 $MESS["SEO_PAGE_ERROR_NO_STATS"] = "This feature requires the Web Analytics module.";
 $MESS["SEO_PAGE_ERROR_NO_STATS_RIGHTS"] = "Not enough permission to access the Web Analytics module.";
-$MESS["SEO_PAGE_ERROR_NO_SEARCHERS"] = "To use this feature, specify the search engines you will use in the <a href=\"/bnpt/admin/settings.php?mid=seo&tabControl_active_tab=edit3&lang=en\">SEO module settings</a>.";
+$MESS["SEO_PAGE_ERROR_NO_SEARCHERS"] = "To use this feature, specify the search engines you will use in the <a href=\"/bitrix/admin/settings.php?mid=seo&tabControl_active_tab=edit3&lang=en\">SEO module settings</a>.";
 $MESS["SEO_PAGE_STATS_INDEX"] = "Search engine hits for last #COUNT# days";
 $MESS["SEO_PAGE_STATS_ERROR_NO_DATA"] = "No page indexing statistics found for the requested period.";
 $MESS["SEO_PAGE_STATS_SITE_INDEX"] = "Site Indexing Summary";
@@ -64,6 +64,6 @@ $MESS["SEO_HELP_current_title"] = "The page current title. The title text might 
 $MESS["SEO_HELP_property_window_title"] = "The browser window title. This can be modified by components existing on the page.";
 $MESS["SEO_HELP_property_keywords"] = "The page keywords. May be inherited from the parent section in which case the property will be saved in the page parameters.";
 $MESS["SEO_HELP_property_description"] = "The page description. May be inherited from the parent section in which case the property will be saved in the page parameters.";
-$MESS["SEO_PAGE_CONNECTION_ERROR_HINT"] = "Possible reason: port is not specified in <a href=\"/bnpt/admin/settings.php?mid=main\">Kernel module settings \"Website URL\"</a>.";
+$MESS["SEO_PAGE_CONNECTION_ERROR_HINT"] = "Possible reason: port is not specified in <a href=\"/bitrix/admin/settings.php?mid=main\">Kernel module settings \"Website URL\"</a>.";
 $MESS["SEO_PAGE_ERROR_FOLDER_ACCESS"] = "Current user needs write permission for <i>#F</i> to use this function.";
 ?>

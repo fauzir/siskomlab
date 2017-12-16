@@ -4,7 +4,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 /** @global CMain $APPLICATION */
 global $APPLICATION;
 
-$APPLICATION->SetAdditionalCSS('/bitrix/gadgets/bnpt/admin_mobileshop/styles.css');
+$APPLICATION->SetAdditionalCSS('/bitrix/gadgets/bitrix/admin_mobileshop/styles.css');
 ?>
 
 <div class="bx-gadgets-content-layout-perform">

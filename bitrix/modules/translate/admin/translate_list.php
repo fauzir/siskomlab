@@ -488,7 +488,7 @@ $aContext[] = array("HTML"=>$s);
 $sFormValues = 1;
 $url = $APPLICATION->GetPopupLink(
 					array(
-						'URL' => "/bnpt/admin/translate_search.php?lang=".LANGUAGE_ID."&bxpublic=Y&path=".urlencode($path),
+						'URL' => "/bitrix/admin/translate_search.php?lang=".LANGUAGE_ID."&bxpublic=Y&path=".urlencode($path),
 								'PARAMS' => array(
 									'width' => 470,
 									'height' => 310,

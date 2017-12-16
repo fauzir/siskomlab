@@ -87,14 +87,14 @@ if ($GLOBALS["APPLICATION"]->GetGroupRight("vote") == "W" && CModule::IncludeMod
 			'TEXT' => GetMessage("comp_voting_list_add"),
 			'TITLE' => GetMessage("comp_voting_list_add_title"),
 			'ICON' => 'add',
-			'HREF' => '/bnpt/admin/vote_edit.php?lang='.LANGUAGE_ID."&CHANNEL_ID=".$channelID,
+			'HREF' => '/bitrix/admin/vote_edit.php?lang='.LANGUAGE_ID."&CHANNEL_ID=".$channelID,
 			'SORT' => '100',
 		));
 	$GLOBALS['INTRANET_TOOLBAR']->AddButton(array(
 		'TEXT' => GetMessage("comp_voting_list_list"),
 		'TITLE' => GetMessage("comp_voting_list_list_title"),
 		'ICON' => 'settings',
-		'HREF' => '/bnpt/admin/vote_list.php?lang='.LANGUAGE_ID,
+		'HREF' => '/bitrix/admin/vote_list.php?lang='.LANGUAGE_ID,
 		'SORT' => '200',
 	));
 }

@@ -108,9 +108,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && $saleModulePermissions >= "U" && che
 		CSaleOrderUserProps::DoSaveUserProfile($USER_ID, $ID, $profileName, $PERSON_TYPE, $arOrderPropsValues, $arErrors);
 
 	if (isset($_REQUEST["save"]) && strlen($_REQUEST["save"]) > 0 && empty($arErrors))
-		LocalRedirect("/bnpt/admin/sale_buyers_profile.php?lang=".LANGUAGE_ID."&USER_ID=".$USER_ID);
+		LocalRedirect("/bitrix/admin/sale_buyers_profile.php?lang=".LANGUAGE_ID."&USER_ID=".$USER_ID);
 	elseif (isset($_REQUEST["apply"]) && strlen($_REQUEST["apply"]) > 0 && empty($arErrors))
-		LocalRedirect("/bnpt/admin/sale_buyers_profile_edit.php?id=".$ID."&lang=".LANGUAGE_ID);
+		LocalRedirect("/bitrix/admin/sale_buyers_profile_edit.php?id=".$ID."&lang=".LANGUAGE_ID);
 }
 
 
@@ -152,7 +152,7 @@ $aMenu = array();
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("BUYER_PE_LIST_PROFILE"),
-		"LINK" => "/bnpt/admin/sale_buyers_profile.php?USER_ID=".$USER_ID."&lang=".LANGUAGE_ID
+		"LINK" => "/bitrix/admin/sale_buyers_profile.php?USER_ID=".$USER_ID."&lang=".LANGUAGE_ID
 	)
 );
 
@@ -187,7 +187,7 @@ if(!empty($arProfile) && !empty($arUser))
 
 	$arFilterProps = array("PERSON_TYPE_ID" => $PERSON_TYPE, "ACTIVE" => "Y", "USER_PROPS" => "Y", "UTIL" => "N");
 
-	$tabControl->AddViewField("CODE_USER", GetMessage("BUYER_PE_USER").":", "[<a href=\"/bnpt/admin/user_edit.php?ID=".$arUser["ID"]."&lang=".LANGUAGE_ID."\">".$arUser["ID"]."</a>] (".htmlspecialcharsEx($arUser["LOGIN"]).") ".htmlspecialcharsEx($userFIO));
+	$tabControl->AddViewField("CODE_USER", GetMessage("BUYER_PE_USER").":", "[<a href=\"/bitrix/admin/user_edit.php?ID=".$arUser["ID"]."&lang=".LANGUAGE_ID."\">".$arUser["ID"]."</a>] (".htmlspecialcharsEx($arUser["LOGIN"]).") ".htmlspecialcharsEx($userFIO));
 	$tabControl->AddEditField("CODE_PROFILE_NAME", GetMessage("BUYER_PE_PROFILE_NAME").":", false, array("size"=>30, "maxlength"=>255), htmlspecialcharsEx($profileName));
 
 	$propertyGroupID = "";
@@ -381,7 +381,7 @@ if(!empty($arProfile) && !empty($arUser))
 		}
 	}
 
-	$tabControl->Buttons(array("back_url"=>"/bnpt/admin/sale_buyers_profile.php?lang=".LANGUAGE_ID."&USER_ID=".$USER_ID));
+	$tabControl->Buttons(array("back_url"=>"/bitrix/admin/sale_buyers_profile.php?lang=".LANGUAGE_ID."&USER_ID=".$USER_ID));
 	$tabControl->Show();
 }
 

@@ -201,10 +201,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 && check_bitrix_se
 			if(strlen($return_url)>0)
 				LocalRedirect($return_url);
 			else
-				LocalRedirect("/bnpt/admin/learn_group_admin.php?lang=".LANG.GetFilterParams("filter_", false));
+				LocalRedirect("/bitrix/admin/learn_group_admin.php?lang=".LANG.GetFilterParams("filter_", false));
 		}
 
-		LocalRedirect("/bnpt/admin/learn_group_edit.php?lang=".LANG."&ID=".$ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/learn_group_edit.php?lang=".LANG."&ID=".$ID.GetFilterParams("filter_", false));
 	}
 }
 
@@ -303,7 +303,7 @@ if (!isset($str_SORT))
 				{
 					?>
 					(<a href="javascript:void(0);" class="bx-action-href"
-						onclick="window.open('/bnpt/admin/learn_unilesson_admin.php?lang=<?php echo LANGUAGE_ID;
+						onclick="window.open('/bitrix/admin/learn_unilesson_admin.php?lang=<?php echo LANGUAGE_ID;
 							?>&amp;search_retpoint=module_learning_js_admin_function_change_attached_lesson&amp;search_mode_type=attach_question_to_lesson', 
 							'module_learning_js_admin_window_select_lessons_for_attach', 
 							'scrollbars=yes,resizable=yes,width=960,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 960)/2-5));" 

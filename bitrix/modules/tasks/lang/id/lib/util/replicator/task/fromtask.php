@@ -1,3 +1,0 @@
-<?
-$MESS["TASKS_REPLICATOR_SUBTREE_LOOP"] = "menit";
-?>

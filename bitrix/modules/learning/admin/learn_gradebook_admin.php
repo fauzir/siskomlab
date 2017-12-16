@@ -194,7 +194,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 	$row->AddViewField("ATTEMPTS", "<a href=\"learn_attempt_admin.php?lang=".LANG."&filter_student_id=".$f_STUDENT_ID."&filter_test_id=".$f_TEST_ID."&set_filter=Y\">".$f_ATTEMPTS."</a>".($f_ATTEMPT_LIMIT > 0 ? " / ".$f_ATTEMPT_LIMIT : ""));
 
-	$row->AddViewField("TEST_NAME", "<a href=\"/bnpt/admin/learn_test_edit.php?lang=".LANGUAGE_ID."&COURSE_ID=".$f_COURSE_ID."&PARENT_LESSON_ID=".$f_LINKED_LESSON_ID."&LESSON_PATH=".$f_LINKED_LESSON_ID."&ID=".$f_TEST_ID."&filter=Y&set_filter=Y\">".$f_TEST_NAME."</a>");
+	$row->AddViewField("TEST_NAME", "<a href=\"/bitrix/admin/learn_test_edit.php?lang=".LANGUAGE_ID."&COURSE_ID=".$f_COURSE_ID."&PARENT_LESSON_ID=".$f_LINKED_LESSON_ID."&LESSON_PATH=".$f_LINKED_LESSON_ID."&ID=".$f_TEST_ID."&filter=Y&set_filter=Y\">".$f_TEST_NAME."</a>");
 
 	$row->AddInputField("EXTRA_ATTEMPTS", Array("size"=>"3"));
 

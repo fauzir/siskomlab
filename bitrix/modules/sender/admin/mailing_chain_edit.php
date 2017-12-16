@@ -325,9 +325,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST" && ($save!="" || $apply!="") && $POST_RI
 		}
 
 		if($apply!="")
-			LocalRedirect("/bnpt/admin/sender_mailing_chain_edit.php?MAILING_ID=".$MAILING_ID."&ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/sender_mailing_chain_edit.php?MAILING_ID=".$MAILING_ID."&ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG);
+			LocalRedirect("/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG);
 	}
 	else
 	{
@@ -436,7 +436,7 @@ $aMenu = array(
 	array(
 		"TEXT"=>GetMessage("sender_chain_edit_list"),
 		"TITLE"=>GetMessage("sender_chain_edit_list_title"),
-		"LINK"=>"/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
+		"LINK"=>"/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
 		"ICON"=>"btn_list",
 	)
 );
@@ -446,19 +446,19 @@ if($ID>0 && $POST_RIGHT>="W")
 	$aMenu[] = array(
 		"TEXT"=>GetMessage("sender_chain_edit_action_add"),
 		"TITLE"=>GetMessage("sender_chain_edit_action_add_title"),
-		"LINK"=>"/bnpt/admin/sender_mailing_chain_edit.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
+		"LINK"=>"/bitrix/admin/sender_mailing_chain_edit.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
 		"ICON"=>"btn_new",
 	);
 	$aMenu[] = array(
 		"TEXT"=>GetMessage("sender_chain_edit_action_copy"),
 		"TITLE"=>GetMessage("sender_chain_edit_action_copy_title"),
-		"LINK"=>"/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$ID."&action=copy&lang=".LANG."&".bitrix_sessid_get(),
+		"LINK"=>"/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$ID."&action=copy&lang=".LANG."&".bitrix_sessid_get(),
 		"ICON"=>"btn_copy",
 	);
 	$aMenu[] = array(
 		"TEXT"=>GetMessage("sender_chain_edit_action_del"),
 		"TITLE"=>GetMessage("sender_chain_edit_action_del_title"),
-		"LINK"=>"javascript:if(confirm('".GetMessage("sender_chain_edit_action_del_confirm")."'))window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+		"LINK"=>"javascript:if(confirm('".GetMessage("sender_chain_edit_action_del_confirm")."'))window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 		"ICON"=>"btn_delete",
 	);
 	$aMenu[] = array("SEPARATOR"=>"Y");
@@ -487,7 +487,7 @@ if($message)
 				'action': 'send_to_me',
 				'send_to_me_addr': BX('EMAIL_TO_ME').value
 			};
-			var url = '/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?echo $MAILING_ID?>&ID=<?echo $ID?>&lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>&action=js_send';
+			var url = '/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?echo $MAILING_ID?>&ID=<?echo $ID?>&lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>&action=js_send';
 			ShowWaitWindow();
 			BX.ajax.post(
 				url,
@@ -570,7 +570,7 @@ $tabControl->BeginNextTab();
 							?>
 							<input style="margin-left: 80px; margin-right: 15px;" type="button"
 								value="<?echo GetMessage("sender_chain_edit_btn_send")?>"
-								onclick="window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=send&lang=<?=LANGUAGE_ID?>'"
+								onclick="window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=send&lang=<?=LANGUAGE_ID?>'"
 								title="<?echo GetMessage("sender_chain_edit_btn_send_desc")?>" />
 							<?
 
@@ -580,7 +580,7 @@ $tabControl->BeginNextTab();
 								<?echo GetMessage("sender_chain_edit_btn_send_or")?>
 								<input style="margin-left: 15px;" type="button"
 									value="<?echo GetMessage("sender_chain_edit_btn_stop")?>"
-									onclick="window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=stop&lang=<?=LANGUAGE_ID?>'"
+									onclick="window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=stop&lang=<?=LANGUAGE_ID?>'"
 									title="<?echo GetMessage("sender_chain_edit_btn_stop_desc")?>" />
 								<?
 							}
@@ -591,12 +591,12 @@ $tabControl->BeginNextTab();
 							?>
 							<input style="margin-left: 80px; margin-right: 15px;" type="button"
 								value="<?echo GetMessage("sender_chain_edit_btn_send2")?>"
-								onclick="window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=send&lang=<?=LANGUAGE_ID?>'"
+								onclick="window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=send&lang=<?=LANGUAGE_ID?>'"
 								title="<?echo GetMessage("sender_chain_edit_btn_send2_desc")?>" />
 							<?echo GetMessage("sender_chain_edit_btn_send_or")?>
 							<input style="margin-left: 15px;" type="button"
 								value="<?echo GetMessage("sender_chain_edit_btn_stop")?>"
-								onclick="window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=stop&lang=<?=LANGUAGE_ID?>'"
+								onclick="window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=stop&lang=<?=LANGUAGE_ID?>'"
 								title="<?echo GetMessage("sender_chain_edit_btn_stop_desc")?>" />
 							<?
 						}
@@ -605,7 +605,7 @@ $tabControl->BeginNextTab();
 							?>
 							<input style="margin-left: 80px;" type="button"
 								value="<?echo GetMessage("sender_chain_edit_btn_pause")?>"
-								onclick="window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=pause&lang=<?=LANGUAGE_ID?>'"
+								onclick="window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=pause&lang=<?=LANGUAGE_ID?>'"
 								title="<?echo GetMessage("sender_chain_edit_btn_pause_desc")?>" />
 							<?
 						}
@@ -614,7 +614,7 @@ $tabControl->BeginNextTab();
 							?>
 							<input style="margin-left: 80px;" type="button"
 								value="<?echo GetMessage("sender_chain_edit_btn_send_err")?>"
-								onclick="window.location='/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=send_error&lang=<?=LANGUAGE_ID?>'"
+								onclick="window.location='/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?=$MAILING_ID?>&ID=<?=$ID?>&action=send_error&lang=<?=LANGUAGE_ID?>'"
 								title="<?echo GetMessage("sender_chain_edit_btn_send_err_desc")?>" />
 							<?
 						}
@@ -778,7 +778,7 @@ $tabControl->BeginNextTab();
 			<?=\Bitrix\Sender\TemplateTable::initEditor(array(
 				'FIELD_NAME' => 'MESSAGE',
 				'FIELD_VALUE' => $str_MESSAGE,
-				//'CONTENT_URL' => '/bnpt/admin/sender_mailing_chain_admin.php?action=get_template&ID=' . $ID . '&lang=' . LANGUAGE_ID . '&' . bitrix_sessid_get(),
+				//'CONTENT_URL' => '/bitrix/admin/sender_mailing_chain_admin.php?action=get_template&ID=' . $ID . '&lang=' . LANGUAGE_ID . '&' . bitrix_sessid_get(),
 				'TEMPLATE_TYPE' => $str_TEMPLATE_TYPE,
 				'TEMPLATE_ID' => $str_TEMPLATE_ID,
 				'HAVE_USER_ACCESS' => $isUserHavePhpAccess,
@@ -1073,7 +1073,7 @@ $tabControl->BeginNextTab();
 
 $tabControl->Buttons(array(
 	"disabled"=>($POST_RIGHT<"W"),
-	"back_url"=>"/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
+	"back_url"=>"/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
 ));
 ?>
 

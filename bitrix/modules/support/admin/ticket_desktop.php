@@ -86,7 +86,7 @@ function fill_all_values($sid, $type, $mess=false, $site=false)
 	}
 	while ($zr = $z->Fetch())
 	{
-		$arrTickets[$sid][$zr["ID"]]["NAME"] = "[<a title='".GetMessage("MAIN_ADMIN_MENU_EDIT")."' href='/bnpt/admin/ticket_dict_edit.php?ID=".$zr["ID"]."'>".$zr["ID"]."</a>] ".htmlspecialcharsbx($zr["NAME"]);
+		$arrTickets[$sid][$zr["ID"]]["NAME"] = "[<a title='".GetMessage("MAIN_ADMIN_MENU_EDIT")."' href='/bitrix/admin/ticket_dict_edit.php?ID=".$zr["ID"]."'>".$zr["ID"]."</a>] ".htmlspecialcharsbx($zr["NAME"]);
 		$arrTickets[$sid][$zr["ID"]]["COUNTER_OPEN"] = $arrT[$sid][$zr["ID"]]["COUNTER_OPEN"];
 		$arrTickets[$sid][$zr["ID"]]["COUNTER_OPEN_RED"] = $arrT[$sid][$zr["ID"]]["COUNTER_OPEN_RED"];
 		$arrTickets[$sid][$zr["ID"]]["COUNTER_OPEN_GREEN"] = $arrT[$sid][$zr["ID"]]["COUNTER_OPEN_GREEN"];
@@ -184,7 +184,7 @@ while ($arTicket = $rsTickets->Fetch())
 		$arUser = $rsUser->Fetch();
 		$arrSupportUser[$arTicket["RESPONSIBLE_USER_ID"]] = $arUser;*/
 		$arUsersID[] = intval($arTicket["RESPONSIBLE_USER_ID"]);
-		//$R_NAME = "[<a href='/bnpt/admin/user_edit.php?ID=".$arTicket["RESPONSIBLE_USER_ID"]."'>".$arTicket["RESPONSIBLE_USER_ID"]."</a>] (".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+		//$R_NAME = "[<a href='/bitrix/admin/user_edit.php?ID=".$arTicket["RESPONSIBLE_USER_ID"]."'>".$arTicket["RESPONSIBLE_USER_ID"]."</a>] (".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 	}
 	else
 	{
@@ -264,7 +264,7 @@ if(count($arUsersID) > 0)
 	$rs = CUser::GetList($f, $o, array( "ID" => $strUsers), array("FIELDS"=>array("NAME","LAST_NAME","LOGIN","ID")));
 	while($ar = $rs->Fetch())
 	{
-		$arrT["RESPONSIBLE"][$ar["ID"]]["NAME"] = "[<a href='/bnpt/admin/user_edit.php?ID=" . $ar["ID"] . "'>" . $ar["ID"] . "</a>] " .
+		$arrT["RESPONSIBLE"][$ar["ID"]]["NAME"] = "[<a href='/bitrix/admin/user_edit.php?ID=" . $ar["ID"] . "'>" . $ar["ID"] . "</a>] " .
 			htmlspecialcharsbx("(" . $ar["LOGIN"] . ") " . $ar["NAME"] . " " . $ar["LAST_NAME"]);
 		$arrSupportUser[$ar["ID"]] = $ar;
 	}
@@ -425,45 +425,45 @@ while (list($key, $arrR) = each($arrTickets)):
 	<tr valign="top" class="head">
 		<td align="right"><?=GetMessage("SUP_TOTAL")?>:</td>
 
-		<td align="right">&nbsp;<?if (intval($OPEN_TICKETS_RED)>0):?><a href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_lamp[]=red&find_lamp[]=yellow&set_filter=Y<?=$tlist_filter_pass?>"><?echo intval($OPEN_TICKETS_RED)?></a><?endif;?></td>
+		<td align="right">&nbsp;<?if (intval($OPEN_TICKETS_RED)>0):?><a href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_lamp[]=red&find_lamp[]=yellow&set_filter=Y<?=$tlist_filter_pass?>"><?echo intval($OPEN_TICKETS_RED)?></a><?endif;?></td>
 
-		<td align="right">&nbsp;<?if(intval($OPEN_TICKETS_GREEN)>0):?><a href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_lamp[]=green&find_lamp[]=green_s&set_filter=Y<?=$tlist_filter_pass?>"><?echo intval($OPEN_TICKETS_GREEN)?></a><?endif;?></td>
+		<td align="right">&nbsp;<?if(intval($OPEN_TICKETS_GREEN)>0):?><a href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_lamp[]=green&find_lamp[]=green_s&set_filter=Y<?=$tlist_filter_pass?>"><?echo intval($OPEN_TICKETS_GREEN)?></a><?endif;?></td>
 
 
 
-		<td align="right">&nbsp;<?if(intval($CLOSE_TICKETS)>0):?><a href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_close=Y&set_filter=Y<?=$tlist_filter_pass?>"><?=$CLOSE_TICKETS?></a><?endif;?></td>
+		<td align="right">&nbsp;<?if(intval($CLOSE_TICKETS)>0):?><a href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_close=Y&set_filter=Y<?=$tlist_filter_pass?>"><?=$CLOSE_TICKETS?></a><?endif;?></td>
 
 		<?if ($find_show_messages=="Y"):?>
 		<td align="right">&nbsp;<?=intval($CLOSE_MESSAGES)>0 ? intval($CLOSE_MESSAGES) : ""?></td>
 
 		<td align="right">&nbsp;<?
 			if (intval($CLOSE_OVERDUE_MESSAGES)>0):
-				?><a title="<?=GetMessage("SUP_OVERDUE_MESSAGES")?>" href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_overdue_messages1=1&find_close=Y&set_filter=Y<?=$tlist_filter_pass?>" ><?=intval($CLOSE_OVERDUE_MESSAGES)?></a><?
+				?><a title="<?=GetMessage("SUP_OVERDUE_MESSAGES")?>" href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_overdue_messages1=1&find_close=Y&set_filter=Y<?=$tlist_filter_pass?>" ><?=intval($CLOSE_OVERDUE_MESSAGES)?></a><?
 			endif;
 			?></td>
 		<?endif;?>
 
-		<td align="right">&nbsp;<?if(intval($OPEN_TICKETS)>0):?><a href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_close=N&set_filter=Y<?=$tlist_filter_pass?>"><?=$OPEN_TICKETS?></a><?endif;?></td>
+		<td align="right">&nbsp;<?if(intval($OPEN_TICKETS)>0):?><a href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_close=N&set_filter=Y<?=$tlist_filter_pass?>"><?=$OPEN_TICKETS?></a><?endif;?></td>
 
 		<?if ($find_show_messages=="Y"):?>
 		<td nowrap>&nbsp;<?if(intval($OPEN_MESSAGES)>0):?><?=intval($OPEN_MESSAGES)?><?endif;?></td>
 
 		<td align="right">&nbsp;<?
 			if(intval($OPEN_OVERDUE_MESSAGES)>0):
-				?><a title="<?=GetMessage("SUP_OVERDUE_MESSAGES")?>" href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_overdue_messages1=1&find_close=N&set_filter=Y<?=$tlist_filter_pass?>" ><?=intval($OPEN_OVERDUE_MESSAGES)?></a><?
+				?><a title="<?=GetMessage("SUP_OVERDUE_MESSAGES")?>" href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_overdue_messages1=1&find_close=N&set_filter=Y<?=$tlist_filter_pass?>" ><?=intval($OPEN_OVERDUE_MESSAGES)?></a><?
 			endif;
 			?></td>
 		<?endif;?>
 
 
-		<td align="right">&nbsp;<?if (intval($OPEN_TICKETS+$CLOSE_TICKETS)>0):?><a href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&del_filter=Y<?=$tlist_filter_pass?>"><?=$OPEN_TICKETS+$CLOSE_TICKETS?></a><?endif;?></td>
+		<td align="right">&nbsp;<?if (intval($OPEN_TICKETS+$CLOSE_TICKETS)>0):?><a href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&del_filter=Y<?=$tlist_filter_pass?>"><?=$OPEN_TICKETS+$CLOSE_TICKETS?></a><?endif;?></td>
 
 		<?if ($find_show_messages=="Y"):?>
 		<td align="right">&nbsp;<?=intval($OPEN_MESSAGES+$CLOSE_MESSAGES)>0 ? intval($OPEN_MESSAGES+$CLOSE_MESSAGES) : ""?></td>
 
 		<td align="right">&nbsp;<?
 			if (intval($OPEN_OVERDUE_MESSAGES+$CLOSE_OVERDUE_MESSAGES)>0):
-				?><a title="<?=GetMessage("SUP_OVERDUE_MESSAGES")?>" href="/bnpt/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_overdue_messages1=1&set_filter=Y<?=$tlist_filter_pass?>" ><?=intval($OPEN_OVERDUE_MESSAGES+$CLOSE_OVERDUE_MESSAGES)?></a><?
+				?><a title="<?=GetMessage("SUP_OVERDUE_MESSAGES")?>" href="/bitrix/admin/ticket_list.php?lang=<?=LANGUAGE_ID?>&find_overdue_messages1=1&set_filter=Y<?=$tlist_filter_pass?>" ><?=intval($OPEN_OVERDUE_MESSAGES+$CLOSE_OVERDUE_MESSAGES)?></a><?
 			endif;
 			?></td>
 		<?endif;?>
@@ -551,7 +551,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admi
 			echo SelectBoxFromArray("find_responsible_id", $arr, htmlspecialcharsbx($find_responsible_id), GetMessage("SUP_ALL"));
 			?><br><input type="text" name="find_responsible" size="47" value="<?=htmlspecialcharsbx($find_responsible)?>"><?=InputType("checkbox", "find_responsible_exact_match", "Y", $find_responsible_exact_match, false, "", "title='".GetMessage("SUP_EXACT_MATCH")."'")?>&nbsp;<?=ShowFilterLogicHelp()?><?
 		else :
-			?>[<a href="/bnpt/admin/user_edit.php?ID=<?=$USER->GetID()?>"><?=$USER->GetID()?></a>] (<?=htmlspecialcharsEx($USER->GetLogin())?>) <?=htmlspecialcharsEx($USER->GetFullName())?><?
+			?>[<a href="/bitrix/admin/user_edit.php?ID=<?=$USER->GetID()?>"><?=$USER->GetID()?></a>] (<?=htmlspecialcharsEx($USER->GetLogin())?>) <?=htmlspecialcharsEx($USER->GetFullName())?><?
 		endif;
 		?></td>
 </tr>

@@ -1780,7 +1780,7 @@ BXMedialibAdmin.prototype =
 
 	GetRequestUrl: function(action, sessid)
 	{
-		return '/bnpt/admin/fileman_medialib.php?sessid=' + (sessid || this.sessid) + '&lang=' + this.oConfig.lang + (action ? '&action=' + action : '');
+		return '/bitrix/admin/fileman_medialib.php?sessid=' + (sessid || this.sessid) + '&lang=' + this.oConfig.lang + (action ? '&action=' + action : '');
 	},
 
 	CheckReqLostSessid: function(result)
@@ -2371,7 +2371,7 @@ BXMedialibAdmin.prototype =
 		[
 			{id: 'edit', name: ML_MESS.Edit, title: ML_MESS.EditCollection, handler: function(pEl){_this.OpenEditCollDialog({id: pEl.id.substr('mlccm_'.length)});}},
 			{id: 'del', name: ML_MESS.Delete,title: ML_MESS.DelCollection,handler: function(pEl){_this.DelCollection(pEl.id.substr('mlccm_'.length));}},
-			{id: 'access', name: ML_MESS.Access,title: ML_MESS.AccessTitle,handler: function(pEl){window.location = "/bnpt/admin/fileman_medialib_access.php?col_id=" + pEl.id.substr('mlccm_'.length);}},
+			{id: 'access', name: ML_MESS.Access,title: ML_MESS.AccessTitle,handler: function(pEl){window.location = "/bitrix/admin/fileman_medialib_access.php?col_id=" + pEl.id.substr('mlccm_'.length);}},
 			{id: 'add_item', name: ML_MESS.AddElement,title: ML_MESS.AddElementTitle, handler: function(pEl){_this.OpenEditItemDialog({parentCol: pEl.id.substr('mlccm_'.length)});}},
 			{id: 'add_col', name: ML_MESS.AddCollection,title: ML_MESS.AddCollectionTitle,handler: function(pEl){_this.OpenEditCollDialog({parentCol: pEl.id.substr('mlccm_'.length)});}}
 		];
@@ -2469,7 +2469,7 @@ BXMedialibAdmin.prototype =
 	TypeOnChange: function(Params)
 	{
 		if (this.Types[Params.typeInd].id != this.curType.id)
-			window.location = "/bnpt/admin/fileman_medialib_admin.php?lang=" + this.oConfig.lang + "&type=" + this.Types[Params.typeInd].id; // + '&sessid=' + this.sessid;
+			window.location = "/bitrix/admin/fileman_medialib_admin.php?lang=" + this.oConfig.lang + "&type=" + this.Types[Params.typeInd].id; // + '&sessid=' + this.sessid;
 	},
 
 	CheckMLType: function(typeId)

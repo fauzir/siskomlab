@@ -362,7 +362,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bnpt/admin/sale_pay_system.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bitrix/admin/sale_pay_system.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

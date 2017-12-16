@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST["save"].$_REQUEST["apply"].
 	if($_REQUEST["save"] != "" && $_GET["return_url"] != "")
 		LocalRedirect($_GET["return_url"]);
 	else
-		LocalRedirect("/bnpt/admin/security_otp.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
+		LocalRedirect("/bitrix/admin/security_otp.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
 }
 
 $availableTypes = \Bitrix\Security\Mfa\Otp::getAvailableTypes();

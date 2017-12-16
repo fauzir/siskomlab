@@ -568,7 +568,7 @@ $aMenu = array(
 	array(
 		"TEXT" => Loc::getMessage('SOPEN_2FLIST'),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/sale_order_props.php?lang=".LANG.GetFilterParams("filter_")
+		"LINK" => "/bitrix/admin/sale_order_props.php?lang=".LANG.GetFilterParams("filter_")
 	)
 );
 
@@ -597,7 +597,7 @@ if ($propertyId && $saleModulePermissions >= "W")
 
 	$aMenu[] = array(
 		"TEXT" => Loc::getMessage('SOPEN_DELETE_PROPS'),
-		"LINK" => "javascript:if(confirm('".Loc::getMessage('SOPEN_DELETE_PROPS_CONFIRM')."')) window.location='/bnpt/admin/sale_order_props.php?action=delete&ID[]=".$propertyId."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".Loc::getMessage('SOPEN_DELETE_PROPS_CONFIRM')."')) window.location='/bitrix/admin/sale_order_props.php?action=delete&ID[]=".$propertyId."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"ICON" => "btn_delete",
 	);
 }
@@ -713,7 +713,7 @@ if ($errors)
 	$tabControl->EndTab();
 	$tabControl->Buttons(array(
 		'disabled' => ($saleModulePermissions < 'W'),
-		'back_url' => '/bnpt/admin/sale_order_props.php?lang='.LANG.GetFilterParams('filter_'),
+		'back_url' => '/bitrix/admin/sale_order_props.php?lang='.LANG.GetFilterParams('filter_'),
 	));
 	$tabControl->End();
 	?>

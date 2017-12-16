@@ -88,7 +88,7 @@
 	$aMenu = array(
 		array(
 			"TEXT" => GetMessage("FLTR_LIST"),
-			"LINK" => "/bnpt/admin/forum_dictionary.php?TYPE=".$TYPE."&lang=".LANG,
+			"LINK" => "/bitrix/admin/forum_dictionary.php?TYPE=".$TYPE."&lang=".LANG,
 			"ICON" => "btn_list"));
 	$context = new CAdminContextMenu($aMenu);
 	$context->Show();
@@ -124,7 +124,7 @@
 <?$tabControl->Buttons(
 		array(
 				"disabled" => (!CFilterUnquotableWords::FilterPerm()),
-				"back_url" => "/bnpt/admin/forum_dictionary.php?TYPE=".$TYPE."&lang=".LANG
+				"back_url" => "/bitrix/admin/forum_dictionary.php?TYPE=".$TYPE."&lang=".LANG
 			)
 	);?>
 <?$tabControl->End();?>

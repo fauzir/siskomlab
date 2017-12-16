@@ -276,7 +276,7 @@ if (!empty($res["FILES"]))
 			endif;
 			if ($res["PANELS"]["STATISTIC"] == "Y"):
 ?>
-					<span><?=GetMessage("F_USER_ID")?>: <span><a href="/bnpt/admin/guest_list.php?lang=<?=LANG_ADMIN_LID?><?
+					<span><?=GetMessage("F_USER_ID")?>: <span><a href="/bitrix/admin/guest_list.php?lang=<?=LANG_ADMIN_LID?><?
 						?>&amp;find_id=<?=$res["GUEST_ID"]?>&amp;set_filter=Y"><?=$res["GUEST_ID"];?></a></span></span>
 <?
 			endif;
@@ -284,7 +284,7 @@ if (!empty($res["FILES"]))
 			if ($res["PANELS"]["MAIN"] == "Y"):
 ?>
 					<span><?=GetMessage("F_USER_ID_USER")?>: <span><?
-						?><a href="/bnpt/admin/user_edit.php?lang=<?=LANG_ADMIN_LID?>&amp;ID=<?=$res["AUTHOR_ID"]?>"><?=$res["AUTHOR_ID"];?></a></span></span>
+						?><a href="/bitrix/admin/user_edit.php?lang=<?=LANG_ADMIN_LID?>&amp;ID=<?=$res["AUTHOR_ID"]?>"><?=$res["AUTHOR_ID"];?></a></span></span>
 <?
 			endif;
 ?>

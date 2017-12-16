@@ -512,7 +512,7 @@ if (!empty($orderList) && is_array($orderList))
 			}
 			$fieldValue = "[";
 			if($saleModulePermissions >= "W")
-				$fieldValue .= '<a href="/bnpt/admin/sale_person_type.php?lang='.LANGUAGE_ID.'">';
+				$fieldValue .= '<a href="/bitrix/admin/sale_person_type.php?lang='.LANGUAGE_ID.'">';
 			$fieldValue .= $arOrder["PERSON_TYPE_ID"];
 			if($saleModulePermissions >= "W")
 				$fieldValue .= "</a>";
@@ -586,7 +586,7 @@ if (!empty($orderList) && is_array($orderList))
 				$fieldValueTmp .= "[";
 
 				if($saleModulePermissions >= "W")
-					$fieldValueTmp .= '<a href="/bnpt/admin/sale_status_edit.php?ID='.$arOrder["STATUS_ID"].'&lang='.LANGUAGE_ID.'">';
+					$fieldValueTmp .= '<a href="/bitrix/admin/sale_status_edit.php?ID='.$arOrder["STATUS_ID"].'&lang='.LANGUAGE_ID.'">';
 
 				$fieldValueTmp .= $arOrder["STATUS_ID"];
 
@@ -782,7 +782,7 @@ if (!empty($orderList) && is_array($orderList))
 		$idTmp = '<table>
 						<tr>
 							<td valign="top"></td>
-							<td><a href="/bnpt/admin/sale_order_archive_view.php?ID=##ID##"><b>'.Loc::getMessage("SO_ORDER_ID_PREF").'##ID##</b></a></td>
+							<td><a href="/bitrix/admin/sale_order_archive_view.php?ID=##ID##"><b>'.Loc::getMessage("SO_ORDER_ID_PREF").'##ID##</b></a></td>
 						</tr>
 					</table>';
 		$row->AddField("ID", str_replace('##ID##', $arOrder["ID"], $idTmp));

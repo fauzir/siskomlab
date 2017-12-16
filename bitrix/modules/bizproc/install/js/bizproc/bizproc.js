@@ -334,7 +334,7 @@ BizProcActivity = function()
 	ob.Settings = function (e)
 	{
 		(new BX.CDialog({
-			'content_url': "/bnpt/admin/"+MODULE_ID+"_bizproc_activity_settings.php?mode=public&bxpublic=Y&lang="+BX.message('LANGUAGE_ID')+"&entity="+ENTITY,
+			'content_url': "/bitrix/admin/"+MODULE_ID+"_bizproc_activity_settings.php?mode=public&bxpublic=Y&lang="+BX.message('LANGUAGE_ID')+"&entity="+ENTITY,
 			'content_post': 'id='+encodeURIComponent(ob.Name)+ '&' +
 				'decode=Y&' +
 				'document_type=' + encodeURIComponent(document_type) + '&' +

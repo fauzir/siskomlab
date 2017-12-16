@@ -1,5 +1,0 @@
-<?
-$MESS["CRM_REPORT_COMPLEX_NAME"] = "Laporan";
-$MESS["CRM_REPORT_COMPLEX_DESCRIPTION"] = "Laporan";
-$MESS["CRM_NAME"] = "CRM";
-?>

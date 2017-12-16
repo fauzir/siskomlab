@@ -41,7 +41,7 @@ class OrderStatus
 						<td class="adm-detail-content-cell-r">
 							<div>'.
 								 $data["DATE_INSERT"].
-								'&nbsp;<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["CREATOR_USER_ID"].'">'.
+								'&nbsp;<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $data["CREATOR_USER_ID"].'">'.
 									 htmlspecialcharsbx($data["CREATOR_USER_NAME"]).
 								'</a>
 							</div>
@@ -66,7 +66,7 @@ class OrderStatus
 
 			if(intval($data['AFFILIATE_ID']) > 0)
 			{
-				$data["AFFILIATE_NAME"] = '<a href="/bnpt/admin/sale_affiliate_edit.php?lang='.LANGUAGE_ID.'&ID='.$data['AFFILIATE_ID'].'">'.
+				$data["AFFILIATE_NAME"] = '<a href="/bitrix/admin/sale_affiliate_edit.php?lang='.LANGUAGE_ID.'&ID='.$data['AFFILIATE_ID'].'">'.
 						$data["AFFILIATE_NAME"].
 					'</a>';
 			}
@@ -159,7 +159,7 @@ class OrderStatus
 					<div class="adm-s-select-popup-element-selected-bad">
 						<span>'.Loc::getMessage("SALE_ORDER_STATUS_CANCELED").'</span>
 						'.$order->getField('DATE_CANCELED').'
-						<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $order->getField("EMP_CANCELED_ID").'">'.
+						<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='. $order->getField("EMP_CANCELED_ID").'">'.
 							htmlspecialcharsbx($data["EMP_CANCELED_NAME"]).
 						'</a>
 					</div>

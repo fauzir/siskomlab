@@ -31,7 +31,7 @@ if ($arParams['bAdmin']):
 
 	$INTRANET_TOOLBAR->AddButton(array(
 		'ONCLICK' => $APPLICATION->GetPopupLink(array(
-			'URL' => "/bnpt/admin/iblock_element_edit.php?type=".$arParams['IBLOCK_TYPE']."&lang=".LANGUAGE_ID."&IBLOCK_ID=". $arParams['IBLOCK_ID']."&bxpublic=Y&from_module=iblock",
+			'URL' => "/bitrix/admin/iblock_element_edit.php?type=".$arParams['IBLOCK_TYPE']."&lang=".LANGUAGE_ID."&IBLOCK_ID=". $arParams['IBLOCK_ID']."&bxpublic=Y&from_module=iblock",
 			'PARAMS' => array(
 				'height' => 500,
 				'width' => 700,
@@ -44,7 +44,7 @@ if ($arParams['bAdmin']):
 	));
 
 	$INTRANET_TOOLBAR->AddButton(array(
-		'HREF' => "/bnpt/admin/iblock_element_admin.php?type=".$arParams['IBLOCK_TYPE']."&lang=".LANGUAGE_ID."&IBLOCK_ID=".$arParams['IBLOCK_ID'],
+		'HREF' => "/bitrix/admin/iblock_element_admin.php?type=".$arParams['IBLOCK_TYPE']."&lang=".LANGUAGE_ID."&IBLOCK_ID=".$arParams['IBLOCK_ID'],
 		"TEXT" => GetMessage('INTR_ABSC_TPL_EDIT_ENTRIES'),
 		"TITLE" => GetMessage('INTR_ABSC_TPL_EDIT_ENTRIES_TITLE'),
 		'ICON' => 'settings',

@@ -220,7 +220,7 @@ class CSaleWS extends IWebService
 			"TITLE" =>  htmlspecialchars(GetMessage("BX_WS_SALE_LF_TITLE")),
 			"MESSAGE" => htmlspecialchars($strSaleStat),
 			"TEXT_MESSAGE" => htmlspecialchars($strSaleStatText),
-			"URL" => htmlspecialchars($protocol."://".$server_name."/bnpt/admin/sale_stat.php?lang=".$lang)
+			"URL" => htmlspecialchars($protocol."://".$server_name."/bitrix/admin/sale_stat.php?lang=".$lang)
 		);
 
 		return $arResult;

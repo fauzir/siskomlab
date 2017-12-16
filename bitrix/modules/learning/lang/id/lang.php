@@ -165,6 +165,6 @@ $MESS["LEARNING_RIGHTS_FOR_ADMINISTRATION"] = "Administration permissions";
 $MESS["LEARNING_RIGHTS_NOTE"] = "* Website visitors are checked for the course permission only. If a visitor has a view permission for a course, he or she will have access to all the chapters and lessons in this course irrespective of their permissions.";
 $MESS["LEARNING_PREVENT_LANG_REMOVE"] = "There are courses bound to the site you are about to delete. Please delete them or bind them to another site first.";
 $MESS["LEARNING_BAD_FILENAME"] = "The filename had invalid characters which has been removed.";
-$MESS["LEARNING_DATA_IN_DB_NEEDS_TO_BE_CONVERTED"] = "You have updated the e-Learning module. Please <a href=\"/bnpt/admin/learning_convert.php?lang=#LANG#\">convert the module data</a> now.";
+$MESS["LEARNING_DATA_IN_DB_NEEDS_TO_BE_CONVERTED"] = "You have updated the e-Learning module. Please <a href=\"/bitrix/admin/learning_convert.php?lang=#LANG#\">convert the module data</a> now.";
 $MESS["LEARNING_LESSON_IS_PUBLISH_PROHIBITED"] = "unpublishable";
 ?>

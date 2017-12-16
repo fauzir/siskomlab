@@ -1089,7 +1089,7 @@ Class crm extends CModule
 		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/components', $_SERVER['DOCUMENT_ROOT'].'/bitrix/components', true, true);
 		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/gadgets', $_SERVER['DOCUMENT_ROOT'].'/bitrix/gadgets', true, true);
 		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/js', $_SERVER['DOCUMENT_ROOT'].'/bitrix/js', true, true);
-		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bnpt/admin', true, true);
+		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin', true, true);
 		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/tools/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/tools', true, true);
 		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/activities/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/activities', true, true);
 		CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/crm/install/themes/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/themes', true, true);
@@ -1126,9 +1126,9 @@ Class crm extends CModule
 		global $APPLICATION;
 
 		//HACK: bizproc crutch to enable user read only access to service files
-		$APPLICATION->SetFileAccessPermission('/bnpt/admin/crm_bizproc_activity_settings.php', array('2' => 'R'));
-		$APPLICATION->SetFileAccessPermission('/bnpt/admin/crm_bizproc_selector.php', array('2' => 'R'));
-		$APPLICATION->SetFileAccessPermission('/bnpt/admin/crm_bizproc_wf_settings.php', array('2' => 'R'));
+		$APPLICATION->SetFileAccessPermission('/bitrix/admin/crm_bizproc_activity_settings.php', array('2' => 'R'));
+		$APPLICATION->SetFileAccessPermission('/bitrix/admin/crm_bizproc_selector.php', array('2' => 'R'));
+		$APPLICATION->SetFileAccessPermission('/bitrix/admin/crm_bizproc_wf_settings.php', array('2' => 'R'));
 
 		\Bitrix\Main\Loader::includeModule('crm');
 		\Bitrix\Crm\Preview\Route::setCrmRoutes();

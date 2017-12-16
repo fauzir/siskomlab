@@ -156,7 +156,7 @@ $tabControl->BeginNextTab();
 		if (intval($str_CREATED_BY)>0) :
 			$rsUser = CUser::GetByID($str_CREATED_BY);
 			$arUser = $rsUser->Fetch();
-			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/user_edit.php?ID=".$str_CREATED_BY."' title='".GetMessage("AD_USER_ALT")."'>".$str_CREATED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/user_edit.php?ID=".$str_CREATED_BY."' title='".GetMessage("AD_USER_ALT")."'>".$str_CREATED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 		endif;
 		?></td>
 	</tr>
@@ -168,7 +168,7 @@ $tabControl->BeginNextTab();
 		if (intval($str_MODIFIED_BY)>0) :
 			$rsUser = CUser::GetByID($str_MODIFIED_BY);
 			$arUser = $rsUser->Fetch();
-			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/user_edit.php?ID=".$str_MODIFIED_BY."' title='".GetMessage("AD_USER_ALT")."'>".$str_MODIFIED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
+			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/user_edit.php?ID=".$str_MODIFIED_BY."' title='".GetMessage("AD_USER_ALT")."'>".$str_MODIFIED_BY."</a>]&nbsp;(".htmlspecialcharsbx($arUser["LOGIN"]).") ".htmlspecialcharsbx($arUser["NAME"])." ".htmlspecialcharsbx($arUser["LAST_NAME"]);
 		endif;
 		?></td>
 	</tr>

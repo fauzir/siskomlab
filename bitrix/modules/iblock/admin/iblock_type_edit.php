@@ -8,7 +8,7 @@ if(!$USER->IsAdmin())
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
 if($back_url=='')
-	$back_url = '/bnpt/admin/iblock_type_admin.php?lang='.$lang;
+	$back_url = '/bitrix/admin/iblock_type_admin.php?lang='.$lang;
 
 $arIBTLang = Array();
 $l = CLanguage::GetList($lby="sort", $lorder="asc");
@@ -118,7 +118,7 @@ if(strlen($ID)>0)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("IBTYPE_E_DEL"),
 		"TITLE" => GetMessage("IBTYPE_E_DEL_TITLE"),
-		"LINK" => "javascript:if(confirm('".GetMessageJS("IBTYPE_E_DEL_CONF")."')) window.location='/bnpt/admin/iblock_type_admin.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+		"LINK" => "javascript:if(confirm('".GetMessageJS("IBTYPE_E_DEL_CONF")."')) window.location='/bitrix/admin/iblock_type_admin.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 		"ICON" => "btn_delete"
 		);
 }

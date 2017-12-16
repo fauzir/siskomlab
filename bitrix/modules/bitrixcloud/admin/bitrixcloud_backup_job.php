@@ -47,7 +47,7 @@ try
 			$time = $match[1]*3600 + $match[2]*60;
 		$strError = CBitrixCloudBackup::getInstance()->addBackupJob($backup_secret_key, $_POST["URL"], $time, $_POST["WEEK_DAYS"]);
 		if ($strError == "")
-			LocalRedirect("/bnpt/admin/bitrixcloud_backup_job.php?lang=".LANGUAGE_ID);
+			LocalRedirect("/bitrix/admin/bitrixcloud_backup_job.php?lang=".LANGUAGE_ID);
 	}
 
 	$arHeaders = array(

@@ -941,7 +941,7 @@ echo $USER_FIELD_MANAGER->ShowScript();
 		$tabControl->BeginNextTab();
 		if ($USER_FIELD_MANAGER->GetRights($ENTITY_ID) >= "W")
 		{
-			echo "<tr "."colspan=\"2\"><td align=\"left\"><a href=\"/bnpt/admin/userfield_edit.php?lang=".LANGUAGE_ID."&ENTITY_ID=".urlencode($ENTITY_ID)."&back_url=".urlencode($APPLICATION->GetCurPageParam("", array("bxpublic"))."&tabControl_active_tab=user_fields_tab")."\">".GetMessage("USER_TYPE_EDIT_TAB_HREF")."</a></td></tr>";
+			echo "<tr "."colspan=\"2\"><td align=\"left\"><a href=\"/bitrix/admin/userfield_edit.php?lang=".LANGUAGE_ID."&ENTITY_ID=".urlencode($ENTITY_ID)."&back_url=".urlencode($APPLICATION->GetCurPageParam("", array("bxpublic"))."&tabControl_active_tab=user_fields_tab")."\">".GetMessage("USER_TYPE_EDIT_TAB_HREF")."</a></td></tr>";
 		}
 
 		$arUserFields = $USER_FIELD_MANAGER->GetUserFields($ENTITY_ID, ($copy_id? $copy_id: $ID), LANGUAGE_ID);

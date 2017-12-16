@@ -381,14 +381,14 @@ if ($request->get('start') == 'Y' && $server->getRequestMethod() == 'POST')
 			$pathInfo = pathinfo($NS['url_data_file']);
 			$pathInfo['files_dir'] = $pathInfo['filename'].'_files';
 			$details .= '<br/>'.Loc::getMessage('ADMIN_TOOLS_PROCESS_FINAL', array(
-				'#xml_link#' => '<a href="/bnpt/admin/fileman_admin.php?lang='.LANG.'&amp;path='.htmlspecialcharsbx(urlencode($pathInfo['dirname'])).'&amp;set_filter=Y&amp;find_name='.htmlspecialcharsbx(urlencode($pathInfo['basename'])).'" target="_blank">'.
+				'#xml_link#' => '<a href="/bitrix/admin/fileman_admin.php?lang='.LANG.'&amp;path='.htmlspecialcharsbx(urlencode($pathInfo['dirname'])).'&amp;set_filter=Y&amp;find_name='.htmlspecialcharsbx(urlencode($pathInfo['basename'])).'" target="_blank">'.
 									htmlspecialcharsbx($pathInfo['basename']).
 								'</a>'
 			));
 			if ($NS['has_files'])
 			{
 				$details .= '<br/>'.Loc::getMessage('ADMIN_TOOLS_PROCESS_FILES_FINAL', array(
-					'#files_link#' => '<a href="/bnpt/admin/fileman_admin.php?lang='.LANG.'&amp;path='.htmlspecialcharsbx(urlencode($pathInfo['dirname'])).'&amp;set_filter=Y&amp;find_name='.htmlspecialcharsbx(urlencode($pathInfo['files_dir'])).'" target="_blank">'.
+					'#files_link#' => '<a href="/bitrix/admin/fileman_admin.php?lang='.LANG.'&amp;path='.htmlspecialcharsbx(urlencode($pathInfo['dirname'])).'&amp;set_filter=Y&amp;find_name='.htmlspecialcharsbx(urlencode($pathInfo['files_dir'])).'" target="_blank">'.
 										htmlspecialcharsbx($pathInfo['files_dir']).
 									'</a>'
 				));

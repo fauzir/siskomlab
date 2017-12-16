@@ -5,9 +5,9 @@
 /**********************************************************************/
 if (!defined("UPDATE_SYSTEM_VERSION"))
 	define("UPDATE_SYSTEM_VERSION", "11.0.12");
-if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/update_system.php"))
+if (file_exists($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/update_system.php"))
 {
-	require_once($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/update_system.php");
+	require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/update_system.php");
 	die();
 }
 
@@ -896,13 +896,13 @@ if ($TYPE=="UPDATE" && $STEP==1)
 			<a href="http://<?= (($lang=="ru") ? "www.bitrixsoft.ru/ru" : "www.bitrixsoft.com" ) ?>/bsm_register.php?dt=<?echo UrlEncode($SiteExpireDate) ?>" target="_blank"><img src="/bitrix/images/main/icon2.gif" width="15" height="15" border="0" alt="<?= GetMessage("SUP_NO_KEY_ACT_ALT") ?>"> <?= GetMessage("SUP_NO_KEY_ACT") ?> &gt;&gt;</a>
 			<br><br><br>
 
-			<?= str_replace("#URL#", "/bnpt/admin/settings.php?mid_SELECTED=yes&mid=main", GetMessage("SUP_NO_KEY_ENTER_PROMT")) ?>
+			<?= str_replace("#URL#", "/bitrix/admin/settings.php?mid_SELECTED=yes&mid=main", GetMessage("SUP_NO_KEY_ENTER_PROMT")) ?>
 			<?
 		}
 		else
 		{
 			?>
-			<?= str_replace("#URL_SET#", "/bnpt/admin/settings.php?mid_SELECTED=yes&mid=main", str_replace("#URL#", "http://www.bitrixsoft.".(($lang=="ru") ? "ru" : "com")."/support/", GetMessage("SUP_NO_KEY_PROMT_SRC"))) ?>
+			<?= str_replace("#URL_SET#", "/bitrix/admin/settings.php?mid_SELECTED=yes&mid=main", str_replace("#URL#", "http://www.bitrixsoft.".(($lang=="ru") ? "ru" : "com")."/support/", GetMessage("SUP_NO_KEY_PROMT_SRC"))) ?>
 			<?
 		}
 		?>

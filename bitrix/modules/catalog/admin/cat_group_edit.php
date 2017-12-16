@@ -194,7 +194,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CGEN_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/cat_group_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_group_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -207,7 +207,7 @@ if ($ID > 0 && !$bReadOnly)
 		$aMenu[] = array(
 			"TEXT" => GetMessage("CGEN_NEW_GROUP"),
 			"ICON" => "btn_new",
-			"LINK" => "/bnpt/admin/cat_group_edit.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+			"LINK" => "/bitrix/admin/cat_group_edit.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 		);
 	}
 
@@ -216,7 +216,7 @@ if ($ID > 0 && !$bReadOnly)
 		$aMenu[] = array(
 			"TEXT" => GetMessage("CGEN_DELETE_GROUP"),
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("CGEN_DELETE_GROUP_CONFIRM")."')) window.location='/bnpt/admin/cat_group_admin.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("CGEN_DELETE_GROUP_CONFIRM")."')) window.location='/bitrix/admin/cat_group_admin.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y"
 		);
 	}
@@ -342,7 +342,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => $bReadOnly,
-				"back_url" => "/bnpt/admin/cat_group_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
+				"back_url" => "/bitrix/admin/cat_group_admin.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false)
 			)
 	);
 

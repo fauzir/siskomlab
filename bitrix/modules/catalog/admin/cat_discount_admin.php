@@ -317,7 +317,7 @@ while ($row = $iterator->fetch())
 {
 	$siteList[] = $row;
 	$arSiteList[$row['LID']] = $row['LID'];
-	$arSiteLinkList[$row['LID']] = '<a href="/bnpt/admin/site_edit.php?lang='.LANGUAGE_ID.'&LID='.$row['LID'].'" title="'.GetMessage('BT_CAT_DISCOUNT_ADM_MESS_SITE_ID').'">'.$row['LID'].'</a>';
+	$arSiteLinkList[$row['LID']] = '<a href="/bitrix/admin/site_edit.php?lang='.LANGUAGE_ID.'&LID='.$row['LID'].'" title="'.GetMessage('BT_CAT_DISCOUNT_ADM_MESS_SITE_ID').'">'.$row['LID'].'</a>';
 }
 unset($row, $iterator);
 
@@ -377,7 +377,7 @@ while ($arDiscount = $dbResultList->Fetch())
 	if ($arSelectFieldsMap['TIMESTAMP_X'])
 		$row->AddCalendarField("TIMESTAMP_X", false);
 
-	$row->AddViewField("ID", '<a href="/bnpt/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$arDiscount["ID"].'">'.$arDiscount["ID"].'</a>');
+	$row->AddViewField("ID", '<a href="/bitrix/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$arDiscount["ID"].'">'.$arDiscount["ID"].'</a>');
 
 	if ($bReadOnly)
 	{
@@ -459,7 +459,7 @@ while ($arDiscount = $dbResultList->Fetch())
 	$arActions[] = array(
 		"ICON" => "edit",
 		"TEXT" => GetMessage("DSC_UPDATE_ALT"),
-		"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_discount_edit.php?ID=".$arDiscount['ID']."&lang=".LANGUAGE_ID.GetFilterParams("filter_", false).""),
+		"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_discount_edit.php?ID=".$arDiscount['ID']."&lang=".LANGUAGE_ID.GetFilterParams("filter_", false).""),
 		"DEFAULT" => true
 	);
 
@@ -469,7 +469,7 @@ while ($arDiscount = $dbResultList->Fetch())
 			"ICON" => "copy",
 			"DEFAULT" => false,
 			"TEXT" => GetMessage("BT_CAT_DISCOUNT_ADM_CONT_COPY"),
-			"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_discount_edit.php?ID=".$arDiscount['ID'].'&action=copy&lang='.LANGUAGE_ID)
+			"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_discount_edit.php?ID=".$arDiscount['ID'].'&action=copy&lang='.LANGUAGE_ID)
 		);
 
 		$arActions[] = array(
@@ -499,7 +499,7 @@ if ($arSelectFieldsMap['CREATED_BY'] || $arSelectFieldsMap['MODIFIED_BY'])
 		{
 			$oneUser['ID'] = (int)$oneUser['ID'];
 			if ($canViewUserList)
-				$arUserList[$oneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
+				$arUserList[$oneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
 			else
 				$arUserList[$oneUser['ID']] = CUser::FormatName($nameFormat, $oneUser);
 		}

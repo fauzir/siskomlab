@@ -23,31 +23,6 @@
     color: #48d3ff;
     text-decoration: none;
 }
-div.bx-disk-interface-toolbar {
-	font-size: 13px;
-	height: 60px;
-	padding-right: 20px;
-	color: #fff;
-	border-bottom: 1px solid #363f4d;
-}
-.bx-disk-interface-bread-crumbs-item-current {
-	margin-right: 3px;
-	color: #fff;
-	border: 0;
-}
-.bx-disk-interface-sort {
-	font-size: 13px;
-	line-height: 32px;
-	float: right;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 350px;
-	padding: 14px 21px 6px 18px;
-	text-align: right;
-	vertical-align: middle;
-	color: #fff;
-}
 .bx-messenger-content-group-float .bx-messenger-content-group-title {
 	position: absolute;
 	display: block;
@@ -193,7 +168,6 @@ span.feed-add-post-destination-new:hover {
     overflow-x: auto;
     overflow-y: visible;
     background-color: #3e4c60;
-    margin-right: 15px;
 }
 .feed-add-post-form-link-active {
     color: #3bc8f5!important;
@@ -814,124 +788,4 @@ element.style {
 	white-space: nowrap;
 	text-decoration: none;
 	border-radius: 25px;
-}
-.bxcal table.BXEC-Calendar-week {
-	width: 100%;
-	border-collapse: collapse;
-	border-left: 1px solid #c9c9c9 !important;
-	border-right: 1px solid #c9c9c9 !important;
-	background-color: #fff;
-}
-.bx-disk-container td {
-	vertical-align: top;
-	background-color: #3e4c60;
-        color: #fff;
-}
-.bx-disk-interface-toolbar .bx-disk-context-button {
-	font-size: 12px;
-	line-height: 20px;
-	display: inline-block;
-	height: 20px;
-	margin-right: 1px;
-	padding: 13px 20px;
-	-webkit-transition: background .2s cubic-bezier(.000,.465,.750,.750);
-	-moz-transition: background .2s cubic-bezier(.000,.465,.750,.750);
-	-o-transition: background .2s cubic-bezier(.000,.465,.750,.750);
-	transition: background .2s cubic-bezier(.000,.465,.750,.750);
-	vertical-align: middle;
-	white-space: nowrap;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #4dcffb;
-	font-family: "OpenSans-Bold";
-}
-.bx-disk-interface-toolbar .bx-disk-context-button:hover, .bx-disk-interface-toolbar .bx-disk-context-button.active {
-	background: #4bc0e7;
-	color: #fff;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-.bx-disk.bx-disk-grid-head > td {
-	font-size: 14px;
-	height: 55px;
-	padding: 0 10px;
-	vertical-align: middle;
-	color: #fff !important;
-	background: #506583 !important;
-}
-.bx-disk.bx-disk-grid-head .bx-disk-sortable:hover, .bx-disk.bx-disk-grid-head .bx-disk-sortable.bx-disk-sorted {
-	cursor: pointer;
-	-webkit-transition: background .3s cubic-bezier(.000,.465,.750,.750);
-	-moz-transition: background .3s cubic-bezier(.000,.465,.750,.750);
-	-o-transition: background .3s cubic-bezier(.000,.465,.750,.750);
-	transition: background .3s cubic-bezier(.000,.465,.750,.750);
-	background: #556c8f !important;
-}
-.bx-disk-user-link a, .bx-disk-file-title, .bx-disk-folder-title {
-	font-size: 14px;
-	text-decoration: none;
-	color: #fff;
-}
-.bx-disk-table-footer.bx-disk-grid-footer td {
-	font-size: 13px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	height: 52px !important;
-	padding: 0 20px !important;
-	vertical-align: middle;
-	white-space: nowrap;
-	color: #fff !important;
-	background: #506583 !important;
-}
-.bx-disk-table-footer.bx-disk-grid-footer {
-	width: 100%;
-	border: 1px solid #374457 !important;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
-}
-.bx-disk-table-footer.bx-disk-grid-footer td span {
-	color: #58d5ff;
-}
-.bx-disk-footer-interface-toolbar-container {
-	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-	font-size: 14px;
-	line-height: 54px;
-	height: 54px;
-	margin-top: 20px;
-	padding: 0 10px;
-	color: #fff;
-	background: #3e4c60;
-}
-.bx-disk-table-footer.bx-disk-grid-footer td span.bx-disk-files-number {
-	color: #fff;
-	border-bottom: 1px dotted;
-	cursor: pointer;
-}
-.bx-disk-table-footer.bx-disk-grid-footer td span.bx-disk-amt {
-	color: #2fc7f7;
-}
-.bx-disk-btn-gray {
-	color: #fff;
-	background-color: #56c5ea;
-}
-.bx-disk-btn-gray:hover {
-	color: #fff;
-	background-color: #97d2ea;
-}
-.bx-disk-table-sidebar-cell {
-	position: relative;
-	width: 200px;
-	padding: 0 0 0 20px;
-	vertical-align: top;
-	border-left: 1px solid #324157;
-}
-.bx-disk-sidebar-section {
-	margin-bottom: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	border-bottom: 1px solid #313d50;
-	font-family: OpenSans-Light;
-}
-.bx-disk-info-panel-empty-text {
-	font-size: 18px;
-	color: #fff;
 }

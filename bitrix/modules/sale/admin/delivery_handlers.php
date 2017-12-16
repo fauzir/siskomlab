@@ -284,7 +284,7 @@ else
 	echo '<br />';
 }
 
-echo '<a href="/bnpt/admin/settings.php?mid=sale&lang='.LANG.'&back_url_settings='.$APPLICATION->GetCurPage().'&tabControl_active_tab=edit5">'.GetMessage('SALE_DH_SHOP_ADDRESS_CHANGE').'</a>';
+echo '<a href="/bitrix/admin/settings.php?mid=sale&lang='.LANG.'&back_url_settings='.$APPLICATION->GetCurPage().'&tabControl_active_tab=edit5">'.GetMessage('SALE_DH_SHOP_ADDRESS_CHANGE').'</a>';
 
 echo EndNote();
 
@@ -322,9 +322,9 @@ echo '<li>'.GetMessage('SALE_DH_LOCATIONS_GROUP_STATS').': '.$numGroups.'</li>';
 
 echo '</ul>';
 
-echo '<a href="/bnpt/admin/sale_location_admin.php?lang='.LANG.'">'.GetMessage('SALE_DH_LOCATIONS_LINK').'</a>';
+echo '<a href="/bitrix/admin/sale_location_admin.php?lang='.LANG.'">'.GetMessage('SALE_DH_LOCATIONS_LINK').'</a>';
 echo '&nbsp;|&nbsp;';
-echo '<a href="/bnpt/admin/sale_location_import.php?lang='.LANG.'">'.GetMessage('SALE_DH_LOCATIONS_IMPORT_LINK').'</a>';
+echo '<a href="/bitrix/admin/sale_location_import.php?lang='.LANG.'">'.GetMessage('SALE_DH_LOCATIONS_IMPORT_LINK').'</a>';
 
 echo EndNote();
 

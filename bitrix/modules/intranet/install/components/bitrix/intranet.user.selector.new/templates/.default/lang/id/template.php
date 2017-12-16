@@ -1,9 +1,0 @@
-<?
-$MESS["INTRANET_EMP_HEAD"] = "head of department";
-$MESS["INTRANET_USER_SEARCH"] = "Cari";
-$MESS["INTRANET_USER_STRUCTURE"] = "Select From Structure";
-$MESS["INTRANET_EMP_CURRENT_COUNT"] = "Terpilih";
-$MESS["INTRANET_LAST_SELECTED"] = "Baru";
-$MESS["INTRANET_TAB_USER_STRUCTURE"] = "Perusahaan";
-$MESS["INTRANET_TAB_USER_GROUPS"] = "Grup";
-?>

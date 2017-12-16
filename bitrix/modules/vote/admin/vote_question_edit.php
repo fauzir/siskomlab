@@ -206,7 +206,7 @@ $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("VOTE_QUESTIONS"),
 		"TITLE"	=> GetMessage("VOTE_QUESTIONS_LIST"), 
-		"LINK"	=> "/bnpt/admin/vote_question_list.php?lang=".LANGUAGE_ID."&VOTE_ID=".$voteId,
+		"LINK"	=> "/bitrix/admin/vote_question_list.php?lang=".LANGUAGE_ID."&VOTE_ID=".$voteId,
 		"ICON" => "btn_list"));
 
 if ($ID > 0)
@@ -214,13 +214,13 @@ if ($ID > 0)
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("VOTE_CREATE"),
 		"TITLE"	=> GetMessage("VOTE_CREATE_NEW_RECORD"),
-		"LINK"	=> "/bnpt/admin/vote_question_edit.php?VOTE_ID=$voteId&lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/vote_question_edit.php?VOTE_ID=$voteId&lang=".LANGUAGE_ID,
 		"ICON" => "btn_new");
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("VOTE_DELETE"), 
 		"TITLE"	=> GetMessage("VOTE_DELETE_RECORD"),
-		"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_DELETE_RECORD_CONFIRM")."')) window.location='/bnpt/admin/vote_question_list.php?action=delete&ID=$ID&VOTE_ID=$voteId&".bitrix_sessid_get()."&lang=".LANGUAGE_ID."';",
+		"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_DELETE_RECORD_CONFIRM")."')) window.location='/bitrix/admin/vote_question_list.php?action=delete&ID=$ID&VOTE_ID=$voteId&".bitrix_sessid_get()."&lang=".LANGUAGE_ID."';",
 		"ICON" => "btn_delete");
 }
 

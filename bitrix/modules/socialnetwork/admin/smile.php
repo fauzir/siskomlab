@@ -112,7 +112,7 @@ while ($arSocNet = $dbResultList->NavNext(true, "f_"))
 {
 	$row =& $lAdmin->AddRow($f_ID, $arSocNet);
 
-	$row->AddField("ID", '<a href="/bnpt/admin/socnet_smile_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SONET_EDIT_DESCR").'">'.$f_ID.'</a>');
+	$row->AddField("ID", '<a href="/bitrix/admin/socnet_smile_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("SONET_EDIT_DESCR").'">'.$f_ID.'</a>');
 	$row->AddField("SORT", $f_SORT);
 	$row->AddField("SMILE_TYPE", (($f_SMILE_TYPE=="I") ? GetMessage("SMILE_TYPE_ICON") : GetMessage("SMILE_TYPE_SMILE")));
 

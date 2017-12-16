@@ -69,7 +69,7 @@ require_once ($DOCUMENT_ROOT.BX_ROOT."/modules/main/include/prolog_admin_after.p
 					<div class="ebay-start-content-item"><span>5</span><?=Loc::getMessage('SALE_EBAY_HOWTO_START5')?></div>
 				</div>
 				<div class="ebay-start-btn-container">
-					<a href="/bnpt/admin/sale_ebay_wizard.php?lang=<?=LANGUAGE_ID?>" class="ebay-start-btn"><?=Loc::getMessage('SALE_EBAY_START')?></a>
+					<a href="/bitrix/admin/sale_ebay_wizard.php?lang=<?=LANGUAGE_ID?>" class="ebay-start-btn"><?=Loc::getMessage('SALE_EBAY_START')?></a>
 				</div>
 			</div>
 		</div>

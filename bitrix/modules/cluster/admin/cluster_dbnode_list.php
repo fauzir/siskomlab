@@ -244,7 +244,7 @@ if($DB->type == "MYSQL")
 }
 else
 {
-	$link = "/bnpt/admin/cluster_dbnode_edit.php?lang=".LANGUAGE_ID;
+	$link = "/bitrix/admin/cluster_dbnode_edit.php?lang=".LANGUAGE_ID;
 	$title = GetMessage("CLU_DBNODE_LIST_ADD_TITLE2");
 }
 

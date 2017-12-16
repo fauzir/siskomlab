@@ -74,7 +74,7 @@ Class xmpp extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xmpp/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true, true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xmpp/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xmpp/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 		}
 		return true;
@@ -82,7 +82,7 @@ Class xmpp extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xmpp/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xmpp/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/xmpp/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes");
 
 		return true;

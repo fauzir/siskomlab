@@ -167,7 +167,7 @@ while ($arResultItem = $dbResultList->NavNext(true, "f_"))
 	$row->AddInputField("NAME", Array("SIZE"=>"35"));
 	$row->AddField("MODIFIED", $f_MODIFIED);
 	$row->AddCheckField("ACTIVE");
-	$row->AddField("USER", '[<a href="/bnpt/admin/user_edit.php?ID='.$f_USER_ID.'&document_type='.urlencode($documentType[2]).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BPATT_USER_PROFILE").'">'.$f_USER_ID.'</a>] ('.$f_USER_LOGIN.') '.$f_USER_NAME." ".$f_USER_LAST_NAME);
+	$row->AddField("USER", '[<a href="/bitrix/admin/user_edit.php?ID='.$f_USER_ID.'&document_type='.urlencode($documentType[2]).'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BPATT_USER_PROFILE").'">'.$f_USER_ID.'</a>] ('.$f_USER_LOGIN.') '.$f_USER_NAME." ".$f_USER_LAST_NAME);
 
 	$autoExecuteText = "";
 	if ($f_AUTO_EXECUTE == CBPDocumentEventType::None)
@@ -246,13 +246,13 @@ $arSubMenu = Array();
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("BPATT_SUBMENU1_TEXT"),
 	"TITLE"	=> GetMessage("BPATT_SUBMENU1_TEXT_TITLE"),
-	"ACTION"	=> "window.location='/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&init=statemachine&entity=".urlencode(ENTITY)."&document_type=".urlencode($documentType[2]).'&back_url_list='.urlencode($backUrl)."';"
+	"ACTION"	=> "window.location='/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&init=statemachine&entity=".urlencode(ENTITY)."&document_type=".urlencode($documentType[2]).'&back_url_list='.urlencode($backUrl)."';"
 );
 
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("BPATT_SUBMENU2_TEXT"),
 	"TITLE"	=> GetMessage("BPATT_SUBMENU2_TEXT_TITLE"),
-	"ACTION"	=> "window.location='/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&entity=".urlencode(ENTITY)."&document_type=".urlencode($documentType[2]).'&back_url_list='.urlencode($backUrl)."';"
+	"ACTION"	=> "window.location='/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&entity=".urlencode(ENTITY)."&document_type=".urlencode($documentType[2]).'&back_url_list='.urlencode($backUrl)."';"
 );
 
 $aContext[] = array(

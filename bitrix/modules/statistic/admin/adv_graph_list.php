@@ -170,8 +170,8 @@ elseif (!$message)
 		$str .= $s;
 		?>
 		<?if($context=="tab"):?>
-		<a href="/bnpt/admin/adv_dynamic_list.php?lang=<?=LANG?>&amp;find_adv_id=<?=$ADV_ID?>&amp;set_default=Y"><?=GetMessage("STAT_ALL_DYNAMICS")?></a><br>
-		<a href="/bnpt/admin/adv_graph_list.php?lang=<?=LANG?>&amp;ADV_ID=<?=$ADV_ID?>"><?=GetMessage("STAT_ALL_GRAPHICS")?></a><br>
+		<a href="/bitrix/admin/adv_dynamic_list.php?lang=<?=LANG?>&amp;find_adv_id=<?=$ADV_ID?>&amp;set_default=Y"><?=GetMessage("STAT_ALL_DYNAMICS")?></a><br>
+		<a href="/bitrix/admin/adv_graph_list.php?lang=<?=LANG?>&amp;ADV_ID=<?=$ADV_ID?>"><?=GetMessage("STAT_ALL_GRAPHICS")?></a><br>
 		<?endif;?>
 		<div class="graph">
 		<?=GetMessage("STAT_GRAPH_1")?>
@@ -191,7 +191,7 @@ elseif (!$message)
 						<td valign="center" class="color-line">
 							<div style="background-color: <?="#".$arrColor["HITS"]?>"></div>
 						</td>
-						<td><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["HITS"]?>&dash=Y" width="45" height="2"></td>
+						<td><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["HITS"]?>&dash=Y" width="45" height="2"></td>
 						<td  nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_HITS")?></td>
 					</tr>
 					<?endif;?>
@@ -200,7 +200,7 @@ elseif (!$message)
 						<td valign="center" class="color-line">
 							<div style="background-color: <?="#".$arrColor["SESSIONS"]?>"></div>
 						</td>
-						<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["SESSIONS"]?>&dash=Y" width="45" height="2"></td>
+						<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["SESSIONS"]?>&dash=Y" width="45" height="2"></td>
 						<td  nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_SESSIONS")?></td>
 					</tr>
 					<?endif;?>
@@ -209,7 +209,7 @@ elseif (!$message)
 						<td valign="center" class="color-line">
 							<div style="background-color: <?="#".$arrColor["GUESTS"]?>"></div>
 						</td>
-						<td><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["GUESTS"]?>&dash=Y" width="45" height="2"></td>
+						<td><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["GUESTS"]?>&dash=Y" width="45" height="2"></td>
 						<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_GUESTS")?></td>
 					</tr>
 					<?endif;?>
@@ -218,7 +218,7 @@ elseif (!$message)
 						<td valign="center" class="color-line">
 							<div style="background-color: <?="#".$arrColor["HOSTS"]?>"></div>
 						</td>
-						<td><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["HOSTS"]?>&dash=Y" width="45" height="2"></td>
+						<td><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["HOSTS"]?>&dash=Y" width="45" height="2"></td>
 						<td  nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("STAT_HOSTS")?></td>
 					</tr>
 					<?endif;?>
@@ -275,12 +275,12 @@ elseif (!$message)
 							$color = GetNextRGB($color, $total);
 						?>
 						<tr>
-							<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$color?>" width="45" height="2"></td>
-							<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$color?>&dash=Y" width="45" height="2"></td>
+							<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$color?>" width="45" height="2"></td>
+							<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$color?>&dash=Y" width="45" height="2"></td>
 							<td  nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?
 							$events = CStatEventType::GetByID($eid);
 							$arEvent = $events->GetNext();
-							echo "[<a href=\"/bnpt/admin/event_type_list.php?lang=".LANG."\">".$arEvent["ID"]."</a>] ".$arEvent["EVENT"];
+							echo "[<a href=\"/bitrix/admin/event_type_list.php?lang=".LANG."\">".$arEvent["ID"]."</a>] ".$arEvent["EVENT"];
 							?></td>
 						</tr>
 						<?}?>
@@ -299,7 +299,7 @@ $aContext = array(
 	array(
 		"TEXT" => GetMessage("STAT_ADV_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/adv_list.php?lang=".LANG,
+		"LINK" => "/bitrix/admin/adv_list.php?lang=".LANG,
 	),
 );
 
@@ -308,7 +308,7 @@ if (!$message)
 	$aContext[] = array(
 		"TEXT" => str_replace("#ID#",$ADV_ID,GetMessage("STAT_DYNAMIC")),
 		//"ICON" => "btn_list",
-		"LINK" =>"/bnpt/admin/adv_dynamic_list.php?lang=".LANG."&find_adv_id=".$ADV_ID."&find_date1=".urlencode($arFilter["DATE1"])."&find_date2=".urlencode($arFilter["DATE2"])."&set_filter=Y",
+		"LINK" =>"/bitrix/admin/adv_dynamic_list.php?lang=".LANG."&find_adv_id=".$ADV_ID."&find_date1=".urlencode($arFilter["DATE1"])."&find_date2=".urlencode($arFilter["DATE2"])."&set_filter=Y",
 	);
 }
 

@@ -261,7 +261,7 @@ if($_REQUEST["table_id"] == $sTableHistory)
 $oFilter->Buttons(
 	array(
 		"table_id" => $sTableHistory,
-		"url" => $APPLICATION->GetCurPageParam(), //"/bnpt/admin/sale_order_history.php?lang=".LANGUAGE_ID,
+		"url" => $APPLICATION->GetCurPageParam(), //"/bitrix/admin/sale_order_history.php?lang=".LANGUAGE_ID,
 		"form" => "find_form_history"
 	)
 );

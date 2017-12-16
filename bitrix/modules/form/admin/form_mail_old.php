@@ -36,6 +36,6 @@ $APPLICATION->SetTitle(GetMessage("FORM_PAGE_TITLE"));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_popup_admin.php")
 ?>
 <div align="center"><?=ShowNote($strNote)?>
-<font class="tablebodytext">[&nbsp;<a target="_blank" href="/bnpt/admin/message_admin.php?lang=<?=LANGUAGE_ID?>&find_type_id=<?=htmlspecialcharsbx($arrForm["MAIL_EVENT_TYPE"])?>&set_filter=Y" class="tablebodylink"><?=GetMessage("FORM_VIEW_TEMPLATE")?></a>&nbsp;]</font><br>
+<font class="tablebodytext">[&nbsp;<a target="_blank" href="/bitrix/admin/message_admin.php?lang=<?=LANGUAGE_ID?>&find_type_id=<?=htmlspecialcharsbx($arrForm["MAIL_EVENT_TYPE"])?>&set_filter=Y" class="tablebodylink"><?=GetMessage("FORM_VIEW_TEMPLATE")?></a>&nbsp;]</font><br>
 <form><input class="button" type="button" onClick="window.close()" value="<?echo GetMessage("FORM_CLOSE")?>"></form></div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_popup_admin.php")?>

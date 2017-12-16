@@ -188,7 +188,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	if (is_array($arrSITE))
 	{
 		foreach($arrSITE as $sid)
-			$txt.= "<a href='/bnpt/admin/site_edit.php?LID=".htmlspecialcharsbx($sid, ENT_QUOTES)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($sid)."</a>,";
+			$txt.= "<a href='/bitrix/admin/site_edit.php?LID=".htmlspecialcharsbx($sid, ENT_QUOTES)."&lang=".LANGUAGE_ID."'>".htmlspecialcharsbx($sid)."</a>,";
 	}
 	else
 		$txt="&nbsp;";

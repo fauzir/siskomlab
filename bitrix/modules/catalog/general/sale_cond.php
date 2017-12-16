@@ -219,7 +219,7 @@ class CCatalogCondCtrlBasketProductFields extends CGlobalCondCtrlComplex
 				'LOGIC' => static::GetLogic(array(BT_COND_LOGIC_EQ, BT_COND_LOGIC_NOT_EQ)),
 				'JS_VALUE' => array(
 					'type' => 'multiDialog',
-					'popup_url' =>  '/bnpt/admin/cat_product_search_dialog.php',
+					'popup_url' =>  '/bitrix/admin/cat_product_search_dialog.php',
 					'popup_params' => array(
 						'lang' => LANGUAGE_ID,
 						'caller' => 'discount_rules',
@@ -241,7 +241,7 @@ class CCatalogCondCtrlBasketProductFields extends CGlobalCondCtrlComplex
 				'LOGIC' => static::GetLogic(array(BT_COND_LOGIC_EQ, BT_COND_LOGIC_NOT_EQ)),
 				'JS_VALUE' => array(
 					'type' => 'popup',
-					'popup_url' =>  '/bnpt/admin/cat_iblock_search.php',
+					'popup_url' =>  '/bitrix/admin/cat_iblock_search.php',
 					'popup_params' => array(
 						'lang' => LANGUAGE_ID,
 						'discount' => 'Y'
@@ -263,7 +263,7 @@ class CCatalogCondCtrlBasketProductFields extends CGlobalCondCtrlComplex
 				'LOGIC' => static::GetLogic(array(BT_COND_LOGIC_EQ, BT_COND_LOGIC_NOT_EQ)),
 				'JS_VALUE' => array(
 					'type' => 'popup',
-					'popup_url' =>  '/bnpt/admin/cat_section_search.php',
+					'popup_url' =>  '/bitrix/admin/cat_section_search.php',
 					'popup_params' => array(
 						'lang' => LANGUAGE_ID,
 						'discount' => 'Y'
@@ -834,7 +834,7 @@ class CCatalogCondCtrlBasketProductProps extends CGlobalCondCtrlComplex
 									$arLogic = static::GetLogic(array(BT_COND_LOGIC_EQ, BT_COND_LOGIC_NOT_EQ));
 									$arValue = array(
 										'type' => 'popup',
-										'popup_url' =>  '/bnpt/admin/iblock_element_search.php',
+										'popup_url' =>  '/bitrix/admin/iblock_element_search.php',
 										'popup_params' => array(
 											'lang' => LANGUAGE_ID,
 											'IBLOCK_ID' => $arProp['LINK_IBLOCK_ID'],
@@ -849,7 +849,7 @@ class CCatalogCondCtrlBasketProductProps extends CGlobalCondCtrlComplex
 									$arLogic = static::GetLogic(array(BT_COND_LOGIC_EQ, BT_COND_LOGIC_NOT_EQ));
 									$arValue = array(
 										'type' => 'popup',
-										'popup_url' =>  '/bnpt/admin/cat_section_search.php',
+										'popup_url' =>  '/bitrix/admin/cat_section_search.php',
 										'popup_params' => array(
 											'lang' => LANGUAGE_ID,
 											'IBLOCK_ID' => $arProp['LINK_IBLOCK_ID'],

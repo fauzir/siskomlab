@@ -98,7 +98,7 @@ elseif($find_diagram_type=="DURATION"):
 	<?=GetMessage("STAT_TIME_GRAPH")?>
 	<table cellspacing="0" cellpadding="0" class="graph" border="0" align="center"><tr>
 		<td valign="center" class="graph">
-			<img class="graph" src="/bnpt/admin/attentiveness_graph.php?<?=GetFilterParams($arFilterFields)?>&show=time&width=<?=$width?>&height=<?=$height?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>">
+			<img class="graph" src="/bitrix/admin/attentiveness_graph.php?<?=GetFilterParams($arFilterFields)?>&show=time&width=<?=$width?>&height=<?=$height?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>">
 		</td>
 	</tr></table>
 	</div>
@@ -107,7 +107,7 @@ elseif($find_diagram_type=="DURATION"):
 	<?=GetMessage("STAT_TIME_DIAGRAM")?>
 	<table cellspacing=0 cellpadding="0" border="0" class="graph" align="center"><tr>
 		<td valign="center" class="graph">
-			<img class="graph" src="/bnpt/admin/attentiveness_diagram.php?<?=GetFilterParams($arFilterFields)?>&show=time&lang=<?=LANGUAGE_ID?>" width="<?=$diameter?>" height="<?=$diameter?>">
+			<img class="graph" src="/bitrix/admin/attentiveness_diagram.php?<?=GetFilterParams($arFilterFields)?>&show=time&lang=<?=LANGUAGE_ID?>" width="<?=$diameter?>" height="<?=$diameter?>">
 		</td>
 		<td valign="center">
 			<table cellpadding="0" cellspacing="0" border="0" class="legend">
@@ -137,7 +137,7 @@ elseif($find_diagram_type=="DURATION"):
 	<?=GetMessage("STAT_HITS_GRAPH")?>
 	<table cellspacing="0" cellpadding="0" class="graph" border="0" align="center"><tr>
 		<td valign="center" class="graph">
-			<img class="graph" src="/bnpt/admin/attentiveness_graph.php?find_date1=<?echo urlencode($find_date1)?>&find_date2=<?=urlencode($find_date2)?>&find_site_id=<?=urlencode($find_site_id)?>&width=<?=$width?>&height=<?=$height?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>">
+			<img class="graph" src="/bitrix/admin/attentiveness_graph.php?find_date1=<?echo urlencode($find_date1)?>&find_date2=<?=urlencode($find_date2)?>&find_site_id=<?=urlencode($find_site_id)?>&width=<?=$width?>&height=<?=$height?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>">
 		</td>
 	</tr></table>
 	</div>
@@ -146,7 +146,7 @@ elseif($find_diagram_type=="DURATION"):
 	<?=GetMessage("STAT_HITS_DIAGRAM")?>
 	<table cellspacing="0" cellpadding="0" border="0" class="graph" align="center"><tr>
 		<td valign="center" class="graph">
-			<img class="graph" src="/bnpt/admin/attentiveness_diagram.php?<?=GetFilterParams($arFilterFields)?>&lang=<?=LANGUAGE_ID?>" width="<?=$diameter?>" height="<?=$diameter?>">
+			<img class="graph" src="/bitrix/admin/attentiveness_diagram.php?<?=GetFilterParams($arFilterFields)?>&lang=<?=LANGUAGE_ID?>" width="<?=$diameter?>" height="<?=$diameter?>">
 		</td>
 		<td valign="center">
 			<table cellpadding="0" cellspacing="0" border="0" class="legend">
@@ -166,7 +166,7 @@ elseif($find_diagram_type=="DURATION"):
 						<div style="background-color: <?="#".$color?>"></div>
 					</td>
 					<td align="right" nowrap class="number"><?echo sprintf("%01.2f", $procent)."%"?></td>
-					<td align="right" nowrap class="number">(<a href="/bnpt/admin/session_list.php?find_hits1=<?=$hits1?>&find_hits2=<?=$hits2?>&set_filter=Y"><?echo $arSum[$key]?></a>)</td>
+					<td align="right" nowrap class="number">(<a href="/bitrix/admin/session_list.php?find_hits1=<?=$hits1?>&find_hits2=<?=$hits2?>&set_filter=Y"><?echo $arSum[$key]?></a>)</td>
 					<td nowrap><?echo GetMessage("STAT_".$key);?></td>
 				</tr>
 				<?endforeach;?>

@@ -235,7 +235,7 @@ $tabControl->BeginNextTab();
 		<td colspan="2" align="center"><textarea style="width:100%" name="COMMENTS" rows="5" wrap="VIRTUAL"><?=$str_COMMENTS?></textarea></td>
 	</tr>
 <?
-$tabControl->Buttons(Array("disabled" =>$STAT_RIGHT<"W" ,"back_url" =>"/bnpt/admin/stoplist_list.php?lang=".LANG."&set_filter=Y"));
+$tabControl->Buttons(Array("disabled" =>$STAT_RIGHT<"W" ,"back_url" =>"/bitrix/admin/stoplist_list.php?lang=".LANG."&set_filter=Y"));
 $tabControl->End();
 ?>
 </form>

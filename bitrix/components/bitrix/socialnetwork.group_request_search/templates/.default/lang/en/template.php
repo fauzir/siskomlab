@@ -15,6 +15,7 @@ $MESS["SONET_C33_T_ERROR_LIST"] = "The invitation has failed to send to the foll
 $MESS["SONET_C11_EMAIL"] = "You can also send the invitation by e-mail. Use the following address format:<br>xxx@site.com<br>\"name lastname\" &lt;xxx@site.com&gt;<br> separated with new line or comma.";
 $MESS["SONET_C11_USER_INTRANET"] = "Company Employees:";
 $MESS["SONET_C11_USER_EXTRANET"] = "External Users:";
+$MESS["SONET_C11_MESSAGE_DEFAULT"] = "";
 $MESS["SONET_C11_MESSAGE_GROUP_LINK"] = "Open Workgroup ";
 $MESS["SONET_C11_USER_INTRANET_STRUCTURE"] = "Add From Structure";
 ?>

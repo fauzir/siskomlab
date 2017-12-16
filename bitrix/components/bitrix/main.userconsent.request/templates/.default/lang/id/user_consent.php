@@ -1,7 +1,0 @@
-<?
-$MESS["MAIN_USER_CONSENT_REQUEST_TITLE"] = "Persetujuan pengguna";
-$MESS["MAIN_USER_CONSENT_REQUEST_BTN_ACCEPT"] = "Aku terima.";
-$MESS["MAIN_USER_CONSENT_REQUEST_BTN_REJECT"] = "Aku menolak";
-$MESS["MAIN_USER_CONSENT_REQUEST_LOADING"] = "Pemuatan";
-$MESS["MAIN_USER_CONSENT_REQUEST_ERR_TEXT_LOAD"] = "Tidak dapat memuat teks Persetujuan.";
-?>

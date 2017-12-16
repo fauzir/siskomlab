@@ -133,7 +133,7 @@ if ($USER->CanDoOperation('fileman_view_all_settings'))
 	$aContext[] = Array(
 		"TEXT" => GetMessage("FM_ML_MANAGE_TYPES"),
 		//"ICON" => "btn_type_config",
-		"LINK" => "/bnpt/admin/settings.php?mid=fileman&tabControl_active_tab=edit5&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
+		"LINK" => "/bitrix/admin/settings.php?mid=fileman&tabControl_active_tab=edit5&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
 		"TITLE" => GetMessage("FM_ML_MANAGE_TYPES_TITLE")
 	);
 }

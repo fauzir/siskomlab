@@ -89,7 +89,7 @@
 	$aMenu = array(
 		array(
 			"TEXT" => GetMessage("FLTR_LIST"),
-			"LINK" => "/bnpt/admin/forum_words.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
+			"LINK" => "/bitrix/admin/forum_words.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
 			"ICON" => "btn_list",
 		)
 	);
@@ -99,12 +99,12 @@
 		$aMenu[] = array("SEPARATOR" => "Y");
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FLTR_NEW"),
-			"LINK" => "/bnpt/admin/forum_words_edit.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
+			"LINK" => "/bitrix/admin/forum_words_edit.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG,
 			"ICON" => "btn_new",
 		);
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FLTR_DEL"), 
-			"LINK" => "javascript:if(confirm('".GetMessage("FLTR_DEL_CONFIRM")."')) window.location='/bnpt/admin/forum_words.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG."&action=delete&ID[]=".$ID."&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessage("FLTR_DEL_CONFIRM")."')) window.location='/bitrix/admin/forum_words.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG."&action=delete&ID[]=".$ID."&".bitrix_sessid_get()."';",
 			"ICON" => "btn_delete",
 		);
 	}
@@ -160,7 +160,7 @@
 <?$tabControl->Buttons(
 		array(
 				"disabled" => (!CFilterUnquotableWords::FilterPerm()),
-				"back_url" => "/bnpt/admin/forum_words.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG
+				"back_url" => "/bitrix/admin/forum_words.php?DICTIONARY_ID=".$DICTIONARY_ID."&lang=".LANG
 			)
 	);?>
 <?$tabControl->End();?>

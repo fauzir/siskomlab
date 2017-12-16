@@ -88,9 +88,9 @@ if (!$bReadOnly && $_SERVER['REQUEST_METHOD']=="POST" && !empty($_POST['Update']
 	{
 		$DB->Commit();
 		if (empty($_POST['apply']))
-			LocalRedirect("/bnpt/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bnpt/admin/cat_discount_coupon_edit.php?lang=".LANGUAGE_ID."&ID=".$ID.GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_discount_coupon_edit.php?lang=".LANGUAGE_ID."&ID=".$ID.GetFilterParams("filter_", false));
 	}
 }
 
@@ -142,7 +142,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("DSC_TO_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
 	)
 );
 
@@ -153,13 +153,13 @@ if ($ID > 0 && !$bReadOnly)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CDEN_NEW_DISCOUNT"),
 		"ICON" => "btn_new",
-		"LINK" => "/bnpt/admin/cat_discount_coupon_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_discount_coupon_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CDEN_DELETE_DISCOUNT"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessage("CDEN_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bnpt/admin/cat_discount_coupon.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("CDEN_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bitrix/admin/cat_discount_coupon.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -201,7 +201,7 @@ if (!empty($returnUrl))
 }
 $tabControl->EndEpilogContent();
 $tabControl->Begin(array(
-	"FORM_ACTION" => '/bnpt/admin/cat_discount_coupon_edit.php?lang='.LANGUAGE_ID,
+	"FORM_ACTION" => '/bitrix/admin/cat_discount_coupon_edit.php?lang='.LANGUAGE_ID,
 ));
 
 $tabControl->BeginNextFormTab();
@@ -233,7 +233,7 @@ $tabControl->BeginNextFormTab();
 		$tabControl->BeginCustomField("DISCOUNT_ID", GetMessage('DSC_CPN_DISC').':', true);
 		?><tr id="tr_DISCOUNT_ID" class="adm-detail-required-field">
 			<td width="40%"><? echo $tabControl->GetCustomLabelHTML(); ?></td>
-			<td width="60%">&nbsp;<a href="/bnpt/admin/cat_discount_edit.php?lang=<? echo LANGUAGE_ID; ?>&return_url=<? echo urlencode($APPLICATION->GetCurPage()."?lang=".LANGUAGE_ID); ?>"><? echo GetMessage('DSC_ADD_DISCOUNT'); ?></a></td>
+			<td width="60%">&nbsp;<a href="/bitrix/admin/cat_discount_edit.php?lang=<? echo LANGUAGE_ID; ?>&return_url=<? echo urlencode($APPLICATION->GetCurPage()."?lang=".LANGUAGE_ID); ?>"><? echo GetMessage('DSC_ADD_DISCOUNT'); ?></a></td>
 		</tr><?
 		$tabControl->EndCustomField('DISCOUNT_ID');
 	}
@@ -271,7 +271,7 @@ $tabControl->BeginNextFormTab();
 
 	$arButtonsParams = array(
 		"disabled" => $bReadOnly,
-		"back_url" => "/bnpt/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
+		"back_url" => "/bitrix/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
 	);
 
 $tabControl->Buttons($arButtonsParams);

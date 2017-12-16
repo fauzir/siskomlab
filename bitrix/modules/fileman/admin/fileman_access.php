@@ -170,7 +170,7 @@ if($REQUEST_METHOD=="POST" && is_array($files) && count($files)>0 && strlen($sav
 	if ($e = $APPLICATION->GetException())
 		$strNotice = $e->msg;
 	elseif(strlen($strWarning)<=0 && strlen($apply) <= 0)
-		LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+		LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 }
 
 foreach ($arParsedPath["AR_PATH"] as $chainLevel)
@@ -351,7 +351,7 @@ $tabControl->Begin();
 	?>
 	<tr>
 		<td>
-			[<a href="/bnpt/admin/group_edit.php?ID=<?=$g_ID?>&lang=<?=LANGUAGE_ID?>"><?=$g_ID?></a>]&nbsp;<?echo $g_NAME?>
+			[<a href="/bitrix/admin/group_edit.php?ID=<?=$g_ID?>&lang=<?=LANGUAGE_ID?>"><?=$g_ID?></a>]&nbsp;<?echo $g_NAME?>
 		</td>
 		<td>
 			<select name="g_<?= $g_ID?>" class="typeselect" <?if($bDiff):?>onChange="Conf(this)"<?endif?>>

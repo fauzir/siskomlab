@@ -89,7 +89,7 @@ if (empty($errorMsg) && $_SERVER["REQUEST_METHOD"] == "GET" && check_bitrix_sess
 						$quantity[] = $item['QUANTITY'];
 					}
 					$urlParams .= 'BASKET_IDS='.urlencode(join(',', $basketIds)).'&QUANTITIES='.urlencode(join(',', $quantity));
-					LocalRedirect('/bnpt/admin/sale_print.php?PROPS_ENABLE=Y&doc='.CUtil::JSEscape($doc).'&ORDER_ID='.$orderId.'&'.$urlParams.'&SHIPMENT_ID='.$shipmentId);
+					LocalRedirect('/bitrix/admin/sale_print.php?PROPS_ENABLE=Y&doc='.CUtil::JSEscape($doc).'&ORDER_ID='.$orderId.'&'.$urlParams.'&SHIPMENT_ID='.$shipmentId);
 				}
 			}
 			else
@@ -101,7 +101,7 @@ if (empty($errorMsg) && $_SERVER["REQUEST_METHOD"] == "GET" && check_bitrix_sess
 		elseif ($allowOrderView)
 		{
 			$urlParams = "SHOW_ALL=Y";
-			LocalRedirect('/bnpt/admin/sale_print.php?PROPS_ENABLE=Y&doc='.CUtil::JSEscape($doc).'&ORDER_ID='.$orderId.'&'.$urlParams);
+			LocalRedirect('/bitrix/admin/sale_print.php?PROPS_ENABLE=Y&doc='.CUtil::JSEscape($doc).'&ORDER_ID='.$orderId.'&'.$urlParams);
 		}
 		else
 		{

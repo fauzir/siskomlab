@@ -96,9 +96,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $CURRENCY_RIGHT=="W" && !empty($_POS
 	{
 		$DB->Commit();
 		if (empty($_POST['apply']))
-			LocalRedirect('/bnpt/admin/currencies.php?lang='.LANGUAGE_ID);
+			LocalRedirect('/bitrix/admin/currencies.php?lang='.LANGUAGE_ID);
 
-		LocalRedirect('/bnpt/admin/currency_edit.php?ID='.$ID.'&lang='.LANGUAGE_ID.'&'.$tabControl->ActiveTabParam());
+		LocalRedirect('/bitrix/admin/currency_edit.php?ID='.$ID.'&lang='.LANGUAGE_ID.'&'.$tabControl->ActiveTabParam());
 	}
 }
 
@@ -346,7 +346,7 @@ $tabControl->Begin();?>
 		unset($scriptLanguageId, $fieldPrefix);
 	}
 $tabControl->EndTab();
-$tabControl->Buttons(array("disabled" => $CURRENCY_RIGHT < "W", "back_url" =>"/bnpt/admin/currencies.php?lang=".LANGUAGE_ID));
+$tabControl->Buttons(array("disabled" => $CURRENCY_RIGHT < "W", "back_url" =>"/bitrix/admin/currencies.php?lang=".LANGUAGE_ID));
 $tabControl->End();?>
 </form>
 <?

@@ -1,6 +1,0 @@
-<?
-$MESS["REPORT_POPUP_COLUMN_TITLE"] = "kedua";
-$MESS["REPORT_POPUP_FILTER_TITLE"] = "detik";
-$MESS["TASKS_REPORT_DURATION_DAYS"] = "detik";
-$MESS["TASKS_REPORT_DURATION_HOURS"] = "Daftar periksa";
-?>

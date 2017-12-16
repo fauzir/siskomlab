@@ -1082,7 +1082,7 @@ BXButtonConfig.prototype =
 			this.oTypes[this.types[i].code] = {oType: this.types[i]};
 
 		// Load buttons
-		BX.loadScript('/bnpt/admin/htmleditor2/toolbarbuttons.js', function()
+		BX.loadScript('/bitrix/admin/htmleditor2/toolbarbuttons.js', function()
 			{
 				_this.buttons = arButtons;
 				_this.toolbars = window.arToolbars;
@@ -1091,7 +1091,7 @@ BXButtonConfig.prototype =
 			}
 		);
 
-		BX.loadCSS('/bnpt/admin/htmleditor2/editor.css');
+		BX.loadCSS('/bitrix/admin/htmleditor2/editor.css');
 	},
 
 	BuildButtons: function(typeCode)

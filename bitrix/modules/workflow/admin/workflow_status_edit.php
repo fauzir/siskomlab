@@ -52,9 +52,9 @@ if ((strlen($save)>0 || strlen($apply)>0) && $REQUEST_METHOD=="POST" && $WORKFLO
 		$obWorkflowStatus->SetPermissions($ID, $arPERMISSION_E, 2);
 
 		if($apply != "")
-			LocalRedirect("/bnpt/admin/workflow_status_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/workflow_status_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bnpt/admin/workflow_status_list.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/workflow_status_list.php?lang=".LANG);
 	}
 	else
 	{

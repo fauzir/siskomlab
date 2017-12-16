@@ -42,7 +42,7 @@ elseif ($member_id > 0 && $USER->IsAuthorized())
 
 if (!$bCanAuthorize)
 {
-	LocalRedirect("/bnpt/admin/controller_member_admin.php");
+	LocalRedirect("/bitrix/admin/controller_member_admin.php");
 }
 
 require_once($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/controller/prolog.php");
@@ -53,7 +53,7 @@ $dbr = CControllerMember::GetByID($member_id);
 $ar = $dbr->GetNext();
 if (!$ar)
 {
-	LocalRedirect("/bnpt/admin/controller_member_admin.php");
+	LocalRedirect("/bitrix/admin/controller_member_admin.php");
 }
 
 if ($bAsAdmin)
@@ -136,7 +136,7 @@ else
 	require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 	ShowError("Error: ".$e->GetString());
 	?>
-	<a href="/bnpt/admin/controller_member_admin.php?lang=<?=LANGUAGE_ID?>"><? echo GetMessage("CTRLR_GOTO_BACK") ?></a>
+	<a href="/bitrix/admin/controller_member_admin.php?lang=<?=LANGUAGE_ID?>"><? echo GetMessage("CTRLR_GOTO_BACK") ?></a>
 	<?
 	require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_admin.php");
 }

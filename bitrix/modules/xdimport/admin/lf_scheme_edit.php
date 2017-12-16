@@ -314,9 +314,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid())
 			}
 
 			if(isset($_REQUEST["apply"]))
-				LocalRedirect("/bnpt/admin/xdi_lf_scheme_edit.php?ID=".$res."&lang=".LANGUAGE_ID);
+				LocalRedirect("/bitrix/admin/xdi_lf_scheme_edit.php?ID=".$res."&lang=".LANGUAGE_ID);
 			else
-				LocalRedirect("/bnpt/admin/xdi_lf_scheme_list.php?lang=".LANGUAGE_ID);
+				LocalRedirect("/bitrix/admin/xdi_lf_scheme_list.php?lang=".LANGUAGE_ID);
 		}
 		else
 		{
@@ -330,7 +330,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid())
 	{
 		$ob = new CXDILFScheme();
 		if($ob->Delete($ID))
-			LocalRedirect("/bnpt/admin/xdi_lf_scheme_list.php?lang=".LANGUAGE_ID);
+			LocalRedirect("/bitrix/admin/xdi_lf_scheme_list.php?lang=".LANGUAGE_ID);
 		else
 			$bVarsFromForm = true;
 	}
@@ -952,7 +952,7 @@ $tabControl->BeginNextTab();
 									if (tv_xxx != '')
 									{
 										DV_xxx.innerHTML = '<i><?=GetMessage("LFP_SCHEME_EDIT_RIGHTS_WAIT")?></i>';
-										BX("hiddenframeRIGHTS_USER_ID_" + iTmp).src='/bnpt/admin/get_user.php?ID=' + tv_xxx+'&strName=RIGHTS_USER_ID_' + iTmp + '&lang=<?=LANGUAGE_ID?>&admin_section=Y';
+										BX("hiddenframeRIGHTS_USER_ID_" + iTmp).src='/bitrix/admin/get_user.php?ID=' + tv_xxx+'&strName=RIGHTS_USER_ID_' + iTmp + '&lang=<?=LANGUAGE_ID?>&admin_section=Y';
 									}
 									else
 									{
@@ -1029,7 +1029,7 @@ $tabControl->BeginNextTab();
 													value: '...'
 												},
 												events: {
-													'click': function() { window.open('/bnpt/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=editform&FC=RIGHTS_USER_ID_' + iTmp, '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5)); }
+													'click': function() { window.open('/bitrix/admin/user_search.php?lang=<?=LANGUAGE_ID?>&FN=editform&FC=RIGHTS_USER_ID_' + iTmp, '', 'scrollbars=yes,resizable=yes,width=760,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 760)/2-5)); }
 												}
 											}),
 											BX.create('span', {

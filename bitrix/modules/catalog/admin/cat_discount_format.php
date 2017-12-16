@@ -66,7 +66,7 @@ if ('POST' == $_SERVER['REQUEST_METHOD'] && (isset($_REQUEST["Convert"]) && 'Y' 
 				$strDetail .= '<li>'.str_replace(
 					array('#LINK#', '#NAME#', '#MESS#'),
 					array(
-						'/bnpt/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneError['ID'],
+						'/bitrix/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneError['ID'],
 						htmlspecialcharsbx($arOneError['NAME']),
 						htmlspecialcharsbx($arOneError['ERROR']),
 					),

@@ -67,7 +67,7 @@ class CAllStatistics extends CKeepStatistics
 				"TEXT" => GetMessage("STAT_PAGE_GRAPH_PANEL_BUTTON"),
 				"TITLE" => GetMessage("STAT_PAGE_GRAPH_PANEL_BUTTON"),
 				"IMAGE" => "/bitrix/images/statistic/page_traffic.gif",
-				"ACTION" => "javascript:window.open('/bnpt/admin/section_graph_list.php?lang=". LANGUAGE_ID."&public=Y&width=".$width."&height=".$height."&section=".urlencode($CURRENT_PAGE)."&set_default=Y','','target=_blank,scrollbars=yes,resizable=yes,width=".$width. ",height=".$height.",left='+Math.floor((screen.width - ".$width.")/2)+',top='+Math.floor((screen.height- ".$height.")/2))",
+				"ACTION" => "javascript:window.open('/bitrix/admin/section_graph_list.php?lang=". LANGUAGE_ID."&public=Y&width=".$width."&height=".$height."&section=".urlencode($CURRENT_PAGE)."&set_default=Y','','target=_blank,scrollbars=yes,resizable=yes,width=".$width. ",height=".$height.",left='+Math.floor((screen.width - ".$width.")/2)+',top='+Math.floor((screen.height- ".$height.")/2))",
 			);
 
 			if ($_SESSION["SHOW_LINK_STAT"]=="Y")
@@ -1046,13 +1046,13 @@ class CAllStatistics extends CKeepStatistics
 								$site_id = $arSite["ID"];
 							}
 
-							$SESSION_LINK = intval($_SESSION["SESS_SESSION_ID"])>0? "/bnpt/admin/session_list.php?lang=". $arSite["LANGUAGE_ID"]."&find_id=".$_SESSION["SESS_SESSION_ID"]."&find_id_exact_match=Y&set_filter=Y": "";
-							$VISITOR_LINK = intval($_SESSION["SESS_GUEST_ID"])>0? "/bnpt/admin/guest_list.php?lang=". $arSite["LANGUAGE_ID"]."&find_id=".$_SESSION["SESS_GUEST_ID"]."&find_id_exact_match=Y&set_filter=Y": "";
+							$SESSION_LINK = intval($_SESSION["SESS_SESSION_ID"])>0? "/bitrix/admin/session_list.php?lang=". $arSite["LANGUAGE_ID"]."&find_id=".$_SESSION["SESS_SESSION_ID"]."&find_id_exact_match=Y&set_filter=Y": "";
+							$VISITOR_LINK = intval($_SESSION["SESS_GUEST_ID"])>0? "/bitrix/admin/guest_list.php?lang=". $arSite["LANGUAGE_ID"]."&find_id=".$_SESSION["SESS_GUEST_ID"]."&find_id_exact_match=Y&set_filter=Y": "";
 
 							$arr = explode(".",$_SERVER["REMOTE_ADDR"]);
-							$STOPLIST_LINK = "/bnpt/admin/stoplist_edit.php?lang=". $arSite["LANGUAGE_ID"]."&net1=".intval($arr[0])."&net2=".intval($arr[1])."&net3=". intval($arr[2])."&net4=".intval($arr[3])."&user_agent=".urlencode($_SERVER["HTTP_USER_AGENT"]);
+							$STOPLIST_LINK = "/bitrix/admin/stoplist_edit.php?lang=". $arSite["LANGUAGE_ID"]."&net1=".intval($arr[0])."&net2=".intval($arr[1])."&net3=". intval($arr[2])."&net4=".intval($arr[3])."&user_agent=".urlencode($_SERVER["HTTP_USER_AGENT"]);
 
-							$SEARCHER_LINK = intval($_SESSION["SESS_SEARCHER_ID"])>0? "/bnpt/admin/hit_searcher_list.php?lang=". $arSite["LANGUAGE_ID"]."&find_searcher_id=".$_SESSION["SESS_SEARCHER_ID"]."&set_filter=Y": "";
+							$SEARCHER_LINK = intval($_SESSION["SESS_SEARCHER_ID"])>0? "/bitrix/admin/hit_searcher_list.php?lang=". $arSite["LANGUAGE_ID"]."&find_searcher_id=".$_SESSION["SESS_SEARCHER_ID"]."&set_filter=Y": "";
 
 							$arEventFields = array(
 								"ACTIVITY_TIME_LIMIT"	=> intval($STACK_TIME),

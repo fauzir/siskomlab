@@ -113,7 +113,7 @@ if ($sum > 0):?>
 					<div style="background-color: <?="#".$color?>"></div>
 				</td>
 				<td nowrap class="number"><?echo sprintf("%01.2f", $procent)."%"?></td>
-				<td nowrap class="number">(<a title="<?echo GetMessage("STAT_VIEW_SEARCHER_HITS")?>" href="<?echo htmlspecialcharsbx("/bnpt/admin/hit_searcher_list.php?lang=".urlencode(LANGUAGE_ID)."&find_searcher_id=".urlencode($id)."&find_date1=".urlencode($arFilter["DATE1_PERIOD"])."&find_date2=".urlencode($arFilter["DATE2_PERIOD"])."&set_filter=Y")?>"><?=$sector["COUNTER"]?></a>)</td>
+				<td nowrap class="number">(<a title="<?echo GetMessage("STAT_VIEW_SEARCHER_HITS")?>" href="<?echo htmlspecialcharsbx("/bitrix/admin/hit_searcher_list.php?lang=".urlencode(LANGUAGE_ID)."&find_searcher_id=".urlencode($id)."&find_date1=".urlencode($arFilter["DATE1_PERIOD"])."&find_date2=".urlencode($arFilter["DATE2_PERIOD"])."&set_filter=Y")?>"><?=$sector["COUNTER"]?></a>)</td>
 				<td nowrap>[<a title="<?=GetMessage("STAT_SEARCHER_LIST_OPEN")?>" href="searcher_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$id?>&set_filter=Y"><?=$id?></a>] <a title="<?echo GetMessage("STAT_VIEW_SEARCHER_GRAPH")?>" href="searcher_graph_list.php?lang=<?=LANGUAGE_ID?>&find_searchers[]=<?=$id?>&set_filter=Y"><?=htmlspecialcharsbx($sector["NAME"])?></a></td>
 			</tr>
 			<?

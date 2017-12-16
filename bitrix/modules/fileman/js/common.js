@@ -810,7 +810,7 @@ else
 {
 	/*@cc_on @*/
 	/*@if (@_win32)
-	    document.write("<script defer src='/bnpt/admin/fileman_js.php?script_name=ie_onload.js'><"+"/script>");
+	    document.write("<script defer src='/bitrix/admin/fileman_js.php?script_name=ie_onload.js'><"+"/script>");
 	/*@end @*/
 
     //window.onload = BXEditorLoad;

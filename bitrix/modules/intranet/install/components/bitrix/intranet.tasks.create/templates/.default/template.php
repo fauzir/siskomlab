@@ -377,7 +377,7 @@ else
 					<?= GetMessage("INTET_CURRENT_STATUS") ?>:
 				</td>
 				<td valign="top" align="left" width="70%">
-					<?if ($USER->IsAdmin() && strlen($arResult["DocumentState"]["ID"]) > 0):?><a href="/bnpt/admin/bizproc_log.php?ID=<?= $arResult["DocumentState"]["ID"] ?>"><?endif;?><?= strlen($arResult["DocumentState"]["STATE_TITLE"]) > 0 ? $arResult["DocumentState"]["STATE_TITLE"] : $arResult["DocumentState"]["STATE_NAME"] ?><?if ($USER->IsAdmin() && strlen($arResult["DocumentState"]["ID"]) > 0):?></a><?endif;?>
+					<?if ($USER->IsAdmin() && strlen($arResult["DocumentState"]["ID"]) > 0):?><a href="/bitrix/admin/bizproc_log.php?ID=<?= $arResult["DocumentState"]["ID"] ?>"><?endif;?><?= strlen($arResult["DocumentState"]["STATE_TITLE"]) > 0 ? $arResult["DocumentState"]["STATE_TITLE"] : $arResult["DocumentState"]["STATE_NAME"] ?><?if ($USER->IsAdmin() && strlen($arResult["DocumentState"]["ID"]) > 0):?></a><?endif;?>
 					<script language="JavaScript">
 					function OnChangeBPCommand(cmd)
 					{

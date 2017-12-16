@@ -1,5 +1,0 @@
-<?
-$MESS["TASKS_MODULE_NOT_FOUND"] = "jam";
-$MESS["TASKS_TASK_CONFIRM_START_TIMER_TITLE"] = "Tugas saya";
-$MESS["TASKS_TASK_CONFIRM_START_TIMER"] = "Tugas bawahan";
-?>

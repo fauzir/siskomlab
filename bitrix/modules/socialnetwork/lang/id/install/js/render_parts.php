@@ -1,5 +1,0 @@
-<?
-$MESS["SONET_RENDERPARTS_JS_DESTINATION_ALL"] = "All employees";
-$MESS["SONET_RENDERPARTS_JS_DESTINATION_ALL_BUS"] = "Semua pengguna";
-$MESS["SONET_RENDERPARTS_JS_HIDDEN"] = "Hidden recipient";
-?>

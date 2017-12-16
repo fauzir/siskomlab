@@ -409,16 +409,16 @@ while($f = $rsDirContent->NavNext(true, "f_"))
 		$arActions[] = array(
 			"ICON" => "clouds",
 			"TEXT" => 'DEBUG - '.GetMessage("MAIN_DUMP_SEND_CLOUD").' Bitrix',
-			"ACTION" => "if(k=prompt('".CUtil::JSEscape(GetMessage("MAIN_DUMP_SEND_FILE_CLOUD"))."?')) document.location=\"/bnpt/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=cloud_send&dump_bucket_id=-1&".bitrix_sessid_get().'&dump_encrypt_key="+k;'
+			"ACTION" => "if(k=prompt('".CUtil::JSEscape(GetMessage("MAIN_DUMP_SEND_FILE_CLOUD"))."?')) document.location=\"/bitrix/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=cloud_send&dump_bucket_id=-1&".bitrix_sessid_get().'&dump_encrypt_key="+k;'
 		);
 		$arActions[] = array(
 			"ICON" => "archive",
 			"TEXT" => 'DEBUG - '.GetMessage("INTEGRITY_CHECK"),
 			"ACTION" => 
 			strpos($f['NAME'], '.enc.') ?
-			"if(k=prompt('".CUtil::JSEscape(GetMessage("INTEGRITY_CHECK"))."?')) document.location=\"/bnpt/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=check_archive&".bitrix_sessid_get().'&dump_encrypt_key="+k;'
+			"if(k=prompt('".CUtil::JSEscape(GetMessage("INTEGRITY_CHECK"))."?')) document.location=\"/bitrix/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=check_archive&".bitrix_sessid_get().'&dump_encrypt_key="+k;'
 			:
-			"if(confirm('".CUtil::JSEscape(GetMessage("INTEGRITY_CHECK"))."?')) document.location=\"/bnpt/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=check_archive&".bitrix_sessid_get().'";'
+			"if(confirm('".CUtil::JSEscape(GetMessage("INTEGRITY_CHECK"))."?')) document.location=\"/bitrix/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=check_archive&".bitrix_sessid_get().'";'
 		);
 	}
 
@@ -430,19 +430,19 @@ while($f = $rsDirContent->NavNext(true, "f_"))
 				"ICON" => "download",
 				"DEFAULT" => true,
 				"TEXT" => GetMessage("MAIN_DUMP_ACTION_DOWNLOAD"),
-				"ACTION" => "PartList('/bnpt/admin/dump_list.php?action=download&f_id=".$f['NAME']."&BUCKET_ID=".$BUCKET_ID."&".bitrix_sessid_get()."')"
+				"ACTION" => "PartList('/bitrix/admin/dump_list.php?action=download&f_id=".$f['NAME']."&BUCKET_ID=".$BUCKET_ID."&".bitrix_sessid_get()."')"
 			);
 			$arActions[] = array(
 				"ICON" => "link",
 				"TEXT" => GetMessage("MAIN_DUMP_GET_LINK"),
-				"ACTION" => "AjaxSend('/bnpt/admin/dump_list.php?action=link&f_id=".$f['NAME']."&BUCKET_ID=".$BUCKET_ID."&".bitrix_sessid_get()."')"
+				"ACTION" => "AjaxSend('/bitrix/admin/dump_list.php?action=link&f_id=".$f['NAME']."&BUCKET_ID=".$BUCKET_ID."&".bitrix_sessid_get()."')"
 			);
 		}
 
 		$arActions[] = array(
 			"ICON" => "restore",
 			"TEXT" => GetMessage("MAIN_DUMP_RESTORE"),
-			"ACTION" => "if(confirm('".CUtil::JSEscape(GetMessage("MAIN_RIGHT_CONFIRM_EXECUTE"))."')) AjaxSend('/bnpt/admin/dump_list.php?action=restore&f_id=".$f['NAME']."&BUCKET_ID=".$BUCKET_ID."&".bitrix_sessid_get()."')"
+			"ACTION" => "if(confirm('".CUtil::JSEscape(GetMessage("MAIN_RIGHT_CONFIRM_EXECUTE"))."')) AjaxSend('/bitrix/admin/dump_list.php?action=restore&f_id=".$f['NAME']."&BUCKET_ID=".$BUCKET_ID."&".bitrix_sessid_get()."')"
 		);
 
 		if ($BUCKET_ID == 0)
@@ -454,7 +454,7 @@ while($f = $rsDirContent->NavNext(true, "f_"))
 					$arActions[] = array(
 						"ICON" => "clouds",
 						"TEXT" => GetMessage("MAIN_DUMP_SEND_CLOUD").htmlspecialcharsbx('"'.$arBucket['BUCKET'].'"'),
-						"ACTION" => "if(confirm('".CUtil::JSEscape(GetMessage("MAIN_DUMP_SEND_FILE_CLOUD"))."?')) ".$lAdmin->ActionRedirect("/bnpt/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=cloud_send&dump_bucket_id=".$arBucket['ID']."&".bitrix_sessid_get())
+						"ACTION" => "if(confirm('".CUtil::JSEscape(GetMessage("MAIN_DUMP_SEND_FILE_CLOUD"))."?')) ".$lAdmin->ActionRedirect("/bitrix/admin/dump.php?f_id=".urlencode($f['NAME'])."&action=cloud_send&dump_bucket_id=".$arBucket['ID']."&".bitrix_sessid_get())
 					);
 			}
 
@@ -463,7 +463,7 @@ while($f = $rsDirContent->NavNext(true, "f_"))
 			$arActions[] = array(
 				"ICON" => "rename",
 				"TEXT" => GetMessage("MAIN_DUMP_RENAME"),
-				"ACTION" => "if(name=prompt('".CUtil::JSEscape(GetMessage("MAIN_DUMP_ARC_NAME_W_O_EXT"))."','".htmlspecialcharsbx($arName['name'])."')) tbl_dump.GetAdminList('/bnpt/admin/dump_list.php?ID=".urlencode($f['NAME'])."&action=rename&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&BUCKET_ID=".$BUCKET_ID."&name='+name);"
+				"ACTION" => "if(name=prompt('".CUtil::JSEscape(GetMessage("MAIN_DUMP_ARC_NAME_W_O_EXT"))."','".htmlspecialcharsbx($arName['name'])."')) tbl_dump.GetAdminList('/bitrix/admin/dump_list.php?ID=".urlencode($f['NAME'])."&action=rename&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&BUCKET_ID=".$BUCKET_ID."&name='+name);"
 			);
 		}
 	}

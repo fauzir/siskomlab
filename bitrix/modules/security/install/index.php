@@ -226,7 +226,7 @@ Class security extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/otp", $_SERVER["DOCUMENT_ROOT"]."/bitrix/otp", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/js/security", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js/security", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/security", false, true);
@@ -238,7 +238,7 @@ Class security extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/otp/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/otp");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/js/security/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js/security");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/security/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");

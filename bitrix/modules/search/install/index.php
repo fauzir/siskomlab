@@ -187,7 +187,7 @@ Class search extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/js", $_SERVER["DOCUMENT_ROOT"]."/bitrix/js/search", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/search", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/components", $_SERVER["DOCUMENT_ROOT"]."/bitrix/components", True, True);
@@ -245,7 +245,7 @@ Class search extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+			DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/search/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 			DeleteDirFilesEx("/bitrix/images/search/");//images
 			DeleteDirFilesEx("/bitrix/js/search/");//javascript
 		}

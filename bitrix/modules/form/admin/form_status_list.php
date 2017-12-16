@@ -246,7 +246,7 @@ $aMenu = array(
 		"ICON"	=> "btn_new",
 		"TEXT"	=> GetMessage("FORM_ADD"),
 		"TITLE"	=> GetMessage("FORM_ADD_STATUS"),
-		"LINK"	=>	"/bnpt/admin/form_status_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+		"LINK"	=>	"/bitrix/admin/form_status_edit.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
 	),
 );
 

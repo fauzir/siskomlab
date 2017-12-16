@@ -140,7 +140,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		. '</a>'
 	);
 
-	$row->AddField("ID", '<a href="/bnpt/admin/learn_group_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'">'.$f_ID.'</a>');
+	$row->AddField("ID", '<a href="/bitrix/admin/learn_group_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("MAIN_ADMIN_MENU_EDIT").'">'.$f_ID.'</a>');
 	$row->AddCheckField("ACTIVE");
 	$row->AddInputField("TITLE", Array("size"=>"20"));
 	$row->AddInputField("CODE", Array("size"=>"10"));

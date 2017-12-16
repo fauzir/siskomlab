@@ -969,7 +969,7 @@ BXSticker.prototype = {
 		if (bShowWaitWin)
 			BX.showWait();
 
-		var actionUrl = '/bnpt/admin/fileman_stickers.php?sticker_action=' + action + "&" + this.sessid_get + '&site_id=' + this.Params.site_id;
+		var actionUrl = '/bitrix/admin/fileman_stickers.php?sticker_action=' + action + "&" + this.sessid_get + '&site_id=' + this.Params.site_id;
 		return BX.ajax.post(actionUrl, postParams || {},
 			function(result)
 			{
@@ -2170,7 +2170,7 @@ BXStickerList.prototype = {
 			return;
 
 		var Config = {
-			content_url: '/bnpt/admin/fileman_stickers.php?sticker_action=show_list&' + this.BXSticker.sessid_get + '&cur_page=' + encodeURIComponent(this.BXSticker.Params.pageUrl) + '&type=' + type + '&site_id=' + this.BXSticker.Params.site_id,
+			content_url: '/bitrix/admin/fileman_stickers.php?sticker_action=show_list&' + this.BXSticker.sessid_get + '&cur_page=' + encodeURIComponent(this.BXSticker.Params.pageUrl) + '&type=' + type + '&site_id=' + this.BXSticker.Params.site_id,
 			title : this.MESS.StickerListTitle,
 			width: this.BXSticker.Params.listWidth,
 			height: this.BXSticker.Params.listHeight,

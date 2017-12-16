@@ -82,7 +82,7 @@ class CSeoEventHandlers
 		$APPLICATION->AddPanelButton(array(
 			"HREF"=> 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL"=>"/bnpt/admin/public_seo_tools.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=seo&site=".SITE_ID
+					"URL"=>"/bitrix/admin/public_seo_tools.php?lang=".LANGUAGE_ID."&bxpublic=Y&from_module=seo&site=".SITE_ID
 						."&path=".$encCurrentFilePath
 						."&title_final=".$encTitle."&title_changer_name=".$encTitleChangerName.'&title_changer_link='.$encTitleChangerLink
 						."&title_win_final=".$encWinTitle."&title_win_changer_name=".$encWinTitleChangerName.'&title_win_changer_link='.$encWinTitleChangerLink

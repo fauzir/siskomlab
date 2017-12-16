@@ -3,7 +3,7 @@ IncludeModuleLangFile(__FILE__);
 
 class CSecuritySiteChecker
 {
-	const ADMIN_PAGE_URL = "/bnpt/admin/security_scanner.php";
+	const ADMIN_PAGE_URL = "/bitrix/admin/security_scanner.php";
 	const CHECKING_REPEAT_TIME = 2592000; //60*60*24*30, one month
 	const CACHE_DIR = "/security/site_checker";
 	const CACHE_BASE_ID = "sec_site_check";

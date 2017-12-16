@@ -70,7 +70,7 @@ if(
 	if($_REQUEST["save"] != "" && $_GET["return_url"] != "")
 		LocalRedirect($_GET["return_url"]);
 	else
-		LocalRedirect("/bnpt/admin/security_session.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
+		LocalRedirect("/bitrix/admin/security_session.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
 }
 
 $APPLICATION->SetTitle(GetMessage("SEC_SESSION_ADMIN_TITLE"));

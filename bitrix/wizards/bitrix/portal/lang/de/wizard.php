@@ -21,9 +21,9 @@ Die Konfiguration Ihres  &laquo;Bitrix24&raquo; ist beendet. Sie können das Por
 Oder, Sie können jetzt die Konfiguration des Systems fortsetzen und die Daten Ihrer Mitarbeiter aus folgenden Quellen importieren:
 <ul>
 <li>Active Directory/LDAP;</li>
-<li>CSV-Datei (<a href='/bnpt/admin/user_import.php?getSample=csv'>Beispiel</a>).</li>
+<li>CSV-Datei (<a href='/bitrix/admin/user_import.php?getSample=csv'>Beispiel</a>).</li>
 </ul>
-<div><a href='/bnpt/admin/user_import.php?lang=de' target='_blank'><span>Nutzer-Import</span></a></div>
+<div><a href='/bitrix/admin/user_import.php?lang=de' target='_blank'><span>Nutzer-Import</span></a></div>
 <br />Wenn Sie Rankings benutzen, sollten Sie den Cache aktualisieren. Öffnen Sie dafür <i>Systemeinstellungen > Auto-Cache</i>, klicken Sie auf die Registerkarte <i>Bereinigung der Cache-Dateien</i>. Wählen Sie <i>Alle</i> aus und klicken Sie auf <i>Starten</i>.";
 $MESS["WIZARD_WAIT_WINDOW_TEXT"] = "Daten werden installiert...";
 $MESS["INST_JAVASCRIPT_DISABLED"] = "Für eine korrekte Arbeitsweise des Installationsassistenten  muss JavaScript eingeschaltet sein. Wahrscheinlich wird JavaScript von Ihrem Browser nicht unterstützt oder ist ausgeschaltet. Ändern Sie die Browser-Einstellungen, und <a href=\"\">versuchen Sie es erneut</a>.";
@@ -64,8 +64,8 @@ $MESS["wiz_ldap_group_portal"] = "Gruppe im Intranetportal";
 $MESS["wiz_ldap_group_ldap"] = "Gruppe im Active Directory";
 $MESS["wiz_install_data"] = "Dateninstallation";
 $MESS["wiz_go"] = "Zum Intranet wechseln";
-$MESS["wiz_ldap_require"] = "Achtung!<br />Zur Integration des Active Directory in das Intranetportal muss auf der Seite <a target=\"_blank\" href=\"/bnpt/admin/module_admin.php?lang=#LANGUAGE_ID#\">Module</a> das Modul <i>AD/LDAP Integration</i>installiert werden.";
-$MESS["wiz_ldap_require1"] = "Das Modul AD/LDAP muss auf der Seite  <a target=\"_blank\" href=\"/bnpt/admin/module_admin.php?lang=#LANGUAGE_ID#\">Module</a>installiert werden";
+$MESS["wiz_ldap_require"] = "Achtung!<br />Zur Integration des Active Directory in das Intranetportal muss auf der Seite <a target=\"_blank\" href=\"/bitrix/admin/module_admin.php?lang=#LANGUAGE_ID#\">Module</a> das Modul <i>AD/LDAP Integration</i>installiert werden.";
+$MESS["wiz_ldap_require1"] = "Das Modul AD/LDAP muss auf der Seite  <a target=\"_blank\" href=\"/bitrix/admin/module_admin.php?lang=#LANGUAGE_ID#\">Module</a>installiert werden";
 $MESS["wiz_ldap_error_domain"] = "Geben Sie bitte die Domain für eine NTLM-Anmeldung an";
 $MESS["wiz_ldap_login_help"] = "(Login eines Nutzers mit Leseberechtigung aus dem Active Directory im Format Login@Domain oder Domain\\Login)";
 $MESS["wiz_ldap_root_help"] = "(Um die Beschränkungen nach einem oder mehreren OU festzulegen, geben Sie entsprechende DN über ein Semikolon an)";

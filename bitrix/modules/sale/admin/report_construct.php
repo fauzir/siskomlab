@@ -80,9 +80,9 @@ CBaseSaleReportHelper::init();
 $arParams = array(
 	'ACTION' => 'create',
 	'TITLE' => GetMessage('SALE_REPORT_CONSTRUCT_NEW_REPORT_TAB'),
-	'PATH_TO_REPORT_LIST' => '/bnpt/admin/sale_report.php?lang='.LANG,
-	'PATH_TO_REPORT_CONSTRUCT' => '/bnpt/admin/sale_report_construct.php',
-	'PATH_TO_REPORT_VIEW' => '/bnpt/admin/sale_report_view.php?lang='.LANG.'&ID=#report_id#',
+	'PATH_TO_REPORT_LIST' => '/bitrix/admin/sale_report.php?lang='.LANG,
+	'PATH_TO_REPORT_CONSTRUCT' => '/bitrix/admin/sale_report_construct.php',
+	'PATH_TO_REPORT_VIEW' => '/bitrix/admin/sale_report_view.php?lang='.LANG.'&ID=#report_id#',
 	'USE_CHART' => true
 );
 
@@ -441,7 +441,7 @@ if (!$fCriticalError)
 										if (arFilterTypes.length > 0)
 										{
 											BX.showWait();
-											url = '/bnpt/admin/sale_report_construct.php?<?=bitrix_sessid_get()?>'+
+											url = '/bitrix/admin/sale_report_construct.php?<?=bitrix_sessid_get()?>'+
 												'&REPORT_AJAX=Y&F_SALE_SITE='+siteSelect.value;
 											BX.ajax.post(url, {'filterTypes': arFilterTypes}, fProcessAjaxResult );
 										}

@@ -77,7 +77,7 @@ $aMenu = array(
 		array(
 				"TEXT" => GetMessage("STEN_2FLIST"),
 				"ICON" => "btn_list",
-				"LINK" => "/bnpt/admin/sale_tax.php?lang=".LANG.GetFilterParams("filter_")
+				"LINK" => "/bitrix/admin/sale_tax.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 
@@ -88,13 +88,13 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("STEN_NEW_TAX"),
 			"ICON" => "btn_new",
-			"LINK" => "/bnpt/admin/sale_tax_edit.php?lang=".LANG.GetFilterParams("filter_")
+			"LINK" => "/bitrix/admin/sale_tax_edit.php?lang=".LANG.GetFilterParams("filter_")
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("STEN_DELETE_TAX"),
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("STEN_DELETE_TAX_CONFIRM")."')) window.location='/bnpt/admin/sale_tax.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("STEN_DELETE_TAX_CONFIRM")."')) window.location='/bitrix/admin/sale_tax.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		);
 }
 $context = new CAdminContextMenu($aMenu);
@@ -165,7 +165,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bnpt/admin/sale_tax.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bitrix/admin/sale_tax.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

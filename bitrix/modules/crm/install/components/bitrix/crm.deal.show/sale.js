@@ -4,11 +4,11 @@ function ExtSaleGetRemoteForm(externalSaleId, action, id)
 	var url;
 
 	if (action == "EDIT")
-		url = "/bitrix/tools/crm_sale_proxy.php?" + externalSaleId + "/bnpt/admin/sale_order_new.php?ID=" + id;
+		url = "/bitrix/tools/crm_sale_proxy.php?" + externalSaleId + "/bitrix/admin/sale_order_new.php?ID=" + id;
 	else if (action == "VIEW")
-		url = "/bitrix/tools/crm_sale_proxy.php?" + externalSaleId + "/bnpt/admin/sale_order_detail.php?ID=" + id;
+		url = "/bitrix/tools/crm_sale_proxy.php?" + externalSaleId + "/bitrix/admin/sale_order_detail.php?ID=" + id;
 	else if (action == "PRINT")
-		url = "/bitrix/tools/crm_sale_proxy.php?" + externalSaleId + "/bnpt/admin/sale_order_print.php?ID=" + id;
+		url = "/bitrix/tools/crm_sale_proxy.php?" + externalSaleId + "/bitrix/admin/sale_order_print.php?ID=" + id;
 
 	ExtSaleDialogShow(url, action == "PRINT" ? extSaleGetRemoteFormLocal["PRINT"] : extSaleGetRemoteFormLocal["SAVE"]);
 	return false;

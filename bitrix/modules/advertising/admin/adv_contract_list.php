@@ -204,7 +204,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	if (is_array($arrSITE)):
 		foreach($arrSITE as $sid):
 			if ($isAdmin)
-				$sites .= '<a href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($arrSites[$sid]["NAME"]).'</a><br>';
+				$sites .= '<a href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($arrSites[$sid]["NAME"]).'</a><br>';
 			else
 				$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"])."<br>";
 		endforeach;
@@ -224,7 +224,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 	else
 		$row->AddViewField("NAME", $f_NAME);
 	$row->AddViewField("DESCRIPTION", TruncateText($f_DESCRIPTION, 100));
-	$row->AddViewField("BANNER_COUNT", '<a href="/bnpt/admin/adv_banner_list.php?find_contract_id[]='.$f_ID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
+	$row->AddViewField("BANNER_COUNT", '<a href="/bitrix/admin/adv_banner_list.php?find_contract_id[]='.$f_ID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
 
 	$row->AddViewField("VISITOR_COUNT", $f_VISITOR_COUNT);
 	if ((is_array($arrUserPerm) && in_array("EDIT", $arrUserPerm)) || $isDemo)

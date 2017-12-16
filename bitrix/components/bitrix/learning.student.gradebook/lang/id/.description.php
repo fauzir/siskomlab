@@ -1,6 +1,0 @@
-<?
-$MESS["LEARNING_STUDENT_GRADEBOOK_NAME"] = "Buku gradasi siswa";
-$MESS["LEARNING_STUDENT_GRADEBOOK_DESC"] = "Hasil tes";
-$MESS["LEARNING_SERVICE"] = "e-Learning";
-$MESS["LEARNING_STUDENT_SERVICE"] = "Peserta";
-?>

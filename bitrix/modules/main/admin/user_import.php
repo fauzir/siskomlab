@@ -462,7 +462,7 @@ if(CModule::IncludeModule("iblock")):
 				<option value="<?=$arLdap["ID"]?>"<?if ($ldapServer == $arLdap["ID"]):?> selected<?endif?>><?=$arLdap["NAME"]?></option>
 			<?endwhile?>
 			</select>
-			&nbsp;<a href="/bnpt/admin/ldap_server_edit.php?lang=<?=LANGUAGE_ID?>"><?=GetMessage("USER_IMPORT_NEW_LDAP_SERVER")?></a>
+			&nbsp;<a href="/bitrix/admin/ldap_server_edit.php?lang=<?=LANGUAGE_ID?>"><?=GetMessage("USER_IMPORT_NEW_LDAP_SERVER")?></a>
 		</td>
 	</tr>
 	<?endif?>
@@ -634,7 +634,7 @@ if(CModule::IncludeModule("iblock")):
 				}
 				setTimeout('OnLdapSelect(<?=$indSelected?>);', 1);
 			</script>
-			&nbsp;<a href="/bnpt/admin/ldap_server_edit.php?lang=<?=LANGUAGE_ID?>&back_url=<?=urlencode('/bnpt/admin/user_import.php?lang='.$lang.'&dataSource=ldap&tabStep=2')?>"><?=GetMessage("USER_IMPORT_NEW_LDAP_SERVER")?></a>
+			&nbsp;<a href="/bitrix/admin/ldap_server_edit.php?lang=<?=LANGUAGE_ID?>&back_url=<?=urlencode('/bitrix/admin/user_import.php?lang='.$lang.'&dataSource=ldap&tabStep=2')?>"><?=GetMessage("USER_IMPORT_NEW_LDAP_SERVER")?></a>
 		</td>
 	</tr>
 	<tr id="predef">

@@ -14,7 +14,7 @@ Halo.
 you have received this message because you (or someone else) used your e-mail to register at #SERVER_NAME#.
 To confirm registration, click the following link and enter your name and password you use in the local network:
  
-http://#SERVER_NAME#/bnpt/admin/ldap_user_auth.php?ldap_user_id=#XML_ID#&back_url=#BACK_URL#
+http://#SERVER_NAME#/bitrix/admin/ldap_user_auth.php?ldap_user_id=#XML_ID#&back_url=#BACK_URL#
  
 This is an automated message.";
 ?>

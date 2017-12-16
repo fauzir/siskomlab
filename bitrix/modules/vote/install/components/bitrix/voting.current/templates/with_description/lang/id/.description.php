@@ -1,4 +1,0 @@
-<?
-$MESS["VOTE_WITH_DESCRIPTION_NAME"] = "Kembali";
-$MESS["VOTE_WITH_DESCRIPTION_DESC"] = "Kembali";
-?>

@@ -1,1 +1,0 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/currency/core_currency.js" => "15113164792402",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

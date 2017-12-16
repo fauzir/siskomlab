@@ -1269,11 +1269,11 @@ if (
 		if (isset($save) AND strlen($save) > 0)
 		{
 			CSaleOrder::UnLock($ID);
-			LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID."&LID=".urlencode($LID).GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID."&LID=".urlencode($LID).GetFilterParams("filter_", false));
 		}
 
 		if (isset($apply) AND strlen($apply) > 0)
-			LocalRedirect("/bnpt/admin/sale_order_new.php?lang=".LANGUAGE_ID."&ID=".$ID."&LID=".urlencode($LID).GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/sale_order_new.php?lang=".LANGUAGE_ID."&ID=".$ID."&LID=".urlencode($LID).GetFilterParams("filter_", false));
 	}
 	if ('' != $errorMessage)
 		$bVarsFromForm = true;
@@ -1286,7 +1286,7 @@ if (!empty($dontsave))
 	if ($crmMode)
 		CRMModeOutput($ID);
 
-	LocalRedirect("/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID."&LID=".CUtil::JSEscape($LID));
+	LocalRedirect("/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID."&LID=".CUtil::JSEscape($LID));
 }
 
 /*****************************************************************************/
@@ -1649,7 +1649,7 @@ if (
 
 				if(el && arProps[locationID])
 				{
-					BX.ajax.post('/bnpt/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&locid=' + locationID + '&propID=<?=$buyerType?>&LID=<?=CUtil::JSEscape($LID)?>&location=' + arProps[locationID], fLocationResult);
+					BX.ajax.post('/bitrix/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&locid=' + locationID + '&propID=<?=$buyerType?>&LID=<?=CUtil::JSEscape($LID)?>&location=' + arProps[locationID], fLocationResult);
 				}
 				else
 					fRecalProduct('', '', 'N', 'N', null);
@@ -2365,7 +2365,7 @@ if ((!isset($LID) OR $LID == "") AND (defined('BX_PUBLIC_MODE') OR BX_PUBLIC_MOD
 					function fLidChange(el)
 					{
 						BX.showWait();
-						BX.ajax.post("/bnpt/admin/sale_order_new.php", "<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&lang=<?=LANGUAGE_ID?>&LID=" + el.value, fLidChangeResult);
+						BX.ajax.post("/bitrix/admin/sale_order_new.php", "<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&lang=<?=LANGUAGE_ID?>&LID=" + el.value, fLidChangeResult);
 					}
 					function fLidChangeResult(result)
 					{
@@ -2453,7 +2453,7 @@ if ($boolLocked)
 	if ($arOneUser = $rsUsers->Fetch())
 	{
 		$strLockUser = CUser::FormatName($strNameFormat, $arOneUser);
-		$strLockUserInfo = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$intLockUserID.'">'.$strLockUser.'</a>';
+		$strLockUserInfo = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$intLockUserID.'">'.$strLockUser.'</a>';
 	}
 	$strLockUserExt = htmlspecialcharsbx(GetMessage(
 		'SOE_ORDER_LOCKED2',
@@ -2478,7 +2478,7 @@ if (0 < $ID)
 		array(
 			"ICON" => "btn_list",
 			"TEXT" => GetMessage("SOE_TO_LIST"),
-			"LINK" => "/bnpt/admin/sale_order_new.php?lang=".LANGUAGE_ID."&ID=".$ID."&dontsave=Y&LID=".CUtil::JSEscape($LID).GetFilterParams("filter_")
+			"LINK" => "/bitrix/admin/sale_order_new.php?lang=".LANGUAGE_ID."&ID=".$ID."&dontsave=Y&LID=".CUtil::JSEscape($LID).GetFilterParams("filter_")
 		)
 	);
 }
@@ -2488,7 +2488,7 @@ else
 		array(
 			"ICON" => "btn_list",
 			"TEXT" => GetMessage("SOE_TO_LIST"),
-			"LINK" => "/bnpt/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+			"LINK" => "/bitrix/admin/sale_order.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 		)
 	);
 }
@@ -2497,7 +2497,7 @@ if ($boolLocked && $saleModulePermissions >= 'W')
 {
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SOE_TO_UNLOCK"),
-		"LINK" => "/bnpt/admin/sale_order_new.php?ID=".$ID."&unlock=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+		"LINK" => "/bitrix/admin/sale_order_new.php?ID=".$ID."&unlock=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 	);
 }
 
@@ -2518,7 +2518,7 @@ if ($bUserCanViewOrder && $ID > 0)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("NEWO_DETAIL"),
 		"TITLE"=>GetMessage("NEWO_DETAIL_TITLE"),
-		"LINK" => "/bnpt/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bitrix/admin/sale_order_view.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	);
 }
 
@@ -2527,7 +2527,7 @@ if ($ID > 0)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("NEWO_TO_PRINT"),
 		"TITLE"=>GetMessage("NEWO_TO_PRINT_TITLE"),
-		"LINK" => "/bnpt/admin/sale_order_print.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"LINK" => "/bitrix/admin/sale_order_print.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	);
 }
 if (!$boolLocked && ($saleModulePermissions == "W" || $str_PAYED["PAYED"] != "Y" && $bUserCanDeleteOrder) && 0 < $ID)
@@ -2956,7 +2956,7 @@ if ($ID <= 0)
 				}
 
 				if (el == 'btnBuyerExist')
-					window.open('/bnpt/admin/user_search.php?lang=<? echo LANGUAGE_ID; ?>&FN=order_edit_info_form&FC=user_id', '', 'scrollbars=yes,resizable=yes,width=840,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 840)/2-5));
+					window.open('/bitrix/admin/user_search.php?lang=<? echo LANGUAGE_ID; ?>&FN=order_edit_info_form&FC=user_id', '', 'scrollbars=yes,resizable=yes,width=840,height=500,top='+Math.floor((screen.height - 560)/2-14)+',left='+Math.floor((screen.width - 840)/2-5));
 			}
 		}
 
@@ -2971,7 +2971,7 @@ if ($ID <= 0)
 				userId = BX("user_id").value;
 
 			BX.showWait();
-			BX.ajax.post('/bnpt/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&paysystemid=' + orderPaySystemID + '&ID=' + orderID + '&LID=<?=CUtil::JSEscape($LID)?>&buyertypechange=' + el.value + '&userId=' + userId, fBuyerChangeTypeResult);
+			BX.ajax.post('/bitrix/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&paysystemid=' + orderPaySystemID + '&ID=' + orderID + '&LID=<?=CUtil::JSEscape($LID)?>&buyertypechange=' + el.value + '&userId=' + userId, fBuyerChangeTypeResult);
 		}
 
 		function fBuyerChangeTypeResult(res)
@@ -3068,7 +3068,7 @@ if ($ID <= 0)
 					'oldUserId': (!!oldUserId ? oldUserId.value : 0)
 				};
 				BX.ajax.post(
-					'/bnpt/admin/sale_order_new.php',
+					'/bitrix/admin/sale_order_new.php',
 					postData,
 					fUserGetProfileResult
 				);
@@ -3134,7 +3134,7 @@ if ($ID <= 0)
 		function fGetExecScript(userId, buyerType, profileDefault)
 		{
 			BX.ajax({
-				url: '/bnpt/admin/sale_order_new.php',
+				url: '/bitrix/admin/sale_order_new.php',
 				method: 'POST',
 				data : '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&LID=<?=CUtil::JSEscape($LID)?>&userId=' + userId + '&buyerType=' + buyerType + '&profileDefault=' + profileDefault,
 				dataType: 'html',
@@ -6056,7 +6056,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 		BX.showWait();
 
 		BX.ajax.post(
-			'/bnpt/admin/sale_order_new.php',
+			'/bitrix/admin/sale_order_new.php',
 			dateURL,
 			getParamsByProductIdResult
 		);
@@ -6677,7 +6677,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 		}
 
 		BX.showWait();
-		BX.ajax.post('/bnpt/admin/sale_order_new.php', dateURL, fRecalProductResult);
+		BX.ajax.post('/bitrix/admin/sale_order_new.php', dateURL, fRecalProductResult);
 	}
 
 	function fRecalProductResult(result)
@@ -6895,7 +6895,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 			userId = BX('user_id').value;
 
 		BX.ajax({
-			url: '/bnpt/admin/sale_order_new.php',
+			url: '/bitrix/admin/sale_order_new.php',
 			method: 'POST',
 			data : '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&get_props=Y&id=<?=$ID?>&userId=' + userId + '&delivery_id=' + deliveryId + '&paysystem_id=' + paymentId + '&CURRENCY=<?=$str_CURRENCY?>&LID=<?=CUtil::JSEscape($LID)?>',
 			dataType: 'html',
@@ -6976,7 +6976,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 			productData = productData + "'"+i+"':'"+arProduct[i]+"',";
 		productData = productData + "}";
 
-		BX.ajax.post('/bnpt/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&showAll='+showAll+'&arProduct='+productData+'&getmorebasket=Y&CURRENCY=<?=$str_CURRENCY?>&LID=<?=CUtil::JSEscape($LID)?>&userId=' + userId, fGetMoreBasketResult);
+		BX.ajax.post('/bitrix/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&showAll='+showAll+'&arProduct='+productData+'&getmorebasket=Y&CURRENCY=<?=$str_CURRENCY?>&LID=<?=CUtil::JSEscape($LID)?>&userId=' + userId, fGetMoreBasketResult);
 	}
 
 	function fGetMoreBasketResult(res)
@@ -7014,7 +7014,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 			productData = productData + "'"+i+"':'"+arProduct[i]+"',";
 		productData = productData + "}";
 
-		BX.ajax.post('/bnpt/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&showAll='+showAll+'&arProduct='+productData+'&getmoreviewed=Y&CURRENCY=<?=$str_CURRENCY?>&LID=<?=CUtil::JSEscape($LID)?>&userId=' + userId, fGetMoreViewedResult);
+		BX.ajax.post('/bitrix/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&showAll='+showAll+'&arProduct='+productData+'&getmoreviewed=Y&CURRENCY=<?=$str_CURRENCY?>&LID=<?=CUtil::JSEscape($LID)?>&userId=' + userId, fGetMoreViewedResult);
 	}
 
 	function fGetMoreViewedResult(res)
@@ -7071,7 +7071,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 			userId = document.order_edit_info_form.user_id.value;
 
 		BX.ajax.post(
-			'/bnpt/admin/sale_order_new.php',
+			'/bitrix/admin/sale_order_new.php',
 			'<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&get_product_params=Y&ID=<?=$ID?>&LID=<?=CUtil::JSEscape($LID)?>&type=' + type + '&productId=' + productId + '&userId=' + userId + '&userColumns=' + strUserColumns,
 			fAddToBasketMoreProductResult
 		);
@@ -7291,7 +7291,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 			{
 				BX.showWait();
 				BX.ajax.post(
-					'/bnpt/admin/sale_order_new.php',
+					'/bitrix/admin/sale_order_new.php',
 					'<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&id=<?=$ID?>&LID=<?=CUtil::JSEscape($LID)?>&checkBarcode=Y&productId=' + productId + '&barcode=' + barcode.value + '&storeId=' + realStoreId + '&productProvider=' + productProvider + '&moduleName=' + moduleName + '&barcodeMulti=' + barcodeMulti,
 					function (res)
 					{
@@ -7326,7 +7326,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 			{
 				BX.showWait();
 				BX.ajax.post(
-					'/bnpt/admin/sale_order_new.php',
+					'/bitrix/admin/sale_order_new.php',
 					'<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&id=<?=$ID?>&LID=<?=CUtil::JSEscape($LID)?>&checkBarcode=Y&basketItemId=' + basketItemId + '&barcode=' + barcode.value + '&storeId=' + realStoreId,
 					function (res)
 					{
@@ -7501,7 +7501,7 @@ $tabControl->BeginCustomField("BASKET_CONTAINER", GetMessage("NEWO_BASKET_CONTAI
 						BX("total_count_table").style.display = 'none';
 
 					BX.showWait();
-					BX.ajax.post('/bnpt/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&change_columns=Y&cols=' + sCols + '&ids=' + IDs + '&ID=<?=$ID?>', changeColumns);
+					BX.ajax.post('/bitrix/admin/sale_order_new.php', '<?=bitrix_sessid_get()?>&ORDER_AJAX=Y&change_columns=Y&cols=' + sCols + '&ids=' + IDs + '&ID=<?=$ID?>', changeColumns);
 
 					this.parentWindow.Close();
 				}
@@ -7991,7 +7991,7 @@ if (!defined('BX_PUBLIC_MODE') || BX_PUBLIC_MODE != 1)
 	$tabControl->Buttons(
 		array(
 			"disabled" => ($boolLocked || !$bUserCanEditOrder),
-			"back_url" => "/bnpt/admin/sale_order_new.php?lang=".LANGUAGE_ID."&ID=".$ID."&dontsave=Y&LID=".CUtil::JSEscape($LID).GetFilterParams("filter_"))
+			"back_url" => "/bitrix/admin/sale_order_new.php?lang=".LANGUAGE_ID."&ID=".$ID."&dontsave=Y&LID=".CUtil::JSEscape($LID).GetFilterParams("filter_"))
 	);
 }
 
@@ -8267,7 +8267,7 @@ echo '</div>';//end div for form
 					else
 					{
 						message = BX.message('PRODUCT_ORDER');
-						BX('popup-params-product').value = "/bnpt/admin/sale_order_new.php?lang=<?=LANGUAGE_ID?>&user_id="+arSKU[i]["USER_ID"]+"&LID="+arSKU[i]["LID"]+"&product["+arSKU[i]["ID"]+"]=1";
+						BX('popup-params-product').value = "/bitrix/admin/sale_order_new.php?lang=<?=LANGUAGE_ID?>&user_id="+arSKU[i]["USER_ID"]+"&LID="+arSKU[i]["LID"]+"&product["+arSKU[i]["ID"]+"]=1";
 					}
 				}
 				else
@@ -8367,7 +8367,7 @@ echo '</div>';//end div for form
 
 			BX.ajax({
 
-				url: '/bnpt/admin/sale_order_new.php',
+				url: '/bitrix/admin/sale_order_new.php',
 				method: 'post',
 				dataType: 'json',
 				async: true,
@@ -8410,7 +8410,7 @@ echo '</div>';//end div for form
 
 			BX.ajax({
 
-				url: '/bnpt/admin/sale_order_new.php',
+				url: '/bitrix/admin/sale_order_new.php',
 				method: 'post',
 				dataType: 'json',
 				async: true,

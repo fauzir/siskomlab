@@ -131,7 +131,7 @@ function getSiteInfo(domain)
 		else
 		{
 			var wnd = new BX.CAdminDialog({
-				content_url: "/bnpt/admin/seo_search_yandex_detail.php?lang="+BX.message('LANGUAGE_ID')+"&domain="+domain+"&bxpublic=Y"
+				content_url: "/bitrix/admin/seo_search_yandex_detail.php?lang="+BX.message('LANGUAGE_ID')+"&domain="+domain+"&bxpublic=Y"
 			});
 			wnd.Show();
 		}

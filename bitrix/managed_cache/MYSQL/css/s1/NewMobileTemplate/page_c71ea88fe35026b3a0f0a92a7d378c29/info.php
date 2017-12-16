@@ -1,1 +1,0 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/templates/NewMobileTemplate/components/bitrix/mobileapp.menu/mobile/style.css" => "15125358835514",), 'CUR_SEL_CNT' => '22', 'CUR_IE_CNT' => '0'); ?>

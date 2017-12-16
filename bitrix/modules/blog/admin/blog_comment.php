@@ -271,11 +271,11 @@ while ($arComment = $dbResultList->Fetch())
 	
 	$row->AddField("PUBLISH_STATUS", (($arComment["PUBLISH_STATUS"] == "P") ? GetMessage("BLB_YES") : GetMessage("BLB_NO")));
 	if(IntVal($arComment["AUTHOR_ID"]) > 0)
-		$row->AddField("AUTHOR_ID", "[<a href=\"/bnpt/admin/user_edit.php?ID=".$arComment["AUTHOR_ID"]."&lang=".LANG."\">".$arComment["AUTHOR_ID"]."</a>] ".htmlspecialcharsEx("(".$arComment["USER_LOGIN"].") ".$arComment["USER_NAME"]." ".$arComment["USER_LAST_NAME"]));
+		$row->AddField("AUTHOR_ID", "[<a href=\"/bitrix/admin/user_edit.php?ID=".$arComment["AUTHOR_ID"]."&lang=".LANG."\">".$arComment["AUTHOR_ID"]."</a>] ".htmlspecialcharsEx("(".$arComment["USER_LOGIN"].") ".$arComment["USER_NAME"]." ".$arComment["USER_LAST_NAME"]));
 	elseif(strlen($arComment["AUTHOR_NAME"]) > 0)
 		$row->AddField("AUTHOR_ID", htmlspecialcharsEx($arComment["AUTHOR_NAME"]." (".$arComment["AUTHOR_EMAIL"].")"));
 	if(IntVal($arComment["BLOG_ID"]) > 0)
-		$row->AddField("BLOG_ID", "[<a href=\"/bnpt/admin/blog_blog_edit.php?ID=".$arComment["BLOG_ID"]."&lang=".LANG."\">".$arComment["BLOG_ID"]."</a>] ".htmlspecialcharsEx($arComment["BLOG_NAME"].""));
+		$row->AddField("BLOG_ID", "[<a href=\"/bitrix/admin/blog_blog_edit.php?ID=".$arComment["BLOG_ID"]."&lang=".LANG."\">".$arComment["BLOG_ID"]."</a>] ".htmlspecialcharsEx($arComment["BLOG_NAME"].""));
 	if(Strlen($arComment["AUTHOR_IP"]) > 0)
 	{
 		$ip = GetWhoisLink($arComment["AUTHOR_IP"]).(strlen($arComment["AUTHOR_IP1"]) > 0 ? " / ".GetWhoisLink($arComment["AUTHOR_IP1"]) : "");

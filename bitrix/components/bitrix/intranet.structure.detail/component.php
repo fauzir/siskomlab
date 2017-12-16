@@ -32,7 +32,7 @@ if ($APPLICATION->GetShowIncludeAreas() && $USER->IsAdmin())
 		array(
 			'URL' => "javascript:".$APPLICATION->GetPopupLink(
 				array(
-					'URL' => "/bnpt/admin/user_edit.php?bxpublic=Y&from_module=intranet&lang=".LANGUAGE_ID."&ID=".$arParams['USER_ID'],
+					'URL' => "/bitrix/admin/user_edit.php?bxpublic=Y&from_module=intranet&lang=".LANGUAGE_ID."&ID=".$arParams['USER_ID'],
 					'PARAMS' => array(
 						'width' => 800,
 						'height' => 500,

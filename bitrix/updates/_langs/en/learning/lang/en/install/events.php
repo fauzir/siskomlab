@@ -31,7 +31,7 @@ Answer:
 ------------------------------------------
 
 To view and edit the answer, follow the link:
-http://#SERVER_NAME#/bnpt/admin/learn_test_result_edit.php?lang=en&ID=#ID#&ATTEMPT_ID=#ATTEMPT_ID#
+http://#SERVER_NAME#/bitrix/admin/learn_test_result_edit.php?lang=en&ID=#ID#&ATTEMPT_ID=#ATTEMPT_ID#
 
 This message has been generated automatically.";
 ?>

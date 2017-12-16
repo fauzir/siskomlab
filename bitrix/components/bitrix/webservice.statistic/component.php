@@ -314,7 +314,7 @@ class CStatisticWS extends IWebService
 			"TITLE" =>  htmlspecialchars(GetMessage("BX_WS_STAT_LF_TITLE")),
 			"MESSAGE" => htmlspecialchars($strStat),
 			"TEXT_MESSAGE" => htmlspecialchars($strStatText),
-			"URL" => htmlspecialchars($protocol."://".$server_name."/bnpt/admin/stat_list.php?lang=".$lang)
+			"URL" => htmlspecialchars($protocol."://".$server_name."/bitrix/admin/stat_list.php?lang=".$lang)
 		);
 
 		return $arResult;

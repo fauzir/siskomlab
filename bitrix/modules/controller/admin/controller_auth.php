@@ -45,7 +45,7 @@ if (
 	{
 		LocalRedirect($_GET["return_url"]);
 	}
-	LocalRedirect("/bnpt/admin/controller_auth.php?lang=".LANGUAGE_ID.($_GET["return_url"]? "&return_url=".urlencode($_GET["return_url"]): "")."&".$tabControl->ActiveTabParam());
+	LocalRedirect("/bitrix/admin/controller_auth.php?lang=".LANGUAGE_ID.($_GET["return_url"]? "&return_url=".urlencode($_GET["return_url"]): "")."&".$tabControl->ActiveTabParam());
 }
 
 $APPLICATION->SetTitle(GetMessage("CTRLR_AUTH_TITLE"));

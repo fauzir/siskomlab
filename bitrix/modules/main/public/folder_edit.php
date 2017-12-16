@@ -210,7 +210,7 @@ if($strWarning != "")
 	<p><b><?=GetMessage("FOLDER_EDIT_WINDOW_TITLE");?> <?=htmlspecialcharsbx($path);?></b></p>
 
 	<?if (IsModuleInstalled("fileman")):?>
-		<p><a href="/bnpt/admin/fileman_folder.php?lang=<?=urlencode($lang)?>&site=<?=urlencode($site)?>&path=<?=urlencode($path)?>&back_url=<?=urlencode($back_url)?>"><?=GetMessage("FOLDER_EDIT_IN_ADMIN_SECTION")?></a></p>
+		<p><a href="/bitrix/admin/fileman_folder.php?lang=<?=urlencode($lang)?>&site=<?=urlencode($site)?>&path=<?=urlencode($path)?>&back_url=<?=urlencode($back_url)?>"><?=GetMessage("FOLDER_EDIT_IN_ADMIN_SECTION")?></a></p>
 	<?endif?>
 
 <?

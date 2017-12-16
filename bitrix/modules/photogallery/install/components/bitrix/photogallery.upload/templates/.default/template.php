@@ -204,7 +204,7 @@ HTML;
 <?endif;
 
 if($arParams["SHOW_MAGIC_QUOTES_NOTICE_ADMIN"])
-	echo GetMessage("MAGIC_QUOTES_NOTICE_ADMIN", array("#URL#" => "/bnpt/admin/site_checker.php"))."<br/><br/>";
+	echo GetMessage("MAGIC_QUOTES_NOTICE_ADMIN", array("#URL#" => "/bitrix/admin/site_checker.php"))."<br/><br/>";
 elseif($arParams["SHOW_MAGIC_QUOTES_NOTICE"])
 	echo GetMessage("MAGIC_QUOTES_NOTICE")."<br/><br/>";
 /* ************** Select uploader type ************** */

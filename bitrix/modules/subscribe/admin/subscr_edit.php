@@ -46,9 +46,9 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && $POST_RIGHT>="W" &&
 	if($res)
 	{
 		if($apply!="")
-			LocalRedirect("/bnpt/admin/subscr_edit.php?ID=".$ID."&mess=ok&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/subscr_edit.php?ID=".$ID."&mess=ok&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bnpt/admin/subscr_admin.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/subscr_admin.php?lang=".LANG);
 	}
 	else
 	{

@@ -23,9 +23,9 @@ class CSaleBasketDiscountConvert extends CCatalogStepOperations
 			$sessID = self::SESSION_PREFIX.time();
 
 		if (Main\Config\Option::get('main', '~sale_converted_15', 'N') == 'Y')
-			$this->orderViewUrl = '/bnpt/admin/sale_order_view.php?ID=#ID#&lang='.LANGUAGE_ID;
+			$this->orderViewUrl = '/bitrix/admin/sale_order_view.php?ID=#ID#&lang='.LANGUAGE_ID;
 		else
-			$this->orderViewUrl = '/bnpt/admin/sale_order_detail.php?ID=#ID#&lang='.LANGUAGE_ID;
+			$this->orderViewUrl = '/bitrix/admin/sale_order_detail.php?ID=#ID#&lang='.LANGUAGE_ID;
 
 		parent::__construct($sessID, $maxExecutionTime, $maxOperationCounter);
 	}
@@ -173,7 +173,7 @@ class CSaleDiscountReindex extends CCatalogStepOperations
 		$sessID = (string)$sessID;
 		if ($sessID == '')
 			$sessID = self::SESSION_PREFIX.time();
-		$this->discountEditUrl = '/bnpt/admin/sale_discount_edit.php?ID=#ID#&lang='.LANGUAGE_ID;
+		$this->discountEditUrl = '/bitrix/admin/sale_discount_edit.php?ID=#ID#&lang='.LANGUAGE_ID;
 		parent::__construct($sessID, $maxExecutionTime, $maxOperationCounter);
 	}
 
@@ -288,7 +288,7 @@ class CSaleDiscountConvertExt extends CCatalogStepOperations
 		$sessID = (string)$sessID;
 		if ($sessID == '')
 			$sessID = self::SESSION_PREFIX.time();
-		$this->discountEditUrl = '/bnpt/admin/sale_discount_edit.php?ID=#ID#&lang='.LANGUAGE_ID;
+		$this->discountEditUrl = '/bitrix/admin/sale_discount_edit.php?ID=#ID#&lang='.LANGUAGE_ID;
 		parent::__construct($sessID, $maxExecutionTime, $maxOperationCounter);
 	}
 

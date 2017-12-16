@@ -1,4 +1,0 @@
-<?
-$MESS["B24_APPLICATION_GIPHYBOT"] = "Giphy Chat Bot";
-$MESS["B24_APPLICATION_PROPERTIESBOTUA"] = "Company Search Chat Bot";
-?>

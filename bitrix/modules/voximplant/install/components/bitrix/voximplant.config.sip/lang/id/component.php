@@ -1,4 +1,0 @@
-<?
-$MESS["VI_CONFIG_SIP_OFFICE_TITLE"] = "Penulis";
-$MESS["VI_CONFIG_SIP_CLOUD_TITLE"] = "Dibuat Pada";
-?>

@@ -241,11 +241,11 @@ if (
 					if (!empty($returnUrl))
 						LocalRedirect($returnUrl);
 					else
-						LocalRedirect('/bnpt/admin/cat_discount_admin.php?lang='.LANGUAGE_ID.GetFilterParams('filter_', false));
+						LocalRedirect('/bitrix/admin/cat_discount_admin.php?lang='.LANGUAGE_ID.GetFilterParams('filter_', false));
 				}
 				else
 				{
-					LocalRedirect('/bnpt/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$ID.GetFilterParams('filter_', false).'&'.$tabControl->ActiveTabParam());
+					LocalRedirect('/bitrix/admin/cat_discount_edit.php?lang='.LANGUAGE_ID.'&ID='.$ID.GetFilterParams('filter_', false).'&'.$tabControl->ActiveTabParam());
 				}
 			}
 		}
@@ -340,7 +340,7 @@ if (0 < $ID)
 				if (is_array($arMess) && !empty($arMess['BT_MOD_CAT_DSC_CONV_INVITE'][$strDefLang]))
 				{
 					$arFields = array(
-						"MESSAGE" => str_replace("#LINK#", '/bnpt/admin/cat_discount_convert.php', $arMess['BT_MOD_CAT_DSC_CONV_INVITE'][$strDefLang]),
+						"MESSAGE" => str_replace("#LINK#", '/bitrix/admin/cat_discount_convert.php', $arMess['BT_MOD_CAT_DSC_CONV_INVITE'][$strDefLang]),
 						"TAG" => "CATALOG_DISC_CONVERT",
 						"MODULE_ID" => "catalog",
 						"ENABLE_CLOSE" => "N"
@@ -350,7 +350,7 @@ if (0 < $ID)
 					{
 						if (empty($strMess))
 							continue;
-						$arLangMess[$strLangID] = str_replace("#LINK#", '/bnpt/admin/cat_discount_convert.php', $strMess);
+						$arLangMess[$strLangID] = str_replace("#LINK#", '/bitrix/admin/cat_discount_convert.php', $strMess);
 					}
 					if (!empty($arLangMess))
 						$arFields['LANG'] = $arLangMess;
@@ -390,7 +390,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CDEN_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/cat_discount_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_discount_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
 	)
 );
 
@@ -400,7 +400,7 @@ if ($ID > 0)
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CDEN_DCPN_LIST"),
-		"LINK" => "/bnpt/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID."&set_filter=Y&filter_discount_id=".$ID
+		"LINK" => "/bitrix/admin/cat_discount_coupon.php?lang=".LANGUAGE_ID."&set_filter=Y&filter_discount_id=".$ID
 	);
 
 	if (!$readOnly)
@@ -410,20 +410,20 @@ if ($ID > 0)
 		$aMenu[] = array(
 			"TEXT" => GetMessage("CDEN_NEW_DISCOUNT"),
 			"ICON" => "btn_new",
-			"LINK" => "/bnpt/admin/cat_discount_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
+			"LINK" => "/bitrix/admin/cat_discount_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
 		);
 		if (!$boolCopy)
 		{
 			$aMenu[] = array(
 				"TEXT"=>GetMessage("BT_CAT_DISCOUNT_EDIT_CONT_NAME_COPY"),
-				"LINK"=>"/bnpt/admin/cat_discount_edit.php?ID=".$ID."&action=copy&lang=".LANGUAGE_ID.GetFilterParams("filter_", false),
+				"LINK"=>"/bitrix/admin/cat_discount_edit.php?ID=".$ID."&action=copy&lang=".LANGUAGE_ID.GetFilterParams("filter_", false),
 				"ICON"=>"btn_copy",
 			);
 
 			$aMenu[] = array(
 				"TEXT" => GetMessage("CDEN_DELETE_DISCOUNT"),
 				"ICON" => "btn_delete",
-				"LINK" => "javascript:if(confirm('".GetMessageJS("CDEN_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bnpt/admin/cat_discount_admin.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+				"LINK" => "javascript:if(confirm('".GetMessageJS("CDEN_DELETE_DISCOUNT_CONFIRM")."')) window.location='/bitrix/admin/cat_discount_admin.php?action=delete&ID[]=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 				"WARNING" => "Y"
 			);
 		}
@@ -475,7 +475,7 @@ if ($boolCopy)
 }
 $tabControl->EndEpilogContent();
 $tabControl->Begin(array(
-	"FORM_ACTION" => '/bnpt/admin/cat_discount_edit.php?lang='.urlencode(LANGUAGE_ID),
+	"FORM_ACTION" => '/bitrix/admin/cat_discount_edit.php?lang='.urlencode(LANGUAGE_ID),
 ));
 
 $tabControl->BeginNextFormTab();
@@ -677,7 +677,7 @@ $tabControl->BeginNextFormTab();
 	$intDiscountID = ((0 == $ID) || ($boolCopy) ? '-'.$TMP_ID : $ID);
 	$strSubTMP_ID = $TMP_ID;
 	$boolCouponsReadOnly = !$USER->CanDoOperation('catalog_discount');
-	$strSubElementAjaxPath = '/bnpt/admin/cat_subcoupons_admin.php?lang='.LANGUAGE_ID.'&find_discount_id='.$intDiscountID.'&TMP_ID='.urlencode($strSubTMP_ID);
+	$strSubElementAjaxPath = '/bitrix/admin/cat_subcoupons_admin.php?lang='.LANGUAGE_ID.'&find_discount_id='.$intDiscountID.'&TMP_ID='.urlencode($strSubTMP_ID);
 	if (0 < $intDiscountID && $boolShowCoupons && !$boolCopy)
 	{
 		?><tr id="tr_COUPONS"><td colspan="2"><?
@@ -717,7 +717,7 @@ $tabControl->BeginNextFormTab();
 
 $arButtonsParams = array(
 	"disabled" => $readOnly,
-	"back_url" => "/bnpt/admin/cat_discount_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
+	"back_url" => "/bitrix/admin/cat_discount_admin.php?lang=".LANGUAGE_ID.GetFilterParams("filter_", false)
 );
 
 $tabControl->Buttons($arButtonsParams);

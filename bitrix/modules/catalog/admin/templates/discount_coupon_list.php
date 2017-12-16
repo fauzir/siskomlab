@@ -260,7 +260,7 @@ if (!(false == B_ADMIN_SUBCOUPONS_LIST && $bCopy))
 
 	while ($arCouponDiscount = $dbResultList->Fetch())
 	{
-		$edit_url = '/bnpt/admin/cat_subcoupon_edit.php?ID='.$arCouponDiscount['ID'].'&DISCOUNT_ID='.$intDiscountID.'&lang='.LANGUAGE_ID.'&TMP_ID='.$strSubTMP_ID;
+		$edit_url = '/bitrix/admin/cat_subcoupon_edit.php?ID='.$arCouponDiscount['ID'].'&DISCOUNT_ID='.$intDiscountID.'&lang='.LANGUAGE_ID.'&TMP_ID='.$strSubTMP_ID;
 
 		$arCouponDiscount['ID'] = (int)$arCouponDiscount['ID'];
 		if ($arSelectFieldsMap['CREATED_BY'])
@@ -319,7 +319,7 @@ if (!(false == B_ADMIN_SUBCOUPONS_LIST && $bCopy))
 			"TEXT" => GetMessage("DSC_UPDATE_ALT"),
 			"DEFAULT" => true,
 			"ACTION"=>"(new BX.CAdminDialog({
-				'content_url': '/bnpt/admin/cat_subcoupon_edit.php?ID=".$arCouponDiscount['ID']."&DISCOUNT_ID=".$intDiscountID."&lang=".LANGUAGE_ID."&TMP_ID=".$strSubTMP_ID."',
+				'content_url': '/bitrix/admin/cat_subcoupon_edit.php?ID=".$arCouponDiscount['ID']."&DISCOUNT_ID=".$intDiscountID."&lang=".LANGUAGE_ID."&TMP_ID=".$strSubTMP_ID."',
 				'content_post': 'bxpublic=Y',
 				'draggable': true,
 				'resizable': true,
@@ -353,7 +353,7 @@ if (!(false == B_ADMIN_SUBCOUPONS_LIST && $bCopy))
 			while ($arOneUser = $rsUsers->Fetch())
 			{
 				$arOneUser['ID'] = (int)$arOneUser['ID'];
-				$arUserList[$arOneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
+				$arUserList[$arOneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$arOneUser['ID'].'">'.CUser::FormatName($strNameFormat, $arOneUser).'</a>';
 			}
 		}
 
@@ -421,7 +421,7 @@ function ShowNewCoupons(id, multi)
 		sessid: BX.bitrix_sessid()
 	};
 	(new BX.CAdminDialog({
-		'content_url': '/bnpt/admin/cat_subcoupon_edit.php',
+		'content_url': '/bitrix/admin/cat_subcoupon_edit.php',
 		'content_post': PostParams,
 		'draggable': true,
 		'resizable': true,

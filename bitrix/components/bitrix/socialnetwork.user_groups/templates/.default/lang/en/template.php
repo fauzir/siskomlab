@@ -1,12 +1,12 @@
 <?
-$MESS["SONET_C36_T_GROUPS"] = "Groupsz";
+$MESS["SONET_C36_T_GROUPS"] = "Groups";
 $MESS["SONET_C36_T_INVITE"] = "Invite";
 $MESS["SONET_C36_T_NO_GROUPS"] = "No groups.";
 $MESS["SONET_C36_T_GR_UNAVAIL"] = "The list of groups is unavailable.";
 $MESS["SONET_C33_T_UPDATES"] = "View Recent Updates";
 $MESS["SONET_C33_T_IS_EXTRANET"] = " (extranet)";
 $MESS["SONET_C36_T_F_ALL"] = "All groups";
-$MESS["SONET_C33_T_F_MY"] = "My groupsz";
+$MESS["SONET_C33_T_F_MY"] = "My groups";
 $MESS["SONET_C33_T_F_TAGS"] = "By tags";
 $MESS["SONET_C36_T_NO_SEARCH_MODULE"] = "The Search module is not installed.";
 $MESS["SONET_C33_T_F_TITLE"] = "Search Groups";

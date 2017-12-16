@@ -332,7 +332,7 @@ require($documentRoot."/bitrix/modules/main/include/prolog_admin_after.php");
 $aMenu = array(
 	array(
 		"TEXT" => Loc::getMessage("SPSN_2FLIST"),
-		"LINK" => "/bnpt/admin/sale_pay_system.php?lang=".$context->getLanguage().GetFilterParams("filter_"),
+		"LINK" => "/bitrix/admin/sale_pay_system.php?lang=".$context->getLanguage().GetFilterParams("filter_"),
 		"ICON" => "btn_list"
 	)
 );
@@ -343,13 +343,13 @@ if ($id > 0 && $saleModulePermissions >= "W")
 
 	$aMenu[] = array(
 			"TEXT" => Loc::getMessage("SPSN_NEW_PAYSYS"),
-			"LINK" => "/bnpt/admin/sale_pay_system_edit.php?lang=".$context->getLanguage().GetFilterParams("filter_"),
+			"LINK" => "/bitrix/admin/sale_pay_system_edit.php?lang=".$context->getLanguage().GetFilterParams("filter_"),
 			"ICON" => "btn_new"
 		);
 
 	$aMenu[] = array(
 			"TEXT" => Loc::getMessage("SPSN_DELETE_PAYSYS"),
-			"LINK" => "javascript:if(confirm('".Loc::getMessage("SPSN_DELETE_PAYSYS_CONFIRM")."')) window.location='/bnpt/admin/sale_pay_system.php?action=delete&ID[]=".$id."&lang=".$context->getLanguage()."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".Loc::getMessage("SPSN_DELETE_PAYSYS_CONFIRM")."')) window.location='/bitrix/admin/sale_pay_system.php?action=delete&ID[]=".$id."&lang=".$context->getLanguage()."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y",
 			"ICON" => "btn_delete"
 		);
@@ -802,7 +802,7 @@ endif;
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bnpt/admin/sale_pay_system.php?lang=".$context->getLanguage().GetFilterParams("filter_")
+				"back_url" => "/bitrix/admin/sale_pay_system.php?lang=".$context->getLanguage().GetFilterParams("filter_")
 			)
 	);
 $tabControl->End();

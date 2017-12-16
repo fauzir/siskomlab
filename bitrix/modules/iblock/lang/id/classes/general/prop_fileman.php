@@ -1,7 +1,0 @@
-<?
-$MESS["IBLOCK_PROP_FILEMAN_VIEW"] = "Cari";
-$MESS["IBLOCK_PROP_FILEMAN_ADD"] = "Menambahkan";
-$MESS["IBLOCK_PROP_FILEMAN_DESCRIPTION_TITLE"] = "Property value description";
-$MESS["IBLOCK_PROP_FILEMAN_DESCRIPTION_LABEL"] = "Deskripsi";
-$MESS["IBLOCK_PROP_FILEMAN_DESC"] = "Link to file (on server)";
-?>

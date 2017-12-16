@@ -107,7 +107,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("FGN_2FLIST"),
-		"LINK" => "/bnpt/admin/forum_group.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bitrix/admin/forum_group.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_list"));
 
 if ($ID > 0 && $forumPermissions == "W")
@@ -115,15 +115,15 @@ if ($ID > 0 && $forumPermissions == "W")
 	$aMenu[] = array("SEPARATOR" => "Y");
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FGN_NEW_GROUP"),
-		"LINK" => "/bnpt/admin/forum_group_edit.php?PARENT_ID=".$ID."&lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bitrix/admin/forum_group_edit.php?PARENT_ID=".$ID."&lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_new");
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FGN_COPY_GROUP"),
-		"LINK" => "/bnpt/admin/forum_group_edit.php?".($ID > 0 ? "COPY_ID=".$ID."&" : "")."lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bitrix/admin/forum_group_edit.php?".($ID > 0 ? "COPY_ID=".$ID."&" : "")."lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_copy");
 	$aMenu[] = array(
 		"TEXT" => GetMessage("FGN_DELETE_GROUP"), 
-		"LINK" => "javascript:if(confirm('".GetMessage("FGN_DELETE_GROUP_CONFIRM")."')) window.location='/bnpt/admin/forum_group.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("FGN_DELETE_GROUP_CONFIRM")."')) window.location='/bitrix/admin/forum_group.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"ICON" => "btn_delete");
 }
 $context = new CAdminContextMenu($aMenu);
@@ -191,7 +191,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => ($forumPermissions < "W"),
-		"back_url" => "/bnpt/admin/forum_group.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"back_url" => "/bitrix/admin/forum_group.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		)
 	);
 $tabControl->End();

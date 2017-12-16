@@ -104,7 +104,7 @@ $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("VOTE_LIST"),
 		"TITLE" => GetMessage("VOTE_RECORDS_LIST"),
-		"LINK"	=> "/bnpt/admin/vote_channel_list.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/vote_channel_list.php?lang=".LANGUAGE_ID,
 		"ICON" => "btn_list"
 	)
 );
@@ -113,7 +113,7 @@ if ($ID>0)
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("VOTE_VOTES").($res["VOTES"] ? " [".$res["VOTES"]."]" : ""),
 		"TITLE"	=> GetMessage("VOTE_VOTES_TITLE"),
-		"LINK"	=> "/bnpt/admin/vote_list.php?lang=".LANGUAGE_ID."&find_channel_id=$ID&set_filter=Y",
+		"LINK"	=> "/bitrix/admin/vote_list.php?lang=".LANGUAGE_ID."&find_channel_id=$ID&set_filter=Y",
 	);
 
 	if ($VOTE_RIGHT=="W")
@@ -121,13 +121,13 @@ if ($ID>0)
 		$aMenu[] = array(
 			"TEXT"	=> GetMessage("VOTE_CREATE"),
 			"TITLE"	=> GetMessage("VOTE_CREATE_NEW_RECORD"),
-			"LINK"	=> "/bnpt/admin/vote_channel_edit.php?lang=".LANGUAGE_ID,
+			"LINK"	=> "/bitrix/admin/vote_channel_edit.php?lang=".LANGUAGE_ID,
 			"ICON" => "btn_new");
 
 		$aMenu[] = array(
 			"TEXT"	=> GetMessage("VOTE_DELETE"),
 			"TITLE"	=> GetMessage("VOTE_DELETE_RECORD"),
-			"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_DELETE_RECORD_CONFIRM")."')) window.location='/bnpt/admin/vote_channel_list.php?action=delete&ID=".$ID."&".bitrix_sessid_get()."&lang=".LANGUAGE_ID."';",
+			"LINK"	=> "javascript:if(confirm('".GetMessage("VOTE_DELETE_RECORD_CONFIRM")."')) window.location='/bitrix/admin/vote_channel_list.php?action=delete&ID=".$ID."&".bitrix_sessid_get()."&lang=".LANGUAGE_ID."';",
 			"ICON" => "btn_delete");
 	}
 
@@ -136,7 +136,7 @@ if ($ID>0)
 		$aMenu[] = array(
 			"TEXT"	=> GetMessage("VOTE_CREATE_VOTE"),
 			"TITLE"	=> GetMessage("VOTE_VOTE_ADD"),
-			"LINK"	=> "/bnpt/admin/vote_edit.php?lang=".LANGUAGE_ID."&CHANNEL_ID=$ID",
+			"LINK"	=> "/bitrix/admin/vote_edit.php?lang=".LANGUAGE_ID."&CHANNEL_ID=$ID",
 			"ICON" => "btn_new");
 	}
 }
@@ -195,7 +195,7 @@ $tabControl->BeginNextTab();
 			?>
 			<div class="adm-list-item">
 				<div class="adm-list-control"><input type="checkbox" name="SITE[]" value="<?=htmlspecialcharsex($sid)?>" id="<?=htmlspecialcharsex($sid)?>" class="typecheckbox" <?=$checked?> /></div>
-				<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo '[<a title="'.GetMessage("VOTE_SITE_EDIT").'" href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsbx($sid).'</a>]&nbsp;'.htmlspecialcharsex($arrS["NAME"])?></label></div>
+				<div class="adm-list-label"><label for="<?=htmlspecialcharsbx($sid)?>"><?echo '[<a title="'.GetMessage("VOTE_SITE_EDIT").'" href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsbx($sid).'</a>]&nbsp;'.htmlspecialcharsex($arrS["NAME"])?></label></div>
 			</div>
 			<?
 		endwhile;

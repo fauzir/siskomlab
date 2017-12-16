@@ -45,7 +45,7 @@ Comments:
 ---------------------------------------------------------------------------
 
 To view and edit the document click the link:
-http://#SERVER_NAME#/bnpt/admin/workflow_edit.php?lang=en&ID=#ID#
+http://#SERVER_NAME#/bitrix/admin/workflow_edit.php?lang=en&ID=#ID#
 
 Automatically generated message.
 ";
@@ -90,7 +90,7 @@ Comments:
 ---------------------------------------------------------------------------
 
 To view and edit the document visit link:
-http://#SERVER_NAME#/bnpt/admin/workflow_edit.php?lang=en&ID=#ID#
+http://#SERVER_NAME#/bitrix/admin/workflow_edit.php?lang=en&ID=#ID#
 
 Automatically generated message.
 ";
@@ -150,7 +150,7 @@ Comments:
 ---------------------------------------------------------------------------
 
 To view and edit the document visit link:
-http://#SERVER_NAME#/bnpt/admin/iblock_element_edit.php?lang=en&WF=Y&PID=#ID#&type=#IBLOCK_TYPE#&IBLOCK_ID=#IBLOCK_ID#&filter_section=#SECTION_ID#
+http://#SERVER_NAME#/bitrix/admin/iblock_element_edit.php?lang=en&WF=Y&PID=#ID#&type=#IBLOCK_TYPE#&IBLOCK_ID=#IBLOCK_ID#&filter_section=#SECTION_ID#
 
 Automatically generated message.
 ";
@@ -204,7 +204,7 @@ Comments:
 ---------------------------------------------------------------------------
 
 To view and edit the document visit link:
-http://#SERVER_NAME#/bnpt/admin/iblock_element_edit.php?lang=en&WF=Y&PID=#ID#&type=#IBLOCK_TYPE#&IBLOCK_ID=#IBLOCK_ID#&filter_section=#SECTION_ID#
+http://#SERVER_NAME#/bitrix/admin/iblock_element_edit.php?lang=en&WF=Y&PID=#ID#&type=#IBLOCK_TYPE#&IBLOCK_ID=#IBLOCK_ID#&filter_section=#SECTION_ID#
 
 Automatically generated message.
 ";

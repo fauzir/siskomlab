@@ -19,7 +19,7 @@ class CAllWorkflow
 		$flow_link_new = CWorkFlow::GetEditLink(array(SITE_ID, rtrim(GetDirPath($cur_page), "/")."/untitled.php"), $status_id, $status_title, "standart.php", LANGUAGE_ID, $cur_page_param);
 		$create_permission = $flow_link_new <> '' && $USER->CanDoFileOperation('fm_edit_in_workflow', array(SITE_ID, $cur_dir));
 		// Document history
-		$flow_link_hist = "/bnpt/admin/workflow_history_list.php?lang=".LANGUAGE_ID. "&find_filename=".urlencode($cur_page)."&find_filename_exact_match=Y&set_filter=Y";
+		$flow_link_hist = "/bitrix/admin/workflow_history_list.php?lang=".LANGUAGE_ID. "&find_filename=".urlencode($cur_page)."&find_filename_exact_match=Y&set_filter=Y";
 		$history_permission = $USER->CanDoFileOperation('fm_edit_in_workflow', array(SITE_ID, $cur_page));
 		// Current page
 		$flow_link_edit = CWorkFlow::GetEditLink(array(SITE_ID, $cur_page), $status_id, $status_title, "", LANGUAGE_ID, $cur_page_param);
@@ -90,7 +90,7 @@ class CAllWorkflow
 		// Document history
 		if($history_permission)
 		{
-			$flow_link_hist = "/bnpt/admin/workflow_history_list.php?lang=".LANGUAGE_ID. "&find_filename=".urlencode($cur_page)."&find_filename_exact_match=Y&set_filter=Y";
+			$flow_link_hist = "/bitrix/admin/workflow_history_list.php?lang=".LANGUAGE_ID. "&find_filename=".urlencode($cur_page)."&find_filename_exact_match=Y&set_filter=Y";
 			$APPLICATION->AddPanelButtonMenu("edit", array(
 				"SRC" => "/bitrix/images/workflow/history.gif",
 				"TEXT" => GetMessage("FLOW_PANEL_HISTORY"),
@@ -612,7 +612,7 @@ class CAllWorkflow
 					return "";
 			}
 
-			$link = "/bnpt/admin/workflow_edit.php?lang=".$lang."&site=".$SITE_ID."&fname=".$FILENAME;
+			$link = "/bitrix/admin/workflow_edit.php?lang=".$lang."&site=".$SITE_ID."&fname=".$FILENAME;
 			if (strlen($template)>0) $link .= "&template=".urlencode($template);
 			if (strlen($return_url)>0) $link .= "&return_url=".urlencode($return_url);
 			$z = CWorkflow::GetByFilename($FILENAME, $SITE_ID);

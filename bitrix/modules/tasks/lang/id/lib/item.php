@@ -1,4 +1,0 @@
-<?
-$MESS["TASKS_ITEM_SUBITEM_SAVE_ERROR"] = "Memilih";
-$MESS["TASKS_ITEM_UNKNOWN_FIELD"] = "Karakter gambar CAPTCHA";
-?>

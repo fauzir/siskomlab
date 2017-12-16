@@ -347,7 +347,7 @@ class FinalStep extends CBaseWizardStep
 				"SELECTABLE" => "Y",
 				"WEIGHT" => 100,
 			));
-			$this->location = '/bnpt/admin/cluster_slave_list.php?lang='.LANGUAGE_ID.'&group_id='.$group_id;
+			$this->location = '/bitrix/admin/cluster_slave_list.php?lang='.LANGUAGE_ID.'&group_id='.$group_id;
 		}
 	}
 }

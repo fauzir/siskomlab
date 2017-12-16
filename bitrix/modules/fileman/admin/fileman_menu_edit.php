@@ -249,10 +249,10 @@ else
 				if(strlen($back_url)>0)
 					LocalRedirect("/".ltrim($back_url, "/"));
 				else
-					LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
+					LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($path));
 			}
 			else
-				LocalRedirect("/bnpt/admin/fileman_menu_edit.php?".$addUrl."&site=".$site."&path=".UrlEncode($path)."&name=".$name);
+				LocalRedirect("/bitrix/admin/fileman_menu_edit.php?".$addUrl."&site=".$site."&path=".UrlEncode($path)."&name=".$name);
 		}
 	}
 }
@@ -693,7 +693,7 @@ $tabControl->BeginNextTab();
 	$tabControl->Buttons(
 		array(
 			"disabled" => false,
-			"back_url" => ((strlen($back_url)>0 && strpos($back_url, "/bnpt/admin/fileman_menu_edit.php")!==0) ? htmlspecialcharsex($back_url) : "/bnpt/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["FULL"]))
+			"back_url" => ((strlen($back_url)>0 && strpos($back_url, "/bitrix/admin/fileman_menu_edit.php")!==0) ? htmlspecialcharsex($back_url) : "/bitrix/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["FULL"]))
 		)
 	);
 	?>

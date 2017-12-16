@@ -1,7 +1,0 @@
-<?
-$MESS["LEACT_TITLE_ADD_ELEMENT_BUTTON"] = "Tambahkan Barang";
-$MESS["LEACT_DELETE_POPUP_TITLE"] = "Confirm Unlink";
-$MESS["LEACT_DELETE_POPUP_ACCEPT_BUTTON"] = "unlink";
-$MESS["LEACT_DELETE_POPUP_CANCEL_BUTTON"] = "Batal";
-$MESS["LEACT_TOOLBAR_ELEMENT_DELETE_WARNING"] = "Are you sure you want to unlink the item?";
-?>

@@ -45,7 +45,7 @@ class CIBlockPropertyTopicID
 				$value["VALUE"] = intVal($value["VALUE"]);
 				$arTopic = CForumTopic::GetByID($value["VALUE"]);
 				if ($arTopic)
-					$res = "[<a title='".GetMessage("IBLOCK_PROP_FORUM_VIEW_TOPIC")."' class='tablebodylink' href='/bnpt/admin/forum_topics.php?lang=".LANG."'>".intVal($arTopic["ID"])."</a>] (".htmlspecialcharsbx($arTopic["TITLE"]).") ";
+					$res = "[<a title='".GetMessage("IBLOCK_PROP_FORUM_VIEW_TOPIC")."' class='tablebodylink' href='/bitrix/admin/forum_topics.php?lang=".LANG."'>".intVal($arTopic["ID"])."</a>] (".htmlspecialcharsbx($arTopic["TITLE"]).") ";
 				else
 					$res = "&nbsp;".GetMessage("MAIN_NOT_FOUND");
 			}
@@ -101,7 +101,7 @@ class CIBlockPropertyTopicID
 	}
 }
 
-function FindTopicID($tag_name, $tag_value, $topic_name="", $form_name = "form1", $tag_size = "3", $tag_maxlength="", $button_value = "...", $tag_class="typeinput", $button_class="tablebodybutton", $search_page="/bnpt/admin/forum_topics_search.php")
+function FindTopicID($tag_name, $tag_value, $topic_name="", $form_name = "form1", $tag_size = "3", $tag_maxlength="", $button_value = "...", $tag_class="typeinput", $button_class="tablebodybutton", $search_page="/bitrix/admin/forum_topics_search.php")
 {
 	global $APPLICATION;
 	$form_name = trim($form_name);
@@ -145,7 +145,7 @@ top.Change".$tag_name_x." = function()
 			if (top.tv".$tag_name_x."!='')
 			{
 				DV_".$tag_name_x.".innerHTML = '<i>".GetMessage("MAIN_WAIT")."</i>';
-				top.BX('hiddenframe".$tag_name_js."').src='/bnpt/admin/get_topics.php?ID='+top.tv".$tag_name_x."+'&strName=".$tag_name_js."&lang=".LANG.(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")."';
+				top.BX('hiddenframe".$tag_name_js."').src='/bitrix/admin/get_topics.php?ID='+top.tv".$tag_name_x."+'&strName=".$tag_name_js."&lang=".LANG.(defined("ADMIN_SECTION") && ADMIN_SECTION===true?"&admin_section=Y":"")."';
 			}
 			else
 				DV_".$tag_name_x.".innerHTML = '';

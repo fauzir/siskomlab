@@ -65,7 +65,7 @@ if($USER->CanDoOperation('view_event_log'))
 {
 	$aMenu["items"][] = array(
 		"text" => GetMessage("SEC_MENU_FILTER_LOG_ITEM"),
-		"url" => "/bnpt/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_VIRUS&find_audit_type[]=SECURITY_FILTER_SQL&find_audit_type[]=SECURITY_FILTER_XSS&find_audit_type[]=SECURITY_FILTER_XSS2&find_audit_type[]=SECURITY_FILTER_PHP&find_audit_type[]=SECURITY_REDIRECT&find_audit_type[]=SECURITY_HOST_RESTRICTION&mod=security",
+		"url" => "/bitrix/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_VIRUS&find_audit_type[]=SECURITY_FILTER_SQL&find_audit_type[]=SECURITY_FILTER_XSS&find_audit_type[]=SECURITY_FILTER_XSS2&find_audit_type[]=SECURITY_FILTER_PHP&find_audit_type[]=SECURITY_REDIRECT&find_audit_type[]=SECURITY_HOST_RESTRICTION&mod=security",
 		"more_url" => Array("event_log.php?find_type=audit_type_id&mod=security"),
 		"title" => GetMessage("SEC_MENU_FILTER_LOG_TITLE"),
 	);
@@ -78,7 +78,7 @@ if(
 {
 	$aMenu["items"][] = array(
 		"text" => GetMessage("SEC_MENU_OTP_NEW_ITEM"),
-		"url" => "/bnpt/admin/security_otp.php?lang=".LANGUAGE_ID,
+		"url" => "/bitrix/admin/security_otp.php?lang=".LANGUAGE_ID,
 		"more_url" => Array("security_otp.php"),
 		"title" => GetMessage("SEC_MENU_OTP_NEW_ITEM_TITLE"),
 	);

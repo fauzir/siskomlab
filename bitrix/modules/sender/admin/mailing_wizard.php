@@ -898,7 +898,7 @@ if($step=='trig_mailing_group')
 		if(empty($arError))
 		{
 			$isPostedFormProcessed = true;
-			LocalRedirect('/bnpt/admin/sender_mailing_trig_edit.php?ID=' . $MAILING_ID . "&lang=".LANGUAGE_ID);
+			LocalRedirect('/bitrix/admin/sender_mailing_trig_edit.php?ID=' . $MAILING_ID . "&lang=".LANGUAGE_ID);
 		}
 
 	}

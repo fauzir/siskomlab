@@ -296,7 +296,7 @@ if(CRsaSecurity::Possible())
 	$arKeys = $sec->LoadKeys();
 
 	$mess = ($arKeys === false? GetMessage("MAIN_OPT_SECURE_KEY_NOT_FOUND") : GetMessage("MAIN_OPT_SECURE_KEY", array("#KEYLEN#"=>$arKeys["chunk"]*8)));
-	$mess .= '<br><br><input type="button" name="" value="'.GetMessage("MAIN_OPT_SECURE_GENKEY").'" onclick="window.location=\'/bnpt/admin/settings.php?GenKey=Y&lang='.LANGUAGE_ID.'&mid='.urlencode($mid).'&'.bitrix_sessid_get().'&tabControl_active_tab=edit6\'">';
+	$mess .= '<br><br><input type="button" name="" value="'.GetMessage("MAIN_OPT_SECURE_GENKEY").'" onclick="window.location=\'/bitrix/admin/settings.php?GenKey=Y&lang='.LANGUAGE_ID.'&mid='.urlencode($mid).'&'.bitrix_sessid_get().'&tabControl_active_tab=edit6\'">';
 
 	$arAllOptions["auth"][] = Array("", GetMessage("MAIN_OPT_SECURE_KEY_LABEL"), $mess, Array("statichtml"));
 
@@ -313,7 +313,7 @@ $arAllOptions["auth"][] = Array("new_user_registration", GetMessage("MAIN_REGIST
 $arAllOptions["auth"][] = Array("captcha_registration", GetMessage("MAIN_OPTION_FNAME_CAPTCHA"), "N", Array("checkbox", "Y"));
 $arAllOptions["auth"][] = Array("new_user_registration_def_group", GetMessage("MAIN_REGISTER_GROUP"), "", Array("multiselectbox", $groups));
 $arAllOptions["auth"][] = Array("new_user_email_required", GetMessage("MAIN_OPTION_EMAIL_REQUIRED"), "Y", Array("checkbox", "Y", 'onclick="BxReqEmail(this)"'));
-$arAllOptions["auth"][] = Array("new_user_registration_email_confirmation", GetMessage("MAIN_REGISTER_EMAIL_CONFIRMATION", array("#EMAIL_TEMPLATES_URL#" => "/bnpt/admin/message_admin.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type_id=NEW_USER_CONFIRM")), "N", Array("checkbox", "Y"));
+$arAllOptions["auth"][] = Array("new_user_registration_email_confirmation", GetMessage("MAIN_REGISTER_EMAIL_CONFIRMATION", array("#EMAIL_TEMPLATES_URL#" => "/bitrix/admin/message_admin.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type_id=NEW_USER_CONFIRM")), "N", Array("checkbox", "Y"));
 $arAllOptions["auth"][] = Array("new_user_registration_cleanup_days", GetMessage("MAIN_REGISTER_CLEANUP_DAYS"), "7", Array("text", 5));
 $arAllOptions["auth"][] = Array("new_user_email_uniq_check", GetMessage("MAIN_REGISTER_EMAIL_UNIQ_CHECK").($bEmailIndex? "<br>".GetMessage("MAIN_REGISTER_EMAIL_INDEX_WARNING"): ""), "N", Array("checkbox", "Y"));
 
@@ -418,7 +418,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST" && strlen($_POST["Update"])>0 && ($USER->C
 	if($_REQUEST["back_url_settings"] <> "" && $_REQUEST["Apply"] == "")
 		LocalRedirect($_REQUEST["back_url_settings"]);
 	else
-		LocalRedirect("/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=".urlencode($mid)."&tabControl_active_tab=".urlencode($_REQUEST["tabControl_active_tab"])."&back_url_settings=".urlencode($_REQUEST["back_url_settings"]));
+		LocalRedirect("/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=".urlencode($mid)."&tabControl_active_tab=".urlencode($_REQUEST["tabControl_active_tab"])."&back_url_settings=".urlencode($_REQUEST["back_url_settings"]));
 }
 
 if($SET_LICENSE_KEY == "")
@@ -570,7 +570,7 @@ foreach($arGROUPS as $value):
 	$arUsedGroups[$value["ID"]] = true;
 ?>
 	<tr valign="top">
-		<td><?=$value["NAME"]." [<a title=\"".GetMessage("MAIN_USER_GROUP_TITLE")."\" href=\"/bnpt/admin/group_edit.php?ID=".$value["ID"]."&amp;lang=".LANGUAGE_ID."\">".$value["ID"]."</a>]:"?></td>
+		<td><?=$value["NAME"]." [<a title=\"".GetMessage("MAIN_USER_GROUP_TITLE")."\" href=\"/bitrix/admin/group_edit.php?ID=".$value["ID"]."&amp;lang=".LANGUAGE_ID."\">".$value["ID"]."</a>]:"?></td>
 		<td>
 		<?
 		echo SelectBoxFromArray("TASKS_".$value["ID"], $arTasks, $v, GetMessage("MAIN_DEFAULT"), 'onchange="taskSelectOnchange(this)"');
@@ -733,7 +733,7 @@ if(
 		if($_POST["controller_login"] == '' || $_POST["controller_password"] == '')
 		{
 			list($member_id, $member_secret_id, $ticket_id) = CControllerClient::InitTicket($_POST["controller_url"]);
-			LocalRedirect($_POST["controller_url"]."/bnpt/admin/controller_member_edit.php?lang=".LANGUAGE_ID.'&URL='.urlencode($_POST["site_url"]).'&NAME='.urlencode($_POST["site_name"]).'&MEMBER_ID='.$member_id.'&SECRET_ID='.$member_secret_id.'&TICKET_ID='.$ticket_id.'&back_url='.urlencode(($APPLICATION->IsHTTPS()?"https://":"http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
+			LocalRedirect($_POST["controller_url"]."/bitrix/admin/controller_member_edit.php?lang=".LANGUAGE_ID.'&URL='.urlencode($_POST["site_url"]).'&NAME='.urlencode($_POST["site_name"]).'&MEMBER_ID='.$member_id.'&SECRET_ID='.$member_secret_id.'&TICKET_ID='.$ticket_id.'&back_url='.urlencode(($APPLICATION->IsHTTPS()?"https://":"http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
 		}
 		else
 		{
@@ -763,7 +763,7 @@ if(
 	$controller_url = COption::GetOptionString("main", "controller_url", "");
 	if($_POST["controller_login"] == '' || $_POST["controller_password"] == '')
 	{
-		LocalRedirect($controller_url."/bnpt/admin/controller_member_edit.php?lang=".LANGUAGE_ID.'&act=unregister&member_id='.urlencode(COption::GetOptionString("main", "controller_member_id", "")).'&back_url='.urlencode(($APPLICATION->IsHTTPS()?"https://":"http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
+		LocalRedirect($controller_url."/bitrix/admin/controller_member_edit.php?lang=".LANGUAGE_ID.'&act=unregister&member_id='.urlencode(COption::GetOptionString("main", "controller_member_id", "")).'&back_url='.urlencode(($APPLICATION->IsHTTPS()?"https://":"http://").$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
 	}
 	else
 	{
@@ -1123,7 +1123,7 @@ function DoNext(name, id, recount)
 			result['done'] = false;
 			if (recount == 'begin')
 				str = '&recount=begin';
-			document.getElementById('frame_disk_quota').src='/bnpt/admin/quota.php?name=' + id + '&id=' + name + str + '&<?echo bitrix_sessid_get()?>';
+			document.getElementById('frame_disk_quota').src='/bitrix/admin/quota.php?name=' + id + '&id=' + name + str + '&<?echo bitrix_sessid_get()?>';
 		}
 	}
 	else

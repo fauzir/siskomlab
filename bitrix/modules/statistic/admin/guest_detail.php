@@ -71,7 +71,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_popup_adm
 	</tr>
 	<tr>
 		<td valign="top" nowrap><?echo GetMessage("STAT_TO")?></td>
-		<td valign="top"><?if (strlen($f_FIRST_SITE_ID)>0):?>[<a title="<?=GetMessage("STAT_SITE")?>" href="/bnpt/admin/site_edit.php?LID=<?=$f_FIRST_SITE_ID?>&lang=<?=LANGUAGE_ID?>"><?=$f_FIRST_SITE_ID?></a>]&nbsp;<?endif;?>&nbsp;<?echo StatAdminListFormatURL($arGuest["FIRST_URL_TO"], array(
+		<td valign="top"><?if (strlen($f_FIRST_SITE_ID)>0):?>[<a title="<?=GetMessage("STAT_SITE")?>" href="/bitrix/admin/site_edit.php?LID=<?=$f_FIRST_SITE_ID?>&lang=<?=LANGUAGE_ID?>"><?=$f_FIRST_SITE_ID?></a>]&nbsp;<?endif;?>&nbsp;<?echo StatAdminListFormatURL($arGuest["FIRST_URL_TO"], array(
 			"new_window" => true,
 			"attention" => $f_FIRST_URL_TO_404=="Y",
 			"chars_per_line" => 40,
@@ -119,7 +119,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_popup_adm
 	<? endif; ?>
 	<tr>
 		<td valign="top" nowrap><?echo GetMessage("STAT_LAST_PAGE")?></td>
-		<td valign="top"><?if (strlen($f_LAST_SITE_ID)>0):?>[<a title="<?=GetMessage("STAT_SITE")?>" href="/bnpt/admin/site_edit.php?LID=<?=$f_LAST_SITE_ID?>&amp;lang=<?=LANGUAGE_ID?>"><?=$f_LAST_SITE_ID?></a>]&nbsp;<?endif;?>&nbsp;<?echo StatAdminListFormatURL($arGuest["LAST_URL_LAST"], array(
+		<td valign="top"><?if (strlen($f_LAST_SITE_ID)>0):?>[<a title="<?=GetMessage("STAT_SITE")?>" href="/bitrix/admin/site_edit.php?LID=<?=$f_LAST_SITE_ID?>&amp;lang=<?=LANGUAGE_ID?>"><?=$f_LAST_SITE_ID?></a>]&nbsp;<?endif;?>&nbsp;<?echo StatAdminListFormatURL($arGuest["LAST_URL_LAST"], array(
 			"new_window" => true,
 			"attention" => $f_LAST_URL_LAST_404=="Y",
 			"chars_per_line" => 40,

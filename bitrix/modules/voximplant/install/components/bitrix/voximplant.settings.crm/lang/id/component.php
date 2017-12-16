@@ -1,4 +1,0 @@
-<?
-$MESS["VI_CRM_INTEGRATION_WORKFLOW_EXECUTION_IMMEDIATE"] = "Pengaturan dokumen saat ini";
-$MESS["VI_CRM_INTEGRATION_WORKFLOW_EXECUTION_DEFERRED"] = "Kembali ke daftar";
-?>

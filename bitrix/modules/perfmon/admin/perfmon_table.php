@@ -351,7 +351,7 @@ if ($bDelete)
 				{
 					$aContext[] = array(
 						"TEXT" => GetMessage("MAIN_ADD"),
-						"LINK" => "/bnpt/admin/perfmon_row_edit.php?lang=".LANGUAGE_ID."&table_name=".urlencode($table_name),
+						"LINK" => "/bitrix/admin/perfmon_row_edit.php?lang=".LANGUAGE_ID."&table_name=".urlencode($table_name),
 						"ICON" => "btn_new",
 					);
 					break;

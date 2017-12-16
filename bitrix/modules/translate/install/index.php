@@ -61,7 +61,7 @@ Class translate extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin", true, true);
+			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/images", $_SERVER["DOCUMENT_ROOT"]."/bitrix/images/translate", true, true);
 			CopyDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/themes", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes", true, true);
 		}
@@ -70,7 +70,7 @@ Class translate extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/admin", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 		DeleteDirFilesEx("/bitrix/images/translate/");
 		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/translate/install/themes/.default/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/themes/.default");//css
 		DeleteDirFilesEx("/bitrix/themes/.default/icons/translate/");//icons

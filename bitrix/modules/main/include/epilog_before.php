@@ -38,7 +38,7 @@ if($BX_GLOBAL_AREA_EDIT_ICON == true)
 			"ALT"=>GetMessage("main_epilog_before_menu_edit_title"),
 			"ICON"=>"bx-context-toolbar-edit-icon",
 			"URL"=> 'javascript:'.$APPLICATION->GetPopupLink(Array(
-				"URL"=> "/bnpt/admin/public_file_edit.php?bxpublic=Y&lang=".LANGUAGE_ID."&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encUri."&templateID=".$encSiteTemplateId,
+				"URL"=> "/bitrix/admin/public_file_edit.php?bxpublic=Y&lang=".LANGUAGE_ID."&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encUri."&templateID=".$encSiteTemplateId,
 				"PARAMS"=>array(
 					"width" => 770,
 					"height" => 470,
@@ -55,7 +55,7 @@ if($BX_GLOBAL_AREA_EDIT_ICON == true)
 					"TITLE"=>GetMessage("main_epilog_before_menu_edit_html_title"),
 					"ICON"=>"panel-edit-text",
 					"ACTION"=>'javascript:'.$APPLICATION->GetPopupLink(Array(
-						"URL"=>"/bnpt/admin/public_file_edit.php?bxpublic=Y&lang=".LANGUAGE_ID."&noeditor=Y&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encUri,
+						"URL"=>"/bitrix/admin/public_file_edit.php?bxpublic=Y&lang=".LANGUAGE_ID."&noeditor=Y&path=".$encCurrentFilePath."&site=".SITE_ID."&back_url=".$encUri,
 						"PARAMS"=>array("width"=>770, "height"=>470))
 					),
 				),
@@ -65,7 +65,7 @@ if($BX_GLOBAL_AREA_EDIT_ICON == true)
 					"TITLE"=>GetMessage("main_epilog_before_menu_prop_title"),
 					"ICON"=>"panel-file-props",
 					"ACTION"=> 'javascript:'.$APPLICATION->GetPopupLink(Array(
-						"URL"=>"/bnpt/admin/public_file_property.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&back_url=".$encUri,
+						"URL"=>"/bitrix/admin/public_file_property.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".$encCurrentFilePath."&back_url=".$encUri,
 						"PARAMS" => Array("min_width"=>450, "min_height" => 250))
 					),
 				),

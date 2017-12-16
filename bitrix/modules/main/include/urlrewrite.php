@@ -163,10 +163,10 @@ if (!CHTTP::isPathTraversalUri($_SERVER["REQUEST_URI"]))
 }
 
 //admin section 404
-if(strpos($requestUri, "/bnpt/admin/") === 0)
+if(strpos($requestUri, "/bitrix/admin/") === 0)
 {
-	$_SERVER["REAL_FILE_PATH"] = "/bnpt/admin/404.php";
-	include($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/404.php");
+	$_SERVER["REAL_FILE_PATH"] = "/bitrix/admin/404.php";
+	include($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/404.php");
 	die();
 }
 

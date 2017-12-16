@@ -38,13 +38,13 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $arMenu = array(
 	array(
 		"TEXT" => GetMessage("SUP_CHECK_UPDATES"),
-		"LINK" => "/bnpt/admin/update_system_partner.php?refresh=Y&amp;lang=".LANGUAGE_ID."&amp;addmodule=".urlencode($myaddmodule),
+		"LINK" => "/bitrix/admin/update_system_partner.php?refresh=Y&amp;lang=".LANGUAGE_ID."&amp;addmodule=".urlencode($myaddmodule),
 		"ICON" => "btn_update_partner",
 	),
 	array("SEPARATOR" => "Y"),
 	array(
 		"TEXT" => GetMessage("SUP_SETTINGS"),
-		"LINK" => "/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=main&tabControl_active_tab=edit5&back_url_settings=%2Fbitrix%2Fadmin%2Fupdate_system_partner.php%3Flang%3D".LANGUAGE_ID."",
+		"LINK" => "/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=main&tabControl_active_tab=edit5&back_url_settings=%2Fbitrix%2Fadmin%2Fupdate_system_partner.php%3Flang%3D".LANGUAGE_ID."",
 	),
 );
 
@@ -239,7 +239,7 @@ $tabControl->BeginNextTab();
 						}
 
 						updRand++;
-						CHttpRequest.Send('/bnpt/admin/update_system_partner_act.php?query_type=register&<?= bitrix_sessid_get() ?>&updRand=' + updRand);
+						CHttpRequest.Send('/bitrix/admin/update_system_partner_act.php?query_type=register&<?= bitrix_sessid_get() ?>&updRand=' + updRand);
 					}
 					//-->
 					</SCRIPT>
@@ -452,7 +452,7 @@ $tabControl->BeginNextTab();
 					}
 
 					updRand++;
-					CHttpRequest.Send('/bnpt/admin/update_system_partner_call.php?' + aStrParams + "&<?= bitrix_sessid_get() ?>&query_type=" + param + "&updRand=" + updRand);
+					CHttpRequest.Send('/bitrix/admin/update_system_partner_call.php?' + aStrParams + "&<?= bitrix_sessid_get() ?>&query_type=" + param + "&updRand=" + updRand);
 				}
 
 				function InstallUpdatesDoStep(data)
@@ -523,7 +523,7 @@ $tabControl->BeginNextTab();
 									if(document.getElementById('md_name_'+moduleNew[i]))
 									{
 										n = document.getElementById('md_name_'+moduleNew[i]).value;
-										updSuccessDivText.innerHTML += '<br />' + n +'&nbsp;&nbsp;<input type="button" onclick="window.open(\'/bnpt/admin/partner_modules.php?lang=<?=LANGUAGE_ID?>&amp;id='+moduleNew[i]+'&amp;install=Y&amp;<?=bitrix_sessid_get()?>\');" value="<?=GetMessageJS("SUP_SU_UPD_MP_NEW_INST")?>">';
+										updSuccessDivText.innerHTML += '<br />' + n +'&nbsp;&nbsp;<input type="button" onclick="window.open(\'/bitrix/admin/partner_modules.php?lang=<?=LANGUAGE_ID?>&amp;id='+moduleNew[i]+'&amp;install=Y&amp;<?=bitrix_sessid_get()?>\');" value="<?=GetMessageJS("SUP_SU_UPD_MP_NEW_INST")?>">';
 									}
 								}
 								updSuccessDivText.innerHTML += '<br /><br /><?=GetMessageJS("SUP_SU_UPD_MP_NEW2");?>';
@@ -1217,7 +1217,7 @@ $tabControl->BeginNextTab();
 					if (param.length > 0)
 					{
 						updRand++;
-						CHttpRequest.Send('/bnpt/admin/update_system_partner_act.php?query_type=coupon&<?= bitrix_sessid_get() ?>&COUPON=' + escape(param) + "&updRand=" + updRand);
+						CHttpRequest.Send('/bitrix/admin/update_system_partner_act.php?query_type=coupon&<?= bitrix_sessid_get() ?>&COUPON=' + escape(param) + "&updRand=" + updRand);
 					}
 					else
 					{

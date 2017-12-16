@@ -161,7 +161,7 @@ while ($arRecurring = $dbResultList->NavNext(true, "f_"))
 
 	$row->AddField("ID", $f_ID);
 
-	$fieldValue  = "[<a href=\"/bnpt/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\">".$f_USER_ID."</a>] ";
+	$fieldValue  = "[<a href=\"/bitrix/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\">".$f_USER_ID."</a>] ";
 	$fieldValue .= htmlspecialcharsEx($arRecurring["USER_NAME"].((strlen($arRecurring["USER_NAME"])<=0 || strlen($arRecurring["USER_LAST_NAME"])<=0) ? "" : " ").$arRecurring["USER_LAST_NAME"])."<br>";
 	$fieldValue .= htmlspecialcharsEx($arRecurring["USER_LOGIN"])."&nbsp;&nbsp;&nbsp; ";
 	$fieldValue .= "<a href=\"mailto:".htmlspecialcharsbx($arRecurring["USER_EMAIL"])."\">".htmlspecialcharsEx($arRecurring["USER_EMAIL"])."</a>";

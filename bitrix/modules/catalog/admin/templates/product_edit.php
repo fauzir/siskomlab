@@ -1806,7 +1806,7 @@ function CloneBarcodeField()
 						?>
 					</select>
 				<?else:
-					echo GetMessage("C2IT_MEASURE_NO_MEASURE"); ?> <a href="/bnpt/admin/cat_measure_list.php?lang=<? echo LANGUAGE_ID; ?>"><? echo GetMessage("C2IT_MEASURES"); ?></a><br><?
+					echo GetMessage("C2IT_MEASURE_NO_MEASURE"); ?> <a href="/bitrix/admin/cat_measure_list.php?lang=<? echo LANGUAGE_ID; ?>"><? echo GetMessage("C2IT_MEASURES"); ?></a><br><?
 				endif;?>
 			</td>
 		</tr>
@@ -2181,7 +2181,7 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 	{
 		?>
 		<tr>
-			<td colspan="3"><? echo GetMessage("C2IT_NO_USER_GROUPS1")?> <a href="/bnpt/admin/settings.php?mid=catalog&lang=<? echo LANGUAGE_ID; ?>"><?echo GetMessage("C2IT_NO_USER_GROUPS2")?></a>.</td>
+			<td colspan="3"><? echo GetMessage("C2IT_NO_USER_GROUPS1")?> <a href="/bitrix/admin/settings.php?mid=catalog&lang=<? echo LANGUAGE_ID; ?>"><?echo GetMessage("C2IT_NO_USER_GROUPS2")?></a>.</td>
 		</tr>
 		<?
 	}
@@ -2212,11 +2212,11 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 	else
 	{
 		$showDiscountUrl = $bDiscount;
-		$discountUrl = '/bnpt/admin/cat_discount_edit.php?ID=';
+		$discountUrl = '/bitrix/admin/cat_discount_edit.php?ID=';
 		if (Main\ModuleManager::isModuleInstalled('sale') && (string)Main\Config\Option::get('sale', 'use_sale_discount_only') == 'Y')
 		{
 			$showDiscountUrl = ($APPLICATION->GetGroupRight('sale') >= 'W');
-			$discountUrl = '/bnpt/admin/sale_discount_edit.php?ID=';
+			$discountUrl = '/bitrix/admin/sale_discount_edit.php?ID=';
 		}
 		?><table border="0" cellspacing="0" cellpadding="0" class="internal" align="center" width="100%">
 		<tr class="heading">
@@ -2340,8 +2340,8 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 			if ($bStore)
 			{
 				$storeId = $row['ID'];
-				$address = ('' != $row['ADDRESS'] ? htmlspecialcharsbx($row['ADDRESS']) : '<a href="/bnpt/admin/cat_store_edit.php?ID='.$row['ID'].'&lang='.LANGUAGE_ID.'">'.GetMessage("C2IT_EDIT").'</a>');
-				$storeUrl = '<a href="/bnpt/admin/cat_store_edit.php?ID='.$row['ID'].'&lang='.LANGUAGE_ID.'">'.$storeUrl.'</a>';
+				$address = ('' != $row['ADDRESS'] ? htmlspecialcharsbx($row['ADDRESS']) : '<a href="/bitrix/admin/cat_store_edit.php?ID='.$row['ID'].'&lang='.LANGUAGE_ID.'">'.GetMessage("C2IT_EDIT").'</a>');
+				$storeUrl = '<a href="/bitrix/admin/cat_store_edit.php?ID='.$row['ID'].'&lang='.LANGUAGE_ID.'">'.$storeUrl.'</a>';
 			}
 			?><tr>
 			<td style="text-align:center;"><?=$storeUrl; ?></td>
@@ -2363,7 +2363,7 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 	{
 		if ($bStore)
 		{
-			?><b><? echo GetMessage("C2IT_STORE_NO_STORE"); ?> <a href="/bnpt/admin/cat_store_list.php?lang=<? echo LANGUAGE_ID; ?>"><? echo GetMessage("C2IT_STORE"); ?></a></b><br><?
+			?><b><? echo GetMessage("C2IT_STORE_NO_STORE"); ?> <a href="/bitrix/admin/cat_store_list.php?lang=<? echo LANGUAGE_ID; ?>"><? echo GetMessage("C2IT_STORE"); ?></a></b><br><?
 		}
 	}
 	if (!$bUseStoreControl)
@@ -2503,7 +2503,7 @@ if ('Y' == $arMainCatalog['SUBSCRIPTION']):
 				<tr>
 					<td width="40%" class="field-name"><?=GetMessage('C2IT_LIST_SUBSCRIPTIONS')?></td>
 					<td width="60%">
-						<a href="/bnpt/admin/cat_subscription_list.php?ITEM_ID=<?=htmlspecialcharsbx($PRODUCT_ID)?>
+						<a href="/bitrix/admin/cat_subscription_list.php?ITEM_ID=<?=htmlspecialcharsbx($PRODUCT_ID)?>
 							&lang=<?=LANGUAGE_ID?>" target="_blank">
 							<?=GetMessage('C2IT_LIST_SUBSCRIPTIONS_TEXT')?>
 						</a>

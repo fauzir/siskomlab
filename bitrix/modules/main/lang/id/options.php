@@ -183,7 +183,7 @@ $MESS["MAIN_OPT_EXT_NOTE"] = "Install <a href=\"http://www.php.net/manual/en/boo
 $MESS["MAIN_OPT_SECURE_KEY_SUCCESS"] = "The encryption key has been generated successfully.";
 $MESS["MAIN_OPT_SECURE_KEY_ERROR"] = "Error generating the encryption key.";
 $MESS["MAIN_OPT_BX_FAST_DOWNLOAD"] = "Fast file download using nginx";
-$MESS["MAIN_OPT_BX_FAST_DOWNLOAD_HINT"] = "<a href=\"http://www.bitrixsoft.com/support/training/course/index.php?COURSE_ID=22&CHAPTER_ID=04277\">Two-tier configuration</a> enables a web sever send files to a client faster using <a href=\"http://wiki.nginx.org/X-accel\">nginx</a>. <a href=\"/bnpt/admin/site_checker.php\">Site Check</a> will let you know if your server supports this feature.<br><a href=\"http://www.bitrixsoft.com/products/virtual_appliance/\">Bitrix Virtual Appliance</a> supports it by default.";
+$MESS["MAIN_OPT_BX_FAST_DOWNLOAD_HINT"] = "<a href=\"http://www.bitrixsoft.com/support/training/course/index.php?COURSE_ID=22&CHAPTER_ID=04277\">Two-tier configuration</a> enables a web sever send files to a client faster using <a href=\"http://wiki.nginx.org/X-accel\">nginx</a>. <a href=\"/bitrix/admin/site_checker.php\">Site Check</a> will let you know if your server supports this feature.<br><a href=\"http://www.bitrixsoft.com/products/virtual_appliance/\">Bitrix Virtual Appliance</a> supports it by default.";
 $MESS["main_sett_add_users"] = "Tambahkan Pengguna";
 $MESS["main_sett_public_panel"] = "Public Section Toolbar";
 $MESS["main_sett_public_panel_show"] = "Always show toolbar for users:";

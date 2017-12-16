@@ -114,7 +114,7 @@ while ($arCCard = $dbResultList->NavNext(true, "f_"))
 {
 	$row =& $lAdmin->AddRow($f_ID, $arCCard);
 
-	$row->AddField("ID", "<a href=\"/bnpt/admin/sale_status_edit.php?ID=".$f_ID."&lang=".LANG.GetFilterParams("filter_")."\" title=\"".GetMessage("SALE_EDIT_DESCR")."\">".$f_ID."</a>");
+	$row->AddField("ID", "<a href=\"/bitrix/admin/sale_status_edit.php?ID=".$f_ID."&lang=".LANG.GetFilterParams("filter_")."\" title=\"".GetMessage("SALE_EDIT_DESCR")."\">".$f_ID."</a>");
 	$row->AddField("SORT", $f_SORT);
 	$row->AddField("NAME", $f_NAME."<br><small>".$f_DESCRIPTION."</small><br>");
 	$row->AddField(
@@ -126,7 +126,7 @@ while ($arCCard = $dbResultList->NavNext(true, "f_"))
 		($f_TYPE == 'D' ? GetMessage('SSEN_TYPE_D') :
 		'Invalid '.$f_TYPE)));
 	$row->AddField("NOTIFY", $f_NOTIFY == 'Y'
-		? '<a href="/bnpt/admin/message_admin.php?find_event_type=SALE_STATUS_CHANGED_'.$f_ID.'" target="_blank">'.GetMessage('SSAN_NOTIFY_Y').'</a>'
+		? '<a href="/bitrix/admin/message_admin.php?find_event_type=SALE_STATUS_CHANGED_'.$f_ID.'" target="_blank">'.GetMessage('SSAN_NOTIFY_Y').'</a>'
 		: GetMessage('SSAN_NOTIFY_N'));
 
 	$arActions = Array();

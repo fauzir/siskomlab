@@ -22,9 +22,9 @@ $MESS["FINISH_STEP_CONTENT"] = "<b>Â³òàºìî!</b><br />
 <ul>
 <li>êàòàëîãó Active Directory/LDAP;</li>
 <li>ïðîãðàìíîãî êîìïëåêñó &laquo;1Ñ: Çàðïëàòà ³ óïðàâë³ííÿ ïåðñîíàëîì&raquo;;</li>
-<li>àáî ôàéëó äàíèõ ó ôîðìàò³ CSV (<a href=\"/bnpt/admin/user_import.php?getSample=csv\">ïðèêëàä ôàéëó</a>).</li>
+<li>àáî ôàéëó äàíèõ ó ôîðìàò³ CSV (<a href=\"/bitrix/admin/user_import.php?getSample=csv\">ïðèêëàä ôàéëó</a>).</li>
 </ul>
-<div><a href=\"/bnpt/admin/user_import.php?lang=ua\" target=\"_blank\"><span>²ìïîðòóâàòè êîðèñòóâà÷³â</span></a></div>
+<div><a href=\"/bitrix/admin/user_import.php?lang=ua\" target=\"_blank\"><span>²ìïîðòóâàòè êîðèñòóâà÷³â</span></a></div>
 <br />
 Ïî÷àòè ðîáîòó ç ñèñòåìîþ ìè ðåêîìåíäóºìî ç³ çíàéîìñòâà ç
 <a href=\"/services/learning/\" target=\"_blank\">íàâ÷àëüíèì êóðñîì ïî ðîáîò³ ç ïîðòàëîì</a>.<br />
@@ -72,8 +72,8 @@ $MESS["wiz_ldap_group_portal"] = "Ãðóïà â êîðïîðàòèâíîìó ï�
 $MESS["wiz_ldap_group_ldap"] = "Ãðóïà â Active Directory";
 $MESS["wiz_install_data"] = "Óñòàíîâêà äàíèõ";
 $MESS["wiz_go"] = "Ïåðåéòè íà ïîðòàë";
-$MESS["wiz_ldap_require"] = "Óâàãà! <br/>Äëÿ ³íòåãðàö³ÿ Êîðïîðàòèâíîãî ïîðòàëó ç Active Directory íà ñòðàí³öe <a target=\"_blank\" href=\"/bnpt/admin/module_admin.php?lang=#LANGUAGE_ID#\">Ìîäóë³</a> íåîáõ³äíî âñòàíîâèòè ìîäóëü <i>AD/LDAP ³íòåãðàö³ÿ</i>.";
-$MESS["wiz_ldap_require1"] = "íåîáõ³äíî âñòàíîâèòè ìîäóëü AD/LDAP íà ñòðàí³öe <a target=\"_blank\" href=\"/bnpt/admin/module_admin.php?lang=#LANGUAGE_ID#\">Ìîäóë³</a>";
+$MESS["wiz_ldap_require"] = "Óâàãà! <br/>Äëÿ ³íòåãðàö³ÿ Êîðïîðàòèâíîãî ïîðòàëó ç Active Directory íà ñòðàí³öe <a target=\"_blank\" href=\"/bitrix/admin/module_admin.php?lang=#LANGUAGE_ID#\">Ìîäóë³</a> íåîáõ³äíî âñòàíîâèòè ìîäóëü <i>AD/LDAP ³íòåãðàö³ÿ</i>.";
+$MESS["wiz_ldap_require1"] = "íåîáõ³äíî âñòàíîâèòè ìîäóëü AD/LDAP íà ñòðàí³öe <a target=\"_blank\" href=\"/bitrix/admin/module_admin.php?lang=#LANGUAGE_ID#\">Ìîäóë³</a>";
 $MESS["wiz_ldap_error_domain"] = "Çàïîâí³òü, áóäü ëàñêà, äîìåí äëÿ NTLM àâòîðèçàö³¿";
 $MESS["wiz_ldap_login_help"] = "(ëîã³í êîðèñòóâà÷à ç ïðàâàìè ÷èòàííÿ ç Active Directory â ôîðìàò³ ëîã³í@äîìåí àáî äîìåí\\ëîã³í)";
 $MESS["wiz_ldap_root_help"] = "(äëÿ âñòàíîâëåííÿ îáìåæåííÿ ïî îäíîìó àáî äåê³ëüêîì OU, âêàæ³òü â³äïîâ³äí³ DN ÷åðåç êðàïêó ç êîìîþ)";

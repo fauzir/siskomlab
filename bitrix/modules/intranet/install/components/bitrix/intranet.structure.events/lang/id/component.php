@@ -1,5 +1,0 @@
-<?
-$MESS["INTR_ISE_USERS_NAV_TITLE"] = "Para karyawan";
-$MESS["INTR_ISE_ICON_ADD"] = "Add Change Record";
-$MESS["INTR_ISE_NAME_TEMPLATE_DEFAULT"] = "#NOBR##NAME# #LAST_NAME##/NOBR#";
-?>

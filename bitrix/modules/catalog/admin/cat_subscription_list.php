@@ -240,7 +240,7 @@ while($user = $userQuery->fetch())
 	{
 		foreach($listUserData[$user['ID']] as $subscribeId)
 		{
-			$userString='<a href="/bnpt/admin/user_edit.php?ID='.$user['ID'].'&lang='.LANGUAGE_ID.'" target="_blank">'.
+			$userString='<a href="/bitrix/admin/user_edit.php?ID='.$user['ID'].'&lang='.LANGUAGE_ID.'" target="_blank">'.
 				CUser::formatName(CSite::getNameFormat(false), $user, true, false).'</a>';
 			$rowList[$subscribeId]->addField('USER_ID', $userString);
 		}

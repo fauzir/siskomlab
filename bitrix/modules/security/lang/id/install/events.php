@@ -10,9 +10,9 @@ You have received this message as a result of the detection of potentially dange
  
 1.  The potentially dangerous code has been cut from the html. 
 2.  Check the event log and make sure that the code is indeed harmful, and is not simply a counter or framework.
-              (link: http://#SERVER_NAME#/bnpt/admin/event_log.php?lang=en&set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_VIRUS )
+              (link: http://#SERVER_NAME#/bitrix/admin/event_log.php?lang=en&set_filter=Y&find_type=audit_type_id&find_audit_type[]=SECURITY_VIRUS )
 3.  If the code is not harmful, add it to the 'exceptions' list on the antivirus settings page. 
-              (link: http://#SERVER_NAME#/bnpt/admin/security_antivirus.php?lang=en&tabControl_active_tab=exceptions )
+              (link: http://#SERVER_NAME#/bitrix/admin/security_antivirus.php?lang=en&tabControl_active_tab=exceptions )
 4.  If the code is a virus, then complete the following steps:
  
               a) Change the login password for the administrator and other responsible users to the site.

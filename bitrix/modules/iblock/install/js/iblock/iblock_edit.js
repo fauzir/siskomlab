@@ -199,7 +199,7 @@ JCIBlockProperty.prototype.ShowPropertyDialog = function ()
 		};
 		(new BX.CAdminDialog({
 			'title': this.TITLE,
-			'content_url': '/bnpt/admin/iblock_edit_property.php?lang='+this.LANG+'&propedit='+ID+'&bxpublic=Y&receiver='+this.OBJNAME,
+			'content_url': '/bitrix/admin/iblock_edit_property.php?lang='+this.LANG+'&propedit='+ID+'&bxpublic=Y&receiver='+this.OBJNAME,
 			'content_post': arResult,
 			'draggable': true,
 			'resizable': true,
@@ -386,7 +386,7 @@ JCIBlockAccess.prototype.InsertRights = function(obSelected)
 	if(parseInt(this.id) > 0)
 	{
 		BX.ajax.loadJSON(
-			'/bnpt/admin/iblock_edit.php'+
+			'/bitrix/admin/iblock_edit.php'+
 			'?ajax=y'+
 			'&sessid='+BX.bitrix_sessid()+
 			'&entity_type='+this.entity_type+
@@ -434,7 +434,7 @@ JCIBlockAccess.prototype.ShowInfo = function()
 			BX('info_result').innerHTML = '';
 			BX.showWait();
 			BX.ajax.loadJSON(
-				'/bnpt/admin/iblock_edit.php'+
+				'/bitrix/admin/iblock_edit.php'+
 				'?ajax=y'+
 				'&sessid='+BX.bitrix_sessid()+
 				'&entity_type='+entity_type+

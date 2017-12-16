@@ -265,7 +265,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 			if (in_array($sid, $arrContractSite[$f_CONTRACT_ID]))
 			{
 				if ($isAdmin)
-					$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"]).' [<a href="/bnpt/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($sid).'</a>]<br>';
+					$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"]).' [<a href="/bitrix/admin/site_edit.php?LID='.htmlspecialcharsbx($sid).'&amp;lang='.LANGUAGE_ID.'" title="'.GetMessage("ADV_SITE_VIEW").'">'.htmlspecialcharsbx($sid).'</a>]<br>';
 				else
 					$sites .= htmlspecialcharsbx($arrSites[$sid]["NAME"])." [".htmlspecialcharsbx($sid)."]<br>";
 			}

@@ -1694,7 +1694,7 @@ if (!empty($orderList) && is_array($orderList))
 			$idTmp .= 'style="color: red;"';
 		}
 
-		$idTmp .=" href='/bnpt/admin/sale_order_view.php?ID=".$orderId.GetFilterParams("filter_")."&lang=".LANGUAGE_ID."' title='".Loc::getMessage("SALE_DETAIL_DESCR")."'>##ID##</a></b></td>";
+		$idTmp .=" href='/bitrix/admin/sale_order_view.php?ID=".$orderId.GetFilterParams("filter_")."&lang=".LANGUAGE_ID."' title='".Loc::getMessage("SALE_DETAIL_DESCR")."'>##ID##</a></b></td>";
 		$idTmp .= "</tr>";
 
 		if($isRecommended)
@@ -1752,7 +1752,7 @@ if (!empty($orderList) && is_array($orderList))
 			}
 			$fieldValue = "[";
 			if($saleModulePermissions >= "W")
-				$fieldValue .= '<a href="/bnpt/admin/sale_person_type.php?lang='.LANGUAGE_ID.'">';
+				$fieldValue .= '<a href="/bitrix/admin/sale_person_type.php?lang='.LANGUAGE_ID.'">';
 			$fieldValue .= $arOrder["PERSON_TYPE_ID"];
 			if($saleModulePermissions >= "W")
 				$fieldValue .= "</a>";
@@ -1872,7 +1872,7 @@ if (!empty($orderList) && is_array($orderList))
 					}
 					$fieldValue .= "[";
 					if($saleModulePermissions >= "W")
-						$fieldValue .= '<a href="/bnpt/admin/sale_status_edit.php?ID='.$arOrder["STATUS_ID"].'&lang='.LANGUAGE_ID.'">';
+						$fieldValue .= '<a href="/bitrix/admin/sale_status_edit.php?ID='.$arOrder["STATUS_ID"].'&lang='.LANGUAGE_ID.'">';
 					$fieldValue .= $arOrder["STATUS_ID"];
 					if($saleModulePermissions >= "W")
 						$fieldValue .= "</a>";
@@ -1970,7 +1970,7 @@ if (!empty($orderList) && is_array($orderList))
 					$fieldValueTmp .= "[";
 
 					if($saleModulePermissions >= "W")
-						$fieldValueTmp .= '<a href="/bnpt/admin/sale_status_edit.php?ID='.$arOrder["STATUS_ID"].'&lang='.LANGUAGE_ID.'">';
+						$fieldValueTmp .= '<a href="/bitrix/admin/sale_status_edit.php?ID='.$arOrder["STATUS_ID"].'&lang='.LANGUAGE_ID.'">';
 
 					$fieldValueTmp .= $arOrder["STATUS_ID"];
 
@@ -2107,7 +2107,7 @@ if (!empty($orderList) && is_array($orderList))
 			));
 			while($payment = $res->fetch())
 			{
-				$payment["ID_LINKED"] = '[<a href="/bnpt/admin/sale_order_payment_edit.php?order_id='.$arOrder['ID'].'&payment_id='.$payment["ID"].'&lang='.LANGUAGE_ID.'">'.$payment["ID"].'</a>]';
+				$payment["ID_LINKED"] = '[<a href="/bitrix/admin/sale_order_payment_edit.php?order_id='.$arOrder['ID'].'&payment_id='.$payment["ID"].'&lang='.LANGUAGE_ID.'">'.$payment["ID"].'</a>]';
 				$payments[] = $payment;
 			}
 			unset($payment, $res);
@@ -2160,7 +2160,7 @@ if (!empty($orderList) && is_array($orderList))
 					$tmp = "";
 
 					if($saleModulePermissions >= "W")
-						$tmp .= '<a href="/bnpt/admin/sale_pay_system_edit.php?ID='.$payment["PAY_SYSTEM_ID"].'&lang='.LANGUAGE_ID.'">';
+						$tmp .= '<a href="/bitrix/admin/sale_pay_system_edit.php?ID='.$payment["PAY_SYSTEM_ID"].'&lang='.LANGUAGE_ID.'">';
 
 					$tmp .= htmlspecialcharsbx($payment["PAY_SYSTEM_NAME"]);
 
@@ -2485,7 +2485,7 @@ if (!empty($orderList) && is_array($orderList))
 
 			while($shipment = $res->fetch())
 			{
-				$shipment["ID_LINKED"] = '[<a href="/bnpt/admin/sale_order_shipment_edit.php?order_id='.$arOrder['ID'].'&shipment_id='.$shipment["ID"].'&lang='.LANGUAGE_ID.'">'.$shipment["ID"].'</a>]';
+				$shipment["ID_LINKED"] = '[<a href="/bitrix/admin/sale_order_shipment_edit.php?order_id='.$arOrder['ID'].'&shipment_id='.$shipment["ID"].'&lang='.LANGUAGE_ID.'">'.$shipment["ID"].'</a>]';
 				$shipments[] = $shipment;
 			}
 
@@ -2619,7 +2619,7 @@ if (!empty($orderList) && is_array($orderList))
 					$tmp = "";
 
 					if($saleModulePermissions >= "W")
-						$tmp .= '<a href="/bnpt/admin/sale_delivery_service_edit.php?ID='.$shipment["DELIVERY_ID"].'&lang='.LANGUAGE_ID.'">';
+						$tmp .= '<a href="/bitrix/admin/sale_delivery_service_edit.php?ID='.$shipment["DELIVERY_ID"].'&lang='.LANGUAGE_ID.'">';
 
 					$tmp .= htmlspecialcharsbx($shipment["DELIVERY_NAME"]);
 
@@ -2713,7 +2713,7 @@ if (!empty($orderList) && is_array($orderList))
 
 			$fieldValue = "[";
 			if($saleModulePermissions >= "W")
-				$fieldValue .= '<a href="/bnpt/admin/sale_company_edit.php?lang='.LANGUAGE_ID.'&ID='.$companyId.'">';
+				$fieldValue .= '<a href="/bitrix/admin/sale_company_edit.php?lang='.LANGUAGE_ID.'&ID='.$companyId.'">';
 
 			$fieldValue .= $companyId;
 
@@ -3803,7 +3803,7 @@ $oFilter->Begin();
 		<td>
 			<input type="text" name="filter_affiliate_id" value="<?= htmlspecialcharsbx($filter_affiliate_id) ?>" size="10" maxlength="10">
 			<IFRAME name="hiddenframe_affiliate" id="id_hiddenframe_affiliate" src="" width="0" height="0" style="width:0px; height:0px; border: 0px"></IFRAME>
-			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bnpt/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
+			<input type="button" class="button" name="FindAffiliate" OnClick="window.open('/bitrix/admin/sale_affiliate_search.php?func_name=SetAffiliateID', '', 'scrollbars=yes,resizable=yes,width=800,height=500,top='+Math.floor((screen.height - 500)/2-14)+',left='+Math.floor((screen.width - 400)/2-5));" value="...">
 			<span id="div_affiliate_name"></span>
 			<script type="text/javascript">
 			function SetAffiliateID(id)
@@ -3828,7 +3828,7 @@ $oFilter->Begin();
 					if(affiliateID != '' && !isNaN(parseInt(affiliateID, 10)))
 					{
 						document.getElementById('div_affiliate_name').innerHTML = '<i><?= Loc::getMessage("SO1_WAIT") ?></i>';
-						window.frames["hiddenframe_affiliate"].location.replace('/bnpt/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
+						window.frames["hiddenframe_affiliate"].location.replace('/bitrix/admin/sale_affiliate_get.php?ID=' + affiliateID + '&func_name=SetAffiliateName');
 					}
 					else
 						document.getElementById('div_affiliate_name').innerHTML = '';

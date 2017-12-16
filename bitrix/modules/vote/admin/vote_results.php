@@ -39,7 +39,7 @@ if ($vote->canEdit($USER->GetID()))
 		array(
 			"TEXT"	=> GetMessage("VOTE_BACK_TO_VOTE"),
 			"ICON"	=> "btn_list",
-			"LINK"	=> "/bnpt/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$voteId
+			"LINK"	=> "/bitrix/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$voteId
 		)
 	));
 	$context->Show();

@@ -45,7 +45,7 @@ $arGroups[] = Array(
 		"TASKS_MODULE" => Array("main_edit_subordinate_users"),
 		"TASKS_FILE" => Array(
 			Array("fm_folder_access_full", WIZARD_SITE_DIR),
-			Array("fm_folder_access_read", "/bnpt/admin/"),
+			Array("fm_folder_access_read", "/bitrix/admin/"),
 		),
 	);
 

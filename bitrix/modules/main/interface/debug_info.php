@@ -280,7 +280,7 @@ if ($bShowStat || $bShowCacheStat) //2
 				foreach($arCacheDebug as $j => $cacheDebug)
 				{
 					if (substr($cacheDebug["path"], 0, $DOCUMENT_ROOT_LEN) === $_SERVER["DOCUMENT_ROOT"])
-						$path = '<a target="blank" href="/bnpt/admin/fileman_file_view.php?path='.urlencode(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsEx(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'</a>';
+						$path = '<a target="blank" href="/bitrix/admin/fileman_file_view.php?path='.urlencode(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsEx(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'</a>';
 					else
 						$path = '&nbsp;';
 				?>
@@ -487,7 +487,7 @@ if ($bShowStat || $bShowCacheStat) //2
 					foreach($arIncludeDebug["CACHE"] as $j => $cacheDebug)
 					{
 						if (substr($cacheDebug["path"], 0, $DOCUMENT_ROOT_LEN) === $_SERVER["DOCUMENT_ROOT"])
-							$path = '<a target="blank" href="/bnpt/admin/fileman_file_view.php?path='.urlencode(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsEx(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'</a>';
+							$path = '<a target="blank" href="/bitrix/admin/fileman_file_view.php?path='.urlencode(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsEx(substr($cacheDebug["path"], $DOCUMENT_ROOT_LEN)).'</a>';
 						else
 							$path = '&nbsp;';
 					?>
@@ -546,7 +546,7 @@ var jsDebugTimeWindow = new BX.CDebugDialog();
 	$obJSPopup->StartDescription('bx-core-debug-info');
 ?>
 	<p><?echo GetMessage("debug_info_page")?> <?=$APPLICATION->GetCurPage()?></p>
-	<p><?echo GetMessage("debug_info_comps_cache")?> <?if(COption::GetOptionString("main", "component_cache_on", "Y")=="Y") echo GetMessage("debug_info_comps_cache_on"); else echo "<a href=\"/bnpt/admin/cache.php\"><font class=\"errortext\">".GetMessage("debug_info_comps_cache_off")."</font></a>";?>.</p>
+	<p><?echo GetMessage("debug_info_comps_cache")?> <?if(COption::GetOptionString("main", "component_cache_on", "Y")=="Y") echo GetMessage("debug_info_comps_cache_on"); else echo "<a href=\"/bitrix/admin/cache.php\"><font class=\"errortext\">".GetMessage("debug_info_comps_cache_off")."</font></a>";?>.</p>
 	<p><?
 	if(\Bitrix\Main\Data\Cache::getShowCacheStat())
 		echo GetMessage("debug_info_cache_size")." ",CFile::FormatSize(\Bitrix\Main\Diag\CacheTracker::getCacheStatBytes(), 0);

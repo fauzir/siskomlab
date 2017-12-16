@@ -1888,7 +1888,7 @@ class CAllForm extends CForm_old
 
 $strFIELDS
 ".GetMessage("FORM_VIEW")."
-http://#SERVER_NAME#/bnpt/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."&WEB_FORM_ID=#RS_FORM_ID#&RESULT_ID=#RS_RESULT_ID#
+http://#SERVER_NAME#/bitrix/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."&WEB_FORM_ID=#RS_FORM_ID#&RESULT_ID=#RS_RESULT_ID#
 
 -------------------------------------------------------
 ".GetMessage("FORM_GENERATED_AUTOMATICALLY")."
@@ -2006,7 +2006,7 @@ http://#SERVER_NAME#/bnpt/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."
 			$arForm['ADMIN_MENU'][] = array(
 				"ICON"	=> $current_section == 'form' ? 'btn_active' : '',
 				"TEXT"	=> GetMessage("FORM_MENU_EDIT"),
-				"LINK"	=> "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
+				"LINK"	=> "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&ID=".$WEB_FORM_ID,
 				"TITLE"	=> htmlspecialcharsbx(str_replace("#NAME#", $arForm["NAME"], GetMessage("FORM_MENU_EDIT_TITLE")))
 			);
 
@@ -2014,7 +2014,7 @@ http://#SERVER_NAME#/bnpt/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."
 				"ICON"	=> $current_section == 'result' ? 'btn_active' : '',
 				"TEXT"	=> GetMessage("FORM_MENU_RESULTS")
 					." (".CFormResult::GetCount($WEB_FORM_ID).")",
-				"LINK"	=> "/bnpt/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+				"LINK"	=> "/bitrix/admin/form_result_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
 				"TITLE"	=> htmlspecialcharsbx(str_replace("#NAME#", $arForm["NAME"], GetMessage("FORM_MENU_RESULTS_TITLE")))
 			);
 
@@ -2022,7 +2022,7 @@ http://#SERVER_NAME#/bnpt/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."
 				"ICON"	=> $current_section == 'question' ? 'btn_active' : '',
 				"TEXT"	=> GetMessage("FORM_MENU_QUESTIONS")
 					." (".($bSimple ? $arForm["QUESTIONS"] + $arForm["C_FIELDS"] : $arForm["QUESTIONS"]).")",
-				"LINK"	=> "/bnpt/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+				"LINK"	=> "/bitrix/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
 				"TITLE"	=> htmlspecialcharsbx(str_replace("#NAME#", $arForm["NAME"], GetMessage("FORM_MENU_QUESTIONS_TITLE")))
 			);
 
@@ -2032,7 +2032,7 @@ http://#SERVER_NAME#/bnpt/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."
 					"ICON"	=> $current_section == 'field' ? 'btn_active' : '',
 					"TEXT"	=> GetMessage("FORM_MENU_FIELDS")
 						." (".$arForm["C_FIELDS"].")",
-					"LINK"	=> "/bnpt/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y",
+					"LINK"	=> "/bitrix/admin/form_field_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID."&additional=Y",
 					"TITLE"	=> htmlspecialcharsbx(str_replace("#NAME#", $arForm["NAME"], GetMessage("FORM_MENU_FIELDS_TITLE")))
 				);
 
@@ -2040,7 +2040,7 @@ http://#SERVER_NAME#/bnpt/admin/form_result_view.php?lang=".$arrSiteLang[$sid]."
 					"ICON"	=> $current_section == 'status' ? 'btn_active' : '',
 					"TEXT"	=> GetMessage("FORM_MENU_STATUSES")
 						." (".$arForm["STATUSES"].")",
-					"LINK"	=> "/bnpt/admin/form_status_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
+					"LINK"	=> "/bitrix/admin/form_status_list.php?lang=".LANGUAGE_ID."&WEB_FORM_ID=".$WEB_FORM_ID,
 					"TITLE"	=> htmlspecialcharsbx(str_replace("#NAME#", $arForm["NAME"], GetMessage("FORM_MENU_STATUSES_TITLE")))
 				);
 			}

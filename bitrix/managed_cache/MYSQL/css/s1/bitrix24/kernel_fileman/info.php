@@ -1,1 +1,0 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/fileman/light_editor/light_editor.css" => "151131648914291",), 'CUR_SEL_CNT' => '164', 'CUR_IE_CNT' => '0'); ?>

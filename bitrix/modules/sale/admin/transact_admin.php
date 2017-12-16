@@ -137,7 +137,7 @@ while ($arTransact = $dbTransactList->NavNext(true, "f_"))
 	$row->AddField("ID", $f_ID);
 	$row->AddField("TRANSACT_DATE", $f_TRANSACT_DATE);
 
-	$fieldValue  = "[<a href=\"/bnpt/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\" title=\"".GetMessage("STA_USER_INFO")."\">".$f_USER_ID."</a>] ";
+	$fieldValue  = "[<a href=\"/bitrix/admin/user_edit.php?ID=".$f_USER_ID."&lang=".LANG."\" title=\"".GetMessage("STA_USER_INFO")."\">".$f_USER_ID."</a>] ";
 	$fieldValue .= htmlspecialcharsEx($arTransact["USER_NAME"].((strlen($arTransact["USER_NAME"])<=0 || strlen($arTransact["USER_LAST_NAME"])<=0) ? "" : " ").$arTransact["USER_LAST_NAME"])."<br>";
 	$fieldValue .= htmlspecialcharsEx($arTransact["USER_LOGIN"])."&nbsp;&nbsp;&nbsp; ";
 	$fieldValue .= "<a href=\"mailto:".htmlspecialcharsbx($arTransact["USER_EMAIL"])."\" title=\"".GetMessage("STA_MAILTO")."\">".htmlspecialcharsEx($arTransact["USER_EMAIL"])."</a>";
@@ -146,7 +146,7 @@ while ($arTransact = $dbTransactList->NavNext(true, "f_"))
 	$row->AddField("AMOUNT", (($arTransact["DEBIT"] == "Y") ? "+" : "-").SaleFormatCurrency($arTransact["AMOUNT"], $arTransact["CURRENCY"])."<br><small>".(($arTransact["DEBIT"] == "Y") ? GetMessage("STA_TO_ACCOUNT") : GetMessage("STA_FROM_ACCOUNT"))."</small>");
 
 	if (IntVal($arTransact["ORDER_ID"]) > 0)
-		$fieldValue = "<a href=\"/bnpt/admin/sale_order_view.php?ID=".$arTransact["ORDER_ID"]."&lang=".LANG."\" title=\"".GetMessage("STA_ORDER_VIEW")."\">".$arTransact["ORDER_ID"]."</a>";
+		$fieldValue = "<a href=\"/bitrix/admin/sale_order_view.php?ID=".$arTransact["ORDER_ID"]."&lang=".LANG."\" title=\"".GetMessage("STA_ORDER_VIEW")."\">".$arTransact["ORDER_ID"]."</a>";
 	else
 		$fieldValue = "&nbsp;";
 	$row->AddField("ORDER_ID", $fieldValue);
@@ -166,7 +166,7 @@ while ($arTransact = $dbTransactList->NavNext(true, "f_"))
 			if (isset($LOCAL_TRANS_USER_CACHE[$arTransact["EMPLOYEE_ID"]])
 				&& !empty($LOCAL_TRANS_USER_CACHE[$arTransact["EMPLOYEE_ID"]]))
 			{
-				$fieldValue .= "[<a href=\"/bnpt/admin/user_edit.php?ID=".$arTransact["EMPLOYEE_ID"]."&lang=".LANG."\" title=\"".GetMessage("STA_USER_INFO")."\">".$arTransact["EMPLOYEE_ID"]."</a>] ";
+				$fieldValue .= "[<a href=\"/bitrix/admin/user_edit.php?ID=".$arTransact["EMPLOYEE_ID"]."&lang=".LANG."\" title=\"".GetMessage("STA_USER_INFO")."\">".$arTransact["EMPLOYEE_ID"]."</a>] ";
 				$fieldValue .= $LOCAL_TRANS_USER_CACHE[$arTransact["EMPLOYEE_ID"]];
 				$fieldValue .= "<br />";
 			}

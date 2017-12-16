@@ -1,6 +1,0 @@
-<?
-$MESS["TASKS_TASK_DETAIL_NAME"] = "setiap # DAY_NUMBER # hari # MONTH_NAME #";
-$MESS["TASKS_TASK_DETAIL_DESCRIPTION"] = "# SETIAP # # DAY_NUMBER # # WEEKDAY_NAME # dari # MONTH_NAME #";
-$MESS["TASKS_NAME"] = "hari kerja";
-$MESS["TASKS_NAME_2_0"] = "apa saja";
-?>

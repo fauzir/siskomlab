@@ -28,7 +28,7 @@ if ($arResult["isAccessFormResultEdit"] == "Y" && strlen($arParams["EDIT_URL"]) 
 		</tr>
 		<tr>
 			<td><b><?=GetMessage("FORM_FORM_NAME")?></b></td>
-			<td>[<a href='/bnpt/admin/form_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arResult["WEB_FORM_ID"]?>'><?=$arResult["WEB_FORM_ID"]?></a>]&nbsp;(<?=$arResult["WEB_FORM_NAME"]?>)&nbsp;<?=$arResult["FORM_TITLE"]?></td>
+			<td>[<a href='/bitrix/admin/form_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arResult["WEB_FORM_ID"]?>'><?=$arResult["WEB_FORM_ID"]?></a>]&nbsp;(<?=$arResult["WEB_FORM_NAME"]?>)&nbsp;<?=$arResult["FORM_TITLE"]?></td>
 		</tr>
 		<?
 		}
@@ -44,7 +44,7 @@ if ($arResult["isAccessFormResultEdit"] == "Y" && strlen($arParams["EDIT_URL"]) 
 					{
 						$userName = array("NAME" => $arResult["RESULT_USER_FIRST_NAME"], "LAST_NAME" => $arResult["RESULT_USER_LAST_NAME"], "SECOND_NAME" => $arResult["RESULT_USER_SECOND_NAME"], "LOGIN" => $arResult["RESULT_USER_LOGIN"]);
 					?>
-						[<a title='<?=GetMessage("FORM_EDIT_USER")?>' href='/bnpt/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arResult["RESULT_USER_ID"]?>'><?=$arResult["RESULT_USER_ID"]?></a>] (<?=$arResult["RESULT_USER_LOGIN"]?>) <?=CUser::FormatName($arParams["NAME_TEMPLATE"], $userName)?>
+						[<a title='<?=GetMessage("FORM_EDIT_USER")?>' href='/bitrix/admin/user_edit.php?lang=<?=LANGUAGE_ID?>&ID=<?=$arResult["RESULT_USER_ID"]?>'><?=$arResult["RESULT_USER_ID"]?></a>] (<?=$arResult["RESULT_USER_LOGIN"]?>) <?=CUser::FormatName($arParams["NAME_TEMPLATE"], $userName)?>
 						<?if($arResult["RESULT_USER_AUTH"]=="N") {?> <?=GetMessage("FORM_NOT_AUTH")?><?}?>
 					<?
 					}
@@ -71,11 +71,11 @@ if ($arResult["isAccessFormResultEdit"] == "Y" && strlen($arParams["EDIT_URL"]) 
 		?>
 		<tr>
 			<td><b><?=GetMessage("FORM_GUEST")?></b></td>
-			<td>[<a title="<?=GetMessage("FORM_GUEST_ALT")?>" href="/bnpt/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arResult["RESULT_STAT_GUEST_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arResult["RESULT_STAT_GUEST_ID"]?></a>]</td>
+			<td>[<a title="<?=GetMessage("FORM_GUEST_ALT")?>" href="/bitrix/admin/guest_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arResult["RESULT_STAT_GUEST_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arResult["RESULT_STAT_GUEST_ID"]?></a>]</td>
 		</tr>
 		<tr>
 			<td><b><?=GetMessage("FORM_SESSION")?></b></td>
-			<td>[<a href="/bnpt/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arResult["RESULT_STAT_SESSION_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arResult["RESULT_STAT_SESSION_ID"]?></a>]</td>
+			<td>[<a href="/bitrix/admin/session_list.php?lang=<?=LANGUAGE_ID?>&find_id=<?=$arResult["RESULT_STAT_SESSION_ID"]?>&find_id_exact_match=Y&set_filter=Y"><?=$arResult["RESULT_STAT_SESSION_ID"]?></a>]</td>
 		</tr>
 			<?
 			}

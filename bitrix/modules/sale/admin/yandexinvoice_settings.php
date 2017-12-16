@@ -162,7 +162,7 @@ $showButton = false;
 $aMenu = array(
 	array(
 		"TEXT" => Loc::getMessage("SPSN_2FLIST"),
-		"LINK" => "/bnpt/admin/sale_pay_system_edit.php?ID=".$id."&lang=".$context->getLanguage(),
+		"LINK" => "/bitrix/admin/sale_pay_system_edit.php?ID=".$id."&lang=".$context->getLanguage(),
 		"ICON" => "btn_list"
 	)
 );

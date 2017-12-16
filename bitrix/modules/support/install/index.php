@@ -165,7 +165,7 @@ class support extends CModule
 	{
 		if($_ENV["COMPUTERNAME"]!='BX')
 		{
-			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bnpt/admin');
+			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/admin', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin');
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/images', $_SERVER['DOCUMENT_ROOT'].'/bitrix/images/support', true, true);
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/upload/support/not_image', $_SERVER['DOCUMENT_ROOT'].'/'.COption::GetOptionString('main', 'upload_dir', 'upload').'/support/not_image'); 
 			CopyDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/tools', $_SERVER['DOCUMENT_ROOT'].'/bitrix/tools'); 
@@ -191,7 +191,7 @@ class support extends CModule
 	
 	function UnInstallFiles($arParams = array())
 	{
-		DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/admin/', $_SERVER['DOCUMENT_ROOT'].'/bnpt/admin');
+		DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/admin/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/admin');
 		
 		DeleteDirFiles($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/support/install/themes/.default/', $_SERVER['DOCUMENT_ROOT'].'/bitrix/themes/.default');//css
 		DeleteDirFilesEx('/bitrix/themes/.default/icons/support/');//icons

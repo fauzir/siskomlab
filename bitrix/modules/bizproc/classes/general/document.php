@@ -792,7 +792,7 @@ class CBPDocument
 		{
 			BX.WindowManager.setStartZIndex(1150);
 			(new BX.CDialog({
-				'content_url': '/bnpt/admin/'+module
+				'content_url': '/bitrix/admin/'+module
 					+'_bizproc_selector.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>&entity='
 					+entity
 					+(loadAccessLib? '&load_access_lib=Y':''),
@@ -857,7 +857,7 @@ class CBPDocument
 			JSToPHPHidd(p, arWorkflowTemplateCur, 'arWorkflowTemplate');
 
 			(new BX.CDialog({
-				'content_url': '/bnpt/admin/'
+				'content_url': '/bitrix/admin/'
 					+module+'_bizproc_selector.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>&entity='
 					+entity
 					+(loadAccessLib? '&load_access_lib=Y':''),
@@ -941,7 +941,7 @@ class CBPDocument
 
 		return str_replace(
 			Array('#HTTP_HOST#', '#TASK_URL#', '#BASE_HREF#'),
-			Array($_SERVER['HTTP_HOST'], ($documentType[0]=="iblock"?"/bnpt/admin/bizproc_task.php?workflow_id={=Workflow:id}":"/company/personal/bizproc/{=Workflow:id}/"), $baseHref),
+			Array($_SERVER['HTTP_HOST'], ($documentType[0]=="iblock"?"/bitrix/admin/bizproc_task.php?workflow_id={=Workflow:id}":"/company/personal/bizproc/{=Workflow:id}/"), $baseHref),
 			$str
 			);
 	}

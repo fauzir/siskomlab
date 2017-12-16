@@ -62,7 +62,7 @@ function getSenderItemContainer($id, array $chain = array())
 							<?
 							echo GetMessage("sender_chain_edit_field_created_text", array(
 								'%DATE_CREATE%' => htmlspecialcharsbx(is_object($chain['DATE_INSERT']) ? \Bitrix\Main\Type\Date::createFromTimestamp($chain['DATE_INSERT']->getTimestamp()) : $chain['DATE_INSERT']),
-								'%AUTHOR%' => '<a class="sender_letter_container-author" href="/bnpt/admin/user_edit.php?ID='.htmlspecialcharsbx($chain['CREATED_BY']).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsbx($chain['CREATED_BY_NAME']).' '.htmlspecialcharsbx($chain['CREATED_BY_LAST_NAME']).'</a>',
+								'%AUTHOR%' => '<a class="sender_letter_container-author" href="/bitrix/admin/user_edit.php?ID='.htmlspecialcharsbx($chain['CREATED_BY']).'&lang='.LANGUAGE_ID.'">'.htmlspecialcharsbx($chain['CREATED_BY_NAME']).' '.htmlspecialcharsbx($chain['CREATED_BY_LAST_NAME']).'</a>',
 							));
 							?>
 						</span>
@@ -211,7 +211,7 @@ if(in_array($_REQUEST["action"], array('activate', 'deactivate')) && check_bitri
 		$fields['ACTIVE'] = 'N';
 
 	\Bitrix\Sender\MailingTable::update($ID, $fields);
-	LocalRedirect('/bnpt/admin/sender_mailing_trig_edit.php?ID=' . $ID . '&lang=' . LANGUAGE_ID);
+	LocalRedirect('/bitrix/admin/sender_mailing_trig_edit.php?ID=' . $ID . '&lang=' . LANGUAGE_ID);
 }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && is_array($CHAIN) && ($save!="" || $apply!="") && $POST_RIGHT=="W" && check_bitrix_sessid())
@@ -257,9 +257,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && is_array($CHAIN) && ($save!="" || $ap
 	if(empty($errorList))
 	{
 		if($save != "")
-			LocalRedirect('/bnpt/admin/sender_mailing_trig_admin.php?lang=' . LANGUAGE_ID);
+			LocalRedirect('/bitrix/admin/sender_mailing_trig_admin.php?lang=' . LANGUAGE_ID);
 		else
-			LocalRedirect('/bnpt/admin/sender_mailing_trig_edit.php?ID=' . $ID . '&lang=' . LANGUAGE_ID);
+			LocalRedirect('/bitrix/admin/sender_mailing_trig_edit.php?ID=' . $ID . '&lang=' . LANGUAGE_ID);
 	}
 
 	$chainFieldsList = $arTriggerSettings;
@@ -292,7 +292,7 @@ $aMenu = array(
 	array(
 		"TEXT"=>GetMessage("sender_chain_edit_list"),
 		"TITLE"=>GetMessage("sender_chain_edit_list_title"),
-		"LINK"=>"/bnpt/admin/sender_mailing_trig_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
+		"LINK"=>"/bitrix/admin/sender_mailing_trig_admin.php?MAILING_ID=".$MAILING_ID."&lang=".LANG,
 		"ICON"=>"btn_list",
 	)
 );
@@ -344,7 +344,7 @@ CJSCore::RegisterExt('sender_dragdrop', array('js' => '/bitrix/js/main/core/core
 				'action': 'send_to_me',
 				'send_to_me_addr': BX('EMAIL_TO_ME').value
 			};
-			var url = '/bnpt/admin/sender_mailing_chain_admin.php?MAILING_ID=<?echo $ID?>&IS_TRIGGER=Y&lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>&action=js_send';
+			var url = '/bitrix/admin/sender_mailing_chain_admin.php?MAILING_ID=<?echo $ID?>&IS_TRIGGER=Y&lang=<?echo LANGUAGE_ID?>&<?echo bitrix_sessid_get()?>&action=js_send';
 			ShowWaitWindow();
 			BX.ajax.post(
 				url,
@@ -397,12 +397,12 @@ $tabControl->BeginNextTab();
 					<?if($POST_RIGHT>="W" && $mailing['ACTIVE'] != 'Y'):?>
 						<input style="margin-left: 80px;" type="button"
 							value="<?echo GetMessage("sender_chain_edit_field_status_btn_y")?>"
-							onclick="window.location='/bnpt/admin/sender_mailing_trig_edit.php?ID=<?=$ID?>&<?=bitrix_sessid_get()?>&action=activate&lang=<?=LANGUAGE_ID?>'"
+							onclick="window.location='/bitrix/admin/sender_mailing_trig_edit.php?ID=<?=$ID?>&<?=bitrix_sessid_get()?>&action=activate&lang=<?=LANGUAGE_ID?>'"
 							title="<?echo GetMessage("sender_chain_edit_btn_send_desc")?>" />
 					<?elseif($POST_RIGHT>="W"):?>
 						<input style="margin-left: 80px;" type="button"
 							value="<?echo GetMessage("sender_chain_edit_field_status_btn_n")?>"
-							onclick="window.location='/bnpt/admin/sender_mailing_trig_edit.php?ID=<?=$ID?>&<?=bitrix_sessid_get()?>&action=deactivate&lang=<?=LANGUAGE_ID?>'"
+							onclick="window.location='/bitrix/admin/sender_mailing_trig_edit.php?ID=<?=$ID?>&<?=bitrix_sessid_get()?>&action=deactivate&lang=<?=LANGUAGE_ID?>'"
 							title="<?echo GetMessage("sender_chain_edit_btn_send_desc")?>" />
 					<?endif;?>
 				</span>
@@ -616,7 +616,7 @@ $tabControl->BeginNextTab();
 				var senderLetterContainer = new SenderLetterContainer({'container': BX('SENDER_TRIGGER_CHAIN_CONTAINER')});
 				var letterTemplate = {};
 				BX.ajax.loadJSON(
-					'/bnpt/admin/sender_mailing_trig_edit.php?ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>&action=get_vr&<?echo bitrix_sessid_get()?>',
+					'/bitrix/admin/sender_mailing_trig_edit.php?ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>&action=get_vr&<?echo bitrix_sessid_get()?>',
 					{},
 					function(data){
 						letterTemplate = data;
@@ -630,7 +630,7 @@ $tabControl->BeginNextTab();
 <?
 $tabControl->Buttons(array(
 	"disabled"=>($POST_RIGHT<"W"),
-	"back_url"=>"/bnpt/admin/sender_mailing_trig_admin.php?ID=".$ID."&lang=".LANG,
+	"back_url"=>"/bitrix/admin/sender_mailing_trig_admin.php?ID=".$ID."&lang=".LANG,
 ));
 ?>
 

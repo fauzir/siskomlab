@@ -472,7 +472,7 @@ Class tasks extends CModule
 		{
 			CopyDirFiles(
 				$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/tasks/install/admin",
-				$_SERVER["DOCUMENT_ROOT"]."/bnpt/admin",
+				$_SERVER["DOCUMENT_ROOT"]."/bitrix/admin",
 				false
 			);
 
@@ -525,7 +525,7 @@ Class tasks extends CModule
 
 	function UnInstallFiles()
 	{
-		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/tasks/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bnpt/admin");
+		DeleteDirFiles($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/tasks/install/admin/", $_SERVER["DOCUMENT_ROOT"]."/bitrix/admin");
 
 		DeleteDirFilesEx("/bitrix/js/tasks/");//scripts
 		return true;

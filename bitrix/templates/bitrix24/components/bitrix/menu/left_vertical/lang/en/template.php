@@ -66,7 +66,7 @@ $MESS["MENU_PRESET_CRM_DESC2"] = "improve conversion and communicate with custom
 $MESS["MENU_PRESET_TASKS_TITLE"] = "Tasks";
 $MESS["MENU_PRESET_TASKS_DESC1"] = "Manage projects";
 $MESS["MENU_PRESET_TASKS_DESC2"] = "watch deadlines and control performance";
-$MESS["MENU_MY_WORKGROUPS"] = "My groupsz";
+$MESS["MENU_MY_WORKGROUPS"] = "My groups";
 $MESS["MENU_MY_WORKGROUPS_EXTRANET"] = "Extranet";
 $MESS["MENU_MY_WORKGROUPS_FAVORITES"] = "Favorites";
 ?>

@@ -219,7 +219,7 @@ $obJSPopup->ShowTitlebar(($bEdit ? GetMessage("FILEMAN_FILEEDIT_PAGE_TITLE") : G
 
 $obJSPopup->StartDescription();
 
-echo '<a href="/bnpt/admin/fileman_file_edit.php?path='.urlencode($path).'&amp;full_src=Y&amp;site='.$site.'&amp;lang='.LANGUAGE_ID.'&amp;back_url='.urlencode($_GET["back_url"]).(!$bEdit? '&amp;new=Y&amp;filename='.urlencode($filename).'&amp;template='.urlencode($template):'').($_REQUEST["templateID"]<>''? '&amp;templateID='.urlencode($_REQUEST["templateID"]):'').'" title="'.htmlspecialcharsbx($path).'">'.GetMessage("public_file_edit_edit_cp").'</a>';
+echo '<a href="/bitrix/admin/fileman_file_edit.php?path='.urlencode($path).'&amp;full_src=Y&amp;site='.$site.'&amp;lang='.LANGUAGE_ID.'&amp;back_url='.urlencode($_GET["back_url"]).(!$bEdit? '&amp;new=Y&amp;filename='.urlencode($filename).'&amp;template='.urlencode($template):'').($_REQUEST["templateID"]<>''? '&amp;templateID='.urlencode($_REQUEST["templateID"]):'').'" title="'.htmlspecialcharsbx($path).'">'.GetMessage("public_file_edit_edit_cp").'</a>';
 
 $obJSPopup->StartContent();
 if (CAutoSave::Allowed())

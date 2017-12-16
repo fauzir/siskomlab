@@ -1275,13 +1275,13 @@ abstract class CAllMain
 				switch ($arFunctionParams['MODE'])
 				{
 					case 'html':
-						$editor = "/bnpt/admin/fileman_html_edit.php?site=".SITE_ID."&";
+						$editor = "/bitrix/admin/fileman_html_edit.php?site=".SITE_ID."&";
 						break;
 					case 'text':
-						$editor = "/bnpt/admin/fileman_file_edit.php?site=".SITE_ID."&";
+						$editor = "/bitrix/admin/fileman_file_edit.php?site=".SITE_ID."&";
 						break;
 					case 'php':
-						$editor = "/bnpt/admin/fileman_file_edit.php?full_src=Y&site=".SITE_ID."&";
+						$editor = "/bitrix/admin/fileman_file_edit.php?full_src=Y&site=".SITE_ID."&";
 						break;
 				}
 				$editor .= "templateID=".$encSiteTemplateId."&";
@@ -1291,17 +1291,17 @@ abstract class CAllMain
 				switch ($arFunctionParams['MODE'])
 				{
 					case 'html':
-						$editor = '/bnpt/admin/public_file_edit.php?site='.SITE_ID.'&bxpublic=Y&from=includefile&templateID='.$encSiteTemplateId.'&';
+						$editor = '/bitrix/admin/public_file_edit.php?site='.SITE_ID.'&bxpublic=Y&from=includefile&templateID='.$encSiteTemplateId.'&';
 						$resize = 'false';
 						break;
 
 					case 'text':
-						$editor = '/bnpt/admin/public_file_edit.php?site='.SITE_ID.'&bxpublic=Y&from=includefile&noeditor=Y&';
+						$editor = '/bitrix/admin/public_file_edit.php?site='.SITE_ID.'&bxpublic=Y&from=includefile&noeditor=Y&';
 						$resize = 'true';
 						break;
 
 					case 'php':
-						$editor = '/bnpt/admin/public_file_edit_src.php?site='.SITE_ID.'&templateID='.$encSiteTemplateId.'&';
+						$editor = '/bitrix/admin/public_file_edit_src.php?site='.SITE_ID.'&templateID='.$encSiteTemplateId.'&';
 						$resize = 'true';
 						break;
 				}
@@ -1337,7 +1337,7 @@ abstract class CAllMain
 				$iSrcLine = intval($aTrace[0]["line"]);
 				$arIcons[] = array(
 					'URL' => 'javascript:'.$APPLICATION->GetPopupLink(array(
-						'URL' => "/bnpt/admin/component_props.php?".
+						'URL' => "/bitrix/admin/component_props.php?".
 							"path=".urlencode(CUtil::addslashes($rel_path)).
 							"&template_id=".urlencode(CUtil::addslashes(SITE_TEMPLATE_ID)).
 							"&lang=".LANGUAGE_ID.
@@ -1399,7 +1399,7 @@ abstract class CAllMain
 				if($arFunctionParams["WORKFLOW"])
 				{
 					$arIcons[] = array(
-						'URL'=>'/bnpt/admin/workflow_edit.php?'.$arFunctionParams["LANG"].'&fname='.urlencode($path).$arFunctionParams["TEMPLATE"].$arFunctionParams["BACK_URL"],
+						'URL'=>'/bitrix/admin/workflow_edit.php?'.$arFunctionParams["LANG"].'&fname='.urlencode($path).$arFunctionParams["TEMPLATE"].$arFunctionParams["BACK_URL"],
 						'ICON'=>'bx-context-toolbar-edit-icon',
 						'TITLE'=>str_replace("#BLOCK_TYPE#", (!is_set($arFunctionParams, "NAME")? GetMessage("MAIN__INC_BLOCK"): $arFunctionParams["NAME"]), GetMessage("MAIN_INC_ED_WF"))
 					);
@@ -1563,7 +1563,7 @@ abstract class CAllMain
 				{
 					$arIcons = array();
 					$arIcons[] = array(
-						"URL"=>"/bnpt/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".$site."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&full_src=Y&path=".urlencode($path),
+						"URL"=>"/bitrix/admin/fileman_file_edit.php?lang=".LANGUAGE_ID."&site=".$site."&back_url=".urlencode($_SERVER["REQUEST_URI"])."&full_src=Y&path=".urlencode($path),
 						"ICON"=>"nav-template",
 						"TITLE"=>GetMessage("MAIN_INC_ED_NAV")
 					);

@@ -973,7 +973,7 @@ class CSecurityIPRule
 			$uri = preg_replace('#/+#', '/', $uri);
 			//Block any invalid uri
 			if (!static::isValidUri($uri))
-				include($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/security_403.php'); //die inside
+				include($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/security_403.php'); //die inside
 
 			//Normalize on Windows, because my. == my
 			if (CSecuritySystemInformation::isRunOnWin())
@@ -1236,7 +1236,7 @@ class CSecurityIPRule
 			}
 
 			if($bMatch)
-				include($_SERVER["DOCUMENT_ROOT"]."/bnpt/admin/security_403.php");
+				include($_SERVER["DOCUMENT_ROOT"]."/bitrix/admin/security_403.php");
 
 		}
 	}

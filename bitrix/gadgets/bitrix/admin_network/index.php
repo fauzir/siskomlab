@@ -17,7 +17,7 @@ use Bitrix\Socialservices\Network;
 
 Loc::loadMessages(__FILE__);
 
-$APPLICATION->SetAdditionalCSS('/bitrix/gadgets/bnpt/admin_network/styles.css');
+$APPLICATION->SetAdditionalCSS('/bitrix/gadgets/bitrix/admin_network/styles.css');
 
 $url = "";
 $onclick = "";
@@ -27,7 +27,7 @@ if(Loader::includeModule('socialservices'))
 {
 	if(Option::get("socialservices", "bitrix24net_id", "") == "")
 	{
-		$url = "/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=socialservices&register_network=yes";
+		$url = "/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=socialservices&register_network=yes";
 	}
 	else
 	{
@@ -46,14 +46,14 @@ if(Loader::includeModule('socialservices'))
 		}
 		else
 		{
-			$url = "/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$USER->GetID()."&user_edit_active_tab=edit_socialservices";
+			$url = "/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$USER->GetID()."&user_edit_active_tab=edit_socialservices";
 			$messageCode = "GD_NETWORK_CONNECTED";
 		}
 	}
 }
 else
 {
-	$url = "/bnpt/admin/module_admin.php?&action=&lang=".LANGUAGE_ID."&id=socialservices&install=1&".bitrix_sessid_get();
+	$url = "/bitrix/admin/module_admin.php?&action=&lang=".LANGUAGE_ID."&id=socialservices&install=1&".bitrix_sessid_get();
 }
 ?>
 

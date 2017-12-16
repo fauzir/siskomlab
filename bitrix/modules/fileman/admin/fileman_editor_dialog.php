@@ -1805,7 +1805,7 @@ function OnSave()
 		if(temp_arTaskbarSettings['BXSnippetsTaskbar'].show)
 		{
 			if (window.BXSnippetsTaskbar_need_preload)
-				arScripts.push("/bnpt/admin/htmleditor2/snippets.js");
+				arScripts.push("/bitrix/admin/htmleditor2/snippets.js");
 		}
 		else if(ar_BXTaskbarS["BXSnippetsTaskbar_" + pObj.pMainObj.name])
 		{
@@ -1816,7 +1816,7 @@ function OnSave()
 		if (temp_arTaskbarSettings['BXComponents2Taskbar'].show)
 		{
 			if (window.BXComponents2Taskbar_need_preload)
-				arScripts.push("/bnpt/admin/htmleditor2/components2.js");
+				arScripts.push("/bitrix/admin/htmleditor2/components2.js");
 			pObj.pMainObj.LoadComponents2({func: BXCreateTaskbars, params: [pObj.pMainObj]})
 		}
 		else if(ar_BXTaskbarS["BXComponents2Taskbar_" + pObj.pMainObj.name])

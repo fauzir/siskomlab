@@ -1,1 +1,0 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/components/bitrix/intranet.user.selector.new/templates/.default/users.js" => "151131652313983",), 'CUR_SEL_CNT' => '0', 'CUR_IE_CNT' => '0'); ?>

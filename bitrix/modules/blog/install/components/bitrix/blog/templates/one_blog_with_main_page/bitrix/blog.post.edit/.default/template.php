@@ -653,7 +653,7 @@ else
 			<?endif;?>
 			<?if($USER->IsAdmin()):?>
 				<tr>
-					<td colspan="2"><a href="/bnpt/admin/userfield_edit.php?ENTITY_ID=BLOG_POST&back_url=<?=$arResult["CUR_PAGE"]?>"><?=GetMessage("BLOG_POST_PROPERTY_ADD")?></a></th>
+					<td colspan="2"><a href="/bitrix/admin/userfield_edit.php?ENTITY_ID=BLOG_POST&back_url=<?=$arResult["CUR_PAGE"]?>"><?=GetMessage("BLOG_POST_PROPERTY_ADD")?></a></th>
 				</tr>
 			<?endif;?>
 			</table>

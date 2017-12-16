@@ -2,12 +2,12 @@
 $MESS["SECURITY_SITE_CHECKER_EnvironmentTest_NAME"] = "Environment check";
 $MESS["SECURITY_SITE_CHECKER_SESSION_DIR"] = "Session file storage directory is accessible by all system users";
 $MESS["SECURITY_SITE_CHECKER_SESSION_DIR_DETAIL"] = "This vulnerability may be used to read or change session data running scripts on other virtual servers.";
-$MESS["SECURITY_SITE_CHECKER_SESSION_DIR_RECOMMENDATION"] = "Configure access permissions correctly, or change the directory. Another option is to store sessions in database: <a href=\"/bnpt/admin/security_session.php\">Session protection</a>.";
+$MESS["SECURITY_SITE_CHECKER_SESSION_DIR_RECOMMENDATION"] = "Configure access permissions correctly, or change the directory. Another option is to store sessions in database: <a href=\"/bitrix/admin/security_session.php\">Session protection</a>.";
 $MESS["SECURITY_SITE_CHECKER_SESSION_DIR_ADDITIONAL"] = "Session storage directory: #DIR#<br>
 Permission: #PERMS#";
 $MESS["SECURITY_SITE_CHECKER_COLLECTIVE_SESSION"] = "The session storage directory may contain sessions of different projects.";
 $MESS["SECURITY_SITE_CHECKER_COLLECTIVE_SESSION_DETAIL"] = "This may help an attacker read and write session data using scripts on other virtual servers.";
-$MESS["SECURITY_SITE_CHECKER_COLLECTIVE_SESSION_RECOMMENDATION"] = "Change the directory or store sessions in database: <a href=\"/bnpt/admin/security_session.php\">Session protection</a>.";
+$MESS["SECURITY_SITE_CHECKER_COLLECTIVE_SESSION_RECOMMENDATION"] = "Change the directory or store sessions in database: <a href=\"/bitrix/admin/security_session.php\">Session protection</a>.";
 $MESS["SECURITY_SITE_CHECKER_COLLECTIVE_SESSION_ADDITIONAL_OWNER"] = "Reason: file owner is not the current user<br>
 File: #FILE#<br>
 File owner UID: #FILE_ONWER#<br>

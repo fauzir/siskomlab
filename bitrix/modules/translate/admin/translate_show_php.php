@@ -78,14 +78,14 @@ if($strError <> "")
 $aMenu = array();
 $aMenu[] = array(
 	"TEXT"	=> GetMessage("TRANS_LIST"),
-	"LINK"	=> "/bnpt/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
+	"LINK"	=> "/bitrix/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
 	"TITLE"	=> GetMessage("TRANS_LIST_TITLE"),
 	"ICON"	=> "btn_list"
 	);
 
 $aMenu[] = array(
 	"TEXT"	=> GetMessage("TR_FILE_EDIT"),
-	"LINK"	=> "/bnpt/admin/translate_edit_php.php?lang=".LANGUAGE_ID."&file=$file&".bitrix_sessid_get(),
+	"LINK"	=> "/bitrix/admin/translate_edit_php.php?lang=".LANGUAGE_ID."&file=$file&".bitrix_sessid_get(),
 	"TITLE"	=> GetMessage("TR_FILE_EDIT_TITLE"),
 	"ICON"	=> ""
 	);

@@ -711,9 +711,9 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 if(!empty($backUrlReq))
 	$link = $backUrlReq;
 elseif($isGroup)
-	$link = "/bnpt/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID."&filter_class_name=".urlencode('\Bitrix\Sale\Delivery\Services\Group');
+	$link = "/bitrix/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID."&filter_class_name=".urlencode('\Bitrix\Sale\Delivery\Services\Group');
 else
-	$link = "/bnpt/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID."&filter_group=".$fields["PARENT_ID"];
+	$link = "/bitrix/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID."&filter_group=".$fields["PARENT_ID"];
 
 if($isGroup)
 	$linkText = Loc::getMessage("SALE_DSE_2GLIST");
@@ -735,9 +735,9 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 	$aMenu[] = array("SEPARATOR" => "Y");
 
 	if($isGroup)
-		$link = "/bnpt/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID."&CLASS_NAME=".urlencode('\Bitrix\Sale\Delivery\Services\Group');
+		$link = "/bitrix/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID."&CLASS_NAME=".urlencode('\Bitrix\Sale\Delivery\Services\Group');
 	else
-		$link = "/bnpt/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID."&PARENT_ID=".$fields["PARENT_ID"];
+		$link = "/bitrix/admin/sale_delivery_service_edit.php?lang=".LANGUAGE_ID."&PARENT_ID=".$fields["PARENT_ID"];
 
 	$aMenu[] = array(
 		"TEXT" => $isGroup ? Loc::getMessage("SALE_DSE_NEW_GROUP") : Loc::getMessage("SALE_DSE_NEW_DELIVERY"),
@@ -749,7 +749,7 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 		"TEXT" => $isGroup ? Loc::getMessage("SALE_DSE_DELETE_GROUP") : Loc::getMessage("SALE_DSE_DELETE_DELIVERY"),
 		"LINK" => "javascript:if(confirm('".
 			($isGroup ? Loc::getMessage("SALE_DSE_DELETE_GROUP_CONFIRM") : Loc::getMessage("SALE_DSE_DELETE_DELIVERY_CONFIRM")).
-			"')) window.location='/bnpt/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID."&filter_group=".$fields["PARENT_ID"]."&ID=".$ID."&action=delete&".bitrix_sessid_get()."#tb';",
+			"')) window.location='/bitrix/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID."&filter_group=".$fields["PARENT_ID"]."&ID=".$ID."&action=delete&".bitrix_sessid_get()."#tb';",
 		"ICON" => "btn_delete"
 	);
 }
@@ -1060,7 +1060,7 @@ $tabControl->BeginNextTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => ($disableButtonsFlag || $saleModulePermissions < "W"),
-		"back_url" => !empty($backUrlReq) ? $backUrlReq : ("/bnpt/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID)
+		"back_url" => !empty($backUrlReq) ? $backUrlReq : ("/bitrix/admin/sale_delivery_service_list.php?lang=".LANGUAGE_ID)
 	)
 );
 

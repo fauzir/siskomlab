@@ -46,7 +46,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions >= "U
 	}
 
 	if (strlen($errorMessage) <= 0)
-		LocalRedirect("/bnpt/admin/sale_transact_admin.php?lang=".LANG.GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/sale_transact_admin.php?lang=".LANG.GetFilterParams("filter_", false));
 	else
 		$bVarsFromForm = true;
 }
@@ -67,7 +67,7 @@ $aMenu = array(
 		array(
 				"TEXT" => GetMessage("STEN_2FLIST"),
 				"TITLE" => GetMessage("STEN_2FLIST_TITLE"),
-				"LINK" => "/bnpt/admin/sale_transact_admin.php?lang=".LANG.GetFilterParams("filter_"),
+				"LINK" => "/bitrix/admin/sale_transact_admin.php?lang=".LANG.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 	);
@@ -102,7 +102,7 @@ $tabControl->BeginNextTab();
 		<td width="60%"><?
 			$user_name = "";
 			if ($ID > 0)
-				$user_name = "[<a title=\"".GetMessage("STE_USER_PROFILE")."\" href=\"/bnpt/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".$str_USER_LOGIN.") ".$str_USER_NAME." ".$str_USER_LAST_NAME;
+				$user_name = "[<a title=\"".GetMessage("STE_USER_PROFILE")."\" href=\"/bitrix/admin/user_edit.php?lang=".LANGUAGE_ID."&ID=".$str_USER_ID."\">".$str_USER_ID."</a>] (".$str_USER_LOGIN.") ".$str_USER_NAME." ".$str_USER_LAST_NAME;
 
 			echo FindUserID("USER_ID", $str_USER_ID, $user_name);
 			?></td>
@@ -158,7 +158,7 @@ $tabControl->EndTab();
 $tabControl->Buttons();
 ?>
 
-<input type="submit" name="save" value="<?= GetMessage("STE_SAVE") ?>" <?if ($saleModulePermissions < "U") echo "disabled" ?>>&nbsp;<input type="button" value="<?echo GetMessage("STE_CANCEL1")?>" OnClick="window.location='/bnpt/admin/sale_transact_admin.php?lang=<?= LANG ?><?= GetFilterParams("filter_") ?>'">
+<input type="submit" name="save" value="<?= GetMessage("STE_SAVE") ?>" <?if ($saleModulePermissions < "U") echo "disabled" ?>>&nbsp;<input type="button" value="<?echo GetMessage("STE_CANCEL1")?>" OnClick="window.location='/bitrix/admin/sale_transact_admin.php?lang=<?= LANG ?><?= GetFilterParams("filter_") ?>'">
 
 <?
 $tabControl->End();

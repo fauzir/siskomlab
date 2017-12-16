@@ -23,7 +23,7 @@ require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_af
 $aMenu = array(
 	array(
 		"TEXT"	=> Loc::getMessage("MAIN_ADMIN_MENU_LIST"),
-		"LINK"	=> "/bnpt/admin/agreement_admin.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/agreement_admin.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> Loc::getMessage("MAIN_ADMIN_MENU_LIST"),
 		"ICON"	=> "btn_list"
 	)

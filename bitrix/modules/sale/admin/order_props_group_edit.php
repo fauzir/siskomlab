@@ -50,7 +50,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $saleModulePermissions>="W" 
 	if (strlen($errorMessage) <= 0)
 	{
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bnpt/admin/sale_order_props_group.php?lang=".LANG.GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/sale_order_props_group.php?lang=".LANG.GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -84,7 +84,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SOPGEN_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/sale_order_props_group.php?lang=".LANG.GetFilterParams("filter_")
+		"LINK" => "/bitrix/admin/sale_order_props_group.php?lang=".LANG.GetFilterParams("filter_")
 	)
 );
 
@@ -95,12 +95,12 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SOPGEN_NEW_PROPS_GRP"),
 		"ICON" => "btn_new",
-		"LINK" => "/bnpt/admin/sale_order_props_group_edit.php?lang=".LANG.GetFilterParams("filter_")
+		"LINK" => "/bitrix/admin/sale_order_props_group_edit.php?lang=".LANG.GetFilterParams("filter_")
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SOPGEN_DELETE_PROPS_GRP"), 
-		"LINK" => "javascript:if(confirm('".GetMessage("SOPGEN_DELETE_PROPS_GRP_CONFIRM")."')) window.location='/bnpt/admin/sale_order_props_group.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("SOPGEN_DELETE_PROPS_GRP_CONFIRM")."')) window.location='/bitrix/admin/sale_order_props_group.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"ICON" => "btn_delete",
 	);
 }
@@ -176,7 +176,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($saleModulePermissions < "W"),
-				"back_url" => "/bnpt/admin/sale_order_props_group.php?lang=".LANG.GetFilterParams("filter_")
+				"back_url" => "/bitrix/admin/sale_order_props_group.php?lang=".LANG.GetFilterParams("filter_")
 			)
 	);
 ?>

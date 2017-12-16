@@ -1,7 +1,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
 <?
 // Put this file into some empty folder
-// and run "URLs processing" -> "Re-creation" ( /bnpt/admin/urlrewrite_reindex.php )
+// and run "URLs processing" -> "Re-creation" ( /bitrix/admin/urlrewrite_reindex.php )
 // Open http://<your site>/max/images/ in browser
 ?>
 <?$APPLICATION->IncludeComponent(

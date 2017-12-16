@@ -61,7 +61,7 @@ $MESS["SEO_SITEMAP_IBLOCK_LIST"] = "Daftar";
 $MESS["SEO_SITEMAP_IBLOCK_SECTIONS"] = "Sections";
 $MESS["SEO_SITEMAP_IBLOCK_ELEMENTS"] = "elemen (s)";
 $MESS["SEO_SITEMAP_LOGIC_WARNING"] = "Penting Changing the tree traversal logic will drop any unsaved changes you might have made to the current configuration. Terus";
-$MESS["SEO_SITEMAP_RUN_ROBOTS_WARNING"] = "Attention! robots.txt contains rules that refer to other sitemap.xml files:<ul>#SITEMAPS#</ul><a href=\"/bnpt/admin/seo_robots.php?lang=#LANGUAGE_ID#&site_id=#SITE_ID#\">Configure robots.txt</a>";
+$MESS["SEO_SITEMAP_RUN_ROBOTS_WARNING"] = "Attention! robots.txt contains rules that refer to other sitemap.xml files:<ul>#SITEMAPS#</ul><a href=\"/bitrix/admin/seo_robots.php?lang=#LANGUAGE_ID#&site_id=#SITE_ID#\">Configure robots.txt</a>";
 $MESS["SEO_SITEMAP_IBLOCK_AUTO"] = "Autogeneration";
 $MESS["SEO_SITEMAP_FORUM"] = "Forum";
 $MESS["SEO_SITEMAP_FORUM_TOPIC"] = "Topik";

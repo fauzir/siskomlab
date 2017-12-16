@@ -1,8 +1,0 @@
-<?
-$MESS["TASKS_TWR_TEMPLATE_USER"] = ", di # DAYS #";
-$MESS["TASKS_TWR_TEMPLATE_ACCESS_LEVEL"] = "Tugas saya";
-$MESS["TASKS_TWR_TEMPLATE_ACCESS_LEVEL_10"] = "Saya bertanggung jawab";
-$MESS["TASKS_TWR_TEMPLATE_ACCESS_LEVEL_20"] = "Saya adalah peserta";
-$MESS["TASKS_TWR_TEMPLATE_ACCESS_LEVEL_30"] = "Dalam laporan";
-$MESS["TASKS_TWR_TEMPLATE_ACCESS_LEVEL_40"] = "Untuk laporan";
-?>

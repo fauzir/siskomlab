@@ -54,7 +54,7 @@ if (strlen($arResult["FatalErrorMessage"]) <= 0)
 		{
 			$request = array(
 				"METHOD" => "GET",
-				"PATH" => "/bnpt/admin/sale_order_new.php",
+				"PATH" => "/bitrix/admin/sale_order_new.php",
 				"HEADERS" => array(),
 				"BODY" => array()
 			);

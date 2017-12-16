@@ -1,6 +1,0 @@
-<?
-$MESS["IBLOCK_PROP_USERID_DESC"] = "Link to user";
-$MESS["IBLOCK_PROP_USERID_NONE"] = "Tidak diatur";
-$MESS["IBLOCK_PROP_USERID_CURR"] = "Arus:";
-$MESS["IBLOCK_PROP_USERID_OTHR"] = "Memilih";
-?>

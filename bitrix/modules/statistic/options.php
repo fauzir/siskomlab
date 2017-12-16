@@ -118,8 +118,8 @@ if ($STAT_RIGHT>="R"):
 
 			3 => GetMessage("STAT_OPT_STORAGE_EVENTS_SECTION"),
 			"EVENT_GID_BASE64_ENCODE" => Array("EVENT_GID_BASE64_ENCODE", GetMessage("STAT_OPT_STORAGE_EVENT_GID_BASE64_ENCODE"), Array("checkbox", "Y")),
-			"EVENT_GID_SITE_ID" => Array("EVENT_GID_SITE_ID", GetMessage("STAT_OPT_STORAGE2_EVENT_GID_SITE_ID", array("#HREF#"=>'/bnpt/admin/event_edit.php?lang='.LANGUAGE_ID)), Array("text", 20)),
-			"USER_EVENTS_LOAD_HANDLERS_PATH" => Array("USER_EVENTS_LOAD_HANDLERS_PATH", GetMessage("STAT_OPT_STORAGE2_USER_EVENTS_LOAD_HANDLERS_PATH", array("#HREF#"=>'/bnpt/admin/event_edit.php?lang='.LANGUAGE_ID)), Array("text", 40)),
+			"EVENT_GID_SITE_ID" => Array("EVENT_GID_SITE_ID", GetMessage("STAT_OPT_STORAGE2_EVENT_GID_SITE_ID", array("#HREF#"=>'/bitrix/admin/event_edit.php?lang='.LANGUAGE_ID)), Array("text", 20)),
+			"USER_EVENTS_LOAD_HANDLERS_PATH" => Array("USER_EVENTS_LOAD_HANDLERS_PATH", GetMessage("STAT_OPT_STORAGE2_USER_EVENTS_LOAD_HANDLERS_PATH", array("#HREF#"=>'/bitrix/admin/event_edit.php?lang='.LANGUAGE_ID)), Array("text", 40)),
 
 			4 => GetMessage("STAT_OPT_STORAGE_REFERER_SECTION"),
 			"SAVE_REFERERS" => Array("SAVE_REFERERS", GetMessage("STAT_OPT_STORAGE_SAVE_REFERERS"), Array("checkbox", "Y")),
@@ -407,7 +407,7 @@ if ($STAT_RIGHT>="R"):
 	</tr>
 	<?if (CModule::IncludeModule("fileman")):?>
 	<tr>
-		<td align="center" colspan=2>[ <a href="/bnpt/admin/fileman_file_edit.php?lang=<?=LANGUAGE_ID?>&amp;full_src=Y&amp;path=%2Fbitrix%2Factivity_limit.php"><?echo GetMessage("STAT_OPT_GRABBER_EDIT_503_TEMPLATE_LINK")?></a> ]</td>
+		<td align="center" colspan=2>[ <a href="/bitrix/admin/fileman_file_edit.php?lang=<?=LANGUAGE_ID?>&amp;full_src=Y&amp;path=%2Fbitrix%2Factivity_limit.php"><?echo GetMessage("STAT_OPT_GRABBER_EDIT_503_TEMPLATE_LINK")?></a> ]</td>
 	</tr>
 	<?endif;?>
 	<tr>
@@ -427,7 +427,7 @@ if ($STAT_RIGHT>="R"):
 		<td><input size="3" type="text" name="DEFENCE_MAX_STACK_HITS" id="DEFENCE_MAX_STACK_HITS" value="<?=htmlspecialcharsbx($DEFENCE_MAX_STACK_HITS)?>">&nbsp;<?echo GetMessage("STAT_OPT_DEFENCE_MAX_STACK_HITS_MEASURE")?></td>
 	</tr>
 	<tr>
-		<td nowrap><label for="DEFENCE_LOG"><?echo GetMessage("STAT_OPT_DEFENCE_LOG", array("#HREF#"=>"/bnpt/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=STAT_ACTIVITY_LIMIT"))?></label></td>
+		<td nowrap><label for="DEFENCE_LOG"><?echo GetMessage("STAT_OPT_DEFENCE_LOG", array("#HREF#"=>"/bitrix/admin/event_log.php?lang=".LANGUAGE_ID."&set_filter=Y&find_type=audit_type_id&find_audit_type[]=STAT_ACTIVITY_LIMIT"))?></label></td>
 		<td><?echo InputType("checkbox", "DEFENCE_LOG", "Y", $DEFENCE_LOG)?></td>
 	</tr>
 	<?$tabControl->EndTab();?>

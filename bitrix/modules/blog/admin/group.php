@@ -133,7 +133,7 @@ while ($arGroup = $dbResultList->NavNext(true, "f_"))
 {
 	$row =& $lAdmin->AddRow($f_ID, $arGroup);
 
-	$row->AddField("ID", '<a href="/bnpt/admin/blog_group_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BLG_UPDATE_ALT").'">'.$f_ID.'</a>');
+	$row->AddField("ID", '<a href="/bitrix/admin/blog_group_edit.php?ID='.$f_ID.'&lang='.LANGUAGE_ID.'" title="'.GetMessage("BLG_UPDATE_ALT").'">'.$f_ID.'</a>');
 	$row->AddInputField("NAME", array("size" => "35"));
 	$row->AddSelectField("SITE_ID", $arSites, array());
 

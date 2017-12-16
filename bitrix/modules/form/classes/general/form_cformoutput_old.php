@@ -423,7 +423,7 @@ class CFormOutput_old
 
 		$back_url = $_SERVER['REQUEST_URI'];
 
-		$editor = "/bnpt/admin/fileman_file_edit.php?full_src=Y&site=".SITE_ID."&";
+		$editor = "/bitrix/admin/fileman_file_edit.php?full_src=Y&site=".SITE_ID."&";
 		$rel_path = "form/".(empty($this->RESULT_ID) ? "result_new" : "result_edit")."/form.php";
 		$path = BX_PRESONAL_ROOT."/templates/".SITE_TEMPLATE_ID."/".$rel_path;
 		$href = "javascript:window.location='".$editor."path=".urlencode($path)."&lang=".LANGUAGE_ID."&back_url=".urlencode($back_url)."'";
@@ -444,7 +444,7 @@ class CFormOutput_old
 			$APPLICATION->AddPanelButton(array(
 				"SORT" => 100,
 				"MAIN_SORT" => 1000,
-				"HREF" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&amp;ID=".$this->WEB_FORM_ID. "&amp;tabControl_active_tab=edit5&back_url=".urlencode($back_url),
+				"HREF" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&amp;ID=".$this->WEB_FORM_ID. "&amp;tabControl_active_tab=edit5&back_url=".urlencode($back_url),
 				"SRC"  => "/bitrix/images/form/edit_templ.gif",
 				"ALT" => GetMessage("FORM_PUBLIC_ICON_EDIT_TPL")
 			));
@@ -464,7 +464,7 @@ class CFormOutput_old
 					$arIcons = Array();
 					$arIcons[] =
 							Array(
-								"URL" => "/bnpt/admin/form_edit.php?lang=".LANGUAGE_ID."&amp;ID=".$this->WEB_FORM_ID. "&amp;tabControl_active_tab=edit5&back_url=".urlencode($back_url),
+								"URL" => "/bitrix/admin/form_edit.php?lang=".LANGUAGE_ID."&amp;ID=".$this->WEB_FORM_ID. "&amp;tabControl_active_tab=edit5&back_url=".urlencode($back_url),
 								"ICON" => 'form-edit-tpl',
 								"ALT" => GetMessage("FORM_PUBLIC_ICON_EDIT_TPL")
 								);

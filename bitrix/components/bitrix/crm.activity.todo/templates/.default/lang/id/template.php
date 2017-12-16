@@ -1,7 +1,0 @@
-<?
-$MESS["CRM_ACTIVITY_TODO_VIEW_TITLE"] = "Lihat Aktivitas";
-$MESS["CRM_ACTIVITY_TODO_CLOSE"] = "Dekat";
-$MESS["CRM_ACTIVITY_TODO_DEADLINE"] = "Batas waktu";
-$MESS["CRM_ACTIVITY_TODO_HOT"] = "(Prioritas utama)";
-$MESS["CRM_ACTIVITY_TODO_CONTACT"] = "with";
-?>

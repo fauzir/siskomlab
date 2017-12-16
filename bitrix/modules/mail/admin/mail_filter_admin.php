@@ -335,7 +335,7 @@ $arSubMenu = Array();
 
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("MAIL_FILT_ADM_MANUAL_TYPE"),
-	"ACTION"	=> "window.location='/bnpt/admin/mail_filter_edit.php?filter_type=&lang=".LANG."';"
+	"ACTION"	=> "window.location='/bitrix/admin/mail_filter_edit.php?filter_type=&lang=".LANG."';"
 );
 
 ClearVars("a_");
@@ -344,7 +344,7 @@ while($ar = $res->ExtractFields("a_"))
 {
 	$arSubMenu[] = array(
 	"TEXT"	=> $a_NAME,
-	"ACTION"	=> "window.location='/bnpt/admin/mail_filter_edit.php?filter_type=".$a_ID."&lang=".LANG."';"
+	"ACTION"	=> "window.location='/bitrix/admin/mail_filter_edit.php?filter_type=".$a_ID."&lang=".LANG."';"
 	);
 }
 

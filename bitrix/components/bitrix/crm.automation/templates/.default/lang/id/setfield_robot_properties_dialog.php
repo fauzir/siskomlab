@@ -1,5 +1,0 @@
-<?
-$MESS["CRM_AUTOMATION_SFA_DELETE"] = "Hapus";
-$MESS["CRM_AUTOMATION_SFA_NOT_SELECTED"] = "tidak terpilih";
-$MESS["CRM_AUTOMATION_SFA_FIELDS_LIST"] = "Pilih bidang";
-?>

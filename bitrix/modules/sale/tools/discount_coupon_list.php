@@ -378,7 +378,7 @@ while ($coupon = $couponIterator->Fetch())
 		if ($coupon['USER_ID'] > 0)
 			$userIDs[$coupon['USER_ID']] = true;
 	}
-	$urlEdit = '/bnpt/admin/sale_discount_coupon_edit.php?ID='.$coupon['ID'].'&DISCOUNT_ID='.$discountID.'&lang='.LANGUAGE_ID.'&bxpublic=Y';
+	$urlEdit = '/bitrix/admin/sale_discount_coupon_edit.php?ID='.$coupon['ID'].'&DISCOUNT_ID='.$discountID.'&lang='.LANGUAGE_ID.'&bxpublic=Y';
 
 	$rowList[$coupon['ID']] = $row = &$adminList->AddRow(
 		$coupon['ID'],
@@ -493,7 +493,7 @@ if (!empty($rowList) && ($selectFieldsMap['CREATED_BY'] || $selectFieldsMap['MOD
 		{
 			$oneUser['ID'] = (int)$oneUser['ID'];
 			if ($canViewUserList)
-				$userList[$oneUser['ID']] = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
+				$userList[$oneUser['ID']] = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$oneUser['ID'].'">'.CUser::FormatName($nameFormat, $oneUser).'</a>';
 			else
 				$userList[$oneUser['ID']] = CUser::FormatName($nameFormat, $oneUser);
 		}
@@ -565,7 +565,7 @@ if (!isset($_REQUEST["mode"]) || ($_REQUEST["mode"] != 'excel' && $_REQUEST["mod
 			sessid: BX.bitrix_sessid()
 		};
 		(new BX.CAdminDialog({
-			'content_url': '/bnpt/admin/sale_discount_coupon_edit.php',
+			'content_url': '/bitrix/admin/sale_discount_coupon_edit.php',
 			'content_post': PostParams,
 			'draggable': true,
 			'resizable': true,

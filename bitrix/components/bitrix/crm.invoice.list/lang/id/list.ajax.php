@@ -1,6 +1,0 @@
-<?
-$MESS["CRM_INVOICE_LIST_REBUILD_STATISTICS_NOT_REQUIRED_SUMMARY"] = "Data statistik untuk faktur sudah mutakhir.";
-$MESS["CRM_INVOICE_LIST_REBUILD_STATISTICS_PROGRESS_SUMMARY"] = "Faktur diproses: # PROCESSED_ITEMS # dari # TOTAL_ITEMS #.";
-$MESS["CRM_INVOICE_LIST_REBUILD_STATISTICS_COMPLETED_SUMMARY"] = "Selesai mengolah data statistik untuk faktur. Faktur diproses: # PROCESSED_ITEMS #.";
-$MESS["CRM_INVOICE_LIST_ROW_COUNT"] = "Total: # ROW_COUNT #";
-?>

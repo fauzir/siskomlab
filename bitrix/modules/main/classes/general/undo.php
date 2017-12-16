@@ -209,7 +209,7 @@ window.BXUndoLastChanges = function()
 	if (!confirm(\"".GetMessage("MAIN_UNDO_ESCAPE_CHANGES_CONFIRM")."\"))
 		return;
 
-	BX.ajax.get(\"/bnpt/admin/public_undo.php?undo=".$ID."&".bitrix_sessid_get()."\", null, function(result)
+	BX.ajax.get(\"/bitrix/admin/public_undo.php?undo=".$ID."&".bitrix_sessid_get()."\", null, function(result)
 	{
 		if (result && result.toUpperCase().indexOf(\"ERROR\") != -1)
 			BX.admin.panel.Notify(\"".GetMessage("MAIN_UNDO_ESCAPE_ERROR")."\");
@@ -444,7 +444,7 @@ class CAutoSave
 		if (self::$bAllowed == null)
 		{
 			$arOpt = CUserOptions::GetOption('global', 'settings');
-			self::$bAllowed = $arOpt['autosave'] != 'N' && $APPLICATION->GetCurPage() != '/bnpt/admin/update_system.php';
+			self::$bAllowed = $arOpt['autosave'] != 'N' && $APPLICATION->GetCurPage() != '/bitrix/admin/update_system.php';
 		}
 
 		return self::$bAllowed;

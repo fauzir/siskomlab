@@ -99,36 +99,36 @@ if ($arGadgetParams["HIDE_GRAPH"] != "Y")
 		$strGraphParams .= "&max_grid=10&min_grid=5";
 
 		?><div class="bx-gadgets-content-padding-rl bx-gadgets-content-padding-t"><?
-			?><img src="/bnpt/admin/traffic_graph.php?<?=$strGraphParams?>&width=<?=$iGraphWidth?>&height=<?=$iGraphHeight?>&rand=<?=rand()?>&find_graph_type=date" width="<?=$iGraphWidth?>" height="<?=$iGraphHeight?>"><?
+			?><img src="/bitrix/admin/traffic_graph.php?<?=$strGraphParams?>&width=<?=$iGraphWidth?>&height=<?=$iGraphHeight?>&rand=<?=rand()?>&find_graph_type=date" width="<?=$iGraphWidth?>" height="<?=$iGraphHeight?>"><?
 			?><div style="padding: 0 0 10px 0;">
 			<table cellpadding="2" cellspacing="0" border="0">
 				<?if (in_array("HIT", $arGadgetParams["GRAPH_PARAMS"])):?>
 				<tr>
-					<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["HITS"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["HITS"]?>" width="45" height="2"></td>
 					<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("GD_STAT_HITS")?></td>
 				</tr>
 				<?endif;?>
 				<?if (in_array("HOST", $arGadgetParams["GRAPH_PARAMS"])):?>
 				<tr>
-					<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["HOSTS"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["HOSTS"]?>" width="45" height="2"></td>
 					<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("GD_STAT_HOSTS")?></td>
 				</tr>
 				<?endif;?>
 				<?if (in_array("SESSION", $arGadgetParams["GRAPH_PARAMS"])):?>
 				<tr>
-					<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["SESSIONS"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["SESSIONS"]?>" width="45" height="2"></td>
 					<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("GD_STAT_SESSIONS")?></td>
 				</tr>
 				<?endif;?>
 				<?if (in_array("EVENT", $arGadgetParams["GRAPH_PARAMS"])):?>
 				<tr>
-					<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["EVENTS"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["EVENTS"]?>" width="45" height="2"></td>
 					<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("GD_STAT_EVENTS")?></td>
 				</tr>
 				<?endif;?>
 				<?if (in_array("GUEST", $arGadgetParams["GRAPH_PARAMS"]) && !array_key_exists("SITE_ID", $arFilter)):?>
 				<tr>
-					<td valign="center"><img src="/bnpt/admin/graph_legend.php?color=<?=$arrColor["GUESTS"]?>" width="45" height="2"></td>
+					<td valign="center"><img src="/bitrix/admin/graph_legend.php?color=<?=$arrColor["GUESTS"]?>" width="45" height="2"></td>
 					<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("GD_STAT_VISITORS")?></td>
 				</tr>
 				<?endif;?>
@@ -158,7 +158,7 @@ if (!$arGadgetParams["SITE_ID"])
 		"TAB" => GetMessage("GD_STAT_TAB_ADV"),
 		"ICON" => "",
 		"TITLE" => "",
-		"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_adv_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bnpt/admin_stat/getdata.php?lang=".LANGUAGE_ID."&table_id=adv', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
+		"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_adv_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bitrix/admin_stat/getdata.php?lang=".LANGUAGE_ID."&table_id=adv', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
 	);
 
 	$aTabs[] = array(
@@ -166,7 +166,7 @@ if (!$arGadgetParams["SITE_ID"])
 		"TAB" => GetMessage("GD_STAT_TAB_EVENT"),
 		"ICON" => "",
 		"TITLE" => "",
-		"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_event_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bnpt/admin_stat/getdata.php?lang=".LANGUAGE_ID."&table_id=event', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
+		"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_event_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bitrix/admin_stat/getdata.php?lang=".LANGUAGE_ID."&table_id=event', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
 	);
 }
 
@@ -175,7 +175,7 @@ $aTabs[] = array(
 	"TAB" => GetMessage("GD_STAT_TAB_REF"),
 	"ICON" => "",
 	"TITLE" => "",
-	"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_ref_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bnpt/admin_stat/getdata.php?lang=".LANGUAGE_ID."&".($arGadgetParams["SITE_ID"] ? "site_id=".$arGadgetParams["SITE_ID"]."&" : "")."table_id=referer', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
+	"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_ref_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bitrix/admin_stat/getdata.php?lang=".LANGUAGE_ID."&".($arGadgetParams["SITE_ID"] ? "site_id=".$arGadgetParams["SITE_ID"]."&" : "")."table_id=referer', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
 );
 /*
 $aTabs[] = array(
@@ -183,7 +183,7 @@ $aTabs[] = array(
 	"TAB" => GetMessage("GD_STAT_TAB_PHRASE"),
 	"ICON" => "",
 	"TITLE" => "",
-	"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_phrase_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bnpt/admin_stat/getdata.php?lang=".LANGUAGE_ID."&".($arGadgetParams["SITE_ID"] ? "site_id=".$arGadgetParams["SITE_ID"]."&" : "")."table_id=phrase', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
+	"ONSELECT" => "gdStatsTabControl_".$arGadgetParams["RND_STRING"].".LoadTab(BX('bx_gd_stat_phrase_".$arGadgetParams["RND_STRING"]."'), '/bitrix/gadgets/bitrix/admin_stat/getdata.php?lang=".LANGUAGE_ID."&".($arGadgetParams["SITE_ID"] ? "site_id=".$arGadgetParams["SITE_ID"]."&" : "")."table_id=phrase', gdStatsTabControl_".$arGadgetParams["RND_STRING"].");"
 );
 */
 $tabControl = new CAdminViewTabControl("statsTabControl_".$arGadgetParams["RND_STRING"], $aTabs);
@@ -213,22 +213,22 @@ $tabControl = new CAdminViewTabControl("statsTabControl_".$arGadgetParams["RND_S
 								?><tr>
 									<td><?=$arRow["NAME"]?></td><?
 									if (array_key_exists("TODAY_".$row_code, $arComm)):
-										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bnpt/admin/<?=$arRow["LINK"]?>?find_date1=<?=$date_today?>&find_date2=<?=$date_today?><?=$strFilterSite?>&set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["TODAY_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
+										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bitrix/admin/<?=$arRow["LINK"]?>?find_date1=<?=$date_today?>&find_date2=<?=$date_today?><?=$strFilterSite?>&set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["TODAY_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
 									else:
 										?><td>&nbsp;</td><?
 									endif;
 									if (array_key_exists("YESTERDAY_".$row_code, $arComm)):
-										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bnpt/admin/<?=$arRow["LINK"]?>?find_date1=<?=$date_yesterday?>&find_date2=<?=$date_yesterday?><?=$strFilterSite?>&set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["YESTERDAY_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
+										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bitrix/admin/<?=$arRow["LINK"]?>?find_date1=<?=$date_yesterday?>&find_date2=<?=$date_yesterday?><?=$strFilterSite?>&set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["YESTERDAY_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
 									else:
 										?><td>&nbsp;</td><?
 									endif;
 									if (array_key_exists("B_YESTERDAY_".$row_code, $arComm)):
-										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bnpt/admin/<?=$arRow["LINK"]?>?find_date1=<?=$date_beforeyesterday?>&find_date2=<?=$date_beforeyesterday?><?=$strFilterSite?>&set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["B_YESTERDAY_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
+										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bitrix/admin/<?=$arRow["LINK"]?>?find_date1=<?=$date_beforeyesterday?>&find_date2=<?=$date_beforeyesterday?><?=$strFilterSite?>&set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["B_YESTERDAY_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
 									else:
 										?><td>&nbsp;</td><?
 									endif;
 									if (array_key_exists("TOTAL_".$row_code, $arComm)):
-										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bnpt/admin/<?=$arRow["LINK"]?><?=$strFilterSite?>?set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["TOTAL_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
+										?><td align="right"><?if (array_key_exists("LINK", $arRow)):?><a href="/bitrix/admin/<?=$arRow["LINK"]?><?=$strFilterSite?>?set_filter=Y&lang=<?=LANGUAGE_ID?>"><?endif;?><?=intval($arComm["TOTAL_".$row_code])?><?if (array_key_exists("LINK", $arRow)):?></a><?endif;?></td><?
 									else:
 										?><td>&nbsp;</td><?
 									endif;

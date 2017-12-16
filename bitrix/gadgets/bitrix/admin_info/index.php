@@ -8,8 +8,8 @@ if(file_exists($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/.config.php"))
 if(isset($bxProductConfig["admin"]["index"]))
 	$sProduct = $bxProductConfig["admin"]["index"];
 else
-	$sProduct = GetMessage("GD_INFO_product").' &quot;#VERSION#&quot;';
-$sVer = "BNPT";
+	$sProduct = GetMessage("GD_INFO_product").' &quot;'.GetMessage("GD_INFO_product_name_".COption::GetOptionString("main", "vendor", "1c_bitrix")).'#VERSION#&quot;';
+$sVer = ($GLOBALS['USER']->CanDoOperation('view_other_settings')? " ".SM_VERSION : "");
 $sProduct = str_replace("#VERSION#", $sVer, $sProduct);
 
 ?><div class="bx-gadgets-info">
@@ -38,7 +38,7 @@ $sProduct = str_replace("#VERSION#", $sVer, $sProduct);
 					?><div><?=str_replace("#VALUE#", CUser::GetCount(), GetMessage("GD_INFO_USERS"));?></div><?
 				}
 			?></span></td>
-			<td align="right" valign="bottom"><span style="display: inline-block; vertical-align: bottom; align: right;"><img src="https://files.slack.com/files-pri/T03H1C6G7-F8C2QGF4P/logo_bnpt.png"></span></td>
+			<td align="right" valign="bottom"><span style="display: inline-block; vertical-align: bottom; align: right;"><img src="/bitrix/gadgets/bitrix/admin_info/images/<?=(in_array(LANGUAGE_ID, array("ru", "en", "de"))?LANGUAGE_ID:"en")?>/logo.gif"></span></td>
 		</tr>
 		</table>
 	</div>	

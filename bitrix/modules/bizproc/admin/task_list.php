@@ -214,7 +214,7 @@ if ($allowAdminAccess && isset($arFilter['USER_STATUS']) && $arFilter['USER_STAT
 				'type' => 'html',
 				'value' => '<div id="action_delegate_to" style="display:none">
 					<input type="text" name="delegate_to" size="3" name=""/>
-					<input type="button" OnClick="window.open(\'/bnpt/admin/user_search.php?lang='
+					<input type="button" OnClick="window.open(\'/bitrix/admin/user_search.php?lang='
 					.LANGUAGE_ID.'&FN=form_'.$sTableID.'&FC=delegate_to\',
 					\'\', \'scrollbars=yes,resizable=yes,width=760,height=500,top=\'+Math.floor((screen.height - 560)/2-14)
 					+\',left=\'+Math.floor((screen.width - 760)/2-5));" value=" ... "></div>'

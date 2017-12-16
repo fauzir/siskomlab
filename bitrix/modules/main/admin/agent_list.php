@@ -167,7 +167,7 @@ while($db_res = $rsData->NavNext(true, "a_"))
 	$row =& $lAdmin->AddRow($a_ID,$db_res);
 	$row->AddField("ID", $a_ID);
 	$row->AddField("MODULE_ID",$a_MODULE_ID);
-	$row->AddField("USER_ID", ($a_USER_ID > 0 ) ? "<a href=\"/bnpt/admin/user_edit.php?ID=".$a_USER_ID."&lang=".LANG."\">[".$a_USER_ID."] ".$a_USER_NAME." ".$a_LAST_NAME." (".$a_LOGIN.")</a>" : GetMessage("MAIN_AGENT_SYSTEM_USER"));
+	$row->AddField("USER_ID", ($a_USER_ID > 0 ) ? "<a href=\"/bitrix/admin/user_edit.php?ID=".$a_USER_ID."&lang=".LANG."\">[".$a_USER_ID."] ".$a_USER_NAME." ".$a_LAST_NAME." (".$a_LOGIN.")</a>" : GetMessage("MAIN_AGENT_SYSTEM_USER"));
 	$row->AddInputField("SORT");
 	$row->AddInputField("NAME");
 	$row->AddCheckField("ACTIVE");

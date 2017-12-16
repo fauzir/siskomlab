@@ -105,9 +105,9 @@ if ($request->isPost() && $request->getPost("update") && check_bitrix_sessid() &
 			}
 
 			if (strlen($request->getPost("apply")) == 0)
-				LocalRedirect("/bnpt/admin/sale_company.php?lang=".$lang."&".GetFilterParams("filter_", false));
+				LocalRedirect("/bitrix/admin/sale_company.php?lang=".$lang."&".GetFilterParams("filter_", false));
 			else
-				LocalRedirect("/bnpt/admin/sale_company_edit.php?lang=".$lang."&ID=".$id."&".GetFilterParams("filter_", false));
+				LocalRedirect("/bitrix/admin/sale_company_edit.php?lang=".$lang."&ID=".$id."&".GetFilterParams("filter_", false));
 		}
 		else
 		{

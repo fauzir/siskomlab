@@ -3741,11 +3741,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["is_ajax"] == "Y")
 			$result['DATA'] = $message;
 			break;		
 		case 15:
-			if (!CopyDirFiles($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/admin', $_SERVER["DOCUMENT_ROOT"].'/bnpt/admin', true, true))
-				$error .= "<br>".str_replace(array('#FROM#', '#TO#'), array($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/admin', $_SERVER["DOCUMENT_ROOT"].'/bnpt/admin'),Loc::getMessage('SALE_CONVERTER_COPY_FILES_ERROR'));
+			if (!CopyDirFiles($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/admin', $_SERVER["DOCUMENT_ROOT"].'/bitrix/admin', true, true))
+				$error .= "<br>".str_replace(array('#FROM#', '#TO#'), array($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/admin', $_SERVER["DOCUMENT_ROOT"].'/bitrix/admin'),Loc::getMessage('SALE_CONVERTER_COPY_FILES_ERROR'));
 				
 			if (!CopyDirFiles($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/components', $_SERVER["DOCUMENT_ROOT"].'/bitrix/components', true, true))
-				$error .= "<br>".str_replace(array('#FROM#', '#TO#'), array($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/components', $_SERVER["DOCUMENT_ROOT"].'/bnpt/admin'),Loc::getMessage('SALE_CONVERTER_COPY_FILES_ERROR'));
+				$error .= "<br>".str_replace(array('#FROM#', '#TO#'), array($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/components', $_SERVER["DOCUMENT_ROOT"].'/bitrix/admin'),Loc::getMessage('SALE_CONVERTER_COPY_FILES_ERROR'));
 				
 			if (!CopyDirFiles($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/images', $_SERVER["DOCUMENT_ROOT"].'/bitrix/images/sale', true, true))
 				$error .= "<br>".str_replace(array('#FROM#', '#TO#'), array($_SERVER["DOCUMENT_ROOT"].'/bitrix/modules/sale/install/images', $_SERVER["DOCUMENT_ROOT"].'/bitrix/images/sale'),Loc::getMessage('SALE_CONVERTER_COPY_FILES_ERROR'));
@@ -4799,7 +4799,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["is_ajax"] == "Y")
 									continue;
 								$langMess[$oneLanguage] = str_replace(
 									'#LINK#',
-									'/bnpt/admin/settings.php?lang='.$oneLanguage.'&mid=sale',
+									'/bitrix/admin/settings.php?lang='.$oneLanguage.'&mid=sale',
 									$mess[$messID]
 								);
 							}

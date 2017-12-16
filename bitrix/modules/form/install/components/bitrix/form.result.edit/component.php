@@ -317,7 +317,7 @@ if (CModule::IncludeModule("form"))
 				// add icons
 				$back_url = $_SERVER['REQUEST_URI'];
 
-				$editor = "/bnpt/admin/fileman_file_edit.php?full_src=Y&site=".SITE_ID."&";
+				$editor = "/bitrix/admin/fileman_file_edit.php?full_src=Y&site=".SITE_ID."&";
 				$href = "javascript:window.location='".$editor."path=".urlencode($path)."&lang=".LANGUAGE_ID."&back_url=".urlencode($back_url)."'";
 
 				if ($arParams['USE_EXTENDED_ERRORS'] == 'Y')

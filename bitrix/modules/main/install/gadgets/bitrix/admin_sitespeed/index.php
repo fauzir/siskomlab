@@ -3,13 +3,13 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 use Bitrix\Main\Analytics;
 
-$APPLICATION->SetAdditionalCSS("/bitrix/gadgets/bnpt/admin_sitespeed/site_speed.css");
+$APPLICATION->SetAdditionalCSS("/bitrix/gadgets/bitrix/admin_sitespeed/site_speed.css");
 ?>
 
 <div class="bx-gadgets-speed-top" id="speed-top-block">
 	<div class="bx-gadgets-title bx-gadgets-title-speed">
 		<?=GetMessage("GD_SPEED_TITLE")?>:
-		<a href="/bnpt/admin/site_speed.php?lang=<?=LANGUAGE_ID?>" class="bx-gadget-text-color" id="site-speed-index-text"></a>
+		<a href="/bitrix/admin/site_speed.php?lang=<?=LANGUAGE_ID?>" class="bx-gadget-text-color" id="site-speed-index-text"></a>
 	</div>
 	<div class="bx-gadget-speed-num-block" id="bx-gadget-speed-num-block">
 		<span class="bx-gadget-speed-num" id="site-speed-index"></span><span class="bx-gadget-speed-text"><?=GetMessage("GD_SPEED_UNIT")?></span>

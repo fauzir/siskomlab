@@ -280,7 +280,7 @@ if (!$boolMulti)
 	<input type="hidden" name="TMP_ID" value="<?echo htmlspecialcharsbx($strSubTMP_ID)?>"><?
 	$tabControl->EndEpilogContent();
 	$tabControl->Begin(array(
-		"FORM_ACTION" => '/bnpt/admin/cat_subcoupon_edit.php?lang='.LANGUAGE_ID,
+		"FORM_ACTION" => '/bitrix/admin/cat_subcoupon_edit.php?lang='.LANGUAGE_ID,
 	));
 
 	$tabControl->BeginNextFormTab();
@@ -434,7 +434,7 @@ else
 	<input type="hidden" name="TMP_ID" value="<?echo htmlspecialcharsbx($strSubTMP_ID)?>"><?
 	$tabControl->EndEpilogContent();
 	$tabControl->Begin(array(
-		"FORM_ACTION" => '/bnpt/admin/cat_subcoupon_edit.php?lang='.urlencode(LANGUAGE_ID),
+		"FORM_ACTION" => '/bitrix/admin/cat_subcoupon_edit.php?lang='.urlencode(LANGUAGE_ID),
 	));
 
 	$tabControl->BeginNextFormTab();

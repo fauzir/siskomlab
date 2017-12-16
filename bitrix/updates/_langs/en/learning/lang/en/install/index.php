@@ -18,7 +18,7 @@ $MESS["LEARNING_INSTALL_TEMPLATE_NAME"] = "Template ID";
 $MESS["COPY_PUBLIC_FILES"] = "Copy public files and template for site";
 $MESS["LEARNING_PERM_D"] = "read courses";
 $MESS["LEARNING_PERM_W"] = "full access";
-$MESS["LEARNING_ADMIN_NOTIFY_CONVERT_DB"] = "You've updated the eLearning module. For the correct module work you should perform <a href=\"/bnpt/admin/learning_convert.php?lang=#LANG#\">the module data convertion</a>.";
+$MESS["LEARNING_ADMIN_NOTIFY_CONVERT_DB"] = "You've updated the eLearning module. For the correct module work you should perform <a href=\"/bitrix/admin/learning_convert.php?lang=#LANG#\">the module data convertion</a>.";
 $MESS["LEARNING_PERM_ADMIN_D"] = "deny access to settings";
 $MESS["LEARNING_PERM_ADMIN_W"] = "full access to settings";
 ?>

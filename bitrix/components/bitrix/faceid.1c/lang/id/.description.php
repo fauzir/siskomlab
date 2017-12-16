@@ -1,6 +1,0 @@
-<?
-$MESS["FIT1C_SERVICES_MAIN_SECTION"] = "CRM";
-$MESS["FIT1C_SERVICES_PARENT_SECTION"] = "Setting";
-$MESS["FIT1C_SECTION_TEMPLATE_NAME"] = "1C Face Tracker";
-$MESS["FIT1C_SECTION_TEMPLATE_DESCRIPTION"] = "Mengidentifikasi pelanggan 1C menurut foto mereka.";
-?>

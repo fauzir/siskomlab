@@ -1,8 +1,0 @@
-<?
-$MESS["LA_CURRENCY_RUB"] = " ";
-$MESS["LA_CURRENCY_EUR"] = " ";
-$MESS["LA_CURRENCY_USD"] = " ";
-$MESS["LA_CURRENCY_UAH"] = " ";
-$MESS["LA_CURRENCY_RUB_FORMAT"] = " ";
-$MESS["LA_CURRENCY_UAH_FORMAT"] = " ";
-?>

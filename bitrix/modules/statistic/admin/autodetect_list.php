@@ -208,7 +208,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 	$row = $lAdmin->AddRow($f_ID, $arRes);
 
-	$row->AddViewField("COUNTER","<a title=\"".GetMessage("STAT_SESS_LIST")."\" href=\"/bnpt/admin/session_list.php?lang=".LANGUAGE_ID."&find_user_agent=".urlencode("\"".str_replace(array("\\", "\'", "\""), "_", $f_USER_AGENT)."\"")."&set_filter=Y\">$f_COUNTER</a>");
+	$row->AddViewField("COUNTER","<a title=\"".GetMessage("STAT_SESS_LIST")."\" href=\"/bitrix/admin/session_list.php?lang=".LANGUAGE_ID."&find_user_agent=".urlencode("\"".str_replace(array("\\", "\'", "\""), "_", $f_USER_AGENT)."\"")."&set_filter=Y\">$f_COUNTER</a>");
 	$row->AddInputField("FAKE_MASK", array("size"=>35));
 	$row->AddEditField("FAKE_SRCH_S", "<input type=\"radio\" name=\"".htmlspecialcharsbx("FIELDS[".$f_ID."][type]")."\" value=\"s\" checked> ");
 	$row->AddEditField("FAKE_SRCH_B", "<input type=\"radio\" name=\"".htmlspecialcharsbx("FIELDS[".$f_ID."][type]")."\" value=\"b\"> ");

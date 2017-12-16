@@ -1,8 +1,0 @@
-<?
-$MESS["TASKS_CLOSURE_TREE_LINK_EXISTS"] = "Perlindungan bot spam (CAPTCHA)";
-$MESS["TASKS_CLOSURE_TREE_NODE_NOT_FOUND"] = "Karakter gambar CAPTCHA";
-$MESS["TASKS_CLOSURE_TREE_NODE_EXISTS_BUT_DECLARED_NEW"] = "Template dengan deskripsi polling";
-$MESS["TASKS_CLOSURE_TREE_CANT_ATTACH_TO_SELF"] = "Template dengan deskripsi polling";
-$MESS["TASKS_CLOSURE_TREE_ILLEGAL_NODE"] = "Mulai";
-$MESS["TASKS_CLOSURE_TREE_CANT_ATTACH_TO_ANCESTOR"] = "Akhir";
-?>

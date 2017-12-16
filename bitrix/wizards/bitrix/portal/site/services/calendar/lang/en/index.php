@@ -1,8 +1,8 @@
 <?
-$MESS["W_IB_CALENDAR_EMP_ABS"] = "Meeting with a client at their office";
+$MESS["CAL_TYPE_COMPANY_NAME"] = "Company calendars";
 $MESS["CAL_TYPE_USER_NAME"] = "User calendars";
 $MESS["CAL_TYPE_GROUP_NAME"] = "Group calendars";
-$MESS["CAL_TYPE_COMPANY_NAME"] = "Company calendars";
+$MESS["W_IB_CALENDAR_EMP_ABS"] = "Meeting with a client at their office";
 $MESS["CAL_COMPANY_SECT_0"] = "Shows and conferences";
 $MESS["CAL_COMPANY_SECT_DESC_0"] = "Shows and conferences we are involved in";
 $MESS["CAL_COMPANY_SECT_1"] = "London office events";

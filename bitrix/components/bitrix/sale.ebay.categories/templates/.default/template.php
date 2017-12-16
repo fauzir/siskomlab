@@ -96,7 +96,7 @@ Loc::loadMessages(__FILE__);
 	<?=Loc::getMessage(
 		'SALE_EBAY_SEC_NO_CATEGORIES',
 		array(
-			'#A1#' => '<a href="/bnpt/admin/sale_ebay_exchange.php?lang='.LANGUAGE_ID.'&tabControl_active_tab=ebay_meta">',
+			'#A1#' => '<a href="/bitrix/admin/sale_ebay_exchange.php?lang='.LANGUAGE_ID.'&tabControl_active_tab=ebay_meta">',
 			'#A2#' => '</a>'
 		))?>
 <?endif;?>

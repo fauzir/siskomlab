@@ -242,7 +242,7 @@ while($db_res = $rsData->NavNext(true, "a_"))
 	$row->AddViewField("AUDIT_TYPE_ID", array_key_exists($a_AUDIT_TYPE_ID, $arAuditTypes)? preg_replace("/^\\[.*?\\]\\s+/", "", $arAuditTypes[$a_AUDIT_TYPE_ID]): $a_AUDIT_TYPE_ID);
 	if($bStatistic && strlen($a_GUEST_ID))
 	{
-		$row->AddViewField("GUEST_ID", '<a href="/bnpt/admin/hit_list.php?lang='.LANGUAGE_ID.'&amp;set_filter=Y&amp;find_guest_id='.$a_GUEST_ID.'&amp;find_guest_id_exact_match=Y">'.$a_GUEST_ID.'</a>');
+		$row->AddViewField("GUEST_ID", '<a href="/bitrix/admin/hit_list.php?lang='.LANGUAGE_ID.'&amp;set_filter=Y&amp;find_guest_id='.$a_GUEST_ID.'&amp;find_guest_id_exact_match=Y">'.$a_GUEST_ID.'</a>');
 	}
 	if($a_USER_ID)
 	{

@@ -7,5 +7,5 @@ $MESS["SEO_IMG_NO_ALT_ERROR"] = "The page contains #COUNT# images without ALT/TI
 $MESS["SEO_META_NO_DESCRIPTION_ERROR"] = "The META/DESCRIPTION tag is empty or missing.";
 $MESS["SEO_META_NO_KEYWORDS_ERROR"] = "The META/KEYWORDS tag is empty or missing.";
 $MESS["SEO_ERROR_NO_SEARCH"] = "The Search module is missing or not installed. Keyword statistics is unavailable.";
-$MESS["SEO_ERROR_NO_SERVER_NAME"] = "The site URL is missing! Please check the <a href=\"/bnpt/admin/site_edit.php?LID=#SITE_ID#\">current site settings</a> or the <a href=\"/bnpt/admin/settings.php?mid=main\">Kernel settings</a>.";
+$MESS["SEO_ERROR_NO_SERVER_NAME"] = "The site URL is missing! Please check the <a href=\"/bitrix/admin/site_edit.php?LID=#SITE_ID#\">current site settings</a> or the <a href=\"/bitrix/admin/settings.php?mid=main\">Kernel settings</a>.";
 ?>

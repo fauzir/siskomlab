@@ -227,7 +227,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SDEN_2FLIST"),
-				"LINK" => "/bnpt/admin/sale_delivery.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+				"LINK" => "/bitrix/admin/sale_delivery.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 	);
@@ -238,13 +238,13 @@ if ($ID > 0 && $saleModulePermissions >= "W")
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SDEN_NEW_DELIVERY"),
-			"LINK" => "/bnpt/admin/sale_delivery_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+			"LINK" => "/bitrix/admin/sale_delivery_edit.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 			"ICON" => "btn_new"
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("SDEN_DELETE_DELIVERY"),
-			"LINK" => "javascript:if(confirm('".GetMessage("SDEN_DELETE_DELIVERY_CONFIRM")."')) window.location='/bnpt/admin/sale_delivery.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("SDEN_DELETE_DELIVERY_CONFIRM")."')) window.location='/bitrix/admin/sale_delivery.php?ID=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."#tb';",
 			"ICON" => "btn_delete"
 		);
 }
@@ -550,7 +550,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => ($saleModulePermissions < "W"),
-		"back_url" => "/bnpt/admin/sale_delivery.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
+		"back_url" => "/bitrix/admin/sale_delivery.php?lang=".LANGUAGE_ID.GetFilterParams("filter_")
 	)
 );
 

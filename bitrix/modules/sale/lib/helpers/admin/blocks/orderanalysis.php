@@ -182,7 +182,7 @@ class OrderAnalysis
 						<div class="adm-bus-orderdocs-threelist-block-img adm-bus-orderdocs-threelist-block-img-order"></div>
 						<div class="adm-bus-orderdocs-threelist-block-content">
 							<div class="adm-bus-orderdocs-threelist-block-title">
-								<a class="adm-bus-orderdocs-threelist-block-title-link fwb" href="/bnpt/admin/sale_order_edit.php?lang=ru&ID=<?=$orderId;?>">
+								<a class="adm-bus-orderdocs-threelist-block-title-link fwb" href="/bitrix/admin/sale_order_edit.php?lang=ru&ID=<?=$orderId;?>">
 									<?=Loc::getMessage('SALE_OANALYSIS_ORDER_TITLE', array(
 										'#USER_ID#'  => $order->getField('USER_ID'),
 										'#ORDER_ID#' => $orderId)
@@ -207,7 +207,7 @@ class OrderAnalysis
 											<span class="adm-bus-orderdocs-docstatus"><?=Loc::getMessage('SALE_OANALYSIS_PAYMENT_RETURN')?></span>
 										<?endif?>
 											<? if ($isAllowCompany): ?>
-											<a href="/bnpt/admin/sale_order_payment_edit.php?order_id=<?=$orderId?>&payment_id=<?=$documentId?>" class="adm-bus-orderdocs-threelist-block-title-link">
+											<a href="/bitrix/admin/sale_order_payment_edit.php?order_id=<?=$orderId?>&payment_id=<?=$documentId?>" class="adm-bus-orderdocs-threelist-block-title-link">
 											<?=Loc::getMessage('SALE_OANALYSIS_PAYMENT_TITLE', array(
 												'#SYSTEM_NAME#' => htmlspecialcharsbx($document->getField('PAY_SYSTEM_NAME')),
 												'#PAYMENT_ID#'  => $documentId,
@@ -228,7 +228,7 @@ class OrderAnalysis
 											<span class="adm-bus-orderdocs-docstatus adm-bus-orderdocs-docstatus-shippingallowed"><?=Loc::getMessage('SALE_OANALYSIS_SHIPMENT_ALLOWED')?></span>
 										<?endif?>
 										<? if ($isAllowCompany): ?>
-										<a href="/bnpt/admin/sale_order_shipment_edit.php?order_id=<?=$orderId?>&shipment_id=<?=$documentId?>"
+										<a href="/bitrix/admin/sale_order_shipment_edit.php?order_id=<?=$orderId?>&shipment_id=<?=$documentId?>"
 										   class="adm-bus-orderdocs-threelist-block-title-link<?=$document->isCanceled() ? 'adm-bus-orderdocs-threelist-block-title-link-canceled' : ''?>">
 											<?=Loc::getMessage('SALE_OANALYSIS_SHIPMENT_TITLE', array(
 												'#SHIPMENT_ID#' => $documentId,
@@ -277,7 +277,7 @@ class OrderAnalysis
 			<div class="adm-bus-orderdocs-threelist-block-responsible-block">
 				<?=Loc::getMessage('SALE_OANALYSIS_RESPONSIBLE')?>:
 				<a class="adm-bus-orderdocs-threelist-block-responsible-name"
-				   href="/bnpt/admin/user_edit.php?ID=<?=$userId?>"><?=htmlspecialcharsbx($userName)?></a>
+				   href="/bitrix/admin/user_edit.php?ID=<?=$userId?>"><?=htmlspecialcharsbx($userName)?></a>
 			</div>
 		<?endif;?>
 		<?

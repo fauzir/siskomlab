@@ -516,7 +516,7 @@ $tabControl->BeginNextTab();
 	<tr class="adm-detail-required-field">
 		<td>
 			<?= ShowJSHint(Loc::getMessage("SALE_VK_SETTINGS_EXPORT_SETTING_MANUAL", array(
-				"#A1" => "<a href=/bnpt/admin/sale_vk_manual.php?lang=" . LANGUAGE_ID . ">",
+				"#A1" => "<a href=/bitrix/admin/sale_vk_manual.php?lang=" . LANGUAGE_ID . ">",
 				"#A2" => '</a>',
 			))); ?>
 			<span><?= Loc::getMessage("SALE_VK_SETTINGS_APP_ID") ?>:</span>
@@ -531,7 +531,7 @@ $tabControl->BeginNextTab();
 	<tr class="adm-detail-required-field">
 		<td>
 			<?= ShowJSHint(Loc::getMessage("SALE_VK_SETTINGS_EXPORT_SETTING_MANUAL", array(
-				"#A1" => "<a href=/bnpt/admin/sale_vk_manual.php?lang=" . LANGUAGE_ID . ">",
+				"#A1" => "<a href=/bitrix/admin/sale_vk_manual.php?lang=" . LANGUAGE_ID . ">",
 				"#A2" => '</a>',
 			))); ?>
 			<span><?= Loc::getMessage("SALE_VK_SETTINGS_SECRET") ?>:</span>
@@ -565,7 +565,7 @@ $tabControl->BeginNextTab();
 		<tr class="adm-detail-required-field">
 			<td>
 				<?= ShowJSHint(Loc::getMessage("SALE_VK_SETTINGS_EXPORT_SETTING_MANUAL", array(
-					"#A1" => "<a href=/bnpt/admin/sale_vk_manual.php?lang=" . LANGUAGE_ID . ">",
+					"#A1" => "<a href=/bitrix/admin/sale_vk_manual.php?lang=" . LANGUAGE_ID . ">",
 					"#A2" => '</a>',
 				)))
 				?>
@@ -683,7 +683,7 @@ $tabControl->BeginNextTab();
 			<input type="submit" name="apply" style="margin-right:10px" id="vk_export_button__apply"
 				   value="<?= Loc::getMessage("SALE_VK_SETTINGS_BUTTON_APPLY") ?>"/>
 			<input type="button" style="margin-right:10px" id="vk_export_button__cancel"
-				   onclick="window.location='/bnpt/admin/sale_vk_export_list.php?lang=<?= LANGUAGE_ID ?>'"
+				   onclick="window.location='/bitrix/admin/sale_vk_export_list.php?lang=<?= LANGUAGE_ID ?>'"
 				   name="cancel"
 				   value="<?= Loc::getMessage("SALE_VK_SETTINGS_BUTTON_CANCEL") ?>"/>
 		</td>

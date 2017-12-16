@@ -152,7 +152,7 @@ while($arRes = $rsData->NavNext(true, "f_")):
 		$row->AddViewField("NAME", $f_NAME);
 	}
 	$row->AddViewField("DESCRIPTION", TruncateText($f_DESCRIPTION, 180));
-	$row->AddViewField("BANNER_COUNT", '<a href="/bnpt/admin/adv_banner_list.php?find_type_sid[]='.$f_SID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
+	$row->AddViewField("BANNER_COUNT", '<a href="/bitrix/admin/adv_banner_list.php?find_type_sid[]='.$f_SID.'&set_filter=Y" title="'.GetMessage("ADV_BANNER_LIST").'">'.$f_BANNER_COUNT.'</a>');
 
 	$arActions = Array();
 	if ($isAdmin || $isDemo)

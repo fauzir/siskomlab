@@ -370,7 +370,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && $do_create_link == "Y" && $saleModul
 			$arFPermsTmp = GetAccessArrTmp();
 			$arFPerms = (array_key_exists("admin", $arFPermsTmp)) ? $arFPermsTmp["admin"] : array();
 			$arFPerms[$groupId.""] = "R";
-			$APPLICATION->SetFileAccessPermission(array(SITE_ID, "/bnpt/admin"), $arFPerms);
+			$APPLICATION->SetFileAccessPermission(array(SITE_ID, "/bitrix/admin"), $arFPerms);
 		}
 
 		LocalRedirect($APPLICATION->GetCurPage()."?lang=".LANGUAGE_ID."&success=Y&crm_imp_url=".urlencode(($crmUrlScheme == 'ssl://' ? "https" : "http")."://".$crmUrlHost.":".$crmUrlPort.$crmUrl4Import)."&crm_url=".urlencode(($crmUrlScheme == 'ssl://' ? "https" : "http")."://".$crmUrlHost.":".$crmUrlPort));
@@ -479,7 +479,7 @@ if ($_REQUEST["success"] == "Y")
 			<div class="crm-admin-statistics-block">
 				<div class="crm-admin-stat-top">
 					<a target="_blank" class="crm-admin-title-link" href="<?= htmlspecialcharsbx($crmUrl) ?>"><?= htmlspecialcharsbx($crmUrl) ?></a>
-					<a class="crm-admin-reset" href="/bnpt/admin/sale_crm.php?clear_crm_stat=Y&clear_crm_stat_url=<?= urlencode($crmUrl) ?>&<?= bitrix_sessid_get() ?>"><?= GetMessage("SPTEN_SCRM_CLEAR_STAT") ?></a>
+					<a class="crm-admin-reset" href="/bitrix/admin/sale_crm.php?clear_crm_stat=Y&clear_crm_stat_url=<?= urlencode($crmUrl) ?>&<?= bitrix_sessid_get() ?>"><?= GetMessage("SPTEN_SCRM_CLEAR_STAT") ?></a>
 				</div>
 				<table class="crm-admin-stat-content" cellspacing="0">
 				<tr>

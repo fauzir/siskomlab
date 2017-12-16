@@ -88,7 +88,7 @@
 			BX.Scale.AdminFrame.confirm(
 				BX.message("SCALE_PANEL_JS_ADVICE_TO_BACKUP"),
 				BX.message("SCALE_PANEL_JS_ADVICE_TO_BACKUP_TITLE"),
-				function(){ window.location.href = "/bnpt/admin/dump.php?lang="+BX.message('LANGUAGE_ID'); },
+				function(){ window.location.href = "/bitrix/admin/dump.php?lang="+BX.message('LANGUAGE_ID'); },
 				function() { _this.start(serverHostname, paramsValues, true); }
 			);
 

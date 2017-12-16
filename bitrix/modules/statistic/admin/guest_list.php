@@ -88,7 +88,7 @@ while ($ar = $rs->Fetch())
 {
 	$ref[] = $ar["ID"];
 	$ref_id[] = $ar["ID"];
-	$arSites[$ar["ID"]] = "[<a href=\"/bnpt/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
+	$arSites[$ar["ID"]] = "[<a href=\"/bitrix/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
 }
 $arSiteDropdown = array("reference" => $ref, "reference_id" => $ref_id);
 
@@ -339,7 +339,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	$str = "";
 	if (strlen($f_FIRST_SITE_ID)>0)
 	{
-		$str .= '[<a title="'.GetMessage("STAT_SITE").'" href="/bnpt/admin/site_edit.php?LID='.$f_FIRST_SITE_ID.'&lang='.LANGUAGE_ID.'">'.$f_FIRST_SITE_ID.'</a>]&nbsp;';
+		$str .= '[<a title="'.GetMessage("STAT_SITE").'" href="/bitrix/admin/site_edit.php?LID='.$f_FIRST_SITE_ID.'&lang='.LANGUAGE_ID.'">'.$f_FIRST_SITE_ID.'</a>]&nbsp;';
 	}
 
 	$row->AddViewField("FIRST_URL_TO", $str.StatAdminListFormatURL($arRes["FIRST_URL_TO"], array(
@@ -353,7 +353,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	$str = "";
 	if (strlen($f_LAST_SITE_ID)>0)
 	{
-		$str .= '[<a title="'.GetMessage("STAT_SITE").'" href="/bnpt/admin/site_edit.php?LID='.$f_LAST_SITE_ID.'&lang='.LANGUAGE_ID.'">'.$f_LAST_SITE_ID.'</a>]&nbsp;';
+		$str .= '[<a title="'.GetMessage("STAT_SITE").'" href="/bitrix/admin/site_edit.php?LID='.$f_LAST_SITE_ID.'&lang='.LANGUAGE_ID.'">'.$f_LAST_SITE_ID.'</a>]&nbsp;';
 	}
 
 	$row->AddViewField("LAST_URL_LAST", $str.StatAdminListFormatURL($arRes["FIRST_URL_TO"], array(

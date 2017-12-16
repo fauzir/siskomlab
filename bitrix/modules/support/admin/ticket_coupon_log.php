@@ -11,7 +11,7 @@ $bAdmin = CTicket::IsAdmin();
 if(!$bAdmin && !$bDemo)
 	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED"));
 
-$LIST_URL = '/bnpt/admin/ticket_coupon_list.php';
+$LIST_URL = '/bitrix/admin/ticket_coupon_list.php';
 
 $message = false;
 
@@ -89,9 +89,9 @@ while ($arCouponLog = $rsData->GetNext())
 	$row =& $lAdmin->AddRow($arCoupon['ID'], $arCouponLog);
 	if ($bStatIncluded)
 	{
-		///bnpt/admin/guest_list.php?lang=ru&set_filter=Y&find_user_exact_match=N&find_id=33&find_id_exact_match=N&find_id_exact_match=Y&find_country_exact_match=N
-		$row->AddViewField('SESSION_ID', '<a href="/bnpt/admin/session_list.php?lang='.LANGUAGE_ID.'&amp;set_filter=Y&amp;find_id='.$arCouponLog['SESSION_ID'].'">'.$arCouponLog['SESSION_ID'].'</a>');
-		$row->AddViewField('GUEST_ID', '<a href="/bnpt/admin/guest_list.php?lang='.LANGUAGE_ID.'&amp;set_filter=Y&amp;find_id_exact_match=Y&amp;find_id='.$arCouponLog['GUEST_ID'].'">'.$arCouponLog['SESSION_ID'].'</a>');
+		///bitrix/admin/guest_list.php?lang=ru&set_filter=Y&find_user_exact_match=N&find_id=33&find_id_exact_match=N&find_id_exact_match=Y&find_country_exact_match=N
+		$row->AddViewField('SESSION_ID', '<a href="/bitrix/admin/session_list.php?lang='.LANGUAGE_ID.'&amp;set_filter=Y&amp;find_id='.$arCouponLog['SESSION_ID'].'">'.$arCouponLog['SESSION_ID'].'</a>');
+		$row->AddViewField('GUEST_ID', '<a href="/bitrix/admin/guest_list.php?lang='.LANGUAGE_ID.'&amp;set_filter=Y&amp;find_id_exact_match=Y&amp;find_id='.$arCouponLog['GUEST_ID'].'">'.$arCouponLog['SESSION_ID'].'</a>');
 	}
 }
 

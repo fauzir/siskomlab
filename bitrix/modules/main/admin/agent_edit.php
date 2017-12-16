@@ -60,9 +60,9 @@ if($REQUEST_METHOD=="POST" && (strlen($save)>0 || strlen($apply)>0) && $isAdmin 
 	if($res)
 	{
 		if(strlen($save) > 0)
-			LocalRedirect("/bnpt/admin/agent_list.php");
+			LocalRedirect("/bitrix/admin/agent_list.php");
 		elseif(strlen($apply) > 0)
-			LocalRedirect("/bnpt/admin/agent_edit.php?&ID=".$ID."&".$editTab->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/agent_edit.php?&ID=".$ID."&".$editTab->ActiveTabParam());
 	}
 }
 
@@ -71,7 +71,7 @@ require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/prolog_admin_af
 $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("MAIN_AGENT_RECORD_LIST"),
-		"LINK"	=> "/bnpt/admin/agent_list.php?lang=".LANG,
+		"LINK"	=> "/bitrix/admin/agent_list.php?lang=".LANG,
 		"ICON"	=> "btn_list",
 		"TITLE"	=> GetMessage("MAIN_AGENT_RECORD_LIST_TITLE"),
 	)
@@ -81,13 +81,13 @@ if($ID>0)
 	$aMenu[] = array("SEPARATOR"=>"Y");
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_AGENT_NEW_RECORD"),
-		"LINK"	=> "/bnpt/admin/agent_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/agent_edit.php?lang=".LANGUAGE_ID,
 		"ICON"	=> "btn_new",
 		"TITLE"	=> GetMessage("MAIN_AGENT_NEW_RECORD_TITLE"),
 	);
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_AGENT_DEL_RECORD_TITLE"),
-		"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_AGENT_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/agent_list.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+		"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_AGENT_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/agent_list.php?action=delete&ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 		"ICON"	=> "btn_delete",
 		"TITLE"	=> GetMessage("MAIN_AGENT_DEL_RECORD_TITLE"),
 	);

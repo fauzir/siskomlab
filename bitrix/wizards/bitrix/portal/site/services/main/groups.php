@@ -35,7 +35,7 @@ if(WIZARD_FIRST_INSTAL !== "Y")
 				"STRING_ID" => "ADMIN_SECTION",
 				"TASKS_MODULE" => Array(),
 				"TASKS_FILE" => Array(
-					Array("fm_folder_access_read", "/bnpt/admin/"),
+					Array("fm_folder_access_read", "/bitrix/admin/"),
 				),
 			),
 			Array(
@@ -46,7 +46,7 @@ if(WIZARD_FIRST_INSTAL !== "Y")
 				"STRING_ID" => "SUPPORT",
 				"TASKS_MODULE" => Array(),
 				"TASKS_FILE" => Array(
-					Array("fm_folder_access_read", "/bnpt/admin/"),
+					Array("fm_folder_access_read", "/bitrix/admin/"),
 				),
 			),
 			Array(
@@ -68,7 +68,7 @@ if(WIZARD_FIRST_INSTAL !== "Y")
 				"TASKS_FILE" => Array(
 					Array("fm_folder_access_write", WIZARD_SITE_DIR."company/"),
 					Array("fm_folder_access_write", WIZARD_SITE_DIR."about/"),
-					Array("fm_folder_access_read", "/bnpt/admin/"),
+					Array("fm_folder_access_read", "/bitrix/admin/"),
 				),
 			),
 			Array(
@@ -81,7 +81,7 @@ if(WIZARD_FIRST_INSTAL !== "Y")
 				"TASKS_FILE" => Array(
 					Array("fm_folder_access_read", WIZARD_SITE_DIR."docs/sale/"),
 					Array("fm_folder_access_read", WIZARD_SITE_DIR."docs/manage/"),
-					Array("fm_folder_access_read", "/bnpt/admin/"),
+					Array("fm_folder_access_read", "/bitrix/admin/"),
 				),
 			),
 			Array(
@@ -116,7 +116,7 @@ if(WIZARD_FIRST_INSTAL !== "Y")
 			"TASKS_MODULE" => Array("main_edit_subordinate_users"),
 			"TASKS_FILE" => Array(
 				Array("fm_folder_access_full", WIZARD_SITE_DIR),
-				Array("fm_folder_access_read", "/bnpt/admin/"),
+				Array("fm_folder_access_read", "/bitrix/admin/"),
 			),
 		);
 

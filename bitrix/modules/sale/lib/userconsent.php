@@ -26,7 +26,7 @@ class UserConsent
 				{
 					return array(
 						'NAME' => Loc::getMessage('SALE_USER_CONSENT_PROVIDER_ITEM_NAME', array('%id%' => $id)),
-						'URL' => str_replace('%id%', $id, '/bnpt/admin/sale_order_view.php?ID=%id%')
+						'URL' => str_replace('%id%', $id, '/bitrix/admin/sale_order_view.php?ID=%id%')
 					);
 				}
 			)
@@ -46,7 +46,7 @@ class UserConsent
 			array(
 				'CODE' => self::DATA_PROVIDER_CODE,
 				'NAME' => Loc::getMessage('SALE_USER_CONSENT_DATA_PROVIDER_NAME'),
-				'EDIT_URL' => '/bnpt/admin/sale_company.php',
+				'EDIT_URL' => '/bitrix/admin/sale_company.php',
 				'DATA' => function ()
 				{
 					$data = array();

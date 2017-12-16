@@ -354,7 +354,7 @@ function PutAttachString(str)
 $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("RECORD_LIST"),
-		"LINK"	=> "/bnpt/admin/message_admin.php?lang=".LANGUAGE_ID."&set_default=Y",
+		"LINK"	=> "/bitrix/admin/message_admin.php?lang=".LANGUAGE_ID."&set_default=Y",
 		"TITLE"	=> GetMessage("RECORD_LIST_TITLE"),
 		"ICON"	=> "btn_list"
 	)
@@ -366,21 +366,21 @@ if (intval($ID)>0 && $COPY_ID<=0)
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_NEW_RECORD"),
-		"LINK"	=> "/bnpt/admin/message_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/message_edit.php?lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("MAIN_NEW_RECORD_TITLE"),
 		"ICON"	=> "btn_new"
 		);
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_COPY_RECORD"),
-		"LINK"	=> "/bnpt/admin/message_edit.php?lang=".LANGUAGE_ID.htmlspecialcharsbx("&COPY_ID=").$ID,
+		"LINK"	=> "/bitrix/admin/message_edit.php?lang=".LANGUAGE_ID.htmlspecialcharsbx("&COPY_ID=").$ID,
 		"TITLE"	=> GetMessage("MAIN_COPY_RECORD_TITLE"),
 		"ICON"	=> "btn_copy"
 		);
 
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_DELETE_RECORD"),
-		"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/message_admin.php?ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
+		"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/message_admin.php?ID=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&action=delete';",
 		"TITLE"	=> GetMessage("MAIN_DELETE_RECORD_TITLE"),
 		"ICON"	=> "btn_delete"
 		);

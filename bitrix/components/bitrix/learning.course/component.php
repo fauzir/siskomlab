@@ -328,7 +328,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_LESSON_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_unilesson_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_unilesson_edit.php?lang=" . LANGUAGE_ID
 						. "&PARENT_LESSON_ID=" . $contextLessonId
 						. "&LESSON_PATH=" . urlencode($arParams["LESSON_PATH"])
 						. "&bxpublic=Y&from_module=learning&return_url=" . urlencode($addReturnUrl["lesson"]),
@@ -346,7 +346,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_CHAPTER_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_unilesson_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_unilesson_edit.php?lang=" . LANGUAGE_ID
 						. "&PARENT_LESSON_ID=" . $contextLessonId
 						. "&LESSON_PATH=" . urlencode($arParams["LESSON_PATH"])
 						. "&bxpublic=Y&from_module=learning&return_url=" . urlencode($addReturnUrl["lesson"]),
@@ -367,7 +367,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_TEST_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_test_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_test_edit.php?lang=" . LANGUAGE_ID
 						. "&COURSE_ID=".$arParams["COURSE_ID"]
 						. "&bxpublic=Y&from_module=learning&return_url="
 						. urlencode($addReturnUrl["test"]),
@@ -388,7 +388,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_COURSE_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_course_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_course_edit.php?lang=" . LANGUAGE_ID
 						. "&bxpublic=Y&from_module=learning&return_url="
 						. urlencode($addReturnUrl["course"]),
 					"PARAMS" => array(
@@ -411,7 +411,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_QUEST_S_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
 						. "&COURSE_ID=" . $arParams["COURSE_ID"]
 						. "&LESSON_PATH=" . $contextLessonId
 						. "&QUESTION_TYPE=S&bxpublic=Y&from_module=learning",
@@ -429,7 +429,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_QUEST_M_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
 						. "&COURSE_ID=".$arParams["COURSE_ID"]
 						. "&LESSON_PATH=" . $contextLessonId
 						. "&QUESTION_TYPE=M&bxpublic=Y&from_module=learning",
@@ -447,7 +447,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_QUEST_R_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
 						. "&COURSE_ID=".$arParams["COURSE_ID"]
 						. "&LESSON_PATH=" . $contextLessonId
 						. "&QUESTION_TYPE=R&bxpublic=Y&from_module=learning",
@@ -465,7 +465,7 @@ if ($contextLessonId > 0)
 			"TITLE" => GetMessage("LEARNING_COURSES_QUEST_T_ADD"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
+					"URL" => "/bitrix/admin/learn_question_edit.php?lang=" . LANGUAGE_ID
 						. "&COURSE_ID=".$arParams["COURSE_ID"]."&LESSON_PATH=" . $contextLessonId
 						. "&QUESTION_TYPE=T&bxpublic=Y&from_module=learning",
 					"PARAMS" => array(

@@ -193,7 +193,7 @@ endforeach;
 				?>
 				<li class="bx-icon bx-icon-edit"><a href="javascript:<?echo $APPLICATION->GetPopupLink(
 						array(
-							'URL' => '/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&bxpublic=Y&from_module=main&ID='.$arUser['ID'], 
+							'URL' => '/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&bxpublic=Y&from_module=main&ID='.$arUser['ID'], 
 							"PARAMS"=>array("width"=>780, "height"=>500, "resize"=>false),
 				))?>"><?echo GetMessage('INTR_ISP_EDIT_USER')?></a></li>
 				<?

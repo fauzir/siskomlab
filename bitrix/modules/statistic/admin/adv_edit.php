@@ -290,7 +290,7 @@ if($strError)
 ?>
 <a name="tb"></a>
 <?if (strlen($base_currency)<=0) : ?>
-<p><?=GetMessage("STAT_BASE_CURRENCY_NOT_INSTALLED").$base_currency?>&nbsp;[&nbsp;<a href="/bnpt/admin/settings.php?lang=<?=LANGUAGE_ID?>&mid=statistic"><?=GetMessage("STAT_CHOOSE_CURRENCY")?></a>&nbsp;]</p>
+<p><?=GetMessage("STAT_BASE_CURRENCY_NOT_INSTALLED").$base_currency?>&nbsp;[&nbsp;<a href="/bitrix/admin/settings.php?lang=<?=LANGUAGE_ID?>&mid=statistic"><?=GetMessage("STAT_CHOOSE_CURRENCY")?></a>&nbsp;]</p>
 <?endif;?>
 <form method="POST" action="<?=$APPLICATION->GetCurPage()?>?ID=<?=$ID?>&lang=<?=LANGUAGE_ID?>">
 <?=bitrix_sessid_post()?>

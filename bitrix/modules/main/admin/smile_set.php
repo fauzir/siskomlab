@@ -121,7 +121,7 @@ $aContext = array(
 
 	array(
 		"TEXT" => GetMessage("SMILE_BTN_BACK"),
-		"LINK" => "/bnpt/admin/smile_gallery.php?&lang=".LANG,
+		"LINK" => "/bitrix/admin/smile_gallery.php?&lang=".LANG,
 		"ICON" => "btn_list",
 	),
 	array(

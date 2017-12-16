@@ -163,7 +163,7 @@ else
 					array("FID" => $arParams["FID"], "TID" => $arParams["TID"], "MID" => (!empty($mid) ? $mid : "s")));
 			if ($action == "FORUM_MESSAGE2SUPPORT")
 			{
-				$url = "/bnpt/admin/ticket_edit.php?ID=#result#&amp;lang=".LANGUAGE_ID;
+				$url = "/bitrix/admin/ticket_edit.php?ID=#result#&amp;lang=".LANGUAGE_ID;
 			}
 			break;
 		case "DEL":

@@ -1068,7 +1068,7 @@ class Vote extends BaseObject implements \ArrayAccess
 					{
 						$event3 = $this["EVENT3"];
 						if (!empty($event3)):
-							$event3 = "http://" . $_SERVER["HTTP_HOST"] . "/bnpt/admin/vote_user_results.php?EVENT_ID=" . $eventId . "&lang=" . LANGUAGE_ID;
+							$event3 = "http://" . $_SERVER["HTTP_HOST"] . "/bitrix/admin/vote_user_results.php?EVENT_ID=" . $eventId . "&lang=" . LANGUAGE_ID;
 						endif;
 						\CStatEvent::AddCurrent($this["EVENT1"], $this["EVENT2"], $event3);
 					}

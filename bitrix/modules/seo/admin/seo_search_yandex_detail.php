@@ -91,7 +91,7 @@ $aMenu = array();
 
 $aMenu[] = array(
 	"TEXT"	=> Loc::getMessage("SEO_DOMAIN_LIST"),
-	"LINK"	=> "/bnpt/admin/seo_search_yandex.php?lang=".LANGUAGE_ID,
+	"LINK"	=> "/bitrix/admin/seo_search_yandex.php?lang=".LANGUAGE_ID,
 	"ICON"	=> "btn_list",
 );
 

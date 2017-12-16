@@ -1,10 +1,10 @@
 <?
 $MESS["DEFAULT_SITE_NAME"] = "Portal";
+$MESS["MAIN_OPT_MENU_SECT"] = "Section menu";
+$MESS["MAIN_OPT_MENU_MAIN"] = "Site menu";
 $MESS["MAIN_OPT_DEF_LINKS"] = "[IMG]/images/icons/bullet_dot.gif[/IMG] [url=http://www.sun.com]Company Site[/url]
 
 [IMG]/images/icons/bullet_dot.gif[/IMG] [url=http://www.google.com]Search in the Internet[/url]";
-$MESS["MAIN_OPT_MENU_MAIN"] = "Site menu";
-$MESS["MAIN_OPT_MENU_SECT"] = "Section menu";
 $MESS["main_opt_user_user"] = "User";
 $MESS["main_opt_user_upd"] = "Last update";
 $MESS["main_opt_user_last"] = "Last authorized";

@@ -19,7 +19,7 @@ class CComponentParamsManager
 
 		if (!isset($config['requestUrl']))
 		{
-			$config['requestUrl'] = '/bnpt/admin/fileman_component_params.php';
+			$config['requestUrl'] = '/bitrix/admin/fileman_component_params.php';
 		}
 
 		if (!isset($config['id']))

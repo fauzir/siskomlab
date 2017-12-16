@@ -122,7 +122,7 @@ else
 						$mkindex=="Y")
 						{
 							if($toedit=="Y")
-								LocalRedirect("/bnpt/admin/fileman_html_edit.php?".$addUrl."&site=".$site."&template=".Urlencode($template)."&path=".UrlEncode($pathto)."&filename=index.php&new=Y".(strlen($back_url) <=0 ?"":"&back_url=".UrlEncode($back_url)).(strlen($gotonewpage)<=0?"":"&gotonewpage=".UrlEncode($gotonewpage)).(strlen($backnewurl)<=0?"":"&backnewurl=".UrlEncode($backnewurl)));
+								LocalRedirect("/bitrix/admin/fileman_html_edit.php?".$addUrl."&site=".$site."&template=".Urlencode($template)."&path=".UrlEncode($pathto)."&filename=index.php&new=Y".(strlen($back_url) <=0 ?"":"&back_url=".UrlEncode($back_url)).(strlen($gotonewpage)<=0?"":"&gotonewpage=".UrlEncode($gotonewpage)).(strlen($backnewurl)<=0?"":"&backnewurl=".UrlEncode($backnewurl)));
 							else
 								$APPLICATION->SaveFileContent($DOC_ROOT.$pathto."/index.php", CFileman::GetTemplateContent($template));
 						}
@@ -136,7 +136,7 @@ else
 						else
 						{
 							$arPathtoParsed = CFileMan::ParsePath(Array($site, $pathto), false, false, "", $logical == "Y");
-							LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($arPathtoParsed["PREV"]));
+							LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".$site."&path=".UrlEncode($arPathtoParsed["PREV"]));
 						}
 					}
 				}

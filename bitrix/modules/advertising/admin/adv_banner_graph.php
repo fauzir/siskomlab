@@ -230,13 +230,13 @@ else :
 		echo GetMessage("AD_SERVER_TIME")."&nbsp;&nbsp;<i>".GetTime(time(),"FULL")."</i><br>";
 		echo GetMessage("AD_DAYS_TO_KEEP")."&nbsp;&nbsp;<i>".COption::GetOptionString("advertising","BANNER_DAYS")."</i>";
 		if ($isAdmin)
-			echo "&nbsp;&nbsp;[<a href='/bnpt/admin/settings.php?lang=".LANGUAGE_ID."&mid=advertising' title='".GetMessage("AD_SET_EDIT")."'>".GetMessage("AD_EDIT")."</a>]";
+			echo "&nbsp;&nbsp;[<a href='/bitrix/admin/settings.php?lang=".LANGUAGE_ID."&mid=advertising' title='".GetMessage("AD_SET_EDIT")."'>".GetMessage("AD_EDIT")."</a>]";
 	echo EndNote()
 	?>	
 	<div class="graph">
 	<table border="0" cellspacing="2" cellpadding="10" class="graph">
 		<tr>
-			<td><img src="/bnpt/admin/adv_graph.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>"></td>
+			<td><img src="/bitrix/admin/adv_graph.php?<?=GetFilterParams($FilterArr)?>&lang=<?=LANGUAGE_ID?>" width="<?=$width?>" height="<?=$height?>"></td>
 		</tr>
 		<tr>
 			<td>
@@ -293,7 +293,7 @@ else :
 							?>
 							<td nowrap width="100%"><img src="/bitrix/images/1.gif" width="3" height="1"><?
 								if ($arrS["COUNTER_TYPE"]=="DETAIL") :
-									echo '[<a href="/bnpt/admin/adv_banner_edit.php?ID='.$arrS["ID"].'&lang='.LANGUAGE_ID.'&action=view" title="'.GetMessage("AD_BANNER_VIEW").'">'.$arrS["ID"].'</a>] '.htmlspecialcharsEx($arrS["NAME"]);
+									echo '[<a href="/bitrix/admin/adv_banner_edit.php?ID='.$arrS["ID"].'&lang='.LANGUAGE_ID.'&action=view" title="'.GetMessage("AD_BANNER_VIEW").'">'.$arrS["ID"].'</a>] '.htmlspecialcharsEx($arrS["NAME"]);
 								else :
 									echo GetMessage("AD_BANNER_SUM");
 								endif;

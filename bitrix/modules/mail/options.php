@@ -97,7 +97,7 @@ function StartSMTPD()
 	ss = 'start';
 
 	BX.ajax({
-		'url':'/bnpt/admin/mail_smtpd_manager.php',
+		'url':'/bitrix/admin/mail_smtpd_manager.php',
 		'method':'POST',
 		'data' : 'action=start&sessid=' + BX.bitrix_sessid(),
 		'dataType': 'json',
@@ -129,7 +129,7 @@ function Stats(norefresh)
 {
 	v = true;
 	BX.ajax({
-		'url':'/bnpt/admin/mail_smtpd_manager.php',
+		'url':'/bitrix/admin/mail_smtpd_manager.php',
 		'method':'POST',
 		'data' : 'action=stats&sessid=' + BX.bitrix_sessid(),
 		'dataType': 'json',
@@ -202,7 +202,7 @@ function StopSMTPD()
 	ss = 'stop';
 	BX('iStopSMTPD').disabled = true;
 	BX.ajax({
-		'url':'/bnpt/admin/mail_smtpd_manager.php',
+		'url':'/bitrix/admin/mail_smtpd_manager.php',
 		'method':'POST',
 		'data' : 'action=stop&sessid=' + BX.bitrix_sessid(),
 		'dataType': 'json',

@@ -1,6 +1,0 @@
-<?
-$MESS["CRM_PRODUCT_FILE_FIELD_ID"] = "Bidang";
-$MESS["CRM_PRODUCT_FILE_FILE_ID"] = "Mengajukan";
-$MESS["CRM_PRODUCT_FILE_CATALOG_ID"] = "Catalog";
-$MESS["CRM_PRODUCT_FILE_PRODUCT_ID"] = "Produk";
-?>

@@ -1,1 +1,0 @@
-<? $arFilesInfo = array( 'FILES' => array("/bitrix/js/calendar/core_planner_handler.css" => "15113164764605","/bitrix/js/timeman/css/core_timeman.css" => "151131660147528","/bitrix/js/im/css/common.css" => "151131651341366","/bitrix/js/im/css/window.css" => "151131651315002","/bitrix/js/im/css/im.css" => "1511316513186966",), 'CUR_SEL_CNT' => '2984', 'CUR_IE_CNT' => '0'); ?>

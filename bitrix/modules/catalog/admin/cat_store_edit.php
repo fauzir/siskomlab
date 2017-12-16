@@ -126,9 +126,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_REQUEST["Update"]) > 0 && !
 		$DB->Commit();
 
 		if (strlen($_REQUEST["apply"]) <= 0)
-			LocalRedirect("/bnpt/admin/cat_store_list.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_store_list.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bnpt/admin/cat_store_edit.php?lang=".LANGUAGE_ID."&ID=".$id."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_store_edit.php?lang=".LANGUAGE_ID."&ID=".$id."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -183,7 +183,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("STORE_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/cat_store_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_store_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -194,13 +194,13 @@ if ($id > 0 && !$bReadOnly)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("STORE_NEW"),
 		"ICON" => "btn_new",
-		"LINK" => "/bnpt/admin/cat_store_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_store_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("STORE_DELETE"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessage("STORE_DELETE_CONFIRM")."')) window.location='/bnpt/admin/cat_store_list.php?action=delete&ID[]=".$id."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("STORE_DELETE_CONFIRM")."')) window.location='/bitrix/admin/cat_store_list.php?action=delete&ID[]=".$id."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -245,7 +245,7 @@ CAdminMessage::ShowMessage($errorMessage);?>
 	?>
 	<tr>
 		<td align="left" colspan="2">
-			<a href="/bnpt/admin/userfield_edit.php?lang=<?=LANGUAGE_ID;?>&amp;ENTITY_ID=<?=$entityId;?>&amp;back_url=<?echo urlencode($APPLICATION->GetCurPageParam('', array('bxpublic'))."&tabControl_active_tab=user_fields_tab")?>"><?=GetMessage("STORE_E_USER_FIELDS_ADD_HREF");?></a>
+			<a href="/bitrix/admin/userfield_edit.php?lang=<?=LANGUAGE_ID;?>&amp;ENTITY_ID=<?=$entityId;?>&amp;back_url=<?echo urlencode($APPLICATION->GetCurPageParam('', array('bxpublic'))."&tabControl_active_tab=user_fields_tab")?>"><?=GetMessage("STORE_E_USER_FIELDS_ADD_HREF");?></a>
 		</td>
 	</tr>
 	<?if ($id > 0):?>
@@ -384,7 +384,7 @@ CAdminMessage::ShowMessage($errorMessage);?>
 	$tabControl->Buttons(
 		array(
 			"disabled" => $bReadOnly,
-			"back_url" => "/bnpt/admin/cat_store_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
+			"back_url" => "/bitrix/admin/cat_store_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		)
 	);
 	$tabControl->End();

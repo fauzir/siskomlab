@@ -1,5 +1,5 @@
 <?
-$MESS["TASKS_PANEL_TAB_EMPLOYEE_PLAN"] = "Availabilityz";
+$MESS["TASKS_PANEL_TAB_EMPLOYEE_PLAN"] = "Availability";
 $MESS["TASKS_PANEL_TAB_PROJECTS"] = "Projects";
 $MESS["TASKS_PANEL_TAB_MANAGE"] = "Supervising";
 $MESS["TASKS_PANEL_TAB_TRASH"] = "Trash";

@@ -28,7 +28,7 @@ function fGetUserName($USER_ID)
 
 		if (count($arUser) > 1)
 		{
-			$user = "<a href='javascript:void(0);' onClick=\"window.open('/bnpt/admin/user_search.php?lang=".LANGUAGE_ID."&FN=order_edit_info_form&FC=user_id', '', 'scrollbars=yes,resizable=yes,width=840,height=500,top='+Math.floor((screen.height - 840)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));\">";
+			$user = "<a href='javascript:void(0);' onClick=\"window.open('/bitrix/admin/user_search.php?lang=".LANGUAGE_ID."&FN=order_edit_info_form&FC=user_id', '', 'scrollbars=yes,resizable=yes,width=840,height=500,top='+Math.floor((screen.height - 840)/2-14)+',left='+Math.floor((screen.width - 760)/2-5));\">";
 			$user .= "(".htmlspecialcharsbx($arUser["LOGIN"]).")";
 
 			if ($arUser["NAME"] != "")
@@ -216,7 +216,7 @@ function fGetFormatedProductData($USER_ID, $LID, $arData, $CNT, $currency, $type
 					else
 					{
 						$cntProd = (floatval($arProduct["QUANTITY"]) > 0) ? floatval($arProduct["QUANTITY"]) : 1;
-						$url = "/bnpt/admin/sale_order_new.php?lang=".LANGUAGE_ID."&user_id=".$USER_ID."&LID=".$LID."&product[".$arProduct["PRODUCT_ID"]."]=".$cntProd;
+						$url = "/bitrix/admin/sale_order_new.php?lang=".LANGUAGE_ID."&user_id=".$USER_ID."&LID=".$LID."&product[".$arProduct["PRODUCT_ID"]."]=".$cntProd;
 						$result .= "<a href=\"".$url."\" target=\"_blank\" class=\"get_new_order\"><span></span>".GetMessage('SOD_SUBTAB_ADD_ORDER')."</a>";
 					}
 				}
@@ -1854,7 +1854,7 @@ function fGetFormatedProduct($USER_ID, $LID, $arData, $currency, $type = '')
 					else
 					{
 						$cntProd = (floatval($item["QUANTITY"]) > 0) ? floatval($item["QUANTITY"]) : 1;
-						$url = "/bnpt/admin/sale_order_new.php?lang=".LANGUAGE_ID."&user_id=".$USER_ID."&LID=".$LID."&product[".$item["PRODUCT_ID"]."]=".$cntProd;
+						$url = "/bitrix/admin/sale_order_new.php?lang=".LANGUAGE_ID."&user_id=".$USER_ID."&LID=".$LID."&product[".$item["PRODUCT_ID"]."]=".$cntProd;
 						$result .= "<a href=\"".$url."\" target=\"_blank\" class=\"get_new_order\"><span></span>".GetMessage('NEWO_SUBTAB_ADD_ORDER')."</a>";
 					}
 				}

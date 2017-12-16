@@ -98,9 +98,9 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && $POST_RIGHT=="W" &&
 		}
 
 		if($apply!="")
-			LocalRedirect("/bnpt/admin/sender_group_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/sender_group_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bnpt/admin/sender_group_admin.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/sender_group_admin.php?lang=".LANG);
 	}
 	else
 	{

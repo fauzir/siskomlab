@@ -78,7 +78,7 @@ if(!empty($_GET['from_list']))
 		$contextMenuItems = array(
 			array(
 				"TEXT" => Loc::getMessage('SALE_DISCOUNT_PRESET_DETAIL_DISCOUNT_LIST'),
-				"LINK" => "/bnpt/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+				"LINK" => "/bitrix/admin/sale_discount.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 		);
@@ -88,7 +88,7 @@ if(!empty($_GET['from_list']))
 		$contextMenuItems = array(
 			array(
 				"TEXT" => Loc::getMessage('SALE_DISCOUNT_PRESET_DETAIL_PRESET_DISCOUNT_LIST'),
-				"LINK" => "/bnpt/admin/sale_discount_preset_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+				"LINK" => "/bitrix/admin/sale_discount_preset_list.php?lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 		);

@@ -1,4 +1,0 @@
-<?
-$MESS["INTR_STR_HEAD_DEPARTMENT"] = "Semua";
-$MESS["INTR_STR_ABOUT_DEPARTMENT"] = "Saya";
-?>

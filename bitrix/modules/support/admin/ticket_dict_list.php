@@ -217,7 +217,7 @@ while($arRes = $rsData->Fetch())
 		foreach($arrSITE as $sid)
 		{
 			$sidS = htmlspecialcharsbx($sid);
-			$str_SITE .= ($str_SITE == "" ? "" : " / ") . '<a title="' . GetMessage("MAIN_ADMIN_MENU_EDIT") . '" href="/bnpt/admin/site_edit.php?LID=' . $sidS . '&lang=' . LANG . '">' . $sidS . '</a>';
+			$str_SITE .= ($str_SITE == "" ? "" : " / ") . '<a title="' . GetMessage("MAIN_ADMIN_MENU_EDIT") . '" href="/bitrix/admin/site_edit.php?LID=' . $sidS . '&lang=' . LANG . '">' . $sidS . '</a>';
 		}
 	}
 
@@ -266,7 +266,7 @@ foreach($arRows as $k => $v)
 	$rUserID = intval($v["arFields"]["RESPONSIBLE_USER_ID"]);
 	if ($rUserID > 0 && array_key_exists($rUserID, $arRespUsersProp)):
 		$arUserPr = $arRespUsersProp[$rUserID];
-		$str = '[<a title="' . GetMessage("SUP_USER_PROFILE") . '" href="/bnpt/admin/user_edit.php?lang=' . LANG . '&ID=' . $rUserID . '">' .
+		$str = '[<a title="' . GetMessage("SUP_USER_PROFILE") . '" href="/bitrix/admin/user_edit.php?lang=' . LANG . '&ID=' . $rUserID . '">' .
 			$rUserID.'</a>] (' . $arUserPr["LOGIN"] . ') ' . $arUserPr["NAME"] . "  " . $arUserPr["LAST_NAME"];
 
 	endif;
@@ -298,34 +298,34 @@ $aContext = array(
 		"MENU" => Array(
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_CATEGORY"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=C';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=C';"
 			),
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_CRITICALITY"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=K';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=K';"
 			),
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_STATUS"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=S';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=S';"
 			),
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_MARK"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=M';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=M';"
 			),
 
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_FUA"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=F';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=F';"
 			),
 
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_SOURCE"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=SR';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=SR';"
 			),
 
 			Array(
 				"TEXT"	=> GetMessage("SUP_ADD_DIFFICULTY"),
-				"ACTION"	=> "window.location='/bnpt/admin/ticket_dict_edit.php?lang=".LANG."&find_type=D';"
+				"ACTION"	=> "window.location='/bitrix/admin/ticket_dict_edit.php?lang=".LANG."&find_type=D';"
 			),
 
 		)

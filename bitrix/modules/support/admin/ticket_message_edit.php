@@ -204,7 +204,7 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admi
 $aMenu = array();
 $aMenu[] = array(
 	"TEXT"	=> str_replace("#TID#",$TICKET_ID,GetMessage("SUP_TICKET_EDIT")), 
-	"LINK"	=> "/bnpt/admin/ticket_edit.php?lang=".LANGUAGE_ID."&ID=".$TICKET_ID
+	"LINK"	=> "/bitrix/admin/ticket_edit.php?lang=".LANGUAGE_ID."&ID=".$TICKET_ID
 	);
 
 if (intval($arTicket["MESSAGES"])>1)
@@ -212,7 +212,7 @@ if (intval($arTicket["MESSAGES"])>1)
 	$aMenu[] = array("SEPARATOR"=>"Y");
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("SUP_DELETE_MESSAGE"),
-		"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_MESSAGE_CONFIRM")."')) window.location='/bnpt/admin/ticket_edit.php?ID=".$TICKET_ID."&mdel_id=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get(). "&set_default=Y';",
+		"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_MESSAGE_CONFIRM")."')) window.location='/bitrix/admin/ticket_edit.php?ID=".$TICKET_ID."&mdel_id=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get(). "&set_default=Y';",
 		"WARNING"=>"Y"
 		);
 }
@@ -279,9 +279,9 @@ if ($strError)
 		<td width="20%"><?=GetMessage("SUP_CREATE")?></td>
 		<td align="left" width="80%"><?=$str_DATE_CREATE?>&nbsp;&nbsp;&nbsp;<?
 		if (strlen($str_CREATED_MODULE_NAME)<=0 || $str_CREATED_MODULE_NAME=="support") :
-			?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANG?>&ID=<?=$str_CREATED_USER_ID?>"><?echo $str_CREATED_USER_ID?></a>] (<?=$str_CREATED_LOGIN?>) <?=$str_CREATED_NAME?><?
+			?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANG?>&ID=<?=$str_CREATED_USER_ID?>"><?echo $str_CREATED_USER_ID?></a>] (<?=$str_CREATED_LOGIN?>) <?=$str_CREATED_NAME?><?
 			if (intval($str_CREATED_GUEST_ID)>0 && CModule::IncludeModule("statistic")) :
-				echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=".LANG."&find_id=". $str_CREATED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y' >".$str_CREATED_GUEST_ID."</a>]";
+				echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=".LANG."&find_id=". $str_CREATED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y' >".$str_CREATED_GUEST_ID."</a>]";
 			endif;
 		else :
 			echo $str_CREATED_MODULE_NAME;
@@ -292,9 +292,9 @@ if ($strError)
 	<tr valign="middle">
 		<td><?=GetMessage("SUP_TIMESTAMP")?></td>
 		<td align="left"><?=$str_TIMESTAMP_X?>&nbsp;&nbsp;&nbsp;<?
-			?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bnpt/admin/user_edit.php?lang=<?=LANG?>&ID=<?echo $str_MODIFIED_USER_ID?>"><?=$str_MODIFIED_USER_ID?></a>] (<?=$str_MODIFIED_LOGIN?>) <?=$str_MODIFIED_NAME?><?
+			?>[<a title="<?=GetMessage("SUP_USER_PROFILE")?>" href="/bitrix/admin/user_edit.php?lang=<?=LANG?>&ID=<?echo $str_MODIFIED_USER_ID?>"><?=$str_MODIFIED_USER_ID?></a>] (<?=$str_MODIFIED_LOGIN?>) <?=$str_MODIFIED_NAME?><?
 			if (intval($str_MODIFIED_GUEST_ID)>0 && CModule::IncludeModule("statistic")) :
-				echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bnpt/admin/guest_list.php?lang=".LANG."&find_id=".$str_MODIFIED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y'>".$str_MODIFIED_GUEST_ID."</a>]";
+				echo " [<a title='".GetMessage("SUP_GUEST_ID")."'  href='/bitrix/admin/guest_list.php?lang=".LANG."&find_id=".$str_MODIFIED_GUEST_ID."&find_id_exact_match=Y&set_filter=Y'>".$str_MODIFIED_GUEST_ID."</a>]";
 			endif;
 		?></td>
 	</tr>

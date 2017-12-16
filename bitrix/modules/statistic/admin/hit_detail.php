@@ -50,7 +50,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_popup_adm
 	</tr>
 	<tr>
 		<td valign="top" nowrap><?echo GetMessage("STAT_PAGE")?></td>
-		<td><?if (strlen($f_SITE_ID)>0):?>[<a title="<?=GetMessage("STAT_SITE")?>" href="/bnpt/admin/site_edit.php?LID=<?=$f_SITE_ID?>&amp;lang=<?=LANGUAGE_ID?>"><?=$f_SITE_ID?></a>]&nbsp;<?endif;?><?echo StatAdminListFormatURL($arRes["URL"], array(
+		<td><?if (strlen($f_SITE_ID)>0):?>[<a title="<?=GetMessage("STAT_SITE")?>" href="/bitrix/admin/site_edit.php?LID=<?=$f_SITE_ID?>&amp;lang=<?=LANGUAGE_ID?>"><?=$f_SITE_ID?></a>]&nbsp;<?endif;?><?echo StatAdminListFormatURL($arRes["URL"], array(
 			"new_window" => true,
 			"attention" => $f_URL_404=="Y",
 			"chars_per_line" => 40,

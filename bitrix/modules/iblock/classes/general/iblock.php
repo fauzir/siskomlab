@@ -279,7 +279,7 @@ class CAllIBlock
 
 		if($ELEMENT_ID > 0 && CIBlockElementRights::UserHasRightTo($IBLOCK_ID, $ELEMENT_ID, "element_edit"))
 		{
-			$url = "/bnpt/admin/".CIBlock::GetAdminElementEditLink($IBLOCK_ID, $ELEMENT_ID, array(
+			$url = "/bitrix/admin/".CIBlock::GetAdminElementEditLink($IBLOCK_ID, $ELEMENT_ID, array(
 				"force_catalog" => $bCatalog,
 				"filter_section" => $SECTION_ID,
 				"bxpublic" => "Y",
@@ -314,7 +314,7 @@ class CAllIBlock
 
 			if($bWorkflow)
 			{
-				$url = "/bnpt/admin/iblock_history_list.php?type=".$arIBlock["IBLOCK_TYPE_ID"]."&lang=".LANGUAGE_ID."&IBLOCK_ID=".$IBLOCK_ID."&ELEMENT_ID=".$ELEMENT_ID."&filter_section=".$SECTION_ID."&return_url=".UrlEncode($return_url["history_element"]);
+				$url = "/bitrix/admin/iblock_history_list.php?type=".$arIBlock["IBLOCK_TYPE_ID"]."&lang=".LANGUAGE_ID."&IBLOCK_ID=".$IBLOCK_ID."&ELEMENT_ID=".$ELEMENT_ID."&filter_section=".$SECTION_ID."&return_url=".UrlEncode($return_url["history_element"]);
 				$arButton = array(
 					"TEXT" => GetMessage("IBLOCK_PANEL_HISTORY_BUTTON"),
 					"TITLE" => GetMessage("IBLOCK_PANEL_HISTORY_BUTTON"),
@@ -344,7 +344,7 @@ class CAllIBlock
 			}
 			else
 			{
-				$url = "/bnpt/admin/".CIBlock::GetAdminElementEditLink($IBLOCK_ID, null, $params);
+				$url = "/bitrix/admin/".CIBlock::GetAdminElementEditLink($IBLOCK_ID, null, $params);
 				$action = $APPLICATION->GetPopupLink(
 					array(
 						"URL" => $url,
@@ -391,7 +391,7 @@ class CAllIBlock
 			if($bSessID)
 				$url .= '&'.bitrix_sessid_get();
 			$url .= '&ID='.(preg_match('/^iblock_list_admin\.php/', $url)? "E": "").$ELEMENT_ID."&return_url=".UrlEncode($return_url["delete_element"]);
-			$url = "/bnpt/admin/".$url;
+			$url = "/bitrix/admin/".$url;
 			$arButton = array(
 				"TEXT" => (strlen($arLabels["ELEMENT_DELETE_TEXT"])? $arLabels["ELEMENT_DELETE_TEXT"]: $arIBlock["ELEMENT_DELETE"]),
 				"TITLE" => (strlen($arLabels["ELEMENT_DELETE_TITLE"])? $arLabels["ELEMENT_DELETE_TITLE"]: $arIBlock["ELEMENT_DELETE"]),
@@ -420,7 +420,7 @@ class CAllIBlock
 					if(!empty($arButtons["submenu"]))
 						$arButtons["submenu"][] = array("SEPARATOR" => "Y", "HREF" => "");
 
-					$url = "/bnpt/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, $SECTION_ID, array(
+					$url = "/bitrix/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, $SECTION_ID, array(
 						"force_catalog" => $bCatalog,
 						"filter_section" => $SECTION_ID,
 						"bxpublic" => "Y",
@@ -456,7 +456,7 @@ class CAllIBlock
 
 				if(CIBlockSectionRights::UserHasRightTo($IBLOCK_ID, $SECTION_ID, "section_section_bind"))
 				{
-					$url = "/bnpt/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, null, array(
+					$url = "/bitrix/admin/".CIBlock::GetAdminSectionEditLink($IBLOCK_ID, null, array(
 						"force_catalog" => $bCatalog,
 						"IBLOCK_SECTION_ID" => $SECTION_ID,
 						"filter_section" => $SECTION_ID,
@@ -498,7 +498,7 @@ class CAllIBlock
 					if($bSessID)
 						$url .= '&'.bitrix_sessid_get();
 					$url .= '&ID[]='.(preg_match('/^iblock_list_admin\.php/', $url)? "S": "").$SECTION_ID."&return_url=".UrlEncode($return_url["delete_section"]);
-					$url = "/bnpt/admin/".$url;
+					$url = "/bitrix/admin/".$url;
 
 					$arButton = array(
 						"TEXT" => (strlen($arLabels["SECTION_DELETE_TEXT"])? $arLabels["SECTION_DELETE_TEXT"]: $arIBlock["SECTION_DELETE"]),
@@ -522,9 +522,9 @@ class CAllIBlock
 				$arButtons["submenu"][] = array("SEPARATOR" => "Y", "HREF" => "");
 
 			if($SECTION_ID > 0)
-				$url = "/bnpt/admin/".CIBlock::GetAdminElementListLink($IBLOCK_ID , array('find_section_section'=>$SECTION_ID));
+				$url = "/bitrix/admin/".CIBlock::GetAdminElementListLink($IBLOCK_ID , array('find_section_section'=>$SECTION_ID));
 			else
-				$url = "/bnpt/admin/".CIBlock::GetAdminElementListLink($IBLOCK_ID , array('find_el_y'=>'Y'));
+				$url = "/bitrix/admin/".CIBlock::GetAdminElementListLink($IBLOCK_ID , array('find_el_y'=>'Y'));
 
 			$arButton = array(
 				"TEXT" => (strlen($arLabels["ELEMENTS_NAME_TEXT"])? $arLabels["ELEMENTS_NAME_TEXT"]: $arIBlock["ELEMENTS_NAME"]),
@@ -544,7 +544,7 @@ class CAllIBlock
 				'SORT' => 1010,
 			);
 
-			$url = "/bnpt/admin/".CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>$SECTION_ID));
+			$url = "/bitrix/admin/".CIBlock::GetAdminSectionListLink($IBLOCK_ID, array('find_section_section'=>$SECTION_ID));
 			$arButton = array(
 				"TEXT" => (strlen($arLabels["SECTIONS_NAME_TEXT"])? $arLabels["SECTIONS_NAME_TEXT"]: $arIBlock["SECTIONS_NAME"]),
 				"TITLE" => (strlen($arLabels["SECTIONS_NAME_TITLE"])? $arLabels["SECTIONS_NAME_TITLE"]: $arIBlock["SECTIONS_NAME"]),
@@ -557,7 +557,7 @@ class CAllIBlock
 
 			if(CIBlockRights::UserHasRightTo($IBLOCK_ID, $IBLOCK_ID, "iblock_edit"))
 			{
-				$url = "/bnpt/admin/iblock_edit.php?type=".$arIBlock["IBLOCK_TYPE_ID"]."&lang=".LANGUAGE_ID."&ID=".$IBLOCK_ID."&return_url=".UrlEncode($return_url["edit_iblock"]);
+				$url = "/bitrix/admin/iblock_edit.php?type=".$arIBlock["IBLOCK_TYPE_ID"]."&lang=".LANGUAGE_ID."&ID=".$IBLOCK_ID."&return_url=".UrlEncode($return_url["edit_iblock"]);
 				$arButton = array(
 					"TEXT" => GetMessage("IBLOCK_PANEL_EDIT_IBLOCK_BUTTON", array("#IBLOCK_NAME#"=>$arIBlock["NAME"])),
 					"TITLE" => GetMessage("IBLOCK_PANEL_EDIT_IBLOCK_BUTTON", array("#IBLOCK_NAME#"=>$arIBlock["NAME"])),
@@ -3519,7 +3519,7 @@ REQ
 	public static function GetAdminSubElementEditLink($IBLOCK_ID, $ELEMENT_ID, $SUBELEMENT_ID, $arParams = array(), $strAdd = '', $absoluteUrl = false)
 	{
 		$absoluteUrl = ($absoluteUrl === true);
-		$url = ($absoluteUrl ? '/bnpt/admin/' : '').'iblock_subelement_edit.php?IBLOCK_ID='.(int)$IBLOCK_ID.'&type='.urlencode(CIBlock::GetArrayByID($IBLOCK_ID, 'IBLOCK_TYPE_ID'));
+		$url = ($absoluteUrl ? '/bitrix/admin/' : '').'iblock_subelement_edit.php?IBLOCK_ID='.(int)$IBLOCK_ID.'&type='.urlencode(CIBlock::GetArrayByID($IBLOCK_ID, 'IBLOCK_TYPE_ID'));
 		$url .= '&PRODUCT_ID='.(int)$ELEMENT_ID.'&ID='.(int)$SUBELEMENT_ID.'&lang='.LANGUAGE_ID;
 
 		foreach ($arParams as $name => $value)

@@ -18,7 +18,7 @@
 	overflow:hidden;
 }
 .bx-gadgets-colourful.bx-gadgets-perfmon .bx-gadgets-content {
-	/*background:url("/bitrix/gadgets/bnpt/admin_perfmon/images/green_back.png") repeat-x left bottom #A5BF3C;*/
+	/*background:url("/bitrix/gadgets/bitrix/admin_perfmon/images/green_back.png") repeat-x left bottom #A5BF3C;*/
 	background:none;
 	box-shadow:none;
 	height:138px;
@@ -27,9 +27,9 @@
 	padding:0 11px 0 0;
 	position: relative;
 }
-.bx-gadgets-perfmon .bx-gadgets-side {background:url("/bitrix/gadgets/bnpt/admin_perfmon/images/stitch2.png") repeat-y 0 0;}
+.bx-gadgets-perfmon .bx-gadgets-side {background:url("/bitrix/gadgets/bitrix/admin_perfmon/images/stitch2.png") repeat-y 0 0;}
 .bx-gadgets-perfmon .bx-gadget-shield {
-	background:url("/bitrix/gadgets/bnpt/admin_perfmon/images/shield.png") no-repeat left top;
+	background:url("/bitrix/gadgets/bitrix/admin_perfmon/images/shield.png") no-repeat left top;
 	float:right;
 	margin:26px 10px 0 0;
 	height: 84px;
@@ -69,8 +69,8 @@
 	border-radius:2px;
 }
 
-.bx-gadgets-perfmon .bx-gadget-button-lamp { background:url("/bitrix/gadgets/bnpt/admin_perfmon/images/lamp.png") no-repeat left top transparent; }
-.bx-gadgets-perfmon .bx-gadget-button-active .bx-gadget-button-lamp {background:url("/bitrix/gadgets/bnpt/admin_perfmon/images/lamp_active.png") no-repeat left top transparent; }
+.bx-gadgets-perfmon .bx-gadget-button-lamp { background:url("/bitrix/gadgets/bitrix/admin_perfmon/images/lamp.png") no-repeat left top transparent; }
+.bx-gadgets-perfmon .bx-gadget-button-active .bx-gadget-button-lamp {background:url("/bitrix/gadgets/bitrix/admin_perfmon/images/lamp_active.png") no-repeat left top transparent; }
 .bx-gadgets-perfmon .bx-gadget-mark {color: #3b4a00; text-shadow: 0 1px 0 rgba(243,244,188,0.73);}
 .bx-gadgets-perfmon .bx-gadget-button-text {text-shadow:0 -1px 0 rgba(74,91,11,0.6);}
 .bx-gadgets-perfmon .bx-gadget-button-active .bx-gadget-button-text {

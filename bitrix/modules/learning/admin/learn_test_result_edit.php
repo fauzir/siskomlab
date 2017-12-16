@@ -110,9 +110,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && strlen($Update)>0 && check_bitrix_se
 			if(strlen($return_url)>0)
 				LocalRedirect($return_url);
 			else
-				LocalRedirect("/bnpt/admin/learn_test_result_admin.php?lang=".LANG."&ATTEMPT_ID=".$ATTEMPT_ID.GetFilterParams("filter_", false));
+				LocalRedirect("/bitrix/admin/learn_test_result_admin.php?lang=".LANG."&ATTEMPT_ID=".$ATTEMPT_ID.GetFilterParams("filter_", false));
 		}
-		LocalRedirect("/bnpt/admin/learn_test_result_edit.php?lang=".LANG."&ID=".$ID."&ATTEMPT_ID=".$ATTEMPT_ID.GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/learn_test_result_edit.php?lang=".LANG."&ID=".$ID."&ATTEMPT_ID=".$ATTEMPT_ID.GetFilterParams("filter_", false));
 	}
 }
 

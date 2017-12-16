@@ -289,12 +289,12 @@ require_once ($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_adm
 $context = new CAdminContextMenu(array(
 	array(
 		"TEXT"	=> GetMessage("VOTE_BACK_TO_VOTE"),
-		"LINK"	=> ($vote->canEdit($USER->GetID()) ? "/bnpt/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$voteId : "/bnpt/admin/vote_preview.php?lang=".LANGUAGE_ID."&VOTE_ID=".$voteId),
+		"LINK"	=> ($vote->canEdit($USER->GetID()) ? "/bitrix/admin/vote_edit.php?lang=".LANGUAGE_ID."&ID=".$voteId : "/bitrix/admin/vote_preview.php?lang=".LANGUAGE_ID."&VOTE_ID=".$voteId),
 		"ICON" => "btn_list"
 	),
 	array(
 		"TEXT"	=> GetMessage("VOTE_VIEW_RESULTS"),
-		"LINK"	=> "/bnpt/admin/vote_results.php?lang=".LANGUAGE_ID."&VOTE_ID=".$voteId,
+		"LINK"	=> "/bitrix/admin/vote_results.php?lang=".LANGUAGE_ID."&VOTE_ID=".$voteId,
 	))
 );
 $context->Show();

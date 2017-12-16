@@ -188,7 +188,7 @@ function generateSitemap(ID)
 BX.runSitemap = function(ID, value, pid, NS)
 {
 	BX.adminPanel.showWait(BX('sitemap_run_button_' + ID));
-	BX.ajax.post('/bnpt/admin/seo_sitemap_run.php', {
+	BX.ajax.post('/bitrix/admin/seo_sitemap_run.php', {
 		lang:'<?=LANGUAGE_ID?>',
 		action: 'sitemap_run',
 		ID: ID,
@@ -205,7 +205,7 @@ BX.runSitemap = function(ID, value, pid, NS)
 
 BX.finishSitemap = function()
 {
-	window.tbl_sitemap.GetAdminList('/bnpt/admin/seo_sitemap.php?lang=<?=LANGUAGE_ID?>');
+	window.tbl_sitemap.GetAdminList('/bitrix/admin/seo_sitemap.php?lang=<?=LANGUAGE_ID?>');
 };
 </script>
 

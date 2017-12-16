@@ -225,15 +225,15 @@ if (isset($_REQUEST['loadtab']))
 				if (count($arrLegend) > 0 && count($arrDays) > 1):
 ?>
 	<tr>
-		<td colspan="2"><img src="/bnpt/admin/searcher_graph.php?&lang=<?echo LANGUAGE_ID?>&find_date1_DAYS_TO_BACK=90<?foreach ($arSearchers as $key => $ar) echo '&find_searchers[]='.$key;?>&mode=list&find_summa=N&width=576&height=300" border="0" width="576" height="300" border="0" /><br /><br />
+		<td colspan="2"><img src="/bitrix/admin/searcher_graph.php?&lang=<?echo LANGUAGE_ID?>&find_date1_DAYS_TO_BACK=90<?foreach ($arSearchers as $key => $ar) echo '&find_searchers[]='.$key;?>&mode=list&find_summa=N&width=576&height=300" border="0" width="576" height="300" border="0" /><br /><br />
 		<table border="0" cellspacing="0" cellpadding="0" class="legend">
 <?
 					foreach ($arrLegend as $keyL => $arrL):
 						$color = $arrL["COLOR"];
 ?>
 			<tr>
-				<td><img src="/bnpt/admin/graph_legend.php?color=<?=$color?>" width="45" height="2"></td>
-				<td nowrap="nowrap">[<a href="/bnpt/admin/searcher_list.php?lang=<?=LANGUAGE_ID?>&amp;find_id=<?=$keyL?>&amp;set_filter=Y"><?=$keyL?></a>]&nbsp;<a  href="/bnpt/admin/searcher_dynamic_list.php?lang=<?=LANGUAGE_ID?>&amp;find_searcher_id=<?=$keyL?>&amp;find_date1=<?echo $arFilter["DATE1"]?>&amp;find_date2=<?=$arFilter["DATE2"]?>&amp;set_filter=Y"><?=$arrL["NAME"]?></a></td>
+				<td><img src="/bitrix/admin/graph_legend.php?color=<?=$color?>" width="45" height="2"></td>
+				<td nowrap="nowrap">[<a href="/bitrix/admin/searcher_list.php?lang=<?=LANGUAGE_ID?>&amp;find_id=<?=$keyL?>&amp;set_filter=Y"><?=$keyL?></a>]&nbsp;<a  href="/bitrix/admin/searcher_dynamic_list.php?lang=<?=LANGUAGE_ID?>&amp;find_searcher_id=<?=$keyL?>&amp;find_date1=<?echo $arFilter["DATE1"]?>&amp;find_date2=<?=$arFilter["DATE2"]?>&amp;set_filter=Y"><?=$arrL["NAME"]?></a></td>
 			</tr>
 <?
 					endforeach;
@@ -359,7 +359,7 @@ if (isset($_REQUEST['loadtab']))
 ?>
 		</table></td>
 	</tr><tr>
-		<td colspan="2" align="right"><a href="/bnpt/admin/phrase_list.php?lang=<?echo LANGUAGE_ID?>"><?echo GetMessage('SEO_PAGE_GOTO_CP')?></a></td>
+		<td colspan="2" align="right"><a href="/bitrix/admin/phrase_list.php?lang=<?echo LANGUAGE_ID?>"><?echo GetMessage('SEO_PAGE_GOTO_CP')?></a></td>
 	</tr>
 </table>
 <?
@@ -485,7 +485,7 @@ if (isset($_REQUEST['loadtab']))
 ?>
 	</table></td>
 </tr><tr>
-	<td colspan="2" align="right"><a href="/bnpt/admin/referer_list.php?lang=<?echo LANGUAGE_ID?>"><?echo GetMessage('SEO_PAGE_GOTO_CP')?></a></td>
+	<td colspan="2" align="right"><a href="/bitrix/admin/referer_list.php?lang=<?echo LANGUAGE_ID?>"><?echo GetMessage('SEO_PAGE_GOTO_CP')?></a></td>
 </tr></table>
 <?
 			}
@@ -635,7 +635,7 @@ $tabControl = new CAdminTabControl("seoTabControl", $aTabs, true, true);
 $APPLICATION->SetTitle(GetMessage('SEO_TOOLS_TITLE'));
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");
 ?>
-<form name="seo_form" method="POST" action="/bnpt/admin/public_seo_tools.php" enctype="multipart/form-data">
+<form name="seo_form" method="POST" action="/bitrix/admin/public_seo_tools.php" enctype="multipart/form-data">
 <input type="hidden" name="lang" value="<?=LANGUAGE_ID?>" />
 <input type="hidden" name="site" value="<?=$site?>" />
 <input type="hidden" name="path" value="<?echo htmlspecialcharsEx($path)?>" />

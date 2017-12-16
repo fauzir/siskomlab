@@ -279,7 +279,7 @@ class CSupportPage
 			{
 				if(!$presApply)
 				{
-					LocalRedirect("/bnpt/admin/" . self::LIST_URL . "?lang=". LANG . GetFilterParams("filter_", false));
+					LocalRedirect("/bitrix/admin/" . self::LIST_URL . "?lang=". LANG . GetFilterParams("filter_", false));
 				}
 				return true;
 			}

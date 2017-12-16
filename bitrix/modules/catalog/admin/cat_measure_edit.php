@@ -35,7 +35,7 @@ if($_REQUEST["OKEI"] == "Y")
 	$classifierMode = true;
 	$arMeasureClassifier = CCatalogMeasureClassifier::getMeasureClassifier();
 	if(!is_array($arMeasureClassifier))
-		LocalRedirect("/bnpt/admin/cat_measure_list.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false));
+		LocalRedirect("/bitrix/admin/cat_measure_list.php?lang=".LANGUAGE_ID."&".GetFilterParams("filter_", false));
 	if(isset($_REQUEST["main_section"]) && intval($_REQUEST["main_section"] < count($arMeasureClassifier)))
 		$mainSectionId = intval($_REQUEST["main_section"]);
 	if(isset($_REQUEST["sub_section"]) && intval($_REQUEST["sub_section"] <= 6))
@@ -160,7 +160,7 @@ $userId = intval($USER->GetID());
 		var mainSectionId = BX('CLASSIFIER_MAIN_SECTION').value;
 		var subSectionId = BX('CLASSIFIER_SUB_SECTION').value;
 
-		window['<?=$sTableID?>'].GetAdminList("/bnpt/admin/cat_measure_edit.php?OKEI=Y&main_section=" + mainSectionId + "&sub_section=" + subSectionId + '&lang=<? echo LANGUAGE_ID;?>');
+		window['<?=$sTableID?>'].GetAdminList("/bitrix/admin/cat_measure_edit.php?OKEI=Y&main_section=" + mainSectionId + "&sub_section=" + subSectionId + '&lang=<? echo LANGUAGE_ID;?>');
 	}
 </script>
 <?
@@ -188,18 +188,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_REQUEST["Update"]) > 0 && !$
 		$DB->Commit();
 
 		if(strlen($_REQUEST["apply"])<=0)
-			LocalRedirect("/bnpt/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bnpt/admin/cat_measure_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_measure_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
 	}
 	elseif(strlen($errorMessage) == 0 && $ID == 0 && $res = CCatalogMeasure::add($arFields))
 	{
 		$ID = $res;
 		$DB->Commit();
 		if(strlen($_REQUEST["apply"]) <= 0)
-			LocalRedirect("/bnpt/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false));
 		else
-			LocalRedirect("/bnpt/admin/cat_measure_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/cat_measure_edit.php?lang=".LANG."&ID=".$ID."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -245,7 +245,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CAT_MEASURE_LIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -256,13 +256,13 @@ if($ID > 0 && !$bReadOnly)
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CAT_MEASURE_ADD"),
 		"ICON" => "btn_new",
-		"LINK" => "/bnpt/admin/cat_measure_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/cat_measure_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	);
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("CAT_MEASURE_DELETE"),
 		"ICON" => "btn_delete",
-		"LINK" => "javascript:if(confirm('".GetMessage("CAT_MEASURE_DELETE_CONFIRM")."')) window.location='/bnpt/admin/cat_measure_list.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+		"LINK" => "javascript:if(confirm('".GetMessage("CAT_MEASURE_DELETE_CONFIRM")."')) window.location='/bitrix/admin/cat_measure_list.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 		"WARNING" => "Y"
 	);
 }
@@ -376,7 +376,7 @@ if(!$classifierMode)
 	$tabControl->Buttons(
 		array(
 			"disabled" => $bReadOnly,
-			"back_url" => "/bnpt/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
+			"back_url" => "/bitrix/admin/cat_measure_list.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		)
 	);
 }

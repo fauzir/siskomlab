@@ -37,9 +37,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && check_bitrix_sessid())
 		if($res)
 		{
 			if(isset($_POST["apply"]))
-				LocalRedirect("/bnpt/admin/cluster_group_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
+				LocalRedirect("/bitrix/admin/cluster_group_edit.php?ID=".$ID."&lang=".LANG."&".$tabControl->ActiveTabParam());
 			else
-				LocalRedirect("/bnpt/admin/cluster_index.php?lang=".LANG);
+				LocalRedirect("/bitrix/admin/cluster_index.php?lang=".LANG);
 		}
 		else
 		{
@@ -54,7 +54,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && check_bitrix_sessid())
 		$res = $ob->Delete($ID);
 		if($res)
 		{
-			LocalRedirect("/bnpt/admin/cluster_index.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/cluster_index.php?lang=".LANG);
 		}
 		else
 		{

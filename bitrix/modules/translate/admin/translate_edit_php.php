@@ -113,13 +113,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
 			if(isset($_REQUEST['apply']))
 			{
-				if(strlen($back_url)>0 && strpos($back_url, "/bnpt/admin/fileman_file_edit.php")!==0)
+				if(strlen($back_url)>0 && strpos($back_url, "/bitrix/admin/fileman_file_edit.php")!==0)
 					LocalRedirect("/".ltrim($back_url, "/"));
-				LocalRedirect("/bnpt/admin/translate_edit_php.php?lang=".LANGUAGE_ID.'&file='.$file);
+				LocalRedirect("/bitrix/admin/translate_edit_php.php?lang=".LANGUAGE_ID.'&file='.$file);
 			}
 			else
 			{
-				LocalRedirect("/bnpt/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get());
+				LocalRedirect("/bitrix/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get());
 			}
 		}
 		else
@@ -144,14 +144,14 @@ $filesrc = $filesrc_tmp;
 $aMenu = array();
 $aMenu[] = Array(
 	"TEXT"	=> GetMessage("TRANS_LIST"),
-	"LINK"	=> "/bnpt/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
+	"LINK"	=> "/bitrix/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
 	"TITLE"	=> GetMessage("TRANS_LIST_TITLE"),
 	"ICON"	=> "btn_list"
 	);
 
 $aMenu[] = Array(
 	"TEXT"	=> GetMessage("TR_FILE_SHOW"),
-	"LINK"	=> "/bnpt/admin/translate_show_php.php?lang=".LANGUAGE_ID."&file=$file&".bitrix_sessid_get(),
+	"LINK"	=> "/bitrix/admin/translate_show_php.php?lang=".LANGUAGE_ID."&file=$file&".bitrix_sessid_get(),
 	"TITLE"	=> GetMessage("TR_FILE_SHOW_TITLE"),
 	"ICON"	=> ""
 	);
@@ -173,7 +173,7 @@ $tabControl->BeginNextTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => $only_read,
-		"back_url" => "/bnpt/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get()
+		"back_url" => "/bitrix/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get()
 	)
 );
 $tabControl->End();

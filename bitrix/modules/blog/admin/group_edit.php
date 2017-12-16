@@ -56,7 +56,7 @@ if ($REQUEST_METHOD=="POST" && strlen($Update)>0 && $blogModulePermissions>="W" 
 
 
 		if (strlen($apply) <= 0)
-			LocalRedirect("/bnpt/admin/blog_group.php?lang=".LANG."&".GetFilterParams("filter_", false));
+			LocalRedirect("/bitrix/admin/blog_group.php?lang=".LANG."&".GetFilterParams("filter_", false));
 	}
 	else
 	{
@@ -101,7 +101,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("BLGE_2FLIST"),
 		"ICON" => "btn_list",
-		"LINK" => "/bnpt/admin/blog_group.php?lang=".LANG."&".GetFilterParams("filter_", false)
+		"LINK" => "/bitrix/admin/blog_group.php?lang=".LANG."&".GetFilterParams("filter_", false)
 	)
 );
 
@@ -112,13 +112,13 @@ if ($ID > 0 && $blogModulePermissions >= "W")
 	$aMenu[] = array(
 			"TEXT" => GetMessage("BLGE_NEW_GROUP"),
 			"ICON" => "btn_new",
-			"LINK" => "/bnpt/admin/blog_group_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
+			"LINK" => "/bitrix/admin/blog_group_edit.php?lang=".LANG."&".GetFilterParams("filter_", false)
 		);
 
 	$aMenu[] = array(
 			"TEXT" => GetMessage("BLGE_DELETE_GROUP"), 
 			"ICON" => "btn_delete",
-			"LINK" => "javascript:if(confirm('".GetMessage("BLGE_DELETE_GROUP_CONFIRM")."')) window.location='/bnpt/admin/blog_group.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("BLGE_DELETE_GROUP_CONFIRM")."')) window.location='/bitrix/admin/blog_group.php?ID=".$ID."&action=delete&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 			"WARNING" => "Y"
 		);
 }
@@ -175,7 +175,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 		array(
 				"disabled" => ($blogModulePermissions < "W"),
-				"back_url" => "/bnpt/admin/blog_group.php?lang=".LANG."&".GetFilterParams("filter_", false)
+				"back_url" => "/bitrix/admin/blog_group.php?lang=".LANG."&".GetFilterParams("filter_", false)
 			)
 	);
 ?>

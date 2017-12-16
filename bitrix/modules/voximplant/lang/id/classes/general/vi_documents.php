@@ -47,7 +47,7 @@ komentar
 19)
  
 Untuk melihat dan mengedit dokumen klik linknya:
-http: //#SERVER_NAME#/bnpt/admin/workflow_edit.php? lang = en & ID = # ID #
+http: //#SERVER_NAME#/bitrix/admin/workflow_edit.php? lang = en & ID = # ID #
  
 Pesan yang dihasilkan secara otomatis
 ";
@@ -92,7 +92,7 @@ Lampiran 1
 Lampiran 1
  
 Untuk melihat dan mengedit link kunjungan dokumen:
-http: //#SERVER_NAME#/bnpt/admin/workflow_edit.php? lang = en & ID = # ID #
+http: //#SERVER_NAME#/bitrix/admin/workflow_edit.php? lang = en & ID = # ID #
  
 Pesan yang dihasilkan secara otomatis
 ";
@@ -152,7 +152,7 @@ komentar
 Lampiran 1
  
 Untuk melihat dan mengedit link kunjungan dokumen:
-http: //#SERVER_NAME#/bnpt/admin/iblock_element_edit.php? lang = en & WF = Y & PID = # ID # & ketik = # IBLOCK_TYPE # & IBLOCK_ID = # IBLOCK_ID # & filter_section = # SECTION_ID #
+http: //#SERVER_NAME#/bitrix/admin/iblock_element_edit.php? lang = en & WF = Y & PID = # ID # & ketik = # IBLOCK_TYPE # & IBLOCK_ID = # IBLOCK_ID # & filter_section = # SECTION_ID #
  
 Pesan yang dihasilkan secara otomatis
 ";
@@ -206,7 +206,7 @@ komentar
 Lampiran 1
  
 Untuk melihat dan mengedit link kunjungan dokumen:
-http: //#SERVER_NAME#/bnpt/admin/iblock_element_edit.php? lang = en & WF = Y & PID = # ID # & ketik = # IBLOCK_TYPE # & IBLOCK_ID = # IBLOCK_ID # & filter_section = # SECTION_ID #
+http: //#SERVER_NAME#/bitrix/admin/iblock_element_edit.php? lang = en & WF = Y & PID = # ID # & ketik = # IBLOCK_TYPE # & IBLOCK_ID = # IBLOCK_ID # & filter_section = # SECTION_ID #
  
 Pesan yang dihasilkan secara otomatis
 ";

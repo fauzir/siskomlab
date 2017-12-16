@@ -263,7 +263,7 @@ if($strError <> "")
 $aMenu = array();
 $aMenu[] = array(
 	"TEXT"	=> GetMessage("TRANS_LIST"),
-	"LINK"	=> "/bnpt/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
+	"LINK"	=> "/bitrix/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
 	"TITLE"	=> GetMessage("TRANS_LIST_TITLE"),
 	"ICON"	=> "btn_list"
 	);
@@ -272,7 +272,7 @@ if ($ONLY_ERROR=="N")
 {
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("TRANS_SHOW_ONLY_ERROR"),
-		"LINK"	=> "/bnpt/admin/translate_edit.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID."&show_error=Y",
+		"LINK"	=> "/bitrix/admin/translate_edit.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID."&show_error=Y",
 		"TITLE"	=> GetMessage("TRANS_SHOW_ONLY_ERROR_TITLE"),
 		"ICON"	=> ""
 		);
@@ -281,7 +281,7 @@ elseif ($ONLY_ERROR=="Y")
 {
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("TRANS_SHOW_ALL"),
-		"LINK"	=> "/bnpt/admin/translate_edit.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/translate_edit.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("TRANS_SHOW_ALL_TITLE"),
 		"ICON"	=> ""
 		);
@@ -291,7 +291,7 @@ if ($boolGetUntranslate)
 {
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("TRANS_GET_UNTRANSLATE"),
-		"LINK"	=> "/bnpt/admin/translate_csv_download.php?lang=".LANGUAGE_ID."&download_translate_lang=N&path=".htmlspecialcharsbx($path_back)."&file=".htmlspecialcharsbx($file)."&".bitrix_sessid_get(),
+		"LINK"	=> "/bitrix/admin/translate_csv_download.php?lang=".LANGUAGE_ID."&download_translate_lang=N&path=".htmlspecialcharsbx($path_back)."&file=".htmlspecialcharsbx($file)."&".bitrix_sessid_get(),
 		"TITLE"	=> GetMessage("TRANS_GET_UNTRANSLATE_TITLE"),
 	);
 }
@@ -299,12 +299,12 @@ if ($boolGetUntranslate)
 $arSubMenu = array(
 	array(
 		"TEXT"	=> GetMessage("TR_FILE_SHOW"),
-		"LINK"	=> "/bnpt/admin/translate_show_php.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/translate_show_php.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("TR_FILE_SHOW_TITLE"),
 	),
 	array(
 		"TEXT"	=> GetMessage("TR_FILE_EDIT"),
-		"LINK"	=> "/bnpt/admin/translate_edit_php.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/translate_edit_php.php?file=".htmlspecialcharsbx($file)."&lang=".LANGUAGE_ID,
 		"TITLE"	=> GetMessage("TR_FILE_EDIT_TITLE"),
 	),
 );

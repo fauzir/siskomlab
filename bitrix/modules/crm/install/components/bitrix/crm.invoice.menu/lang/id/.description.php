@@ -1,6 +1,0 @@
-<?
-$MESS["CRM_INVOICE_MENU_NAME"] = "3.4 Toolbar";
-$MESS["CRM_INVOICE_MENU_DESCRIPTION"] = "3.4 Toolbar";
-$MESS["CRM_NAME"] = "CRM";
-$MESS["CRM_INVOICE_NAME"] = "faktur";
-?>

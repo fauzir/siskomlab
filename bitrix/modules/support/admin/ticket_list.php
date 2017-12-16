@@ -839,7 +839,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 		/*
 		if (intval($f_OWNER_USER_ID)>0)
-			$DATE_CREATE_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bnpt/admin/user_edit.php?lang='.LANG.'&ID='.$f_OWNER_USER_ID.'">'.$f_OWNER_USER_ID.'</a>]  ('.$f_OWNER_LOGIN.') '.$f_OWNER_NAME;
+			$DATE_CREATE_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bitrix/admin/user_edit.php?lang='.LANG.'&ID='.$f_OWNER_USER_ID.'">'.$f_OWNER_USER_ID.'</a>]  ('.$f_OWNER_LOGIN.') '.$f_OWNER_NAME;
 
 		$row->AddViewField("DATE_CREATE", $DATE_CREATE_HTML);
 		*/
@@ -854,7 +854,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	if (strlen($f_MODIFIED_MODULE_NAME)<=0 || $f_MODIFIED_MODULE_NAME=="support")
 	{
 		if ($bADS)
-			$TIMESTAMP_X_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bnpt/admin/user_edit.php?lang='.LANG.'&ID='.$f_MODIFIED_USER_ID.'">'.$f_MODIFIED_USER_ID.'</a>] ('.$f_MODIFIED_LOGIN.') '.$f_MODIFIED_NAME;
+			$TIMESTAMP_X_HTML .= '[<a title="'.GetMessage("SUP_USER_PROFILE").'" href="/bitrix/admin/user_edit.php?lang='.LANG.'&ID='.$f_MODIFIED_USER_ID.'">'.$f_MODIFIED_USER_ID.'</a>] ('.$f_MODIFIED_LOGIN.') '.$f_MODIFIED_NAME;
 		else
 			$TIMESTAMP_X_HTML .= "[".$f_MODIFIED_USER_ID."] (".$f_MODIFIED_LOGIN.") ".$f_MODIFIED_NAME;
 	}
@@ -944,15 +944,15 @@ while($arRes = $rsData->NavNext(true, "f_"))
 	{
 		$arActions[] = array(
 			"TEXT"	=> GetMessage("SUP_CLOSE"),
-			"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=close&lang=".LANGUAGE_ID."&".bitrix_sessid_get()),
+			"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=close&lang=".LANGUAGE_ID."&".bitrix_sessid_get()),
 			);
 	}
 	else
 	{
 		$arActions[] = array(
 			"TEXT"	=> GetMessage("SUP_OPEN"),
-			//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
-			"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+			//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
+			"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=open&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 			);
 	}
 
@@ -962,8 +962,8 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_UNMARK_SPAM"),
-				//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
-				"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+				//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get(),
+				"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=unmark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 				);
 		}
 
@@ -971,8 +971,8 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_MAYBE_SPAM"),
-				//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
-				"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+				//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+				"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=maybe_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 				);
 		}
 
@@ -980,8 +980,8 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_SPAM"),
-				//"LINK"	=> "/bnpt/admin/ticket_edit.php?ID=".$ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
-				"ACTION"=>$lAdmin->ActionAjaxReload("/bnpt/admin/ticket_list.php?ID=".$f_ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
+				//"LINK"	=> "/bitrix/admin/ticket_edit.php?ID=".$ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get()
+				"ACTION"=>$lAdmin->ActionAjaxReload("/bitrix/admin/ticket_list.php?ID=".$f_ID."&action=mark_spam&lang=".LANGUAGE_ID."&".bitrix_sessid_get())
 				);
 		}
 
@@ -989,7 +989,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 		{
 			$arActions[] = array(
 				"TEXT"	=> GetMessage("SUP_MARK_SPAM_DELETE"),
-				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_MARK_AS_SPAM_DELETE_CONFIRM")."')) window.location='/bnpt/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=mark_spam_delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
+				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_MARK_AS_SPAM_DELETE_CONFIRM")."')) window.location='/bitrix/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=mark_spam_delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
 				//"WARNING"=>"Y",
 				"ACTION"=>"if(confirm('".GetMessage('SUP_CONF_ACTION_MARK_AS_SPAM_DELETE')."')) ".$lAdmin->ActionDoGroup($f_ID, "mark_spam_delete"),
 			);
@@ -999,7 +999,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 			$arActions[] = array(
 				"ICON" => "delete",
 				"TEXT"	=> GetMessage("SUP_DELETE"),
-				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_TICKET_CONFIRM")."')) window.location='/bnpt/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
+				//"LINK"	=> "javascript:if(confirm('".GetMessage("SUP_DELETE_TICKET_CONFIRM")."')) window.location='/bitrix/admin/ticket_list.php?ARR_TICKET[]=".$ID."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&set_default=Y';",
 				//"WARNING"=>"Y",
 				"ACTION"=>"if(confirm('".GetMessage('SUP_DELETE_TICKET_CONF')."')) ".$lAdmin->ActionDoGroup($f_ID, "delete"),
 				);

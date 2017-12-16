@@ -136,7 +136,7 @@ if (!$readOnly && $ruleId > 0)
 		$contextMenuItems[] = array(
 			'ICON' => 'btn_delete',
 			'TEXT' => Loc::getMessage('PRICE_ROUND_EDIT_CONTEXT_DELETE'),
-			'LINK' => "javascript:if (confirm('".CUtil::JSEscape(Loc::getMessage('PRICE_ROUND_EDIT_CONTEXT_DELETE_CONFIRM'))."')) window.location='/bnpt/admin/cat_round_list.php?lang=".LANGUAGE_ID."&ID=".$ruleId."&action=delete&".bitrix_sessid_get()."';",
+			'LINK' => "javascript:if (confirm('".CUtil::JSEscape(Loc::getMessage('PRICE_ROUND_EDIT_CONTEXT_DELETE_CONFIRM'))."')) window.location='/bitrix/admin/cat_round_list.php?lang=".LANGUAGE_ID."&ID=".$ruleId."&action=delete&".bitrix_sessid_get()."';",
 			'WARNING' => 'Y',
 		);
 	}

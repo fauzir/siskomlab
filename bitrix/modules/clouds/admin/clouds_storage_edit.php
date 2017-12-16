@@ -60,9 +60,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid())
 		if($res > 0)
 		{
 			if(isset($_REQUEST["apply"]))
-				LocalRedirect("/bnpt/admin/clouds_storage_edit.php?ID=".$res."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
+				LocalRedirect("/bitrix/admin/clouds_storage_edit.php?ID=".$res."&lang=".LANGUAGE_ID."&".$tabControl->ActiveTabParam());
 			else
-				LocalRedirect("/bnpt/admin/clouds_storage_list.php?lang=".LANGUAGE_ID);
+				LocalRedirect("/bitrix/admin/clouds_storage_list.php?lang=".LANGUAGE_ID);
 		}
 		else
 		{
@@ -76,7 +76,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && check_bitrix_sessid())
 	{
 		$ob = new CCloudStorageBucket($ID);
 		if($ob->Delete())
-			LocalRedirect("/bnpt/admin/clouds_storage_list.php?lang=".LANGUAGE_ID);
+			LocalRedirect("/bitrix/admin/clouds_storage_list.php?lang=".LANGUAGE_ID);
 		else
 			$bVarsFromForm = true;
 	}

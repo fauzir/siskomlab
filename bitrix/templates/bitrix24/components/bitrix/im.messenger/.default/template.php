@@ -41,6 +41,23 @@ $this->SetViewTarget("im-fullscreen");
 		</tr>
 		<tr>
 			<td class="bx-im-fullscreen-popup-td bx-im-fullscreen-popup-td3">
+				<span class="bx-im-fullscreen-apps">
+					<span class="bx-im-fullscreen-apps-title"><?=GetMessage('IM_FULLSCREEN_APPS')?>:</span> 
+					<span class="bx-im-fullscreen-apps-buttons" id="im-workarea-apps">
+						<span class="bx-im-fullscreen-apps-buttons-group">
+							<a href="http://dl.bitrix24.com/b24/bitrix24_desktop.exe" class="bx-im-fullscreen-app-icon bx-im-fullscreen-app-windows" target="_blank"></a>
+							<span class="bx-im-fullscreen-apps-buttons-delimiter"></span>
+							<a href="http://dl.bitrix24.com/b24/bitrix24_desktop.dmg" class="bx-im-fullscreen-app-icon bx-im-fullscreen-app-osx" target="_blank"></a>
+							<span class="bx-im-fullscreen-apps-buttons-delimiter"></span>
+							<a href="https://github.com/buglloc/brick/" class="bx-im-fullscreen-app-icon bx-im-fullscreen-app-linux" target="_blank"></a>
+						</span>
+						<span class="bx-im-fullscreen-apps-buttons-group">
+							<a href="https://play.google.com/store/apps/details?id=com.bitrix24.android" class="bx-im-fullscreen-app-icon bx-im-fullscreen-app-googleplay" target="_blank"></a>
+							<span class="bx-im-fullscreen-apps-buttons-delimiter"></span>
+							<a href="<?=GetMessage('IM_FULLSCREEN_DOWN_ITS');?>" class="bx-im-fullscreen-app-icon bx-im-fullscreen-app-appstore" target="_blank"></a>
+						</span>
+					</span>
+				</span>
 				<span class="bx-im-fullscreen-bg">
 					<span class="bx-im-fulsscrenn-bg-title"><?=GetMessage('IM_FULLSCREEN_BG_TITLE')?>:</span>
 					<span class="bx-im-fulsscrenn-bg-wrap">

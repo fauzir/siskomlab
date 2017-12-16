@@ -249,7 +249,7 @@ if ($REQUEST_METHOD=="GET" && strlen($Update)>0 && $saleModulePermissions>="W" &
 		for ($i = 0; $i < $countArAffiliate; $i++)
 			$urlParams .= "&OID[]=".$arAffiliateID[$i];
 
-		LocalRedirect("/bnpt/admin/sale_affiliate_calc.php?lang=".LANG."&".$urlParams);
+		LocalRedirect("/bitrix/admin/sale_affiliate_calc.php?lang=".LANG."&".$urlParams);
 	}
 }
 
@@ -264,7 +264,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 		array(
 				"TEXT" => GetMessage("SAC_AFFILIATE_LIST"),
-				"LINK" => "/bnpt/admin/sale_affiliate.php?lang=".LANG.GetFilterParams("filter_"),
+				"LINK" => "/bitrix/admin/sale_affiliate.php?lang=".LANG.GetFilterParams("filter_"),
 				"ICON" => "btn_list"
 			)
 	);
@@ -351,7 +351,7 @@ $tabControl->BeginNextTab();
 			{
 				echo GetMessage("SAC_ALL_AFFILIATES");
 				echo "<br>";
-				echo str_replace("#LINK2#", "</a>", str_replace("#LINK1#", "<a href=\"/bnpt/admin/sale_affiliate.php?lang=".LANG."\">", GetMessage("SAC_ALL_AFFILIATES_HINT")));
+				echo str_replace("#LINK2#", "</a>", str_replace("#LINK1#", "<a href=\"/bitrix/admin/sale_affiliate.php?lang=".LANG."\">", GetMessage("SAC_ALL_AFFILIATES_HINT")));
 			}
 			?>
 		</td>

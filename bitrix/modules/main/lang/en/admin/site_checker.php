@@ -379,7 +379,7 @@ $MESS["SC_HELP_CHECK_SOCNET"] = "To receive updates from social resources, the <
 $MESS["SC_HELP_CHECK_REST"] = "The \"rest\" module is required for external app integration and  some of the Marketplace apps. You can add your apps to Bitrix24; follow these <a href=\"https://dev.1c-bitrix.ru/learning/course/?COURSE_ID=43&LESSON_ID=3568\" target=\"_blank\">guidelines</a>.";
 $MESS["SC_HELP_CHECK_EXTRANET"] = "The <a href=\"http://www.bitrixsoft.com/products/intranet/features/collaboration/extranet.php\">Extranet</a> module requires that your Intranet is externally accessible via the Internet.
 
-If you don't need features provided by this module, simply <a href=\"/bnpt/admin/module_admin.php\">uninstall it</a>.";
+If you don't need features provided by this module, simply <a href=\"/bitrix/admin/module_admin.php\">uninstall it</a>.";
 $MESS["SC_HELP_CHECK_WEBDAV"] = "<a href=\"http://en.wikipedia.org/wiki/WebDAV\">WebDAV</a> is the protocol that enables a user to open, edit and save documents in Microsoft Office directly from or to the Intranet without having to download or upload them from/to a server. A mandatory requirement is that the server on which the Intranet is installed passes WebDAV requests to PHP scripts exactly as received, unmodified. If the server blocks these requests, direct editing will not be possible.
 
 Notice that some extra configuration might be required <a href=\"http://www.bitrixsoft.com/support/training/course/index.php?COURSE_ID=27&LESSON_ID=1466#office\">on the client side</a> to support direct editing, and there's no way to verify it remotely.
@@ -410,18 +410,18 @@ $MESS["SC_HELP_CHECK_FAST_DOWNLOAD"] = "Fast file download is implemented using 
 
 Once a request has been served, PHP resources are freed to process a subsequent request in the queue. This significantly improves Intranet performance and boosts file download speed when accessed via Bitrix.Drive, Document Library or when downloading attachments from Activity Stream posts.
 
-Enable this option in the <a href=\"/bnpt/admin/settings.php?mid=main\">Kernel settings</a>. <a href=\"http://www.bitrixsoft.com/products/virtual_appliance/\">Bitrix Virtual Appliance</a> supports fast file downloads by default.
+Enable this option in the <a href=\"/bitrix/admin/settings.php?mid=main\">Kernel settings</a>. <a href=\"http://www.bitrixsoft.com/products/virtual_appliance/\">Bitrix Virtual Appliance</a> supports fast file downloads by default.
 
 ";
 $MESS["SC_HELP_CHECK_COMPRESSION"] = "HTML compression reduces file size and decreases file transmission time.
 
 To reduce server load, make sure a special web server module is used to compress HTML files.
 
-If the server does not support HTML page compression, the Bitrix Compression module is used instead. Remember that this module <a href=\"/bnpt/admin/module_admin.php\">should not be installed</a> otherwise.";
+If the server does not support HTML page compression, the Bitrix Compression module is used instead. Remember that this module <a href=\"/bitrix/admin/module_admin.php\">should not be installed</a> otherwise.";
 $MESS["SC_HELP_CHECK_ACCESS_DOCS"] = "To view or edit documents using Google Docs or MS Office Online, a special externally accessible URL is created and passed over to these services which they use to get a document. The URL is unique and becomes invalid as soon as the document is closed.
 
 This feature requires that your Intranet is remotely accessible via the Internet.";
-$MESS["SC_HELP_CHECK_SEARCH"] = "The system can search text in documents in Open XML format (introduced in Microsoft Office 2007) out of the box. To support other file formats, specify paths to parsing applications <a href=\"/bnpt/admin/settings.php?mid=intranet\">in the Intranet module settings</a>. Otherwise, the system will be able to search filenames only.
+$MESS["SC_HELP_CHECK_SEARCH"] = "The system can search text in documents in Open XML format (introduced in Microsoft Office 2007) out of the box. To support other file formats, specify paths to parsing applications <a href=\"/bitrix/admin/settings.php?mid=intranet\">in the Intranet module settings</a>. Otherwise, the system will be able to search filenames only.
 
 <a href=\"http://www.1c-bitrix.ru/products/vmbitrix/index.php\">Bitrix Virtual Appliance</a> supports it by default.";
 $MESS["MAIN_SC_AGENTS_CRON"] = "Use cron to run agents";
@@ -546,7 +546,7 @@ $MESS["MAIN_SC_METHOD_NOT_SUP"] = "The server does not support the method #METHO
 $MESS["MAIN_SC_SEARCH_INCORRECT"] = "Document contents indexing does not function properly.";
 $MESS["MAIN_SC_NO_CONNECTTO"] = "Cannot connect to #HOST#";
 $MESS["MAIN_SC_UNKNOWN_ANSWER"] = "Unknown response from #HOST#";
-$MESS["MAIN_SC_WARN_EXPAND_SESSION"] = "If the Instant Messenger module is installed, disable the session keep alive feature in the <a href='/bnpt/admin/settings.php?mid=main' target=_blank>kernel settings</a> to reduce server load.";
+$MESS["MAIN_SC_WARN_EXPAND_SESSION"] = "If the Instant Messenger module is installed, disable the session keep alive feature in the <a href='/bitrix/admin/settings.php?mid=main' target=_blank>kernel settings</a> to reduce server load.";
 $MESS["MAIN_SC_NO_EXTERNAL_CONNECT_WARN"] = "Cannot connect to the Intranet externally. The mobile application will not function.";
 $MESS["MAIN_SC_EXTERNAL_ANSWER_INCORRECT"] = "External connection to the Intranet was a success, but the server returned an incorrect status.";
 $MESS["MAIN_SC_NO_PULL_EXTERNAL"] = "External connection to the Intranet was a success but the nginx-push-stream message read port is unavailable. Mobile instant messaging is unavailable.";

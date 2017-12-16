@@ -173,7 +173,7 @@ if ($del_id > 0 && $WORKFLOW_RIGHT > "R" && check_bitrix_sessid())
 	if (CWorkflow::IsAllowEdit($del_id, $locked_by, $date_lock))
 	{
 		CWorkflow::Delete($del_id);
-		LocalRedirect("/bnpt/admin/workflow_list.php?lang=".LANGUAGE_ID);
+		LocalRedirect("/bitrix/admin/workflow_list.php?lang=".LANGUAGE_ID);
 	}
 	else
 	{
@@ -477,11 +477,11 @@ if (
 					if (strlen($return_url) > 0)
 						LocalRedirect($return_url);
 					else
-						LocalRedirect("/bnpt/admin/workflow_list.php?lang=".LANGUAGE_ID."&set_default=Y&strNote=".urlencode($strNote));
+						LocalRedirect("/bitrix/admin/workflow_list.php?lang=".LANGUAGE_ID."&set_default=Y&strNote=".urlencode($strNote));
 				}
 				elseif (strlen($apply) > 0)
 				{
-					LocalRedirect("/bnpt/admin/workflow_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&strNote=".urlencode($strNote)."&".$tabControl->ActiveTabParam().(strlen($return_url) ? "&return_url=".urlencode($return_url) : ""));
+					LocalRedirect("/bitrix/admin/workflow_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&strNote=".urlencode($strNote)."&".$tabControl->ActiveTabParam().(strlen($return_url) ? "&return_url=".urlencode($return_url) : ""));
 				}
 			}
 		}
@@ -680,7 +680,7 @@ function ShowFile(did, fname)
 {
 	width=650;
 	height=500;
-	window.open('/bnpt/admin/workflow_get_file.php?did='+did+ '&fname='+fname,'','scrollbars=yes,resizable=yes,width='+width+',height='+height+',left='+Math.floor((screen.width - width)/2)+',top='+Math.floor((screen.height - height)/5));
+	window.open('/bitrix/admin/workflow_get_file.php?did='+did+ '&fname='+fname,'','scrollbars=yes,resizable=yes,width='+width+',height='+height+',left='+Math.floor((screen.width - width)/2)+',top='+Math.floor((screen.height - height)/5));
 }
 </script>
 
@@ -697,7 +697,7 @@ $tabControl->BeginNextTab();
 	<?if ($ID<=0 && !is_file($_SERVER["DOCUMENT_ROOT"].$fname)):?>
 	<tr>
 		<td><?=GetMessage("FLOW_TEMPLATE")?></td>
-		<td><select name="template" onchange="window.location='/bnpt/admin/workflow_edit.php?lang=<?echo LANG?>&amp;fname=<?echo UrlEncode($fname)?>&amp;template='+escape(this[this.selectedIndex].value)"><?
+		<td><select name="template" onchange="window.location='/bitrix/admin/workflow_edit.php?lang=<?echo LANG?>&amp;fname=<?echo UrlEncode($fname)?>&amp;template='+escape(this[this.selectedIndex].value)"><?
 		foreach($arTemplates as $Template)
 		{
 		?><option value="<?echo htmlspecialcharsbx($Template["file"])?>"<?if($template == $Template["file"])echo " selected"?>><?echo htmlspecialcharsbx($Template["name"])?></option><?

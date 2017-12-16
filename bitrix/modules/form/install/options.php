@@ -15,7 +15,7 @@ if ($REQUEST_METHOD=="GET" && CForm::IsAdmin() && strlen($RestoreDefaults)>0)
 	{
 		$ar = array();
 		$ar["ID"] = intval($zr["ID"]);
-		$ar["NAME"] = htmlspecialchars($zr["NAME"])." [<a title=\"".GetMessage("MAIN_USER_GROUP_TITLE")."\" href=\"/bnpt/admin/group_edit.php?ID=".intval($zr["ID"])."&lang=".LANGUAGE_ID."\">".intval($zr["ID"])."</a>]";
+		$ar["NAME"] = htmlspecialchars($zr["NAME"])." [<a title=\"".GetMessage("MAIN_USER_GROUP_TITLE")."\" href=\"/bitrix/admin/group_edit.php?ID=".intval($zr["ID"])."&lang=".LANGUAGE_ID."\">".intval($zr["ID"])."</a>]";
 		$groups[$zr["ID"]] = "[".$zr["ID"]."] ".$zr["NAME"];
 		$arGROUPS[] = $ar;
 	}

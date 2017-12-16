@@ -37,9 +37,9 @@ if($REQUEST_METHOD == "POST" && ($save!="" || $apply!="") && $isAdmin && check_b
 	if($res)
 	{
 		if($apply!="")
-			LocalRedirect("/bnpt/admin/short_uri_edit.php?ID=".$ID."&mess=ok&lang=".LANG."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/short_uri_edit.php?ID=".$ID."&mess=ok&lang=".LANG."&".$tabControl->ActiveTabParam());
 		else
-			LocalRedirect("/bnpt/admin/short_uri_admin.php?lang=".LANG);
+			LocalRedirect("/bitrix/admin/short_uri_admin.php?lang=".LANG);
 	}
 	else
 	{

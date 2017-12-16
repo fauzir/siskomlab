@@ -27,25 +27,25 @@ if ($USER->IsAdmin()
 
 	$menu["items"][] = array(
 		"text" => Loc::getMessage("SCALE_MENU_PANEL_ITEM"),
-		"url" => "/bnpt/admin/scale_panel.php?lang=".LANGUAGE_ID,
+		"url" => "/bitrix/admin/scale_panel.php?lang=".LANGUAGE_ID,
 		"more_url" => array(
-			"/bnpt/admin/scale_panel.php"
+			"/bitrix/admin/scale_panel.php"
 		)
 	);
 
 	$menu["items"][] = array(
 		"text" => Loc::getMessage("SCALE_MENU_GRAPH_ITEM"),
-		"url" => "/bnpt/admin/scale_graph.php?lang=".LANGUAGE_ID,
+		"url" => "/bitrix/admin/scale_graph.php?lang=".LANGUAGE_ID,
 		"more_url" => array(
-			"/bnpt/admin/scale_graph.php"
+			"/bitrix/admin/scale_graph.php"
 		)
 	);
 
 	$menu["items"][] = array(
 		"text" => Loc::getMessage("SCALE_MENU_ORDER_ITEM"),
-		"url" => "/bnpt/admin/scale_order.php?lang=".LANGUAGE_ID,
+		"url" => "/bitrix/admin/scale_order.php?lang=".LANGUAGE_ID,
 		"more_url" => array(
-			"/bnpt/admin/scale_order.php"
+			"/bitrix/admin/scale_order.php"
 		)
 	);
 

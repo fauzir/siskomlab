@@ -105,7 +105,7 @@ elseif (count($lAdmin->arFilterErrors)==0) :
 <table cellspacing="0" cellpadding="0" class="graph" border="0">
 <tr>
 	<td valign="top" class="graph">
-		<img class="graph" src="/bnpt/admin/sale_stat_graph.php?<?=GetFilterParams($arFilterFields)?>&amp;width=<?=$width?>&amp;height=<?=$height?>&amp;lang=<?=LANG?>&amp;rand=<?=rand()?>&amp;mode=count" width="<?=$width?>" height="<?=$height?>">
+		<img class="graph" src="/bitrix/admin/sale_stat_graph.php?<?=GetFilterParams($arFilterFields)?>&amp;width=<?=$width?>&amp;height=<?=$height?>&amp;lang=<?=LANG?>&amp;rand=<?=rand()?>&amp;mode=count" width="<?=$width?>" height="<?=$height?>">
 	</td>
 </tr>
 <tr>
@@ -113,25 +113,25 @@ elseif (count($lAdmin->arFilterErrors)==0) :
 	<table cellpadding="2" cellspacing="0" border="0" class="legend">
 		<?if ($find_all=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bnpt/admin/sale_graph_legend.php?color=<?=$arColor[0]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bitrix/admin/sale_graph_legend.php?color=<?=$arColor[0]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("SALE_COUNT")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_payed=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bnpt/admin/sale_graph_legend.php?color=<?=$arColor[1]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bitrix/admin/sale_graph_legend.php?color=<?=$arColor[1]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("SALE_PAYED")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_allow_delivery=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bnpt/admin/sale_graph_legend.php?color=<?=$arColor[2]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bitrix/admin/sale_graph_legend.php?color=<?=$arColor[2]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("SALE_ALLOW_DELIVERY")?></td>
 		</tr>
 		<?endif;?>
 		<?if ($find_canceled=="Y"):?>
 		<tr>
-			<td valign="center"><img src="/bnpt/admin/sale_graph_legend.php?color=<?=$arColor[3]?>" width="45" height="2"></td>
+			<td valign="center"><img src="/bitrix/admin/sale_graph_legend.php?color=<?=$arColor[3]?>" width="45" height="2"></td>
 			<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=GetMessage("SALE_CANCELED")?></td>
 		</tr>
 		<?endif;?>
@@ -141,7 +141,7 @@ elseif (count($lAdmin->arFilterErrors)==0) :
 		{
 			if (${"find_status_".$k} == "Y"):?>
 			<tr>
-				<td valign="center"><img src="/bnpt/admin/sale_graph_legend.php?color=<?=$arColor[$i]?>" width="45" height="2"></td>
+				<td valign="center"><img src="/bitrix/admin/sale_graph_legend.php?color=<?=$arColor[$i]?>" width="45" height="2"></td>
 				<td nowrap><img src="/bitrix/images/1.gif" width="3" height="1"><?=$v?></td>
 			</tr>
 			<?endif;

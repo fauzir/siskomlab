@@ -206,7 +206,7 @@ while($arRes = $rsData->NavNext(true, "f_"))
 
 
 	if (strlen($f_SITE_ID)>0) :
-		$row->AddViewField("SITE_ID", '<a href="/bnpt/admin/site_edit.php?LID='.$f_SITE_ID.'&lang='.LANGUAGE_ID.'">'.$f_SITE_ID.'</a>');
+		$row->AddViewField("SITE_ID", '<a href="/bitrix/admin/site_edit.php?LID='.$f_SITE_ID.'&lang='.LANGUAGE_ID.'">'.$f_SITE_ID.'</a>');
 
 	else:
 		$row->AddViewField("SITE_ID", GetMessage("MAIN_ALL"));

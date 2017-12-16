@@ -1,9 +1,0 @@
-<?
-$MESS["TRANS_MODULE_TITLE"] = "Peran";
-$MESS["TRANS_APPLY"] = "Tambahkan izin akses";
-$MESS["TRANSLATE_ICON_ALT"] = "peran";
-$MESS["TRANSLATE_ICON_TEXT"] = "Hapus";
-$MESS["TRANSLATE_SHOW_LANG_FILES_TEXT"] = "Edit";
-$MESS["TRANSLATE_SHOW_LANG_FILES_TITLE"] = "Menambahkan";
-$MESS["TRANSLATE_ICON_HINT"] = "Simpan";
-?>

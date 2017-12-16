@@ -1547,7 +1547,7 @@ BXDialog.prototype = {
 
 		var
 			addUrl = (this.params.PHPGetParams ? this.params.PHPGetParams : '') + '&mode=public' + '&sessid=' + BX.bitrix_sessid() + (this.not_use_default ? '&not_use_default=Y' : ''),
-			handler = this.handler ? '/bnpt/admin/' + this.handler : editor_dialog_path,
+			handler = this.handler ? '/bitrix/admin/' + this.handler : editor_dialog_path,
 			url = handler + '?lang=' + BXLang + '&bxpublic=Y&site=' + BXSite + '&name=' + this.name + addUrl;
 
 		if (_this.params.bUseTabControl)

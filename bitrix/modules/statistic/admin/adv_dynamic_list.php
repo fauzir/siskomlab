@@ -157,7 +157,7 @@ $aContext = array(
 	array(
 		"TEXT" => GetMessage("STAT_ADV_LIST"),
 		"ICON" => "btn_list",
-		"LINK" =>"/bnpt/admin/adv_list.php?lang=".LANG,
+		"LINK" =>"/bitrix/admin/adv_list.php?lang=".LANG,
 	),
 );
 
@@ -166,7 +166,7 @@ if ($dynamic_days>=2 && function_exists("ImageCreate"))
 {
 	$aContext[] = array(
 		"TEXT" => GetMessage("STAT_GRAPH"),
-		"LINK" =>"/bnpt/admin/adv_graph_list.php?lang=".LANG."&ADV_ID=".$find_adv_id."&find_date1=".$arFilter["DATE1"]."&find_date2=".$arFilter["DATE2"]."&set_filter=Y",
+		"LINK" =>"/bitrix/admin/adv_graph_list.php?lang=".LANG."&ADV_ID=".$find_adv_id."&find_date1=".$arFilter["DATE1"]."&find_date2=".$arFilter["DATE2"]."&set_filter=Y",
 	);
 }
 

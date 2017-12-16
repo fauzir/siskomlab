@@ -49,7 +49,7 @@ class CAllControllerMember
 			CControllerLog::Add($arControllerLog);
 		}
 
-		$oRequest->RedirectRequest($arMember["URL"]."/bnpt/admin/main_controller.php");
+		$oRequest->RedirectRequest($arMember["URL"]."/bitrix/admin/main_controller.php");
 
 		return true;
 	}

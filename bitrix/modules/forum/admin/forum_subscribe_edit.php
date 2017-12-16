@@ -158,7 +158,7 @@ while ($arRes = $rsData->NavNext(true, "t_"))
 	$aMenu = array(
 		array(
 			"TEXT" => GetMessage("FM_LIST_USER"),
-			"LINK" => "/bnpt/admin/forum_subscribe.php?lang=".LANG,
+			"LINK" => "/bitrix/admin/forum_subscribe.php?lang=".LANG,
 			"ICON" => "btn_list",
 		)
 	);

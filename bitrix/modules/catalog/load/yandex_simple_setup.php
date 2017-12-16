@@ -71,7 +71,7 @@ $aMenu = array(
 	array(
 		"TEXT" => GetMessage("CATI_ADM_RETURN_TO_LIST"),
 		"TITLE" => GetMessage("CATI_ADM_RETURN_TO_LIST_TITLE"),
-		"LINK" => "/bnpt/admin/cat_export_setup.php?lang=".LANGUAGE_ID,
+		"LINK" => "/bitrix/admin/cat_export_setup.php?lang=".LANGUAGE_ID,
 		"ICON" => "btn_list",
 	)
 );

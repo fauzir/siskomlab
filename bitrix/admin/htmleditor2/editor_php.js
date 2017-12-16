@@ -3,11 +3,11 @@ var
 	image_path = '/bitrix/images/fileman/htmledit2',
 	c2wait_path = image_path + '/c2waiter.gif',
 	global_iconkit_path = image_path + '/_global_iconkit.gif',
-	settings_page_path = '/bnpt/admin/fileman_manage_settings.php?sessid=' + BX.bitrix_sessid(),
-	editor_action_path = '/bnpt/admin/fileman_editor_action.php?sessid=' + BX.bitrix_sessid(),
-	editor_dialog_path = '/bnpt/admin/fileman_editor_dialog.php',
-	flash_preview_path = '/bnpt/admin/fileman_flash_preview.php',
-	manage_snippets_path = '/bnpt/admin/fileman_manage_snippets.php?lang=' + window.BXLang + '&site=' + window.BXSite + '&sessid=' + BX.bitrix_sessid(),
+	settings_page_path = '/bitrix/admin/fileman_manage_settings.php?sessid=' + BX.bitrix_sessid(),
+	editor_action_path = '/bitrix/admin/fileman_editor_action.php?sessid=' + BX.bitrix_sessid(),
+	editor_dialog_path = '/bitrix/admin/fileman_editor_dialog.php',
+	flash_preview_path = '/bitrix/admin/fileman_flash_preview.php',
+	manage_snippets_path = '/bitrix/admin/fileman_manage_snippets.php?lang=' + window.BXLang + '&site=' + window.BXSite + '&sessid=' + BX.bitrix_sessid(),
 	to_template_path = window.BX_PERSONAL_ROOT + "/templates/",
 	dxShadowImgPath = '';
 
@@ -56,7 +56,7 @@ BXHTMLEditor.prototype.LoadComponents2 = function(oCallBack)
 			}, 10
 		);
 	};
-	lc.Send('/bnpt/admin/fileman_load_components2.php?lang='+BXLang+'&site='+BXSite+'&load_tree=Y');
+	lc.Send('/bitrix/admin/fileman_load_components2.php?lang='+BXLang+'&site='+BXSite+'&load_tree=Y');
 };
 
 BXHTMLEditor.prototype.IsSessionExpired = function(result)

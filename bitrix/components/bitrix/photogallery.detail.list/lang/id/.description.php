@@ -1,5 +1,0 @@
-<?
-$MESS["T_IBLOCK_DESC_PHOTO"] = "Galeri foto";
-$MESS["IBLOCK_ELEMENT_TEMPLATE_NAME"] = "Foto (daftar)";
-$MESS["IBLOCK_ELEMENT_TEMPLATE_DESCRIPTION"] = "Menampilkan foto";
-?>

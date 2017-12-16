@@ -39,7 +39,7 @@ else
 	if ($_SERVER["REQUEST_METHOD"] == "POST" && $_POST["action"] == "load" && check_bitrix_sessid())
 	{
 		if (CUpdateClientPartner::LoadModuleNoDemand($arModule["ID"], $errorMessage, "Y", false))
-			LocalRedirect("/bnpt/admin/module_admin.php?lang=".LANG."&id=".$arModule["ID"]."&".bitrix_sessid_get()."&install=Y");
+			LocalRedirect("/bitrix/admin/module_admin.php?lang=".LANG."&id=".$arModule["ID"]."&".bitrix_sessid_get()."&install=Y");
 	}
 
 	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_after.php");

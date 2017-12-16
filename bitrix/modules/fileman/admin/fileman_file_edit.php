@@ -300,13 +300,13 @@ if(strlen($strWarning)<=0)
 			{
 				if(strlen($apply) <= 0)
 				{
-					if(strlen($back_url)>0 && strpos($back_url, "/bnpt/admin/fileman_file_edit.php")!==0)
+					if(strlen($back_url)>0 && strpos($back_url, "/bitrix/admin/fileman_file_edit.php")!==0)
 						LocalRedirect("/".ltrim($back_url, "/"));
-					LocalRedirect("/bnpt/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["PREV"]));
+					LocalRedirect("/bitrix/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["PREV"]));
 				}
 				else
 				{
-					LocalRedirect("/bnpt/admin/fileman_file_edit.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($path).($full_src=="Y"?"&full_src=Y":""));
+					LocalRedirect("/bitrix/admin/fileman_file_edit.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($path).($full_src=="Y"?"&full_src=Y":""));
 				}
 			}
 
@@ -478,7 +478,7 @@ if($bEdit)
 		$id = GetFileName($path);
 		$aMenu[] = array(
 			"TEXT" => GetMessage("FILEMAN_FILE_DELETE"),
-			"LINK" => "javascript:if(confirm('".GetMessage("FILEMAN_FILE_DELETE_CONFIRM")."')) window.location='/bnpt/admin/fileman_admin.php?ID=".urlencode($id)."&action=delete&".$addUrl."&site=".urlencode($site)."&path=".urlencode($folder_path)."&".bitrix_sessid_get()."';",
+			"LINK" => "javascript:if(confirm('".GetMessage("FILEMAN_FILE_DELETE_CONFIRM")."')) window.location='/bitrix/admin/fileman_admin.php?ID=".urlencode($id)."&action=delete&".$addUrl."&site=".urlencode($site)."&path=".urlencode($folder_path)."&".bitrix_sessid_get()."';",
 			"TITLE"	=> GetMessage("FILEMAN_FILE_DELETE")
 		);
 	}
@@ -520,7 +520,7 @@ $tabControl->BeginNextTab();?>
 		<tr>
 			<td width="30%"><?= GetMessage("FILEMAN_FILEEDIT_TEMPLATE")?></td>
 			<td width="70%">
-				<select name="template" onchange="window.location='/bnpt/admin/fileman_file_edit.php?lang=<?= LANG?>&site=<?=Urlencode($site)?>&path=<?= UrlEncode($path)?><? echo ($full_src=="Y" ? "&full_src=Y" : "")?>&new=y&template='+escape(this[this.selectedIndex].value)">
+				<select name="template" onchange="window.location='/bitrix/admin/fileman_file_edit.php?lang=<?= LANG?>&site=<?=Urlencode($site)?>&path=<?= UrlEncode($path)?><? echo ($full_src=="Y" ? "&full_src=Y" : "")?>&new=y&template='+escape(this[this.selectedIndex].value)">
 					<?for($i = 0, $l = count($arTemplates); $i < $l; $i++):?>
 					<option value="<?= htmlspecialcharsbx($arTemplates[$i]["file"])?>"<?if($template==$arTemplates[$i]["file"])echo " selected"?>><?= htmlspecialcharsbx($arTemplates[$i]["name"])?></option>
 					<?endfor;?>
@@ -800,7 +800,7 @@ $tabControl->EndTab();
 $tabControl->Buttons(
 	array(
 		"disabled" => $only_read,
-		"back_url" => (strlen($back_url)>0 && strpos($back_url, "/bnpt/admin/fileman_file_edit.php")!==0) ? htmlspecialcharsbx($back_url) : "/bnpt/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["PREV"])
+		"back_url" => (strlen($back_url)>0 && strpos($back_url, "/bitrix/admin/fileman_file_edit.php")!==0) ? htmlspecialcharsbx($back_url) : "/bitrix/admin/fileman_admin.php?".$addUrl."&site=".Urlencode($site)."&path=".UrlEncode($arParsedPath["PREV"])
 	)
 );
 

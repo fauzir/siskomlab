@@ -115,7 +115,7 @@ class CAdminMobilePush
 			{
 				$arItems[] = array(
 					"text" => $arOptions["TITLE"],
-					"data-url" => "/bnpt/admin/mobile/push.php?path=".urlencode($optBranch),
+					"data-url" => "/bitrix/admin/mobile/push.php?path=".urlencode($optBranch),
 					"data-pageid" => "push_settings_".$optBranch
 				);
 			}

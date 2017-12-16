@@ -472,7 +472,7 @@ while ($arRes = $rsData->NavNext(true, "f_"))
 			file_exists($f_FILE_PATH)
 			&& substr($f_FILE_PATH, 0, $DOCUMENT_ROOT_LEN) === $_SERVER["DOCUMENT_ROOT"]
 		)
-			$row->AddViewField("FILE_NAME", '<a target="blank" href="/bnpt/admin/fileman_file_view.php?path='.urlencode(substr($f_FILE_PATH, $DOCUMENT_ROOT_LEN)).'&lang='.LANGUAGE_ID.'">'.$f_FILE_NAME.'</a>');
+			$row->AddViewField("FILE_NAME", '<a target="blank" href="/bitrix/admin/fileman_file_view.php?path='.urlencode(substr($f_FILE_PATH, $DOCUMENT_ROOT_LEN)).'&lang='.LANGUAGE_ID.'">'.$f_FILE_NAME.'</a>');
 	}
 	if ($f_OP_MODE == "R")
 		$row->AddViewField("OP_MODE", GetMessage("PERFMON_CACHE_OP_MODE_R"));

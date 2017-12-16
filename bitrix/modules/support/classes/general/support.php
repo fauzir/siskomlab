@@ -1843,7 +1843,7 @@ class CAllTicket
 					
 		$mf = self::GetCSupportTableFields("EventFields");
 		
-		$mf->ADMIN_EDIT_URL = "/bnpt/admin/ticket_edit.php";
+		$mf->ADMIN_EDIT_URL = "/bitrix/admin/ticket_edit.php";
 		$mf->LANGUAGE = $v->arrSite["LANGUAGE_ID"];
 		$mf->LANGUAGE_ID = $v->arrSite["LANGUAGE_ID"];
 
@@ -2871,7 +2871,7 @@ class CAllTicket
 							$v->T_EVENT2 = "";
 							$v->T_EVENT3 = "";
 						}
-						if(strlen($v->T_EVENT3) <= 0) $v->T_EVENT3 = "http://" . $_SERVER["HTTP_HOST"] . "/bnpt/admin/ticket_edit.php?ID=" . $f->ID . "&lang=" . $v->arrSite["LANGUAGE_ID"];
+						if(strlen($v->T_EVENT3) <= 0) $v->T_EVENT3 = "http://" . $_SERVER["HTTP_HOST"] . "/bitrix/admin/ticket_edit.php?ID=" . $f->ID . "&lang=" . $v->arrSite["LANGUAGE_ID"];
 						CStatEvent::AddCurrent($v->T_EVENT1, $v->T_EVENT2, $v->T_EVENT3);
 					}
 					
@@ -3043,7 +3043,7 @@ class CAllTicket
 				$arResUsers[$v] = array("NAME" => GetMessage("SUP_UNKNOWN_USER"), "SECOND_NAME" => "","LAST_NAME" => "","LOGIN" => GetMessage("SUP_UNKNOWN_USER"),"ID" => $v, "EMAIL" => "");
 			}
 			$name = CUser::FormatName($siteNameFormat, $arResUsers[$v], true, true);
-			$arResUsers[$v]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bnpt/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] (" . htmlspecialcharsbx($arResUsers[$v]['LOGIN'])  . ") " . $name;
+			$arResUsers[$v]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bitrix/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] (" . htmlspecialcharsbx($arResUsers[$v]['LOGIN'])  . ") " . $name;
 				//" (".$str_OWNER_LOGIN.") ".$str_OWNER_NAME;
 			$arResUsers[$v]["HTML_NAME_S"] = "[" . $v . "] " . $name;
 		}
@@ -3060,8 +3060,8 @@ class CAllTicket
 				$arResGuests[$k] = array("NAME" => GetMessage("SUP_UNKNOWN_GUEST"), "SECOND_NAME" => "","LAST_NAME" => "","LOGIN" => GetMessage("SUP_UNKNOWN_GUEST"),"ID" => $v,"UNKNOWN" => true, "EMAIL" => "");
 			}
 			$name = CUser::FormatName($siteNameFormat, $arResGuests[$k], true, true);
-			$arResGuests[$k]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bnpt/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] " . $name .
-				" [<a title='" . GetMessage("SUP_GUEST_ID") . "'  href='/bnpt/admin/guest_list.php?lang=" . LANG . "&find_id=" . $k . "&find_id_exact_match=Y&set_filter=Y'>" . $k . "</a>]";
+			$arResGuests[$k]["HTML_NAME"] = "[<a title=\"" . GetMessage("SUP_USER_PROFILE") . "\" href=\"/bitrix/admin/user_edit.php?lang=" . LANGUAGE_ID . "&ID=" . $v . "\">" . $v."</a>] " . $name .
+				" [<a title='" . GetMessage("SUP_GUEST_ID") . "'  href='/bitrix/admin/guest_list.php?lang=" . LANG . "&find_id=" . $k . "&find_id_exact_match=Y&set_filter=Y'>" . $k . "</a>]";
 			$arResUsers[$v]["HTML_NAME_S"] = "[" . $v . "] " . $name . " [" . $k . "]";
 		}
 

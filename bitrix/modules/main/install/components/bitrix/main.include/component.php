@@ -139,7 +139,7 @@ if($APPLICATION->GetShowIncludeAreas())
 					$arMenu[] = array(
 						"ACTION" => 'javascript:'.$APPLICATION->GetPopupLink(
 							array(
-								'URL' => "/bnpt/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&template=".urlencode($arParams["EDIT_TEMPLATE"])."&path=".urlencode($sFilePath.$sFileName).$editor,
+								'URL' => "/bitrix/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&template=".urlencode($arParams["EDIT_TEMPLATE"])."&path=".urlencode($sFilePath.$sFileName).$editor,
 								"PARAMS" => array(
 									'width' => 770,
 									'height' => 570,
@@ -159,7 +159,7 @@ if($APPLICATION->GetShowIncludeAreas())
 					array(
 						"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 							array(
-								'URL' => "/bnpt/admin/public_file_edit.php?lang=".LANGUAGE_ID."&from=main.include&template=".urlencode($arParams["EDIT_TEMPLATE"])."&path=".urlencode($sFilePath.$sFileName).$editor,
+								'URL' => "/bitrix/admin/public_file_edit.php?lang=".LANGUAGE_ID."&from=main.include&template=".urlencode($arParams["EDIT_TEMPLATE"])."&path=".urlencode($sFilePath.$sFileName).$editor,
 								"PARAMS" => array(
 									'width' => 770,
 									'height' => 570,
@@ -184,7 +184,7 @@ if($APPLICATION->GetShowIncludeAreas())
 					$arMenu[] = array(
 						"ACTION" => 'javascript:'.$APPLICATION->GetPopupLink(
 							array(
-								'URL' => "/bnpt/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&new=Y&path=".urlencode($sFilePathTMP.$sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
+								'URL' => "/bitrix/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&new=Y&path=".urlencode($sFilePathTMP.$sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
 								"PARAMS" => array(
 									'width' => 770,
 									'height' => 570,
@@ -203,7 +203,7 @@ if($APPLICATION->GetShowIncludeAreas())
 				$arIcons[] = array(
 					"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 						array(
-							'URL' => "/bnpt/admin/public_file_edit.php?lang=".LANGUAGE_ID."&from=main.include&new=Y&path=".urlencode($sFilePathTMP.$sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
+							'URL' => "/bitrix/admin/public_file_edit.php?lang=".LANGUAGE_ID."&from=main.include&new=Y&path=".urlencode($sFilePathTMP.$sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
 							"PARAMS" => array(
 								'width' => 770,
 								'height' => 570,
@@ -227,7 +227,7 @@ if($APPLICATION->GetShowIncludeAreas())
 				$arMenu[] = array(
 					"ACTION" => 'javascript:'.$APPLICATION->GetPopupLink(
 						array(
-							'URL' => "/bnpt/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".urlencode($sFilePathTMP)."&filename=".urlencode($sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
+							'URL' => "/bitrix/admin/public_file_edit_src.php?lang=".LANGUAGE_ID."&path=".urlencode($sFilePathTMP)."&filename=".urlencode($sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
 							"PARAMS" => array(
 								'width' => 770,
 								'height' => 570,
@@ -247,7 +247,7 @@ if($APPLICATION->GetShowIncludeAreas())
 				array(
 					"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 						array(
-							'URL' => "/bnpt/admin/public_file_edit.php?lang=".LANGUAGE_ID."&from=main.include&path=".urlencode($sFilePathTMP.$sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
+							'URL' => "/bitrix/admin/public_file_edit.php?lang=".LANGUAGE_ID."&from=main.include&path=".urlencode($sFilePathTMP.$sFileName)."&new=Y&template=".urlencode($arParams["EDIT_TEMPLATE"]).$editor,
 							"PARAMS" => array(
 								'width' => 770,
 								'height' => 570,

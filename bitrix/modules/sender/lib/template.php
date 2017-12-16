@@ -240,7 +240,7 @@ class TemplateTable extends Entity\DataManager
 			$fieldValue = htmlspecialcharsback($fieldValue);
 			?>
 			<br>
-			<?=Loc::getMessage("SENDER_ENTITY_TEMPLATE_NOTE_OLD_EDITOR", array("%LINK_START%" => '<a href="/bnpt/admin/settings.php?mid=fileman&lang=' . LANGUAGE_ID . '">',	"%LINK_END%" => '</a>'))?>
+			<?=Loc::getMessage("SENDER_ENTITY_TEMPLATE_NOTE_OLD_EDITOR", array("%LINK_START%" => '<a href="/bitrix/admin/settings.php?mid=fileman&lang=' . LANGUAGE_ID . '">',	"%LINK_END%" => '</a>'))?>
 			<br>
 			<br>
 			<textarea class="typearea" style="width:<?=$editorWidth?>;height:<?=$editorHeight?>px;" name="<?=$fieldName?>" id="bxed_<?=$fieldName?>" wrap="virtual"><?= htmlspecialcharsbx($fieldValue)?></textarea>
@@ -259,7 +259,7 @@ class TemplateTable extends Entity\DataManager
 			{
 				if($templateType && $templateId)
 				{
-					$url = '/bnpt/admin/sender_template_admin.php?';
+					$url = '/bitrix/admin/sender_template_admin.php?';
 					$url .= 'action=get_template&template_type=' . $templateType . '&template_id=' . $templateId;
 					$url .= '&lang=' . LANGUAGE_ID . '&' . bitrix_sessid_get();
 				}

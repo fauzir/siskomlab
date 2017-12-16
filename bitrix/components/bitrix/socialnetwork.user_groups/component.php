@@ -1058,7 +1058,7 @@ if (StrLen($arResult["FatalError"]) <= 0)
 		global $INTRANET_TOOLBAR;
 
 		$INTRANET_TOOLBAR->AddButton(array(
-			'HREF' => "/bnpt/admin/socnet_subject.php?lang=".LANGUAGE_ID,
+			'HREF' => "/bitrix/admin/socnet_subject.php?lang=".LANGUAGE_ID,
 			"TEXT" => GetMessage('SONET_C36_EDIT_ENTRIES'),
 			'ICON' => 'settings',
 			"SORT" => 1000,

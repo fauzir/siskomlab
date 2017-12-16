@@ -1213,7 +1213,7 @@ var BXShowComponentPanel = function (bNew, pTaskbar, pElement)
 	var row, cell, arPropertyParams, bSel, arValues, res, pSelect, arUsedValues, bFound, key, oOption, val, xCell, opt_val, bBr, i, k, alt;
 
 	//////////
-	var sURL = '/bnpt/admin/fileman_get_xml.php?op=componentconfig&lang='+BXLang+'&site='+BXSite+'&templateID='+templateID+'&path='+arSettings["SCRIPT_NAME"];
+	var sURL = '/bitrix/admin/fileman_get_xml.php?op=componentconfig&lang='+BXLang+'&site='+BXSite+'&templateID='+templateID+'&path='+arSettings["SCRIPT_NAME"];
 	var arParams = pTaskbar.pMainObj.GetData(sURL, arSettings["PARAMS"]);
 	if(typeof(arParams)!='object')
 		arParams = {};

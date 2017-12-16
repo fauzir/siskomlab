@@ -1498,7 +1498,7 @@ class CControllerClientRequestTo extends __CControllerPacketRequest
 		$this->session_id = \Bitrix\Main\Security\Random::getString(32);
 	}
 
-	function SendWithCheck($page="/bnpt/admin/controller_ws.php")
+	function SendWithCheck($page="/bitrix/admin/controller_ws.php")
 	{
 		$oResponse = $this->Send("", $page);
 		if($oResponse===false)
@@ -1517,7 +1517,7 @@ class CControllerClientRequestTo extends __CControllerPacketRequest
 		return $oResponse;
 	}
 
-	public function Send($url = "", $page = "/bnpt/admin/controller_ws.php")
+	public function Send($url = "", $page = "/bitrix/admin/controller_ws.php")
 	{
 		$this->Sign();
 		$oResponsePacket = parent::Send(COption::GetOptionString("main", "controller_url", ""), $page);

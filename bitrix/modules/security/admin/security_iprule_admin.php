@@ -117,7 +117,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST["save"].$_REQUEST["apply"].
 			"ACTIVE_TO" => false,
 			"INCL_IPS" => $INCL_IPS,
 			"EXCL_IPS" => $_POST["EXCL_IPS"],
-			"INCL_MASKS" => array("/bnpt/admin/*"),
+			"INCL_MASKS" => array("/bitrix/admin/*"),
 			"EXCL_MASKS" => $exclMasks,
 		);
 		if($ID > 0)
@@ -136,7 +136,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && $_REQUEST["save"].$_REQUEST["apply"].
 				LocalRedirect($_GET["return_url"]);
 
 			$returnUrl = $_GET["return_url"]? "&return_url=".urlencode($_GET["return_url"]): "";
-			LocalRedirect("/bnpt/admin/security_iprule_admin.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
+			LocalRedirect("/bitrix/admin/security_iprule_admin.php?lang=".LANGUAGE_ID.$returnUrl."&".$tabControl->ActiveTabParam());
 		}
 		else
 		{

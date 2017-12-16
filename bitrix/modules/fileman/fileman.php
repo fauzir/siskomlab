@@ -131,7 +131,7 @@ class CFileMan
 		if ($sect_permission>="W")
 		{
 			// New page
-			$href = "/bnpt/admin/fileman_".$editor_type."_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".UrlEncode($APPLICATION->GetCurDir())."&new=Y&templateID=".urlencode(SITE_TEMPLATE_ID)."&back_url=".UrlEncode($REQUEST_URI);
+			$href = "/bitrix/admin/fileman_".$editor_type."_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".UrlEncode($APPLICATION->GetCurDir())."&new=Y&templateID=".urlencode(SITE_TEMPLATE_ID)."&back_url=".UrlEncode($REQUEST_URI);
 			$APPLICATION->AddPanelButtonMenu('create', array("SEPARATOR"=>true, "SORT"=>99));
 			$APPLICATION->AddPanelButtonMenu('create', array(
 				"TEXT" => GetMessage("fileman_panel_admin"),
@@ -141,7 +141,7 @@ class CFileMan
 			));
 
 			//New folder
-			$href = "/bnpt/admin/fileman_newfolder.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=". UrlEncode($APPLICATION->GetCurDir())."&back_url=".UrlEncode($REQUEST_URI);
+			$href = "/bitrix/admin/fileman_newfolder.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=". UrlEncode($APPLICATION->GetCurDir())."&back_url=".UrlEncode($REQUEST_URI);
 			$APPLICATION->AddPanelButtonMenu('create_section', array("SEPARATOR"=>true, "SORT"=>99));
 			$APPLICATION->AddPanelButtonMenu('create_section', array(
 				"TEXT" => GetMessage("fileman_panel_admin"),
@@ -153,7 +153,7 @@ class CFileMan
 		// Edit page
 		if ($page_permission>="W")
 		{
-			$href = "/bnpt/admin/fileman_".$editor_type."_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&templateID=".urlencode(SITE_TEMPLATE_ID).$full_src."&path=".UrlEncode(isset($_SERVER["REAL_FILE_PATH"]) && $_SERVER["REAL_FILE_PATH"]<>""? $_SERVER["REAL_FILE_PATH"] : $cur_page)."&back_url=".UrlEncode($REQUEST_URI);
+			$href = "/bitrix/admin/fileman_".$editor_type."_edit.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&templateID=".urlencode(SITE_TEMPLATE_ID).$full_src."&path=".UrlEncode(isset($_SERVER["REAL_FILE_PATH"]) && $_SERVER["REAL_FILE_PATH"]<>""? $_SERVER["REAL_FILE_PATH"] : $cur_page)."&back_url=".UrlEncode($REQUEST_URI);
 			$APPLICATION->AddPanelButtonMenu('edit', array("SEPARATOR"=>true, "SORT"=>99));
 			$APPLICATION->AddPanelButtonMenu('edit', array(
 				"TEXT" => GetMessage("fileman_panel_admin"),
@@ -167,7 +167,7 @@ class CFileMan
 		$alt = GetMessage("FILEMAN_FOLDER_PROPS");
 		if ($sect_permission>="W")
 		{
-			$href = "/bnpt/admin/fileman_folder.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".UrlEncode($APPLICATION->GetCurDir())."&back_url=".UrlEncode($REQUEST_URI);
+			$href = "/bitrix/admin/fileman_folder.php?lang=".LANGUAGE_ID."&site=".SITE_ID."&path=".UrlEncode($APPLICATION->GetCurDir())."&back_url=".UrlEncode($REQUEST_URI);
 			$APPLICATION->AddPanelButtonMenu('edit_section', array("SEPARATOR"=>true, "SORT"=>99));
 			$APPLICATION->AddPanelButtonMenu('edit_section', array(
 				"TEXT" => GetMessage("fileman_panel_admin"),
@@ -1263,7 +1263,7 @@ class CFileMan
 						<?if ($params['bSave']):?>
 						if (bSave !== false)
 						{
-							BX.ajax.get('/bnpt/admin/fileman_manage_settings.php?<?= bitrix_sessid_get()?>&target=text_type&edname=<?= $name?>&key=<?= $key?>&type=' + curType);
+							BX.ajax.get('/bitrix/admin/fileman_manage_settings.php?<?= bitrix_sessid_get()?>&target=text_type&edname=<?= $name?>&key=<?= $key?>&type=' + curType);
 						}
 						<?endif;?>
 					};
@@ -1582,17 +1582,17 @@ class CFileMan
 			for($i = 0, $c = count($arJS); $i < $c; $i++)
 			{
 				$arJS[$i] = preg_replace("/[^a-zA-Z0-9_:\.]/is", "", $arJS[$i]);
-				if(file_exists($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/htmleditor2/'.$arJS[$i]))
+				if(file_exists($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/htmleditor2/'.$arJS[$i]))
 					$arr[] = $arJS[$i];
 			}
 			?>
-			<script type="text/javascript" src="/bnpt/admin/fileman_js.php?lang=<?=LANGUAGE_ID?>&v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/fileman/lang/'.LANGUAGE_ID.'/admin/fileman_js.php')?>"></script>
-			<script type="text/javascript" src="/bnpt/admin/fileman_common_js.php?s=<?=$str_taskbars?>"></script>
+			<script type="text/javascript" src="/bitrix/admin/fileman_js.php?lang=<?=LANGUAGE_ID?>&v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/fileman/lang/'.LANGUAGE_ID.'/admin/fileman_js.php')?>"></script>
+			<script type="text/javascript" src="/bitrix/admin/fileman_common_js.php?s=<?=$str_taskbars?>"></script>
 			<?
 			for($i = 0, $l = count($arr); $i < $l; $i++)
 			{
 				$script_filename = $arr[$i];
-				?><script type="text/javascript" src="/bnpt/admin/htmleditor2/<?=$script_filename?>?v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/htmleditor2/'.$script_filename)?>"></script><?
+				?><script type="text/javascript" src="/bitrix/admin/htmleditor2/<?=$script_filename?>?v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/htmleditor2/'.$script_filename)?>"></script><?
 			}
 			?>
 			<script type="text/javascript" src="/bitrix/js/main/popup_menu.js?v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bitrix/js/main/popup_menu.js')?>"></script>
@@ -1600,9 +1600,9 @@ class CFileMan
 			for($i = 0, $l = count($arCSS); $i < $l; $i++) // Additional CSS files from event OnBeforeHtmlEditorScriptGet
 			{
 				$arCSS[$i] = preg_replace("/[^a-zA-Z0-9_:\.]/is", "", $arCSS[$i]);
-				if(!file_exists($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/htmleditor2/'.$arCSS[$i]))
+				if(!file_exists($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/htmleditor2/'.$arCSS[$i]))
 					continue;
-				?><link rel="stylesheet" type="text/css" href="/bnpt/admin/htmleditor2/<?=$arCSS[$i]?>?v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bnpt/admin/htmleditor2/'.$arCSS[$i])?>"/><?
+				?><link rel="stylesheet" type="text/css" href="/bitrix/admin/htmleditor2/<?=$arCSS[$i]?>?v=<?=@filemtime($_SERVER['DOCUMENT_ROOT'].'/bitrix/admin/htmleditor2/'.$arCSS[$i])?>"/><?
 			}
 
 			$db_events = GetModuleEvents("fileman", "OnIncludeHTMLEditorScript");
@@ -1646,7 +1646,7 @@ class CFileMan
 			</table>
 		</div>
 		<script>
-			BX.loadCSS('/bnpt/admin/htmleditor2/editor.css');
+			BX.loadCSS('/bitrix/admin/htmleditor2/editor.css');
 			var bEd = BX("bxed_<?= $name?>_editor");
 			if (bEd && !bEd.checked)
 				BX("<?= $name?>_object").style.display = "none";

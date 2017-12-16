@@ -1,6 +1,0 @@
-<?
-$MESS["CRM_MAIL_TEMPLATE_TAB_1"] = "Template e-mail";
-$MESS["CRM_MAIL_TEMPLATE_TAB_1_TITLE"] = "Parameter template e-mail";
-$MESS["CRM_MAIL_TEMPLATE_ENTITY_FIELD_SELECTOR"] = "Pilih bidang";
-$MESS["CRM_MAIL_TEMPLATE_ENTITY_FIELD_SELECTOR_ADD_BTN"] = "Menambahkan";
-?>

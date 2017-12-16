@@ -690,7 +690,7 @@ if ($bCanEdit)
 			"TITLE" => GetMessage("LEARNING_COURSES_TEST_EDIT"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_test_edit.php?lang=".LANGUAGE_ID."&ID=".$arResult["TEST"]["ID"]."&COURSE_ID=".$arResult["TEST"]["COURSE_ID"]."&bxpublic=Y&from_module=learning",
+					"URL" => "/bitrix/admin/learn_test_edit.php?lang=".LANGUAGE_ID."&ID=".$arResult["TEST"]["ID"]."&COURSE_ID=".$arResult["TEST"]["COURSE_ID"]."&bxpublic=Y&from_module=learning",
 					"PARAMS" => array(
 						"width" => 700, 'height' => 500, 'resize' => false,
 					),
@@ -703,7 +703,7 @@ if ($bCanEdit)
 		array(
 			"TEXT" => GetMessage("LEARNING_COURSES_TEST_DELETE"),
 			"TITLE" => GetMessage("LEARNING_COURSES_TEST_DELETE"),
-			"URL" => "javascript:if(confirm('".GetMessage("LEARNING_COURSES_TEST_DELETE_CONF")."'))jsUtils.Redirect([], '".CUtil::JSEscape("/bnpt/admin/learn_test_admin.php?ID=".$arParams["TEST_ID"]."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&COURSE_ID=".$arParams["COURSE_ID"]).(strlen($deleteReturnUrl) ? "&return_url=".urlencode($deleteReturnUrl) : "")."')",
+			"URL" => "javascript:if(confirm('".GetMessage("LEARNING_COURSES_TEST_DELETE_CONF")."'))jsUtils.Redirect([], '".CUtil::JSEscape("/bitrix/admin/learn_test_admin.php?ID=".$arParams["TEST_ID"]."&action=delete&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&COURSE_ID=".$arParams["COURSE_ID"]).(strlen($deleteReturnUrl) ? "&return_url=".urlencode($deleteReturnUrl) : "")."')",
 			"ICON" => "bx-context-toolbar-delete-icon",
 			"ID" => "bx-context-toolbar-delete-test",
 		),
@@ -720,7 +720,7 @@ if ($bCanEdit)
 			"TITLE" => GetMessage("LEARNING_COURSES_QUESTION_EDIT"),
 			"URL" => 'javascript:'.$APPLICATION->GetPopupLink(
 				array(
-					"URL" => "/bnpt/admin/learn_question_edit.php?lang=".LANGUAGE_ID."&ID=".$arResult["QUESTION"]["ID"]."&COURSE_ID=".$arResult["TEST"]["COURSE_ID"]."&LESSON_ID=".$arResult["QUESTION"]["LESSON_ID"]."&bxpublic=Y&from_module=learning",
+					"URL" => "/bitrix/admin/learn_question_edit.php?lang=".LANGUAGE_ID."&ID=".$arResult["QUESTION"]["ID"]."&COURSE_ID=".$arResult["TEST"]["COURSE_ID"]."&LESSON_ID=".$arResult["QUESTION"]["LESSON_ID"]."&bxpublic=Y&from_module=learning",
 					"PARAMS" => array(
 						"width" => 700, 'height' => 500, 'resize' => false,
 					),

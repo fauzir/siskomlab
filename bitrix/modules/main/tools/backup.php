@@ -110,7 +110,7 @@ if (!file_exists(DOCUMENT_ROOT.'/bitrix/backup'))
 if (!file_exists(DOCUMENT_ROOT."/bitrix/backup/index.php"))
 {
 	$f = fopen(DOCUMENT_ROOT."/bitrix/backup/index.php","w");
-	fwrite($f,"<head><meta http-equiv=\"REFRESH\" content=\"0;URL=/bnpt/admin/index.php\"></head>");
+	fwrite($f,"<head><meta http-equiv=\"REFRESH\" content=\"0;URL=/bitrix/admin/index.php\"></head>");
 	fclose($f);
 }
 

@@ -807,12 +807,12 @@ function GetFormatedUserName($userId, $bEnableId = true, $createEditLink = true)
 		{
 			$formatted = '';
 			if ($bEnableId)
-				$formatted = '[<a href="/bnpt/admin/user_edit.php?ID='.$uId.'&lang='.LANGUAGE_ID.'">'.$uId.'</a>] ';
+				$formatted = '[<a href="/bitrix/admin/user_edit.php?ID='.$uId.'&lang='.LANGUAGE_ID.'">'.$uId.'</a>] ';
 
 			if (CBXFeatures::IsFeatureEnabled('SaleAccounts') && !$createEditLink)
-				$formatted .= '<a href="/bnpt/admin/sale_buyers_profile.php?USER_ID='.$uId.'&lang='.LANGUAGE_ID.'">';
+				$formatted .= '<a href="/bitrix/admin/sale_buyers_profile.php?USER_ID='.$uId.'&lang='.LANGUAGE_ID.'">';
 			else
-				$formatted .= '<a href="/bnpt/admin/user_edit.php?ID='.$uId.'&lang='.LANGUAGE_ID.'">';
+				$formatted .= '<a href="/bitrix/admin/user_edit.php?ID='.$uId.'&lang='.LANGUAGE_ID.'">';
 			$formatted .= $formattedUsersName[$uId];
 
 			$formatted .= '</a>';
@@ -823,12 +823,12 @@ function GetFormatedUserName($userId, $bEnableId = true, $createEditLink = true)
 	else
 	{
 		if ($bEnableId)
-			$result .= '[<a href="/bnpt/admin/user_edit.php?ID='.$userId.'&lang='.LANGUAGE_ID.'">'.$userId.'</a>] ';
+			$result .= '[<a href="/bitrix/admin/user_edit.php?ID='.$userId.'&lang='.LANGUAGE_ID.'">'.$userId.'</a>] ';
 
 		if (CBXFeatures::IsFeatureEnabled('SaleAccounts') && !$createEditLink)
-			$result .= '<a href="/bnpt/admin/sale_buyers_profile.php?USER_ID='.$userId.'&lang='.LANGUAGE_ID.'">';
+			$result .= '<a href="/bitrix/admin/sale_buyers_profile.php?USER_ID='.$userId.'&lang='.LANGUAGE_ID.'">';
 		else
-			$result .= '<a href="/bnpt/admin/user_edit.php?ID='.$userId.'&lang='.LANGUAGE_ID.'">';
+			$result .= '<a href="/bitrix/admin/user_edit.php?ID='.$userId.'&lang='.LANGUAGE_ID.'">';
 
 		$result .= $formattedUsersName[$userId];
 

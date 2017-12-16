@@ -237,7 +237,7 @@ $paymentData = Payment::getList(
 
 while ($payment = $paymentData->fetch())
 {
-	$linkId = '[<a href="/bnpt/admin/sale_order_payment_edit.php?order_id='.$payment['ORDER_ID'].'&payment_id='.$payment["ID"].'&lang='.LANGUAGE_ID.'">'.$payment["ID"].'</a>]';
+	$linkId = '[<a href="/bitrix/admin/sale_order_payment_edit.php?order_id='.$payment['ORDER_ID'].'&payment_id='.$payment["ID"].'&lang='.LANGUAGE_ID.'">'.$payment["ID"].'</a>]';
 	$paymentRows[$payment['ID']] = $linkId.','.htmlspecialcharsbx($payment["PAY_SYSTEM_NAME"]).','.
 		($payment["PAID"] == "Y" ? Loc::getMessage("SALE_CHECK_PAYMENTS_PAID") :  Loc::getMessage("SALE_CHECK_PAYMENTS_UNPAID")).", ".
 		(strlen($payment["PS_STATUS"]) > 0 ? Loc::getMessage("SALE_CASHBOX_STATUS").": ".htmlspecialcharsbx($payment["PS_STATUS"]).", " : "").
@@ -266,7 +266,7 @@ $shipmentData = Shipment::getList(
 
 while ($shipment = $shipmentData->fetch())
 {
-	$linkId = '[<a href="/bnpt/admin/sale_order_shipment_edit.php?order_id='.$shipment['ORDER_ID'].'&shipment_id='.$shipment["ID"].'&lang='.LANGUAGE_ID.'">'.$shipment["ID"].'</a>]';
+	$linkId = '[<a href="/bitrix/admin/sale_order_shipment_edit.php?order_id='.$shipment['ORDER_ID'].'&shipment_id='.$shipment["ID"].'&lang='.LANGUAGE_ID.'">'.$shipment["ID"].'</a>]';
 
 	$fieldValue = $linkId.", ".
 		(strlen($shipment["DELIVERY_NAME"]) > 0 ? htmlspecialcharsbx($shipment["DELIVERY_NAME"]).",</br> " : "").

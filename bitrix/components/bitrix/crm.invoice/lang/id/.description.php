@@ -1,6 +1,0 @@
-<?
-$MESS["CRM_INVOICE_COMPLEX_NAME"] = "faktur";
-$MESS["CRM_INVOICE_COMPLEX_DESCRIPTION"] = "faktur";
-$MESS["CRM_NAME"] = "CRM";
-$MESS["CRM_INVOICE_NAME"] = "faktur";
-?>

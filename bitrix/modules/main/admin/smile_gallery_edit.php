@@ -115,7 +115,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SMILE_BTN_BACK"),
-		"LINK" => "/bnpt/admin/smile_gallery.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bitrix/admin/smile_gallery.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_list",
 	)
 );
@@ -126,14 +126,14 @@ if ($ID > 0)
 
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SMILE_BTN_NEW"),
-		"LINK" => "/bnpt/admin/smile_gallery_edit.php?lang=".LANG."&".GetFilterParams("filter_", false),
+		"LINK" => "/bitrix/admin/smile_gallery_edit.php?lang=".LANG."&".GetFilterParams("filter_", false),
 		"ICON" => "btn_new",
 	);
 	if($arSmileSet["STRING_ID"] != 'bitrix')
 	{
 		$aMenu[] = array(
 			"TEXT" => GetMessage("SMILE_BTN_DELETE"),
-			"LINK" => "javascript:if(confirm('".GetMessage("SMILE_BTN_DELETE_CONFIRM")."')) window.location='/bnpt/admin/smile_gallery.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
+			"LINK" => "javascript:if(confirm('".GetMessage("SMILE_BTN_DELETE_CONFIRM")."')) window.location='/bitrix/admin/smile_gallery.php?action=delete&ID[]=".$ID."&lang=".LANG."&".bitrix_sessid_get()."#tb';",
 			"ICON" => "btn_delete",
 		);
 	}
@@ -213,7 +213,7 @@ $tabControl->BeginNextTab();
 $tabControl->EndTab();
 
 $tabControl->Buttons(array(
-	"back_url" => "/bnpt/admin/smile_gallery.php?lang=".LANG."&".GetFilterParams("filter_", false)));
+	"back_url" => "/bitrix/admin/smile_gallery.php?lang=".LANG."&".GetFilterParams("filter_", false)));
 ?>
 </form>
 <?

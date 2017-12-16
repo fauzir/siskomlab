@@ -169,7 +169,7 @@ if($USER->IsAuthorized())
 	if($bMenuEdit)
 	{
 		$menu_edit_url = $APPLICATION->GetPopupLink(array(
-			"URL"=> "/bnpt/admin/public_menu_edit.php?lang=".LANGUAGE_ID.
+			"URL"=> "/bitrix/admin/public_menu_edit.php?lang=".LANGUAGE_ID.
 				"&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"]).
 				"&path=".urlencode($menuDir)."&name=".$menuType
 			)
@@ -232,7 +232,7 @@ if($USER->IsAuthorized())
 
 		/** @noinspection PhpUndefinedVariableInspection */
 		$menu_edit_url = $APPLICATION->GetPopupLink(array(
-			"URL" => "/bnpt/admin/public_menu_edit.php?new=Y&lang=".LANGUAGE_ID.
+			"URL" => "/bitrix/admin/public_menu_edit.php?new=Y&lang=".LANGUAGE_ID.
 				"&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"]).
 				"&path=".urlencode($menuDirAdd)."&name=".$newMenuType
 			)
@@ -298,7 +298,7 @@ if($USER->IsAuthorized())
 	if ($bMenuDelete)
 	{
 		$menu_del_url = "if(confirm('".CUtil::JSEscape(GetMessage('menu_comp_del_conf', array('#MENU_TITLE#' => (isset($arMenuTypes[$menuType]) ? $arMenuTypes[$menuType] : $menuType)))).
-			"')) {BX.showWait(); BX.ajax.get('/bnpt/admin/public_menu_edit.php?lang=".LANGUAGE_ID.
+			"')) {BX.showWait(); BX.ajax.get('/bitrix/admin/public_menu_edit.php?lang=".LANGUAGE_ID.
 			"&site=".SITE_ID."&back_url=".urlencode($_SERVER["REQUEST_URI"]).
 			"&path=".urlencode($menuDir)."&name=".$menuType."&action=delete&".bitrix_sessid_get()."')}";
 	

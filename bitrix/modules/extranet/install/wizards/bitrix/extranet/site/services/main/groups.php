@@ -48,7 +48,7 @@ $arGroups = Array(
 		"STRING_ID" => "EXTRANET_ADMIN",
 		"TASKS_MODULE" => Array("main_edit_subordinate_users"),
 		"TASKS_FILE" => Array(
-			Array("fm_folder_access_read", "/bnpt/admin/"),
+			Array("fm_folder_access_read", "/bitrix/admin/"),
 			Array("fm_folder_access_read", "/bitrix/components/bitrix/"),
 			Array("fm_folder_access_read", "/bitrix/gadgets/bitrix/"),
 			Array("fm_folder_access_read", "/bitrix/rk.php"),

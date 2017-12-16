@@ -135,7 +135,7 @@ BX.Security.UserEdit.Otp = (function getUserOtp(BX)
 	var BaseModel = function(userId, options)
 	{
 		var defaults = {
-			'actionUrl': '/bnpt/admin/security_otp.ajax.php?lang=' + BX.message('LANGUAGE_ID'),
+			'actionUrl': '/bitrix/admin/security_otp.ajax.php?lang=' + BX.message('LANGUAGE_ID'),
 			'onCompleteCallback': BX.DoNothing,
 			'ui': {
 				'showButtonId': null,
@@ -580,8 +580,8 @@ BX.Security.UserEdit.Otp = (function getUserOtp(BX)
 	var RecoveryCodes = function(userId, options)
 	{
 		var defaults = {
-			'actionUrl': '/bnpt/admin/security_otp.ajax.php?lang=' + BX.message('LANGUAGE_ID'),
-			'publicUrl': '/bnpt/admin/security_otp_recovery_codes.php?lang=' + BX.message('LANGUAGE_ID'),
+			'actionUrl': '/bitrix/admin/security_otp.ajax.php?lang=' + BX.message('LANGUAGE_ID'),
+			'publicUrl': '/bitrix/admin/security_otp_recovery_codes.php?lang=' + BX.message('LANGUAGE_ID'),
 			'ui': {
 				'showButtonId': 'otp-show-recovery-codes',
 				'id': 'otp-recovery-codes'

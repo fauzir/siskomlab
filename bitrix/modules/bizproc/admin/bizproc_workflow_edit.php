@@ -98,7 +98,7 @@ if(!$canWrite)
 //////////////////////////////////////////
 // AJAX
 //////////////////////////////////////////
-$back_url = "/bnpt/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&document_type=".$document_type."&back_url_list=".$_REQUEST["back_url_list"];
+$back_url = "/bitrix/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&document_type=".$document_type."&back_url_list=".$_REQUEST["back_url_list"];
 if($_SERVER['REQUEST_METHOD']=='POST' && $_REQUEST['saveajax']=='Y')
 {
 	CUtil::DecodeUriComponent($_POST);
@@ -166,7 +166,7 @@ if($_SERVER['REQUEST_METHOD']=='POST' && $_REQUEST['saveajax']=='Y')
 	restore_exception_handler();
 	?>
 	<script>
-	window.location = '<?=($_REQUEST["apply"]=="Y"?"/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&back_url_list=".AddSlashes($_REQUEST["back_url_list"]) : AddSlashes($back_url))?>';
+	window.location = '<?=($_REQUEST["apply"]=="Y"?"/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&ID=".$ID."&back_url_list=".AddSlashes($_REQUEST["back_url_list"]) : AddSlashes($back_url))?>';
 	</script>
 	<?
 	die();
@@ -199,7 +199,7 @@ $aMenu[] = array("SEPARATOR"=>true);
 $aMenu[] = array(
 	"TEXT"=>GetMessage("BIZPROC_WFEDIT_MENU_LIST"),
 	"TITLE"=>GetMessage("BIZPROC_WFEDIT_MENU_LIST_TITLE"),
-	"LINK"=>"/bnpt/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&document_type=".AddSlashes($document_type)."",
+	"LINK"=>"/bitrix/admin/".MODULE_ID."_bizproc_workflow_admin.php?lang=".LANGUAGE_ID."&document_type=".AddSlashes($document_type)."",
 	"ICON"=>"btn_list",
 );
 
@@ -207,12 +207,12 @@ $arSubMenu = Array();
 
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("BIZPROC_WFEDIT_MENU_ADD_STATE"),
-	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&init=statemachine&document_type=".AddSlashes($document_type)."';"
+	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&init=statemachine&document_type=".AddSlashes($document_type)."';"
 );
 
 $arSubMenu[] = array(
 	"TEXT"	=> GetMessage("BIZPROC_WFEDIT_MENU_ADD_SEQ"),
-	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bnpt/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&document_type=".AddSlashes($document_type)."';"
+	"ACTION"	=> "if(confirm('".GetMessage("BIZPROC_WFEDIT_MENU_ADD_WARN")."'))window.location='/bitrix/admin/".MODULE_ID."_bizproc_workflow_edit.php?lang=".LANGUAGE_ID."&document_type=".AddSlashes($document_type)."';"
 );
 
 $aMenu[] = array(
@@ -257,7 +257,7 @@ function BCPSaveTemplate(save)
 
 	jsExtLoader.onajaxfinish = BCPSaveTemplateComplete;
 	// TODO: add sessid
-	jsExtLoader.startPost('/bnpt/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
+	jsExtLoader.startPost('/bitrix/admin/<?=MODULE_ID?>_bizproc_workflow_edit.php?<?=($ID>0?"ID=".$ID."&":"")?>'+
 		'document_type=<?=AddSlashes(urlencode($document_type))?>&lang=<?=LANGUAGE_ID?>&saveajax=Y'+
 		(save ? '&back_url=<?=AddSlashes(urlencode($back_url))?>': '&apply=Y')
 		, data);
@@ -265,7 +265,7 @@ function BCPSaveTemplate(save)
 
 function BCPShowParams()
 {
-	jsPopup.ShowDialog("/bnpt/admin/<?=MODULE_ID?>_bizproc_wf_settings.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>", {width: 700, height: 400, resize: true,
+	jsPopup.ShowDialog("/bitrix/admin/<?=MODULE_ID?>_bizproc_wf_settings.php?mode=public&bxpublic=Y&lang=<?=LANGUAGE_ID?>", {width: 700, height: 400, resize: true,
 		'postData':
 			'workflowTemplateName=' 		+ encodeURIComponent(workflowTemplateName) + '&' +
 			'workflowTemplateDescription=' 	+ encodeURIComponent(workflowTemplateDescription) + '&' +

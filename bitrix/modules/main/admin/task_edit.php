@@ -119,7 +119,7 @@ $aMenu = array(
 	array(
 		"TEXT"	=> GetMessage("RECORD_LIST"),
 		"TITLE"	=> GetMessage("RECORD_LIST_TITLE"),
-		"LINK"	=> "/bnpt/admin/task_admin.php?lang=".LANGUAGE_ID."&amp;set_default=Y",
+		"LINK"	=> "/bitrix/admin/task_admin.php?lang=".LANGUAGE_ID."&amp;set_default=Y",
 		"ICON"	=> "btn_list"
 	)
 );
@@ -131,13 +131,13 @@ if($ID > 0 && $COPY_ID <= 0)
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_NEW_RECORD"),
 		"TITLE"	=> GetMessage("MAIN_NEW_RECORD_TITLE"),
-		"LINK"	=> "/bnpt/admin/task_edit.php?lang=".LANGUAGE_ID,
+		"LINK"	=> "/bitrix/admin/task_edit.php?lang=".LANGUAGE_ID,
 		"ICON"	=> "btn_new"
 	);
 	$aMenu[] = array(
 		"TEXT"	=> GetMessage("MAIN_COPY_RECORD"),
 		"TITLE"	=> GetMessage("MAIN_COPY_RECORD_TITLE"),
-		"LINK"	=> "/bnpt/admin/task_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".$ID,
+		"LINK"	=> "/bitrix/admin/task_edit.php?lang=".LANGUAGE_ID."&amp;COPY_ID=".$ID,
 		"ICON"	=> "btn_copy"
 	);
 	if ($USER->CanDoOperation('edit_tasks') && $str_SYS != 'Y')
@@ -145,7 +145,7 @@ if($ID > 0 && $COPY_ID <= 0)
 		$aMenu[] = array(
 			"TEXT"	=> GetMessage("MAIN_DELETE_RECORD"),
 			"TITLE"	=> GetMessage("MAIN_DELETE_RECORD_TITLE"),
-			"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bnpt/admin/task_admin.php?del_id=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
+			"LINK"	=> "javascript:if(confirm('".GetMessage("MAIN_DELETE_RECORD_CONF")."')) window.location='/bitrix/admin/task_admin.php?del_id=".$ID."&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."';",
 			"ICON"	=> "btn_delete"
 		);
 	}

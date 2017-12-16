@@ -1,6 +1,0 @@
-<?
-$MESS["LEARNING_SERVICE"] = "e-Learning";
-$MESS["LEARNING_CONTENT_SERVICE"] = "Pelajaran dan Bab";
-$MESS["LEARNING_CHAPTER_DETAIL_NAME"] = "Rincian bab";
-$MESS["LEARNING_CHAPTER_DETAIL_DESC"] = "Rincian bab";
-?>

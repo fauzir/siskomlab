@@ -515,7 +515,7 @@ class CAllTicketReminder
 			"RATE"						=> $arTicket["MARK_NAME"],
 			"SLA"						=> $arTicket["SLA_NAME"],
 			"SOURCE"					=> $sourceName,
-			"ADMIN_EDIT_URL"			=> "/bnpt/admin/ticket_edit.php",
+			"ADMIN_EDIT_URL"			=> "/bitrix/admin/ticket_edit.php",
 			"EXPIRATION_DATE"			=> $arMessage["EXPIRATION_DATE"],
 			"REMAINED_TIME"				=> $strRemainedTime,
 

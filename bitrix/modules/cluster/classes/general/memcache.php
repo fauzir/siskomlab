@@ -126,7 +126,7 @@ $arList = array(
 				"ROLE_ID" => "",
 				"HOST" => $arData["HOST"],
 				"DEDICATED" => "Y",
-				"EDIT_URL" => "/bnpt/admin/cluster_memcache_edit.php?lang=".LANGUAGE_ID."&group_id=".$arData["GROUP_ID"]."&ID=".$arData["ID"],
+				"EDIT_URL" => "/bitrix/admin/cluster_memcache_edit.php?lang=".LANGUAGE_ID."&group_id=".$arData["GROUP_ID"]."&ID=".$arData["ID"],
 			);
 		}
 		return $result;

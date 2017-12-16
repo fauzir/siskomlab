@@ -1217,9 +1217,9 @@ if(strlen($arTypesUpdates["CLIENT"]["@"]["HTTP_HOST"])>0):
 		}
 
 		if(defined("DEMO") && DEMO == "Y")
-			$sMess = GetMessage("SUP_NO_KEY_ENTER_PROMT", array("#URL#"=>"/bnpt/admin/settings.php"));
+			$sMess = GetMessage("SUP_NO_KEY_ENTER_PROMT", array("#URL#"=>"/bitrix/admin/settings.php"));
 		else
-			$sMess = GetMessage("SUP_NO_KEY_PROMT_SRC", array("#URL_SET#"=>"/bnpt/admin/settings.php", "#URL#"=>"http://www.bitrixsoft.".(LANGUAGE_ID=="ru"? "ru" : "com")."/support/"));
+			$sMess = GetMessage("SUP_NO_KEY_PROMT_SRC", array("#URL_SET#"=>"/bitrix/admin/settings.php", "#URL#"=>"http://www.bitrixsoft.".(LANGUAGE_ID=="ru"? "ru" : "com")."/support/"));
 		ob_start();
 ?>
 		<form method="POST" action="sysupdate.php">

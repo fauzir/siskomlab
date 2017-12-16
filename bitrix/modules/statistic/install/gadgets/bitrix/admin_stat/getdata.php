@@ -27,28 +27,28 @@ if($_REQUEST["table_id"] == "adv"):
 	<tbody>
 	<tr>
 		<th><?echo GetMessage("GD_STAT_ADV_NAME")?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_date1' => $now_date,
 				'find_date2' => $now_date,
 				'find_adv_back' => 'N',
 				'set_filter' => 'Y',
 			), array("encode" => true)))?>"><?=GetMessage("GD_STAT_TODAY")?></a><br><?=$now_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_date1' => $yesterday_date,
 				'find_date2' => $yesterday_date,
 				'find_adv_back' => 'N',
 				'set_filter' => 'Y',
 			), array("encode" => true)))?>"><?=GetMessage("GD_STAT_YESTERDAY")?></a><br><?=$yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_date1' => $bef_yesterday_date,
 				'find_date2' => $bef_yesterday_date,
 				'find_adv_back' => 'N',
 				'set_filter' => 'Y',
 			), array("encode" => true)))?>"><?=GetMessage("GD_STAT_BEFORE_YESTERDAY")?></a><br><?=$bef_yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_adv_back' => 'N',
 				'del_filter' => 'Y',
@@ -58,7 +58,7 @@ if($_REQUEST["table_id"] == "adv"):
 	$bFound = false;
 	while ($arAdv = $rsAdv->Fetch()):
 		?><tr>
-			<td>[<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/adv_list.php", array(
+			<td>[<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/adv_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_id' => $arAdv["ID"],
 				'find_id_exact_match' => 'Y',
@@ -66,7 +66,7 @@ if($_REQUEST["table_id"] == "adv"):
 			), array("encode" => true)))?>"><?=$arAdv["ID"]?></a>]&nbsp;<?=$arAdv["REFERER1"]?>&nbsp;/&nbsp;<?=$arAdv["REFERER2"]?></td>
 			<td align="right"><?
 				if (intval($arAdv["SESSIONS_TODAY"]) > 0):
-					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_date1' => $now_date,
 						'find_date2' => $now_date,
@@ -81,7 +81,7 @@ if($_REQUEST["table_id"] == "adv"):
 			?></td>
 			<td align="right"><?
 				if (intval($arAdv["SESSIONS_YESTERDAY"])>0):
-					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_date1' => $yesterday_date,
 						'find_date2' => $yesterday_date,
@@ -96,7 +96,7 @@ if($_REQUEST["table_id"] == "adv"):
 			?></td>
 			<td align="right"><?
 				if (intval($arAdv["SESSIONS_BEF_YESTERDAY"])>0):
-					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_date1' => $bef_yesterday_date,
 						'find_date2' => $bef_yesterday_date,
@@ -111,7 +111,7 @@ if($_REQUEST["table_id"] == "adv"):
 			?></td>
 			<td align="right"><?
 				if (intval($arAdv["SESSIONS"])>0):
-					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/session_list.php", array(
+					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/session_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_adv_id' => $arAdv["ID"],
 						'find_adv_id_exact_match' => 'Y',
@@ -145,25 +145,25 @@ elseif($_REQUEST["table_id"] == "event"):
 	<tbody>
 	<tr>
 		<th><?echo GetMessage("GD_STAT_EVENT")?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_date1' => $now_date,
 			'find_date2' => $now_date,
 			'set_filter' => 'Y',
 		), array("encode" => true)))?>"><?=GetMessage("GD_STAT_TODAY")?></a><br><?=$now_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_date1' => $yesterday_date,
 			'find_date2' => $yesterday_date,
 			'set_filter' => 'Y',
 		), array("encode" => true)))?>"><?=GetMessage("GD_STAT_YESTERDAY")?></a><br><?=$yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_date1' => $bef_yesterday_date,
 			'find_date2' => $bef_yesterday_date,
 			'set_filter' => 'Y',
 		), array("encode" => true)))?>?>"><?=GetMessage("GD_STAT_BEFORE_YESTERDAY")?></a><br><?=$bef_yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'del_filter' => 'Y',
 		), array("encode" => true)))?>"><?=GetMessage("GD_STAT_TOTAL_1")?></a></th>
@@ -175,7 +175,7 @@ elseif($_REQUEST["table_id"] == "event"):
 			<td><?
 				$dynamic_days = CStatEventType::DynamicDays($arEvent["ID"]);
 				if ($dynamic_days >= 2 && function_exists("ImageCreate")):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_graph_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_graph_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_events[]' => $arEvent["ID"],
 						'set_filter' => 'Y',
@@ -186,7 +186,7 @@ elseif($_REQUEST["table_id"] == "event"):
 			</td>
 			<td align="right"><?
 				if (intval($arEvent["TODAY_COUNTER"]) > 0):
-					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+					?><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_date1' => $now_date,
 						'find_date2' => $now_date,
@@ -200,7 +200,7 @@ elseif($_REQUEST["table_id"] == "event"):
 			?></td>
 			<td align="right">
 				<?if (intval($arEvent["YESTERDAY_COUNTER"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_date1' => $yesterday_date,
 						'find_date2' => $yesterday_date,
@@ -214,7 +214,7 @@ elseif($_REQUEST["table_id"] == "event"):
 			</td>
 			<td align="right">
 				<?if (intval($arEvent["B_YESTERDAY_COUNTER"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_date1' => $bef_yesterday_date,
 						'find_date2' => $bef_yesterday_date,
@@ -228,7 +228,7 @@ elseif($_REQUEST["table_id"] == "event"):
 			</td>
 			<td align="right">
 				<?if (intval($arEvent["TOTAL_COUNTER"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/event_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/event_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_event_id' => $arEvent["ID"],
 						'find_event_id_exact_match' => 'Y',
@@ -256,7 +256,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 	<tbody>
 	<tr>
 		<th><?=GetMessage("GD_STAT_SERVER")?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'find_date1' => $now_date,
@@ -264,7 +264,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			'group_by' => 'none',
 			'set_filter' => 'Y',
 		), array("encode" => true, "skip_empty" => true)))?>"><?=GetMessage("GD_STAT_TODAY")?></a><br><?=$now_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'find_date1' => $yesterday_date,
@@ -272,7 +272,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			'group_by' => 'none',
 			'set_filter' => 'Y',
 		), array("encode" => true, "skip_empty" => true)))?>"><?=GetMessage("GD_STAT_YESTERDAY")?></a><br><?=$yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'find_date1' => $bef_yesterday_date,
@@ -280,7 +280,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			'group_by' => 'none',
 			'set_filter' => 'Y',
 		), array("encode" => true, "skip_empty" => true)))?>"><?=GetMessage("GD_STAT_BEFORE_YESTERDAY")?></a><br><?=$bef_yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'group_by' => 'none',
@@ -291,7 +291,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 	$bFound = false;
 	while ($arReferer = $rsReferers->Fetch()):
 		?><tr>
-			<td><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+			<td><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_site_id' => $_REQUEST["site_id"],
 				'find_from_domain' => "\"".$arReferer["SITE_NAME"]."\"",
@@ -299,7 +299,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			), array("encode" => true, "skip_empty" => true)))?>"><?=$arReferer["SITE_NAME"]?></a></td>
 			<td align="center">
 				<?if(intval($arReferer["TODAY_REFERERS"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_date1' => $now_date,
@@ -313,7 +313,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			</td>
 			<td align="center">
 				<?if(intval($arReferer["YESTERDAY_REFERERS"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_date1' => $yesterday_date,
@@ -327,7 +327,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			</td>
 			<td align="center">
 				<?if(intval($arReferer["B_YESTERDAY_REFERERS"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_date1' => $bef_yesterday_date,
@@ -341,7 +341,7 @@ elseif($_REQUEST["table_id"] == "referer"):
 			</td>
 			<td align="center">
 				<?if(intval($arReferer["TOTAL_REFERERS"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/referer_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/referer_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_from' => "\"".$arReferer["SITE_NAME"]."\"",
@@ -369,7 +369,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 	<tbody>
 	<tr>
 		<th><?=GetMessage("GD_STAT_PHRASE")?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'find_date1' => $now_date,
@@ -378,7 +378,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			'menu_item_id' => 1,
 			'set_filter' => 'Y',
 		), array("encode" => true, "skip_empty" => true)))?>"><?=GetMessage("GD_STAT_TODAY")?></a><br><?=$now_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'find_date1' => $yesterday_date,
@@ -387,7 +387,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			'menu_item_id' => 1,
 			'set_filter' => 'Y',
 		), array("encode" => true, "skip_empty" => true)))?>"><?=GetMessage("GD_STAT_YESTERDAY")?></a><br><?=$yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'find_date1' => $bef_yesterday_date,
@@ -396,7 +396,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			'menu_item_id' => 1,
 			'set_filter' => 'Y',
 		), array("encode" => true, "skip_empty" => true)))?>"><?=GetMessage("GD_STAT_BEFORE_YESTERDAY")?></a><br><?=$bef_yesterday_date?></th>
-		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+		<th><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 			'lang' => $_REQUEST["lang"],
 			'find_site_id' => $_REQUEST["site_id"],
 			'group_by' => 'none',
@@ -407,7 +407,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 	$bFound = false;
 	while ($arPhrase = $rsPhrases->Fetch()):
 		?><tr>
-			<td><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+			<td><a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 				'lang' => $_REQUEST["lang"],
 				'find_site_id' => $_REQUEST["site_id"],
 				'find_phrase' => htmlspecialcharsback($arPhrase["PHRASE"]),
@@ -418,7 +418,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			), array("encode" => true, "skip_empty" => true)))?>"><?echo htmlspecialcharsbx(TruncateText($arPhrase["PHRASE"], 50))?></a>&nbsp;</td>
 			<td align="center">
 				<?if(intval($arReferer["TODAY_PHRASES"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_date1' => $now_date,
@@ -435,7 +435,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			</td>
 			<td align="center">
 				<?if(intval($arReferer["YESTERDAY_PHRASES"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_date1' => $yesterday_date,
@@ -452,7 +452,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			</td>
 			<td align="center">
 				<?if(intval($arReferer["B_YESTERDAY_PHRASES"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_date1' => $bef_yesterday_date,
@@ -469,7 +469,7 @@ elseif($_REQUEST["table_id"] == "phrase"):
 			</td>
 			<td align="center">
 				<?if(intval($arReferer["TOTAL_PHRASES"]) > 0):?>
-					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bnpt/admin/phrase_list.php", array(
+					<a href="<?echo htmlspecialcharsbx(CHTTP::urlAddParams("/bitrix/admin/phrase_list.php", array(
 						'lang' => $_REQUEST["lang"],
 						'find_site_id' => $_REQUEST["site_id"],
 						'find_phrase' => htmlspecialcharsback($arPhrase["PHRASE"]),

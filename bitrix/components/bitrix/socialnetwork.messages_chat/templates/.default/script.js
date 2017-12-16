@@ -308,7 +308,7 @@ function sonet_switch_sound(obj)
 
 function sonet_save_option(category, name, option, value)
 {
-	sonetChatXmlHttpOpt.open("get",	'/bnpt/admin/user_options.php?'+'&p[0][c]='+category+
+	sonetChatXmlHttpOpt.open("get",	'/bitrix/admin/user_options.php?'+'&p[0][c]='+category+
 		'&p[0][n]='+name+'&p[0][v]['+option+']='+value+'&'+sonetChatSessid);
 	sonetChatXmlHttpOpt.send(null);
 }

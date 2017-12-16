@@ -183,7 +183,7 @@ $lAdmin->AddFooter(
 $aContext = array(
 	array(
 		"TEXT" => GetMessage("CLU_WEBNODE_LIST_ADD"),
-		"LINK" => "/bnpt/admin/cluster_webnode_edit.php?lang=".LANGUAGE_ID.'&group_id='.$group_id,
+		"LINK" => "/bitrix/admin/cluster_webnode_edit.php?lang=".LANGUAGE_ID.'&group_id='.$group_id,
 		"TITLE" => GetMessage("CLU_WEBNODE_LIST_ADD_TITLE"),
 		"ICON" => "btn_new",
 	),

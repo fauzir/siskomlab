@@ -404,7 +404,7 @@ class CFileInput
 			$arConfig['inputs'] = self::$arInputs;
 
 		if (self::$bUseCloud)
-			$arConfig['cloudDialogPath'] = '/bnpt/admin/clouds_file_search.php?lang='.LANGUAGE_ID.'&n=';
+			$arConfig['cloudDialogPath'] = '/bitrix/admin/clouds_file_search.php?lang='.LANGUAGE_ID.'&n=';
 
 
 		//Base container

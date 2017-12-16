@@ -383,13 +383,13 @@ if($request->isPost() && ($request["save"]<>'' || $request["apply"]<>'') && chec
 		$ID = $result->getId();
 		if($request["apply"]<>'')
 		{
-			LocalRedirect('/bnpt/admin/seo_search_yandex_direct_edit.php?lang='.LANGUAGE_ID.'&ID='.$ID.'&'.$tabControl->ActiveTabParam());
+			LocalRedirect('/bitrix/admin/seo_search_yandex_direct_edit.php?lang='.LANGUAGE_ID.'&ID='.$ID.'&'.$tabControl->ActiveTabParam());
 		}
 		else
 		{
 			if($back_url == '')
 			{
-				LocalRedirect("/bnpt/admin/seo_search_yandex_direct.php?lang=".LANGUAGE_ID);
+				LocalRedirect("/bitrix/admin/seo_search_yandex_direct.php?lang=".LANGUAGE_ID);
 			}
 			else
 			{

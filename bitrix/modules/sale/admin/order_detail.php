@@ -969,7 +969,7 @@ if ($boolLocked)
 	if ($arOneUser = $rsUsers->Fetch())
 	{
 		$strLockUser = CUser::FormatName($strNameFormat, $arOneUser);
-		$strLockUserInfo = '<a href="/bnpt/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$intLockUserID.'">'.$strLockUser.'</a>';
+		$strLockUserInfo = '<a href="/bitrix/admin/user_edit.php?lang='.LANGUAGE_ID.'&ID='.$intLockUserID.'">'.$strLockUser.'</a>';
 	}
 	$strLockUserExt = htmlspecialcharsbx(GetMessage(
 		'SOE_ORDER_LOCKED2',
@@ -1226,7 +1226,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_admin_aft
 $aMenu = array(
 	array(
 		"TEXT" => GetMessage("SOD_TO_LIST"),
-		"LINK" => "/bnpt/admin/sale_order_detail.php?ID=".$ID."&dontsave=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+		"LINK" => "/bitrix/admin/sale_order_detail.php?ID=".$ID."&dontsave=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 		"ICON"=>"btn_list",
 	)
 );
@@ -1235,7 +1235,7 @@ if ($boolLocked && $saleModulePermissions >= 'W')
 {
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SOD_TO_UNLOCK"),
-		"LINK" => "/bnpt/admin/sale_order_detail.php?ID=".$ID."&unlock=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+		"LINK" => "/bitrix/admin/sale_order_detail.php?ID=".$ID."&unlock=Y&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 	);
 }
 
@@ -1245,20 +1245,20 @@ if ($bUserCanEditOrder)
 	{
 		$aMenu[] = array(
 			"TEXT" => GetMessage("SOD_TO_EDIT"),
-			"LINK" => "/bnpt/admin/sale_order_edit.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+			"LINK" => "/bitrix/admin/sale_order_edit.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 			"ICON"=>"btn_edit",
 		);
 	}
 	$aMenu[] = array(
 		"TEXT" => GetMessage("SOD_TO_NEW_ORDER"),
-		"LINK" => "/bnpt/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&SITE_ID=".$arOrder["LID"],
+		"LINK" => "/bitrix/admin/sale_order_edit.php?lang=".LANGUAGE_ID."&SITE_ID=".$arOrder["LID"],
 		"ICON"=>"btn_edit",
 	);
 }
 
 $aMenu[] = array(
 	"TEXT" => GetMessage("SOD_TO_PRINT"),
-	"LINK" => "/bnpt/admin/sale_order_print.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
+	"LINK" => "/bitrix/admin/sale_order_print.php?ID=".$ID."&lang=".LANGUAGE_ID.GetFilterParams("filter_"),
 );
 
 if (!$boolLocked && ($saleModulePermissions == "W" || $arOrder["PAYED"] != "Y" && $bUserCanDeleteOrder))
@@ -1594,7 +1594,7 @@ else
 													obStatusErr.style.display = 'none';
 												}
 												BX.showWait();
-												BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&change_status=Y&STATUS_ID='+BX('STATUS_ID').value+'&ID=<?=$ID?>', fChangeStatusResult);
+												BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&change_status=Y&STATUS_ID='+BX('STATUS_ID').value+'&ID=<?=$ID?>', fChangeStatusResult);
 
 												return false;
 											}
@@ -1726,7 +1726,7 @@ else
 								function fCancelCancelOrder()
 								{
 									BX.showWait();
-									BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_cancel=Y&CANCELED=N&ID=<?=$ID?>', fCancelCancelOrderResult);
+									BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_cancel=Y&CANCELED=N&ID=<?=$ID?>', fCancelCancelOrderResult);
 								}
 
 								function fCancelCancelOrderResult(res)
@@ -1795,7 +1795,7 @@ else
 												click : function()
 												{
 													BX.showWait();
-													BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_cancel=Y&CANCELED=Y&REASON_CANCELED='+BX('FORM_REASON_CANCELED').value+'&ID=<?=$ID?>', fChangeCancelResult);
+													BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_cancel=Y&CANCELED=Y&REASON_CANCELED='+BX('FORM_REASON_CANCELED').value+'&ID=<?=$ID?>', fChangeCancelResult);
 													formCancelOrder.close();
 												}
 											}
@@ -1857,11 +1857,11 @@ else
 						$strBuyerProfileUrl = '';
 						if (CBXFeatures::IsFeatureEnabled('SaleAccounts'))
 						{
-							$strBuyerProfileUrl = '/bnpt/admin/sale_buyers_profile.php?USER_ID='.$arOrder["USER_ID"].'&lang='.LANGUAGE_ID;
+							$strBuyerProfileUrl = '/bitrix/admin/sale_buyers_profile.php?USER_ID='.$arOrder["USER_ID"].'&lang='.LANGUAGE_ID;
 						}
 						else
 						{
-							$strBuyerProfileUrl = '/bnpt/admin/user_edit.php?ID='.$arOrder["USER_ID"].'&lang='.LANGUAGE_ID;
+							$strBuyerProfileUrl = '/bitrix/admin/user_edit.php?ID='.$arOrder["USER_ID"].'&lang='.LANGUAGE_ID;
 						}
 						?><a href="<? echo $strBuyerProfileUrl; ?>"><? echo htmlspecialcharsEx($arUser["LOGIN"]); ?></a></td>
 					</tr>
@@ -2428,7 +2428,7 @@ else
 													if (BX('change_status_popup') && BX('change_status_popup').value == 'Y')
 														change_status_popup = BX('change_status_popup').value;
 
-													BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&STATUS_ID='+status_id+'&change_status='+change_status+'&change_status_popup='+change_status_popup+'&change_delivery_form=Y&ALLOW_DELIVERY='+allow_delivery+'&DELIVERY_DOC_NUM='+BX('FORM_DELIVERY_DOC_NUM').value+'&DELIVERY_DOC_DATE='+delivery_date+'&ID=<?=$ID?>', fChangeDeliveryResult);
+													BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&STATUS_ID='+status_id+'&change_status='+change_status+'&change_status_popup='+change_status_popup+'&change_delivery_form=Y&ALLOW_DELIVERY='+allow_delivery+'&DELIVERY_DOC_NUM='+BX('FORM_DELIVERY_DOC_NUM').value+'&DELIVERY_DOC_DATE='+delivery_date+'&ID=<?=$ID?>', fChangeDeliveryResult);
 
 													var actionId = BX("FORM_ACTION_ID");
 													if(actionId && actionId.value !== "")
@@ -2436,7 +2436,7 @@ else
 														BX.ajax({
 															'method': 'POST',
 															'dataType': 'json',
-															'url': '/bnpt/admin/sale_order_detail.php',
+															'url': '/bitrix/admin/sale_order_detail.php',
 															'data':  '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&DELIVERY_ACTION='+actionId.value+'&ID=<?=$ID?>',
 															'onsuccess': fChangeDeliveryActionIdResult
 														});
@@ -2559,7 +2559,7 @@ else
 									{
 										BX.showWait();
 
-										BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&change=Y&tracking_number='+BX.util.urlencode(el.value)+'&ID=<?=$ID?>', fEditTrackingNumberResult);
+										BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&change=Y&tracking_number='+BX.util.urlencode(el.value)+'&ID=<?=$ID?>', fEditTrackingNumberResult);
 
 										if (BX('tracking-number-text').value.length > 0)
 											BX('tracking-number-title').innerHTML = BX('tracking-number-text').value;
@@ -2981,7 +2981,7 @@ else
 													if (BX('change_status_popup') && BX('change_status_popup').value == 'Y')
 														change_status_popup = BX('change_status_popup').value;
 
-													BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&STATUS_ID='+status_id+'&change_status='+change_status+'&change_status_popup='+change_status_popup+'&change_pay_form=Y&PAYED='+payed+'&PAY_VOUCHER_NUM='+pay_num+'&PAY_VOUCHER_DATE='+pay_date+'&PAY_FROM_ACCOUNT='+pay_from_account+'&PAY_FROM_ACCOUNT_BACK='+pay_from_account_back+'&ID=<?=$ID?>', fChangePayResult);
+													BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&STATUS_ID='+status_id+'&change_status='+change_status+'&change_status_popup='+change_status_popup+'&change_pay_form=Y&PAYED='+payed+'&PAY_VOUCHER_NUM='+pay_num+'&PAY_VOUCHER_DATE='+pay_date+'&PAY_FROM_ACCOUNT='+pay_from_account+'&PAY_FROM_ACCOUNT_BACK='+pay_from_account_back+'&ID=<?=$ID?>', fChangePayResult);
 
 													formAllowPay.close();
 												}
@@ -3025,7 +3025,7 @@ else
 								{
 									?>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-									<a href="/bnpt/admin/sale_order_detail.php?ID=<?= $ID ?>&action=ps_update&lang=<? echo LANGUAGE_ID; ?><?echo GetFilterParams("filter_")?>&<?= bitrix_sessid_get() ?>"><?echo GetMessage("P_ORDER_PS_STATUS_UPDATE") ?> &gt;&gt;</a>
+									<a href="/bitrix/admin/sale_order_detail.php?ID=<?= $ID ?>&action=ps_update&lang=<? echo LANGUAGE_ID; ?><?echo GetFilterParams("filter_")?>&<?= bitrix_sessid_get() ?>"><?echo GetMessage("P_ORDER_PS_STATUS_UPDATE") ?> &gt;&gt;</a>
 									<?
 								}
 							}
@@ -3099,7 +3099,7 @@ else
 						<td><?
 						if (!$boolLocked)
 						{
-							?><a href="/bnpt/admin/sale_order_detail.php?ID=<?= $ID ?>&action=ps_update&lang=<? echo LANGUAGE_ID; ?><?= GetFilterParams("filter_") ?>&<?= bitrix_sessid_get() ?>"><?= GetMessage("P_ORDER_PS_STATUS_UPDATE") ?> &gt;&gt;</a><?
+							?><a href="/bitrix/admin/sale_order_detail.php?ID=<?= $ID ?>&action=ps_update&lang=<? echo LANGUAGE_ID; ?><?= GetFilterParams("filter_") ?>&<?= bitrix_sessid_get() ?>"><?= GetMessage("P_ORDER_PS_STATUS_UPDATE") ?> &gt;&gt;</a><?
 						}
 						else
 						{
@@ -3190,7 +3190,7 @@ else
 								function fCancelMarkOrder()
 								{
 									BX.showWait();
-									BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_marked=Y&MARKED=N&ID=<?=$ID?>', fCancelMarkOrderResult);
+									BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_marked=Y&MARKED=N&ID=<?=$ID?>', fCancelMarkOrderResult);
 								}
 
 								function fCancelMarkOrderResult(res)
@@ -3240,7 +3240,7 @@ else
 												click : function()
 												{
 													BX.showWait();
-													BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_marked=Y&MARKED=Y&REASON_MARKED='+BX.util.urlencode(BX('FORM_REASON_MARKED').value)+'&ID=<?=$ID?>', fChangeMarkResult);
+													BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&'+'&change_marked=Y&MARKED=Y&REASON_MARKED='+BX.util.urlencode(BX('FORM_REASON_MARKED').value)+'&ID=<?=$ID?>', fChangeMarkResult);
 													formMarkOrder.close();
 												}
 											}
@@ -3347,7 +3347,7 @@ else
 								{
 									BX.showWait();
 
-									BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&change=Y&comment='+BX.util.urlencode(el.value)+'&ID=<?=$ID?>', fEditCommentResult);
+									BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&change=Y&comment='+BX.util.urlencode(el.value)+'&ID=<?=$ID?>', fEditCommentResult);
 
 									if (BX('manager-comment-text').value.length > 0)
 										BX('manager-comment-title').innerHTML = BX('manager-comment-text').value;
@@ -3505,7 +3505,7 @@ else
 												{
 													BX.showWait();
 													var urlparams = '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&save_order_data=Y&change_deduct=Y&UNDO_DEDUCT=Y&REASON_UNDO_DEDUCTED='+BX('FORM_REASON_UNDO_DEDUCT').value+'&ID=<?=$ID?>';
-													BX.ajax.post('/bnpt/admin/sale_order_detail.php', urlparams, fUndoDeductOrderResult);
+													BX.ajax.post('/bitrix/admin/sale_order_detail.php', urlparams, fUndoDeductOrderResult);
 													formUndoDeductOrder.close();
 												}
 											}
@@ -4129,7 +4129,7 @@ else
 									var currency = '<?=$arOrder["CURRENCY"]?>';
 									var lid = '<?=$arOrder["LID"]?>';
 
-									BX.ajax.post('/bnpt/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&type='+type+'&arProduct='+productData+'&currency='+currency+'&LID='+lid+'&userId='+userId+'&fUserId='+fUserId+'&ID=<?=$ID?>', fGetMoreProductResult);
+									BX.ajax.post('/bitrix/admin/sale_order_detail.php', '<?=CUtil::JSEscape(bitrix_sessid_get())?>&ORDER_AJAX=Y&type='+type+'&arProduct='+productData+'&currency='+currency+'&LID='+lid+'&userId='+userId+'&fUserId='+fUserId+'&ID=<?=$ID?>', fGetMoreProductResult);
 								}
 
 								function fGetMoreProductResult(res)
@@ -4486,7 +4486,7 @@ else
 
 						if (arSKU[i]["CAN_BUY"] == "Y")
 						{
-							BX('popup-params-product').value = "/bnpt/admin/sale_order_new.php?lang=<? echo LANGUAGE_ID; ?>&user_id="+arSKU[i]["USER_ID"]+"&LID="+arSKU[i]["LID"]+"&product["+arSKU[i]["ID"]+"]=1";
+							BX('popup-params-product').value = "/bitrix/admin/sale_order_new.php?lang=<? echo LANGUAGE_ID; ?>&user_id="+arSKU[i]["USER_ID"]+"&LID="+arSKU[i]["LID"]+"&product["+arSKU[i]["ID"]+"]=1";
 							message = BX.message('PRODUCT_ADD');
 						}
 						else

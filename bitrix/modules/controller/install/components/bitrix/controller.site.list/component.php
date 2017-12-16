@@ -65,7 +65,7 @@ if($this->StartResultCache())
 		$arResult["MENU_ITEMS"][] = array(
 			"ICONCLASS" => 'site-list-icon',
 			"TEXT" => $arMember["NAME"],
-			"ONCLICK" => 'window.location = \'/bnpt/admin/controller_goto.php?member='.$arMember["ID"].'&lang='.LANGUAGE_ID.'\';',
+			"ONCLICK" => 'window.location = \'/bitrix/admin/controller_goto.php?member='.$arMember["ID"].'&lang='.LANGUAGE_ID.'\';',
 			"TITLE" => $arMember["URL"],
 		);
 	}

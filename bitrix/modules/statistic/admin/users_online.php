@@ -29,7 +29,7 @@ while ($ar = $rs->Fetch())
 {
 	$ref[] = $ar["ID"];
 	$ref_id[] = $ar["ID"];
-	$arSites[$ar["ID"]] = "[<a href=\"/bnpt/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
+	$arSites[$ar["ID"]] = "[<a href=\"/bitrix/admin/site_edit.php?LID=".$ar["ID"]."&lang=".LANGUAGE_ID."\">".$ar["ID"]."</a>]&nbsp;";
 }
 $arSiteDropdown = array("reference" => $ref, "reference_id" => $ref_id);
 
@@ -464,7 +464,7 @@ function Refresh(delay)
 		delay = 30;
 	if (timeID) clearTimeout(timeID);
 	if (timeCounterID) clearTimeout(timeCounterID);
-	<?=$sTableID?>.GetAdminList('/bnpt/admin/users_online.php?delay='+delay+'&lang=<?=LANG?>');
+	<?=$sTableID?>.GetAdminList('/bitrix/admin/users_online.php?delay='+delay+'&lang=<?=LANG?>');
 	timeID = setTimeout('Refresh('+delay+')', delay*1000);
 	timeCounterID = setTimeout('ShowCounter('+delay+')',950);
 }

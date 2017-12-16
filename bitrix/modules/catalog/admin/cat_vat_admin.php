@@ -186,7 +186,7 @@ while ($arVAT = $dbResultList->Fetch())
 	$arActions[] = array(
 		"ICON" => "edit",
 		"TEXT" => GetMessage("CVAT_EDIT_ALT"),
-		"ACTION" => $lAdmin->ActionRedirect("/bnpt/admin/cat_vat_edit.php?ID=".$arVAT['ID']."&lang=".LANGUAGE_ID."&".GetFilterParams("filter_").""),
+		"ACTION" => $lAdmin->ActionRedirect("/bitrix/admin/cat_vat_edit.php?ID=".$arVAT['ID']."&lang=".LANGUAGE_ID."&".GetFilterParams("filter_").""),
 		"DEFAULT" => true
 	);
 
@@ -234,7 +234,7 @@ if (!$bReadOnly)
 		array(
 			"TEXT" => GetMessage("CVAT_ADD_NEW"),
 			"ICON" => "btn_new",
-			"LINK" => "/bnpt/admin/cat_vat_edit.php?lang=".LANGUAGE_ID,
+			"LINK" => "/bitrix/admin/cat_vat_edit.php?lang=".LANGUAGE_ID,
 			"TITLE" => GetMessage("CVAT_ADD_NEW_ALT")
 		),
 	);

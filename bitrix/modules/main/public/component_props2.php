@@ -48,7 +48,7 @@ $templateId = $_GET["template_id"];
 $relPath = $io->ExtractPathFromPath($src_path);
 
 CComponentParamsManager::Init(array(
-	'requestUrl' => '/bnpt/admin/fileman_component_params.php',
+	'requestUrl' => '/bitrix/admin/fileman_component_params.php',
 	'relPath' => $relPath
 ));
 

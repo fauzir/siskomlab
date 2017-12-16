@@ -663,7 +663,7 @@ var jsBXAC = {
 			if (null == bPublicEdit)
 				bPublicEdit = true;
 
-			var url = '/bnpt/admin/iblock_element_edit.php'
+			var url = '/bitrix/admin/iblock_element_edit.php'
 				+ '?type=' + jsBXCalendarAdmin.IBLOCK_TYPE + '&lang=' + jsBXCalendarAdmin.LANG;
 
 			if (null != INFO)

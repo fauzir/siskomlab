@@ -250,7 +250,7 @@ function ActionFileChange(ind, type)
 		type = cur_type_1c;
 		BX("person_type_1c_"+ind).value = type;
 	}
-	window.frames["hidden_action_frame_" + ind].location.replace('/bnpt/admin/sale_options_get.php?lang=<?= htmlspecialcharsbx($lang) ?>&type='+type+'&divInd='+ind);
+	window.frames["hidden_action_frame_" + ind].location.replace('/bitrix/admin/sale_options_get.php?lang=<?= htmlspecialcharsbx($lang) ?>&type='+type+'&divInd='+ind);
 }
 
 function AddRekv(ind, j)

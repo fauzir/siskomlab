@@ -475,7 +475,7 @@ if (CModule::IncludeModule("intranet") && CModule::IncludeModule("tasks"))
 
 	CAdminMessage::ShowNote(str_replace("#TASKS_NUM#", $CNT, GetMessage("TASKS_ADDED")));
 
-	echo "<form action=\"/bnpt/admin/module_admin.php\"><input type=\"hidden\" name=\"lang\" value=\"".LANG."\" /><input type=\"submit\" value=\"".GetMessage("MOD_BACK")."\" />";
+	echo "<form action=\"/bitrix/admin/module_admin.php\"><input type=\"hidden\" name=\"lang\" value=\"".LANG."\" /><input type=\"submit\" value=\"".GetMessage("MOD_BACK")."\" />";
 }
 require($_SERVER["DOCUMENT_ROOT"].BX_ROOT."/modules/main/include/epilog_admin.php");
 ?>

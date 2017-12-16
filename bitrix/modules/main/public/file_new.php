@@ -505,7 +505,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_REQUEST["save"]) && $strWarn
 	}
 
 	(new BX.CEditorDialog({
-		content_url: "/bnpt/admin/public_file_edit.php?<?=$_GET['subdialog'] == 'Y' ? "subdialog=Y" : ""?>&bxpublic=Y&lang=<?=CUtil::JSEscape($lang)?>" + "&path=<?=urlencode($pathToEdit)?>&site=<?=urlencode($site)?>&templateID=<?=urlencode($_REQUEST['templateID'])?>&back_url=<?=urlencode($relativePath)?>&edit_new_file_undo=<?= $ID?>",
+		content_url: "/bitrix/admin/public_file_edit.php?<?=$_GET['subdialog'] == 'Y' ? "subdialog=Y" : ""?>&bxpublic=Y&lang=<?=CUtil::JSEscape($lang)?>" + "&path=<?=urlencode($pathToEdit)?>&site=<?=urlencode($site)?>&templateID=<?=urlencode($_REQUEST['templateID'])?>&back_url=<?=urlencode($relativePath)?>&edit_new_file_undo=<?= $ID?>",
 		height: 470,
 		width: 780,
 		resizable: true,
@@ -597,9 +597,9 @@ if (isset($strWarning) && $strWarning != "")
 
 <?if (IsModuleInstalled("fileman")):?>
 	<?if ($createNewFolder):?>
-		<p><a href="/bnpt/admin/fileman_newfolder.php?lang=<?=urlencode($lang)?>&site=<?=urlencode($site)?>&path=<?=urlencode($path)?>&back_url=<?=urlencode($back_url)?>"><?=GetMessage("PAGE_NEW_EDIT_IN_ADMIN")?></a></p>
+		<p><a href="/bitrix/admin/fileman_newfolder.php?lang=<?=urlencode($lang)?>&site=<?=urlencode($site)?>&path=<?=urlencode($path)?>&back_url=<?=urlencode($back_url)?>"><?=GetMessage("PAGE_NEW_EDIT_IN_ADMIN")?></a></p>
 	<?else:?>
-		<p><a href="/bnpt/admin/fileman_html_edit.php?lang=<?=urlencode($lang)?>&site=<?=urlencode($site)?>&path=<?=urlencode($path)?>&new=Y&back_url=<?=urlencode($back_url)?>"><?=GetMessage("PAGE_NEW_EDIT_IN_ADMIN")?></a></p>
+		<p><a href="/bitrix/admin/fileman_html_edit.php?lang=<?=urlencode($lang)?>&site=<?=urlencode($site)?>&path=<?=urlencode($path)?>&new=Y&back_url=<?=urlencode($back_url)?>"><?=GetMessage("PAGE_NEW_EDIT_IN_ADMIN")?></a></p>
 	<?endif?>
 <?endif?>
 
@@ -664,7 +664,7 @@ if($bInEditGroups || $bAdmin):
 <?if(!empty($arEditGroups)):?>
 				<div style="margin-top:4px">
 					<input type="radio" name="limitAccessWho" value="editors" checked="checked" id="bx_acc_lim_who_editors" onclick="BXLimitAccessWho(this.checked);"/>
-					<label for="bx_acc_lim_who_editors"><?= GetMessage("PAGE_NEW_LIMIT_ACCESS_EDITORS")?> (<a href="/bnpt/admin/settings.php?lang=<?=LANGUAGE_ID?>&amp;mid=fileman&amp;tabControl_active_tab=edit3#limitaccess" target="_blank"><?echo GetMessage("page_new_limit_settings")?></a>)</label>
+					<label for="bx_acc_lim_who_editors"><?= GetMessage("PAGE_NEW_LIMIT_ACCESS_EDITORS")?> (<a href="/bitrix/admin/settings.php?lang=<?=LANGUAGE_ID?>&amp;mid=fileman&amp;tabControl_active_tab=edit3#limitaccess" target="_blank"><?echo GetMessage("page_new_limit_settings")?></a>)</label>
 				</div>
 
 				<div style="margin-top:2px">
@@ -683,7 +683,7 @@ if($bInEditGroups || $bAdmin):
 				</div>
 <?if(empty($arEditGroups)):?>
 <div style="margin-top:8px">
-	<a href="/bnpt/admin/settings.php?lang=<?=LANGUAGE_ID?>&amp;mid=fileman&amp;tabControl_active_tab=edit3#limitaccess" target="_blank"><?echo GetMessage("PAGE_NEW_EDITORS_DEF")?></a>
+	<a href="/bitrix/admin/settings.php?lang=<?=LANGUAGE_ID?>&amp;mid=fileman&amp;tabControl_active_tab=edit3#limitaccess" target="_blank"><?echo GetMessage("PAGE_NEW_EDITORS_DEF")?></a>
 </div>
 <?endif?>
 <?

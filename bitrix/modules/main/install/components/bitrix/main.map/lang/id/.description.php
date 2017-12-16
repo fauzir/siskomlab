@@ -1,5 +1,0 @@
-<?
-$MESS["MAIN_SITE_MAP_COMPONENT_NAME"] = "Peta Situs";
-$MESS["MAIN_SITE_MAP_COMPONENT_DESCR"] = "Peta Situs";
-$MESS["MAIN_SITE_MAP_GROUP_NAME"] = "Peta Situs";
-?>

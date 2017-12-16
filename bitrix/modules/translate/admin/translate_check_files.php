@@ -101,7 +101,7 @@ $aMenu = array();
 
 $aMenu[] = Array(
 	"TEXT"	=> GetMessage("TRANS_LIST"),
-	"LINK"	=> "/bnpt/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
+	"LINK"	=> "/bitrix/admin/translate_list.php?lang=".LANGUAGE_ID."&path=/".implode("/",$arPath)."/"."&".bitrix_sessid_get(),
 	"TITLE"	=> GetMessage("TRANS_LIST_TITLE"),
 	"ICON"	=> "btn_list"
 	);

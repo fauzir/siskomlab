@@ -103,7 +103,7 @@ if ($arResult["PERMISSION"] > "W")
 				<b class="r2"></b><b class="r1"></b><b class="r0"></b>
 				<div class="sidebar-block-inner">
 					<div class="sidebar-block-title">'.GetMessage("CMDESKTOP_DEMO_DATA_BLOCK_TITLE").'</div>
-					<div class="sidebar-help-content">'.GetMessage("CMDESKTOP_DEMO_DATA_BLOCK_DESC", Array("#LINK_TO_WIZARD#" => "/bnpt/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardSiteID=".SITE_ID."&wizardName=bitrix:portal_clear&".bitrix_sessid_get())).'</div>
+					<div class="sidebar-help-content">'.GetMessage("CMDESKTOP_DEMO_DATA_BLOCK_DESC", Array("#LINK_TO_WIZARD#" => "/bitrix/admin/wizard_install.php?lang=".LANGUAGE_ID."&wizardSiteID=".SITE_ID."&wizardName=bitrix:portal_clear&".bitrix_sessid_get())).'</div>
 				</div>
 				<i class="r0"></i><i class="r1"></i><i class="r2"></i>
 			</div>';

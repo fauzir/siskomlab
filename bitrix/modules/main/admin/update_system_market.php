@@ -276,7 +276,7 @@ else
 						$arM = convert2normalArray($Item["#"]);
 
 						$arM["url"] = str_replace("#module#", $arM["code"], "update_system_market.php?module=#module#&lang=".LANGUAGE_ID);
-						// $arM["urlClick"] = str_replace("#module#", $arM["code"], $sTableID.".GetAdminList('/bnpt/admin/update_system_market.php?module=#module#&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&table_id=".$sTableID.((intval($category) > 0) ? "&category=".$category : "")."'); return false;");
+						// $arM["urlClick"] = str_replace("#module#", $arM["code"], $sTableID.".GetAdminList('/bitrix/admin/update_system_market.php?module=#module#&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&table_id=".$sTableID.((intval($category) > 0) ? "&category=".$category : "")."'); return false;");
 						
 						$arM["urlInstall"] = "update_system_partner.php?lang=".LANGUAGE_ID."&addmodule=".$arM["code"];
 						if(!empty($m[$arM["code"]]))
@@ -660,7 +660,7 @@ else
 																<?foreach($arM["moreItems"]["item"] as $moreItem)
 																{
 																	$moreItem["url"] = str_replace("#module#", $moreItem["code"], "update_system_market.php?module=#module#&lang=".LANGUAGE_ID);
-																	$moreItem["urlClick"] = str_replace("#module#", $moreItem["code"], $sTableID.".GetAdminList('/bnpt/admin/update_system_market.php?module=#module#&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&table_id=".$sTableID.((intval($category) > 0) ? "&category=".$category : "")."'); return false;");
+																	$moreItem["urlClick"] = str_replace("#module#", $moreItem["code"], $sTableID.".GetAdminList('/bitrix/admin/update_system_market.php?module=#module#&lang=".LANGUAGE_ID."&".bitrix_sessid_get()."&table_id=".$sTableID.((intval($category) > 0) ? "&category=".$category : "")."'); return false;");
 																	
 																	$moreItem["urlInstall"] = "update_system_partner.php?lang=".LANGUAGE_ID."&addmodule=".$moreItem["code"];
 																	if(!empty($m[$moreItem["code"]]))

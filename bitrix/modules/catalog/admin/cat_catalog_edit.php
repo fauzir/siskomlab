@@ -155,7 +155,7 @@ if(
 			}
 		}
 
-		LocalRedirect("/bnpt/admin/cat_catalog_edit.php?lang=".LANGUAGE_ID."&IBLOCK_ID=".$IBLOCK_ID."&".$tabControl->ActiveTabParam());
+		LocalRedirect("/bitrix/admin/cat_catalog_edit.php?lang=".LANGUAGE_ID."&IBLOCK_ID=".$IBLOCK_ID."&".$tabControl->ActiveTabParam());
 	}
 }
 
@@ -177,7 +177,7 @@ echo bitrix_sessid_post();
 $tabControl->EndEpilogContent();
 
 $tabControl->Begin(array(
-	"FORM_ACTION" => "/bnpt/admin/cat_catalog_edit.php?lang=".LANGUAGE_ID."&IBLOCK_ID=".$IBLOCK_ID,
+	"FORM_ACTION" => "/bitrix/admin/cat_catalog_edit.php?lang=".LANGUAGE_ID."&IBLOCK_ID=".$IBLOCK_ID,
 ));
 
 $tabControl->BeginNextFormTab();
@@ -355,7 +355,7 @@ $tabControl->BeginCustomField("SECTION_PROPERTY", GetMessage("CAT_CEDIT_SECTION_
 					target_select_id = select_id;
 					target_shadow_id = shadow_id;
 					(new BX.CDialog({
-						'content_url' : '/bnpt/admin/iblock_edit_property.php?lang=<?echo LANGUAGE_ID?>&IBLOCK_ID='+iblock_id+'&ID=n0&bxpublic=Y&from_module=iblock&return_url=section_edit',
+						'content_url' : '/bitrix/admin/iblock_edit_property.php?lang=<?echo LANGUAGE_ID?>&IBLOCK_ID='+iblock_id+'&ID=n0&bxpublic=Y&from_module=iblock&return_url=section_edit',
 						'width' : 700,
 						'height' : 400,
 						'buttons': [BX.CDialog.btnSave, BX.CDialog.btnCancel]

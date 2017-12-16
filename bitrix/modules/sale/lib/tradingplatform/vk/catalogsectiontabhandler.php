@@ -168,7 +168,7 @@ class CatalogSectionTabHandler extends TabHandler
 		if (empty($exports))
 			return
 				'<tr><td colspan="2">' .
-				Loc::getMessage("SALE_VK_NEED_EXPORT_PROFILE", array('#A1' => '/bnpt/admin/sale_vk_export_list.php')) .
+				Loc::getMessage("SALE_VK_NEED_EXPORT_PROFILE", array('#A1' => '/bitrix/admin/sale_vk_export_list.php')) .
 				'</td></tr>';
 
 

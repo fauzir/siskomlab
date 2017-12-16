@@ -537,7 +537,7 @@
 						var bxsendertype = this.getAttribute('data-bx-sender-tmpl-type');
 						var bxsendernum = this.getAttribute('data-bx-sender-tmpl-code');
 						var bxsenderlang = this.getAttribute('data-bx-sender-tmpl-lang');
-						var url = '/bnpt/admin/sender_template_admin.php?action=get_template';
+						var url = '/bitrix/admin/sender_template_admin.php?action=get_template';
 						url = url + '&lang=' + bxsenderlang + '&template_type=' + bxsendertype + '&template_id=' + bxsendernum;
 						BX.util.popup(url, 800, 800);
 					}
@@ -674,7 +674,7 @@
 
 		this.setContent = function(id, version, type, num, lang)
 		{
-			var url = '/bnpt/admin/sender_template_admin.php?action=get_template';
+			var url = '/bitrix/admin/sender_template_admin.php?action=get_template';
 			url = url + '&lang=' + lang + '&template_type=' + type + '&template_id=' + num;
 
 			var blockContainer = BX('bx-sender-block-editor-' + id);

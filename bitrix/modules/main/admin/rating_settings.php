@@ -407,7 +407,7 @@ $subTabControl->End();
 	<tr id="rating_vote_type_like_text_3">
 		<td colspan="2">
 		<?=BeginNote()?>
-			<?=GetMessage('RATING_SETTINGS_FRM_CACHE')?> <a href="/bnpt/admin/cache.php?lang=<?=LANGUAGE_ID?>&tabControl_active_tab=fedit2"><?=GetMessage('RATING_SETTINGS_FRM_CACHE_LINK')?></a>.
+			<?=GetMessage('RATING_SETTINGS_FRM_CACHE')?> <a href="/bitrix/admin/cache.php?lang=<?=LANGUAGE_ID?>&tabControl_active_tab=fedit2"><?=GetMessage('RATING_SETTINGS_FRM_CACHE_LINK')?></a>.
 		<?=EndNote()?>
 		</td>
 	</tr>

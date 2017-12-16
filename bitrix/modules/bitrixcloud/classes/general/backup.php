@@ -284,7 +284,7 @@ class CBitrixCloudBackup
 			$MESS = '<span class="adm-informer-strong-text">'.GetMessage("BCL_BACKUP_AI_NO_FILES").'</span>';
 			if ($USER->CanDoOperation("bitrixcloud_backup") && $USER->CanDoOperation('edit_php'))
 			{
-				$CDNAIParams["FOOTER"] = '<a href="/bnpt/admin/dump.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_BACKUP_AI_DO_BACKUP_STRONGLY").'</a>';
+				$CDNAIParams["FOOTER"] = '<a href="/bitrix/admin/dump.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_BACKUP_AI_DO_BACKUP_STRONGLY").'</a>';
 			}
 		}
 		elseif($backup->getLastTimeBackup() < (time()-7*24*3600))
@@ -303,7 +303,7 @@ class CBitrixCloudBackup
 				), $backup->getLastTimeBackup()).'.</span>';
 			if ($USER->CanDoOperation("bitrixcloud_backup") && $USER->CanDoOperation('edit_php'))
 			{
-				$CDNAIParams["FOOTER"] = '<a href="/bnpt/admin/dump.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_BACKUP_AI_DO_BACKUP_STRONGLY").'</a>';
+				$CDNAIParams["FOOTER"] = '<a href="/bitrix/admin/dump.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_BACKUP_AI_DO_BACKUP_STRONGLY").'</a>';
 			}
 		}
 		else
@@ -322,7 +322,7 @@ class CBitrixCloudBackup
 				), $backup->getLastTimeBackup());
 			if ($USER->CanDoOperation("bitrixcloud_backup") && $USER->CanDoOperation('edit_php'))
 			{
-				$CDNAIParams["FOOTER"] = '<a href="/bnpt/admin/dump.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_BACKUP_AI_DO_BACKUP").'</a>';
+				$CDNAIParams["FOOTER"] = '<a href="/bitrix/admin/dump.php?lang='.LANGUAGE_ID.'">'.GetMessage("BCL_BACKUP_AI_DO_BACKUP").'</a>';
 			}
 		}
 
